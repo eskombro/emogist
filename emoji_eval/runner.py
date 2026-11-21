@@ -11,6 +11,8 @@ from pathlib import Path
 import requests
 from dotenv import load_dotenv
 
+from emoji_eval.columns import SENTENCE_COLUMNS
+from emoji_eval.judgement import judgement_report
 from emoji_eval.paths import ENV_FILE, TEST_FILE
 from emoji_eval.prompt import build_messages
 from emoji_eval.validate import check_conventions, check_validity
@@ -33,7 +35,10 @@ def load_sentences() -> list[dict]:
         return list(csv.DictReader(f))
 
 
-def call_model(provider: str, model_id: str, sentence: str) -> str:
+def call_model(provider: str, model_id: str, sentence: str, max_tokens: int = 100,
+               think: bool = False) -> str:
+    """max_tokens: raise it for models that think before answering (by choice or because
+    they ignore think=False). Only the final answer is returned, never the thinking."""
     config = PROVIDERS[provider]
     headers = {"Content-Type": "application/json"}
     if config["key_env"]:
@@ -47,17 +52,17 @@ def call_model(provider: str, model_id: str, sentence: str) -> str:
             "model": model_id,
             "messages": build_messages(sentence),
             "stream": False,
-            "think": False,  # Ollama's request field is "think" (the response field is "thinking")
-            "options": {"temperature": TEMPERATURE, "num_predict": 100},
+            "think": think,  # Ollama's request field is "think" (the response field is "thinking")
+            "options": {"temperature": TEMPERATURE, "num_predict": max_tokens},
         }
     else:  # OpenAI-style /chat/completions APIs
         body = {
             "model": model_id,
             "messages": build_messages(sentence),
             "temperature": TEMPERATURE,
-            # Generous on purpose: if a model "thinks" before answering, a low limit
+            # At least 1000: if a model "thinks" before answering, a low limit
             # would cut it off and return an empty answer.
-            "max_tokens": 1000,
+            "max_tokens": max(max_tokens, 1000),
         }
 
     for attempt in range(5):
@@ -75,20 +80,23 @@ def call_model(provider: str, model_id: str, sentence: str) -> str:
     return data["choices"][0]["message"]["content"].strip()
 
 
-def run_bakeoff(models: list[tuple[str, str, str]], results_file: Path) -> None:
-    """models: (display name, provider, model id). Writes one row per sentence,
-    with an output, a check and a warnings column per model."""
+def run_bakeoff(models: list[tuple], results_file: Path) -> None:
+    """models: (display name, provider, model id), optionally followed by a settings dict:
+    {"max_tokens": n, "think": True}. Writes one row per sentence, with an output, a
+    check and a warnings column per model."""
     rows = load_sentences()
     summary = {}  # (model name, lang) -> number of valid outputs
     warned = {}  # (model name, lang) -> number of valid outputs with at least one warning
     warning_types = {}  # model name -> {warning: count}
 
-    for name, provider, model_id in models:
+    for name, provider, model_id, *settings in models:
+        options = settings[0] if settings else {}
+        max_tokens, think = options.get("max_tokens", 100), options.get("think", False)
         print(f"\n=== {name} ===")
         for row in rows:
             start = time.time()
             try:
-                output = call_model(provider, model_id, row["sentence"])
+                output = call_model(provider, model_id, row["sentence"], max_tokens, think)
             except Exception as error:  # keep going if one call fails
                 output = f"ERROR: {error}"
             status = check_validity(output)
@@ -112,8 +120,8 @@ def run_bakeoff(models: list[tuple[str, str, str]], results_file: Path) -> None:
             print(f"{row['id']}. {output}   ({time.time() - start:.1f}s){flag}")
             time.sleep(PAUSE.get(provider, 0))
 
-    fieldnames = ["id", "lang", "sentence"]
-    for name, _, _ in models:
+    fieldnames = list(SENTENCE_COLUMNS)
+    for name, *_ in models:
         fieldnames += [name, f"{name} check", f"{name} warnings"]
     results_file.parent.mkdir(parents=True, exist_ok=True)
     with open(results_file, "w", newline="", encoding="utf-8") as f:
@@ -128,8 +136,9 @@ def run_bakeoff(models: list[tuple[str, str, str]], results_file: Path) -> None:
     for (name, lang), valid in summary.items():
         print(f"  {name} [{lang}]: {valid}/{totals[lang]} valid, {warned[(name, lang)]} with warnings")
     print("\nWarnings by type:")
-    for name, _, _ in models:
+    for name, *_ in models:
         counts = warning_types.get(name, {})
         details = ", ".join(f"{w}: {n}" for w, n in sorted(counts.items(), key=lambda x: -x[1]))
         print(f"  {name}: {details or 'none'}")
+    judgement_report(results_file)
     print(f"\nSaved to {results_file}")

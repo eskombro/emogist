@@ -4,6 +4,7 @@ import emoji
 
 VS16 = "️"  # variation selector: turns a symbol into its emoji form
 ZWJ = "‍"  # zero-width joiner: glues emojis into one (🧑‍💻 = 🧑 + ZWJ + 💻)
+KEYCAP = "⃣"  # combining keycap: turns a digit into an emoji (4 + VS16 + keycap = 4️⃣)
 
 
 def content_count(output: str) -> int:
@@ -46,6 +47,10 @@ def check_conventions(output: str) -> list[str]:
         warnings.append("repeated ➡️")
     if "  " in output:
         warnings.append("double space")
+    # Keycap digits (4️⃣0️⃣) and 🔟 are emojis, but they write the number instead of
+    # drawing it, which teaches a student to write numbers (and slip into plain digits).
+    if KEYCAP in output or "🔟" in output:
+        warnings.append("number written as keycap")
     # A long sequence with no space at all means the groups weren't separated.
     if " " not in output and content_count(output) > 4:
         warnings.append("no group spaces")

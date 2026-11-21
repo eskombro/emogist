@@ -33,7 +33,7 @@ Paired differences on the same sentences (bootstrap, 95% interval):
 
 Other observations:
 - Format is nearly solved by prompting once the examples cover the weak spots (numbers drawn as ⏳ instead of copied digits, ❌ placement).
-- Judgement rules are not learned from the prompt: Ministral overuses ⏪/⏩ (25 outputs), the Qwen models almost never use them (1 each), and no student applies the 💬 speech pattern reliably.
+- Judgement rules are not learned from the prompt (measured with the `time`/`speech` tags of the test set): Ministral uses ⏪/⏩ where needed (83%) but also on 21% of other sentences; the Qwen models never use them where needed; 💬 appears on at most half of the speech sentences.
 - SmolLM3 falls into repetition loops (the same emoji 30 times).
 - Only about a quarter of sentences keep the full gist even for the best students, against 1.75 for the hand-made examples: plenty of room for fine-tuning.
 

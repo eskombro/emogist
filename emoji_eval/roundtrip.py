@@ -19,6 +19,7 @@ import anthropic
 from dotenv import load_dotenv
 from sentence_transformers import SentenceTransformer
 
+from emoji_eval.columns import model_columns
 from emoji_eval.paths import CACHE_DIR, ENV_FILE
 from emoji_eval.prompt import EXAMPLES  # the hand-made few-shot pairs, used by sanity_check
 
@@ -227,8 +228,7 @@ def score_results(results_file: Path, scores_file: Path,
     """Decode and judge every valid output in a bake-off results file."""
     with open(results_file, newline="", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
-    models = [c for c in rows[0] if c not in ("id", "lang", "sentence")
-              and not c.endswith((" check", " warnings"))]
+    models = model_columns(rows[0])
     decode_cache, judge_cache = load_cache(), load_judge_cache()
 
     # Decode and judge every valid output. Invalid ones are skipped: they score 0.
