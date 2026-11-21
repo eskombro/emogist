@@ -25,7 +25,7 @@ Every step is evaluated the same way: a **round-trip score**. One model decodes 
 |---|---|---|
 | [0. Exploration](00_exploration/) | ✅ done | Small models need one sentence per request; validation is mandatory |
 | [1. Student selection](01_student_selection/) | ✅ done | Qwen3.5 2B and Ministral 3B tied; Qwen3.5 0.8B behind |
-| [2. Teacher selection](02_teacher_selection/) | ✅ done | All teachers tied at ~1.3 gist vs ~0.9 for students; thinking adds nothing; DeepSeek V4.1 Flash best on tie-breakers |
+| [2. Teacher selection](02_teacher_selection/) | ✅ done | Five large teachers tied at ~1.3 gist vs ~0.9 for students; thinking adds nothing; DeepSeek V4.1 Flash best on tie-breakers, gpt-oss 120B a credible backup |
 | 3. Dataset (~3,000 EN+FR sentences) | ⏳ next | |
 | 4. Fine-tuning (LoRA, Unsloth) | | |
 | 5. Evaluation | | |

@@ -36,9 +36,11 @@ def load_sentences() -> list[dict]:
 
 
 def call_model(provider: str, model_id: str, sentence: str, max_tokens: int = 100,
-               think: bool = False) -> str:
+               think: bool | str = False) -> str:
     """max_tokens: raise it for models that think before answering (by choice or because
-    they ignore think=False). Only the final answer is returned, never the thinking."""
+    they ignore think=False). Only the final answer is returned, never the thinking.
+    think: True/False, or "low"/"medium"/"high" for models that only take a level
+    (gpt-oss can't turn reasoning off, only lower it)."""
     config = PROVIDERS[provider]
     headers = {"Content-Type": "application/json"}
     if config["key_env"]:
@@ -83,8 +85,29 @@ def call_model(provider: str, model_id: str, sentence: str, max_tokens: int = 10
 def run_bakeoff(models: list[tuple], results_file: Path) -> None:
     """models: (display name, provider, model id), optionally followed by a settings dict:
     {"max_tokens": n, "think": True}. Writes one row per sentence, with an output, a
-    check and a warnings column per model."""
+    check and a warnings column per model.
+
+    If results_file already exists, its columns are kept and only the models not yet in
+    it are run, so adding a candidate doesn't call (and pay for) the others again.
+    To rerun a model, delete its three columns, or the whole file."""
     rows = load_sentences()
+    existing_fields = []
+    if results_file.exists():
+        with open(results_file, newline="", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            existing_fields = list(reader.fieldnames)
+            previous = {r["id"]: r for r in reader}
+        for row in rows:
+            old = previous.get(row["id"], {})
+            row.update({k: v for k, v in old.items() if k not in SENTENCE_COLUMNS})
+        kept = [m[0] for m in models if m[0] in existing_fields]
+        if kept:
+            print(f"Already in {results_file.name}, not rerun: {', '.join(kept)}")
+        models = [m for m in models if m[0] not in existing_fields]
+        if not models:
+            print("Nothing new to run.")
+            return
+
     summary = {}  # (model name, lang) -> number of valid outputs
     warned = {}  # (model name, lang) -> number of valid outputs with at least one warning
     warning_types = {}  # model name -> {warning: count}
@@ -120,7 +143,7 @@ def run_bakeoff(models: list[tuple], results_file: Path) -> None:
             print(f"{row['id']}. {output}   ({time.time() - start:.1f}s){flag}")
             time.sleep(PAUSE.get(provider, 0))
 
-    fieldnames = list(SENTENCE_COLUMNS)
+    fieldnames = existing_fields or list(SENTENCE_COLUMNS)
     for name, *_ in models:
         fieldnames += [name, f"{name} check", f"{name} warnings"]
     results_file.parent.mkdir(parents=True, exist_ok=True)

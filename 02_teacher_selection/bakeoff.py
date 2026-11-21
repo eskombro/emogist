@@ -5,7 +5,8 @@ Teachers run on Ollama Cloud, through the local Ollama (same API as the students
     python 02_teacher_selection/bakeoff.py
 
 Writes results/bakeoff_results.csv, in the same format as step 1, so the same scorer
-and reports apply. Cost: well under $1 for all three teachers (100 short requests each).
+and reports apply. Models already in that file are skipped.
+Cost: well under $1 per teacher (100 short requests each).
 """
 
 from pathlib import Path
@@ -23,6 +24,11 @@ MODELS = [
     # Only the final answer is kept: the thinking never goes into the dataset.
     ("deepseek-v4-pro-think", "ollama", "deepseek-v4-pro:0813-cloud", {"max_tokens": 3000, "think": True}),
     ("deepseek-v4.1-flash", "ollama", "deepseek-v4.1-flash:cloud"),
+    # OpenAI's open-weight models (Apache 2.0), added after the first run: only these
+    # are run, the others are kept from the results file. gpt-oss always reasons;
+    # "think" only sets the level, so use the lowest and leave room for the reasoning.
+    ("gpt-oss-120b", "ollama", "gpt-oss:120b-cloud", {"max_tokens": 2000, "think": "low"}),
+    ("gpt-oss-20b", "ollama", "gpt-oss:20b-cloud", {"max_tokens": 2000, "think": "low"}),
 ]
 
 RESULTS_FILE = Path(__file__).resolve().parent / "results" / "bakeoff_results.csv"
