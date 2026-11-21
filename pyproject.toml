@@ -1,0 +1,19 @@
+[project]
+name = "emogist"
+version = "0.1.0"
+description = "Training a model to keep the gist in emojis"
+requires-python = ">=3.10"
+dependencies = [
+    "requests",
+    "emoji",
+    "python-dotenv",
+    "anthropic",
+    "sentence-transformers",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["emoji_eval"]

@@ -1,0 +1,21 @@
+# Secrets: never commit. Copy .env.example to .env and fill in your keys.
+.env
+
+# Python
+.venv/
+__pycache__/
+*.egg-info/
+
+# Personal answers from the human check (kept locally, may be added later)
+01_student_selection/human_guesses.csv
+
+# Model weights and exports (published on the Hugging Face Hub instead)
+*.gguf
+*.safetensors
+models/
+outputs/
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/
