@@ -1,0 +1,12 @@
+{
+ "train_set": "C_mixed",
+ "base_model": "unsloth/Ministral-3-3B-Instruct-2512",
+ "epochs": 3,
+ "batch_size": 4,
+ "accumulation_steps": 2,
+ "learning_rate": 0.0002,
+ "lora_rank": 16,
+ "max_length": 256,
+ "seed": 3407,
+ "system_prompt": "Convert the sentence into a short emoji sentence that keeps its gist. Answer with emojis only."
+}

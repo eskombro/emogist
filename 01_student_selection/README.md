@@ -37,6 +37,10 @@ Other observations:
 - SmolLM3 falls into repetition loops (the same emoji 30 times).
 - Only about a quarter of sentences keep the full gist even for the best students, against 1.75 for the hand-made examples: plenty of room for fine-tuning.
 
+## Follow-up: after fine-tuning
+
+The tie was tested again in the [fine-tuning pilot](../04_fine_tuning/), on 100 real dev sentences with the same 400 training examples. Qwen 2B reached **0.68** and Ministral 3B **0.56**. The difference (−0.12 [−0.25, +0.02] for Ministral) is not conclusive, so Qwen is the favorite and Ministral stays as the challenger until both are trained on the full dataset.
+
 ## Decision
 
 <!-- Your decision and why. Facts to weigh:

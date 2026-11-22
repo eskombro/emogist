@@ -1,0 +1,441 @@
+id,lang,sentence,topic,pattern,tone,length,speaker,generator
+ai-en-00000,en,"I missed the second half, so I’ve been glaring at the final score on my phone.",a football match,mishap,annoyed,medium,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00001,en,"We showed up an hour early for the interview, so we grabbed coffee and practiced our answers.",a job interview,mishap,happy,long,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00002,en,I rode past your empty house again today.,a bike ride,moment,sad,short,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00003,en,"We told the guys we'd scored, then realized the goal was disallowed and just went quiet.",a football match,speech,embarrassed,long,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00004,en,We burnt the cake we were going to share.,baking a cake,moment,sad,short,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00005,en,I'm going to charm the dentist into forgetting about that cavity next week.,a dentist appointment,future,amused,medium,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00006,en,"My sister's flight got delayed, so now I'm stuck waiting at the airport.",a flight delay,mishap,annoyed,short,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00007,en,I'm going to have to return this whole order next week because they sent me the wrong size again.,online shopping,future,annoyed,long,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00008,en,I'm sitting alone at the table because everyone left after the argument.,a family dinner,past,sad,medium,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00009,en,I'm grinning on the couch because I finally hit a new deadlift PR.,the gym,past,happy,short,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00010,en,"Because my sister finally set up auto-pay, she hasn't missed a single bill.",online shopping,past,proud,short,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00011,en,I used duct tape and it's still dripping.,fixing a leak,moment,embarrassed,short,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00012,en,We burned the garlic again because you walked away from the stove.,cooking,moment,annoyed,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00013,en,My sister texted that the trail was closed for good.,a hiking trail,speech,sad,short,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00014,en,"My brother shut off the water main earlier, so now the sink's leaking everywhere.",fixing a leak,past,annoyed,short,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00015,en,"I told my sister the surprise party was at noon, and she said she’d be two hours late.",a surprise party,speech,annoyed,medium,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00016,en,"I burned the garlic earlier because I got distracted, so now this whole stir-fry tastes bitter.",cooking,past,annoyed,long,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00017,en,I've wiped the same sticky handprint off the TV three times now and the kid's still eating jam straight from the jar.,babysitting,moment,annoyed,long,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00018,en,We finally scrubbed the stove until it shined and didn't stop there.,housework,moment,proud,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00019,en,We’re sitting on the balcony in silence because the ocean took her hat this morning.,a holiday at the beach,past,sad,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00020,en,"The power went out earlier, so Dad’s candles are now lighting the whole house.",a power cut,past,proud,short,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00021,en,"I got drenched walking to the store earlier, so now I'm watching the sun come out from my soaked couch.",the weather,past,amused,long,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00022,en,"Mom's flight got delayed, so I got to grab coffee with her.",a flight delay,moment,relieved,short,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00023,en,I'm soaked because I wiped out in a puddle earlier.,a bike ride,past,embarrassed,short,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00024,en,My little brother is going to nail his first solo bus ride next week.,public transport,future,proud,medium,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00025,en,I'm going to fix my phone's cracked screen myself next weekend and save a fortune.,a phone that breaks,future,proud,long,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00026,en,My brother nailed the interview because he spilled coffee on the boss.,a job interview,past,amused,short,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00027,en,My brother finally texted that he made it home from the match safe and sound.,a football match,moment,relieved,medium,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00028,en,"Even with this flight delay, I will still make my connection because I booked the longer layover like a pro.",a flight delay,future,proud,long,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00029,en,I caught myself grinning at my phone when he texted to say he’d bring pastries.,a date,moment,happy,medium,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00030,en,I'm stuck eating dry cereal for dinner because I forgot to buy groceries on my way home.,a late-night snack,past,annoyed,long,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00031,en,"I texted my roommate that the kitchen was finally spotless, and I could actually relax.",housework,speech,relieved,long,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00032,en,I'll attempt a three-tier cake next week and probably invent new swear words.,baking a cake,future,amused,medium,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00033,en,My sister texted that the waiter winked at her and then called her ma'am.,a restaurant,speech,amused,long,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00034,en,My dad said he bragged about me all night.,a wedding,speech,proud,short,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00035,en,We finished the dishes early so now we're relaxing.,housework,past,happy,short,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00036,en,"We left the gate open, so now the deer are having a salad bar.",gardening,mishap,amused,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00037,en,"We told her the surprise party was at seven, and she said we were late.",a surprise party,speech,annoyed,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00038,en,My little brother is going to walk across that stage next week and I already know I'm gonna cry.,a date,future,proud,long,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00039,en,"Our phone screen cracked, so we finally got that upgrade we wanted.",a phone that breaks,mishap,happy,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00040,en,I woke up to my cat curled on my chest.,a pet,moment,happy,short,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00041,en,I finally finished scrubbing the kitchen because I spilled grease everywhere earlier.,housework,past,relieved,medium,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00042,en,My sister texted that she got us tickets for the concert after all.,a concert,speech,relieved,medium,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00043,en,"I found the perfect jacket on sale, so I practically floated to the register.",shopping,mishap,happy,medium,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00044,en,"We lost the kid's blanket, so now he won't stop crying.",babysitting,mishap,sad,short,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00045,en,I tripped on a root so now I'm limping.,a hiking trail,past,embarrassed,short,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00046,en,I'm sitting on the curb because my wallet slipped out somewhere.,a lost wallet,past,sad,short,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00047,en,We’re going to be stuck in that dentist’s waiting room again next week.,a dentist appointment,future,annoyed,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00048,en,"We told the instructor we'd practiced parallel parking, even though we hadn't touched the wheel once.",learning to drive,speech,annoyed,long,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00049,en,We got a table by the window since we came early.,a restaurant,past,happy,short,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00050,en,"We missed sign-up day, so now we're stuck in beginner French.",a language class,past,sad,short,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00051,en,"My sister's puppy chewed through her favorite shoes, and she still taught him to sit and stay by the end of the week.",a pet,mishap,proud,long,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00052,en,I just watched the little guy stack three blocks all by himself and clap for his own tiny hands.,babysitting,moment,happy,long,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00053,en,I accidentally walked in on my sister's surprise party holding her gift.,a surprise party,moment,embarrassed,short,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00054,en,We laughed and said the seagull clearly thought our sandwiches were his.,a holiday at the beach,speech,amused,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00055,en,"My brother missed the winning goal, so we stayed up celebrating anyway.",a football match,mishap,happy,medium,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00056,en,My sister cut her own bangs and now she's wearing a beanie.,a haircut,mishap,amused,short,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00057,en,I knocked my water over at dinner and just froze.,a family dinner,moment,embarrassed,short,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00058,en,My kid finally got into the morning class.,school,moment,relieved,short,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00059,en,I'm going to have to face my sister's teacher next week about skipping that assembly.,school,future,embarrassed,medium,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00060,en,My sister asked me to return the five dresses I bought online before anyone saw them.,online shopping,speech,embarrassed,medium,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00061,en,We told her the cake was ready and she laughed out loud.,a birthday,speech,happy,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00062,en,"I got to the front row because I showed up two hours early, and the band just walked out.",a concert,past,happy,medium,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00063,en,"My brother finally fixed his screeching alarm clock, so now I actually get to sleep.",a noisy flatmate,mishap,proud,medium,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00064,en,I ordered the wrong size and now I can't return it.,online shopping,mishap,sad,short,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00065,en,We hid behind the couch and then the dog gave us away.,a surprise party,moment,amused,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00066,en,"I got to the register and my card declined, so I had to leave all my stuff there and walk out.",shopping,mishap,annoyed,long,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00067,en,I stood in the dark kitchen eating cold leftovers straight from the pan.,a late-night snack,moment,sad,medium,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00068,en,"My cousin missed the enrollment deadline for her language class, so now she's stuck on a waitlist for the whole semester.",a language class,mishap,annoyed,long,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00069,en,"I accidentally pulled up all my tomato seedlings thinking they were weeds, so now my garden looks pathetic.",gardening,mishap,embarrassed,long,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00070,en,I took the wrong fork earlier so now I'm lost.,a hiking trail,past,amused,short,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00071,en,"We'll only have to drive two hours tomorrow, so we can finally relax tonight.",a road trip,future,relieved,long,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00072,en,We’re going to pretend we didn’t drop it when we get to the store tomorrow.,a phone that breaks,future,embarrassed,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00073,en,I'm going to have to face my brother at the office tomorrow.,the office,future,embarrassed,short,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00074,en,My sister asked if I could please stop correcting her grammar in front of everyone.,a language class,speech,annoyed,medium,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00075,en,My mom said my lasagna turned out better than hers.,cooking,speech,proud,short,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00076,en,We told her the wedding starts at three.,a wedding,speech,annoyed,short,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00077,en,"My sister's date got canceled, so she's staying in tonight.",a date,mishap,sad,short,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00078,en,We skipped the last gallery because the rain soaked us through.,a museum visit,past,sad,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00079,en,I texted my sister that I finally got the chop and my head feels so much lighter.,a haircut,speech,relieved,medium,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00080,en,We drove all the way to the store only to find it closed.,shopping,mishap,annoyed,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00081,en,My sister texted me that her new haircut makes her look like a punk rocker.,a new haircut gone wrong,speech,proud,medium,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00082,en,"My brother forgot his gym bag, so I grabbed it before he left.",the gym,mishap,relieved,short,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00083,en,I can't wait to get my teeth cleaned next week.,a dentist appointment,future,happy,short,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00084,en,We're going to hit the gym tomorrow and finally try that new squat rack.,the gym,future,happy,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00085,en,I spilled my drink on the person in front of me and wanted to disappear.,a concert,mishap,embarrassed,short,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00086,en,"I got a flat tire, but the spare held out.",a road trip,mishap,relieved,short,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00087,en,My mom asked if I was seeing anyone and I knocked my fork off the table reaching for my water.,a family dinner,moment,embarrassed,long,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00088,en,"We lost the umbrella, so now we're crispy.",a holiday at the beach,mishap,amused,short,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00089,en,I'm going to help my mom pay her bills next week.,paying the bills,future,sad,short,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00090,en,My mom texted me that the rain ruined the picnic she planned for my birthday.,the weather,speech,sad,medium,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00091,en,We grabbed gas station coffee and hit the road.,a road trip,moment,happy,short,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00092,en,I guess I'll just leave the cart sitting there tomorrow.,online shopping,future,sad,short,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00093,en,My brother is going to bail on our trip again.,a road trip,future,annoyed,short,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00094,en,We spent the whole afternoon building a pillow fort and nobody cried once.,babysitting,moment,happy,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00095,en,I told my brother he can fix his own damn bike chain next time.,a bike ride,speech,annoyed,medium,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00096,en,We have to wear hats all week because the stylist cut one side way too short.,a new haircut gone wrong,past,sad,long,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00097,en,"My sister is going to hand over her keys next week, so the hardest part is finally behind us.",moving house,future,relieved,long,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00098,en,We’re going to be stuck on this boss level all night.,video games,future,annoyed,short,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00099,en,We got the good coffee machine back in the break room today.,the office,moment,happy,short,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00100,en,I'm stuck waiting for a rack because my brother borrowed my gym bag and left it at his place.,the gym,past,annoyed,long,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00101,en,We got the twins down for a nap and actually cleaned the kitchen.,babysitting,moment,proud,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00102,en,We're going to hug everyone at the reunion next week.,a school reunion,future,happy,short,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00103,en,"My little brother nailed his first parallel park this morning, so he's been beaming all afternoon.",learning to drive,past,proud,long,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00104,en,Mom asked if I paid the bill and the lights went out.,a power cut,moment,embarrassed,short,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00105,en,I told the waiter we’d take the check now and finally exhaled.,a restaurant,speech,relieved,medium,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00106,en,I'm going to take my little brother on a bike ride along the river tomorrow.,a bike ride,future,happy,medium,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00107,en,I hit my squat goal and grinned at the mirror.,the gym,moment,happy,short,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00108,en,We left the clinic and I held the door.,a doctor's visit,moment,proud,short,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00109,en,"We dropped the phone in the parking lot earlier, so now we're sitting here watching the screen flicker and die.",a phone that breaks,past,sad,long,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00110,en,I finally found a parking spot right outside the hotel after circling for twenty minutes.,a road trip,moment,relieved,medium,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00111,en,Dad's already yawning because he had thirds at dinner.,a family dinner,past,amused,short,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00112,en,"My sister’s order came crushed, so she just sat there staring at the box.",shopping,mishap,sad,medium,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00113,en,We finally paid off the electric bill and celebrated with cheap tacos on the porch.,paying the bills,moment,happy,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00114,en,We have to wait three more weeks for a decent cut because the barber messed up the first one.,a haircut,past,annoyed,long,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00115,en,I had to shower by candlelight because the power went out again.,a power cut,moment,annoyed,medium,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00116,en,We told the barber it actually looks fine.,a new haircut gone wrong,speech,relieved,short,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00117,en,My cousin is going to rock her crooked new bangs at the family dinner tomorrow.,a new haircut gone wrong,future,proud,medium,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00118,en,"I already shut the water off at the main valve, so the leak is just a slow drip now.",fixing a leak,past,relieved,long,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00119,en,We both said we were glad the reunion was finally over.,a school reunion,speech,relieved,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00120,en,"We finally finished our full workout before work, so we're feeling pretty good about ourselves right now.",the gym,past,proud,long,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00121,en,I finally got all the laundry in before the rain started.,the weather,moment,proud,medium,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00122,en,I'm going to bake my sister a cake tomorrow.,a birthday,future,happy,short,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00123,en,We’re going to discover next week just how many boxes we actually own.,moving house,future,amused,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00124,en,"Because my sister messed up the oven temperature, my cake is ruined.",baking a cake,past,annoyed,short,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00125,en,We forgot the umbrella and got soaked.,the weather,mishap,annoyed,short,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00126,en,We finally found a shady spot and just sat there watching the waves roll in.,a holiday at the beach,moment,relieved,long,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00127,en,"My sister's cake collapsed, so we ate the whole thing straight from the pan laughing.",a birthday,mishap,happy,medium,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00128,en,"I grabbed extra fries for my brother earlier, so he won't go to bed hungry tonight.",a late-night snack,past,relieved,medium,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00129,en,We’re going to miss the bonfire again tomorrow because of this endless rain.,the weather,future,sad,long,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00130,en,I'm going to nail this three-layer cake next weekend.,baking a cake,future,proud,short,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00131,en,"We finally beat that boss because we grinded for hours last night, so now we can relax.",video games,past,relieved,long,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00132,en,"I thought my save file got corrupted, but it loaded right up, so I can finally relax.",video games,mishap,relieved,long,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00133,en,My brother is going to help me fix the leak next Saturday and I can't wait.,fixing a leak,future,happy,medium,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00134,en,We’re still laughing in the lobby because our interviewer called us by the wrong name twice.,a job interview,past,amused,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00135,en,I told my mom I finally nailed the pronunciation.,a language class,speech,proud,short,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00136,en,I just caught the bouquet and hid behind a chair.,a wedding,moment,amused,short,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00137,en,I stalled the car at the light because I popped the clutch earlier.,learning to drive,past,embarrassed,medium,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00138,en,"My sister flubbed her Spanish oral, so we celebrated with cake anyway.",a language class,mishap,happy,short,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00139,en,"The cake fell flat, so we turned it into a trifle and everyone laughed.",a surprise party,mishap,happy,medium,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00140,en,We're going to split that last piece of cake later and I already know it won't be enough.,a late-night snack,future,sad,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00141,en,I'm going to take my cousin out for ice cream to cheer him up about his lost wallet.,a lost wallet,future,happy,medium,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00142,en,We shouted that we passed the driving test!,learning to drive,speech,happy,short,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00143,en,I’m stuck at the dentist for an hour because the hygienist double-booked my cleaning.,a dentist appointment,past,annoyed,medium,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00144,en,I'll finally relax once the match is over tomorrow.,a football match,future,relieved,short,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00145,en,I told my roommate to stop hovering over the stove and let the sauce actually simmer.,cooking,speech,annoyed,long,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00146,en,I laughed and told my neighbor his scarecrow had better rain gear than me.,the weather,speech,amused,medium,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00147,en,"I finally finished the dishes, so the kitchen is clean.",housework,past,relieved,short,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00148,en,We're going to make midnight nachos with everything in the fridge.,a late-night snack,future,proud,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00149,en,"My neighbor borrowed my ladder again and returned it broken, so now I'm stuck fixing his mess.",a neighbor,mishap,annoyed,long,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00150,en,I told my neighbor I finally fixed the leaky roof before the storm hit.,the weather,speech,proud,long,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00151,en,We told everyone we fixed the cracked phone ourselves.,a phone that breaks,speech,proud,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00152,en,My dad just taught me how to get the campfire going.,camping,moment,happy,short,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00153,en,We took the wrong fork but still made the car before dark.,a hiking trail,mishap,relieved,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00154,en,"The movers dropped my mom's china cabinet, but at least nothing inside shattered.",moving house,mishap,relieved,medium,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00155,en,"My brother’s car broke down again, so now I’m stuck driving him to work all week.",a broken car,mishap,annoyed,medium,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00156,en,"My brother's bus got cancelled in the snow, so I drove him to work and made it back before my coffee got cold.",a snowy morning,mishap,relieved,long,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00157,en,We laughed and said the school reunion was just a bunch of bald guys comparing their old yearbook photos.,a school reunion,speech,amused,long,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00158,en,I just swept up the kitchen floor and found all the little pieces of my hair I paid someone to cut off.,a haircut,moment,sad,long,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00159,en,"We finally got the electric bill paid this morning, so now we can actually relax.",paying the bills,past,relieved,long,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00160,en,"I’m finally going to that dentist appointment next week, so that weight is almost off my shoulders.",a dentist appointment,future,relieved,medium,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00161,en,"The opener canceled, so I got to sleep in.",a concert,mishap,happy,short,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00162,en,We told her the party starts at seven and she said whatever.,a birthday,speech,annoyed,short,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00163,en,We had to hide the treats because our dog figured out how to open the cupboard.,a pet,past,amused,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00164,en,Mom's dinner went cold in the dark kitchen.,a power cut,moment,sad,short,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00165,en,My mom texted that the storm passed right over her street and she only got a light drizzle.,the weather,speech,relieved,long,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00166,en,We both ducked when the cashier read the total out loud.,shopping,moment,embarrassed,short,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00167,en,"My brother twisted his ankle on the trail, but we had a splint so he walked out fine.",a hiking trail,mishap,relieved,medium,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00168,en,We ate dinner by candlelight and nobody said a word.,a power cut,moment,sad,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00169,en,My brother is grinning like an idiot because he finally got the campfire going after twenty minutes of trying.,camping,past,happy,long,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00170,en,I'm going to bake you a cake next week for your birthday.,a birthday,future,happy,medium,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00171,en,"My sister spilled the cake secret, so now the whole party's ruined.",a surprise party,mishap,annoyed,short,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00172,en,"I watched my kid walk down the aisle without tripping once, and I had to bite my cheek.",a wedding,moment,proud,long,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00173,en,"I cleared the driveway before sunrise, so I’m sitting here with dry boots and a clear path.",a snowy morning,past,proud,medium,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00174,en,"We’re going to the dentist next week, unfortunately.",a dentist appointment,future,sad,short,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00175,en,I'm going to miss our bike ride tomorrow.,a bike ride,future,sad,short,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00176,en,"The rain finally stopped, so I can hang the laundry out now.",the weather,past,relieved,short,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00177,en,"I told my friend my interviewer asked if I was nervous, and I laughed.",a job interview,speech,amused,medium,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00178,en,"We forgot to bring the umbrella, so now we're dripping wet in front of everyone.",the weather,mishap,embarrassed,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00179,en,"My mom’s test results got mixed up with another patient’s, so they’re redoing the bloodwork and she gets to come home early.",a doctor's visit,mishap,relieved,long,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00180,en,We'll finally get those tomatoes in the ground next week now that the frost risk is gone.,gardening,future,relieved,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00181,en,"We finally got that stubborn stain out of the kitchen floor, and we just stood there grinning at it.",housework,moment,proud,long,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00182,en,My mom texted that she scrubbed the kitchen alone again.,housework,speech,sad,short,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00183,en,"My sister's train got cancelled again, so she missed her daughter's recital.",public transport,mishap,sad,medium,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00184,en,I'm cooking alone tonight because my mom left this morning.,cooking,past,sad,short,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00185,en,We're going to be stuck without a phone all week.,a phone that breaks,future,annoyed,short,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00186,en,I told my brother he navigated that whole mountain route without a single wrong turn.,a road trip,speech,proud,medium,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00187,en,I'm going to sit alone at the family dinner next week and pretend I'm fine.,a family dinner,future,sad,medium,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00188,en,"I got my cavity filled earlier, so I can finally eat ice cream again.",a dentist appointment,past,happy,short,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00189,en,"I burned the cake, so now we’re getting ice cream instead.",a birthday,mishap,happy,medium,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00190,en,I'm hiding at my desk because I microwaved fish earlier.,the office,past,amused,short,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00191,en,"We missed the first half of the language class because of the bus strike, so now we're completely lost.",a language class,past,sad,long,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00192,en,"We got stuck in traffic and missed the opening act, but we still danced all night.",a concert,mishap,happy,long,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00193,en,We’ll walk into the reunion next week and pretend we remember everyone’s names.,a school reunion,future,embarrassed,long,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00194,en,My sister texted that her language class spent ten minutes arguing over how to say squirrel.,a language class,speech,amused,long,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00195,en,"The twins finally went down for a nap, so I can actually breathe again.",babysitting,moment,relieved,medium,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00196,en,We’re stuck behind a tractor because we took the scenic route.,a road trip,past,amused,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00197,en,I'm going to sit alone at my birthday dinner next week because no one replied.,a birthday,future,sad,medium,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00198,en,"I overwatered my basil plant again, and now it's doing a dramatic little swoon.",gardening,mishap,amused,medium,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00199,en,"We forgot the cake, so the whole surprise fell flat.",a surprise party,mishap,sad,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00200,en,"We got to the museum early, so we scored the front row.",a museum visit,past,happy,short,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00201,en,My sister texted me that she lost her wallet on the bus and can't stop crying.,a lost wallet,speech,sad,long,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00202,en,I spent twenty minutes wrestling with the hose again and now my knees are soaked.,gardening,moment,annoyed,long,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00203,en,I stood in the cereal aisle for ten minutes and then just put the box back on the shelf.,shopping,moment,sad,long,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00204,en,"Thank god, we’re going to sort the whole birthday out next week and not scramble the day before.",a birthday,future,relieved,long,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00205,en,I told my friend the trail had a waterfall at the end.,a hiking trail,speech,happy,medium,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00206,en,"We burned the garlic earlier, so now we're calling it ""roasted flavor.",cooking,past,amused,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00207,en,We're going to have this whole place packed and labeled by next weekend.,moving house,future,proud,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00208,en,My sister keeps touching the back of her new bob and grinning at her reflection.,a haircut,moment,happy,medium,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00209,en,I'm going to hang a big framed photo of my dog right above my desk next week.,the office,future,happy,long,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00210,en,My sister texted that Dad tried to pay the electric bill with a coupon.,paying the bills,speech,amused,short,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00211,en,"I finally beat that boss because I grinded levels all morning, so I can relax now.",video games,past,relieved,long,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00212,en,I dropped a box of dishes in front of the new neighbors.,moving house,moment,embarrassed,short,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00213,en,I'm going to have to speak French in class next week and I'll probably butcher every word.,a language class,future,embarrassed,medium,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00214,en,I sat in the parking lot after the appointment.,a doctor's visit,moment,sad,short,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00215,en,We’re going to have to hide the good silver before next week’s family dinner.,a family dinner,future,amused,medium,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00216,en,"The cake collapsed, but my sister just laughed.",a wedding,mishap,relieved,short,"about someone close (a relative, a friend, a colleague)",deepseek-v4.1-flash:cloud
+ai-en-00217,en,I'm going to sleep so well next week once he moves out and takes that racket with him.,a noisy flatmate,future,relieved,long,first person (I),deepseek-v4.1-flash:cloud
+ai-en-00218,en,We're going to walk into that interview tomorrow and show them exactly why they'd be lucky to have us.,a job interview,future,proud,long,first person plural (we),deepseek-v4.1-flash:cloud
+ai-en-00219,en,I finally found the last box of my kid's cereal and grabbed it.,shopping,moment,relieved,medium,first person (I),deepseek-v4.1-flash:cloud
+ai-fr-00000,fr,"On a trouvé une place à l'ombre, du coup on est bien installés.",des vacances à la plage,past,soulagé,short,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00001,fr,Il a tellement aimé la balade qu'il veut y retourner demain.,une randonnée,past,content,short,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00002,fr,"J'ai monté la côte jusqu'au col sans m'arrêter une seule fois, et là je regarde la vallée en reprenant mon souffle.",une randonnée,moment,fier,long,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00003,fr,"Ça me serre le cœur de voir ma sœur ranger ses affaires de plage sans même un mot, alors qu'on devait rester jusqu'à dimanche.",des vacances à la plage,moment,triste,long,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00004,fr,"J'ai enfin passé le code et je suis ressorti de l'auto-école avec le sourire, la paperasse dans une main et mon vieux stylo dans l'autre.",l'auto-école,moment,soulagé,long,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00005,fr,"On a enfin fini de ranger l'appartement, on peut souffler devant une table vide.",le ménage,moment,soulagé,medium,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00006,fr,Elle a soupiré en disant que son vol était encore retardé et qu'elle ne rentrerait pas ce soir.,un vol retardé,speech,triste,medium,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00007,fr,On a dit qu’on avait mal calculé et qu’on visiterait le musée un autre jour.,la visite d'un musée,speech,gêné,medium,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00008,fr,Mon collègue a passé vingt minutes à chercher ses lunettes alors qu'elles étaient sur son front.,le bureau,moment,amusé,long,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00009,fr,J'ai voulu dégager le ballon et je l'ai envoyé dans notre propre but.,un match de foot,mishap,gêné,short,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00010,fr,Ma sœur est ressortie du salon avec une coupe tellement de travers qu'elle a fondu en larmes devant le miroir.,une coupe de cheveux ratée,mishap,triste,long,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00011,fr,"Je vais enfin regarder ce match tranquillement, sans stress.",un match de foot,future,soulagé,short,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00012,fr,"On s'est dit qu'on irait tous ensemble à la fête de l'école samedi, et on a déjà réservé les places pour le spectacle.",l'école,speech,content,long,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00013,fr,"Mon frère a oublié les cartons dans la cour, parce qu'il a dû partir en urgence.",un déménagement,past,gêné,short,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00014,fr,"On a raté le début du concert parce qu'on s'est trompés de salle, et maintenant on entend juste les rappels à travers la porte.",un concert,past,amusé,medium,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00015,fr,"Je viens de retrouver trois mugs identiques dans un carton étiqueté cuisine, et je souris tout seul devant le tas.",un déménagement,moment,amusé,medium,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00016,fr,"J'ai réussi à colmater la fuite sous l'évier avant que ton père rentre, et franchement, je l'ai bien mérité, mon café.",une fuite d'eau,moment,fier,long,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00017,fr,On a rigolé quand elle nous a annoncé que l'école fermait pour cause de neige.,l'école,speech,amusé,medium,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00018,fr,Mon meilleur ami va déménager à Lyon le mois prochain et ça me serre déjà le cœur.,un déménagement,future,triste,medium,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00019,fr,"Mon frère m'a dit qu'il avait retrouvé son vélo, ouf, on peut enfin respirer.",une balade à vélo,speech,soulagé,medium,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00020,fr,Elle m'a écrit que sa dent ne lui faisait plus mal.,un rendez-vous chez le dentiste,speech,soulagé,short,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00021,fr,On nous a annoncé qu'on avait retrouvé ton portefeuille.,un portefeuille perdu,speech,content,short,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00022,fr,Ma sœur va enfin faire soigner cette dent qui la gêne.,un rendez-vous chez le dentiste,future,content,short,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00023,fr,J'ai dit que j'avais enfin trouvé mon bonheur en ligne.,les achats en ligne,speech,content,short,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00024,fr,"La semaine prochaine, je vais monter ma tente tout seul comme un grand, et elle tiendra debout sans l'aide de personne.",le camping,future,fier,long,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00025,fr,Ma sœur m'a annoncé qu'elle a enfin trouvé un coiffeur qui comprend ses cheveux.,le coiffeur,speech,content,medium,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00026,fr,J'ai réussi à souffler les bougies du gâteau que j'avais préparé moi-même avant que ma fille n'arrive dans la cuisine.,un anniversaire,moment,fier,long,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00027,fr,"Mon frère va encore rater son code la semaine prochaine, ça m'énerve.",l'auto-école,future,agacé,short,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00029,fr,J'ai regardé par la fenêtre et j'ai dit à ma sœur qu'on allait faire un bonhomme de neige.,un matin de neige,speech,content,medium,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00030,fr,On a annoncé qu'on avait enfin réussi nos tomates.,le jardinage,speech,fier,short,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00031,fr,Il a annulé son rendez-vous chez le dentiste parce qu'il n'a plus les moyens de payer.,un rendez-vous chez le dentiste,past,triste,medium,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00032,fr,"Elle a attrapé une méduse mais le lifeguard l'a rassurée, ouf.",des vacances à la plage,mishap,soulagé,short,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00033,fr,Mon frère a rigolé en disant que son téléphone avait rendu l'âme.,un téléphone qui tombe en panne,speech,amusé,short,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00034,fr,"Mon frère a dit qu'il avait enfin réussi à avoir les places, ouf.",un concert,speech,soulagé,medium,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00035,fr,Je lui ai avoué en baissant les yeux que j'avais inondé le couloir.,une fuite d'eau,speech,gêné,medium,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00037,fr,"On a encore raté le créneau, faut tout recommencer.",l'auto-école,moment,triste,short,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00038,fr,Ma sœur m'a avoué qu'elle avait perdu son portefeuille avec toutes ses photos dedans.,un portefeuille perdu,speech,triste,long,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00039,fr,Mon frère a préparé un dîner aux chandelles et elle a dit oui.,un rendez-vous amoureux,moment,fier,short,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00040,fr,Je regarde mon panier vide depuis vingt minutes.,les achats en ligne,moment,triste,short,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00041,fr,"Mon coloc va encore mettre sa musique à fond demain soir, je vais péter un câble.",un colocataire bruyant,future,agacé,medium,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00042,fr,Il m'a avoué qu'il avait complètement oublié l'anniversaire de sa sœur.,un anniversaire,speech,gêné,short,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00043,fr,On a laissé les plants dehors sans les couvrir et la gelée a tout brûlé pendant la nuit.,le jardinage,mishap,triste,long,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00044,fr,"On a enfin fini ce niveau difficile parce qu'on s'est entraidés pendant deux heures, et là on savoure.",les jeux vidéo,past,content,long,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00045,fr,"On s'est trompés de jour, et maintenant on repart avec la carte.",un rendez-vous chez le dentiste,mishap,agacé,short,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00046,fr,Je sors du coiffeur avec une coupe qui ne me va pas du tout parce que la coiffeuse s'est trompée.,le coiffeur,past,triste,medium,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00047,fr,On nous a annoncé qu'on a gagné le concours de cuisine.,la cuisine,speech,fier,short,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00048,fr,"J'ai enfin fini de désherber, mes tomates respirent.",le jardinage,moment,soulagé,short,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00049,fr,"La semaine prochaine, on va devoir retourner à l'auto-école et ça me pèse déjà.",l'auto-école,future,triste,medium,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00050,fr,"J'ai retrouvé mon portefeuille dans le frigo, à côté du beurre.",un portefeuille perdu,moment,amusé,short,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00051,fr,Je lui ai écrit que nos vacances à la plage étaient finies et que je regardais déjà les photos avec un pincement au cœur.,des vacances à la plage,speech,triste,long,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00052,fr,"Demain on va chez la coiffeuse pour rattraper ma coupe ratée, ça va être folklorique.",une coupe de cheveux ratée,future,amusé,medium,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00053,fr,Je vais lui préparer un gâteau surprise pour son anniversaire samedi.,un anniversaire,future,content,short,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00054,fr,"On va enfin boucler les factures du projet la semaine prochaine, et ça fait vraiment du bien de voir le bout du tunnel.",les factures,future,content,long,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00055,fr,"On a oublié la liste à la maison, donc on est bons pour refaire le tour des rayons avec la caisse qui nous attend.",les courses,mishap,gêné,long,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00056,fr,Ma sœur a annoncé à toute la tablée qu'elle avait guidé sa classe au musée sans consulter ses fiches une seule fois.,la visite d'un musée,speech,fier,long,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00057,fr,On va enfin pouvoir partir en randonnée la semaine prochaine maintenant que la météo s'est calmée et qu'on a trouvé un créneau.,une randonnée,future,soulagé,long,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00058,fr,Je vais encore devoir supporter tante Michèle qui va me resservir trois fois du gratin.,un repas de famille,future,amusé,medium,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00059,fr,"J'ai arrosé les tomates avec du désherbant, donc je vais devoir tout replanter devant les voisins.",le jardinage,mishap,gêné,medium,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00060,fr,On va devoir dire adieu au voisin demain.,un voisin,future,triste,short,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00061,fr,"J'attends l'addition depuis vingt minutes, ça commence à faire long.",un restaurant,moment,agacé,short,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00062,fr,"Mon frère s'est endormi sous le casque et le coiffeur lui a raté la nuque, du coup je rigole encore en le voyant.",le coiffeur,mishap,content,long,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00063,fr,Je dois annuler le baby-sitting parce que j'ai oublié de prévenir les parents.,le baby-sitting,past,gêné,short,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00064,fr,"Je vais enfin arrêter de me relever la nuit pour grignoter, ça me pèse trop.",un grignotage de nuit,future,soulagé,medium,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00065,fr,Je vais enfin me réveiller sous la neige demain matin.,un matin de neige,future,content,short,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00066,fr,J'ai dit à l'auto-école que ça fait trois fois qu'ils me posent un lapin.,l'auto-école,speech,agacé,short,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00067,fr,"Je respire enfin parce que le colis commandé la semaine dernière vient d’arriver intact, alors que je le croyais perdu.",les achats en ligne,past,soulagé,long,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00068,fr,"On a enfin posé les sacs, la voiture est vide.",les courses,moment,soulagé,short,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00069,fr,Mon frère m'a avoué qu'il ne viendrait plus camper avec nous cet été.,le camping,speech,triste,medium,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00070,fr,"J'ai calé trois fois au feu devant le moniteur, j'avais chaud partout.",l'auto-école,moment,gêné,short,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00071,fr,Nous avons réussi le gâteau du premier coup puisque nous avons suivi la recette.,la préparation d'un gâteau,past,fier,short,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00072,fr,"J'ai renversé mon café sur le clavier, mais j'ai réussi à tout sauver avant que ça grille, et franchement, je me suis surpris.",le bureau,mishap,fier,long,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00073,fr,"On a renversé la carafe sur la nappe, du coup tout le monde nous regarde.",un restaurant,mishap,gêné,medium,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00074,fr,"Il a encore grignoté cette nuit, alors le chat a vomi sur le canapé.",un grignotage de nuit,mishap,agacé,short,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00075,fr,"On a laissé le chien seul et il a mangé le canapé, mais au moins on rit enfin.",un animal de compagnie,mishap,content,short,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00076,fr,Mon frère va encore me laisser tout le bêchage du potager.,le jardinage,future,agacé,short,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00077,fr,"Comme elle a oublié de payer la facture, sa maison est dans le noir et elle cherche ses bougies à tâtons en riant.",une coupure de courant,past,amusé,long,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00078,fr,Je suis rentré du boulot à vélo sous le soleil.,une balade à vélo,moment,content,short,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00079,fr,Il a encore paumé son portefeuille donc je dois lui avancer l'argent.,un portefeuille perdu,mishap,agacé,short,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00080,fr,"On a dû rebrousser chemin parce que le sentier était barré, et maintenant on poireaute au parking.",une randonnée,past,agacé,medium,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00081,fr,"J'ai encore appelé le service client qui m'a dit que ma facture serait corrigée sous quarante-huit heures, ça fait trois semaines.",les factures,speech,agacé,long,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00082,fr,Mon frère va enfin faire ses courses tout seul la semaine prochaine et je suis drôlement content de le voir se débrouiller.,les courses,future,fier,medium,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00083,fr,"La voiture cale encore, on est bons pour attendre la dépanneuse.",une voiture en panne,mishap,agacé,short,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00084,fr,"Comme j'avais repéré le restaurant et prévenu tout le monde en douce, sa tête quand il est entré valait chaque heure passée à mentir.",une fête surprise,past,fier,long,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00085,fr,"On va peut-être éviter le vélo, je ne sais pas trop pédaler.",une balade à vélo,future,gêné,short,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00086,fr,Je dois encore sortir le chien parce qu'il a pissé partout sur le tapis tout à l'heure.,un animal de compagnie,past,agacé,medium,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00087,fr,"Je vais devoir annuler le resto avec mon frère, j'ai honte.",un restaurant,future,gêné,short,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00088,fr,"On s'est plantés dans les comptes, donc on paie les factures en retard.",les factures,past,amusé,short,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00089,fr,Je suis bloqué à l'hôtel parce que j'ai paumé mes clés de voiture sur la plage.,des vacances à la plage,past,agacé,short,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00090,fr,"Mon frère a encore oublié sa carte, donc on poireaute devant l'entrée de la salle de sport comme des idiots.",la salle de sport,mishap,agacé,long,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00091,fr,"On va enfin pouvoir souffler, le match est reporté à la semaine prochaine.",un match de foot,future,soulagé,short,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00092,fr,On s'est écrit qu'on avait trouvé la baby-sitter parfaite.,le baby-sitting,speech,content,short,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00093,fr,"On peut se lâcher sur le fromage ce soir, puisque le dîner d'hier s'est bien passé.",un grignotage de nuit,past,soulagé,medium,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00094,fr,Mon frère a lâché la barre et s’est retrouvé à plat ventre sur le tapis.,la salle de sport,mishap,amusé,short,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00095,fr,Je descends les cartons un par un en évitant de regarder les murs vides.,un déménagement,moment,triste,short,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00096,fr,Mon frère a descendu le pot de Nutella et trois tartines sans que personne l'entende.,un grignotage de nuit,moment,fier,medium,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00097,fr,"Il a glissé sur le perron enneigé et s'est étalé de tout son long, mais il s'est relevé en riant.",un matin de neige,mishap,fier,medium,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00098,fr,Mon frère a encore laissé traîner ses factures sur la table et il faut toujours que ce soit moi qui les range.,les factures,moment,agacé,long,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00099,fr,"Mon frère est enfin sorti de chez le coiffeur, sa coupe ratée ne se voit presque plus.",le coiffeur,moment,soulagé,medium,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00100,fr,J'ai enfin réussi à faire briller toute la cuisine et le sol ne colle plus du tout sous mes pieds.,le ménage,moment,fier,long,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00101,fr,"La semaine prochaine, on va devoir visiter ce musée avec mes parents, et je sens déjà que je vais avoir honte en expliquant les œuvres.",la visite d'un musée,future,gêné,long,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00102,fr,On nous a encore annoncé un mariage et ma femme m'a dit qu'on était obligés d'y aller.,un mariage,speech,agacé,long,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00103,fr,On a dû pousser la voiture jusqu'à la station parce qu'on avait oublié de faire le plein.,une voiture en panne,past,gêné,medium,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00104,fr,Mon frère m'a écrit que le concert était annulé et qu'il avait déjà revendu son billet.,un concert,speech,triste,medium,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00105,fr,Je lui ai dit que je serais là pour souffler les bougies avec elle.,un anniversaire,speech,content,medium,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00106,fr,Mon frère a rigolé en disant qu'il avait encore raté son créneau à l'auto-école.,l'auto-école,speech,amusé,medium,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00107,fr,On s'est dit qu'on n'aurait pas dû finir le paquet de biscuits à deux heures du matin.,un grignotage de nuit,speech,triste,medium,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00108,fr,Mon frère est sorti du salon avec une coupe qui ne lui va pas du tout.,le coiffeur,moment,gêné,short,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00109,fr,"Mon frère a oublié la moitié de la liste mais il a retrouvé son portefeuille, ouf.",les courses,mishap,soulagé,medium,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00110,fr,"Mon frère a raté la dinde, alors on a tous fini au resto et c'était génial.",un repas de famille,mishap,content,medium,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00111,fr,Finalement le médecin a juste dit que c'était une angine et qu'il pouvait retourner à l'école dès demain.,un rendez-vous chez le médecin,moment,soulagé,long,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00112,fr,Ma sœur va garder les jumeaux tout le week-end et elle a déjà préparé tout un planning d'activités.,le baby-sitting,future,fier,long,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00113,fr,Mon petit frère a enfin battu son record à son jeu préféré.,les jeux vidéo,moment,content,medium,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00114,fr,Mon coloc a mis la musique à fond pour faire le ménage et franchement ça me fait rire.,un colocataire bruyant,moment,content,medium,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00115,fr,Je suis couvert de boue parce que j'ai glissé dans le potager en voulant rattraper ma brouette.,le jardinage,past,amusé,long,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00116,fr,"Comme on s'est endormis chez ma sœur après le repas, sa tondeuse nous a laissé une coupe bizarre qu'on ose à peine montrer dehors.",une coupe de cheveux ratée,past,gêné,long,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00117,fr,"Mon collègue a encore poireauté vingt minutes sous la pluie parce que le bus de 7 h 12 est passé sans s'arrêter, soi-disant complet.",les transports en commun,moment,agacé,long,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00119,fr,Mon frère va nous traîner dans une rando de huit heures dimanche et j'ai déjà mal aux jambes rien qu'à y penser.,une randonnée,future,gêné,long,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00120,fr,"Mon frère a retrouvé son portefeuille dans le frigo, entre les yaourts.",un portefeuille perdu,moment,amusé,short,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00121,fr,"Je leur ai annoncé la tête haute que ma coupe ratée, c'était moi qui l'avais choisie.",une coupe de cheveux ratée,speech,fier,medium,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00122,fr,"On a voulu ressortir les vieilles photos de classe et le projecteur a lâché, alors on a fini la soirée à rigoler dans le noir.",des retrouvailles d'anciens élèves,mishap,fier,long,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00123,fr,On a réussi à tout caser dans le coffre du premier coup.,les courses,moment,fier,short,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00124,fr,Je n'ai pas pu accompagner ma mère chez le médecin ce matin et j'ai passé la journée avec cette boule au ventre.,un rendez-vous chez le médecin,moment,triste,long,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00125,fr,"J'ai arraché par erreur les plants de tomates que ma voisine m'avait donnés, je n'ose plus la regarder.",le jardinage,moment,gêné,long,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00126,fr,Mon frère a dit qu'il ne viendrait plus jamais dans ce restaurant.,un restaurant,speech,agacé,short,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00127,fr,"J'ai réussi à me garer du premier coup, sans toucher le trottoir.",un trajet en voiture,moment,fier,short,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00128,fr,Je vais devoir attendre la semaine prochaine pour ma commande.,les achats en ligne,future,triste,short,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00129,fr,"La semaine prochaine, on va enfin monter ces trois bacs surélevés pour nos légumes.",le jardinage,future,fier,medium,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00130,fr,Je dois passer chez lui parce qu'il a oublié la moitié des courses sur le comptoir.,les courses,past,gêné,short,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00131,fr,"Comme on a rempli le frigo ce matin, on n'a plus besoin de se presser pour les courses.",les courses,past,content,medium,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00132,fr,Je lui ai écrit que je ne viendrai pas à son mariage parce que ça me fait trop mal.,un mariage,speech,triste,medium,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00133,fr,On a encore le moniteur collé à la vitre parce qu'on a oublié de desserrer le frein à main.,l'auto-école,past,amusé,medium,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00134,fr,"Ma sœur m'a envoyé une photo de sa fille endormie sur le canapé après le baby-sitting, et ça m'a fait sourire toute la soirée.",le baby-sitting,moment,content,long,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00135,fr,"Le guide s'est trompé de salle, du coup je découvre les réserves.",la visite d'un musée,mishap,content,short,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00136,fr,"Mon ami a raté son examen de français parce qu'il s'est trompé de salle, et il doit repasser l'année prochaine.",un cours de langue,mishap,triste,long,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00137,fr,"Mon frère va encore passer la soirée à mourir vingt fois dans son jeu, et je vais devoir écouter chaque lamentation en riant.",les jeux vidéo,future,amusé,long,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00138,fr,On lui a dit qu'on n'en pouvait plus du bruit.,un colocataire bruyant,speech,triste,short,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00139,fr,"Je me suis enfin assis, la pluie s'est arrêtée d'un coup.",la météo,past,soulagé,short,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00140,fr,"J'avais réservé pour deux au restaurant, mais ma table est partie donc je mange seul.",un restaurant,mishap,triste,medium,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00141,fr,"On est encore bloqués dans le bus parce que celui de 7 h est tombé en panne, et on poireaute depuis vingt minutes.",les transports en commun,past,agacé,long,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00142,fr,On a raté le bus du coup on marche en rigolant.,les transports en commun,mishap,amusé,short,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00143,fr,"Il a décroché son entretien parce qu'il a passé des heures à peaufiner son CV hier soir, et franchement, ça valait le coup.",un entretien d'embauche,past,fier,long,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00144,fr,Je lui ai annoncé tout sourire que j'avais enfin eu mon permis après trois mois à l'auto-école.,l'auto-école,speech,content,long,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00145,fr,Mon frère m’a annoncé qu’il avait marqué le but décisif et il avait du mal à tenir en place.,un match de foot,speech,content,long,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00146,fr,"Vivement samedi, on va enfin tester ce petit resto.",un rendez-vous amoureux,future,content,short,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00147,fr,Je vais encore passer le repas de famille à côté de ma sœur sans oser lui parler.,un repas de famille,future,triste,medium,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00149,fr,"On va encore poireauter une heure chez le médecin pour trois minutes de consultation, franchement.",un rendez-vous chez le médecin,future,agacé,medium,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00150,fr,"Je me suis fait un chocolat chaud après avoir dégagé l'allée à la pelle, et la neige tombait encore doucement.",un matin de neige,moment,content,long,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00151,fr,On a fini la balade avec la chaîne dans les rayons.,une balade à vélo,moment,amusé,short,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00152,fr,Mon frère va adopter un berger australien et il sera le premier à lui apprendre tous les tours.,un animal de compagnie,future,fier,medium,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00153,fr,"La voiture de mon frère a calé, alors je l’ai remorquée moi-même.",une voiture en panne,mishap,fier,short,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00154,fr,Je vais devoir retourner à l'auto-école la semaine prochaine parce que j'ai encore raté mon créneau.,l'auto-école,future,gêné,medium,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00155,fr,"J'ai dû courir après mon bus ce matin, alors forcément, j'arrive chez le médecin avec une tension à faire peur.",un rendez-vous chez le médecin,past,amusé,long,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00156,fr,J'ai mal fermé le robinet donc j'ai inondé le voisin du dessous.,une fuite d'eau,mishap,gêné,medium,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00157,fr,"Je vais devoir demander à ma sœur de garder les enfants samedi, mais ça m'embête de lui imposer ça encore une fois.",le baby-sitting,future,gêné,long,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00158,fr,"On va enfin organiser la fête surprise pour ma sœur samedi, et tout est calé donc je respire.",une fête surprise,future,soulagé,long,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00159,fr,"On a enfin pu souffler après la séance, quand le coach a dit qu'on avait fini par les abdos.",la salle de sport,moment,soulagé,long,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00160,fr,Je viens de voir mon voisin en pyjama sortir chercher son journal.,un voisin,moment,amusé,short,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00161,fr,"Je vais devoir emprunter le portable de ma sœur pour l'appeler, parce que le mien va sûrement rendre l'âme avant la fin de la semaine.",un téléphone qui tombe en panne,future,gêné,long,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00162,fr,"Je sors de chez le dentiste avec la moitié de la bouche endormie, et je souris tout seul comme un idiot.",un rendez-vous chez le dentiste,moment,amusé,medium,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00163,fr,J'ai dit à mon voisin d'arrêter de déneiger devant chez moi à six heures du matin.,un matin de neige,speech,agacé,medium,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00164,fr,Mon frère est coincé sur la route parce qu'il a encore oublié de prendre de l'essence.,une voiture en panne,past,agacé,short,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00165,fr,"Comme il a plu toute la nuit, on a dû rentrer la tente trempée, mais là elle rit en la suspendant au balcon.",le camping,past,content,long,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00166,fr,Mon frère a annoncé qu'il s'est enfin trouvé un coiffeur qui le comprend.,le coiffeur,speech,fier,short,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00167,fr,J'ai annoncé à mon frère que j'avais réussi le gâteau du dimanche et il m'a dit qu'il en reprendrait bien une part.,un repas de famille,speech,fier,long,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00168,fr,On nous a encore collé le repas de famille dimanche.,un repas de famille,speech,agacé,short,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00169,fr,"Mon frère est bien rentré de la plage, il a pu se reposer après avoir attrapé un coup de soleil.",des vacances à la plage,past,soulagé,medium,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00170,fr,On a annulé le gâteau parce que mamie est tombée ce matin.,un anniversaire,past,triste,short,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00171,fr,"Il a fallu trois heures à mon frère pour rentrer, et il n'a même pas appelé.",un trajet en voiture,moment,triste,medium,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00172,fr,"J'ai renversé mon café sur le rapport du patron, donc je planque les taches sous mon clavier.",le bureau,past,gêné,medium,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00173,fr,Mon frère va encore nous bassiner avec son concert.,un concert,future,agacé,short,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00174,fr,Elle a enfin réussi à rentrer chez elle après sa crevaison.,une balade à vélo,moment,soulagé,short,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00175,fr,Je vais devoir annuler le camping du week-end prochain et laisser la tente fermée au garage.,le camping,future,triste,long,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00176,fr,Mon frère m'a dit qu'il en a marre de cette fuite d'eau qui dure depuis trois jours.,une fuite d'eau,speech,agacé,medium,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00177,fr,"On a survécu au dentiste, même si nous avons failli arracher le fauteuil quand la fraise s'est mise à siffler.",un rendez-vous chez le dentiste,moment,amusé,long,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00178,fr,"J'ai renversé mon café sur la maquette, mais j'ai réussi à la réparer avant que le guide ne revienne.",la visite d'un musée,mishap,fier,long,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00179,fr,"Il est rentré du sport sans douleur, ça faisait des semaines qu'on attendait ça.",la salle de sport,past,soulagé,short,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00180,fr,Je vais enfin récupérer ma voiture chez le garagiste demain.,une voiture en panne,future,soulagé,short,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00181,fr,"Je me suis retrouvé à expliquer les fractions à mon fils avec des parts de pizza imaginaires, et maintenant j'ai faim.",l'école,moment,amusé,long,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00182,fr,"On a monté la tente du premier coup, sans se disputer.",le camping,moment,fier,short,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00183,fr,Je vais tenter un risotto aux champignons dimanche et je sens déjà que mon placard va me jouer des tours.,la cuisine,future,amusé,long,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00184,fr,On a eu le bus juste à temps et on a pu s'asseoir enfin.,les transports en commun,moment,soulagé,medium,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00185,fr,Le chien de mon voisin s'est échappé dans le quartier et j'ai pu le rattraper avant qu'il traverse la route.,un voisin,mishap,soulagé,long,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00186,fr,On a réussi à rentrer avant que la pluie tombe.,la météo,moment,fier,short,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00187,fr,"Mon frère a encore oublié la crème solaire à l'hôtel, alors on doit se taper la plage en plein cagnard sans rien.",des vacances à la plage,past,agacé,long,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00188,fr,"On a perdu le petit au parc, donc on l'a retrouvé et on a tenu la promesse faite aux parents.",le baby-sitting,mishap,fier,long,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00189,fr,"J'ai paumé ma liste, alors je rentre avec trois kilos de clémentines.",les courses,mishap,amusé,short,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00190,fr,J'ai crevé à dix bornes de chez moi et j'ai dû rentrer à pied sous la pluie.,une balade à vélo,mishap,triste,medium,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00191,fr,"Je sors enfin sur le balcon respirer l'air frais après cette averse, et ça sent bon la terre mouillée.",la météo,moment,content,medium,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00192,fr,Je lui ai écrit que je ne viendrai pas samedi.,un rendez-vous amoureux,speech,triste,short,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00193,fr,On a appris que personne ne viendrait à son anniversaire et on s'est dit qu'on aurait dû s'en douter.,un anniversaire,speech,triste,medium,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00194,fr,Mon frère m'a avoué en regardant ses pieds qu'il avait encore séché les cours cet après-midi.,l'école,speech,gêné,long,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00195,fr,"J'ai engueulé le médecin qui me parlait mal, donc il m'a mis dehors et je suis parti la tête haute.",un rendez-vous chez le médecin,mishap,fier,long,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00196,fr,On a annoncé que notre classe avait décroché la visite du musée.,la visite d'un musée,speech,fier,short,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00197,fr,Ma sœur m'a écrit que la fuite avait encore empiré ce matin.,une fuite d'eau,speech,triste,short,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00198,fr,Je viens encore de marcher sur un grain de sable et ma serviette est déjà trempée par les éclaboussures du gamin d'à côté.,des vacances à la plage,moment,agacé,long,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00199,fr,"On a renversé la pièce montée sur la robe de la mariée, alors on s'est tous mis à regarder nos chaussures.",un mariage,mishap,gêné,medium,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00200,fr,Mon voisin a réussi ses tomates grâce aux graines que je lui ai données au printemps.,le jardinage,past,fier,long,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00201,fr,"La semaine prochaine, on va enfin présenter notre plan de nouvelles lignes de bus et je peux vous dire qu’on a bossé comme des chefs.",les transports en commun,future,fier,long,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00202,fr,Il a encore oublié de fermer le robinet et maintenant tout le couloir est inondé.,une fuite d'eau,past,agacé,short,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00203,fr,"On a réglé toutes les factures ce matin, du coup on respire enfin et on va pouvoir se faire un bon resto ce soir.",les factures,past,content,long,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00204,fr,"J'ai dit ouf, la neige a enfin arrêté.",un matin de neige,speech,soulagé,short,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00205,fr,"J'ai réussi à récupérer toutes mes photos préférées sur mon vieux téléphone qui ne s'allumait plus, juste avant que le réparateur ne le jette.",un téléphone qui tombe en panne,moment,fier,long,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00206,fr,Ma sœur a soupiré qu'elle ferait le ménage plus tard.,le ménage,speech,triste,short,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00207,fr,On a voulu lui faire la morale sur le bruit et maintenant il répète chaque mot qu’on dit.,un colocataire bruyant,mishap,amusé,long,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00208,fr,"Comme il avait oublié sa liste, il a ramené trois paquets de pâtes et du dentifrice, et il en est très content.",les courses,past,fier,short,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00209,fr,"Comme on avait révisé tous les deux hier soir, on a répondu à toutes leurs questions sans hésiter une seconde.",un entretien d'embauche,past,fier,long,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00210,fr,"Mon frère va enfin passer son code la semaine prochaine, ça y est.",l'auto-école,future,soulagé,short,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00212,fr,"On s'est retrouvés devant le frigo vide à deux heures du matin, sans rien dire.",un grignotage de nuit,moment,triste,medium,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00213,fr,"Je vais enfin tester la salle de sport demain, avec un peu de chance je ne me ridiculise pas trop.",la salle de sport,future,amusé,medium,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00214,fr,On s'est dit qu'on ferait une soirée jeux vidéo et on a enchaîné jusqu'à trois heures du matin.,les jeux vidéo,speech,content,medium,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00215,fr,"On a complètement raté la surprise, mais quand elle est arrivée en riant, on a tous soufflé d'un coup.",une fête surprise,mishap,soulagé,medium,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00216,fr,J'ai réussi à décaler mon rendez-vous chez le médecin parce que j'avais déjà bouclé mon dossier ce matin.,un rendez-vous chez le médecin,past,fier,long,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00217,fr,On a appris par Mamie qu'il allait pleuvoir tout le week-end et ça nous a coupé les jambes.,la météo,speech,triste,medium,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00218,fr,Ma sœur m'a encore annoncé à la dernière minute qu'elle avait besoin de moi pour garder ses gosses samedi soir.,le baby-sitting,speech,agacé,long,"à propos d'un proche (famille, ami, collègue)",deepseek-v4.1-flash:cloud
+ai-fr-00219,fr,On a atteint le sommet et on a partagé le thermos de café face au panorama.,une randonnée,moment,content,medium,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00220,fr,"On va encore devoir recommencer ce foutu gâteau, génial.",la préparation d'un gâteau,future,agacé,short,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00221,fr,On va se retrouver avec dix paquets de chips.,les courses,future,amusé,short,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00222,fr,"On a raté le dernier métro, du coup on dort chez moi.",un concert,mishap,soulagé,medium,avec « on » ou « nous »,deepseek-v4.1-flash:cloud
+ai-fr-00223,fr,J'ai réparé la fuite du siphon tout seul et ça ne goutte plus.,une fuite d'eau,moment,fier,short,à la première personne (je),deepseek-v4.1-flash:cloud
+ai-fr-00224,fr,"Mon voisin a encore laissé son chien aboyer toute la nuit, du coup je suis crevé.",un voisin,mishap,agacé,medium,à la première personne (je),deepseek-v4.1-flash:cloud

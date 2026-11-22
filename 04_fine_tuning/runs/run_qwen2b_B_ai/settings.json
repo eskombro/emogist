@@ -1,0 +1,11 @@
+{
+ "train_set": "B_ai",
+ "base_model": "unsloth/Qwen3.5-2B",
+ "epochs": 3,
+ "batch_size": 4,
+ "learning_rate": 0.0002,
+ "lora_rank": 16,
+ "max_length": 256,
+ "seed": 3407,
+ "system_prompt": "Convert the sentence into a short emoji sentence that keeps its gist. Answer with emojis only."
+}

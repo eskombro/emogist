@@ -1,10 +1,13 @@
 """Format checks: hard validity rules (errors) and style conventions (warnings)."""
 
+import itertools
+
 import emoji
 
 VS16 = "️"  # variation selector: turns a symbol into its emoji form
 ZWJ = "‍"  # zero-width joiner: glues emojis into one (🧑‍💻 = 🧑 + ZWJ + 💻)
 KEYCAP = "⃣"  # combining keycap: turns a digit into an emoji (4 + VS16 + keycap = 4️⃣)
+MAX_REPEATS = 4  # a quantity can be shown by repetition (☕☕☕☕), but not endlessly
 
 
 def content_count(output: str) -> int:
@@ -47,10 +50,11 @@ def check_conventions(output: str) -> list[str]:
         warnings.append("repeated ➡️")
     if "  " in output:
         warnings.append("double space")
-    # Keycap digits (4️⃣0️⃣) and 🔟 are emojis, but they write the number instead of
-    # drawing it, which teaches a student to write numbers (and slip into plain digits).
-    if KEYCAP in output or "🔟" in output:
-        warnings.append("number written as keycap")
+    # Keycap numbers (3️⃣0️⃣) are allowed: ages, times or prices can't be drawn. Malformed
+    # ones (10️⃣, where the 1 is a plain digit) already fail check_validity.
+    found = [e["emoji"] for e in emoji.emoji_list(output)]
+    if any(len(list(run)) > MAX_REPEATS for _, run in itertools.groupby(found)):
+        warnings.append(f"emoji repeated more than {MAX_REPEATS} times")
     # A long sequence with no space at all means the groups weren't separated.
     if " " not in output and content_count(output) > 4:
         warnings.append("no group spaces")

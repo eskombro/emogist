@@ -1,0 +1,37 @@
+type,lang,sentence,emojis,source
+current,en,I forgot my keys and got locked out of my apartment.,🔑❌ 🚪🔒 😩,existing prompt
+current,en,My cat knocked my coffee off the table this morning.,🌅 🐈 ☕💥 😱,existing prompt
+current,en,We missed the last train and had to walk home in the rain.,🚆💨 🏃❌ ➡️ 🚶🌧️🏠,existing prompt
+current,en,I burned the pizza while watching a movie.,📺👀 ➡️ 🍕🔥🔥,existing prompt
+current,en,I fell asleep on the beach and got a terrible sunburn.,🏖️😴 ➡️ 🦞🔥 😭,existing prompt
+current,en,I drank four coffees and coded all night to fix that bug.,🧑‍💻 ☕☕☕☕ 🌙➡️☀️ 🐛✅ 😵‍💫,existing prompt
+current,fr,J'ai renversé du vin rouge sur ma chemise blanche à un mariage.,💒🍷 👕⚪ ➡️ 🔴 😱,existing prompt
+current,fr,J'ai lancé une nouvelle app mais personne ne l'utilise.,🧑‍💻 📲🆕🚀 ➡️ 👥❌ 😢,existing prompt
+current,fr,"Hier il a plu, donc aujourd'hui je prends mon parapluie.",⏪🌧️ ➡️ 🙋☂️,existing prompt
+current,fr,"J'ai mangé trop de fast-food, je vais être malade après.",🍔🍟🍔🍟 ⏩🤢,existing prompt
+current,fr,"J'ai mis 3 heures à me maquiller, et j'ai oublié mes chaussures.",💄⏳⏳⏳ ➡️ 👠❌ 🤦,existing prompt
+current,fr,"Un vieil homme m'a dit que j'avais l'air heureux, ça m'a touché.",👴💬🫵😊 🙋🥹,existing prompt
+vague,en,I don't know what to do about that.,,"Tatoeba (CK), CC BY 2.0 FR"
+vague,en,This makes me feel old.,👶➡️👴 🫠,"Tatoeba (Hybrid), CC BY 2.0 FR"
+vague,en,She refuses to believe him.,👨💬 👩🙉,"Tatoeba (AlanF_US), CC BY 2.0 FR"
+vague,en,I didn't know how I should answer.,,"Tatoeba (CM), CC BY 2.0 FR"
+speech,en,Boldi didn't lie to me when he said that he lived in a forest.,,"Tatoeba (Amastan), CC BY 2.0 FR"
+speech,en,You said you will not go out of the house.,🫵💬 🫵🚶❌⬅️🏠,"Hand written"
+speech,en,The client said she felt much better after the massage.,,"Tatoeba (terrynoti), CC BY 2.0 FR"
+speech,en,I could have told the man it was no use.,,"Tatoeba (CM), CC BY 2.0 FR"
+numbers,en,I spent three days in the hospital.,,"Tatoeba (CK), CC BY 2.0 FR"
+numbers,en,You are fifteen so you can't drink alcohol.,🎂1️⃣5️⃣ ➡️ 🍺❌🍷❌,"Hand written"
+numbers,en,I was only paid a measly two dollars.,,"Tatoeba (CM), CC BY 2.0 FR"
+numbers,en,I've only been here in Algeria for four months.,,"Tatoeba (Amastan), CC BY 2.0 FR"
+vague,fr,Je sais ce que je dis.,,"Tatoeba (Aiji), CC BY 2.0 FR"
+vague,fr,"Je suis mort de fatigue après mon travail.",👔👨‍💻 ➡️ 🥱😴,"Hand written"
+vague,fr,Je ne sais pas ce qu'elle veut.,,"Tatoeba (Julien_PDC), CC BY 2.0 FR"
+vague,fr,Ils ont senti le sens du vent.,,"Tatoeba (sacredceltic), CC BY 2.0 FR"
+speech,fr,Marie a dit qu'elle n'avait pas le temps.,,"Tatoeba (felix63), CC BY 2.0 FR"
+speech,fr,Elle m'a demandé si j'étais marié.,👩💬 🙋💍❓,"Tatoeba (Blabla), CC BY 2.0 FR"
+speech,fr,Elle m'évite depuis que je lui ai dit ses quatre vérités.,,"Tatoeba (Aiji), CC BY 2.0 FR"
+speech,fr,Je sais que c'est cet imbécile de Dan qui t'a dit ça.,,"Tatoeba (Amastan), CC BY 2.0 FR"
+numbers,fr,Je l'ai fait en deux minutes.,🙋⏱️2️⃣ ✅,"Tatoeba (Julien_PDC), CC BY 2.0 FR"
+numbers,fr,Le bus coûte 20 euros.,🚌 2️⃣0️⃣💶,"Hand written"
+numbers,fr,Cela fait maintenant 20 ans qu'il travaille dans cette société.,,"Tatoeba (Cocorico), CC BY 2.0 FR"
+numbers,fr,Nous formons un couple heureux en ménage depuis plus de vingt ans.,,"Tatoeba (sacredceltic), CC BY 2.0 FR"

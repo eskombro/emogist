@@ -19,3 +19,10 @@ outputs/
 .DS_Store
 .vscode/
 .idea/
+
+# Raw downloads (re-created by 03_dataset/fetch_real_sentences.py)
+03_dataset/raw/
+
+# Colab run archives: adapters are published on the Hub if useful
+04_fine_tuning/runs/*.zip
+04_fine_tuning/runs/*/adapter/

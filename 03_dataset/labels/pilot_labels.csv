@@ -1,0 +1,881 @@
+id,lang,source,sentence,emojis,status,attempts,teacher,prompt
+tatoeba-2718637,en,real,I guess I should've warned you about Tom.,🙋💬 🫵⚠️👨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8834378,en,real,I think Tom hates you.,🤔 🧑💬 🫵😠,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6241090,en,real,Both of my parents were born in Australia.,👨👩 👶🇦🇺,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8394593,en,real,I've been wanting to share my story.,🙋 📖💬,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-12215121,en,real,I can solve your problem.,🙋🔧 🫵❓ ➡️ ✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7186150,en,real,Tell Tom I'm sorry that I hurt him.,🫵💬➡️👨 🙋😔💔,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6341864,en,real,I knew we wouldn't be able to do that today.,🙋💭 🫱👥❌⏩ ✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2724128,en,real,His happiness lasted only a short time.,😊⏳ ➡️ 😢,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3410689,en,real,Tom came out of his room.,🚪➡️🧑,2 emojis,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6003669,en,real,I think all three of us know what needs to be done.,👥👥👥 🤔✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8255873,en,real,He wrote a really fantastic story in Berber.,👨✍️📖✨ 🗣️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-11886668,en,real,You can ask me questions about the homework.,🫵💬❓📚 🙋✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-5288749,en,real,"Get off my lawn, you young whippersnapper!",👴 🏠🌱 🫵👦 ➡️ 🚶❌ 😠,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3722778,en,real,"See, that's going to be a problem for me.",🫵💬 ➡️ 🙋😬,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-4360949,en,real,I really want to learn French.,🙋 🇫🇷📚 ❤️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-10077614,en,real,We put on our coats and hats.,🧥🧢 👫,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-10545546,en,real,"To tell the truth, I didn't solve this problem.",🙋💬 🧩❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7009626,en,real,"When the editor returned from lunch, he flew into a rage.",🍽️➡️👨‍💼 😡🤬,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-9419341,en,real,I'm not sure that Tom understood me.,🧑💬 🧑‍🦱❓🤔,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6263936,en,real,We want you to go to Boston.,🫵 ➡️ 🏙️🚶,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3168598,en,real,That was the last time I saw him.,👀👨 ➡️ ⏪🔚 😢,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3312445,en,real,We have the situation under control.,👥 🎛️✅ 😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3312695,en,real,We went to school together.,👦👧 🏫 ➡️ 👨👩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6249325,en,real,There's one more thing I want to do.,🙋 1️⃣➕ ✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-11392538,en,real,Ziri is a kind father.,👨‍👧💖,2 emojis,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3737029,en,real,I'm on the phone right now.,🙋 📞💬,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8553051,en,real,No one could tell me why that happened.,👥💬❓❌ 🤷,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-10042794,en,real,Tom said he hadn't seen anybody.,👨💬 👀👥❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6354029,en,real,Tom told me that he thought Mary was unemployed.,👨💬 👩💼❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-11584975,en,real,Matthew has nearly forgotten all about his encounter with Bigfoot.,👨🧠💨 🦶👣❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6227810,en,real,It's going to be very tough for me to do that if you don't help me.,🙋 🏔️😰 🫵🤝❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2334116,en,real,I hate that you have to leave.,🫵🚶 ➡️ 🙋😢,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6268295,en,real,"I did that yesterday, too.",🙋✅ ⏪📅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6243939,en,real,Tom said he didn't need to do that again.,👨💬 🙋🔁❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2821413,en,real,Tom decided to come with us.,🧑💬 🙋🙋‍♀️🙋‍♂️ ➡️ 🧑🚶✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2042642,en,real,"We often do what we have to do, not what we want to do.",👥 🛠️✅ ➡️ 🎯❌ 😔,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7735152,en,real,I haven't actually done anything illegal.,🙋 🚔❌ ✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-5741368,en,real,I can finally get married.,💍💒 🥹,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-4781201,en,real,Don't worry about us girls. We'll find something to do.,👭💬 🫵😟❌ ➡️ 👭🔍✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-5927056,en,real,He fell down the stairs.,🧍🪜⬇️ 💥😣,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8557667,en,real,Tom dragged himself out of bed and put on his clothes.,🛏️😴 ➡️ 🧍 ➡️ 👕👖,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-10771278,en,real,I've decided to grow out my bangs.,🙋💇 ✂️❌ ➡️ 💇‍♀️📏,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-9496241,en,real,Tom and his friends spent all morning sledding.,👦👥 🛷🛷 🌅➡️🕛 😄,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-11101815,en,real,Some bloke was sick down his shirt.,🤢🤮 👕,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-4889916,en,real,Tom says he doesn't mind.,👨💬 🫵🙂,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-1860380,en,real,Don't worry. I won't let anything stop me from finishing the job.,🙋💪 🚧❌ ➡️ ✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8340523,en,real,"If I fail this test, I'll get kicked out of school.",📝❌ ➡️ 🏫🚪❌ 😰,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2891206,en,real,Get Tom out of my sight.,🧑❌ 👀 ➡️ 🚪👋,ok,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-1026442,en,real,Tom didn't buy what I asked him to.,🙋💬🛒📋 ➡️ 👨🛒❌ 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-11753662,en,real,Edmundo got to his vehicle and entered it.,🚶➡️🚗 🚪➡️🙋,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6246764,en,real,I don't think I should really do that.,🙋🤔 🫵➡️🙋❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-5090034,en,real,Tom minded his own business.,👨 🤐 🙈 🙉,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7712685,en,real,I have three children to support.,👨👩👧👦👧👦 ➡️ 💰💪,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3732877,en,real,I think you've just made a big mistake.,🫵💬 🫵💥❌ 😬,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-9314656,en,real,I didn't get a good night's sleep.,🌙🛏️😴❌ 😩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3183877,en,real,I think Tom is vain.,🤔🧑💬 🪞👀,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-9480802,en,real,I'll get the work done in a week.,🙋💼 ⏩📅7️⃣ ✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8263767,en,real,My son is a Muslim.,👨‍👦 🕌,2 emojis,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7508614,en,real,I know that Tom didn't know you couldn't do that.,🙋🧠 👨❓ 🫵🙅❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-5641547,en,real,I'm pretty sure Tom will be hungry.,🤔🧑🍽️🍽️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-11603464,en,real,"If you think Tom's silence means that he agrees, you're mistaken.",🤐👨 ➡️ 👍❌ 🫵🤔,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-11650420,en,real,Lukas wants justice for his partner.,👨💬 ⚖️👫,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2541559,en,real,I put it back where it belonged.,🙋📦 ➡️ 🔙📍✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6347881,en,real,I'd like to buy a house in Boston.,🙋🏠🛒 📍🌆,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-4663828,en,real,Tom said he didn't need any more time.,👨💬 ⏱️❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-10179311,en,real,I'm going to hell for this.,🙋😈🔥⬇️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8319257,en,real,My grandson has been calling.,👦📞 👴😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3908607,en,real,Just don't tell them I sent you.,🤫 🫵💬 🗣️❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-10485343,en,real,Maybe we can try calling Tom again later.,🤔 📞👨 ⏩🔁,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6716085,en,real,I asked Tom to show us how to do that.,🙋💬🧑‍🦱 👀🫵👥 🛠️❓,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-9419032,en,real,"The first time that I saw Tom, I thought that he was a girl.",1️⃣👀👨 ➡️ 🙋🤔👧,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6343694,en,real,I wasn't convinced that was a good idea.,🙋 🤔❌ 💡👍,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2300065,en,real,I called in sick this morning.,🌅 🙋🤒 📞💬 ➡️ 🏠🛌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2214306,en,real,"Maybe she likes you, too.",👩❤️ 🫵❓,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2879046,en,real,She feared for her life.,👩 😱💀,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6353876,en,real,"Tom expected Mary to wink at him, but she didn't.",👨👀 👩😉❌ 😞,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6494001,en,real,"Tom and Mary didn't want to help us today, but they helped us anyway.",👨👩 🤝❌ 🌅 ➡️ 🤝✅ 😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-5189168,en,real,I used to read a lot more than I do now.,⏪📚📚📚 ➡️ ⏩📖🔽,several ⏪/⏩,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6272323,en,real,Tom asked Mary how she'd do that.,👨💬 👩❓ 🤔,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6438010,en,real,"If Tom won't go, I won't either.",👨🚶❌ ➡️ 🙋🚶❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3729423,en,real,"I could really make things hard for you, you know.",🙋💬 🫵😣😈,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7513381,en,real,I doubt that Tom has to do that by himself.,🤔 🧑💬 🧑‍🦱👤➡️🛠️❓,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-11826163,en,real,"Igor was scrolling through Instagram, lying on his bed.",🧑🛏️ 📱👀,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6349326,en,real,I hope Tom didn't read that.,👨📖❌ 🙏,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6251802,en,real,I don't know a lot about Australia.,🙋 🤔❓ 🇦🇺,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-11799074,en,real,Melissa reached into her purse and pulled a ticket.,👩👜 ➡️ 🎫,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6659714,en,real,I've never been in Tom's car.,🧑🚗❌ 🙋,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6890408,en,real,I expect Tom to be here tonight.,🙋⏩ 👤🧑 🌙🏠,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8633929,en,real,Social distancing is one of the best tools we have to fight COVID-19.,🦠⚔️ 🧍↔️🧍 ✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-10025741,en,real,Don't tell anybody I did that.,🫵💬 🤫 👥❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2545478,en,real,I'll give you until 2:30.,🫵 ⏳ 2️⃣3️⃣0️⃣,ok,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2540554,en,real,I'll visit you every other Monday.,🙋🚶🫵🏠 2️⃣📅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-5478883,en,real,You have to do exactly what I do.,🫵 👀🙋 ➡️ 🫵👐🙋,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3420037,en,real,Tom said he would go to Boston.,👨💬 🫵➡️🏙️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-5694060,en,real,I've been an athlete my whole life.,👶➡️👴 🏃🏅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6254065,en,real,Tom has plenty of friends in Boston.,👨👥👥👥 🏙️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-5304223,en,real,I believe that it's all a hoax.,🙋🤔 🎭🤥,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-1860486,en,real,Don't ever call me again.,🫵📞❌ 🙅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3606941,en,real,We were busy with housework.,🏠🧹🧺🧽 😮‍💨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-1830580,en,real,I saw a snake eating a mouse.,🐍🍽️🐁 😱,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-11649797,en,real,Lukas told Amelia he was calling the cops and hung up.,👨💬👩 🚓📞 ➡️ 📵,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6932196,en,real,"Everybody can be a Monday morning quarterback, but we need some real expertise.",👥💬🏈❌ ➡️ 🧠✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-11116145,en,real,We decided to call the police.,👥🤔 ➡️ 📞👮,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-1027219,en,real,Tom admitted that he was wrong.,👨💬 🙋❌➡️✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8985088,en,real,I'm happy that you're still alive.,🫵❤️🙋 😊🥹,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2952175,en,real,I have to find a new job.,🙋 🔍💼🆕 😟,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3142901,en,real,I don't want to answer that question.,🙋 💬❌ 🙊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6234642,en,real,"Tom could've been sleepy, but he didn't seem to be.",🧑😴❓ ➡️ 🧑👀❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3733141,en,real,I think I'll try a little harder next time.,🙋💪 ⏩🔁,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6249915,en,real,I wonder if Tom is trustworthy.,🤔 🧑❓ 🤝,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8321437,en,real,He turned my life upside down.,👨 ➡️ 🙋🔄😵,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3721943,en,real,We were just screwing around.,👥🤪🎉,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2956823,en,real,Tom had a good reason for not paying his rent on time.,👨💬 🏠💶⏰❌ ✅👍,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-9777018,en,real,Tom insisted that I stay until Monday.,👨💬 🫵🛑➡️ 📅1️⃣ 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3727753,en,real,I think they went without us.,👥🚶➡️ 🙋🙋❌ 🤔,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6227429,en,real,I didn't need to look at the menu because I already knew what I was going to order.,🍽️ 📋❌ 🤔✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3594727,en,real,I want to know what you're going to do about it.,🫵💬 🙋❓ ➡️ 🫵🤔,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7214416,en,real,Tom told me that he'd try to do that.,👨💬 🙋🔜💪,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2973336,en,real,"Tom was looking for Mary, but it was raining hard and he didn't see her.",👨🔍👩 🌧️🌧️ ➡️ 👀❌ 😞,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-11449477,en,real,Ziri lifted his head to look at his cabinmates.,🙋‍♂️⬆️ 👀👥,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-5741154,en,real,I'm looking to buy a home.,🙋🔍 🏠💰,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7501061,en,real,I was the only one in the room who knew that Tom was planning to get married.,🙋 🚪👥 ➡️ 🤵💍 🤐,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-11184881,en,real,I hope that doesn't happen to me.,🙋🙏 😬 ➡️ 🙋❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-11051071,en,real,Ziri heard what happened to Rima's son.,👂🧒💥 😢,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6529935,en,real,"Tom isn't disturbing you, I hope.",👨❌😤 🫵🙏,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2013611,en,real,I want you to leave me alone.,🫵 🚶➡️ 🚪 🚫🙋,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8829011,en,real,I couldn't stop looking at it.,👀➡️👀➡️👀 😍,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7111010,en,real,I really don't think I can take care of myself.,🙋 🤲❌ 🫠,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7514002,en,real,I know Tom isn't a very good chess player.,♟️👨 👎 🤷,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-4915788,en,real,"Someone, get me a tissue.",🙋🤧 ➡️ 🫵🧻🙏,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8837472,en,real,I know the exact date.,🙋🧠 📅✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-11961071,en,real,Boldi helped Martha move towards her goal.,🧑‍🤝‍🧑 ➡️ 🎯🏃,ok,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-11681092,en,real,Bruno used his phone as a light.,👨 📱🔦,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7228246,en,real,I don't think we need permission to do that.,🙋🤔 ✅❌ 📝,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-10131756,en,real,We need to know whether Tom will be there or not.,🤔 🧑❓📍,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-11856113,en,real,I think it's a rumor.,🗣️💬 🗞️❓ 🤔,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8128192,en,real,Tom blamed everybody for his problems.,👨 🫵🫵🫵 😠,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6228019,en,real,I didn't know that Tom had intended to be there yesterday.,🙋🤷❓ ⏪👨💬 🫵📍,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-10495759,en,real,It's time to put it behind me.,⏪😞 ➡️ 🚶⏩ 😌,several ⏪/⏩,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-10877303,en,real,I'm never going to quit.,🙋 🚫🙅 ➡️ 💪🔥,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2408627,en,real,I think you need some rest.,🫵 😴💤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3619932,en,real,I'm doing what I think is right.,🙋🧠✅ ➡️ 🙋👐,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7483222,en,real,A man can't expect always to have it his own way.,👨 🛣️🙋❌ 😐,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6663434,en,real,"You're going to eventually despise Tom, just like the rest of us.",🫵 ⏩ 🧑❌😠 👥😠,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6262552,en,real,I wish I were back in Boston.,🙋💭 🏙️🔙,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-1093937,en,real,Tom got over his cold.,🤧➡️😊✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7508738,en,real,I knew that Tom would be annoyed if you did that.,👨😠 ⏩ 🫵👉 😬,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6126547,en,real,Mary has flowers in her hair.,👩🌸💇,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6765537,en,real,"Tom was a vegetarian until his doctor told him he should probably start eating a little meat, too.",👨🥗 ➡️ 👨‍⚕️💬 🍖🥩 ➡️ 🥩😋,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8814931,en,real,I'm afraid they both have bad reputations.,👥👥 😬👎,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-9830878,en,real,We need to clear the debris from the road.,🛣️ 🪨🪵🗑️ ➡️ 🚗✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6243676,en,real,I didn't buy everything I needed to buy.,🛒 🛍️❌ 😕,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3650244,en,real,Meeting you is one of the best things that ever happened to me.,🫵🤝 ➡️ 🥇✨ 🥹,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-5214620,en,real,Tom told Mary she was beautiful.,👨💬👩 😍,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-9736561,en,real,Tom was given the same chance that you and I were given.,🧑💬 🫵🙋 🎁🎲 ➡️ 🧑🎁,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-10083401,en,real,I hope that you're wrong about that.,🫵💬❌ 🙋🤞,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6431812,en,real,I've been waiting for you to tell me what I should do.,🙋⏳ 🫵💬❓,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-4355746,en,real,That's what I think happened.,🤔💭 ➡️ 📖✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6494414,en,real,Tom and Mary still haven't told me why they didn't have to do that.,👥💬❓ 🫵🙉,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7508476,en,real,I know that you probably don't want to hear this.,🫵👂❌ 💬🙋,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-4132534,en,real,I don't like sitting by the window.,🪟💺 🙅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-10659608,en,real,I saw Tom again the next day.,👀👨 ➡️ ⏩🌅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-10183539,en,real,I have two sisters. They're both married.,👨 👧👧 ➡️ 💍💍,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-12069209,en,real,I confronted Tom right away.,🙋 🗣️➡️🧑💥,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8681149,en,real,I need you to go undercover in her organisation and work your way up until you become her confidante.,🕵️ ➡️ 🏢👩 ➡️ 📈⬆️ ➡️ 🤝👩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7230046,en,real,I don't think that I've ever met anybody like you.,🙋 👥❌ 🫵✨ 🥹,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-11036956,en,real,I do want to do the sights of Boston.,🙋🤩 🏛️🎡📍,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-11632842,en,real,My dog is always ready to take a walk.,🐕 🦮 ➡️ 🚶🐾 😄,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3734770,en,real,I'll never forget how helpful you've been.,🫵🤝😊 🙋💭❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-9983932,en,real,All my friends live in Boston.,👥👫👭 ➡️ 🏙️🇺🇸,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-11281585,en,real,Real friends don't do things like that.,👫💬 🫵🤝❌ 😞,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6245014,en,real,I don't know how to solve this problem.,🤷 🧩❓ 😕,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7130181,en,real,Tom struggled to keep his head above water.,🏊♂️🌊 😰,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3520503,en,real,I almost felt sorry for him.,🙋 🫤 👨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-11804919,en,real,Dmitri is visiting his son in Algiers.,👨✈️ ➡️ 👦📍🇩🇿,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-11596830,en,real,Robert robbed his fourth bank.,🦹 🏦🏦🏦🏦 💰,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7812350,en,real,Mary shyly tucked her hair behind her ear.,👩〰️ 👂➡️ 😳,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7485869,en,real,I've learned to ignore the pain.,🙋💔 ➡️ 🧘😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-11927755,en,real,Vladimir opened up his own clinic.,👨‍⚕️ 🏥🆕 ✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8549514,en,real,I blame myself for most of this.,🙋 👉😞,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2661156,en,real,We need to concentrate on coming up with a new plan.,🧠💡 🗺️🆕 🎯,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-9788073,en,real,We need to pick the figs.,🌳🫴 🍈🍈🍈,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7163836,en,real,I still might go to Australia.,🙋 ⏩🇦🇺❓,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-1670796,en,real,I'm with exactly who I want to be with.,🙋❤️🫵 ✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-5184894,en,real,I told Tom to go ahead.,🙋💬 🧑➡️,dangling ➡️,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6264609,en,real,Tom says he didn't know Mary could do that.,👨💬 🙋❓ 👩✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3795193,en,real,"He speaks fluent Russian, or at least that's what he told me.",👨💬 🗣️🇷🇺,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6249616,en,real,I'm afraid I can't help you do that.,🙋😨 🫵🤝❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-11596585,en,real,Robert always gets Martha what she wants.,👨💬 🎁➡️👩😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2361554,en,real,I don't want to go to sleep.,🛏️❌ 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2541007,en,real,I'll do anything to get Tom back.,🙋 💔➡️ 🧑🤝🧑 🔄 🥺,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6661687,en,real,Tom says that when he grows up he wants to be a firefighter.,👦💬 ⏩👨‍🚒,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7171796,en,real,I thought you said that you were willing to help us find Tom.,🫵💬 🫵🤝🔍🧑❓,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6896543,en,real,I could leap off a bridge and on to a galloping horse and start eating it. I'm so hungry.,🙋🤸🌉 ➡️ 🐎🍽️ 😋🍖,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-12028327,en,real,Janos eventually quit his job.,👨💼 ➡️ 🚪👋,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7214334,en,real,Tom told me that he wanted a lawyer.,👨💬 🙋⚖️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-5640573,en,real,I just wish Tom were happier here.,🙋💭 🧑😞 ➡️ 🧑😊❓,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6048411,en,real,This is where I tripped and fell yesterday.,⏪ 📍 🫵👟💥 ⬇️ 😖,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6234085,en,real,I didn't know I wasn't supposed to do that today.,🙋❓📅 ➡️ 🙋🙅❌ 😬,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-5683410,en,real,I've only been here for a month.,🙋📍 ⏪🌙1️⃣,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3286951,en,real,It has nothing to do with me.,🙋 🙅 👐,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7818417,en,real,"When I went to look, I found Tom fast asleep.",👀➡️ 🧑😴💤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-5738577,en,real,We won't ever abandon you.,👥💬 🫵🙅❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-5736241,en,real,We miss Tom every single day.,👨❌ 👥💔 🌅🌙,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-10011475,en,real,Yanni knows exactly what he needs to do.,👨🧠✅ 🎯,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8340773,en,real,I don't want to get fired.,🙋💼 ➡️ 🚫🔥😰,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-11601103,en,real,I should've got on while I had the chance.,🚌⏩ 🙋🏃❌ 😩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-12604915,en,real,My concern isn't so much about dressing well but rather feeling comfortable in my clothes.,👕👖 ➡️ 😌👍,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-4904965,en,real,I have mixed feelings about that.,🙋 😊😕,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-1989685,en,real,I just wanted to ask a question.,🙋💬❓,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-9770835,en,real,Yanni is at the top of his class.,🧑‍🎓🏆 🥇,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6508218,en,real,Tom and Mary told me they didn't feel like eating.,👥💬 🍽️❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7503723,en,real,Tom realized he wasn't tall enough to reach the top shelf.,🧍📏❌ ➡️ 🗄️🙅 😔,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-13747960,en,real,Tom turned his homework in late.,👦 📝⏰❌ ➡️ 📚📤 😬,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-12250407,en,real,Maybe we can trick Tom into incriminating himself.,🤔 🧑💬 ➡️ 🪤 🕵️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-1025514,en,real,"Tom has a beard just like his father, grandfathers and brothers do.",👨🧔 👨‍🦳🧔 👴🧔 👦🧔,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-10083582,en,real,I heard Tom yelling at somebody.,👂 🗣️😡👤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6339077,en,real,"Tom is the one who taught me how to say ""thank you"" in French.",👨‍🏫💬🙏🇫🇷 🙋✅😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-9838053,en,real,I think that would be the logical thing to do.,🤔 ➡️ ✅🧠,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-10161613,en,real,I think that it's broken.,🤔 🔧❌💥,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-10716855,fr,real,On peut voir des flamants roses en Camargue.,🦩👀 📍🇫🇷,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2100966,fr,real,Nous accompagnons les enfants à l'école.,👨👩 👧👦 ➡️ 🏫,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-9549037,fr,real,J'aurais eu l'air bien malappris de lui balancer ses affaires à la figure.,🙋🗣️😠 ➡️ 📦💥😱 🙅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-12205222,fr,real,J'ai lu votre annonce dans le journal.,🙋 📰👀 📢,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-10510739,fr,real,Je n’ai pas confiance en lui.,🙋 🤨 👤❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8364817,fr,real,Je me sens inspiré ce matin.,🌅 🙋💡✨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8897432,fr,real,C'est un voisin qui me l'a dit.,🏠👨💬 🙋👂,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2295992,fr,real,Il met trop de sucre dans son thé.,☕ 🍬🍬🍬🍬 😖,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-4593184,fr,real,Marie restera ici comme son patron le lui a ordonné.,👩🏠 👨💼💬 🫵⏳,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7633889,fr,real,La vie est triste quand on est seul.,🙋 🧍❌ ➡️ 😢💔,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-4924952,fr,real,Je ne crois pas qu'ils aient acheté une nouvelle voiture.,👥 🚗🆕🛒❓ 🤔,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6710578,fr,real,Elle passe encore aujourd’hui pour une des belles femmes de Paris.,👩✨ 🗼💃,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2570135,fr,real,Il a laissé son parapluie dans le bus.,👨 ☂️❌ 🚌 😟,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8359014,fr,real,Je m’en tiens à ma position.,🙋🧍 🧱❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-9177304,fr,real,Il écrit un rapport pour son supérieur hiérarchique.,👨‍💼✍️📄 ➡️ 👔,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8358882,fr,real,Mon arrière-petit-fils a huit ans.,👶➡️👦 8️⃣🎂,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8597450,fr,real,Ils venaient de différents pays.,👥 🌍🌎🌏,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-1896543,fr,real,Je ne les retiens pas.,🙋 🧠❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2242848,fr,real,"Un menteur n'est jamais cru, même quand il dit la vérité.",🤥💬 ➡️ 👥🙉 ✅❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-11585366,fr,real,Il a empoché la modique somme de cinq francs.,👨 💰5️⃣,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-639007,fr,real,"Bonjour, nous voudrions deux plats de riz sautés au bœuf à emporter.",👋💬 🍚🍚 🐄🥡,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3148654,fr,real,"Il existe différents types de niqab, dont certains couvrent tout le visage.",🧕 🧵🧕 🧕👁️ 🧕👁️❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2341051,fr,real,Elle a acheté à Mary un parapluie cher.,👩🛒 ☂️💸 ➡️ 🎁👧,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2101619,fr,real,Ils n'affameront pas les chiens.,👥 🐕🍖✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-11688667,fr,real,Nous avons presque atteint notre objectif.,🏃🏃 🎯🔜 😅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-12362540,fr,real,Tom lit le livre que j'ai écrit.,👨📖 📕✍️🙋,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7855467,fr,real,J'ai trois verrues au pied droit.,🦶 3️⃣ 🦠😣,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7748327,fr,real,Thomas est fou amoureux d'elle.,👨🥰➡️👩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-4492699,fr,real,"C'est un vieil appartement, mais il fera l'affaire.",🏢👴 ➡️ 👍,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8938324,fr,real,Il bagua le petit veau.,👨 🐄🐄 🥊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8315211,fr,real,Ta sœur n'est pas contente.,👧😠,2 emojis,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3865818,fr,real,Cela se voit que tu ne veux plus m'aider.,🫵💬 🙋🙅‍♂️ 🤝❌ 😔,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2889683,fr,real,Elles ont beaucoup de choses à faire cet après-midi.,👩👩 📋📋📋 🌆 😮‍💨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2035598,fr,real,Tu es arrivé là-bas avant elle.,🫵 ➡️ 📍⏪ 👩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-840629,fr,real,"Comme toute personne nativement bilingue qui se respecte, j'ai une maîtrise de ces langues qui laisse à désirer.",🧑🗣️🗣️ 🧠📉 😅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-539506,fr,real,Il m’agace au plus au point !,🧑💬🗣️ 🙋😤😤😤,ok,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8522036,fr,real,Elle dit que son mari la réprime constamment.,👩💬 👨✊ 😢,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2402968,fr,real,Proposer aux étudiants étrangers de venir étudier en France en langue anglaise est la proposition la plus bête que j'ai jamais entendue.,🎓🌍➡️🇫🇷🗣️🇬🇧 🤦😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-9998340,fr,real,Nous n'avons pas eu le temps de les atteindre.,🏃💨 🎯❌ ⏱️❌ 😞,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7467249,fr,real,"Mon bonheur, c'est à toi que je le dois.",🫵 ➡️ 🙋😊❤️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-4592916,fr,real,Il doit les acheter à l'étranger.,🙋 🛒❌🇫🇷 ➡️ ✈️🌍🛍️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3095613,fr,real,J'ai un service à te demander.,🙋💬 🫵🙏,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-13476468,fr,real,Elle ne parle pas alors qu'elle a deux bouts et une poignée.,🚪❓ 🗣️❌ ✋,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8630411,fr,real,Il a adopté un chiot.,👨 🐶🏠 ➡️ 🥰,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2126528,fr,real,Elle allume des bougies dans sa chambre.,👩 🕯️🔥 🛏️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-1893324,fr,real,Je ne les envie pas.,🙋 👀👥 ➡️ 😌❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7253655,fr,real,J'irai en avion à Paris après-demain.,⏩✈️ ➡️ 🗼,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-12571191,fr,real,Prenons un moment pour essayer de reconstituer les faits tels qu'ils se sont déroulés pour tenter d'y voir plus clair.,🤔🧩 ⏪📅 ➡️ 🔍👀,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7645055,fr,real,Il ronfle quand il a bu.,🍺🍷 ➡️ 😴💤🔊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2053465,fr,real,"Pour être garantis de prendre du fric aux ados, il faut sortir des albums avec des titres en anglais !",🧑‍🎤🎵🇬🇧 ➡️ 💶💶🧑‍🎤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-9853892,fr,real,Elle sait qu'elle a le droit à un avocat.,👩 ⚖️ 👨‍⚖️✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8941461,fr,real,J'ai traversé à quelques mètres en amont.,🚶 🏞️➡️ 🚶⬆️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-557878,fr,real,"Pour supporter ça le matin, je te jure qu'il faut une bonne dose de bonne humeur !",🌅 😤 ➡️ 😊💪,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6166685,fr,real,Mon dos me fait mal.,🙋 🔙😖,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3744601,fr,real,J'ai la flemme de faire la vaisselle...,🍽️🍴 ➡️ 🧽❌ 😩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8330631,fr,real,C'est avec plaisir que je viens t'aider à déménager.,🙋😊 ➡️ 📦📦🏠 🚚,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-4206169,fr,real,Elles vont finalement partir demain en avion.,👩👩 ⏩🌅 ✈️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-12452178,fr,real,Il est le meilleur de sa catégorie.,🏆🥇 🥇,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8692688,fr,real,"Cette fève-là est une classique, on la voit tous les ans.",🌱🫘 ⭐ 🗓️🔄 👀,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2317316,fr,real,Nous avons attendu notre tour.,👥⏳ 🚶🚶,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8662954,fr,real,Il est probable qu'il ne parte pas.,🧳❌ 🚪,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-4593012,fr,real,Nous l'avons vue marcher le long du trottoir.,👀 👩🚶 🛣️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6826636,fr,real,Vous avez plus de chance que moi.,🫵🍀 🫵➡️🙋 🫵👍,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-1900679,fr,real,Je ne les occupe pas.,🙋 👥❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8632277,fr,real,Il fait de très bonne frites.,👨‍🍳 🍟😋👍,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-5953349,fr,real,Nous ne devons pas laisser ces observations nous induire en erreur.,👀📊 ➡️ 🫵❌🤔,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-376730,fr,real,"Depuis que je me suis cassé le pied, je marche avec des béquilles.",🦶💥 ➡️ 🩼🚶 😣,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6391652,fr,real,Sami et Layla rêvent d'avoir des enfants un jour.,👨👩 💭👶👶 ⏩🏠,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-9548215,fr,real,Ils ne font que de la propagande.,📺📢 🔁 ➡️ 🤥❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-1871277,fr,real,Ma vie est comme un bal où l'orchestre s'est tu.,🎭💃 🎻❌ 🤐 😔,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8343643,fr,real,Je n'ai jamais pensé à abandonner.,🙋 🏳️❌ 💪,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7581840,fr,real,Ce n'est pas pour nous.,🎁 🫵👥❌,ok,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-912140,fr,real,Ils sont la quatrième génération à être reçus à Polytechnique.,👨‍👩‍👧‍👦 4️⃣ 🎓🏛️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6738299,fr,real,Nous allons chaque année là-bas.,👨‍👩‍👧 🚗🏖️ 🔁📅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2128569,fr,real,Ils n'accrochent pas leurs manteaux derrière la porte.,🧥❌ 🚪,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-13809699,fr,real,Le professeur nous demande de nous mettre en binôme pour cet exposé.,👨‍🏫💬 👥2️⃣ 📝,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-11381928,fr,real,Un confrère m'a aidé à résoudre un problème difficile que je n'arrivais pas à résoudre.,👨‍💻🤝 ➡️ 🧩✅ 😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6669734,fr,real,Nous n'avons plus à boire.,🥤❌ 🏠 😞,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-9505808,fr,real,Il me donne son assiette.,👨 🍽️➡️🙋,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6161369,fr,real,"Je ne comprends pas tout, mais ça me semble intéressant.",🙋🤔❓ ➡️ 👀👍,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-10463862,fr,real,Plusieurs torpilles se dirigent dans notre direction.,🚀🚀🚀 ➡️ 🫵 😱,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-4190166,fr,real,Il préfère une place côté fenêtre.,🙋❤️ 🚆🪟,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3388344,fr,real,Martine avait travaillé dans un chaîne de télévision locale pendant que son mari préparait son doctorat de psychologie.,👩📺 ➕ 👨📚🧠,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2901552,fr,real,Nous avons abattu les arbres morts.,🌳🌳🪓 ➡️ 🪵,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-12540958,fr,real,Mon ascendant Scorpion est une grande partie de moi-même indissociable de ma personne.,♏✨ 🙋❤️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-9767781,fr,real,Le garage du voisin est en ruine.,🏠🚗 🧱💥 🏚️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-13219754,fr,real,"Je vais t'écraser, espèce de punaise !",🫵💬 🙋💪 ➡️ 🐜💥 😡,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6297160,fr,real,Croyez à ma fidèle amitié.,🤝💯❤️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-5054516,fr,real,Ne faites pas l'innocente avec moi.,🫵😇❌ 🙅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3851642,fr,real,Cesse de nous harceler avec tes commentaires arrogants.,🫵💬😠 🛑✋ 👥😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-10472018,fr,real,Je vous aiderai avec plaisir.,🙋 🤝😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7485572,fr,real,Tom se demande s'il vaut mieux prendre le train ou l'avion.,🤔 🚆❓ ✈️❓,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7681079,fr,real,Raconte-moi un peu ce que tu as fait.,🫵💬 🙋❓ 🗣️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-12660305,fr,real,C'est littéralement ce que je me suis dit.,🫵💬 🫵🤔💯,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-11585641,fr,real,Il ne leur ressemble pas.,👨 👨‍👩‍👧 🚫👀,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6052813,fr,real,Alors ça ! Personne ne me l'a encore dit.,🙋 💬❌ ⏪ 😲,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8938253,fr,real,Ils riaient à sa blague.,👥😂 🎤😄,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8660334,fr,real,J'aimerais faire mon arbre généalogique.,🙋 🌳👨‍👩‍👧‍👦🔍,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6061593,fr,real,"Il mène une vie de bâton de chaise, jouant, entretenant des danseuses, subornant des ingénues, choisissant ses victimes parmi les ouvrières de la maison.",🧑 🎲🍷 💃💃 💰😈 👩‍🏭🎯 😠,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2905124,fr,real,Elle a allaité son bébé.,👩🤱👶,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2035659,fr,real,Elle est arrivée là-bas avant lui.,👩🏃 ➡️ 📍 ⏪ 👨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-9353809,fr,real,Je m'y suis rendu à vélo.,🙋 🚲 ➡️ 📍,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-4531873,fr,real,Ils sont devenus allergiques à mes articles.,👥 🤧📰,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2341722,fr,real,Il est monté vite dans l'arbre.,🧗‍♂️🌳⬆️💨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-9666144,fr,real,"Je ne sais pas, moi.",🤷 🤷‍♂️❓,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-12681427,fr,real,Les filles ne cessent pas de glouglouter depuis qu'elles ont entendu la nouvelle rumeur à propos de Tom.,👧👧🗣️👂📰👦 ➡️ 🗣️🗣️🗣️ 😲,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-9935211,fr,real,Il fait un froid de tous les diables.,🥶🧊❄️❄️❄️,no group spaces,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2326880,fr,real,J'aime Marie tout simplement comme elle est.,🙋❤️👩 😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-5279472,fr,real,"La jeunesse et la beauté, c’est diablement commun et sot !… ne m’en parlez plus.",👶✨ 😐 🫵💬❌ 🙅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8612307,fr,real,Je leur ai tout appris.,🙋🧑‍🏫 ➡️ 👥🧠✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6719573,fr,real,Le mari de ma sœur est mon beau-frère.,👩 👨💍 ➡️ 👨👨‍👩‍👧,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-4616938,fr,real,Je suis un homme fort.,🙋♂️💪,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-9038341,fr,real,Il fait de plus en plus sombre. Je peux à peine te voir.,🌇➡️🌑 🌫️ 🫵👀❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-1083314,fr,real,Ça fait bien une heure qu'ils sont partis.,👥🚶 ⏪⏱️1️⃣,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8327370,fr,real,Nous aimerions passer nos vacances dans les Alpes autrichiennes.,🙋🙋 🏖️⏩ 🏔️🇦🇹 😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8693202,fr,real,Il aime voyager à vélo.,👨❤️ 🚲✈️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8659985,fr,real,Je ne suis pas sûr qu'elle me laisserait conduire.,👩🚗❓ 🤔,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7696496,fr,real,"De l'éprouver si pareil à moi, si fraternel enfin, j'ai senti que j'avais été heureux, et que je l'étais encore.",🫵🤝🫂 ➡️ 🥹😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6063881,fr,real,Votre appartement me plaît beaucoup.,🏠🫵 😍👍,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2883004,fr,real,Il a trouvé un lieu pour vivre.,🏠🔍 ➡️ 🏠✅ 😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3852404,fr,real,Nous nous abstenons de boire.,👥 🍺❌🍷❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7564750,fr,real,"Nonobstant le début et la fin, j'ai beaucoup aimé.",🎬 🎬🔚🔜 😐 ➡️ ❤️❤️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-1459565,fr,real,Je suis monté encore d'un échelon dans la hiérarchie en devenant chef de projet.,👨‍💼 ⬆️ 🪜 ➡️ 👔📋 🎉,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-13900649,fr,real,On s'attend à une hausse des prix cette année.,📈💶 ⏩📅 😟,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-1589749,fr,real,Il alla se faire foutre de bon cœur.,👨 ➡️ 🖕😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-12421738,fr,real,Il est entouré de flagorneurs qui lui cirent les pompes.,👤 🐍🐍🐍 🧎👅 👑😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2853300,fr,real,Nous doutons que ces statistiques aient été établies dans des conditions normales.,📊🤔 🧪❓,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-4188466,fr,real,Il peut ouvrir la fenêtre.,🙋 🪟🔓 ✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2507054,fr,real,Ils ne savent pas précisément où ils sont nés.,👥❓ 📍❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-9089420,fr,real,Ma femme est amoureuse de l’architecture italienne.,👩❤️ 🏛️🇮🇹,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8660674,fr,real,Nous ne l'avons pas encore fait.,👥 ⏳ ➡️ ✅❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8938229,fr,real,Je les ai flanqué à la porte.,👥 ➡️ 🚪👋 🚫,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-9161494,fr,real,Il descend à fond la caisse.,🚗💨💨💨 ⬇️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6017166,fr,real,"Je ne peux pas le lire, parce que je ne sais pas lire.",📖❌ 👤 🙈,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6393960,fr,real,Je connais quand même la vie !,👴🧠💡,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7415051,fr,real,Je viens de prendre le train.,🙋 🚆✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2559884,fr,real,Il accusait les gens à tort.,👨 👥👉😠,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-9393313,fr,real,"J'ai dû acheter des gants de boxe, des protège-tibias, un casque et tout le bataclan.",🥊🧤 🦵🛡️ 🪖 ➡️ 💸😅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2103310,fr,real,Elles ont accueilli les invités.,👩👩 🤝 🎉👥,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-1124723,fr,real,Cette phrase m'a l'air correcte.,📝👀 ✅👍,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-399245,fr,real,"Ce n’est pas possible, m’écrivez-vous : cela n’est pas français.",🫵💬 🫵✍️❌🇫🇷 😲,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-1895108,fr,real,Je ne les commente pas.,🙋 💬❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7777988,fr,real,Elle est plutôt bien roulée.,👩 🚗✅ 😏,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2902277,fr,real,Elle s'est acharnée sur ses étudiants.,👩‍🏫 ➡️ 🎓🎓🎓 😠,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2506750,fr,real,Je ne pense pas que nous pourrions faire ça.,🙋🤔 🫱🫲 🎯❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7071075,fr,real,Il n'arrêtait pas de gémir à propos de fantômes et de machins.,🧑🗣️👻👻 😩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-5979796,fr,real,Le pouvoir en ce monde est un capital qu'il faut savoir ménager.,🌍👑 💰⚖️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2230729,fr,real,J’ai appuyé l’échelle contre le mur.,🪜 ➡️ 🧱,2 emojis,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-1915165,fr,real,Je ne les flatte pas.,🙋 🗣️🍯❌ 👥,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2073548,fr,real,Elle ne faisait pas la vaisselle.,👩 🍽️🧼❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-9177291,fr,real,On m'a volé mon téléphone !,🦹📱💨 😱,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2870153,fr,real,Il a ordonné qu'on détruise les documents.,👨‍💼🗣️ ➡️ 📄🔥🔥,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2901371,fr,real,Elle a abaissé le rideau.,👩 🪟⬇️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-4192239,fr,real,Je suis passé par la fenêtre.,🚶 ➡️ 🪟,2 emojis,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2295842,fr,real,Je laisse toujours mon vélo sale.,🚲🧽❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-1964989,fr,real,Je ne vous flatte pas.,🫵💬 😊❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8695488,fr,real,Il a chu non loin de là.,🚶💥 ➡️ 📍,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8502015,fr,real,Il a une lampe rouge.,👨 🔦🔴,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8753024,fr,real,"Je ne joue plus avec toi, tu triches.",🙋🎮❌ 🫵🤥 😠,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8671019,fr,real,Il est venu à la campagne rechercher le dépaysement.,🏙️➡️🌳🌾 🧘😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-972151,fr,real,"C'est un engagement important que vous me demandez-là, laissez-moi y réfléchir ...",🫵💬 🤔💭 ⏳,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3257980,fr,real,"Il habite ailleurs, et d'ailleurs je n'ai pas envie de le voir.",🏠📍❌ 🫵🙈❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-12767435,fr,real,Je n'ai pas encore tout à fait bien digéré ce qu'il m'a dit.,👨💬 🤯 🧠🌀,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8685388,fr,real,Elle est un peu trop près.,👩➡️🙋 😬,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-4062641,fr,real,Il a surmonté les obstacles l'un après l'autre jusqu'à ce qu'il atteigne son but.,🧗 🧱🧱🧱 ➡️ 🏆😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2066205,fr,real,Il ne l'a même pas entendu.,👂❌ 🙉,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2928491,fr,real,Je n'ai pas encore marché.,🚶❌ ⏪,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3259570,fr,real,Il n'est pas nécessaire d'apporter un cadeau.,🎁❌ 👍,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2076224,fr,real,Je n'ai pas fait la sourde oreille.,🙋 👂✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-9735531,fr,real,Je suis entré à l'hôpital lundi.,🙋 🏥➡️ 1️⃣,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-4543972,fr,real,Elle vient de m'envoyer une lettre depuis Arkhangelsk.,👩 ✉️📬 🏙️❄️ ➡️ 🙋😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3053737,fr,real,C'est moi qui ai fait un régime.,🙋 🍔❌🥗 ➡️ ⚖️⬇️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8641135,fr,real,"Nous travaillons beaucoup, notamment sur ce projet.",👥💼💪 📁🔨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8516168,fr,real,Il avait sa manière bien à lui d'applaudir.,👨 👏✨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-1990924,fr,real,Nous ferons tout ce que nous pouvons.,🙋🙋 💪✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-751668,fr,real,J'ai bien peur qu'il ne nous reste plus rien à manger.,🍽️❌ 🍎❌ 😟,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2073667,fr,real,Il ne fait pas la vaisselle.,🧑 🍽️🧼❌ 😠,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-9472635,fr,real,Elles sont passées dans les égouts.,👩👩 ➡️ 🕳️🚿,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-1994808,fr,real,J'ai parfois l'impression de te parler chinois.,🫵💬 ➡️ 🙋❓🇨🇳,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8630921,fr,real,Je ne me pardonne pas les erreurs que je fais.,🙋 ❌🫂 🙋❌ 😔,❌ starts a group,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-10350084,fr,real,Cette chose me semble familière.,🤔👀 🔁,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2334542,fr,real,Nous ne pouvons pas conduire une voiture.,🙋🙋 🚗❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3455353,fr,real,Marika avait commencé à m'apprendre le finnois.,👩📚 🙋🇫🇮 ⏪,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8645800,fr,real,J'ai dû m'appuyer la vaisselle.,🍽️🧼 🧑‍🍳 ➡️ 😩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2338516,fr,real,Elle ne sait pas encore si elle peut y aller ou non.,👩 🤔 🚶❓,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-1001590,fr,real,Je suis désolée mais monsieur le préfet est en conseil général et ne peut donc pas vous recevoir pour le moment.,👩💬 🙇 👨‍💼🏛️🗣️ ➡️ 🫵🤝❌ ⏳,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-1436934,fr,real,Je vous confirme ma présence.,🙋✅ 📅👍,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2922881,fr,real,Je n'ai pas encore fumé mon cigare.,🚬❌ ⏩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-9145925,fr,real,Ma sœur fait le commerce d'ustensiles de cuisine.,👧 🍳🥄🍴 💰,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6890151,fr,real,"Parce que Tom avait manqué le car, il prit un taxi.",🧑🚌💨❌ ➡️ 🚕,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-1671275,fr,real,On ne change pas les règles en cours de partie.,🎮📜 ➡️ 🔄❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-4535624,fr,real,J'ai manqué une occasion en or.,🙋 🥇🎯 ➡️ 💨❌ 😩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-841809,fr,real,"À quoi sert de lire, puisqu'à vingt-deux ans, on sait déjà tout.",📚❓ 🤔 2️⃣2️⃣🎂 ➡️ 🧠✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-9168624,fr,real,Marie est ma plus jeune sœur.,👧👩 👶➡️🙋,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-5307224,fr,real,Nos relations professionnelles sont très cordiales.,👥💼 🤝😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8698802,fr,real,Elle m'a apporté une part de tarte.,👩 🥧🍰 ➡️ 🙋😋,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-12613343,fr,real,"Si on se penche constamment sur les défauts des autres, on finit par oublier nos propres défauts.",👀🔍👥❌ ➡️ 🙋❌😔,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-6458468,fr,real,"Son assiette lui paraissant mal essuyée, il la jeta derrière lui ; Tikhone la rattrapa au vol et la passa au maître d’hôtel.",🍽️🧐❌ ➡️ 🙋🤾 🧑‍🤝‍🧑✋ 🍽️ ➡️ 🤵,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-908556,fr,real,Elle fait figure de favorite dans cette course contre la montre.,🏃‍♀️🏁 ⏱️ ➡️ 🥇⭐,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-1001598,fr,real,"Si le temps le permet, nous pourrons éventuellement faire un détour par le lac pour aller nous baigner.",🌤️✅ ➡️ 🚗➡️🏞️ 🏊😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-10224047,fr,real,J'ai oublié mon grimoire en salle de classe.,🧙📖❌ 🏫 😱,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-13631033,fr,real,Il convient d’examiner la solidité de ses arguments.,🧑💬 🧱❓ 🔍,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-7837072,fr,real,L'enfant de la femme pleure.,👩👶 😭,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-4610232,fr,real,Il vous faut beaucoup d'eau.,🫵 💧💧💧💧,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-11596319,fr,real,Je pense qu'il serait intéressant de lui demander.,🤔➡️ 🗣️👤❓,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2078334,fr,real,Ils ne sont pas jaloux.,👥 😌 💚❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-5403382,fr,real,Je suis très triste ce soir.,🌙 🙋😢😢,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-4588290,fr,real,Elles se fichent de ce qu'elles mangent.,👩👩🍽️🤷,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-12554658,fr,real,"Il est passé, ni vu, ni connu.",🚶💨 👀❌ 🫥,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8727164,fr,real,Je ne lui ai jamais demandé.,🙋 🗣️❌ 👤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8313195,fr,real,La vie privée de nos utilisateurs est primordiale.,👥🔒🛡️ ❤️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2839651,fr,real,Sans doute qu'il arrivera en retard !,👨🚶 ⏩⏰❌ 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-535436,fr,real,Elle est en contact avec tous les gymnases.,👩 📞🏋️🏋️🏋️🏋️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2159174,fr,real,Je suis enfant de l'amitié franco-allemande.,🇫🇷🤝🇩🇪 👶,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-746726,fr,real,"Lucien, on a besoin de tes lumières.",👥💬 🙋💡❓,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-3056734,fr,real,C'est moi qui ai pêché dans cette rivière.,🙋🎣 🏞️🐟,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-8323151,fr,real,Rejoignez-moi à l'arrière de la boutique.,🫵➡️ 🏪⬅️ 🙋,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-4604534,fr,real,C'est elles qui conduiront la Volkswagen.,👩👩 🚗➡️,dangling ➡️,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-12726370,fr,real,"La mort peut nous frapper à tout moment, restons donc sur nos gardes au cas où elle se manifesterait.",💀⏰❓ ➡️ 👀⚠️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+tatoeba-2914557,fr,real,Tu as adjoint le nom de ton mari au tien.,🫵 💍👨 ➕ 📛,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00000,en,ai,"I missed the second half, so I’ve been glaring at the final score on my phone.",⚽⏪ 👀❌ ➡️ 📱📊😠,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00001,en,ai,"We showed up an hour early for the interview, so we grabbed coffee and practiced our answers.",🙋🙋 ⏰1️⃣⏪ 🎤 ➡️ ☕☕ 🗣️📝,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00002,en,ai,I rode past your empty house again today.,🚲➡️ 🏠🫵 🪟❌ 😔,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00003,en,ai,"We told the guys we'd scored, then realized the goal was disallowed and just went quiet.",🙋💬👥 ⚽✅ ➡️ ⚽❌ 🤐😞,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00004,en,ai,We burnt the cake we were going to share.,🎂🔥🔥 ➡️ 🍰❌ 😢,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00005,en,ai,I'm going to charm the dentist into forgetting about that cavity next week.,⏩ 🦷👨‍⚕️ 😏💬 🫵🦷❌ 😇,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00006,en,ai,"My sister's flight got delayed, so now I'm stuck waiting at the airport.",👧✈️⏰➡️ 🙋🧳⏳😩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00007,en,ai,I'm going to have to return this whole order next week because they sent me the wrong size again.,📦❌📏 ➡️ ⏩📅 🔄📦 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00008,en,ai,I'm sitting alone at the table because everyone left after the argument.,🙋🪑🍽️ 👥💬🔥 ➡️ 🚶🚶🚶 😔,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00009,en,ai,I'm grinning on the couch because I finally hit a new deadlift PR.,🛋️😁 🏋️⬆️🎉,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00010,en,ai,"Because my sister finally set up auto-pay, she hasn't missed a single bill.",👧 ➡️ 💳🤖 ✅ ➡️ 🧾❌ 😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00011,en,ai,I used duct tape and it's still dripping.,🚰💧 🩹🔧 ➡️ 💧💧 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00012,en,ai,We burned the garlic again because you walked away from the stove.,🧄🔥🔥 🫵🚶➡️ 🍳❌ 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00013,en,ai,My sister texted that the trail was closed for good.,👧💬 🥾🚫,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00014,en,ai,"My brother shut off the water main earlier, so now the sink's leaking everywhere.",👦🔧🚰⏪ ➡️ 🚰💧💧💧 😩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00015,en,ai,"I told my sister the surprise party was at noon, and she said she’d be two hours late.",🙋💬👧 🎉🕛 ➡️ 👧💬 ⏰2️⃣🥱,ok,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00016,en,ai,"I burned the garlic earlier because I got distracted, so now this whole stir-fry tastes bitter.",⏪🧄🔥😵 ➡️ 🍳🥦😖,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00017,en,ai,I've wiped the same sticky handprint off the TV three times now and the kid's still eating jam straight from the jar.,📺🧒✋ ➡️ 🧽🧽🧽 ➡️ 🧒🍯🥄 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00018,en,ai,We finally scrubbed the stove until it shined and didn't stop there.,🧽🔥🍳 ➡️ ✨✨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00019,en,ai,We’re sitting on the balcony in silence because the ocean took her hat this morning.,🌅 🌊💨 👒💨 😱 ⏪ 🪑🌇 🤐😔,11 emojis,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00020,en,ai,"The power went out earlier, so Dad’s candles are now lighting the whole house.",⏪💡❌ ➡️ 👨🕯️🕯️🏠💡,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00021,en,ai,"I got drenched walking to the store earlier, so now I'm watching the sun come out from my soaked couch.",⏪🚶🏪 🌧️💦 ➡️ 🛋️💧 ☀️👀,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00022,en,ai,"Mom's flight got delayed, so I got to grab coffee with her.",👩✈️⏰⏪ ➡️ ☕👩🙋 😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00023,en,ai,I'm soaked because I wiped out in a puddle earlier.,⏪ 💦🕳️ 🏃💥 ➡️ 🧍💧💧 😩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00024,en,ai,My little brother is going to nail his first solo bus ride next week.,👦 🚌⏩ 🎉👍,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00025,en,ai,I'm going to fix my phone's cracked screen myself next weekend and save a fortune.,🙋🔧📱🩹 ⏩🗓️ ➡️ 💰✅ 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00026,en,ai,My brother nailed the interview because he spilled coffee on the boss.,👨 💼🗣️ ➡️ ☕💥 👔 ➡️ ✅😅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00027,en,ai,My brother finally texted that he made it home from the match safe and sound.,👦💬 🏟️➡️🏠✅ 😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00028,en,ai,"Even with this flight delay, I will still make my connection because I booked the longer layover like a pro.",✈️⏰⏩ 🫵😎 ➡️ 🔗✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00029,en,ai,I caught myself grinning at my phone when he texted to say he’d bring pastries.,📱💬🥐 ➡️ 🙋😊😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00030,en,ai,I'm stuck eating dry cereal for dinner because I forgot to buy groceries on my way home.,🏠 🥣🥣🥣 😐,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00031,en,ai,"I texted my roommate that the kitchen was finally spotless, and I could actually relax.",🙋📱💬 🍳✨✅ ➡️ 😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00032,en,ai,I'll attempt a three-tier cake next week and probably invent new swear words.,⏩ 🎂🎂🎂 🧑‍🍳 ➡️ 🤬🤬,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00033,en,ai,My sister texted that the waiter winked at her and then called her ma'am.,👧💬 🍽️👨😉 ➡️ 👵💬 😳,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00034,en,ai,My dad said he bragged about me all night.,👨💬 🗣️🫵👏 🌙,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00035,en,ai,We finished the dishes early so now we're relaxing.,🍽️🧼✅ ➡️ 🛋️😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00036,en,ai,"We left the gate open, so now the deer are having a salad bar.",🚪🔓 ➡️ 🦌🥗🥗😋,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00037,en,ai,"We told her the surprise party was at seven, and she said we were late.",👥💬🎉🕖 👩💬🫵⏰❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00038,en,ai,My little brother is going to walk across that stage next week and I already know I'm gonna cry.,👦🚶🎓 ⏩📅 😭,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00039,en,ai,"Our phone screen cracked, so we finally got that upgrade we wanted.",📱💥 ➡️ 📱🆕😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00040,en,ai,I woke up to my cat curled on my chest.,🌅😴 ➡️ 🐈⬛🫁 💖,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00041,en,ai,I finally finished scrubbing the kitchen because I spilled grease everywhere earlier.,🧽🍳 ⏪🛢️💥 ➡️ ✨✅ 😮‍💨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00042,en,ai,My sister texted that she got us tickets for the concert after all.,👩💬 🎫✅ 🎤🎶 🥳,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00043,en,ai,"I found the perfect jacket on sale, so I practically floated to the register.",🧥✨💸 ➡️ 🛒😍,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00044,en,ai,"We lost the kid's blanket, so now he won't stop crying.",👶🧸❌ ➡️ 😭😭😭,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00045,en,ai,I tripped on a root so now I'm limping.,🌳🦶💥 ➡️ 🚶‍♂️🦵😖,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00046,en,ai,I'm sitting on the curb because my wallet slipped out somewhere.,🙋🪑🛣️ 👛❌ 😞,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00047,en,ai,We’re going to be stuck in that dentist’s waiting room again next week.,🦷🪑 👥⏳ ⏩😩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00048,en,ai,"We told the instructor we'd practiced parallel parking, even though we hadn't touched the wheel once.",🫵👥💬🧑‍🏫 🚗🅿️✅ 🚗❌ 🤥,ok,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00049,en,ai,We got a table by the window since we came early.,🍽️🪟✅ ⏪🏃💨 😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00050,en,ai,"We missed sign-up day, so now we're stuck in beginner French.",📝❌ 📅 ➡️ 🧑‍🤝‍🧑🇫🇷🐣 😩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00051,en,ai,"My sister's puppy chewed through her favorite shoes, and she still taught him to sit and stay by the end of the week.",👧🐶 👟🦷💥 😤 ➡️ 🗓️ 🐶🪑✅ 😊,11 emojis,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00052,en,ai,I just watched the little guy stack three blocks all by himself and clap for his own tiny hands.,👶 🧱🧱🧱 ➡️ 👏👏 🥹,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00053,en,ai,I accidentally walked in on my sister's surprise party holding her gift.,🚶🚪 ➡️ 🎉😲 🎁🙋,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00054,en,ai,We laughed and said the seagull clearly thought our sandwiches were his.,🙋😂 🐦💬🥪🫵 ➡️ 🐦🫳🥪,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00055,en,ai,"My brother missed the winning goal, so we stayed up celebrating anyway.",⚽🥅❌ 👦😞 ➡️ 🎉🥳🌙,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00056,en,ai,My sister cut her own bangs and now she's wearing a beanie.,👧✂️💇 ➡️ 🧢😬,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00057,en,ai,I knocked my water over at dinner and just froze.,🍽️ 🥤💥 ➡️ 🧍❄️ 😳,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00058,en,ai,My kid finally got into the morning class.,👶📚🌅 ✅ 😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00059,en,ai,I'm going to have to face my sister's teacher next week about skipping that assembly.,👩‍🏫👩 ⏩🗓️ 🫵🏫❌ 😬,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00060,en,ai,My sister asked me to return the five dresses I bought online before anyone saw them.,👩💬 🫵 👗👗👗👗👗 ↩️ 👀❌,11 emojis,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00061,en,ai,We told her the cake was ready and she laughed out loud.,👥💬 🍰✅ ➡️ 👩😂,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00062,en,ai,"I got to the front row because I showed up two hours early, and the band just walked out.",🕑🕑 ⏪ 🚶 ➡️ 🎫🥇 🎸🚶🚶,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00063,en,ai,"My brother finally fixed his screeching alarm clock, so now I actually get to sleep.",👨🔧 ⏰🔊 ➡️ ⏰✅ 😴😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00064,en,ai,I ordered the wrong size and now I can't return it.,📦👕📏❌ ➡️ 🔄❌ 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00065,en,ai,We hid behind the couch and then the dog gave us away.,🙋🙋 🛋️🙈 ➡️ 🐕🐕💬 😱,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00066,en,ai,"I got to the register and my card declined, so I had to leave all my stuff there and walk out.",🛒➡️💳❌ 😳 ➡️ 🛍️⬇️🚶,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00067,en,ai,I stood in the dark kitchen eating cold leftovers straight from the pan.,🌑🍳 🧍 🥘🥄😐,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00068,en,ai,"My cousin missed the enrollment deadline for her language class, so now she's stuck on a waitlist for the whole semester.",👩🎓 📝❌⏰ ➡️ 📋⏳ 📚😞,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00069,en,ai,"I accidentally pulled up all my tomato seedlings thinking they were weeds, so now my garden looks pathetic.",🌱🍅 ➡️ 🙋🤏❌ 😱 ➡️ 🌿😢,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00070,en,ai,I took the wrong fork earlier so now I'm lost.,🛣️🔀❌ ➡️ 🧭❓ 😰,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00071,en,ai,"We'll only have to drive two hours tomorrow, so we can finally relax tonight.",⏩🚗2️⃣⏱️ ➡️ 🌙😌🍷,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00072,en,ai,We’re going to pretend we didn’t drop it when we get to the store tomorrow.,🙋🙋 ⏩🏪 🗣️ 🫵🫵💧❌ 😬,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00073,en,ai,I'm going to have to face my brother at the office tomorrow.,⏩ 🏢 👨💬🫵 👨‍💼⚔️ 😬,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00074,en,ai,My sister asked if I could please stop correcting her grammar in front of everyone.,👧💬 🙋✍️❌ 👥👀 🙏,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00075,en,ai,My mom said my lasagna turned out better than hers.,👩💬 🫵🍝👍 ➡️ 👵😲,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00076,en,ai,We told her the wedding starts at three.,🙋🙋💬 👰💒 3️⃣⏰,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00077,en,ai,"My sister's date got canceled, so she's staying in tonight.",👩📅❌ ➡️ 🏠🌙 😞,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00078,en,ai,We skipped the last gallery because the rain soaked us through.,🖼️💨 ➡️ 🌧️🌧️🧍💦 😖,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00079,en,ai,I texted my sister that I finally got the chop and my head feels so much lighter.,🙋📱💬👧 🫵✂️✅ ➡️ 🧠🪶 😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00080,en,ai,We drove all the way to the store only to find it closed.,🚗➡️🏪 ➡️ 🚪🔒 😩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00081,en,ai,My sister texted me that her new haircut makes her look like a punk rocker.,👧💬 ✂️💇‍♀️ ➡️ 🤘🎸,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00082,en,ai,"My brother forgot his gym bag, so I grabbed it before he left.",👦 🎒❌ ➡️ 🙋✊🎒 ⏩🚶,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00083,en,ai,I can't wait to get my teeth cleaned next week.,🦷🪥 ⏩📅 😬😁,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00084,en,ai,We're going to hit the gym tomorrow and finally try that new squat rack.,⏩ 🏋️🏋️ 🆕🦵✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00085,en,ai,I spilled my drink on the person in front of me and wanted to disappear.,🥤💥🧑‍🤝‍🧑 😱 ➡️ 🫥💨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00086,en,ai,"I got a flat tire, but the spare held out.",🚗🛞💨 ➡️ 🛞✅ 😅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00087,en,ai,My mom asked if I was seeing anyone and I knocked my fork off the table reaching for my water.,👩💬 🫵💑❓ ➡️ 🍴💥 😳,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00088,en,ai,"We lost the umbrella, so now we're crispy.",☂️❌ ➡️ 🌧️🚶 ➡️ 🦞🔥,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00089,en,ai,I'm going to help my mom pay her bills next week.,👩💸 ⏩ 🙋🤝,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00090,en,ai,My mom texted me that the rain ruined the picnic she planned for my birthday.,👩💬 🌧️💥🧺❌ 🎂😢,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00091,en,ai,We grabbed gas station coffee and hit the road.,⛽☕☕ ➡️ 🚗🛣️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00092,en,ai,I guess I'll just leave the cart sitting there tomorrow.,🛒 ➡️ ⏩📍🤷,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00093,en,ai,My brother is going to bail on our trip again.,👦 ✈️❌ ⏩ 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00094,en,ai,We spent the whole afternoon building a pillow fort and nobody cried once.,🏠🛋️🧸⏳🌅 👨‍👩‍👧 🛠️ 😊 😭❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00095,en,ai,I told my brother he can fix his own damn bike chain next time.,👨💬 🧑🔧🚲⛓️ 🫵✅ ⏩,ok,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00096,en,ai,We have to wear hats all week because the stylist cut one side way too short.,💇✂️✂️ ➡️ 🎩👥 🗓️7️⃣ 😬,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00097,en,ai,"My sister is going to hand over her keys next week, so the hardest part is finally behind us.",👧🔑➡️🫵 ⏩📅 ⏪😰 ➡️ 😌,several ⏪/⏩,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00098,en,ai,We’re going to be stuck on this boss level all night.,🎮👾🔁 🌙➡️☀️ 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00099,en,ai,We got the good coffee machine back in the break room today.,☕🤖❌ ⏪ ➡️ ☕🤖✅ 🏢 😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00100,en,ai,I'm stuck waiting for a rack because my brother borrowed my gym bag and left it at his place.,🙋⏳ 🧳❌ 🧑‍🤝‍🧑🏠 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00101,en,ai,We got the twins down for a nap and actually cleaned the kitchen.,👶👶😴 ➡️ 🧽🍽️✨ 😮‍💨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00102,en,ai,We're going to hug everyone at the reunion next week.,⏩🎉 👥🤗🤗🤗,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00103,en,ai,"My little brother nailed his first parallel park this morning, so he's been beaming all afternoon.",👦🚗🅿️✅ 🌅 ➡️ 😁☀️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00104,en,ai,Mom asked if I paid the bill and the lights went out.,👩💬 🫵💸❓ ➡️ 💡❌ 😬,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00105,en,ai,I told the waiter we’d take the check now and finally exhaled.,🙋💬🧾⏩ 🍽️✅ 😮‍💨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00106,en,ai,I'm going to take my little brother on a bike ride along the river tomorrow.,⏩ 🙋 🚲 👦 🏞️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00107,en,ai,I hit my squat goal and grinned at the mirror.,🏋️✅ 🪞😁,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00108,en,ai,We left the clinic and I held the door.,🏥🚪➡️ 🙋🚪✊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00109,en,ai,"We dropped the phone in the parking lot earlier, so now we're sitting here watching the screen flicker and die.",⏪📱💥🅿️ ➡️ 🪑👀📱✨➡️💀 😞,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00110,en,ai,I finally found a parking spot right outside the hotel after circling for twenty minutes.,🚗🔄🔄 2️⃣0️⃣⏱️ ➡️ 🅿️✅ 🏨 😮‍💨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00111,en,ai,Dad's already yawning because he had thirds at dinner.,👨🥱 🍽️🍽️🍽️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00112,en,ai,"My sister’s order came crushed, so she just sat there staring at the box.",👧📦 ➡️ 📦💥 😶👀,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00113,en,ai,We finally paid off the electric bill and celebrated with cheap tacos on the porch.,💡💸✅ ➡️ 🌮🌮 🎉 🏠,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00114,en,ai,We have to wait three more weeks for a decent cut because the barber messed up the first one.,💇💥 😩 ➡️ ⏳3️⃣📅 💇✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00115,en,ai,I had to shower by candlelight because the power went out again.,🕯️🚿 💡❌ 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00116,en,ai,We told the barber it actually looks fine.,🙋🙋 💬✂️👌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00117,en,ai,My cousin is going to rock her crooked new bangs at the family dinner tomorrow.,👧✂️💇‍♀️ ➡️ 🍽️👨‍👩‍👧 😎,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00118,en,ai,"I already shut the water off at the main valve, so the leak is just a slow drip now.",🚰🔧✅ ➡️ 💧💧 😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00119,en,ai,We both said we were glad the reunion was finally over.,👥💬 😊 🎉✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00120,en,ai,"We finally finished our full workout before work, so we're feeling pretty good about ourselves right now.",🏋️🏋️🏋️ ✅ ⏪🌅 ➡️ 😤💪,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00121,en,ai,I finally got all the laundry in before the rain started.,👕👖🧺 ✅ ➡️ 🌧️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00122,en,ai,I'm going to bake my sister a cake tomorrow.,⏩ 👩‍🍳 🎂 🎁👧,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00123,en,ai,We’re going to discover next week just how many boxes we actually own.,⏩📅 👥📦❓,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00124,en,ai,"Because my sister messed up the oven temperature, my cake is ruined.",👧🔥🌡️❌ ➡️ 🎂🔥💀 😭,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00125,en,ai,We forgot the umbrella and got soaked.,☂️❌ ➡️ 🌧️💦😩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00126,en,ai,We finally found a shady spot and just sat there watching the waves roll in.,🌞🥵 ➡️ 🌳🌳✅ ➡️ 🪑🌊👀 😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00127,en,ai,"My sister's cake collapsed, so we ate the whole thing straight from the pan laughing.",👧🎂💥 ➡️ 🍰🥄😆,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00128,en,ai,"I grabbed extra fries for my brother earlier, so he won't go to bed hungry tonight.",🙋🍟🍟 ➡️ 👦🍟 ⏩🛏️😋,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00129,en,ai,We’re going to miss the bonfire again tomorrow because of this endless rain.,⏩🔥❌ 🌧️♾️ 😞,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00130,en,ai,I'm going to nail this three-layer cake next weekend.,⏩🎂🎂🎂 👩‍🍳💪,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00131,en,ai,"We finally beat that boss because we grinded for hours last night, so now we can relax.",🎮👹 ⏪🌙⏳⏳ ➡️ 👹💀✅ ➡️ 😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00132,en,ai,"I thought my save file got corrupted, but it loaded right up, so I can finally relax.",🎮💾😱 ➡️ ✅😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00133,en,ai,My brother is going to help me fix the leak next Saturday and I can't wait.,👨‍🔧👦 ➡️ 🔧🚰 ⏩📅 😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00134,en,ai,We’re still laughing in the lobby because our interviewer called us by the wrong name twice.,🧑‍💼💬 🫵❌📛 🫵❌📛 ➡️ 😂😂 🏢,11 emojis,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00135,en,ai,I told my mom I finally nailed the pronunciation.,🙋💬👩 🗣️✅ 😄,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00136,en,ai,I just caught the bouquet and hid behind a chair.,💐🤲 ➡️ 🪑🙈,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00137,en,ai,I stalled the car at the light because I popped the clutch earlier.,🚗🛑 🚦 ➡️ 🚗💨❌ 😬,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00138,en,ai,"My sister flubbed her Spanish oral, so we celebrated with cake anyway.",👩🗣️🇪🇸❌ 😞 ➡️ 🎂🎉,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00139,en,ai,"The cake fell flat, so we turned it into a trifle and everyone laughed.",🎂📉 ➡️ 🍰🥣 😂👥,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00140,en,ai,We're going to split that last piece of cake later and I already know it won't be enough.,🍰➗ ⏩ 😞,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00141,en,ai,I'm going to take my cousin out for ice cream to cheer him up about his lost wallet.,👦😢👛❌ ➡️ 🧑‍🤝‍🧑🍦 😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00142,en,ai,We shouted that we passed the driving test!,🙋🙋💬 🚗✅🎉,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00143,en,ai,I’m stuck at the dentist for an hour because the hygienist double-booked my cleaning.,🦷🪑 ⏳1️⃣ 🕐 ➡️ 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00144,en,ai,I'll finally relax once the match is over tomorrow.,⚽⏩🏁 ➡️ 🙋😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00145,en,ai,I told my roommate to stop hovering over the stove and let the sauce actually simmer.,🫵💬 🧑‍🍳🛑🔥 ➡️ 🍲😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00146,en,ai,I laughed and told my neighbor his scarecrow had better rain gear than me.,🙋😂 💬👨‍🌾 🎃👕🌧️ ➡️ 🫵👎🌧️,ok,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00147,en,ai,"I finally finished the dishes, so the kitchen is clean.",🍽️🧼✅ ➡️ 🍳✨ 😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00148,en,ai,We're going to make midnight nachos with everything in the fridge.,🌙 🧀🌮 ➡️ 🧊🧺🍅🧀,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00149,en,ai,"My neighbor borrowed my ladder again and returned it broken, so now I'm stuck fixing his mess.",🏠🧑 🤝 🪜➡️🏠 🔨💥 ➡️ 🙋🔧😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00150,en,ai,I told my neighbor I finally fixed the leaky roof before the storm hit.,🙋💬 🏠🔧✅ ⏪🌧️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00151,en,ai,We told everyone we fixed the cracked phone ourselves.,🙋🙋 💬👥 📱🔧✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00152,en,ai,My dad just taught me how to get the campfire going.,👨👦 🔥🪵✅ 😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00153,en,ai,We took the wrong fork but still made the car before dark.,🛣️🔀❌ ➡️ 🚗✅ 🌇,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00154,en,ai,"The movers dropped my mom's china cabinet, but at least nothing inside shattered.",🚚👐 🗄️💥 😱 ➡️ 🍽️✅ 😮‍💨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00155,en,ai,"My brother’s car broke down again, so now I’m stuck driving him to work all week.",👨🚗💥 ➡️ 🙋🚗👨💼 📅📅📅 😩,11 emojis,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00156,en,ai,"My brother's bus got cancelled in the snow, so I drove him to work and made it back before my coffee got cold.",👦🚌❌❄️ ➡️ 🚗👦💼 ➡️ 🏠☕🔥😊,11 emojis,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00157,en,ai,We laughed and said the school reunion was just a bunch of bald guys comparing their old yearbook photos.,👥😂 🏫🎉 ➡️ 👨‍🦲👨‍🦲 📖📸,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00158,en,ai,I just swept up the kitchen floor and found all the little pieces of my hair I paid someone to cut off.,🧹🍳 ➡️ ✂️💇💇💇 😱,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00159,en,ai,"We finally got the electric bill paid this morning, so now we can actually relax.",🌅 💡📄💶✅ ➡️ 😌🛋️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00160,en,ai,"I’m finally going to that dentist appointment next week, so that weight is almost off my shoulders.",🦷👨‍⚕️ ⏩📅 🫵😮‍💨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00161,en,ai,"The opener canceled, so I got to sleep in.",🔑👤❌ ➡️ 🛏️😴☀️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00162,en,ai,We told her the party starts at seven and she said whatever.,👥💬🎉7️⃣ 👩💬😒,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00163,en,ai,We had to hide the treats because our dog figured out how to open the cupboard.,🐕 🚪🔓 ➡️ 🍖🙈,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00164,en,ai,Mom's dinner went cold in the dark kitchen.,👩🍲 ➡️ 🍽️❄️ 🌑,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00165,en,ai,My mom texted that the storm passed right over her street and she only got a light drizzle.,👩💬 ⛈️➡️🏘️ 👩 🌧️☔,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00166,en,ai,We both ducked when the cashier read the total out loud.,🧾💬💶💶💶 ➡️ 🧍🧍🙇 😬,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00167,en,ai,"My brother twisted his ankle on the trail, but we had a splint so he walked out fine.",👦🦶💥 🛤️ ➡️ 🩹✅ 🚶😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00168,en,ai,We ate dinner by candlelight and nobody said a word.,🍽️🕯️ 🤐🤐,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00169,en,ai,My brother is grinning like an idiot because he finally got the campfire going after twenty minutes of trying.,👦😁 🤪 🔥✅ ⏱️2️⃣0️⃣,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00170,en,ai,I'm going to bake you a cake next week for your birthday.,🙋 ⏩🎂🧑‍🍳 🫵🎂🎉,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00171,en,ai,"My sister spilled the cake secret, so now the whole party's ruined.",👧💬🎂🤫 ➡️ 🎉💥 😡,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00172,en,ai,"I watched my kid walk down the aisle without tripping once, and I had to bite my cheek.",👧🚶💒 ✅ 🫵😬🩸,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00173,en,ai,"I cleared the driveway before sunrise, so I’m sitting here with dry boots and a clear path.",🌌❄️ 🧹🛣️ ➡️ 🥾✅ 🛣️✅ 😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00174,en,ai,"We’re going to the dentist next week, unfortunately.",⏩📅 🦷👨‍⚕️ 😩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00175,en,ai,I'm going to miss our bike ride tomorrow.,⏩ 🚲👥 ➡️ 😢,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00176,en,ai,"The rain finally stopped, so I can hang the laundry out now.",🌧️⏹️ ➡️ 👕👖🧺 ☀️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00177,en,ai,"I told my friend my interviewer asked if I was nervous, and I laughed.",🙋💬👥 👨‍💼💬🫵😰❓ ➡️ 🙋😂,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00178,en,ai,"We forgot to bring the umbrella, so now we're dripping wet in front of everyone.",🙋☂️❌ ➡️ 🌧️💧💧 👥👀 😖,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00179,en,ai,"My mom’s test results got mixed up with another patient’s, so they’re redoing the bloodwork and she gets to come home early.",👩🏥 🧪🔀👤 ➡️ 🩸🔄 ➡️ 🏠⏪ 😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00180,en,ai,We'll finally get those tomatoes in the ground next week now that the frost risk is gone.,⏩📅 🍅🌱 ⏪❄️❌ 😊,several ⏪/⏩,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00181,en,ai,"We finally got that stubborn stain out of the kitchen floor, and we just stood there grinning at it.",🧽💪 🍽️🧼❌ ➡️ ✨✅ 🧍🧍😁,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00182,en,ai,My mom texted that she scrubbed the kitchen alone again.,👩💬 🧽🍳🧼 🙋‍♀️😔,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00183,en,ai,"My sister's train got cancelled again, so she missed her daughter's recital.",👧🚆❌ ➡️ 🎹❌ 😞,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00184,en,ai,I'm cooking alone tonight because my mom left this morning.,🌅 👩🚪 ➡️ 🌙 🙋🍳 😔,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00185,en,ai,We're going to be stuck without a phone all week.,📱❌ ➡️ 📅📅📅 😩,ok,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00186,en,ai,I told my brother he navigated that whole mountain route without a single wrong turn.,🙋💬 👦⛰️🧭 ✅ 👍,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00187,en,ai,I'm going to sit alone at the family dinner next week and pretend I'm fine.,⏩ 🍽️👨‍👩‍👧 🫵😐,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00188,en,ai,"I got my cavity filled earlier, so I can finally eat ice cream again.",🦷🔧 ➡️ 🍦✅ 😋,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00189,en,ai,"I burned the cake, so now we’re getting ice cream instead.",🎂🔥 ➡️ 🍦😋,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00190,en,ai,I'm hiding at my desk because I microwaved fish earlier.,🐟🍽️ ➡️ 🧑‍💻🙈 🪑,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00191,en,ai,"We missed the first half of the language class because of the bus strike, so now we're completely lost.",🚌✊ ➡️ 🏫⏪❌ ➡️ 🗣️😵,ok,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00192,en,ai,"We got stuck in traffic and missed the opening act, but we still danced all night.",🚗🚗🚗 🎤❌ 😤 ➡️ 💃🕺🌙,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00193,en,ai,We’ll walk into the reunion next week and pretend we remember everyone’s names.,⏩🚶🚶 🎉👥 ➡️ 🫵💬 🧠❌😅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00194,en,ai,My sister texted that her language class spent ten minutes arguing over how to say squirrel.,👧💬 🏫🗣️ 🐿️❓ ⏱️🔟 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00195,en,ai,"The twins finally went down for a nap, so I can actually breathe again.",👶👶😴 ➡️ 🙋😮‍💨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00196,en,ai,We’re stuck behind a tractor because we took the scenic route.,🚗 🚜🐢 ➡️ 🐌😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00197,en,ai,I'm going to sit alone at my birthday dinner next week because no one replied.,⏩🎂🍽️ 🙋🪑 👥💬❌ 😔,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00198,en,ai,"I overwatered my basil plant again, and now it's doing a dramatic little swoon.",🌿💧💧💧 ➡️ 🥀😵,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00199,en,ai,"We forgot the cake, so the whole surprise fell flat.",🎂❌ ➡️ 🎉💥 😞,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00200,en,ai,"We got to the museum early, so we scored the front row.",🏛️⏰⏪ ➡️ 🎟️🥇😄,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00201,en,ai,My sister texted me that she lost her wallet on the bus and can't stop crying.,👧💬 👛❌🚌 😭😭,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00202,en,ai,I spent twenty minutes wrestling with the hose again and now my knees are soaked.,🧑‍🌾 🐍💦🤼 ⏱️2️⃣0️⃣ ➡️ 🦵💧😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00203,en,ai,I stood in the cereal aisle for ten minutes and then just put the box back on the shelf.,🥣🚶⏳1️⃣0️⃣ ➡️ 📦↩️ 😐,ok,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00204,en,ai,"Thank god, we’re going to sort the whole birthday out next week and not scramble the day before.",🙏 🎂✅ ⏩📅 🗓️❌😰,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00205,en,ai,I told my friend the trail had a waterfall at the end.,🙋💬👥 🥾➡️💦,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00206,en,ai,"We burned the garlic earlier, so now we're calling it ""roasted flavor.",🧄🔥⏪ ➡️ 🗣️💬😋,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00207,en,ai,We're going to have this whole place packed and labeled by next weekend.,📦📦🏠 ➡️ 🏷️✅ ⏩🗓️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00208,en,ai,My sister keeps touching the back of her new bob and grinning at her reflection.,👧✂️💇‍♀️ ➡️ 🪞👀 🤚👩‍🦱 😁,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00209,en,ai,I'm going to hang a big framed photo of my dog right above my desk next week.,⏩ 🐕🖼️ ➡️ 🖥️⬆️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00210,en,ai,My sister texted that Dad tried to pay the electric bill with a coupon.,👧💬 👨💡💵 ➡️ 🎟️❌ 😂,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00211,en,ai,"I finally beat that boss because I grinded levels all morning, so I can relax now.",🌅⚔️📈📈 ➡️ 👹💀✅ 😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00212,en,ai,I dropped a box of dishes in front of the new neighbors.,📦🍽️ 💥⬇️ 👀👥🆕 😳,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00213,en,ai,I'm going to have to speak French in class next week and I'll probably butcher every word.,🙋🗣️🇫🇷 🏫⏩ 😰,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00214,en,ai,I sat in the parking lot after the appointment.,🏥✅ ➡️ 🚗🅿️ 🪑😔,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00215,en,ai,We’re going to have to hide the good silver before next week’s family dinner.,🍽️👨‍👩‍👧‍👦 ⏩ 🥈❌🙈,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00216,en,ai,"The cake collapsed, but my sister just laughed.",🎂🏚️ 😱 ➡️ 👧😂,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00217,en,ai,I'm going to sleep so well next week once he moves out and takes that racket with him.,⏩🛏️😴 🚚👨➡️ 🎺❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00218,en,ai,We're going to walk into that interview tomorrow and show them exactly why they'd be lucky to have us.,⏩🚶👥 🏢💼 ➡️ 💪🫵 🍀🤞,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-en-00219,en,ai,I finally found the last box of my kid's cereal and grabbed it.,🧒🥣📦 🏃 ➡️ 📦✅ 🙌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00000,fr,ai,"On a trouvé une place à l'ombre, du coup on est bien installés.",🌳🌤️ 🪑✅ 😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00001,fr,ai,Il a tellement aimé la balade qu'il veut y retourner demain.,🚶🌳😍 ➡️ ⏩🔁,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00002,fr,ai,"J'ai monté la côte jusqu'au col sans m'arrêter une seule fois, et là je regarde la vallée en reprenant mon souffle.",🚶⛰️⬆️ 🛑❌ 🏔️ 👀🏞️ 😮‍💨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00003,fr,ai,"Ça me serre le cœur de voir ma sœur ranger ses affaires de plage sans même un mot, alors qu'on devait rester jusqu'à dimanche.",👧🧳🏖️ 🤐 💔 😢,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00004,fr,ai,"J'ai enfin passé le code et je suis ressorti de l'auto-école avec le sourire, la paperasse dans une main et mon vieux stylo dans l'autre.",🚗📝✅ ➡️ 🏫🚪😁 📄✋ 🖊️✋,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00005,fr,ai,"On a enfin fini de ranger l'appartement, on peut souffler devant une table vide.",🧹🏠✅ ➡️ 🪑🍽️ 😮‍💨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00006,fr,ai,Elle a soupiré en disant que son vol était encore retardé et qu'elle ne rentrerait pas ce soir.,👩😮‍💨💬 ✈️⏳🔄 ➡️ 🏠❌🌙,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00007,fr,ai,On a dit qu’on avait mal calculé et qu’on visiterait le musée un autre jour.,👥💬 🧮❌ ➡️ 🏛️⏩📅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00008,fr,ai,Mon collègue a passé vingt minutes à chercher ses lunettes alors qu'elles étaient sur son front.,👨‍💼 🔍👓 ⏳2️⃣0️⃣ ➡️ 👓🤦,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00009,fr,ai,J'ai voulu dégager le ballon et je l'ai envoyé dans notre propre but.,⚽🦵 ➡️ 🥅🙋 😱,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00010,fr,ai,Ma sœur est ressortie du salon avec une coupe tellement de travers qu'elle a fondu en larmes devant le miroir.,👩🚪➡️ 💇✂️😬 ➡️ 🪞😭,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00011,fr,ai,"Je vais enfin regarder ce match tranquillement, sans stress.",🙋 📺⚽ 😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00012,fr,ai,"On s'est dit qu'on irait tous ensemble à la fête de l'école samedi, et on a déjà réservé les places pour le spectacle.",👥💬 🏫🎉➡️ ⏩🗓️ 🎟️✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00013,fr,ai,"Mon frère a oublié les cartons dans la cour, parce qu'il a dû partir en urgence.",👦 📦❌ 🏠🌳 ➡️ 🏃💨 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00014,fr,ai,"On a raté le début du concert parce qu'on s'est trompés de salle, et maintenant on entend juste les rappels à travers la porte.",🎶🎤 🚪❌➡️🚪🔀 😰 ➡️ 👂🎶🚪,ok,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00015,fr,ai,"Je viens de retrouver trois mugs identiques dans un carton étiqueté cuisine, et je souris tout seul devant le tas.",📦🏷️🍳 ➡️ ☕☕☕ 😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00016,fr,ai,"J'ai réussi à colmater la fuite sous l'évier avant que ton père rentre, et franchement, je l'ai bien mérité, mon café.",🚰🔧✅ ⏪👨🏠 ☕😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00017,fr,ai,On a rigolé quand elle nous a annoncé que l'école fermait pour cause de neige.,👩💬🏫❄️🚫 ➡️ 😂😂,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00018,fr,ai,Mon meilleur ami va déménager à Lyon le mois prochain et ça me serre déjà le cœur.,👦🧑‍🤝‍🧑 ➡️ 🚚🏙️ ⏩📅 😢💔,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00019,fr,ai,"Mon frère m'a dit qu'il avait retrouvé son vélo, ouf, on peut enfin respirer.",👦💬 🚲✅ 😮‍💨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00020,fr,ai,Elle m'a écrit que sa dent ne lui faisait plus mal.,👩💬 🦷😖❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00021,fr,ai,On nous a annoncé qu'on avait retrouvé ton portefeuille.,👥💬 ➡️ 👛✅ 🙋😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00022,fr,ai,Ma sœur va enfin faire soigner cette dent qui la gêne.,👧🦷😖 ➡️ 🦷🩺✅ 😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00023,fr,ai,J'ai dit que j'avais enfin trouvé mon bonheur en ligne.,🙋💬 🫵🔍😊 🌐✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00024,fr,ai,"La semaine prochaine, je vais monter ma tente tout seul comme un grand, et elle tiendra debout sans l'aide de personne.",⏩🏕️ 🙋⛺🔨 ➡️ ⛺✅ 💪,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00025,fr,ai,Ma sœur m'a annoncé qu'elle a enfin trouvé un coiffeur qui comprend ses cheveux.,👩💬 🙋♀️💇✅ 🎉,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00026,fr,ai,J'ai réussi à souffler les bougies du gâteau que j'avais préparé moi-même avant que ma fille n'arrive dans la cuisine.,🎂🕯️🙋💨✅ ➡️ 👧🚪❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00027,fr,ai,"Mon frère va encore rater son code la semaine prochaine, ça m'énerve.",👦🚗📝❌ ⏩📅 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00029,fr,ai,J'ai regardé par la fenêtre et j'ai dit à ma sœur qu'on allait faire un bonhomme de neige.,🙋🪟👀 ➡️ 👧💬 ⛄⏩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00030,fr,ai,On a annoncé qu'on avait enfin réussi nos tomates.,👨‍👩‍👧 📣 🍅✅ 🎉,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00031,fr,ai,Il a annulé son rendez-vous chez le dentiste parce qu'il n'a plus les moyens de payer.,🦷👨‍⚕️ 📅❌ ➡️ 💶❌ 😞,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00032,fr,ai,"Elle a attrapé une méduse mais le lifeguard l'a rassurée, ouf.",👩 🌊🪼 😱 ➡️ 🧑‍🚑💬👍 😮‍💨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00033,fr,ai,Mon frère a rigolé en disant que son téléphone avait rendu l'âme.,👦😂 📱💀,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00034,fr,ai,"Mon frère a dit qu'il avait enfin réussi à avoir les places, ouf.",👦💬 🎫✅ 😮‍💨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00035,fr,ai,Je lui ai avoué en baissant les yeux que j'avais inondé le couloir.,🙋👀⬇️💬 🫵 💧🌊🚪 😬,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00037,fr,ai,"On a encore raté le créneau, faut tout recommencer.",⏰❌ ➡️ 🔄🔁 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00038,fr,ai,Ma sœur m'a avoué qu'elle avait perdu son portefeuille avec toutes ses photos dedans.,👧💬 👜❌ ➡️ 🖼️❌ 😢,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00039,fr,ai,Mon frère a préparé un dîner aux chandelles et elle a dit oui.,👨🍳🍽️🕯️ 👩💬✅ 💍,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00040,fr,ai,Je regarde mon panier vide depuis vingt minutes.,🛒❌ 👀⏱️2️⃣0️⃣ 😞,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00041,fr,ai,"Mon coloc va encore mettre sa musique à fond demain soir, je vais péter un câble.",🧑‍🤝‍🧑 🎵🔊 ⏩🌙 😤💥,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00042,fr,ai,Il m'a avoué qu'il avait complètement oublié l'anniversaire de sa sœur.,👨💬 🎂👧❌ 😬,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00043,fr,ai,On a laissé les plants dehors sans les couvrir et la gelée a tout brûlé pendant la nuit.,🌱🏠❌ 🌙❄️ ➡️ 🥀😢,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00044,fr,ai,"On a enfin fini ce niveau difficile parce qu'on s'est entraidés pendant deux heures, et là on savoure.",🎮🧩😤 ➡️ 🤝🤝⏳⏳ ➡️ ✅🏆 🥳,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00045,fr,ai,"On s'est trompés de jour, et maintenant on repart avec la carte.",📅❌ ➡️ 🗺️🔄 😞,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00046,fr,ai,Je sors du coiffeur avec une coupe qui ne me va pas du tout parce que la coiffeuse s'est trompée.,💇✂️ ➡️ 🙋🤦 😭,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00047,fr,ai,On nous a annoncé qu'on a gagné le concours de cuisine.,👨‍🍳🏆📣 🥳🎉,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00048,fr,ai,"J'ai enfin fini de désherber, mes tomates respirent.",🌱🌿😓 ➡️ 🍅😮‍💨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00049,fr,ai,"La semaine prochaine, on va devoir retourner à l'auto-école et ça me pèse déjà.",⏩📅 🚗🏫🔁 😩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00050,fr,ai,"J'ai retrouvé mon portefeuille dans le frigo, à côté du beurre.",👛❓ ➡️ 🧊🚪 👛🧈 😅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00051,fr,ai,Je lui ai écrit que nos vacances à la plage étaient finies et que je regardais déjà les photos avec un pincement au cœur.,🙋💬 🏖️✅ ➡️ 📷👀 💔,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00052,fr,ai,"Demain on va chez la coiffeuse pour rattraper ma coupe ratée, ça va être folklorique.",⏩ 📅 💇‍♀️ ✂️💇 🫣,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00053,fr,ai,Je vais lui préparer un gâteau surprise pour son anniversaire samedi.,🙋 🎂👩 🎁🎉 ⏩😲,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00054,fr,ai,"On va enfin boucler les factures du projet la semaine prochaine, et ça fait vraiment du bien de voir le bout du tunnel.",📄💶📁 ⏩✅ 😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00055,fr,ai,"On a oublié la liste à la maison, donc on est bons pour refaire le tour des rayons avec la caisse qui nous attend.",📝❌🏠 ➡️ 🛒🔄🛒 ➡️ 🧾⏳ 😩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00056,fr,ai,Ma sœur a annoncé à toute la tablée qu'elle avait guidé sa classe au musée sans consulter ses fiches une seule fois.,👩💬 👨‍👩‍👧🍽️ 🏫🚌 ➡️ 📝❌ 😮,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00057,fr,ai,On va enfin pouvoir partir en randonnée la semaine prochaine maintenant que la météo s'est calmée et qu'on a trouvé un créneau.,⏩📅 🥾⛰️ ✅ 🌤️😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00058,fr,ai,Je vais encore devoir supporter tante Michèle qui va me resservir trois fois du gratin.,👵🍲🍲🍲 😩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00059,fr,ai,"J'ai arrosé les tomates avec du désherbant, donc je vais devoir tout replanter devant les voisins.",🍅💧🧪 ➡️ 🍅☠️ 😱 ➡️ 🌱🔄 👥👀,ok,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00060,fr,ai,On va devoir dire adieu au voisin demain.,👋🏠👋 👨 👋 ⏩😢,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00061,fr,ai,"J'attends l'addition depuis vingt minutes, ça commence à faire long.",🍽️🧾⏳2️⃣0️⃣ 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00062,fr,ai,"Mon frère s'est endormi sous le casque et le coiffeur lui a raté la nuque, du coup je rigole encore en le voyant.",👦💈😴 ➡️ ✂️💇❌ ➡️ 🙋😂,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00063,fr,ai,Je dois annuler le baby-sitting parce que j'ai oublié de prévenir les parents.,👶🧑‍🍼❌ ➡️ 👨‍👩‍👧💬❌ 😬,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00064,fr,ai,"Je vais enfin arrêter de me relever la nuit pour grignoter, ça me pèse trop.",🌙🍫🍪 ➡️ 🛑✋ 😮‍💨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00065,fr,ai,Je vais enfin me réveiller sous la neige demain matin.,⏩🌅 ❄️❄️ 😴➡️🙋 😍,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00066,fr,ai,J'ai dit à l'auto-école que ça fait trois fois qu'ils me posent un lapin.,🙋💬🚗🏫 🫵👻❌ 3️⃣ 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00067,fr,ai,"Je respire enfin parce que le colis commandé la semaine dernière vient d’arriver intact, alors que je le croyais perdu.",⏪📦❌ 😟 ➡️ 📦✅ 🚪 😮‍💨😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00068,fr,ai,"On a enfin posé les sacs, la voiture est vide.",🧳🧳 ➡️ 🚗✅ 😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00069,fr,ai,Mon frère m'a avoué qu'il ne viendrait plus camper avec nous cet été.,👦💬 🏕️❌ ⏩☀️ 😞,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00070,fr,ai,"J'ai calé trois fois au feu devant le moniteur, j'avais chaud partout.",🚗🛑🛑🛑 ➡️ 😰🔥,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00071,fr,ai,Nous avons réussi le gâteau du premier coup puisque nous avons suivi la recette.,👩‍🍳📖✅ ➡️ 🎂😋,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00072,fr,ai,"J'ai renversé mon café sur le clavier, mais j'ai réussi à tout sauver avant que ça grille, et franchement, je me suis surpris.",☕💥⌨️ 😱 ➡️ 🧑‍🔧✅💾 😮‍💨😅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00073,fr,ai,"On a renversé la carafe sur la nappe, du coup tout le monde nous regarde.",🍷💥 🍽️💦 ➡️ 👥👀🫵,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00074,fr,ai,"Il a encore grignoté cette nuit, alors le chat a vomi sur le canapé.",🌙 🐈🍽️ ➡️ 🤮🛋️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00075,fr,ai,"On a laissé le chien seul et il a mangé le canapé, mais au moins on rit enfin.",🐕🏠 ➡️ 🛋️🍽️ 😱 ➡️ 😂,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00076,fr,ai,Mon frère va encore me laisser tout le bêchage du potager.,👦 ➡️ 🙋 🥱 🧑‍🌾⛏️😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00077,fr,ai,"Comme elle a oublié de payer la facture, sa maison est dans le noir et elle cherche ses bougies à tâtons en riant.",👩 🧾❌ ➡️ 🏠🌑 ➡️ 🕯️🔍 😂,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00078,fr,ai,Je suis rentré du boulot à vélo sous le soleil.,👔➡️🚴 ☀️🏠,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00079,fr,ai,Il a encore paumé son portefeuille donc je dois lui avancer l'argent.,👨 👛❌ 😤 ➡️ 🙋💸👨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00080,fr,ai,"On a dû rebrousser chemin parce que le sentier était barré, et maintenant on poireaute au parking.",🥾🚶 ➡️ 🚧❌ ⏪ 🚗🅿️ 😐,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00081,fr,ai,"J'ai encore appelé le service client qui m'a dit que ma facture serait corrigée sous quarante-huit heures, ça fait trois semaines.",📞💬 🧾✅ ⏳4️⃣8️⃣ ➡️ ⏳3️⃣🗓️ 😤,11 emojis,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00082,fr,ai,Mon frère va enfin faire ses courses tout seul la semaine prochaine et je suis drôlement content de le voir se débrouiller.,👦🛒 ⏩📅 😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00083,fr,ai,"La voiture cale encore, on est bons pour attendre la dépanneuse.",🚗💥 ➡️ 🛑 🚚🔧 ⏳😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00084,fr,ai,"Comme j'avais repéré le restaurant et prévenu tout le monde en douce, sa tête quand il est entré valait chaque heure passée à mentir.",🍽️👀 🤫👥 ➡️ 🚪😲 🥳,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00085,fr,ai,"On va peut-être éviter le vélo, je ne sais pas trop pédaler.",🚲❌ 🤷 🫵🚴❓,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00086,fr,ai,Je dois encore sortir le chien parce qu'il a pissé partout sur le tapis tout à l'heure.,🐕💦🟫 ➡️ 🚶🐕 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00087,fr,ai,"Je vais devoir annuler le resto avec mon frère, j'ai honte.",🙋 🍽️❌ 👦 😞,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00088,fr,ai,"On s'est plantés dans les comptes, donc on paie les factures en retard.",🧮❌ ➡️ 🧾⏰❌ 💸😟,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00089,fr,ai,Je suis bloqué à l'hôtel parce que j'ai paumé mes clés de voiture sur la plage.,🏖️ 🔑🚗❌ ➡️ 🏨🔒 😩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00090,fr,ai,"Mon frère a encore oublié sa carte, donc on poireaute devant l'entrée de la salle de sport comme des idiots.",👦 🪪❌ ➡️ 🏋️🚪🧍🧍😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00091,fr,ai,"On va enfin pouvoir souffler, le match est reporté à la semaine prochaine.",⚽📅⏩ 😮‍💨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00092,fr,ai,On s'est écrit qu'on avait trouvé la baby-sitter parfaite.,👩💬👨 📝 🧒👶 ✅😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00093,fr,ai,"On peut se lâcher sur le fromage ce soir, puisque le dîner d'hier s'est bien passé.",⏪🍽️😊 ➡️ 🧀🧀🧀🍷,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00094,fr,ai,Mon frère a lâché la barre et s’est retrouvé à plat ventre sur le tapis.,👦🤸 ➡️ 🤲❌ ➡️ 🧎💥 🛋️ 😅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00095,fr,ai,Je descends les cartons un par un en évitant de regarder les murs vides.,📦📦📦 ⬇️ 🚶 👀❌🧱,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00096,fr,ai,Mon frère a descendu le pot de Nutella et trois tartines sans que personne l'entende.,👦 🍫🥄 🍞🍞🍞 🤫,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00097,fr,ai,"Il a glissé sur le perron enneigé et s'est étalé de tout son long, mais il s'est relevé en riant.",🚶❄️🧊 ➡️ 🤸💥 😅 ➡️ 🧍😂,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00098,fr,ai,Mon frère a encore laissé traîner ses factures sur la table et il faut toujours que ce soit moi qui les range.,👦 🧾🧾 🪑 ➡️ 🙋🗂️ 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00099,fr,ai,"Mon frère est enfin sorti de chez le coiffeur, sa coupe ratée ne se voit presque plus.",👦💈 ➡️ ✂️💇‍♂️ ➡️ 🙈❌ 😅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00100,fr,ai,J'ai enfin réussi à faire briller toute la cuisine et le sol ne colle plus du tout sous mes pieds.,🧽🧼🍳✨ ➡️ 🦶👣✅ 😄,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00101,fr,ai,"La semaine prochaine, on va devoir visiter ce musée avec mes parents, et je sens déjà que je vais avoir honte en expliquant les œuvres.",⏩📅 🏛️👨‍👩‍👧 🫵🗣️🖼️ 😳😖,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00102,fr,ai,On nous a encore annoncé un mariage et ma femme m'a dit qu'on était obligés d'y aller.,💌💍 🧑‍🤝‍🧑💬 🫵🫵➡️💒✅ 😩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00103,fr,ai,On a dû pousser la voiture jusqu'à la station parce qu'on avait oublié de faire le plein.,🚗⛽❌ ➡️ 🧑‍🤝‍🧑💪🚗 ➡️ ⛽ 🥵,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00104,fr,ai,Mon frère m'a écrit que le concert était annulé et qu'il avait déjà revendu son billet.,👦💬 🎤❌ ➡️ 🎫💶✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00105,fr,ai,Je lui ai dit que je serais là pour souffler les bougies avec elle.,🙋💬 🫵🎂🕯️ ➡️ 🙋✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00106,fr,ai,Mon frère a rigolé en disant qu'il avait encore raté son créneau à l'auto-école.,👦😂💬 🚗❌ 😅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00107,fr,ai,On s'est dit qu'on n'aurait pas dû finir le paquet de biscuits à deux heures du matin.,🕑🌙 🍪🍪🍪🍪 ➡️ 🤢😅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00108,fr,ai,Mon frère est sorti du salon avec une coupe qui ne lui va pas du tout.,👦🚪➡️💇 ✂️❌ 😬,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00109,fr,ai,"Mon frère a oublié la moitié de la liste mais il a retrouvé son portefeuille, ouf.",👦 📝➗❌ ➡️ 👛✅ 😮‍💨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00110,fr,ai,"Mon frère a raté la dinde, alors on a tous fini au resto et c'était génial.",🦃🔥❌ ➡️ 🍽️🏠❌ ➡️ 🍽️🍴😄,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00111,fr,ai,Finalement le médecin a juste dit que c'était une angine et qu'il pouvait retourner à l'école dès demain.,👨‍⚕️💬 🦠😬 ➡️ 🏫⏩ 👦,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00112,fr,ai,Ma sœur va garder les jumeaux tout le week-end et elle a déjà préparé tout un planning d'activités.,👩 👶👶 🗓️✅ 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00113,fr,ai,Mon petit frère a enfin battu son record à son jeu préféré.,👦🎮 ⏪🏆 ➡️ 🏆✅ 🎉,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00114,fr,ai,Mon coloc a mis la musique à fond pour faire le ménage et franchement ça me fait rire.,🏠🧑‍🤝‍🧑 🎵🔊🧹 ➡️ 🙋😂,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00115,fr,ai,Je suis couvert de boue parce que j'ai glissé dans le potager en voulant rattraper ma brouette.,🥬🛒💨 ➡️ 🙋💥 ➡️ 🟤🟤🟤 😩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00116,fr,ai,"Comme on s'est endormis chez ma sœur après le repas, sa tondeuse nous a laissé une coupe bizarre qu'on ose à peine montrer dehors.",🍽️😴🏠👩 ➡️ 🚜✂️💇😳 ➡️ 🚪🙈,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00117,fr,ai,"Mon collègue a encore poireauté vingt minutes sous la pluie parce que le bus de 7 h 12 est passé sans s'arrêter, soi-disant complet.",👨‍💼🌧️⏳2️⃣0️⃣ 🚌7️⃣1️⃣2️⃣ 💨➡️🛑❌ 🚌🈵 😤,15 emojis,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00119,fr,ai,Mon frère va nous traîner dans une rando de huit heures dimanche et j'ai déjà mal aux jambes rien qu'à y penser.,👦 🥾⏩8️⃣⏳ 🗓️ ➡️ 🦵😖,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00120,fr,ai,"Mon frère a retrouvé son portefeuille dans le frigo, entre les yaourts.",👦 🔍👛 ➡️ 🧊🥛 😂,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00121,fr,ai,"Je leur ai annoncé la tête haute que ma coupe ratée, c'était moi qui l'avais choisie.",🙋💬 ✂️💇❌ 🙋✅ 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00122,fr,ai,"On a voulu ressortir les vieilles photos de classe et le projecteur a lâché, alors on a fini la soirée à rigoler dans le noir.",📸👵👴 ➡️ 📽️💥 ➡️ 🌑😂,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00123,fr,ai,On a réussi à tout caser dans le coffre du premier coup.,🧳🧳🧳 🚗🪑 ✅ 😅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00124,fr,ai,Je n'ai pas pu accompagner ma mère chez le médecin ce matin et j'ai passé la journée avec cette boule au ventre.,🌅 👩🏥 🫵❌ ➡️ 😔💔 😰,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00125,fr,ai,"J'ai arraché par erreur les plants de tomates que ma voisine m'avait donnés, je n'ose plus la regarder.",🍅🌱💥 😱 ➡️ 👩❌👀 😳,ok,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00126,fr,ai,Mon frère a dit qu'il ne viendrait plus jamais dans ce restaurant.,👦💬 🍽️❌🚫,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00127,fr,ai,"J'ai réussi à me garer du premier coup, sans toucher le trottoir.",🚗🅿️ ✅ 🎯 😎,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00128,fr,ai,Je vais devoir attendre la semaine prochaine pour ma commande.,📦⏳ ➡️ 📅⏩ 😩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00129,fr,ai,"La semaine prochaine, on va enfin monter ces trois bacs surélevés pour nos légumes.",⏩📅 🧑‍🌾 🪴🪴🪴 ⬆️ ✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00130,fr,ai,Je dois passer chez lui parce qu'il a oublié la moitié des courses sur le comptoir.,🏠➡️🏃 🛒🥫❌ 🧑😩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00131,fr,ai,"Comme on a rempli le frigo ce matin, on n'a plus besoin de se presser pour les courses.",🌅 🛒🧊🍎✅ ➡️ 🏃❌🛒 😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00132,fr,ai,Je lui ai écrit que je ne viendrai pas à son mariage parce que ça me fait trop mal.,🙋✍️💬 🫵💒❌ 😢💔,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00133,fr,ai,On a encore le moniteur collé à la vitre parce qu'on a oublié de desserrer le frein à main.,🖥️📎🪟 🚗🔒🖐️❌ 😅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00134,fr,ai,"Ma sœur m'a envoyé une photo de sa fille endormie sur le canapé après le baby-sitting, et ça m'a fait sourire toute la soirée.",👧📷💬 👶😴🛋️ ➡️ 🙋😊🌙,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00135,fr,ai,"Le guide s'est trompé de salle, du coup je découvre les réserves.",🧑‍🏫🚪❌ ➡️ 🏛️📦😮,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00136,fr,ai,"Mon ami a raté son examen de français parce qu'il s'est trompé de salle, et il doit repasser l'année prochaine.",👨📝❌ 🚪❌➡️🏫❌ 😢 ⏩🔁,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00137,fr,ai,"Mon frère va encore passer la soirée à mourir vingt fois dans son jeu, et je vais devoir écouter chaque lamentation en riant.",👦🎮💀💀💀 🌙 😤💬 😂,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00138,fr,ai,On lui a dit qu'on n'en pouvait plus du bruit.,👥💬 🫵 🔊😫,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00139,fr,ai,"Je me suis enfin assis, la pluie s'est arrêtée d'un coup.",🙋🪑😮‍💨 ➡️ 🌧️❌ ☀️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00140,fr,ai,"J'avais réservé pour deux au restaurant, mais ma table est partie donc je mange seul.",🍽️2️⃣ ✅ ➡️ 🪑❌ 😞 🍴👤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00141,fr,ai,"On est encore bloqués dans le bus parce que celui de 7 h est tombé en panne, et on poireaute depuis vingt minutes.",🚌⏸️ 🕖🚌💥 ➡️ ⏳2️⃣0️⃣ 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00142,fr,ai,On a raté le bus du coup on marche en rigolant.,🚌💨 🏃❌ ➡️ 🚶🚶 😂,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00143,fr,ai,"Il a décroché son entretien parce qu'il a passé des heures à peaufiner son CV hier soir, et franchement, ça valait le coup.",👨 ⏪📄✍️⏳⏳ ➡️ 💼✅ 😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00144,fr,ai,Je lui ai annoncé tout sourire que j'avais enfin eu mon permis après trois mois à l'auto-école.,🙋😁💬 🚗✅ 🎉 ⏪3️⃣🗓️ 🏫,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00145,fr,ai,Mon frère m’a annoncé qu’il avait marqué le but décisif et il avait du mal à tenir en place.,👦💬 ⚽🥅✅ 🙋😆,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00146,fr,ai,"Vivement samedi, on va enfin tester ce petit resto.",⏩📅7️⃣ 🍽️🤤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00147,fr,ai,Je vais encore passer le repas de famille à côté de ma sœur sans oser lui parler.,🍽️👨‍👩‍👧 👩👩 🫵💬❌ 😔,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00149,fr,ai,"On va encore poireauter une heure chez le médecin pour trois minutes de consultation, franchement.",🏥⏳1️⃣🕐 ➡️ 👨‍⚕️⏱️3️⃣ 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00150,fr,ai,"Je me suis fait un chocolat chaud après avoir dégagé l'allée à la pelle, et la neige tombait encore doucement.",🙋❄️🛠️ ➡️ ☕🍫 😌 ❄️🌨️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00151,fr,ai,On a fini la balade avec la chaîne dans les rayons.,🚴🔗 🛒➡️🛞 😬,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00152,fr,ai,Mon frère va adopter un berger australien et il sera le premier à lui apprendre tous les tours.,👦 🐕🐶 ➡️ 🥇🎓✨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00153,fr,ai,"La voiture de mon frère a calé, alors je l’ai remorquée moi-même.",👨🚗💥 ➡️ 🙋🚛🔗🚗 💪,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00154,fr,ai,Je vais devoir retourner à l'auto-école la semaine prochaine parce que j'ai encore raté mon créneau.,🚗🅿️❌ 😩 ➡️ ⏩🏫🚗,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00155,fr,ai,"J'ai dû courir après mon bus ce matin, alors forcément, j'arrive chez le médecin avec une tension à faire peur.",🌅 🚌🏃💨 ➡️ 🏥🩺 🫀⬆️😰,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00156,fr,ai,J'ai mal fermé le robinet donc j'ai inondé le voisin du dessous.,🚰🔓 ➡️ 💧💧💧 🏠⬇️ 😱,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00157,fr,ai,"Je vais devoir demander à ma sœur de garder les enfants samedi, mais ça m'embête de lui imposer ça encore une fois.",🙋🗓️6️⃣ 👧👦➡️👩 🧒🛡️ 😬😖,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00158,fr,ai,"On va enfin organiser la fête surprise pour ma sœur samedi, et tout est calé donc je respire.",🎉🎁👧 🗓️✅ ➡️ 😮‍💨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00159,fr,ai,"On a enfin pu souffler après la séance, quand le coach a dit qu'on avait fini par les abdos.",🏋️😤 ➡️ 🧑‍🏫💬 ✅ ➡️ 😮‍💨😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00160,fr,ai,Je viens de voir mon voisin en pyjama sortir chercher son journal.,👀 🧑‍🤝‍🧑🩳 ➡️ 🚪📰 😂,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00161,fr,ai,"Je vais devoir emprunter le portable de ma sœur pour l'appeler, parce que le mien va sûrement rendre l'âme avant la fin de la semaine.",📱💀 ⏩ 🙋 📱❌ ➡️ 👧📱📞,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00162,fr,ai,"Je sors de chez le dentiste avec la moitié de la bouche endormie, et je souris tout seul comme un idiot.",🦷👨‍⚕️ ➡️ 😑😐 🫠,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00163,fr,ai,J'ai dit à mon voisin d'arrêter de déneiger devant chez moi à six heures du matin.,🙋💬 🧑‍🌾❄️🛑 🕕🌅 😠,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00164,fr,ai,Mon frère est coincé sur la route parce qu'il a encore oublié de prendre de l'essence.,👦 🚗🛣️ 🛑 ⛽❌ 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00165,fr,ai,"Comme il a plu toute la nuit, on a dû rentrer la tente trempée, mais là elle rit en la suspendant au balcon.",🌧️🌙 ➡️ ⛺💧🏠 ➡️ 👩😂 ⛺🧺,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00166,fr,ai,Mon frère a annoncé qu'il s'est enfin trouvé un coiffeur qui le comprend.,👨💬 🧑‍🦱✂️✅ 😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00167,fr,ai,J'ai annoncé à mon frère que j'avais réussi le gâteau du dimanche et il m'a dit qu'il en reprendrait bien une part.,🙋💬👨‍🍳🎂✅ 👦💬🍰😋,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00168,fr,ai,On nous a encore collé le repas de famille dimanche.,👨‍👩‍👧🍽️ 📅➡️😩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00169,fr,ai,"Mon frère est bien rentré de la plage, il a pu se reposer après avoir attrapé un coup de soleil.",👦🏖️➡️🏠 ✅ 😌 🦞,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00170,fr,ai,On a annulé le gâteau parce que mamie est tombée ce matin.,👵🤕🌅 ➡️ 🎂❌ 😢,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00171,fr,ai,"Il a fallu trois heures à mon frère pour rentrer, et il n'a même pas appelé.",👦🚗⏳⏳⏳ ➡️ 🏠 📞❌ 😠,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00172,fr,ai,"J'ai renversé mon café sur le rapport du patron, donc je planque les taches sous mon clavier.",☕💥 📄👔 ➡️ ⌨️🙈,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00173,fr,ai,Mon frère va encore nous bassiner avec son concert.,👦🎸🎤 ➡️ 🗣️🗣️ 😩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00174,fr,ai,Elle a enfin réussi à rentrer chez elle après sa crevaison.,🚗💥 ➡️ 🛠️ ➡️ 🏠😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00175,fr,ai,Je vais devoir annuler le camping du week-end prochain et laisser la tente fermée au garage.,⏩🏕️❌ ⛺🔒🏠 😞,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00176,fr,ai,Mon frère m'a dit qu'il en a marre de cette fuite d'eau qui dure depuis trois jours.,👦💬 🚰💧💧💧 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00177,fr,ai,"On a survécu au dentiste, même si nous avons failli arracher le fauteuil quand la fraise s'est mise à siffler.",🦷👨‍⚕️ ➡️ 😬💺✊ ➡️ ✅😮‍💨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00178,fr,ai,"J'ai renversé mon café sur la maquette, mais j'ai réussi à la réparer avant que le guide ne revienne.",☕💥 🏗️😱 ➡️ 🔧✅ ⏪🧑‍🏫🔙,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00179,fr,ai,"Il est rentré du sport sans douleur, ça faisait des semaines qu'on attendait ça.",🏃⚽ ➡️ 🏠 😌 🩹❌ ⏪⏳⏳,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00180,fr,ai,Je vais enfin récupérer ma voiture chez le garagiste demain.,⏩ 🔧🚗 ➡️ 🙋🚗😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00181,fr,ai,"Je me suis retrouvé à expliquer les fractions à mon fils avec des parts de pizza imaginaires, et maintenant j'ai faim.",👨👦 🍕➗ 🧠💬 ➡️ 🤤🍕,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00182,fr,ai,"On a monté la tente du premier coup, sans se disputer.",⛺✅ 👥😊,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00183,fr,ai,Je vais tenter un risotto aux champignons dimanche et je sens déjà que mon placard va me jouer des tours.,🍄🍚👨‍🍳 🗓️➡️ 🚪🍳😬,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00184,fr,ai,On a eu le bus juste à temps et on a pu s'asseoir enfin.,🚌🏃✅ ➡️ 🪑😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00185,fr,ai,Le chien de mon voisin s'est échappé dans le quartier et j'ai pu le rattraper avant qu'il traverse la route.,🐕💨🏘️ ➡️ 🙋🏃✋ 🛣️❌ 😮‍💨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00186,fr,ai,On a réussi à rentrer avant que la pluie tombe.,🏠✅ ⏪🌧️ 😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00187,fr,ai,"Mon frère a encore oublié la crème solaire à l'hôtel, alors on doit se taper la plage en plein cagnard sans rien.",👦 🧴❌🏨 ➡️ 🏖️☀️🔥 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00188,fr,ai,"On a perdu le petit au parc, donc on l'a retrouvé et on a tenu la promesse faite aux parents.",👶❌🌳😱 ➡️ 🔍👶✅ ➡️ 👨‍👩‍👦🤝,ok,2,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00189,fr,ai,"J'ai paumé ma liste, alors je rentre avec trois kilos de clémentines.",📝❌ ➡️ 🛒🍊🍊🍊🍊 🏠,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00190,fr,ai,J'ai crevé à dix bornes de chez moi et j'ai dû rentrer à pied sous la pluie.,🚗💥 🛣️1️⃣0️⃣ ➡️ 🚶🌧️🏠 😩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00191,fr,ai,"Je sors enfin sur le balcon respirer l'air frais après cette averse, et ça sent bon la terre mouillée.",🌧️➡️ 🚪🚶 🌿 🌬️😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00192,fr,ai,Je lui ai écrit que je ne viendrai pas samedi.,🙋💬 🫵 1️⃣9️⃣❌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00193,fr,ai,On a appris que personne ne viendrait à son anniversaire et on s'est dit qu'on aurait dû s'en douter.,🎂🎉 👥❌ ➡️ 😢🤦,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00194,fr,ai,Mon frère m'a avoué en regardant ses pieds qu'il avait encore séché les cours cet après-midi.,👦👀🦶 💬 🫵🏫❌ ⏪🌇 😔,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00195,fr,ai,"J'ai engueulé le médecin qui me parlait mal, donc il m'a mis dehors et je suis parti la tête haute.",🧑‍⚕️🗯️😠 ➡️ 🙋🗯️😤 ➡️ 🚪👋 🚶😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00196,fr,ai,On a annoncé que notre classe avait décroché la visite du musée.,🏫📢 🎓✅ 🏛️🎉,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00197,fr,ai,Ma sœur m'a écrit que la fuite avait encore empiré ce matin.,👧💬 🚰💧 ⏪🌅 ➡️ 😱⬆️,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00198,fr,ai,Je viens encore de marcher sur un grain de sable et ma serviette est déjà trempée par les éclaboussures du gamin d'à côté.,🏖️🚶🦶🪨😖 🧒💦🧺💧,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00199,fr,ai,"On a renversé la pièce montée sur la robe de la mariée, alors on s'est tous mis à regarder nos chaussures.",💒🎂💥 👰🤍 ➡️ 👥👀👟 😬,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00200,fr,ai,Mon voisin a réussi ses tomates grâce aux graines que je lui ai données au printemps.,👨‍🌾🍅✅ 🌱🙋🎁 🌸,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00201,fr,ai,"La semaine prochaine, on va enfin présenter notre plan de nouvelles lignes de bus et je peux vous dire qu’on a bossé comme des chefs.",⏩📅 🚌🆕📋 👥💪✅ 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00202,fr,ai,Il a encore oublié de fermer le robinet et maintenant tout le couloir est inondé.,🚰❌ ➡️ 💧💧💧 ➡️ 🌊🚪 😱,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00203,fr,ai,"On a réglé toutes les factures ce matin, du coup on respire enfin et on va pouvoir se faire un bon resto ce soir.",🌅 🧾🧾✅ ➡️ 😮‍💨 🍽️🍷🌙,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00204,fr,ai,"J'ai dit ouf, la neige a enfin arrêté.",🙋💬😮‍💨 ❄️❌ ✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00205,fr,ai,"J'ai réussi à récupérer toutes mes photos préférées sur mon vieux téléphone qui ne s'allumait plus, juste avant que le réparateur ne le jette.",📱❌⚡ ➡️ 🧑‍🔧🗑️ ⏪ 📷📷✅ 😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00206,fr,ai,Ma sœur a soupiré qu'elle ferait le ménage plus tard.,👧💬 🧹⏩ 😮‍💨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00207,fr,ai,On a voulu lui faire la morale sur le bruit et maintenant il répète chaque mot qu’on dit.,👥💬🙅 ➡️ 🧑🔁🗣️🗣️ 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00208,fr,ai,"Comme il avait oublié sa liste, il a ramené trois paquets de pâtes et du dentifrice, et il en est très content.",👨 📝❌ ➡️ 🛒🍝🍝🍝 🦷 ➡️ 😄,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00209,fr,ai,"Comme on avait révisé tous les deux hier soir, on a répondu à toutes leurs questions sans hésiter une seconde.",⏪👥📚 ➡️ 👥💬✅✅ 😎,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00210,fr,ai,"Mon frère va enfin passer son code la semaine prochaine, ça y est.",👦 ⏩🚗📝 ✅ 😄,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00212,fr,ai,"On s'est retrouvés devant le frigo vide à deux heures du matin, sans rien dire.",🕑🌙 👥 🧊🚪❌ 🤐😔,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00213,fr,ai,"Je vais enfin tester la salle de sport demain, avec un peu de chance je ne me ridiculise pas trop.",⏩🏋️🆕 🍀🙏 😬,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00214,fr,ai,On s'est dit qu'on ferait une soirée jeux vidéo et on a enchaîné jusqu'à trois heures du matin.,🎮👥 ➡️ 🕒3️⃣🌅 😴,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00215,fr,ai,"On a complètement raté la surprise, mais quand elle est arrivée en riant, on a tous soufflé d'un coup.",🎁🎉❌ 😬 ➡️ 👩🚪😂 ➡️ 😮‍💨😮‍💨,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00216,fr,ai,J'ai réussi à décaler mon rendez-vous chez le médecin parce que j'avais déjà bouclé mon dossier ce matin.,👨‍⚕️📅➡️📅✅ 🌅📁✅ 😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00217,fr,ai,On a appris par Mamie qu'il allait pleuvoir tout le week-end et ça nous a coupé les jambes.,👵💬 🌧️🌧️📅 ➡️ 😩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00218,fr,ai,Ma sœur m'a encore annoncé à la dernière minute qu'elle avait besoin de moi pour garder ses gosses samedi soir.,👧💬 ⏰⏪ 🫵🧒🧒 🗓️🌙 😤,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00219,fr,ai,On a atteint le sommet et on a partagé le thermos de café face au panorama.,🥾⛰️✅ ➡️ ☕🤝 🏔️😌,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00220,fr,ai,"On va encore devoir recommencer ce foutu gâteau, génial.",🎂❌ ➡️ 🔁🎂 😤😒,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00221,fr,ai,On va se retrouver avec dix paquets de chips.,🛒 🍟🔟 😅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00222,fr,ai,"On a raté le dernier métro, du coup on dort chez moi.",🚇💨 🏃❌ ➡️ 🛏️🏠😴,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00223,fr,ai,J'ai réparé la fuite du siphon tout seul et ça ne goutte plus.,🚰🔧🙋 ➡️ 💧❌ ✅,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb
+ai-fr-00224,fr,ai,"Mon voisin a encore laissé son chien aboyer toute la nuit, du coup je suis crevé.",🐕🔊🌙🌙 ➡️ 🙋😴❌ 😩,ok,1,deepseek-v4.1-flash:cloud,v4-human-examples@4addf4cb

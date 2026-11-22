@@ -81,11 +81,15 @@ Judgement rules and format:
 - All teachers apply the time rule better than the students (Ministral: 21% elsewhere; Qwen: 0% where needed). With only 6 time and 8 speech sentences, one sentence moves these rates by 12–17 points, so small gaps are hints only.
 - gpt-oss 120B has the cleanest format (97 labels with no warning), while Flash is best on speech (7/8 vs 5/8).
 - Invalid outputs are rare and mostly copied text (`30°`, `ok`, `10`, `8h`, `2h`); the thinking variant once returned an empty answer.
-- **Keycap numbers** (`4️⃣0️⃣`, `🔟`) appear in 2–8% of teacher outputs and never in the students'. The warning columns of all models were recomputed from the stored outputs after this check was added. They pass validity but break the "numbers are drawn" rule and would teach the student to write numbers, so a `number written as keycap` warning was added. For the dataset: tighten the prompt rule and keep only labels with no warnings.
+- **Keycap numbers** (`4️⃣0️⃣`, `🔟`) appear in 2–8% of teacher outputs and never in the students'. The warning columns of all models were recomputed from the stored outputs after this check was added. They pass validity but break the "numbers are drawn" rule and would teach the student to write numbers, so a `number written as keycap` warning was added. For the dataset: tighten the prompt rule and keep only labels with no warnings. *Update (step 3): this decision was reversed. Keycap numbers are now allowed when the exact number matters, because banning them lost information without improving the gist. The counts above are kept as measured.*
 
 Practical differences: Flash ≈0.5 s per sentence and ≈$0.30–0.60 for 3,000 labels; Pro ≈1 s and ≈$1–2; Mistral Large 4 3–6 s (always reasons) and ≈$3.
 
 **Ceiling:** five different large models land at 1.30–1.34, below the hand-made 1.75, which suggests the limit now comes more from the prompt or the scorer than from the choice of teacher. Since a student rarely beats its labels, a realistic target after fine-tuning is about 1.1–1.25 (from 0.9–1.0). Raising the ceiling means better labels from the same teacher: a tighter prompt, more examples of hard cases, or best-of-n generation with a non-Claude selector (selecting training data with Claude's judgements would be close to training on Claude outputs).
+
+## Follow-up: real sentences
+
+This test set is made of small, concrete stories. On 100 real Tatoeba sentences ([step 3](../03_dataset/)), DeepSeek V4.1 Flash scored **0.87** with this prompt and **0.95** with the revised prompt, so the targets above apply to the test set only. On real sentences, the teacher's own score of about 0.95 is the reference.
 
 ## Decision
 
