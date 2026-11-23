@@ -1,0 +1,101 @@
+model,id,lang,sentence,output,status,decoded,gist
+teacher (Flash),fr-01,fr,J'ai raté mon bus parce que je cherchais mes lunettes.,🔍👓 ➡️ 🚌💨 😩,ok,"Il cherche ses lunettes, alors il rate le bus et il est épuisé.",2
+teacher (Flash),fr-02,fr,Mon voisin fait des travaux tous les dimanches matin.,🏠🔨🔨🔨 ☀️📅 😡,ok,"La maison est en travaux depuis des mois, et ça me rend furieux.",1
+teacher (Flash),fr-03,fr,On a mangé une raclette alors qu'il faisait 30 degrés.,🧀🔥 🍽️ 🌡️3️⃣0️⃣ 😅,ok,"Le fromage a fondu sur le feu, la température a atteint 30 degrés, je suis gêné.",1
+teacher (Flash),fr-04,fr,J'ai oublié l'anniversaire de ma mère et elle m'a appelé en pleurant.,🎂❌ 👩😭📞 🙋😔,ok,"Il n'y a pas de gâteau, la mère pleure au téléphone et elle est triste.",1
+teacher (Flash),fr-05,fr,Le chien du voisin a volé mon sandwich au parc.,🐕👥 🏃 🥪💨 🏞️ 😡,ok,"Les enfants courent vers le parc, mais le chien a volé leur sandwich et ils sont furieux.",2
+teacher (Flash),fr-06,fr,Je n'ai pas dormi de la nuit à cause d'un moustique.,🌙🦟 ➡️ 😴❌ 😡,ok,"La nuit, les moustiques me empêchent de dormir et je suis furieux.",2
+teacher (Flash),fr-07,fr,"Mon train a été annulé, donc j'ai pris un taxi qui m'a coûté une fortune.",🚆❌ ➡️ 🚕💸💸💸 😤,ok,"J'ai raté le train, alors j'ai pris un taxi qui m'a coûté une fortune, et je suis vraiment énervé.",2
+teacher (Flash),fr-08,fr,Ma grand-mère a appris à utiliser WhatsApp et m'envoie des messages tous les jours.,👵📱✅ ➡️ 💬🫵☀️☀️☀️ 😊,ok,"Grand-mère a réussi à utiliser son téléphone, alors elle t'a dit bonjour, et elle était ravie.",2
+teacher (Flash),fr-09,fr,Il a demandé sa copine en mariage pendant un match de foot.,⚽ 👨💍💬 👩➡️😍,ok,"Le footballeur a demandé sa petite amie en mariage, et elle a dit oui avec enthousiasme.",2
+teacher (Flash),fr-10,fr,J'ai essayé de faire du pain maison mais il était dur comme une pierre.,👩‍🍳🍞🏠 ➡️ 🪨😩,ok,"La boulangère fait du pain à la maison, alors elle est épuisée.",1
+teacher (Flash),fr-11,fr,Mon téléphone est tombé dans les toilettes juste après l'avoir acheté.,📱🆕 ➡️ 🚽💧 😱,ok,"Je viens d'acheter un nouveau téléphone, mais je l'ai fait tomber dans les toilettes et j'ai paniqué.",2
+teacher (Flash),fr-12,fr,Le chat a dormi sur mon clavier et a envoyé un mail à mon chef.,🐈😴⌨️ ➡️ 📧👔 😱,ok,"Le chat dort sur le clavier, alors j'envoie l'e-mail en costume et je panique.",1
+teacher (Flash),fr-13,fr,J'ai attendu le plombier toute la journée et il n'est jamais venu.,🔧👨‍🔧 ⏳🌅➡️🌇 👨‍🔧❌ 😤,ok,"Le plombier a mis du temps à arriver le matin et est parti le soir sans finir, ce qui m'a énervé.",1
+teacher (Flash),fr-14,fr,On a fêté les quatre-vingts ans de mon grand-père avec toute la famille.,👴🎂8️⃣0️⃣ 👨‍👩‍👧‍👦🎉🥳,ok,Grand-père fête ses 80 ans et toute la famille fait la fête avec lui.,2
+teacher (Flash),fr-15,fr,Ma colocataire mange mes yaourts et fait comme si de rien n'était.,🏠👩 🥄🍦🍦🍦 🫥 😤,ok,"La femme est rentrée à la maison, a mangé plein de glace à la cuillère et a l'air fâchée.",0
+teacher (Flash),fr-16,fr,J'ai couru pour attraper le métro et les portes se sont fermées devant moi.,🏃 🚇 ➡️ 🚪💥 😤,ok,"Je cours pour prendre le métro, mais la porte se ferme et je suis furieux.",2
+teacher (Flash),fr-17,fr,Mon fils a perdu sa première dent et attend la petite souris.,👦🦷💨 ➡️ 🐭🪙⏩ 😊,ok,"Le petit garçon a perdu sa dent, la petite souris laissera une pièce demain et il sera content.",2
+teacher (Flash),fr-18,fr,Il a plu pendant toute notre semaine de camping.,⛺ 🌧️🌧️🌧️🌧️ 😩,ok,Nous avons campé sous une pluie battante et c'était épuisant.,2
+teacher (Flash),fr-19,fr,J'ai mis du sel à la place du sucre dans le gâteau.,🧂❌🍰 ➡️ 🧂🍰 😖,ok,"Il n'y a pas de sel dans le gâteau, alors il est fade et on fait la grimace.",1
+teacher (Flash),fr-20,fr,Ma voiture est tombée en panne au milieu de l'autoroute.,🚗💥 🛣️ 😱,ok,Une voiture a percuté la route et tout le monde a eu peur.,1
+teacher (Flash),fr-21,fr,On a adopté un chiot et il a mangé mes chaussures dès le premier jour.,🐶🏠 ➡️ 👟🍽️😱,ok,"Le chien est rentré à la maison, alors j'ai mis mes chaussures et j'ai vu le dîner, et c'était une surprise.",1
+teacher (Flash),fr-22,fr,J'ai enfin eu mon permis après trois essais.,🚗📝❌ ➡️ 🚗📝❌ ➡️ 🚗📝✅ 🎉,ok,"La voiture n'a pas de permis, alors elle n'a pas de papiers, mais elle a enfin son permis et on fête ça !",1
+teacher (Flash),fr-23,fr,Mon réveil n'a pas sonné et je suis arrivé en retard à mon entretien.,⏰🔇 ➡️ 🛏️😴 ➡️ 🏃💼⏰❌ 😰,ok,"L'alarme n'a pas sonné, alors je me suis rendormi et je suis parti au travail en retard, très stressé.",2
+teacher (Flash),fr-24,fr,Mon frère a gagné cent euros au loto et a invité tout le monde au restaurant.,👦🎰💶💶 ➡️ 🍽️👥🎉,ok,"Le garçon a gagné beaucoup d'argent au casino, alors on a fait une fête au restaurant avec nos amis.",2
+teacher (Flash),fr-25,fr,"J'ai passé deux heures au téléphone avec le service client, pour rien.",🙋📞⏳⏳ ➡️ 🗣️❌ 😤,ok,"J'ai appelé et j'ai attendu longtemps, mais personne n'a répondu, ce qui m'a énervé.",1
+teacher (Flash),fr-26,fr,La machine à laver a inondé la cuisine.,🧺💧 ➡️ 🍳🌊 😱,ok,"Le panier d'eau s'est renversé, alors la poêle a débordé et j'ai paniqué.",1
+teacher (Flash),fr-27,fr,Ma fille a appris à faire du vélo sans les petites roues.,👧 🚲 ➡️ 🛞❌ ✅ 🥳,ok,"La fille a pris son vélo, mais la roue ne tenait plus, alors elle a été ravie de la réparer et elle est contente.",0
+teacher (Flash),fr-28,fr,J'ai oublié mon parapluie et il s'est mis à pleuvoir des cordes.,☂️❌ ➡️ 🌧️🌧️ 😩,ok,"Je n'ai pas de parapluie, donc il pleut et je suis trempé, c'est vraiment pénible.",2
+teacher (Flash),fr-29,fr,Nos voisins ont fait la fête jusqu'à cinq heures du matin.,🏠🎉🔊 ⏰5️⃣🌅 😴❌,ok,"La fête à la maison a fait beaucoup de bruit jusqu'à cinq heures du matin, et je n'ai pas pu dormir.",2
+teacher (Flash),fr-30,fr,Mon ordinateur a planté et j'ai perdu tout mon travail de la journée.,💻💥 ➡️ 📄❌ 😭,ok,"Mon ordinateur a planté, donc mon document n'est pas sauvegardé et je pleure.",2
+teacher (Flash),fr-31,fr,On a raté le début du film à cause des bouchons.,🚗🚗🚗 ➡️ 🎬⏪❌ 😩,ok,"Il y avait tellement de voitures sur la route qu'on n'a pas pu aller au cinéma à l'heure, ce qui nous a beaucoup énervés.",2
+teacher (Flash),fr-32,fr,Mon chef m'a félicité devant toute l'équipe.,👨‍💼💬👍 🙋😊 👥👀,ok,"Le patron dit oui, et je suis content que mes collègues le voient.",1
+teacher (Flash),fr-33,fr,J'ai trouvé un billet de vingt euros dans la poche d'un vieux manteau.,🧥👖 ➡️ 💶2️⃣0️⃣ 😲,ok,"J'ai acheté un manteau et un pantalon, et ça m'a coûté 20 euros, je suis surpris.",0
+teacher (Flash),fr-34,fr,Le bébé a pleuré pendant tout le vol.,👶😭✈️,ok,Le bébé pleure dans l'avion.,2
+teacher (Flash),fr-35,fr,J'ai voulu impressionner mes amis au karaoké mais j'ai oublié les paroles.,🎤🫵 👥😮 ➡️ 📝❌ 😳,ok,"Tu as chanté devant tout le monde, et les gens étaient surpris, alors j'ai oublié les paroles et je suis devenu tout rouge.",2
+teacher (Flash),fr-36,fr,"Mon médecin m'a dit d'arrêter le sucre et, le soir même, j'ai mangé une tarte entière.",👨‍⚕️💬 🍬❌ ➡️ 🌙 🥧🍽️ 😅,ok,"Le médecin a dit qu'il n'y avait pas de sucreries, alors nous avons mangé une tarte au dîner, et c'était drôle.",1
+teacher (Flash),fr-37,fr,"Il a neigé, l'école a fermé et les enfants étaient ravis.",❄️🌨️ ➡️ 🏫🔒 ➡️ 👧👦🎉,ok,"Il neige beaucoup, donc l'école est fermée et les enfants sont ravis.",2
+teacher (Flash),fr-38,fr,J'ai acheté une plante et elle est morte en une semaine.,🪴🛒 ➡️ 🥀💀 📅7️⃣ 😢,ok,"J'ai acheté une plante au magasin, mais elle est morte en une semaine et je suis triste.",2
+teacher (Flash),fr-39,fr,Ma sœur s'est coupé les cheveux toute seule et a fini en larmes.,👧 ✂️💇‍♀️ ➡️ 😭,ok,La petite fille s'est fait couper les cheveux et s'est mise à pleurer.,1
+teacher (Flash),fr-40,fr,On s'est disputés à cause du GPS sur la route des vacances.,🚗🏖️ 🗺️💬😠,ok,"On part en vacances à la plage en voiture, mais le GPS nous a induits en erreur et on est furieux.",1
+teacher (Flash),fr-41,fr,Je me suis endormi dans le train et j'ai raté mon arrêt.,🚆😴 ➡️ 🚏❌ 😱,ok,"Je me suis endormi dans le train et j'ai raté mon arrêt, je suis paniqué.",2
+teacher (Flash),fr-42,fr,Le serveur a renversé la soupe sur la cliente d'à côté.,🧑‍🍳🍲💥 ➡️ 👩😱,ok,"Le cuisinier a renversé la soupe, alors la cliente a paniqué.",1
+teacher (Flash),fr-43,fr,J'ai commencé le yoga et je n'arrive même pas à toucher mes pieds.,🧘 🙋 ➡️ 🦶❌ 😅,ok,"Je fais du yoga et je ne peux pas toucher mes pieds, ça me fait rire.",2
+teacher (Flash),fr-44,fr,On a gagné le tournoi de pétanque du village.,🥇🏆 🎳🎉,ok,"J'ai gagné la médaille d'or et le trophée, alors on a fait la fête au bowling.",1
+teacher (Flash),fr-45,fr,Le facteur a laissé mon colis chez le mauvais voisin.,📬👨 ➡️ 📦🏠❌ 🏠👥 😤,ok,"Le facteur a livré le colis, mais personne n'était à la maison, alors le voisin s'est énervé.",1
+teacher (Flash),fr-46,fr,Je ne retrouve plus ma voiture dans le parking du centre commercial.,🅿️🏬 🚗❌ 😰,ok,"Le parking du centre commercial est plein, alors je suis très inquiet.",1
+teacher (Flash),fr-47,fr,Ma meilleure amie va déménager au Canada l'année prochaine.,👩‍❤️‍👩 ➡️ 🧳🍁 ⏩ 😢,ok,Les deux femmes amoureuses font leurs valises pour l'automne et seront tristes de partir.,1
+teacher (Flash),fr-48,fr,Des abeilles ont fait un nid dans notre cheminée.,🐝🐝🐝 ➡️ 🏠🕳️,ok,Trois abeilles entrent dans la ruche.,1
+teacher (Flash),fr-49,fr,J'ai raté la mayonnaise trois fois avant d'abandonner.,🥚🥣❌ 🥚🥣❌ 🥚🥣❌ ➡️ 🙅 😤,11 emojis,,0
+teacher (Flash),fr-50,fr,"Après quarante ans de travail, ma mère part enfin à la retraite.",👩👩‍💼 4️⃣0️⃣⏳ ➡️ 🎉🏖️,ok,"La femme au travail a quarante ans, alors elle part en vacances à la plage.",0
+teacher (Flash),en-01,en,I locked myself out of the car with the engine still running.,🚗🔒 🙋❌ 🔑❌ ➡️ 🔥🚗 😱,ok,"I locked my car, but I can't find my keys, so I'm panicking because I need to get home.",1
+teacher (Flash),en-02,en,"My boss replied ""ok"" and I have been worrying about it all weekend.",👨‍💼💬 ok 👍 ➡️ 🙋😰📅📅,non-emoji: ok,,0
+teacher (Flash),en-03,en,We got lost hiking and ended up at a different village.,🥾🗺️❌ ➡️ 🏘️❓ 😅,ok,"We forgot our hiking map, so we got lost in the village and laughed about it.",1
+teacher (Flash),en-04,en,My kid painted the living room wall with my lipstick.,👶🖌️ 🧱🎨 💄➡️ 🧱🔴 😱,ok,The baby painted the bricks red and the mom was shocked.,2
+teacher (Flash),en-05,en,"I finally finished the marathon, but I can't walk down the stairs anymore.",🏃🏅🎉 ➡️ 🦵😖 🪜❌,ok,"The runner won a medal and celebrated, so her legs hurt, and she didn't need the stairs.",1
+teacher (Flash),en-06,en,The wifi went down during my most important video call.,📶❌ 📹💼 😱,ok,"The Wi-Fi is down, so my video call with the client is in trouble and I'm panicking.",2
+teacher (Flash),en-07,en,I accidentally liked my ex's photo from five years ago.,👆❤️ 📸👤⏪5️⃣ ➡️ 😱🙈,ok,Just pointing out that the photo of me from five years ago made me cringe so much I hid my face.,0
+teacher (Flash),en-08,en,It snowed in April and all my tomato plants froze.,🌸❄️ ➡️ 🍅🥀😭,ok,"The cherry blossoms bloomed in spring, but a late frost killed my tomato plants and I was heartbroken.",2
+teacher (Flash),en-09,en,I didn't study at all and still passed the exam.,📚❌ 🧑‍🎓✅ 🎉,ok,"I forgot my books, but the student passed the exam and we celebrated!",1
+teacher (Flash),en-10,en,"My flight was delayed eight hours, so I slept on the airport floor.",✈️⏳8️⃣ 🛫➡️😴🧳🛋️,ok,"I have an 8 hour flight, so I'm going to sleep and rest on the couch with my luggage.",1
+teacher (Flash),en-11,en,My phone died right when I needed the map.,📱🪫 🗺️❌ 😤,ok,"My phone battery died, so I couldn't check the map and I got really frustrated.",2
+teacher (Flash),en-12,en,"The dog ate my homework, and this time it's actually true.",🐕🍽️📄🏠 ✅😅,ok,"The dog ate the paper at home, so I'm relieved.",2
+teacher (Flash),en-13,en,We waited an hour for a table and then the restaurant ran out of pasta.,⏳1️⃣ 🍽️ ➡️ 🍝❌ 😤,ok,"I waited an hour for my table, but the pasta never arrived, so I got really annoyed.",2
+teacher (Flash),en-14,en,My neighbor's rooster wakes me up at five every morning.,🐓🔊 ⏰5️⃣ 🌅 ➡️ 🙋😴❌ 😤,ok,"The rooster crowed at five in the morning, so I woke up annoyed and didn't want to get out of bed.",2
+teacher (Flash),en-15,en,I sent a text complaining about my friend to that same friend.,🙋 📱💬😠👥 ➡️ 🫵👥 😱,ok,"I texted the group chat that I was angry, so now everyone is scared of you.",0
+teacher (Flash),en-16,en,We celebrated our tenth wedding anniversary in Paris.,💍1️⃣0️⃣🎉 🗼❤️,ok,We got engaged on the tenth anniversary of our first date at the Eiffel Tower.,1
+teacher (Flash),en-17,en,I tried to fix the sink and flooded the bathroom.,🔧🚰 ➡️ 🌊🚽 😱,ok,"I fixed the leaking tap, but then the toilet overflowed and I panicked.",1
+teacher (Flash),en-18,en,My daughter scored her first goal and cried with joy.,👧⚽🥅 ➡️ 😭😊,ok,"The girl kicked the ball into the goal, so she cried and then smiled.",2
+teacher (Flash),en-19,en,The power went out while I was cooking dinner for guests.,🍳🍽️👥 ➡️ 💡❌ 🌑 😱,ok,"We were cooking and eating dinner together, then the power went out and everyone was scared in the dark.",2
+teacher (Flash),en-20,en,I bought shoes online and they were two sizes too small.,🛒👟💻 ➡️ 📦👟📏❌ 😩,ok,"I bought shoes and a laptop online, but the shoes arrived in the wrong size and I was so frustrated.",2
+teacher (Flash),en-21,en,My roommate keeps leaving dirty dishes in the sink.,🧑‍🤝‍🧑 🍽️🍽️🍽️ 🚰 ➡️ 😤,ok,"Our group sat down to eat at the restaurant, but the service was so slow that we all got frustrated.",0
+teacher (Flash),en-22,en,I finally quit smoking after ten years.,🚬 1️⃣0️⃣⏪ ➡️ 🚭✅ 😌,ok,"I smoked ten cigarettes a day until I quit, and now I feel relieved.",2
+teacher (Flash),en-23,en,A seagull stole my ice cream at the beach.,🏖️ 🕊️ 🍦➡️🕊️ 😡,ok,"I was relaxing at the beach when the seagulls stole my ice cream, so I got really angry.",2
+teacher (Flash),en-24,en,I fell off my bike in front of my whole class.,🚲💥 🙋🛣️ 👥👀 😳,ok,"I crashed my bike into a pedestrian on the road, and people saw it happen and looked shocked.",1
+teacher (Flash),en-25,en,We moved to a new city and I don't know anyone yet.,🏠➡️🏙️ 🫵👥❌ 😔,ok,"I moved from my house to the city, and I miss my friends and family.",1
+teacher (Flash),en-26,en,My grandfather learned to swim at seventy.,👴 🎂7️⃣0️⃣ ➡️ 🏊✅ 😲,ok,My grandfather turned 70 so he went swimming and was amazed.,1
+teacher (Flash),en-27,en,I microwaved fish at work and the whole office complained.,🏢 🐟♨️ ➡️ 🤢👥😠,ok,"The office fish tank heater broke, so everyone got sick and angry.",0
+teacher (Flash),en-28,en,The baby finally slept through the night for the first time.,👶😴 🌙➡️☀️ 1️⃣ 🥳,ok,The baby slept through the night and woke up happy on the first day.,2
+teacher (Flash),en-29,en,I got a parking ticket while I was paying for parking.,🚗🅿️💶 ➡️ 🎫😤,ok,"I paid for parking and then got a ticket, so I was really annoyed.",2
+teacher (Flash),en-30,en,I planted sunflowers and they grew taller than the house.,🌱🌻 ➡️ 🌻🌻🌻 🏠⬆️ 😲,ok,"The seeds I planted grew into sunflowers, so now the house is surrounded by tall sunflowers and I'm amazed.",2
+teacher (Flash),en-31,en,My son wants a puppy for his birthday next month.,👦🎂⏩ 🐶🙏,ok,"The boy will have a birthday cake, so the dog begs for some.",0
+teacher (Flash),en-32,en,I got stuck in the elevator for two hours.,🛗🚪🔒 ⏳2️⃣ 😰,ok,"The elevator doors closed and locked, and I was stuck inside for two hours, feeling terrified.",2
+teacher (Flash),en-33,en,The concert was canceled ten minutes before it started.,🎤🎶❌ ⏪1️⃣0️⃣⏱️ 😞,ok,The singer forgot the lyrics ten minutes ago and felt sad about it.,0
+teacher (Flash),en-34,en,I ran into my teacher at the supermarket while wearing pajamas.,🏃💥👩‍🏫 🏪 👕🛏️ 😳,ok,"I bumped into my teacher at the store, and she saw I was wearing my pajamas, so I was embarrassed.",2
+teacher (Flash),en-35,en,My best friend is getting married next summer and I'm the best man.,👫💍⏩☀️ 🫵🎩✨ 😄,ok,"The couple is getting married in the sun, and you look stylish and happy about it.",1
+teacher (Flash),en-36,en,I ate too much at Thanksgiving and fell asleep on the couch.,🦃🍽️😋 ➡️ 🛋️😴,ok,"After eating a big Thanksgiving turkey dinner, we were so full that we relaxed on the couch and fell asleep.",2
+teacher (Flash),en-37,en,The printer jammed right before my presentation.,🖨️🔒 ➡️ 🧑‍💼📉 😱,ok,"The printer is locked, so the office manager is worried and panicking.",1
+teacher (Flash),en-38,en,We found a stray kitten in the garage and decided to keep it.,🏠🚗 🐈🔍 ➡️ 🏡❤️,ok,"We drove home and found the cat, so we were happy to be back at our house.",1
+teacher (Flash),en-39,en,I accidentally hit reply-all on a company-wide email.,🫵📧➡️👥👥👥 😱,ok,You emailed everyone and now they are all panicking.,1
+teacher (Flash),en-40,en,My car got towed while I was at the movies.,🎬🍿 ➡️ 🚗❌ 🚚➡️ 😡,ok,"We went to the movies and popcorn was sold out, so we drove home angry.",0
+teacher (Flash),en-41,en,It was so hot that the chocolate melted in my bag.,🥵 🌡️ ➡️ 🍫🫠 🎒,ok,It is so hot today that my chocolate has melted in my backpack.,2
+teacher (Flash),en-42,en,I won a free trip to Japan in a radio contest.,📻🏆 ➡️ 🎫✈️🇯🇵 🆓 🥳,ok,"I won a radio contest, so I got free tickets to fly to Japan and felt thrilled.",2
+teacher (Flash),en-43,en,My sister borrowed my sweater and gave it back with a hole in it.,👧🧥➡️🕳️ 😤,ok,"The girl put on her coat, then fell into a hole, and she was really annoyed.",0
+teacher (Flash),en-44,en,I signed up for a gym membership and never went.,🏋️✍️✅ ➡️ 🚶❌ 😅,ok,"I finished my workout and wrote it down, so I didn't go for a walk and felt a bit silly.",0
+teacher (Flash),en-45,en,The kids built a snowman taller than their dad.,👦👧 ⛄ ➡️ 📏👨 😄,ok,"The boy and girl built a snowman, so their dad measured it and was happy.",2
+teacher (Flash),en-46,en,I burned my tongue on hot soup.,🍲🔥 ➡️ 👅🔥 😖,ok,The soup was so hot that it burned my tongue and I winced in pain.,2
+teacher (Flash),en-47,en,We had a picnic and ants covered all the food.,🧺🌳 ➡️ 🐜🐜🐜🍎🍞 😱,ok,"We packed a picnic basket under a tree, but ants swarmed over the apples and bread and we were startled.",2
+teacher (Flash),en-48,en,I lost my wedding ring in the ocean.,💍❌ 🌊 😭,ok,She lost her wedding ring in the ocean and burst into tears.,2
+teacher (Flash),en-49,en,My dad tried TikTok and posted a video of his own ear.,👨📱🎵 ➡️ 👂🎥 😂,ok,"The man played music on his phone, so the listener watched a video and laughed.",0
+teacher (Flash),en-50,en,"After months of searching, I finally got the job.",🗓️🗓️🔍 ➡️ 💼✅ 🥳,ok,"I checked my calendar twice and then found the job I applied for, so I celebrated with a big party.",1

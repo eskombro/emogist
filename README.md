@@ -34,7 +34,7 @@ Every step is evaluated the same way: a **round-trip score**. One model decodes 
 | [2. Teacher selection](02_teacher_selection/) | ✅ done | Five large teachers tied at ~1.3 gist vs ~0.9 for students; thinking adds nothing; DeepSeek V4.1 Flash best on tie-breakers, gpt-oss 120B a credible backup |
 | [3. Dataset](03_dataset/) (3,000 EN+FR sentences) | ✅ done | 50/50 mix of real and AI sentences, including exact numbers. [Dataset card](03_dataset/full/README.md) |
 | [4. Fine-tuning](04_fine_tuning/) (LoRA, Unsloth) | ✅ done | Qwen 2B chosen on dev, tied with Ministral 3B. On the test set, fine-tuning raised gist from 0.81 to 1.13 (+0.32 [+0.17, +0.47]). Ministral's test run is deferred |
-| 5. Evaluation | | |
+| [5. Evaluation](05_evaluation/) | ✅ done | Judge passed a one-person check (kappa 0.66). Fine-tuned Qwen 1.13 vs teacher 1.31 on test, closing 64% of the gap. Long sentences are its clearest weakness |
 | 6. Serving (GGUF + FastAPI, demo page) | | |
 
 ## Repository layout
@@ -48,6 +48,7 @@ cache/               cached decodes and judgements, so scores are reproducible f
 02_teacher_selection/  compare large models that label the data
 03_dataset/          sentence sources, labelling prompt, pilot data
 04_fine_tuning/      Colab training notebooks, pilot runs and scores
+05_evaluation/       human check of the judge, teacher ceiling, error breakdown
 CONVENTIONS.md       the emoji grammar used everywhere
 ```
 

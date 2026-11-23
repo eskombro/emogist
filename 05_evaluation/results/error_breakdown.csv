@@ -1,0 +1,15 @@
+group,n,qwen_gist,qwen_lost,teacher_gist,teacher_minus_qwen
+all,100,0.75,0.42,0.95,"+0.20 [+0.06, +0.35]"
+lang: French,50,0.88,0.36,1.02,"+0.14 [-0.06, +0.34]"
+lang: English,50,0.62,0.48,0.88,"+0.26 [+0.04, +0.48]"
+length: up to 5 words,21,1.0,0.286,1.381,"+0.38 [+0.00, +0.76]"
+length: 6-8 words,53,0.717,0.434,0.736,"+0.02 [-0.15, +0.19]"
+length: 9+ words,26,0.615,0.5,1.038,"+0.42 [+0.15, +0.65]"
+has a number,2,,,,
+no number,98,0.745,0.429,0.959,"+0.21 [+0.06, +0.36]"
+negation,19,0.737,0.368,0.895,"+0.16 [-0.21, +0.53]"
+question,0,,,,
+reported speech,6,,,,
+cause or result,3,,,,
+past marker,34,0.647,0.471,0.882,"+0.24 [-0.03, +0.50]"
+future marker,7,,,,

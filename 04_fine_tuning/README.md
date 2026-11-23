@@ -95,14 +95,14 @@ How to read these numbers:
 
 - **Test and dev scores are not comparable.** The untrained model scores 0.81 on test and 0.42 on dev, so the test sentences are easier.
 - **The test set was used to shortlist models in steps 1 and 2**, so it is not untouched and absolute scores may be slightly optimistic.
-- **The teacher was not scored on this test with the final labelling prompt**, so there is no ceiling to compare 1.13 with.
-- **The scorer is model-based and provisional:** Claude Haiku 5.5 decodes and Claude Sonnet 5.5 judges, without human validation yet.
+- **The teacher scores 1.31 on this test** with the final labelling prompt, as measured in [step 5](../05_evaluation/).
+- **The scorer is model-based and provisional:** Claude Haiku 5.5 decodes and Claude Sonnet 5.5 judges. Step 5 checks the judge against one human rater, and the decoder is not validated yet.
 - **Ministral 3 3B has not been run on the test set**, because the Colab GPU quota ran out. It is optional, as Qwen was chosen before the test.
 
 ## Lessons and limitations
 
 - Fine-tuning replaced a long prompt with a one-line instruction and still improved the score.
-- **Numbers remain the clearest weakness:** both students still write `30` or `13-14` as plain digits.
+- **Adding number examples fixed the number format:** the pilot model wrote `30` or `13-14` as plain digits, while both final models wrote none on dev. Dev has too few number sentences to show whether the meaning is kept.
 - These are single runs on 100 dev sentences, and that dev set has informed several decisions.
 - Loss measures closeness to the teacher's exact emojis, not whether the gist is preserved.
 - Rerunning a training cell continues from the trained model. One run was discarded for this reason, and the notebooks now block it.
@@ -117,7 +117,7 @@ How to read these numbers:
 
 ## Next
 
-Step 5: evaluate the fine-tuned Qwen in more depth. Optionally, run `test_ministral.ipynb` once when a GPU is available, put its outputs in `runs/run_ministral3b_full/`, and rerun `score_test.py`.
+[Step 5](../05_evaluation/) evaluates the fine-tuned Qwen in more depth. Optionally, run `test_ministral.ipynb` once when a GPU is available, put its outputs in `runs/run_ministral3b_full/`, and rerun `score_test.py`.
 
 ## Reproduce
 

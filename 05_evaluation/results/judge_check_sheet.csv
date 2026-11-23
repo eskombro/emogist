@@ -1,0 +1,53 @@
+pair,original,guess,your_score
+1,It snowed in April and all my tomato plants froze.,I left the tomatoes in the freezer and was shocked when I found them.,1
+2,Je n'ai pas dormi de la nuit à cause d'un moustique.,Le moustique m'empêche de dormir dans mon lit.,2
+3,Ma meilleure amie va déménager au Canada l'année prochaine.,Une mère et sa fille vont déménager au Canada l'année prochaine.,2
+4,J'ai couru pour attraper le métro et les portes se sont fermées devant moi.,"Je cours pour prendre le métro, mais les portes se ferment et je suis stressé.",2
+5,The printer jammed right before my presentation.,"The printer broke down right before I had to present the sales report, and I started to panic.",2
+6,I ran into my teacher at the supermarket while wearing pajamas.,"I bought a shirt at the store, and the teacher shook hands with me.",1
+7,Mon voisin fait des travaux tous les dimanches matin.,Le plombier vient à la maison demain matin.,0
+8,I sent a text complaining about my friend to that same friend.,"I texted him, and he just gave me a dismissive reply.",0
+9,J'ai raté mon bus parce que je cherchais mes lunettes.,"Le bus n'est pas venu, et je suis vraiment énervé.",0
+10,It was so hot that the chocolate melted in my bag.,The chocolate melted in the fire and turned into a brick.,1
+11,I won a free trip to Japan in a radio contest.,I heard on the radio that the singer is flying to Japan and I was shocked.,1
+12,"Mon médecin m'a dit d'arrêter le sucre et, le soir même, j'ai mangé une tarte entière.","Le médecin a dit qu'il n'y avait pas de sucreries, alors nous avons mangé une tarte au dîner, et c'était drôle.",2
+13,Je n'ai pas dormi de la nuit à cause d'un moustique.,Les moustiques m'ont empêché de dormir cette nuit.,2
+14,We found a stray kitten in the garage and decided to keep it.,The cat sees the house and is happy.,1
+15,The baby finally slept through the night for the first time.,"The baby is asleep, so the night is good.",2
+16,"Mon train a été annulé, donc j'ai pris un taxi qui m'a coûté une fortune.","Je n'ai pas pris le train, alors j'ai payé un taxi et j'ai été surpris par le prix.",2
+17,Mon ordinateur a planté et j'ai perdu tout mon travail de la journée.,"Mon ordinateur a planté, donc j'ai perdu tous mes fichiers et je suis paniqué.",2
+18,Le serveur a renversé la soupe sur la cliente d'à côté.,"Elle a offert de la soupe à ses voisins, mais le bol s'est renversé et elle a eu peur.",1
+19,Ma sœur s'est coupé les cheveux toute seule et a fini en larmes.,La petite fille s'est fait couper les cheveux et elle pleure.,2
+20,J'ai acheté une plante et elle est morte en une semaine.,"La plante a poussé, puis elle a décliné, et je suis inquiet.",2
+21,Ma meilleure amie va déménager au Canada l'année prochaine.,"Ma femme et moi avons déménagé au Canada, alors nous avons reçu un cadeau pour la nouvelle maison.",1
+22,On s'est disputés à cause du GPS sur la route des vacances.,"Il a eu un accident de voiture, il n'était pas à l'endroit prévu, et il est furieux.",0
+23,"After months of searching, I finally got the job.","After searching for hours, I finally found my lost wallet and was so happy.",1
+24,I lost my wedding ring in the ocean.,"She got engaged on the beach, but she was not sad about it.",0
+25,Ma grand-mère a appris à utiliser WhatsApp et m'envoie des messages tous les jours.,Ma grand-mère envoie un message et confirme qu'elle a bien reçu l'appel.,1
+26,"Il a neigé, l'école a fermé et les enfants étaient ravis.","Il neige, donc l'école est fermée et les enfants sont contents.",2
+27,J'ai mis du sel à la place du sucre dans le gâteau.,"J'ai mangé le gâteau à la cuillère, mais je n'ai pas aimé les bonbons.",0
+28,My sister borrowed my sweater and gave it back with a hole in it.,"The girl put on her coat, then she sewed up the torn coat and smiled.",1
+29,The concert was canceled ten minutes before it started.,"The singer started performing at 10 o'clock, so the music stopped and the crowd was sad.",0
+30,My sister borrowed my sweater and gave it back with a hole in it.,"I left my jacket at my friend's house, so I couldn't go hammer anything, and I'm missing my tools.",0
+31,"Après quarante ans de travail, ma mère part enfin à la retraite.","La grand-mère a gagné un prix, et la fusée a fait la fête.",0
+32,Mon chef m'a félicité devant toute l'équipe.,"Le directeur célèbre la victoire de l'équipe, et tout le monde sourit.",1
+33,My roommate keeps leaving dirty dishes in the sink.,The bathroom plumber threw away the old fixtures and was frustrated.,0
+34,J'ai voulu impressionner mes amis au karaoké mais j'ai oublié les paroles.,"Le chanteur est monté sur scène, mais la musique ne s'est pas lancée et il est resté là, gêné.",2
+35,J'ai mis du sel à la place du sucre dans le gâteau.,"Elle a mis du beurre et du sucre, alors le gâteau a été une surprise qui l'a fait sursauter.",1
+36,My neighbor's rooster wakes me up at five every morning.,"The rooster crowed at dawn at 5 a.m., so I woke up exhausted and miserable.",2
+37,I signed up for a gym membership and never went.,"I wrote my workout plan, but I didn't stick to it and I feel disappointed.",1
+38,Nos voisins ont fait la fête jusqu'à cinq heures du matin.,"La fête à la maison se termine tard le soir, alors la famille va dormir.",2
+39,A seagull stole my ice cream at the beach.,"At the beach, a seagull stole my ice cream, so I started crying.",2
+40,Ma voiture est tombée en panne au milieu de l'autoroute.,Une voiture a percuté un obstacle sur la route et tout le monde a eu très peur.,2
+41,J'ai essayé de faire du pain maison mais il était dur comme une pierre.,"Je demande du pain au boulanger, il est très fatigué à force de travailler.",0
+42,I finally quit smoking after ten years.,I quit smoking and I feel relieved on my 10th day.,2
+43,I tried to fix the sink and flooded the bathroom.,"I fixed the leaking tap, but then water sprayed everywhere when the shower burst, and I was shocked.",2
+44,Mon frère a gagné cent euros au loto et a invité tout le monde au restaurant.,Le garçon a gagné le jeu et ils sont allés dîner ensemble.,2
+45,My car got towed while I was at the movies.,"The movie was great, but the car ran out of gas and we were stuck on the highway.",1
+46,My grandfather learned to swim at seventy.,My grandfather still swims laps at seventy years old.,2
+47,We moved to a new city and I don't know anyone yet.,I just moved to a new city and I don't know anyone yet.,2
+48,"I finally finished the marathon, but I can't walk down the stairs anymore.","I ran to the finish line and crossed it, so I stopped walking up the stairs and felt exhausted.",1
+49,Le facteur a laissé mon colis chez le mauvais voisin.,"Le colis est arrivé à la maison, mais personne ne l'a reçu.",1
+50,I accidentally liked my ex's photo from five years ago.,I don't love taking photos of the clock.,0
+51,I got stuck in the elevator for two hours.,I waited ages for the subway and got really frustrated.,1
+52,My roommate keeps leaving dirty dishes in the sink.,"My roommates and I did the dishes, but there was no soap left at the sink, so we were frustrated.",1
