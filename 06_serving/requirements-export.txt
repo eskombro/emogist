@@ -1,0 +1,9 @@
+# Extra packages for merging and converting the model. The demo has its own requirements.
+accelerate==1.16.0
+numpy==2.5.5
+peft==0.21.2
+pyyaml==6.0.4
+safetensors==0.8.0
+sentencepiece==0.2.3
+torch==2.15.0
+transformers==5.23.0

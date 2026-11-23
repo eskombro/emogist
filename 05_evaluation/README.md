@@ -94,7 +94,7 @@ This breakdown uses the 100 real dev sentences, so that any idea for retraining 
 
 ## Next
 
-Step 6: serve the fine-tuned Qwen with GGUF and FastAPI, with a demo page.
+[Step 6](../06_serving/) serves the fine-tuned Qwen with GGUF and FastAPI, with a [live demo](../demo/).
 
 ## Reproduce
 

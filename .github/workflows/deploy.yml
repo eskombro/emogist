@@ -67,9 +67,6 @@ jobs:
             test -f models/emogist-qwen2b-Q8_0.gguf
             echo "$GHCR_TOKEN" | docker login ghcr.io -u "$GHCR_USER" --password-stdin
             IMAGE_OWNER=$IMAGE_OWNER docker compose -f docker-compose.prod.yml pull
-            # One-time cleanup after moving 06_serving to demo. Remove after the first deploy.
-            docker rm -f 06_serving-emogist-1 2>/dev/null || true
-            docker network rm 06_serving_default 2>/dev/null || true
             IMAGE_OWNER=$IMAGE_OWNER docker compose -f docker-compose.prod.yml up -d
             docker image prune -f
             sudo cp caddy/Caddyfile.snippet /etc/caddy/sites/emogist.caddy
