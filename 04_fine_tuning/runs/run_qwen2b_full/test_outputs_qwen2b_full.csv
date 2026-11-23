@@ -1,0 +1,101 @@
+id,lang,sentence,output
+fr-01,fr,J'ai raté mon bus parce que je cherchais mes lunettes.,🙋 🚌❌ 🧋👓
+fr-02,fr,Mon voisin fait des travaux tous les dimanches matin.,👨‍🔧🏠 🗓️🌅
+fr-03,fr,On a mangé une raclette alors qu'il faisait 30 degrés.,🍽️🍷 🌡️3️⃣0️⃣
+fr-04,fr,J'ai oublié l'anniversaire de ma mère et elle m'a appelé en pleurant.,👵🎂❌ ➡️ 🎁👵💬😭
+fr-05,fr,Le chien du voisin a volé mon sandwich au parc.,🐕🏠 ➡️ 🍪🏃 🐕🏃 ➡️ 🍪❌ 😤
+fr-06,fr,Je n'ai pas dormi de la nuit à cause d'un moustique.,🦟🦟🦟 ➡️ 😴❌ 🌙
+fr-07,fr,"Mon train a été annulé, donc j'ai pris un taxi qui m'a coûté une fortune.",🚆❌ ➡️ 🚕💸💸 😤
+fr-08,fr,Ma grand-mère a appris à utiliser WhatsApp et m'envoie des messages tous les jours.,👵📱📞 ➡️ 🫵💬📱 📅
+fr-09,fr,Il a demandé sa copine en mariage pendant un match de foot.,⚽👨💬 💍👩
+fr-10,fr,J'ai essayé de faire du pain maison mais il était dur comme une pierre.,🙋🍞👨‍🍳 ➡️ 🍞💪💪💪 😩
+fr-11,fr,Mon téléphone est tombé dans les toilettes juste après l'avoir acheté.,📱💥 🚽 😱
+fr-12,fr,Le chat a dormi sur mon clavier et a envoyé un mail à mon chef.,🐈🛏️⌨️ ➡️ 📧👨‍💼
+fr-13,fr,J'ai attendu le plombier toute la journée et il n'est jamais venu.,🔧👷 ⏳🌅 ➡️ 🙋🏠❌ 😤
+fr-14,fr,On a fêté les quatre-vingts ans de mon grand-père avec toute la famille.,👴🎂8️⃣0️⃣ 🎉👨‍👩‍👧👦
+fr-15,fr,Ma colocataire mange mes yaourts et fait comme si de rien n'était.,🙋 🍽️🥛 ➡️ 🧑‍🤝‍🧑🍽️ 🤷
+fr-16,fr,J'ai couru pour attraper le métro et les portes se sont fermées devant moi.,🏃💨 🚇 ➡️ 🚪🔒 🙋😱
+fr-17,fr,Mon fils a perdu sa première dent et attend la petite souris.,👦🦷❌ ➡️ 🐭👀 😢
+fr-18,fr,Il a plu pendant toute notre semaine de camping.,⛺🌧️🌧️🌧️🌧️ 📅
+fr-19,fr,J'ai mis du sel à la place du sucre dans le gâteau.,🧈🍬 ➡️ 🍰 😱
+fr-20,fr,Ma voiture est tombée en panne au milieu de l'autoroute.,🚗💥 🛑🛣️ 😱
+fr-21,fr,On a adopté un chiot et il a mangé mes chaussures dès le premier jour.,🐕🐈 ➡️ 🦶🍽️ 😱
+fr-22,fr,J'ai enfin eu mon permis après trois essais.,🙋 🚗📝📝📝 ➡️ 🚗✅ 😄
+fr-23,fr,Mon réveil n'a pas sonné et je suis arrivé en retard à mon entretien.,🌅🔔❌ ➡️ 🚶⏰❌ ➡️ 💼⏰ 😱
+fr-24,fr,Mon frère a gagné cent euros au loto et a invité tout le monde au restaurant.,👦🎲🏆1️⃣0️⃣0️⃣ ➡️ 🍽️👥
+fr-25,fr,"J'ai passé deux heures au téléphone avec le service client, pour rien.",📞👥 ⏳⏳ ➡️ 😤
+fr-26,fr,La machine à laver a inondé la cuisine.,🧺🚿 ➡️ 💧💧💧 💥🍳 😱
+fr-27,fr,Ma fille a appris à faire du vélo sans les petites roues.,👧🚲 🛞❌ ➡️ 🚴✅ 😄
+fr-28,fr,J'ai oublié mon parapluie et il s'est mis à pleuvoir des cordes.,🙋 ☂️❌ ➡️ 🌧️🌧️🌧️ 😩
+fr-29,fr,Nos voisins ont fait la fête jusqu'à cinq heures du matin.,👨‍👩‍👧🎉🎉🎉 🌙5️⃣
+fr-30,fr,Mon ordinateur a planté et j'ai perdu tout mon travail de la journée.,💻💥 ➡️ 📁❌ 😱
+fr-31,fr,On a raté le début du film à cause des bouchons.,🎬🎬🎬 ➡️ 🚗🚗🚗 🎬❌ 😞
+fr-32,fr,Mon chef m'a félicité devant toute l'équipe.,👨‍💼🎉 🫵 ➡️ 👥👥👥
+fr-33,fr,J'ai trouvé un billet de vingt euros dans la poche d'un vieux manteau.,👕👖 ➡️ 🪪2️⃣0️⃣💶 😲
+fr-34,fr,Le bébé a pleuré pendant tout le vol.,✈️ 👶😭😭
+fr-35,fr,J'ai voulu impressionner mes amis au karaoké mais j'ai oublié les paroles.,🎤👥 ➡️ 🎶❌ 😳
+fr-36,fr,"Mon médecin m'a dit d'arrêter le sucre et, le soir même, j'ai mangé une tarte entière.",👨‍⚕️💬 🍬❌ ➡️ 🌙 🥧🍽️ 😅
+fr-37,fr,"Il a neigé, l'école a fermé et les enfants étaient ravis.",🌨️ ➡️ 🏫🔒 ➡️ 👶😄
+fr-38,fr,J'ai acheté une plante et elle est morte en une semaine.,🌱🛒 ➡️ 🪴💀 ⏪1️⃣7️⃣ 😞
+fr-39,fr,Ma sœur s'est coupé les cheveux toute seule et a fini en larmes.,👧✂️💇 ➡️ 😭
+fr-40,fr,On s'est disputés à cause du GPS sur la route des vacances.,🙋🙋 🧭❌ ➡️ 🚗💥 😤
+fr-41,fr,Je me suis endormi dans le train et j'ai raté mon arrêt.,🚆😴 ➡️ 🚉❌ 😱
+fr-42,fr,Le serveur a renversé la soupe sur la cliente d'à côté.,🍲🤲 ➡️ 🧑‍🤝‍🧑🍲💥 ➡️ 👩😱
+fr-43,fr,J'ai commencé le yoga et je n'arrive même pas à toucher mes pieds.,🧘 ➡️ 🦶❌ 😵
+fr-44,fr,On a gagné le tournoi de pétanque du village.,⛳🏆 🥇🎉
+fr-45,fr,Le facteur a laissé mon colis chez le mauvais voisin.,📦 ➡️ 🏠👨❌ 😤
+fr-46,fr,Je ne retrouve plus ma voiture dans le parking du centre commercial.,🚗❓ 🅿️🏢 ➡️ 🤔😞
+fr-47,fr,Ma meilleure amie va déménager au Canada l'année prochaine.,👩👧 ➡️ 🇨🇦🏠 ⏩📅
+fr-48,fr,Des abeilles ont fait un nid dans notre cheminée.,🐝🐝 🏠🔥 ➡️ 🏠🔥 😱
+fr-49,fr,J'ai raté la mayonnaise trois fois avant d'abandonner.,🥚🥚🥚❌ ➡️ 🙋💥
+fr-50,fr,"Après quarante ans de travail, ma mère part enfin à la retraite.",👵⏳4️⃣0️⃣ ➡️ 🏖️🚶 😊
+en-01,en,I locked myself out of the car with the engine still running.,🚗🔒🙋 🚗🔥 😱
+en-02,en,"My boss replied ""ok"" and I have been worrying about it all weekend.",👨‍💼💬✅ ➡️ 🙋😰🌅🌆
+en-03,en,We got lost hiking and ended up at a different village.,🥾🧭❌ ➡️ 🏘️🔄 😅
+en-04,en,My kid painted the living room wall with my lipstick.,👦🎨 🧑‍🦱👄 ➡️ 🧑‍🦱🧑‍🦱🧑‍🦱🧑‍🦱
+en-05,en,"I finally finished the marathon, but I can't walk down the stairs anymore.",🏃🏁✅ ➡️ 🚶🪜❌ 😩
+en-06,en,The wifi went down during my most important video call.,📱📶❌ ➡️ 📞🎥 😱
+en-07,en,I accidentally liked my ex's photo from five years ago.,🙋👀👩📷 ⏪5️⃣ 🫵❤️
+en-08,en,It snowed in April and all my tomato plants froze.,🌸❄️ ➡️ 🍅❄️❄️ ➡️ 🥀😢
+en-09,en,I didn't study at all and still passed the exam.,📚❌ ➡️ 📝✅ 😲
+en-10,en,"My flight was delayed eight hours, so I slept on the airport floor.",✈️⏰⏰⏰⏰ ➡️ 🛋️🛏️ 🏨🌙 😩
+en-11,en,My phone died right when I needed the map.,📱💀 ➡️ 🗺️❌ 😤
+en-12,en,"The dog ate my homework, and this time it's actually true.",🐕🍽️ 📚❌ ➡️ 🙋📚❌ 😱
+en-13,en,We waited an hour for a table and then the restaurant ran out of pasta.,🍽️⏳1️⃣ 🍝❌ 😤
+en-14,en,My neighbor's rooster wakes me up at five every morning.,🐓🌅 5️⃣ 🙋😴 ➡️ 😩
+en-15,en,I sent a text complaining about my friend to that same friend.,🙋💬🫵👥 ➡️ 🫵💬👥 😬
+en-16,en,We celebrated our tenth wedding anniversary in Paris.,💒🎉 🗼
+en-17,en,I tried to fix the sink and flooded the bathroom.,🚰🔧 ➡️ 💧💧💧 ➡️ 🚿💥 😱
+en-18,en,My daughter scored her first goal and cried with joy.,👧⚽🥅✅ ➡️ 😭🎉
+en-19,en,The power went out while I was cooking dinner for guests.,🍳🍽️ 👥 ➡️ ⚡❌ 😩
+en-20,en,I bought shoes online and they were two sizes too small.,🛒👟 ➡️ 👟👟👟❌ 😩
+en-21,en,My roommate keeps leaving dirty dishes in the sink.,🧑‍🤝‍🧑 🍽️🧼 ➡️ 🚰🧼❌ 😤
+en-22,en,I finally quit smoking after ten years.,🚬❌ ➡️ 🙋😌 📅1️⃣0️⃣
+en-23,en,A seagull stole my ice cream at the beach.,🏖️ 🐦🍦 ➡️ 🙋😭
+en-24,en,I fell off my bike in front of my whole class.,🚲💥 ➡️ 👥👀 😳
+en-25,en,We moved to a new city and I don't know anyone yet.,🏙️🆕 🙋🤝❌
+en-26,en,My grandfather learned to swim at seventy.,👴🏊 7️⃣0️⃣
+en-27,en,I microwaved fish at work and the whole office complained.,🏢 🍳🐟 ➡️ 👥👎 😅
+en-28,en,The baby finally slept through the night for the first time.,👶😴🌙 ✅ 🥹
+en-29,en,I got a parking ticket while I was paying for parking.,🅿️💶 ➡️ 🚗🅿️❌ 🧑‍🦱😤
+en-30,en,I planted sunflowers and they grew taller than the house.,🌻🌱 ➡️ 🌻📏⬆️🏠 😲
+en-31,en,My son wants a puppy for his birthday next month.,👦🎂 ⏩ 🐕🐾
+en-32,en,I got stuck in the elevator for two hours.,🙋 🚇⏳⏳ 😤
+en-33,en,The concert was canceled ten minutes before it started.,🎤🎶 ⏰1️⃣0️⃣ ➡️ 🚫🎶 😞
+en-34,en,I ran into my teacher at the supermarket while wearing pajamas.,🏃🛒 ➡️ 👨‍🏫👀 🩳
+en-35,en,My best friend is getting married next summer and I'm the best man.,👦💍📅⏩ 🙋🤵
+en-36,en,I ate too much at Thanksgiving and fell asleep on the couch.,🍽️🍽️🍽️ ➡️ 🛋️😴
+en-37,en,The printer jammed right before my presentation.,🖨️💥 ➡️ 🗣️📊 😱
+en-38,en,We found a stray kitten in the garage and decided to keep it.,🧑‍🤝‍🧑 🐈🔍🏠 ➡️ 🐈✅ 😊
+en-39,en,I accidentally hit reply-all on a company-wide email.,🙋👤 ➡️ 📧📧📧 🏢 😬
+en-40,en,My car got towed while I was at the movies.,🎬 ➡️ 🚗🔧🚚 😞
+en-41,en,It was so hot that the chocolate melted in my bag.,🌡️🔥 ➡️ 🍫🧈🏃
+en-42,en,I won a free trip to Japan in a radio contest.,📻🎤 🏆 ➡️ 🇯🇵✈️🎉
+en-43,en,My sister borrowed my sweater and gave it back with a hole in it.,👧🧥➡️🧥🔨 ➡️ 🧥🔙 😅
+en-44,en,I signed up for a gym membership and never went.,🏋️📝 ➡️ 🚶❌ 😞
+en-45,en,The kids built a snowman taller than their dad.,👶👶🧊🧊 ➡️ 🧑‍🤝‍🧑🧊🧑‍🤝‍🧑 ➡️ 🧑🤯
+en-46,en,I burned my tongue on hot soup.,🍲🔥 ➡️ 🙋👅🔥 😱
+en-47,en,We had a picnic and ants covered all the food.,🌞🍽️ ➡️ 🐜🌋🍽️ 😱
+en-48,en,I lost my wedding ring in the ocean.,💍🏖️ ➡️ 🙋❌ 😢
+en-49,en,My dad tried TikTok and posted a video of his own ear.,👨📱🎵 ➡️ 🎥👂👂
+en-50,en,"After months of searching, I finally got the job.",🔍⏳⏳⏳ ➡️ 💼✅ 😄

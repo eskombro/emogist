@@ -1,0 +1,201 @@
+model,id,lang,sentence,output,status,decoded,gist
+qwen2b prompted,fr-01,fr,J'ai raté mon bus parce que je cherchais mes lunettes.,🚌❌ 🕶️😫,ok,"Le bus n'est pas venu, et je suis vraiment énervé.",1
+qwen2b prompted,fr-02,fr,Mon voisin fait des travaux tous les dimanches matin.,🏠👷➡️📅🏃‍♂️,ok,"La maison est en travaux, donc je dois déménager vite.",1
+qwen2b prompted,fr-03,fr,On a mangé une raclette alors qu'il faisait 30 degrés.,🍽️🥂🌡️🔥,ok,"Nous dînons au restaurant, nous trinquons, mais il fait très chaud.",1
+qwen2b prompted,fr-04,fr,J'ai oublié l'anniversaire de ma mère et elle m'a appelé en pleurant.,👵📞🎂😭,ok,Ma grand-mère m'a appelé pour mon anniversaire et elle a pleuré d'émotion.,0
+qwen2b prompted,fr-05,fr,Le chien du voisin a volé mon sandwich au parc.,🐕🏃‍♂️🍪🏃‍♀️🏃‍♂️🏃‍♀️🏃‍♂️🏃‍♀️🏃‍♂️,ok,Le chien court après le garçon et la fille qui se sont enfuis avec les biscuits.,0
+qwen2b prompted,fr-06,fr,Je n'ai pas dormi de la nuit à cause d'un moustique.,🦟😴🛌,ok,Le moustique m'empêche de dormir dans mon lit.,2
+qwen2b prompted,fr-07,fr,"Mon train a été annulé, donc j'ai pris un taxi qui m'a coûté une fortune.",🚆❌ 🚕💰😱,ok,"Je n'ai pas pris le train, alors j'ai payé un taxi et j'ai été surpris par le prix.",2
+qwen2b prompted,fr-08,fr,Ma grand-mère a appris à utiliser WhatsApp et m'envoie des messages tous les jours.,👵📱💬 📲✅,ok,Ma grand-mère envoie un message et confirme qu'elle a bien reçu l'appel.,1
+qwen2b prompted,fr-09,fr,Il a demandé sa copine en mariage pendant un match de foot.,⚽🤵💍❓,ok,Le footballeur demande-t-il sa petite amie en mariage ?,2
+qwen2b prompted,fr-10,fr,J'ai essayé de faire du pain maison mais il était dur comme une pierre.,🥖➡️🧱😩,ok,"J'ai acheté une baguette, mais elle était si dure qu'on aurait dit une brique, et ça m'a vraiment énervé.",1
+qwen2b prompted,fr-11,fr,Mon téléphone est tombé dans les toilettes juste après l'avoir acheté.,📱❌ 🚽😵,ok,"Je n'ai pas mon téléphone, je suis paniqué aux toilettes.",1
+qwen2b prompted,fr-12,fr,Le chat a dormi sur mon clavier et a envoyé un mail à mon chef.,🐱💤 🖥️✉️ 👨‍💼,ok,Le chat dort pendant que le patron consulte ses e-mails sur l'ordinateur.,1
+qwen2b prompted,fr-13,fr,J'ai attendu le plombier toute la journée et il n'est jamais venu.,🔧⏳➡️🚧❌😞,ok,"Le plombier n'est pas venu à temps, alors la douche est restée en panne et je suis déçu.",2
+qwen2b prompted,fr-14,fr,On a fêté les quatre-vingts ans de mon grand-père avec toute la famille.,🎂👴👨‍👩‍👧‍👦🥳,ok,Le grand-père fête son anniversaire avec sa famille.,2
+qwen2b prompted,fr-15,fr,Ma colocataire mange mes yaourts et fait comme si de rien n'était.,🥛👩‍🚨 🤡😒,ok,"Le lait a tourné, la gardienne est furieuse, et le clown est agacé.",0
+qwen2b prompted,fr-16,fr,J'ai couru pour attraper le métro et les portes se sont fermées devant moi.,🏃‍♂️🚇🔒😵,ok,"Je cours pour prendre le métro, mais les portes se ferment et je suis stressé.",2
+qwen2b prompted,fr-17,fr,Mon fils a perdu sa première dent et attend la petite souris.,🦷🐰👶😋,ok,Le petit enfant mange une carotte avec ses dents de lapin.,0
+qwen2b prompted,fr-18,fr,Il a plu pendant toute notre semaine de camping.,🌧️🏕️📅😫,ok,"Il pleut le jour où nous avions prévu le camping, c'est vraiment pénible.",1
+qwen2b prompted,fr-19,fr,J'ai mis du sel à la place du sucre dans le gâteau.,🧁🥄➡️🍬😐,ok,"J'ai mangé le gâteau à la cuillère, mais je n'ai pas aimé les bonbons.",0
+qwen2b prompted,fr-20,fr,Ma voiture est tombée en panne au milieu de l'autoroute.,🚗💨🛑 🤕🚧,ok,La voiture a freiné brusquement et je me suis blessé contre le panneau de signalisation.,0
+qwen2b prompted,fr-21,fr,On a adopté un chiot et il a mangé mes chaussures dès le premier jour.,🐕🏠 🩳😱,ok,"Le chien est rentré à la maison, et il est couvert de boue, ce qui m'a fait peur.",1
+qwen2b prompted,fr-22,fr,J'ai enfin eu mon permis après trois essais.,🚗🎓3️⃣✅ 🤸😄,ok,"Après trois essais, elle a enfin réussi son permis de conduire et elle est très contente.",2
+qwen2b prompted,fr-23,fr,Mon réveil n'a pas sonné et je suis arrivé en retard à mon entretien.,🕘❌ ⏰😟,ok,Je n'ai pas entendu mon réveil à neuf heures et je suis en retard.,2
+qwen2b prompted,fr-24,fr,Mon frère a gagné cent euros au loto et a invité tout le monde au restaurant.,🎰1️⃣0️⃣👨‍👩‍👧‍👦🍽️😄,ok,"Au casino, on a gagné 10 euros, alors la famille est allée dîner au restaurant et tout le monde était content.",2
+qwen2b prompted,fr-25,fr,"J'ai passé deux heures au téléphone avec le service client, pour rien.",📞👥❌😴,ok,"J'ai appelé mes amis, mais ils ne dorment pas.",0
+qwen2b prompted,fr-26,fr,La machine à laver a inondé la cuisine.,🧼🚿💦 🏠🔥,ok,"Je prends une douche avec du savon, puis je rentre chez moi pour allumer le chauffage.",0
+qwen2b prompted,fr-27,fr,Ma fille a appris à faire du vélo sans les petites roues.,🚲👶🚫🔧,ok,"Le vélo de l'enfant est cassé, donc il ne peut pas rouler.",0
+qwen2b prompted,fr-28,fr,J'ai oublié mon parapluie et il s'est mis à pleuvoir des cordes.,☂️❌ 🌧️🎢,ok,Je n'ai pas pris mon parapluie et il pleut à verse.,2
+qwen2b prompted,fr-29,fr,Nos voisins ont fait la fête jusqu'à cinq heures du matin.,🎉🏠🌙➡️👨‍👩‍👧‍👦😴,ok,"La fête à la maison se termine tard le soir, alors la famille va dormir.",1
+qwen2b prompted,fr-30,fr,Mon ordinateur a planté et j'ai perdu tout mon travail de la journée.,💻💥 📉😩,ok,Mon ordinateur est tombé en panne et je suis très déçu.,1
+qwen2b prompted,fr-31,fr,On a raté le début du film à cause des bouchons.,🎬🚧➡️😴,ok,"Le film est interrompu par des travaux, alors je m'endors.",0
+qwen2b prompted,fr-32,fr,Mon chef m'a félicité devant toute l'équipe.,👨‍💼🎉🏆👥😄,ok,"Le directeur célèbre la victoire de l'équipe, et tout le monde sourit.",1
+qwen2b prompted,fr-33,fr,J'ai trouvé un billet de vingt euros dans la poche d'un vieux manteau.,🎫💰🧥❌,ok,J'ai acheté un billet mais j'ai oublié mon manteau.,0
+qwen2b prompted,fr-34,fr,Le bébé a pleuré pendant tout le vol.,✈️👶😭,ok,L'avion a décollé et le bébé a pleuré.,2
+qwen2b prompted,fr-35,fr,J'ai voulu impressionner mes amis au karaoké mais j'ai oublié les paroles.,🎤👥➡️🗣️❌😅,ok,"Le chanteur a rassemblé le public, mais personne n'a osé parler, et tout le monde a rigolé.",0
+qwen2b prompted,fr-36,fr,"Mon médecin m'a dit d'arrêter le sucre et, le soir même, j'ai mangé une tarte entière.",🩺🚫🍬 ➡️ 🍰😋,ok,"Comme le médecin me l'a interdit, je ne mange plus de bonbons, alors je prends un gâteau délicieux.",1
+qwen2b prompted,fr-37,fr,"Il a neigé, l'école a fermé et les enfants étaient ravis.",❄️🏫👶😊,ok,Les enfants sont contents parce qu'il neige et que l'école est fermée.,2
+qwen2b prompted,fr-38,fr,J'ai acheté une plante et elle est morte en une semaine.,🌱➡️📉😟,ok,"La plante a poussé, puis elle a décliné, et je suis inquiet.",1
+qwen2b prompted,fr-39,fr,Ma sœur s'est coupé les cheveux toute seule et a fini en larmes.,👩‍🦰✂️😭,ok,Elle s'est coupé les cheveux et elle pleure.,2
+qwen2b prompted,fr-40,fr,On s'est disputés à cause du GPS sur la route des vacances.,🚗🤕 📍❌ 😠,ok,"Il a eu un accident de voiture, il n'était pas à l'endroit prévu, et il est furieux.",0
+qwen2b prompted,fr-41,fr,Je me suis endormi dans le train et j'ai raté mon arrêt.,😴🚆❌🏃‍♂️,ok,Je n'ai pas dormi dans le train et je suis en retard.,1
+qwen2b prompted,fr-42,fr,Le serveur a renversé la soupe sur la cliente d'à côté.,🍲➡️👩‍🍳😤,ok,"La soupe a brûlé, alors la cuisinière s'est énervée.",0
+qwen2b prompted,fr-43,fr,J'ai commencé le yoga et je n'arrive même pas à toucher mes pieds.,🧘‍♀️🏃❌👟,ok,"Elle fait du yoga au lieu de courir, elle n'a pas mis ses baskets.",1
+qwen2b prompted,fr-44,fr,On a gagné le tournoi de pétanque du village.,🏆🥇🎾🏡,ok,Il a gagné la médaille d'or au tennis et est rentré à la maison.,1
+qwen2b prompted,fr-45,fr,Le facteur a laissé mon colis chez le mauvais voisin.,📦➡️🏠❌ 🙅‍♂️,ok,"Le colis est arrivé à la maison, mais personne ne l'a reçu.",1
+qwen2b prompted,fr-46,fr,Je ne retrouve plus ma voiture dans le parking du centre commercial.,🚗❓ 🅿️🤔,ok,Où est-ce que je peux me garer ?,1
+qwen2b prompted,fr-47,fr,Ma meilleure amie va déménager au Canada l'année prochaine.,👩‍❤️‍👨➡️🇨🇦🏠🎁,ok,"Ma femme et moi avons déménagé au Canada, alors nous avons reçu un cadeau pour la nouvelle maison.",1
+qwen2b prompted,fr-48,fr,Des abeilles ont fait un nid dans notre cheminée.,🐝🏠🔥🧱,ok,Une abeille construit sa ruche en feu de briques.,2
+qwen2b prompted,fr-49,fr,J'ai raté la mayonnaise trois fois avant d'abandonner.,🥚❌ 🥚❌ 🥚❌ 😤,ok,"Il n'y a plus d'œufs au magasin, je suis vraiment énervé !",0
+qwen2b prompted,fr-50,fr,"Après quarante ans de travail, ma mère part enfin à la retraite.",👵🏆 🚀🎉,ok,"La grand-mère a gagné un prix, et la fusée a fait la fête.",0
+qwen2b prompted,en-01,en,I locked myself out of the car with the engine still running.,🔑❌ 🚗🔥😵,ok,"I lost my car keys, so my car wouldn't start and I was stressed out.",1
+qwen2b prompted,en-02,en,"My boss replied ""ok"" and I have been worrying about it all weekend.",🤔👨‍💼 ➡️ 🧐😫,ok,"The boss thought about it, so the employees became frustrated and tired.",0
+qwen2b prompted,en-03,en,We got lost hiking and ended up at a different village.,🏔️🚶‍♂️📍➡️🏡,ok,He hiked up the mountain and then came home.,1
+qwen2b prompted,en-04,en,My kid painted the living room wall with my lipstick.,🎨👶 🖌️🧸😱,ok,The child painted a teddy bear and was shocked by the result.,0
+qwen2b prompted,en-05,en,"I finally finished the marathon, but I can't walk down the stairs anymore.",🏃‍♂️🏆 ➡️ 🪜❌ 😵,ok,"He ran for the trophy, but he didn't see the stairs and nearly fell over.",1
+qwen2b prompted,en-06,en,The wifi went down during my most important video call.,📹📶❌😰,ok,I was worried when my video call dropped because my internet connection went out.,2
+qwen2b prompted,en-07,en,I accidentally liked my ex's photo from five years ago.,😍❌ 📸🕰️,ok,I don't love taking photos of the clock.,0
+qwen2b prompted,en-08,en,It snowed in April and all my tomato plants froze.,❄️🍅🧊😱,ok,I left the tomatoes in the freezer and was shocked when I found them.,0
+qwen2b prompted,en-09,en,I didn't study at all and still passed the exam.,📚❌ 🎓✅ 😲,ok,"I didn't bring my books, but I got a perfect grade on the exam, and I'm so surprised.",2
+qwen2b prompted,en-10,en,"My flight was delayed eight hours, so I slept on the airport floor.",✈️🛫➡️🌙😴,ok,"I took a flight, so I went to bed late and slept.",1
+qwen2b prompted,en-11,en,My phone died right when I needed the map.,📱❌ 🗺️😰,ok,"I forgot my phone, so I got really anxious about finding my way without a map.",1
+qwen2b prompted,en-12,en,"The dog ate my homework, and this time it's actually true.",🐕📚➡️✅😱,ok,"The dog chewed up the book, so I was shocked when I saw it.",1
+qwen2b prompted,en-13,en,We waited an hour for a table and then the restaurant ran out of pasta.,🍽️⏳❌ 🍝😩,ok,"We waited so long for our food, and the pasta was disappointing.",1
+qwen2b prompted,en-14,en,My neighbor's rooster wakes me up at five every morning.,🐓🌅 ⏰5️⃣ 😴,ok,"The rooster crows at dawn, but I hit snooze at 5 and go back to sleep.",1
+qwen2b prompted,en-15,en,I sent a text complaining about my friend to that same friend.,📱👤➡️👤😒,ok,"I texted him, and he just gave me a dismissive reply.",0
+qwen2b prompted,en-16,en,We celebrated our tenth wedding anniversary in Paris.,🎉👰🏫 🇫🇷🥂👨‍👩‍👧‍👦🎈,ok,The teacher's wedding celebration in France was attended by her family and friends with champagne and balloons.,1
+qwen2b prompted,en-17,en,I tried to fix the sink and flooded the bathroom.,🚰🛁🚽🌊😱,ok,"The bathroom sink, bathtub, and toilet all flooded, and I was shocked.",1
+qwen2b prompted,en-18,en,My daughter scored her first goal and cried with joy.,🎾👧🏻 ⚽🥳 😄,ok,The girl with the tennis ball is excited to play soccer and she is very happy.,1
+qwen2b prompted,en-19,en,The power went out while I was cooking dinner for guests.,🍳🔌❌🏠😰,ok,"I was cooking breakfast when the power went out at home, and I got really worried.",2
+qwen2b prompted,en-20,en,I bought shoes online and they were two sizes too small.,👟🛒➡️📦❌😕,ok,"I bought some shoes online, but the package never arrived and I felt confused.",1
+qwen2b prompted,en-21,en,My roommate keeps leaving dirty dishes in the sink.,🛁👩‍🔧🗑️😤,ok,The bathroom plumber threw away the old fixtures and was frustrated.,0
+qwen2b prompted,en-22,en,I finally quit smoking after ten years.,🚬❌1️⃣0️⃣ ✅😎,ok,I quit smoking ten years ago and I feel great now.,1
+qwen2b prompted,en-23,en,A seagull stole my ice cream at the beach.,🏖️🐦🍦😱,ok,"At the beach, a seagull stole my ice cream and I was shocked.",2
+qwen2b prompted,en-24,en,I fell off my bike in front of my whole class.,🚲🏫😵‍💫,ok,I rode my bike to school and felt dizzy when I got there.,0
+qwen2b prompted,en-25,en,We moved to a new city and I don't know anyone yet.,🏙️👥❌😕,ok,"The city crowds were nowhere to be seen, and it left me feeling a bit confused.",0
+qwen2b prompted,en-26,en,My grandfather learned to swim at seventy.,👴70️⃣ 🏊✅,non-emoji: 7,,0
+qwen2b prompted,en-27,en,I microwaved fish at work and the whole office complained.,🍳🏢🗣️😡,ok,The chef at the restaurant yelled angrily at the staff.,0
+qwen2b prompted,en-28,en,The baby finally slept through the night for the first time.,👶😴 🌙✅,ok,"The baby is asleep, so the night is good.",1
+qwen2b prompted,en-29,en,I got a parking ticket while I was paying for parking.,🅿️❌👨‍🚧📝😕,ok,"There was no parking attendant to give me a ticket, so I felt confused.",1
+qwen2b prompted,en-30,en,I planted sunflowers and they grew taller than the house.,🌻🏠➡️🌳📈,ok,The sunflowers in the front yard grew so tall that they now reach over the trees.,2
+qwen2b prompted,en-31,en,My son wants a puppy for his birthday next month.,🎂🐕📅 🎉,ok,"My dog's birthday is on the calendar, so we are throwing a party.",0
+qwen2b prompted,en-32,en,I got stuck in the elevator for two hours.,🚪🔙➡️🚪🔙🔙🔙,ok,"I went back through the door, then went back through the door again and again.",0
+qwen2b prompted,en-33,en,The concert was canceled ten minutes before it started.,🎵❌ 📅🚫 😟,ok,"I have no music lessons scheduled, so I feel anxious.",0
+qwen2b prompted,en-34,en,I ran into my teacher at the supermarket while wearing pajamas.,👚🏪 👨‍🏫🤝,ok,"I bought a shirt at the store, and the teacher shook hands with me.",0
+qwen2b prompted,en-35,en,My best friend is getting married next summer and I'm the best man.,👨‍💼🤵👰✨,ok,The businessman in a suit gave the bride a sparkling gift on her wedding day.,1
+qwen2b prompted,en-36,en,I ate too much at Thanksgiving and fell asleep on the couch.,🦃🍽️😴🛋️,ok,"After the big Thanksgiving dinner, everyone fell asleep on the couch from eating too much turkey.",2
+qwen2b prompted,en-37,en,The printer jammed right before my presentation.,🖨️🔧📊😰,ok,"The printer broke down right before I had to present the sales report, and I started to panic.",2
+qwen2b prompted,en-38,en,We found a stray kitten in the garage and decided to keep it.,🐱🏠👀 ✅ 🥰,ok,The cat sees the house and is happy.,0
+qwen2b prompted,en-39,en,I accidentally hit reply-all on a company-wide email.,📧👤➡️🔔❌😵‍💫,ok,"I got an email from my boss, so I didn't notice the reminder and forgot about the meeting.",0
+qwen2b prompted,en-40,en,My car got towed while I was at the movies.,🎬🚗❌ 🛢️😩,ok,"The movie was great, but the car ran out of gas and we were stuck on the highway.",0
+qwen2b prompted,en-41,en,It was so hot that the chocolate melted in my bag.,🍫🔥🧱,ok,The chocolate melted in the fire and turned into a brick.,1
+qwen2b prompted,en-42,en,I won a free trip to Japan in a radio contest.,📻🎤 🇯🇵✈️😲,ok,I heard on the radio that the singer is flying to Japan and I was shocked.,0
+qwen2b prompted,en-43,en,My sister borrowed my sweater and gave it back with a hole in it.,🧥👯‍♀️❌🔨,ok,"I left my jacket at my friend's house, so I couldn't go hammer anything, and I'm missing my tools.",0
+qwen2b prompted,en-44,en,I signed up for a gym membership and never went.,🏋️‍♀️📝❌😴,ok,I went to the gym but forgot my notebook and didn't sleep well.,0
+qwen2b prompted,en-45,en,The kids built a snowman taller than their dad.,🏠❄️ 🧸👨‍👦➡️🧊🏔️,ok,"The house was freezing, so the child and dad went up the ice mountain.",0
+qwen2b prompted,en-46,en,I burned my tongue on hot soup.,🍲🔥😵‍💫,ok,"I left the soup on the stove too long and it boiled over, so I'm dizzy from the steam.",1
+qwen2b prompted,en-47,en,We had a picnic and ants covered all the food.,🍞🐜🍞🐜,ok,Ants keep crawling all over the bread we left on the counter.,1
+qwen2b prompted,en-48,en,I lost my wedding ring in the ocean.,💍🏖️❌😢,ok,"She got engaged on the beach, but she was not sad about it.",0
+qwen2b prompted,en-49,en,My dad tried TikTok and posted a video of his own ear.,👨‍👧‍👦🎵👂🤷,ok,"The family listened to music, but nobody seemed to know what to say.",0
+qwen2b prompted,en-50,en,"After months of searching, I finally got the job.",🕵️‍♂️🔍➡️🎉🤝,ok,"The detective searched for clues, so the case was solved and everyone celebrated together.",0
+qwen2b_full,fr-01,fr,J'ai raté mon bus parce que je cherchais mes lunettes.,🙋 🚌❌ 🧋👓,ok,"Je ne prends pas le bus, je bois un bubble tea avec mes lunettes.",0
+qwen2b_full,fr-02,fr,Mon voisin fait des travaux tous les dimanches matin.,👨‍🔧🏠 🗓️🌅,ok,Le plombier vient à la maison demain matin.,0
+qwen2b_full,fr-03,fr,On a mangé une raclette alors qu'il faisait 30 degrés.,🍽️🍷 🌡️3️⃣0️⃣,ok,Nous dînons avec du vin et il fait 30 degrés dehors.,1
+qwen2b_full,fr-04,fr,J'ai oublié l'anniversaire de ma mère et elle m'a appelé en pleurant.,👵🎂❌ ➡️ 🎁👵💬😭,ok,"Grand-mère n'a pas de gâteau, alors elle a reçu un cadeau et elle a pleuré de joie.",0
+qwen2b_full,fr-05,fr,Le chien du voisin a volé mon sandwich au parc.,🐕🏠 ➡️ 🍪🏃 🐕🏃 ➡️ 🍪❌ 😤,ok,"Le chien est rentré à la maison et a couru vers les biscuits, mais les biscuits ont disparu, alors il est parti en courant, énervé.",0
+qwen2b_full,fr-06,fr,Je n'ai pas dormi de la nuit à cause d'un moustique.,🦟🦟🦟 ➡️ 😴❌ 🌙,ok,Les moustiques m'ont empêché de dormir cette nuit.,2
+qwen2b_full,fr-07,fr,"Mon train a été annulé, donc j'ai pris un taxi qui m'a coûté une fortune.",🚆❌ ➡️ 🚕💸💸 😤,ok,"Je n'ai pas pris le train, alors j'ai payé un taxi très cher et je suis furieux.",2
+qwen2b_full,fr-08,fr,Ma grand-mère a appris à utiliser WhatsApp et m'envoie des messages tous les jours.,👵📱📞 ➡️ 🫵💬📱 📅,ok,"Grand-mère appelle sur son téléphone, elle te dit de prendre rendez-vous.",1
+qwen2b_full,fr-09,fr,Il a demandé sa copine en mariage pendant un match de foot.,⚽👨💬 💍👩,ok,Le footballeur demande sa main à sa fiancée.,2
+qwen2b_full,fr-10,fr,J'ai essayé de faire du pain maison mais il était dur comme une pierre.,🙋🍞👨‍🍳 ➡️ 🍞💪💪💪 😩,ok,"Je demande du pain au boulanger, il est très fatigué à force de travailler.",0
+qwen2b_full,fr-11,fr,Mon téléphone est tombé dans les toilettes juste après l'avoir acheté.,📱💥 🚽 😱,ok,Mon téléphone est tombé dans les toilettes et j'ai paniqué.,2
+qwen2b_full,fr-12,fr,Le chat a dormi sur mon clavier et a envoyé un mail à mon chef.,🐈🛏️⌨️ ➡️ 📧👨‍💼,ok,"Le chat dort sur le lit, alors j'envoie un e-mail au patron.",1
+qwen2b_full,fr-13,fr,J'ai attendu le plombier toute la journée et il n'est jamais venu.,🔧👷 ⏳🌅 ➡️ 🙋🏠❌ 😤,ok,"Le plombier est arrivé tôt le matin, donc la personne n'était pas à la maison et était furieuse.",1
+qwen2b_full,fr-14,fr,On a fêté les quatre-vingts ans de mon grand-père avec toute la famille.,👴🎂8️⃣0️⃣ 🎉👨‍👩‍👧👦,ok,Mon grand-père fête ses 80 ans avec toute la famille.,2
+qwen2b_full,fr-15,fr,Ma colocataire mange mes yaourts et fait comme si de rien n'était.,🙋 🍽️🥛 ➡️ 🧑‍🤝‍🧑🍽️ 🤷,ok,"Je demande un verre de lait au restaurant, alors je dîne avec des amis et personne ne sait quoi commander.",0
+qwen2b_full,fr-16,fr,J'ai couru pour attraper le métro et les portes se sont fermées devant moi.,🏃💨 🚇 ➡️ 🚪🔒 🙋😱,ok,"Je cours vite vers le métro, mais la porte se ferme et je suis surpris.",2
+qwen2b_full,fr-17,fr,Mon fils a perdu sa première dent et attend la petite souris.,👦🦷❌ ➡️ 🐭👀 😢,ok,"Le garçon a perdu sa dent et la petite souris le voit, alors il est triste.",2
+qwen2b_full,fr-18,fr,Il a plu pendant toute notre semaine de camping.,⛺🌧️🌧️🌧️🌧️ 📅,ok,"Nous avons prévu de camper, mais il pleut tout le week-end.",2
+qwen2b_full,fr-19,fr,J'ai mis du sel à la place du sucre dans le gâteau.,🧈🍬 ➡️ 🍰 😱,ok,"Elle a mis du beurre et du sucre, alors le gâteau a été une surprise qui l'a fait sursauter.",1
+qwen2b_full,fr-20,fr,Ma voiture est tombée en panne au milieu de l'autoroute.,🚗💥 🛑🛣️ 😱,ok,Une voiture a percuté un obstacle sur la route et tout le monde a eu très peur.,1
+qwen2b_full,fr-21,fr,On a adopté un chiot et il a mangé mes chaussures dès le premier jour.,🐕🐈 ➡️ 🦶🍽️ 😱,ok,Le chien et le chat ont marché sur la table et le dîner a fait peur à tout le monde.,0
+qwen2b_full,fr-22,fr,J'ai enfin eu mon permis après trois essais.,🙋 🚗📝📝📝 ➡️ 🚗✅ 😄,ok,"Je suis allé faire mon examen du permis de conduire et je l'ai réussi, je suis content.",2
+qwen2b_full,fr-23,fr,Mon réveil n'a pas sonné et je suis arrivé en retard à mon entretien.,🌅🔔❌ ➡️ 🚶⏰❌ ➡️ 💼⏰ 😱,ok,"Le réveil n'a pas sonné au lever du soleil, alors je suis parti au travail en retard et j'ai eu peur.",2
+qwen2b_full,fr-24,fr,Mon frère a gagné cent euros au loto et a invité tout le monde au restaurant.,👦🎲🏆1️⃣0️⃣0️⃣ ➡️ 🍽️👥,ok,Le garçon a gagné le jeu et ils sont allés dîner ensemble.,2
+qwen2b_full,fr-25,fr,"J'ai passé deux heures au téléphone avec le service client, pour rien.",📞👥 ⏳⏳ ➡️ 😤,ok,"On a appelé les collègues et on a attendu longtemps, alors je suis devenu impatient.",1
+qwen2b_full,fr-26,fr,La machine à laver a inondé la cuisine.,🧺🚿 ➡️ 💧💧💧 💥🍳 😱,ok,"J'ai fait la lessive sous la douche, puis l'eau a fui et ma cuisine a pris feu, je suis paniqué.",1
+qwen2b_full,fr-27,fr,Ma fille a appris à faire du vélo sans les petites roues.,👧🚲 🛞❌ ➡️ 🚴✅ 😄,ok,"La fille a un vélo sans roue, alors elle roule à vélo avec bonheur.",1
+qwen2b_full,fr-28,fr,J'ai oublié mon parapluie et il s'est mis à pleuvoir des cordes.,🙋 ☂️❌ ➡️ 🌧️🌧️🌧️ 😩,ok,"Je n'ai pas de parapluie, donc je suis trempé sous la pluie battante et je suis épuisé.",2
+qwen2b_full,fr-29,fr,Nos voisins ont fait la fête jusqu'à cinq heures du matin.,👨‍👩‍👧🎉🎉🎉 🌙5️⃣,ok,Une famille fête ses cinq ans de célébration au clair de lune.,0
+qwen2b_full,fr-30,fr,Mon ordinateur a planté et j'ai perdu tout mon travail de la journée.,💻💥 ➡️ 📁❌ 😱,ok,"Mon ordinateur a planté, donc j'ai perdu tous mes fichiers et je suis paniqué.",2
+qwen2b_full,fr-31,fr,On a raté le début du film à cause des bouchons.,🎬🎬🎬 ➡️ 🚗🚗🚗 🎬❌ 😞,ok,"Je suis allé au cinéma trois fois, mais le film n'était pas bon.",0
+qwen2b_full,fr-32,fr,Mon chef m'a félicité devant toute l'équipe.,👨‍💼🎉 🫵 ➡️ 👥👥👥,ok,"Le patron fête ça, vous êtes invités, alors on y va tous ensemble.",1
+qwen2b_full,fr-33,fr,J'ai trouvé un billet de vingt euros dans la poche d'un vieux manteau.,👕👖 ➡️ 🪪2️⃣0️⃣💶 😲,ok,"J'ai acheté un t-shirt et un pantalon pour 20 euros, c'est incroyable !",0
+qwen2b_full,fr-34,fr,Le bébé a pleuré pendant tout le vol.,✈️ 👶😭😭,ok,"Pendant le vol, le bébé a pleuré sans arrêt.",2
+qwen2b_full,fr-35,fr,J'ai voulu impressionner mes amis au karaoké mais j'ai oublié les paroles.,🎤👥 ➡️ 🎶❌ 😳,ok,"Le chanteur est monté sur scène, mais la musique ne s'est pas lancée et il est resté là, gêné.",1
+qwen2b_full,fr-36,fr,"Mon médecin m'a dit d'arrêter le sucre et, le soir même, j'ai mangé une tarte entière.",👨‍⚕️💬 🍬❌ ➡️ 🌙 🥧🍽️ 😅,ok,"Le médecin a dit qu'il n'y avait pas de sucreries, alors nous avons mangé une tarte au dîner, et c'était drôle.",1
+qwen2b_full,fr-37,fr,"Il a neigé, l'école a fermé et les enfants étaient ravis.",🌨️ ➡️ 🏫🔒 ➡️ 👶😄,ok,"Il neige, donc l'école est fermée et les enfants sont contents.",2
+qwen2b_full,fr-38,fr,J'ai acheté une plante et elle est morte en une semaine.,🌱🛒 ➡️ 🪴💀 ⏪1️⃣7️⃣ 😞,ok,"J'ai acheté une plante au magasin, mais elle est morte il y a dix-sept jours, ce qui me rend triste.",2
+qwen2b_full,fr-39,fr,Ma sœur s'est coupé les cheveux toute seule et a fini en larmes.,👧✂️💇 ➡️ 😭,ok,La petite fille s'est fait couper les cheveux et elle pleure.,1
+qwen2b_full,fr-40,fr,On s'est disputés à cause du GPS sur la route des vacances.,🙋🙋 🧭❌ ➡️ 🚗💥 😤,ok,"Nous sommes deux à ne pas avoir de boussole, alors on a eu un accident de voiture et on est en colère.",1
+qwen2b_full,fr-41,fr,Je me suis endormi dans le train et j'ai raté mon arrêt.,🚆😴 ➡️ 🚉❌ 😱,ok,"Je me suis endormi dans le train, et je n'ai pas vu la gare, j'ai paniqué.",2
+qwen2b_full,fr-42,fr,Le serveur a renversé la soupe sur la cliente d'à côté.,🍲🤲 ➡️ 🧑‍🤝‍🧑🍲💥 ➡️ 👩😱,ok,"Elle a offert de la soupe à ses voisins, mais le bol s'est renversé et elle a eu peur.",1
+qwen2b_full,fr-43,fr,J'ai commencé le yoga et je n'arrive même pas à toucher mes pieds.,🧘 ➡️ 🦶❌ 😵,ok,"Je fais du yoga et je me suis fait mal au pied, je suis étourdi.",1
+qwen2b_full,fr-44,fr,On a gagné le tournoi de pétanque du village.,⛳🏆 🥇🎉,ok,Il a gagné le tournoi de golf et il célèbre sa médaille d'or !,1
+qwen2b_full,fr-45,fr,Le facteur a laissé mon colis chez le mauvais voisin.,📦 ➡️ 🏠👨❌ 😤,ok,"Le colis est arrivé, mais le destinataire n'est pas à la maison, et il est énervé.",1
+qwen2b_full,fr-46,fr,Je ne retrouve plus ma voiture dans le parking du centre commercial.,🚗❓ 🅿️🏢 ➡️ 🤔😞,ok,"Je ne trouve pas où garer ma voiture près du bureau, donc je suis frustré.",1
+qwen2b_full,fr-47,fr,Ma meilleure amie va déménager au Canada l'année prochaine.,👩👧 ➡️ 🇨🇦🏠 ⏩📅,ok,Une mère et sa fille vont déménager au Canada l'année prochaine.,1
+qwen2b_full,fr-48,fr,Des abeilles ont fait un nid dans notre cheminée.,🐝🐝 🏠🔥 ➡️ 🏠🔥 😱,ok,"Les abeilles ont mis le feu à la maison, alors les gens ont paniqué.",0
+qwen2b_full,fr-49,fr,J'ai raté la mayonnaise trois fois avant d'abandonner.,🥚🥚🥚❌ ➡️ 🙋💥,ok,"Il n'y a plus d'œufs, donc je fais une crise de colère.",0
+qwen2b_full,fr-50,fr,"Après quarante ans de travail, ma mère part enfin à la retraite.",👵⏳4️⃣0️⃣ ➡️ 🏖️🚶 😊,ok,"Ma grand-mère a plus de quarante ans, alors elle part en vacances à la plage en marchant avec le sourire.",0
+qwen2b_full,en-01,en,I locked myself out of the car with the engine still running.,🚗🔒🙋 🚗🔥 😱,ok,"I locked my car, but then it caught fire and I was terrified.",1
+qwen2b_full,en-02,en,"My boss replied ""ok"" and I have been worrying about it all weekend.",👨‍💼💬✅ ➡️ 🙋😰🌅🌆,ok,"The manager said yes, so she felt relieved that evening.",1
+qwen2b_full,en-03,en,We got lost hiking and ended up at a different village.,🥾🧭❌ ➡️ 🏘️🔄 😅,ok,"We forgot our hiking boots and compass, so we had to turn back to the village, and we laughed about it.",1
+qwen2b_full,en-04,en,My kid painted the living room wall with my lipstick.,👦🎨 🧑‍🦱👄 ➡️ 🧑‍🦱🧑‍🦱🧑‍🦱🧑‍🦱,ok,"The boy paints, and the curly-haired kids all smile.",1
+qwen2b_full,en-05,en,"I finally finished the marathon, but I can't walk down the stairs anymore.",🏃🏁✅ ➡️ 🚶🪜❌ 😩,ok,"I ran to the finish line and crossed it, so I stopped walking up the stairs and felt exhausted.",2
+qwen2b_full,en-06,en,The wifi went down during my most important video call.,📱📶❌ ➡️ 📞🎥 😱,ok,"My phone has no signal, so I couldn't make a video call and I'm freaking out.",2
+qwen2b_full,en-07,en,I accidentally liked my ex's photo from five years ago.,🙋👀👩📷 ⏪5️⃣ 🫵❤️,ok,"Five years ago, she saw you in a photo and fell in love with you.",0
+qwen2b_full,en-08,en,It snowed in April and all my tomato plants froze.,🌸❄️ ➡️ 🍅❄️❄️ ➡️ 🥀😢,ok,"The cherry blossoms bloomed early, but a sudden frost killed the tomato plants, and the garden was ruined.",2
+qwen2b_full,en-09,en,I didn't study at all and still passed the exam.,📚❌ ➡️ 📝✅ 😲,ok,"I forgot my books, so I took notes instead and was surprised it went well.",1
+qwen2b_full,en-10,en,"My flight was delayed eight hours, so I slept on the airport floor.",✈️⏰⏰⏰⏰ ➡️ 🛋️🛏️ 🏨🌙 😩,ok,"After my flight was delayed for four hours, I finally got to the hotel and collapsed into bed exhausted.",1
+qwen2b_full,en-11,en,My phone died right when I needed the map.,📱💀 ➡️ 🗺️❌ 😤,ok,"My phone died, so I couldn't use the map and I got really annoyed.",2
+qwen2b_full,en-12,en,"The dog ate my homework, and this time it's actually true.",🐕🍽️ 📚❌ ➡️ 🙋📚❌ 😱,ok,"The dog ate the homework, so I had no book and felt panicked.",2
+qwen2b_full,en-13,en,We waited an hour for a table and then the restaurant ran out of pasta.,🍽️⏳1️⃣ 🍝❌ 😤,ok,"I've been waiting an hour for my pasta and it still hasn't arrived, so I'm annoyed.",1
+qwen2b_full,en-14,en,My neighbor's rooster wakes me up at five every morning.,🐓🌅 5️⃣ 🙋😴 ➡️ 😩,ok,"The rooster crowed at dawn at 5 a.m., so I woke up exhausted and miserable.",2
+qwen2b_full,en-15,en,I sent a text complaining about my friend to that same friend.,🙋💬🫵👥 ➡️ 🫵💬👥 😬,ok,"I told you the team would be nervous, so you should prepare them.",0
+qwen2b_full,en-16,en,We celebrated our tenth wedding anniversary in Paris.,💒🎉 🗼,ok,We went to a wedding reception and then visited the Eiffel Tower.,1
+qwen2b_full,en-17,en,I tried to fix the sink and flooded the bathroom.,🚰🔧 ➡️ 💧💧💧 ➡️ 🚿💥 😱,ok,"I fixed the leaking tap, but then water sprayed everywhere when the shower burst, and I was shocked.",1
+qwen2b_full,en-18,en,My daughter scored her first goal and cried with joy.,👧⚽🥅✅ ➡️ 😭🎉,ok,"The girl kicked the ball into the goal, so she cried tears of joy.",2
+qwen2b_full,en-19,en,The power went out while I was cooking dinner for guests.,🍳🍽️ 👥 ➡️ ⚡❌ 😩,ok,"I cooked dinner for everyone, but the power went out and I was so frustrated.",2
+qwen2b_full,en-20,en,I bought shoes online and they were two sizes too small.,🛒👟 ➡️ 👟👟👟❌ 😩,ok,"I went shopping for shoes, but none of them fit, so I felt frustrated.",1
+qwen2b_full,en-21,en,My roommate keeps leaving dirty dishes in the sink.,🧑‍🤝‍🧑 🍽️🧼 ➡️ 🚰🧼❌ 😤,ok,"My roommates and I did the dishes, but there was no soap left at the sink, so we were frustrated.",1
+qwen2b_full,en-22,en,I finally quit smoking after ten years.,🚬❌ ➡️ 🙋😌 📅1️⃣0️⃣,ok,I quit smoking and I feel relieved on my 10th day.,1
+qwen2b_full,en-23,en,A seagull stole my ice cream at the beach.,🏖️ 🐦🍦 ➡️ 🙋😭,ok,"At the beach, a seagull stole my ice cream, so I started crying.",2
+qwen2b_full,en-24,en,I fell off my bike in front of my whole class.,🚲💥 ➡️ 👥👀 😳,ok,"I crashed my bike, and people stared at me in shock.",2
+qwen2b_full,en-25,en,We moved to a new city and I don't know anyone yet.,🏙️🆕 🙋🤝❌,ok,I just moved to a new city and I don't know anyone yet.,2
+qwen2b_full,en-26,en,My grandfather learned to swim at seventy.,👴🏊 7️⃣0️⃣,ok,My grandfather still swims laps at seventy years old.,1
+qwen2b_full,en-27,en,I microwaved fish at work and the whole office complained.,🏢 🍳🐟 ➡️ 👥👎 😅,ok,"The office cooked fish and people disliked it, so they laughed it off.",1
+qwen2b_full,en-28,en,The baby finally slept through the night for the first time.,👶😴🌙 ✅ 🥹,ok,"The baby finally fell asleep under the moon, and I was so relieved.",1
+qwen2b_full,en-29,en,I got a parking ticket while I was paying for parking.,🅿️💶 ➡️ 🚗🅿️❌ 🧑‍🦱😤,ok,"I paid for parking, but then my car got towed away, so now I'm really annoyed.",1
+qwen2b_full,en-30,en,I planted sunflowers and they grew taller than the house.,🌻🌱 ➡️ 🌻📏⬆️🏠 😲,ok,"The sunflowers I planted grew taller than the house, and I was amazed.",2
+qwen2b_full,en-31,en,My son wants a puppy for his birthday next month.,👦🎂 ⏩ 🐕🐾,ok,The boy will take the dog for a walk after his birthday cake.,0
+qwen2b_full,en-32,en,I got stuck in the elevator for two hours.,🙋 🚇⏳⏳ 😤,ok,I waited ages for the subway and got really frustrated.,0
+qwen2b_full,en-33,en,The concert was canceled ten minutes before it started.,🎤🎶 ⏰1️⃣0️⃣ ➡️ 🚫🎶 😞,ok,"The singer started performing at 10 o'clock, so the music stopped and the crowd was sad.",1
+qwen2b_full,en-34,en,I ran into my teacher at the supermarket while wearing pajamas.,🏃🛒 ➡️ 👨‍🏫👀 🩳,ok,"I ran to the store, and the teacher saw me wearing shorts.",2
+qwen2b_full,en-35,en,My best friend is getting married next summer and I'm the best man.,👦💍📅⏩ 🙋🤵,ok,"A boy will propose to his girlfriend on a future date, and she will say yes.",1
+qwen2b_full,en-36,en,I ate too much at Thanksgiving and fell asleep on the couch.,🍽️🍽️🍽️ ➡️ 🛋️😴,ok,"We ate three big plates of food, so we went to the couch and fell asleep.",2
+qwen2b_full,en-37,en,The printer jammed right before my presentation.,🖨️💥 ➡️ 🗣️📊 😱,ok,"The printer broke down, so the boss yelled about the reports and everyone panicked.",1
+qwen2b_full,en-38,en,We found a stray kitten in the garage and decided to keep it.,🧑‍🤝‍🧑 🐈🔍🏠 ➡️ 🐈✅ 😊,ok,"My friends searched the house for the cat, and when they found it they were happy.",1
+qwen2b_full,en-39,en,I accidentally hit reply-all on a company-wide email.,🙋👤 ➡️ 📧📧📧 🏢 😬,ok,"A person raises their hand, so emails pile up at the office and it makes them feel nervous.",1
+qwen2b_full,en-40,en,My car got towed while I was at the movies.,🎬 ➡️ 🚗🔧🚚 😞,ok,"We went to watch the movie, but the car broke down on the way, so we were really disappointed.",1
+qwen2b_full,en-41,en,It was so hot that the chocolate melted in my bag.,🌡️🔥 ➡️ 🍫🧈🏃,ok,"The oven was so hot that the chocolate and butter melted, so I ran outside.",1
+qwen2b_full,en-42,en,I won a free trip to Japan in a radio contest.,📻🎤 🏆 ➡️ 🇯🇵✈️🎉,ok,"The radio host announced the winner of the contest, so the team flew to Japan to celebrate.",1
+qwen2b_full,en-43,en,My sister borrowed my sweater and gave it back with a hole in it.,👧🧥➡️🧥🔨 ➡️ 🧥🔙 😅,ok,"The girl put on her coat, then she sewed up the torn coat and smiled.",1
+qwen2b_full,en-44,en,I signed up for a gym membership and never went.,🏋️📝 ➡️ 🚶❌ 😞,ok,"I wrote my workout plan, but I didn't stick to it and I feel disappointed.",2
+qwen2b_full,en-45,en,The kids built a snowman taller than their dad.,👶👶🧊🧊 ➡️ 🧑‍🤝‍🧑🧊🧑‍🤝‍🧑 ➡️ 🧑🤯,ok,"The babies were cold, so the two friends were freezing and then the person was shocked.",0
+qwen2b_full,en-46,en,I burned my tongue on hot soup.,🍲🔥 ➡️ 🙋👅🔥 😱,ok,"I put the soup on the stove, but when I tasted it my mouth burned and I was shocked.",2
+qwen2b_full,en-47,en,We had a picnic and ants covered all the food.,🌞🍽️ ➡️ 🐜🌋🍽️ 😱,ok,"We ate breakfast outside in the sun, but then ants swarmed the table and we were horrified.",2
+qwen2b_full,en-48,en,I lost my wedding ring in the ocean.,💍🏖️ ➡️ 🙋❌ 😢,ok,"She got engaged on the beach, so she is not sad.",0
+qwen2b_full,en-49,en,My dad tried TikTok and posted a video of his own ear.,👨📱🎵 ➡️ 🎥👂👂,ok,"A man plays music on his phone, so people listen to a video.",0
+qwen2b_full,en-50,en,"After months of searching, I finally got the job.",🔍⏳⏳⏳ ➡️ 💼✅ 😄,ok,"After searching for hours, I finally found my lost wallet and was so happy.",0

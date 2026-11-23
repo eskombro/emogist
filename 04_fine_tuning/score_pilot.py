@@ -36,9 +36,9 @@ BEST_PILOT = RUNS / "run_qwen2b_C_mixed" / "pilot_outputs_qwen2b_C_mixed.csv"
 BASELINE = "qwen2b prompted"
 
 
-def baseline_outputs(dev: list[dict]) -> dict[str, str]:
-    if not BASELINE_FILE.exists():
-        print("Running the baseline on the dev set...", flush=True)
+def baseline_outputs(dev: list[dict], path: Path = BASELINE_FILE) -> dict[str, str]:
+    if not path.exists():
+        print(f"Running the baseline on {len(dev)} sentences...", flush=True)
         rows = []
         for row in dev:
             response = requests.post("http://localhost:11434/api/chat", timeout=180, json={
@@ -46,11 +46,11 @@ def baseline_outputs(dev: list[dict]) -> dict[str, str]:
                 "stream": False, "think": False, "options": {"temperature": TEMPERATURE, "num_predict": 100}})
             response.raise_for_status()
             rows.append({"id": row["id"], "output": response.json()["message"]["content"].strip()})
-        with open(BASELINE_FILE, "w", newline="", encoding="utf-8") as f:
+        with open(path, "w", newline="", encoding="utf-8") as f:
             writer = csv.DictWriter(f, fieldnames=["id", "output"])
             writer.writeheader()
             writer.writerows(rows)
-    with open(BASELINE_FILE, newline="", encoding="utf-8") as f:
+    with open(path, newline="", encoding="utf-8") as f:
         return {r["id"]: r["output"] for r in csv.DictReader(f)}
 
 

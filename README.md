@@ -33,7 +33,7 @@ Every step is evaluated the same way: a **round-trip score**. One model decodes 
 | [1. Student selection](01_student_selection/) | ✅ done | Qwen3.5 2B and Ministral 3B tied; Qwen3.5 0.8B behind |
 | [2. Teacher selection](02_teacher_selection/) | ✅ done | Five large teachers tied at ~1.3 gist vs ~0.9 for students; thinking adds nothing; DeepSeek V4.1 Flash best on tie-breakers, gpt-oss 120B a credible backup |
 | [3. Dataset](03_dataset/) (3,000 EN+FR sentences) | ✅ done | 50/50 mix of real and AI sentences, including exact numbers. [Dataset card](03_dataset/full/README.md) |
-| [4. Fine-tuning](04_fine_tuning/) (LoRA, Unsloth) | 🔄 final test pending | Trained on the full dataset, Qwen 2B: gist 0.42 → 0.75 on real dev sentences, tied with Ministral 3B (0.72). Qwen was declared the winner before the test |
+| [4. Fine-tuning](04_fine_tuning/) (LoRA, Unsloth) | ✅ done | Qwen 2B chosen on dev, tied with Ministral 3B. On the test set, fine-tuning raised gist from 0.81 to 1.13 (+0.32 [+0.17, +0.47]). Ministral's test run is deferred |
 | 5. Evaluation | | |
 | 6. Serving (GGUF + FastAPI, demo page) | | |
 

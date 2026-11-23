@@ -4,7 +4,7 @@ Train a small LoRA adapter so a student model learns to write emoji sentences fr
 
 <!-- Your summary: what this step is about, in your own words. -->
 
-**Status:** both students trained on the full dataset, Qwen declared the winner, final test not run yet.
+**Status:** both students trained on the full dataset and Qwen declared the winner. On the final test, fine-tuning raised Qwen's gist score from 0.81 to 1.13. The Ministral test run is deferred.
 
 # Main features and functionalities
 
@@ -22,8 +22,9 @@ Train a small LoRA adapter so a student model learns to write emoji sentences fr
 | `train_qwen.ipynb`, `train_ministral.ipynb` | Full-dataset training, with Drive checkpoints and best-epoch selection |
 | `test_qwen.ipynb`, `test_ministral.ipynb` | Final test run, gated by a check that the adapter reproduces its dev outputs |
 | `score_pilot.py` | Scores all runs against the untrained baseline and the teacher |
+| `score_test.py` | Scores the final test outputs against the untrained baseline; includes Ministral if its outputs exist |
 | `runs/` | Dev outputs, settings and loss history of each run (adapters are not committed) |
-| `results/pilot_scores.csv` | Per-sentence outputs, decodes and scores |
+| `results/pilot_scores.csv`, `full_scores.csv`, `test_scores.csv` | Per-sentence outputs, decodes and scores |
 
 ## Method
 
@@ -75,6 +76,29 @@ Ministral − Qwen is −0.03 [−0.17, +0.11], so the two are tied overall. Qwe
 
 **Qwen was declared the winner before the test set was run.** Ministral is measured on the test set for comparison only, and its result does not change this choice.
 
+## Final test results
+
+Qwen3.5 2B ran once on the 100 test sentences (50 French, 50 English). The untrained baseline is the same model through Ollama with the full labelling prompt (rules + 20 examples). The fine-tuned model receives only the one-line instruction.
+
+| Qwen3.5 2B | Valid | French | English | **Overall** | Lost / partly / fully kept |
+|---|---|---|---|---|---|
+| Untrained, full prompt | 99 | 0.96 | 0.66 | **0.81** | 40 / 39 / 21 |
+| **Fine-tuned** | **100** | **1.08** | **1.18** | **1.13** | **21 / 45 / 34** |
+
+Paired gains from fine-tuning, with 95% bootstrap intervals:
+
+- Overall: **+0.32 [+0.17, +0.47]**
+- English: +0.52 [+0.32, +0.72]
+- French: +0.12 [−0.08, +0.32], not proven
+
+How to read these numbers:
+
+- **Test and dev scores are not comparable.** The untrained model scores 0.81 on test and 0.42 on dev, so the test sentences are easier.
+- **The test set was used to shortlist models in steps 1 and 2**, so it is not untouched and absolute scores may be slightly optimistic.
+- **The teacher was not scored on this test with the final labelling prompt**, so there is no ceiling to compare 1.13 with.
+- **The scorer is model-based and provisional:** Claude Haiku 5.5 decodes and Claude Sonnet 5.5 judges, without human validation yet.
+- **Ministral 3 3B has not been run on the test set**, because the Colab GPU quota ran out. It is optional, as Qwen was chosen before the test.
+
 ## Lessons and limitations
 
 - Fine-tuning replaced a long prompt with a one-line instruction and still improved the score.
@@ -86,13 +110,14 @@ Ministral − Qwen is −0.03 [−0.17, +0.11], so the two are tied overall. Qwe
 ## Decision
 
 <!-- Your decision and why. Facts to weigh:
-     - Qwen 2B + C: 0.68, smaller, half the adapter size (44 MB vs 94 MB).
-     - Ministral 3B + C: 0.56, not conclusively worse, may benefit more from extra data.
-     - Plan: train both on the full dataset, then decide. -->
+     - Full data, dev: Qwen 0.75, Ministral 0.72, tied (-0.03 [-0.17, +0.11]).
+     - Qwen leads in French on dev; its adapter is less than half the size (44 MB vs 99 MB).
+     - Qwen was chosen before the test. Test: 0.81 untrained -> 1.13 fine-tuned, +0.32 [+0.17, +0.47].
+     - Ministral has no test score yet. -->
 
 ## Next
 
-Run `test_qwen.ipynb` and `test_ministral.ipynb` once each, then score the outputs (step 5).
+Step 5: evaluate the fine-tuned Qwen in more depth. Optionally, run `test_ministral.ipynb` once when a GPU is available, put its outputs in `runs/run_ministral3b_full/`, and rerun `score_test.py`.
 
 ## Reproduce
 
@@ -101,4 +126,5 @@ Open a notebook in Colab, select a **T4 GPU**, run the cells in order, run step 
 ```bash
 python 04_fine_tuning/score_pilot.py         # pilot runs
 python 04_fine_tuning/score_pilot.py --full  # full-dataset runs
+python 04_fine_tuning/score_test.py          # final test
 ```
