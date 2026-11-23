@@ -3,28 +3,46 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Turn an everyday English or French sentence into emojis that keep the gist.">
 <title>emogist</title>
 <style>
   :root {
     color-scheme: light dark;
-    --bg: #f7f6f2; --panel: #ffffff; --text: #1f1f1d; --muted: #666660;
+    --bg: #f7f6f2; --panel: #ffffff; --soft: #efeee8; --text: #1f1f1d; --muted: #666660;
     --line: #d9d7cf; --accent: #2f5fd0; --accent-text: #ffffff; --error: #b3261e;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #171716; --panel: #232321; --text: #f0efe9; --muted: #aaa89f;
+      --bg: #171716; --panel: #232321; --soft: #2d2d2a; --text: #f0efe9; --muted: #aaa89f;
       --line: #3b3a36; --accent: #8fb0ff; --accent-text: #10182c; --error: #ff9c92;
     }
   }
   * { box-sizing: border-box; }
   body {
-    margin: 0; min-height: 100vh; padding: 48px 16px; background: var(--bg); color: var(--text);
+    margin: 0; min-height: 100vh; padding: 32px 16px 48px; background: var(--bg); color: var(--text);
     font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
   }
-  main { width: 100%; max-width: 620px; margin: 0 auto; }
+  main { width: 100%; max-width: 680px; margin: 0 auto; }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
   h1 { margin: 0; font-size: 2rem; letter-spacing: -0.02em; }
-  .intro { margin: 4px 0 28px; color: var(--muted); }
-  form, .result { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+  h2 { margin: 0 0 6px; font-size: 1.25rem; letter-spacing: -0.01em; }
+  .intro { margin: 6px 0 24px; color: var(--muted); }
+
+  .language { position: relative; display: inline-grid; grid-template-columns: 1fr 1fr; flex: none; padding: 3px; background: var(--soft); border: 1px solid var(--line); border-radius: 999px; }
+  .language::before {
+    content: ""; position: absolute; top: 3px; bottom: 3px; left: 3px; width: calc(50% - 3px);
+    background: var(--panel); border-radius: 999px; box-shadow: 0 1px 3px rgb(0 0 0 / 0.22); transition: transform 0.18s ease;
+  }
+  html[lang="fr"] .language::before { transform: translateX(100%); }
+  .language button {
+    position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+    min-width: 66px; min-height: 34px; padding: 0 10px; color: var(--muted); background: transparent;
+    border: 0; border-radius: 999px; font: inherit; font-size: 0.875rem; font-weight: 600; cursor: pointer;
+  }
+  .language button[aria-pressed="true"] { color: var(--text); }
+  .language svg { display: block; width: 20px; height: 20px; border-radius: 50%; box-shadow: 0 0 0 1px rgb(0 0 0 / 0.14); }
+
+  form, .result, .guide { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
   label { display: block; margin-bottom: 8px; font-weight: 600; }
   textarea {
     display: block; width: 100%; min-height: 92px; padding: 10px 12px; resize: vertical;
@@ -33,68 +51,253 @@
   textarea:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   .actions { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 12px; }
   .count { color: var(--muted); font-size: 0.875rem; }
-  button {
+  #send {
     min-height: 40px; padding: 0 18px; color: var(--accent-text); background: var(--accent);
     border: 0; border-radius: 8px; font: inherit; font-weight: 600; cursor: pointer;
   }
-  button:disabled { opacity: 0.55; cursor: default; }
-  .examples { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 24px; }
-  .examples button { min-height: 34px; padding: 0 12px; color: var(--text); background: transparent; border: 1px solid var(--line); font-weight: 400; font-size: 0.875rem; }
-  .result { min-height: 104px; display: flex; align-items: center; justify-content: center; text-align: center; }
+  #send:disabled { opacity: 0.55; cursor: default; }
+  .try { margin-top: 18px; }
+  .try p { margin: 0 0 8px; color: var(--muted); font-size: 0.9375rem; }
+  .examples { display: flex; flex-wrap: wrap; gap: 8px; }
+  .examples button { min-height: 34px; padding: 4px 12px; color: var(--text); background: transparent; border: 1px solid var(--line); border-radius: 8px; font: inherit; font-size: 0.875rem; text-align: left; cursor: pointer; transition: background-color 0.12s ease, border-color 0.12s ease; }
+  .examples button:hover { background: var(--soft); border-color: var(--muted); }
+  .result { min-height: 104px; margin-top: 16px; display: flex; align-items: center; justify-content: center; text-align: center; }
   #emojis { font-size: 2rem; line-height: 1.35; overflow-wrap: anywhere; }
   #message { color: var(--muted); }
   #message.error { color: var(--error); }
   .spinner { display: inline-block; width: 14px; height: 14px; margin-right: 8px; vertical-align: -2px; border: 2px solid var(--line); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; }
   @keyframes spin { to { transform: rotate(360deg); } }
-  @media (prefers-reduced-motion: reduce) { .spinner { animation: none; } }
+
+  .guide { margin-top: 32px; padding: 0; }
+  .guide summary {
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    min-height: 56px; padding: 12px 16px; border-radius: 12px; cursor: pointer; list-style: none;
+  }
+  .guide summary::-webkit-details-marker { display: none; }
+  .guide summary::after {
+    content: ""; flex: none; width: 9px; height: 9px; margin-right: 4px;
+    border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted);
+    transform: translateY(-2px) rotate(45deg); transition: transform 0.18s ease;
+  }
+  .guide[open] summary::after { transform: translateY(2px) rotate(225deg); }
+  .guide summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .guide h2 { margin: 0; }
+  .guide-body { padding: 0 16px 16px; }
+  .guide-body > p { margin: 0 0 14px; color: var(--muted); font-size: 0.9375rem; }
+  .rules { display: grid; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+  .rules li { display: grid; grid-template-columns: 78px minmax(0, 1fr); gap: 2px 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .symbol { grid-row: span 2; font-size: 1.25rem; line-height: 1.5; white-space: nowrap; }
+  .rule { font-weight: 600; }
+  .sample { color: var(--muted); font-size: 0.9375rem; overflow-wrap: anywhere; }
+  .sample span { color: var(--text); font-size: 1.0625rem; white-space: nowrap; }
+  .note { margin: 14px 0 0 !important; font-size: 0.875rem !important; }
   footer { margin-top: 18px; color: var(--muted); font-size: 0.875rem; }
+  @media (max-width: 420px) {
+    h1 { font-size: 1.75rem; }
+    .language button { min-width: 58px; padding: 0 7px; }
+    .rules li { grid-template-columns: 62px minmax(0, 1fr); gap: 2px 8px; }
+    .symbol { font-size: 1rem; }
+    .sample span { white-space: normal; }
+  }
+  @media (prefers-reduced-motion: reduce) { .spinner { animation: none; } .language::before, .guide summary::after { transition: none; } }
 </style>
 </head>
 <body>
 <main>
-  <h1>emogist</h1>
-  <p class="intro">Turn an everyday English or French sentence into emojis that keep the gist.</p>
+  <header>
+    <h1>emogist</h1>
+    <div class="language" role="group" id="language">
+      <button type="button" data-lang="en" aria-label="English">
+        <svg viewBox="0 0 60 60" aria-hidden="true"><clipPath id="uk"><circle cx="30" cy="30" r="30"/></clipPath><g clip-path="url(#uk)"><rect width="60" height="60" fill="#012169"/><path d="M0 0 60 60M60 0 0 60" stroke="#fff" stroke-width="12"/><path d="M0 0 60 60M60 0 0 60" stroke="#c8102e" stroke-width="5"/><path d="M30 0V60M0 30H60" stroke="#fff" stroke-width="20"/><path d="M30 0V60M0 30H60" stroke="#c8102e" stroke-width="12"/></g></svg>
+        EN
+      </button>
+      <button type="button" data-lang="fr" aria-label="Français">
+        <svg viewBox="0 0 60 60" aria-hidden="true"><clipPath id="fr"><circle cx="30" cy="30" r="30"/></clipPath><g clip-path="url(#fr)"><rect width="20" height="60" fill="#002395"/><rect x="20" width="20" height="60" fill="#fff"/><rect x="40" width="20" height="60" fill="#ed2939"/></g></svg>
+        FR
+      </button>
+    </div>
+  </header>
+  <p class="intro" data-t="intro"></p>
+
   <form id="form">
-    <label for="sentence">Your sentence</label>
-    <textarea id="sentence" maxlength="200" placeholder="I fell asleep on the beach and got a terrible sunburn."></textarea>
+    <label for="sentence" data-t="label"></label>
+    <textarea id="sentence" maxlength="200"></textarea>
     <div class="actions">
       <span class="count" id="count">0 / 200</span>
-      <button type="submit" id="send">Translate</button>
+      <button type="submit" id="send" data-t="send"></button>
     </div>
   </form>
-  <div class="examples" aria-label="Example sentences">
-    <button type="button">I missed my train this morning.</button>
-    <button type="button">Je dois aller chez le dentiste demain.</button>
-  </div>
+
   <section class="result" aria-live="polite">
     <div>
-      <div id="emojis"></div>
-      <div id="message">Your emojis will appear here.</div>
+      <div id="emojis" translate="no"></div>
+      <div id="message"></div>
     </div>
   </section>
-  <footer>A small fine-tuned model that can get things wrong. Sentences are not stored.</footer>
+
+  <section class="try">
+    <p id="examples-hint" data-t="examplesHint"></p>
+    <div class="examples" id="examples" role="group" aria-labelledby="examples-hint"></div>
+  </section>
+
+  <details class="guide">
+    <summary><h2 data-t="guideTitle"></h2></summary>
+    <div class="guide-body">
+      <p data-t="guideIntro"></p>
+      <ul class="rules" id="rules"></ul>
+      <p class="note" data-t="guideNote"></p>
+    </div>
+  </details>
+  <footer data-t="footer"></footer>
 </main>
 <script>
-  // Empty means same server. On GitHub Pages, set this to the API's HTTPS address.
+  // Empty means same server. If the page is hosted elsewhere, set this to the API's HTTPS address.
   const API = "";
+  const RULES = [
+    { symbol: "➡️", sample: "📺👀 ➡️ 🍕🔥💀" },
+    { symbol: "❌", sample: "🔑❌" },
+    { symbol: "⏪ ⏩", sample: "🍔🍟🍔🍟 ➡️ ⏩🤢" },
+    { symbol: "💬", sample: "👴💬🫵😊 🙋🥹" },
+    { symbol: "⏳⏳⏳", sample: "💄⏳⏳⏳" },
+    { symbol: "1️⃣3️⃣", sample: "👦 ⏪ 1️⃣3️⃣" },
+    { symbol: "␣", sample: "🏖️😴 ➡️ 🦞🔥 😭" },
+  ];
+  const TEXT = {
+    en: {
+      intro: "Turn an everyday sentence into emojis that keep the gist. You can write in English or French.",
+      label: "Your sentence", placeholder: "I fell asleep on the beach and got a terrible sunburn.", send: "Translate",
+      languageLabel: "Page language", examplesHint: "Need inspiration? Click an example to try it:",
+      examples: ["A seagull stole my ice cream.", "I talked for ten minutes with my mic on mute.", "My cat pushed my birthday cake off the table.", "My boss told me I got a raise.", "I forgot my umbrella and got soaked."],
+      idle: "Your emojis will appear here.", waking: "Waking up the model…", translating: "Translating…",
+      empty: "Please type a sentence.", too_long: "Please use at most 200 characters.",
+      bad_characters: "The sentence contains unsupported characters.", bad_request: "That sentence couldn't be read.",
+      rate_limited: "Too many requests, please wait a moment.", busy: "The demo is busy, please try again later.",
+      unavailable: "The model is unavailable, please try again.",
+      no_valid_output: "The model couldn't turn this one into emojis. Try rephrasing it.",
+      network: "Couldn't reach the demo. Please try again.", generic: "Something went wrong.",
+      guideTitle: "How to read the emojis",
+      guideIntro: "An emoji sentence tells the gist, not every word: who did what, what happened and how it ended.",
+      guideNote: "The model only receives a one-line instruction. It learned these conventions from 3,000 example sentences, so it may not always follow them.",
+      footer: "A small fine-tuned model that can get things wrong. Sentences are not stored.",
+      rules: [
+        ["Then, or so", "watching TV, so the pizza burned"],
+        ["No, none, missing: placed right after the thing", "the keys are missing"],
+        ["Past and future, only when time matters", "too much food, I'll be sick later"],
+        ["Someone says something: speaker, 💬, then the message (🫵 = you)", "an old man told me I looked happy"],
+        ["A small quantity: the emoji is repeated, up to 4 times", "three hours of make-up"],
+        ["An exact number, such as an age, time or price", "when I was thirteen"],
+        ["Spaces separate ideas, in story order: who, action, object, result, emotion", "fell asleep on the beach, then a bad sunburn"],
+      ],
+    },
+    fr: {
+      intro: "Transformez une phrase du quotidien en emojis qui en gardent l'essentiel. Vous pouvez écrire en français ou en anglais.",
+      label: "Votre phrase", placeholder: "Je me suis endormi sur la plage et j'ai pris un énorme coup de soleil.", send: "Traduire",
+      languageLabel: "Langue de la page", examplesHint: "Besoin d'inspiration ? Cliquez sur un exemple pour l'essayer :",
+      examples: ["Mes plantes meurent dès que je les regarde.", "J'ai commencé un régime puis j'ai mangé tout le gâteau.", "Je suis allé une fois à la salle de sport et j'ai besoin d'une sieste.", "L'avion a eu trois heures de retard.", "Je ne trouve plus mes lunettes."],
+      idle: "Vos emojis apparaîtront ici.", waking: "Réveil du modèle…", translating: "Traduction…",
+      empty: "Veuillez écrire une phrase.", too_long: "Veuillez utiliser 200 caractères au maximum.",
+      bad_characters: "La phrase contient des caractères non pris en charge.", bad_request: "Cette phrase n'a pas pu être lue.",
+      rate_limited: "Trop de demandes, patientez un instant.", busy: "La démo est occupée, réessayez plus tard.",
+      unavailable: "Le modèle est indisponible, veuillez réessayer.",
+      no_valid_output: "Le modèle n'a pas réussi à traduire cette phrase. Essayez de la reformuler.",
+      network: "Impossible de joindre la démo. Veuillez réessayer.", generic: "Une erreur s'est produite.",
+      guideTitle: "Comment lire les emojis",
+      guideIntro: "Une phrase en emojis raconte l'essentiel, pas chaque mot : qui a fait quoi, ce qui s'est passé et comment ça s'est terminé.",
+      guideNote: "Le modèle ne reçoit qu'une consigne d'une ligne. Il a appris ces conventions à partir de 3 000 phrases d'exemple, il ne les respecte donc pas toujours.",
+      footer: "Un petit modèle spécialisé qui peut se tromper. Les phrases ne sont pas conservées.",
+      rules: [
+        ["Puis, ou donc", "on regarde la télé, donc la pizza brûle"],
+        ["Non, aucun, manquant : placé juste après l'élément", "les clés ont disparu"],
+        ["Passé et futur, seulement quand le moment compte", "trop mangé, je serai malade plus tard"],
+        ["Quelqu'un dit quelque chose : la personne, 💬, puis le message (🫵 = toi)", "un vieil homme m'a dit que j'avais l'air heureux"],
+        ["Une petite quantité : l'emoji est répété, jusqu'à 4 fois", "trois heures de maquillage"],
+        ["Un nombre exact, comme un âge, une heure ou un prix", "quand j'avais treize ans"],
+        ["Les espaces séparent les idées, dans l'ordre de l'histoire : qui, action, objet, résultat, émotion", "endormi sur la plage, puis un gros coup de soleil"],
+      ],
+    },
+  };
+
   const box = document.getElementById("sentence");
   const form = document.getElementById("form");
   const send = document.getElementById("send");
   const count = document.getElementById("count");
   const emojis = document.getElementById("emojis");
   const message = document.getElementById("message");
+  const examples = document.getElementById("examples");
+  const rules = document.getElementById("rules");
+  const switcher = document.getElementById("language");
+  let language = "en";
+  let status = { key: "idle", kind: "" };
   let lastWarmup = 0;
 
-  function show(text, kind = "") {
+  function savedLanguage() {
+    try {
+      const saved = localStorage.getItem("emogist-language");
+      if (saved === "en" || saved === "fr") return saved;
+    } catch {}
+    return (navigator.languages || [navigator.language]).find(Boolean)?.toLowerCase().startsWith("fr") ? "fr" : "en";
+  }
+
+  function show(key, kind = "") {
+    status = { key, kind };
     message.className = kind;
     message.textContent = "";
+    if (!key) return;
     if (kind === "loading") {
       const spinner = document.createElement("span");
       spinner.className = "spinner";
       message.append(spinner);
     }
-    message.append(text);
+    message.append(TEXT[language][key]);
   }
+
+  function setLanguage(next, remember = true) {
+    language = next;
+    const text = TEXT[language];
+    document.documentElement.lang = language;
+    document.querySelectorAll("[data-t]").forEach(element => { element.textContent = text[element.dataset.t]; });
+    box.placeholder = text.placeholder;
+    switcher.setAttribute("aria-label", text.languageLabel);
+    switcher.querySelectorAll("button").forEach(button => button.setAttribute("aria-pressed", String(button.dataset.lang === language)));
+    examples.replaceChildren(...text.examples.map(sentence => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.textContent = sentence;
+      button.addEventListener("click", () => {
+        box.value = sentence;
+        updateCount();
+        warmup();
+        if (!send.disabled) translate();
+      });
+      return button;
+    }));
+    rules.replaceChildren(...RULES.map((rule, index) => {
+      const [title, meaning] = text.rules[index];
+      const item = document.createElement("li");
+      const symbol = document.createElement("div");
+      symbol.className = "symbol";
+      symbol.translate = false;
+      symbol.setAttribute("aria-hidden", "true");
+      symbol.textContent = rule.symbol;
+      const name = document.createElement("div");
+      name.className = "rule";
+      name.textContent = title;
+      const sample = document.createElement("div");
+      sample.className = "sample";
+      const emoji = document.createElement("span");
+      emoji.translate = false;
+      emoji.textContent = rule.sample;
+      sample.append(emoji, `${language === "fr" ? " :" : ":"} ${meaning}`);
+      item.append(symbol, name, sample);
+      return item;
+    }));
+    show(status.key, status.kind);
+    if (remember) {
+      try { localStorage.setItem("emogist-language", language); } catch {}
+    }
+  }
+
+  function updateCount() { count.textContent = `${box.value.length} / 200`; }
 
   function warmup() {
     if (Date.now() - lastWarmup < 60000) return;
@@ -107,7 +310,7 @@
       try {
         const { state } = await (await fetch(API + "/status")).json();
         if (isDone()) return;
-        show(state === "ready" ? "Translating…" : "Waking up the model…", "loading");
+        show(state === "ready" ? "translating" : "waking", "loading");
       } catch { return; }
       await new Promise(resolve => setTimeout(resolve, 500));
     }
@@ -115,10 +318,10 @@
 
   async function translate() {
     const sentence = box.value.trim();
-    if (!sentence) { show("Please type a sentence.", "error"); box.focus(); return; }
+    if (!sentence) { emojis.textContent = ""; show("empty", "error"); box.focus(); return; }
     send.disabled = true;
     emojis.textContent = "";
-    show("Translating…", "loading");
+    show("translating", "loading");
     let done = false;
     watchLoading(() => done);
     try {
@@ -127,28 +330,27 @@
       });
       const data = await response.json();
       done = true;
-      if (response.ok) { emojis.textContent = data.emojis; show(""); }
-      else show(data.message || "Something went wrong.", "error");
+      if (response.ok) { emojis.textContent = data.emojis; show(null); }
+      else show(TEXT[language][data.code] ? data.code : "generic", "error");
     } catch {
       done = true;
-      show("Couldn't reach the demo. Please try again.", "error");
+      show("network", "error");
     } finally {
       send.disabled = false;
     }
   }
 
+  switcher.addEventListener("click", event => {
+    const button = event.target.closest("button");
+    if (button && button.dataset.lang !== language) setLanguage(button.dataset.lang);
+  });
   box.addEventListener("focus", warmup);
-  box.addEventListener("input", () => { count.textContent = `${box.value.length} / 200`; });
+  box.addEventListener("input", updateCount);
   box.addEventListener("keydown", event => {
     if (event.key === "Enter" && !event.shiftKey) { event.preventDefault(); if (!send.disabled) translate(); }
   });
   form.addEventListener("submit", event => { event.preventDefault(); if (!send.disabled) translate(); });
-  document.querySelectorAll(".examples button").forEach(button => button.addEventListener("click", () => {
-    box.value = button.textContent;
-    count.textContent = `${box.value.length} / 200`;
-    warmup();
-    if (!send.disabled) translate();
-  }));
+  setLanguage(savedLanguage(), false);
 </script>
 </body>
 </html>
