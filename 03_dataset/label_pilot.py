@@ -54,14 +54,14 @@ def problem(output: str) -> str:
     return validity if validity != "ok" else "; ".join(check_conventions(output))
 
 
-def run_labelling(sentences: list[dict]) -> list[dict]:
+def run_labelling(sentences: list[dict], labels_file: Path = LABELS_FILE) -> list[dict]:
     prompt_id = f"{VERSION}@{hashlib.sha256(WORKSHEET.read_bytes()).hexdigest()[:8]}"
-    LABELS_FILE.parent.mkdir(exist_ok=True)
+    labels_file.parent.mkdir(exist_ok=True)
     done = {}
-    if LABELS_FILE.exists():
-        with open(LABELS_FILE, newline="", encoding="utf-8") as f:
+    if labels_file.exists():
+        with open(labels_file, newline="", encoding="utf-8") as f:
             done = {r["id"]: r for r in csv.DictReader(f)}
-    with open(LABELS_FILE, "a", newline="", encoding="utf-8") as f:
+    with open(labels_file, "a", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=FIELDS)
         if not done:
             writer.writeheader()

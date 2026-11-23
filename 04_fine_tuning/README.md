@@ -4,7 +4,7 @@ Train a small LoRA adapter so a student model learns to write emoji sentences fr
 
 <!-- Your summary: what this step is about, in your own words. -->
 
-**Status:** pilot done, final training waits for the full dataset.
+**Status:** both students trained on the full dataset, Qwen declared the winner, final test not run yet.
 
 # Main features and functionalities
 
@@ -19,6 +19,8 @@ Train a small LoRA adapter so a student model learns to write emoji sentences fr
 |---|---|
 | `pilot_train_qwen.ipynb` | Trains and exports a Qwen3.5 2B adapter |
 | `pilot_train_ministral.ipynb` | Same recipe for Ministral 3 3B |
+| `train_qwen.ipynb`, `train_ministral.ipynb` | Full-dataset training, with Drive checkpoints and best-epoch selection |
+| `test_qwen.ipynb`, `test_ministral.ipynb` | Final test run, gated by a check that the adapter reproduces its dev outputs |
 | `score_pilot.py` | Scores all runs against the untrained baseline and the teacher |
 | `runs/` | Dev outputs, settings and loss history of each run (adapters are not committed) |
 | `results/pilot_scores.csv` | Per-sentence outputs, decodes and scores |
@@ -59,6 +61,20 @@ Validation loss by epoch:
 
 Qwen begins to overfit after epoch 2 on these small sets, while Ministral was still improving. Each run validates on its own held-out examples, so loss values are not comparable across runs.
 
+## Full-dataset results
+
+Both students trained on 2,700 examples and validated on 300, keeping the epoch with the lowest validation loss (epoch 2 for both). Scores are gist on the 100 real dev sentences.
+
+| Model | Valid | French | English | Overall | Adapter |
+|---|---|---|---|---|---|
+| Qwen3.5 2B | 98 | 0.88 | 0.62 | 0.75 | 44 MB |
+| Ministral 3 3B | 96 | 0.66 | 0.78 | 0.72 | 99 MB |
+| Teacher (DeepSeek V4.1 Flash) | 99 | 1.02 | 0.88 | 0.95 | |
+
+Ministral − Qwen is −0.03 [−0.17, +0.11], so the two are tied overall. Qwen leads in French by 0.22 [+0.04, +0.40]. Ministral's English lead of 0.16 [−0.06, +0.38] is not proven.
+
+**Qwen was declared the winner before the test set was run.** Ministral is measured on the test set for comparison only, and its result does not change this choice.
+
 ## Lessons and limitations
 
 - Fine-tuning replaced a long prompt with a one-line instruction and still improved the score.
@@ -76,14 +92,13 @@ Qwen begins to overfit after epoch 2 on these small sets, while Ministral was st
 
 ## Next
 
-1. Train Qwen 2B and Ministral 3B on the full dataset with identical settings.
-2. Pick the student on the dev set, watching for overfitting.
-3. Evaluate the chosen model once on the untouched test set (step 5).
+Run `test_qwen.ipynb` and `test_ministral.ipynb` once each, then score the outputs (step 5).
 
 ## Reproduce
 
 Open a notebook in Colab, select a **T4 GPU**, run the cells in order, run step 7 **once**, and put the downloaded zip in `runs/`. Unzip it into `runs/run_<name>/`, then run:
 
 ```bash
-python 04_fine_tuning/score_pilot.py
+python 04_fine_tuning/score_pilot.py         # pilot runs
+python 04_fine_tuning/score_pilot.py --full  # full-dataset runs
 ```

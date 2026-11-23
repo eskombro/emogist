@@ -7,7 +7,7 @@ these sentences become training data. The examples shown to it are real Tatoeba 
 from the pool, picked by plain rules, so no Claude-written text shapes the training data.
 
     python 03_dataset/generate_sentences.py --per-lang 20 --out /some/trial.csv
-    python 03_dataset/generate_sentences.py --per-lang 1500
+    python 03_dataset/generate_sentences.py --per-lang 665 --numbers-per-lang 170
 
 Resumable: combinations already recorded in the output file are skipped.
 """
@@ -62,7 +62,11 @@ PATTERNS = {
     "mishap": {"en": "something goes wrong, followed by its consequence",
                "fr": "quelque chose tourne mal, suivi de sa conséquence"},
     "moment": {"en": "a small concrete moment of daily life", "fr": "un petit moment concret de la vie quotidienne"},
+    "numbers": {"en": "an exact number matters to the story (an age, a price, a duration, a time of day or a quantity). The sentence MUST contain that number",
+                "fr": "un nombre exact compte dans l'histoire (un âge, un prix, une durée, une heure ou une quantité). La phrase DOIT contenir ce nombre"},
 }
+# The original grid keeps its own shuffled order, so existing IDs still match their cells.
+BASE_PATTERNS = ("speech", "past", "future", "mishap", "moment")
 TONES = {
     "en": ["amused", "annoyed", "happy", "sad", "relieved", "embarrassed", "proud"],
     "fr": ["amusé", "agacé", "content", "triste", "soulagé", "gêné", "fier"],
@@ -92,6 +96,8 @@ EXAMPLE_RULES = {
                "fr": r"\b(je vais|on va|nous allons|il va|elle va|demain|la semaine prochaine)\b"},
     "mishap": {"en": r"\b(so|and now)\b", "fr": r"\b(du coup|alors|donc)\b"},
     "moment": {"en": r"\b(I|we)\b", "fr": r"\b(je|j['’]|on)\b"},
+    "numbers": {"en": r"\b\d{1,3}\b|\b(two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|\w+teen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred)\b",
+                "fr": r"\b\d{1,3}\b|\b(deux|trois|quatre|cinq|six|sept|huit|neuf|dix|onze|douze|treize|quatorze|quinze|seize|vingt|trente|quarante|cinquante|soixante|cent)\b"},
 }
 EXAMPLES_PER_REQUEST = 3
 EXAMPLE_POOL_SIZE = 1000  # per pattern and language
@@ -100,11 +106,11 @@ MAX_EXAMPLES_PER_AUTHOR = 100  # per pattern, so one contributor's style doesn't
 FIELDS = ["id", "lang", "sentence", "topic", "pattern", "tone", "length", "speaker", "generator"]
 
 
-def plan(lang: str) -> list[tuple]:
+def plan(lang: str, patterns: tuple[str, ...] = BASE_PATTERNS, salt: str = "") -> list[tuple]:
     """Every combination, in a fixed shuffled order (so a resumed run continues the same plan)."""
-    cells = list(itertools.product(range(len(TOPICS[lang])), PATTERNS, range(len(TONES[lang])), LENGTHS,
+    cells = list(itertools.product(range(len(TOPICS[lang])), patterns, range(len(TONES[lang])), LENGTHS,
                                    range(len(SPEAKERS[lang]))))
-    random.Random(f"{SEED}-{lang}").shuffle(cells)
+    random.Random(f"{SEED}-{lang}{salt}").shuffle(cells)
     return cells
 
 
@@ -138,7 +144,8 @@ def generate(lang: str, cell: tuple, index: int, pools: dict[str, list[str]]) ->
     topic, pattern, tone, length, speaker = cell
     low, high = LENGTHS[length]
     # A different draw per request, so the generator doesn't imitate the same three sentences.
-    picks = random.Random(f"{SEED}-{lang}-{index}").sample(pools[pattern], EXAMPLES_PER_REQUEST)
+    draw = f"{SEED}-{lang}-{index}" if pattern != "numbers" else f"{SEED}-{lang}-numbers-{index}"
+    picks = random.Random(draw).sample(pools[pattern], EXAMPLES_PER_REQUEST)
     examples = "\n".join(f"- {s}" for s in picks)
     content = PROMPT[lang].format(topic=TOPICS[lang][topic], pattern=PATTERNS[pattern][lang], tone=TONES[lang][tone],
                                   low=low, high=high, speaker=SPEAKERS[lang][speaker], examples=examples)
@@ -163,6 +170,7 @@ def known_sentences(lang: str) -> NearDuplicates:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--per-lang", type=int, default=20)
+    parser.add_argument("--numbers-per-lang", type=int, default=0)
     parser.add_argument("--out", type=Path, default=OUT_DIR / "ai_pool.csv")
     args = parser.parse_args()
 
@@ -182,38 +190,43 @@ def main() -> None:
             for pool in pools.values():  # a generated sentence must not just copy an example
                 for example in pool:
                     seen.add(set(words(example)))
-            done_rows = [r for r in existing if r["lang"] == lang]
-            for r in done_rows:
-                seen.add(set(words(r["sentence"])))
-            done = {r["id"] for r in done_rows}
-            kept, tried, rejected = len(done_rows), 0, {}
-            for index, cell in enumerate(plan(lang)):
-                if kept >= args.per_lang or tried >= 2 * args.per_lang + 20:
-                    break
-                row_id = f"ai-{lang}-{index:05d}"
-                if row_id in done:
-                    continue
-                tried += 1
-                try:
-                    sentence = generate(lang, cell, index, pools)
-                except requests.RequestException as error:
-                    rejected["request error"] = rejected.get("request error", 0) + 1
-                    print(f"  {row_id}: {error}")
-                    continue
-                tokens = set(words(sentence))
-                reason = ("format" if "\n" in sentence or not looks_clean(sentence)
-                          else blocked_category(sentence, lang) or ("near-duplicate" if seen.seen(tokens) else None))
-                if reason:
-                    rejected[reason] = rejected.get(reason, 0) + 1
-                    continue
-                seen.add(tokens)
-                topic, pattern, tone, length, speaker = cell
-                writer.writerow({"id": row_id, "lang": lang, "sentence": sentence, "topic": TOPICS[lang][topic],
-                                 "pattern": pattern, "tone": TONES[lang][tone], "length": length,
-                                 "speaker": SPEAKERS[lang][speaker], "generator": MODEL})
-                f.flush()
-                kept += 1
-            print(f"[{lang}] {kept} sentences, {tried} requests this run, rejected: {rejected}")
+            for r in existing:
+                if r["lang"] == lang:
+                    seen.add(set(words(r["sentence"])))
+            series = [("base", plan(lang), f"ai-{lang}-", args.per_lang),
+                      ("numbers", plan(lang, ("numbers",), "-numbers"), f"ai-{lang}-num-", args.numbers_per_lang)]
+            for name, cells, prefix, target in series:
+                done = {r["id"] for r in existing if r["lang"] == lang and (r["pattern"] == "numbers") == (name == "numbers")}
+                kept, tried, rejected = len(done), 0, Counter()
+                for index, cell in enumerate(cells):
+                    if kept >= target or tried >= 2 * target + 20:
+                        break
+                    row_id = f"{prefix}{index:05d}"
+                    if row_id in done:
+                        continue
+                    tried += 1
+                    try:
+                        sentence = generate(lang, cell, index, pools)
+                    except requests.RequestException as error:
+                        rejected["request error"] += 1
+                        print(f"  {row_id}: request failed ({type(error).__name__})")
+                        continue
+                    tokens = set(words(sentence))
+                    reason = ("format" if "\n" in sentence or not looks_clean(sentence)
+                              else blocked_category(sentence, lang) or ("near-duplicate" if seen.seen(tokens) else None))
+                    if not reason and name == "numbers" and not re.search(EXAMPLE_RULES["numbers"][lang], sentence, re.I):
+                        reason = "no number"
+                    if reason:
+                        rejected[reason] += 1
+                        continue
+                    seen.add(tokens)
+                    topic, pattern, tone, length, speaker = cell
+                    writer.writerow({"id": row_id, "lang": lang, "sentence": sentence, "topic": TOPICS[lang][topic],
+                                     "pattern": pattern, "tone": TONES[lang][tone], "length": length,
+                                     "speaker": SPEAKERS[lang][speaker], "generator": MODEL})
+                    f.flush()
+                    kept += 1
+                print(f"[{lang}/{name}] {kept} sentences, {tried} requests this run, rejected: {dict(rejected)}", flush=True)
 
 
 if __name__ == "__main__":

@@ -1,12 +1,14 @@
 """Score pilot runs on the real dev set, against the same student before fine-tuning.
 
-    python 04_fine_tuning/score_pilot.py
+    python 04_fine_tuning/score_pilot.py          # pilot runs
+    python 04_fine_tuning/score_pilot.py --full   # full-dataset runs, next to the best pilot
 
-Reads every runs/run_*/pilot_outputs_*.csv. The baseline is plain Qwen3.5 2B through Ollama
+Reads every runs/run_*/pilot_outputs_*.csv, or runs/run_*/dev_outputs_*.csv with --full. The baseline is plain Qwen3.5 2B through Ollama
 with the full labelling prompt (rules + 20 examples); its outputs are saved and reused.
 The teacher row is DeepSeek V4.1 Flash, from the prompt comparison on the same sentences.
 """
 
+import argparse
 import csv
 import random
 import sys
@@ -29,6 +31,8 @@ TEACHER_FILE = ROOT / "03_dataset" / "results" / "prompt_comparison.csv"
 RUNS = HERE / "runs"
 BASELINE_FILE = RUNS / "baseline_qwen2b_prompted.csv"
 SCORES_FILE = HERE / "results" / "pilot_scores.csv"
+FULL_SCORES_FILE = HERE / "results" / "full_scores.csv"
+BEST_PILOT = RUNS / "run_qwen2b_C_mixed" / "pilot_outputs_qwen2b_C_mixed.csv"
 BASELINE = "qwen2b prompted"
 
 
@@ -62,11 +66,19 @@ def interval(differences: list[int]) -> str:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--full", action="store_true", help="score the full-dataset runs")
+    args = parser.parse_args()
+    scores_file = FULL_SCORES_FILE if args.full else SCORES_FILE
+
     with open(DEV_FILE, newline="", encoding="utf-8") as f:
         dev = list(csv.DictReader(f))
     models = {BASELINE: baseline_outputs(dev)}
-    for path in sorted(RUNS.glob("run_*/pilot_outputs_*.csv")):
-        models[path.stem.replace("pilot_outputs_", "")] = read_outputs(path)
+    if args.full:
+        models["pilot qwen2b C"] = read_outputs(BEST_PILOT)
+    prefix = "dev_outputs_" if args.full else "pilot_outputs_"
+    for path in sorted(RUNS.glob(f"run_*/{prefix}*.csv")):
+        models[path.stem.replace(prefix, "")] = read_outputs(path)
     models["teacher (Flash)"] = read_outputs(TEACHER_FILE, "v4-human-examples")
 
     client = anthropic.Anthropic(max_retries=5)
@@ -97,8 +109,8 @@ def main() -> None:
     for name in models:
         if name != BASELINE:
             print(f"{name} - {BASELINE}: " + interval([a - b for a, b in zip(scores[name], scores[BASELINE])]))
-    SCORES_FILE.parent.mkdir(exist_ok=True)
-    with open(SCORES_FILE, "w", newline="", encoding="utf-8") as f:
+    scores_file.parent.mkdir(exist_ok=True)
+    with open(scores_file, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=list(out[0]))
         writer.writeheader()
         writer.writerows(out)

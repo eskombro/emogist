@@ -4,7 +4,7 @@ Build about 3,000 English and French training examples, each pairing a sentence 
 
 <!-- Your summary: what this step is about, in your own words. -->
 
-**Status:** pilot done, full dataset not built yet.
+**Status:** full dataset built: 3,000 examples, described in the [dataset card](full/README.md).
 
 # Main features and functionalities
 
@@ -24,7 +24,9 @@ Build about 3,000 English and French training examples, each pairing a sentence 
 | `pick_example_candidates.py`, `label_examples.csv` | Worksheet for the human-written few-shot examples |
 | `label_prompt.py`, `compare_prompts.py` | Prompt versions and their comparison on the dev set |
 | `label_pilot.py` | Labels the pilot sentences and builds sets A, B and C |
-| `sentences/`, `labels/`, `pilot/`, `results/` | Generated data and comparison results |
+| `build_dataset.py` | Labels the full dataset and writes `full/train.jsonl` |
+| `sample_labels.py` | Draws a random sample for human review |
+| `sentences/`, `labels/`, `pilot/`, `full/`, `review/`, `results/` | Generated data, review sheet and comparison results |
 
 ## Real sentences
 
@@ -41,7 +43,7 @@ The filters are simple. Some abstract sentences and grammar errors remain, and t
 
 ## AI-generated sentences
 
-DeepSeek V4.1 Flash (MIT) writes one sentence per request at temperature 0.9. Each request combines one of 48 topics, 5 patterns (speech, past, future, mishap, moment), 7 feelings, 3 lengths and 3 speakers. It also shows three real Tatoeba sentences with the same pattern. French is written directly in French.
+DeepSeek V4.1 Flash (MIT) writes one sentence per request at temperature 0.9. Each request combines one of 48 topics, 6 patterns (speech, past, future, mishap, moment, numbers), 7 feelings, 3 lengths and 3 speakers. It also shows three real Tatoeba sentences with the same pattern. French is written directly in French.
 
 Claude does not write these sentences or their examples, because they become training data.
 
@@ -73,11 +75,19 @@ After this comparison, the author made small edits to reduce overused ➡️ arr
 
 The sets differ in length and style as well as source. Their training results are in [step 4](../04_fine_tuning/).
 
+## Full dataset
+
+Each language has 750 real and 750 AI sentences, of which 125 use the numbers pattern. The teacher labelled 3,310 sentences and 3,150 passed the checks. The first valid labels in pool order filled each quota, and the 880 pilot labels were reused.
+
+English numbers sentences failed most often (19% in the first batch), because each keycap digit counts toward the 10-emoji limit. 78% of the numbers examples contain keycaps, against 11% of the whole dataset.
+
+The author read part of a random 120-example sample and its numbers rows, and judged the labels ready. This was an informal check with no recorded score.
+
 ## Limitations
 
 - Automatic checks verify **format, not meaning**, so a valid label can still be poor.
-- Few training labels contain multi-digit keycaps, and the student still writes numbers as plain digits.
-- The dev set has now informed several decisions, so the final result must come from the untouched test set.
+- One Tatoeba contributor wrote 384 of the 1,500 real sentences.
+- The dev set has now informed several decisions, so the final result must come from the test set, which was kept out of training and prompt tuning.
 
 ## Decision
 
@@ -88,18 +98,17 @@ The sets differ in length and style as well as source. Their training results ar
 
 ## Next
 
-1. Add a **numbers** pattern to the generator (ages, prices, durations, times).
-2. Generate and label a 50/50 mix of about 3,000 examples.
-3. Read a sample of the labels.
-4. Write the dataset card: sources, licences, attribution and AI-generated content.
+Train both students on the full dataset in [step 4](../04_fine_tuning/).
 
 ## Reproduce
 
 ```bash
 python 03_dataset/fetch_real_sentences.py
-python 03_dataset/generate_sentences.py --per-lang 220
+python 03_dataset/generate_sentences.py --per-lang 665 --numbers-per-lang 170
 python 03_dataset/compare_prompts.py --versions v1-current v4-human-examples
 python 03_dataset/label_pilot.py
+python 03_dataset/build_dataset.py
+python 03_dataset/sample_labels.py
 ```
 
 These need Ollama signed in for DeepSeek V4.1 Flash. `compare_prompts.py` also needs `ANTHROPIC_API_KEY`. Completed work is reused, so reruns only process what's missing.

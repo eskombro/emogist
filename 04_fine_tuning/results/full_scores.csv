@@ -1,0 +1,501 @@
+model,id,lang,sentence,output,status,decoded,gist
+qwen2b prompted,tatoeba-9729427,en,I thought Tom might be mad at you.,😟👨‍🦳🤔🙄,ok,The worried old man is thinking and rolling his eyes.,0
+qwen2b prompted,tatoeba-11634388,en,Jonas was catching his breath on the porch.,🧔‍♂️🏡🌬️😴,ok,The man sleeps at home in the wind.,0
+qwen2b prompted,tatoeba-2751481,en,My life is fun and exciting.,🎉🌟🚀😄,ok,We celebrated the big launch with excitement and joy.,0
+qwen2b prompted,tatoeba-7235419,en,Mary was wearing a red dress when I saw her yesterday at the supermarket.,🛒👗🎀📸,ok,She bought a dress with a bow and took a photo of it.,0
+qwen2b prompted,tatoeba-5189051,en,I've got to get used to doing this sooner or later.,🔄➡️😴,2 emojis,,0
+qwen2b prompted,tatoeba-11979050,en,My hearing isn't so good as yours.,👂❌ 👂✅ 🗣️🤔,ok,"I can't hear you, can you say that again?",1
+qwen2b prompted,tatoeba-7731473,en,Tom started doing that when he was thirty years old.,👨3️⃣0️⃣ ➡️ 🎮,ok,"The man is thirty years old, so he plays video games.",1
+qwen2b prompted,tatoeba-3636244,en,I can do it now.,🙌✅ 🎯,ok,We hit every goal we set this quarter.,0
+qwen2b prompted,tatoeba-9776648,en,I've never been this sick before.,🤢🤒🤯🥴,ok,"I feel sick and feverish, my head is spinning, and I feel dizzy.",2
+qwen2b prompted,tatoeba-7208365,en,I was thirteen or fourteen at the time.,13️⃣14 🎂,non-emoji: 114,,0
+qwen2b prompted,tatoeba-6530366,en,I hope we don't miss our flight.,✈️🙌🏆,ok,We celebrated the team's victory after the flight home from the championship.,0
+qwen2b prompted,tatoeba-5975600,en,I told you Tom was telling the truth.,🗣️👨‍👩‍👧‍👦✅,ok,The family agreed to the plan after talking it over.,0
+qwen2b prompted,tatoeba-6676935,en,"If I had time, I'd do that.",🕒➡️🎯,2 emojis,,0
+qwen2b prompted,tatoeba-4813353,en,Tom fell asleep while he was driving and caused an accident.,🚗😴 ➡️ 🚨💥,ok,"I fell asleep while driving, so I crashed into something.",2
+qwen2b prompted,tatoeba-6342343,en,I didn't know you were going to be jealous.,😲👀🤔🙄,ok,"I was shocked to see him, but I just rolled my eyes and wondered what he was up to.",0
+qwen2b prompted,tatoeba-10554151,en,"If you're free, you could join us.",🙋‍♀️👫 ➡️ 🌟,ok,"She asked her friends for help, and that made her feel like a star.",0
+qwen2b prompted,tatoeba-2361202,en,I don't have shoes on.,👟❌ 🧦,ok,"I forgot my shoes, so I'm only wearing socks.",2
+qwen2b prompted,tatoeba-8845030,en,Tom wants to sell his land.,🏡🚜🤔,ok,The farm and the tractor make me wonder what to do next.,0
+qwen2b prompted,tatoeba-8408463,en,I could get used to it.,🛌😴,2 emojis,,0
+qwen2b prompted,tatoeba-11831479,en,I've been doing relatively well for years now.,📈➡️😌👍,ok,"The stock market went up, so I felt relieved and happy about it.",0
+qwen2b prompted,tatoeba-5850027,en,I've always wanted to wear a tux.,👔✨🎩,ok,He wore a sharp suit and a fancy hat to the event.,1
+qwen2b prompted,tatoeba-6661991,en,I'll never forget the first time I saw Tom.,👀👴➡️👨‍🦱😊,ok,The old man looked at the young man and smiled.,0
+qwen2b prompted,tatoeba-12035609,en,Kalman was using his phone light.,📱👀 🌙,ok,I looked at my phone at night.,1
+qwen2b prompted,tatoeba-3325883,en,I'm not going to rewrite your paper for you.,✍️❌ 🤷‍♂️,ok,"I didn't write anything, so I'm not sure what to say.",0
+qwen2b prompted,tatoeba-3865519,en,Tom suffered severe head injuries in a fall from his bike.,😵‍💫 🚲🏃❌ 💥,ok,"I was dizzy and couldn't run, so I crashed my bike.",1
+qwen2b prompted,tatoeba-6258709,en,Tom is very proud of his students.,🎓👨‍🏫🥳🌟,ok,The graduate's teacher celebrates with joy and pride at the graduation ceremony.,2
+qwen2b prompted,tatoeba-5352860,en,I haven't talked to her since.,👋❌ 🕰️😔,ok,I didn't say goodbye and I'm sad about the time we lost.,1
+qwen2b prompted,tatoeba-11856506,en,I practice French every day.,🇫🇷 📚 🏃‍♂️✅,ok,I went to France and finished reading the book.,0
+qwen2b prompted,tatoeba-2955483,en,Tom admitted he was guilty.,🕵️‍♂️👮‍♀️✅ 😲,ok,"The detective and the police officer confirmed it, and everyone was amazed.",1
+qwen2b prompted,tatoeba-6480802,en,I have a few things left to do.,📝🧹🚪,ok,I wrote a note and then swept the floor by the door.,0
+qwen2b prompted,tatoeba-6223770,en,Tom says he's not planning on doing that.,👨‍🍳🗯️❌🚫,ok,The chef didn't say anything and refused to talk about the recipe.,0
+qwen2b prompted,tatoeba-5220159,en,I hope that it'll work.,🔧✨ 🤔,ok,"I fixed it and now it works, so I wonder why it was broken.",1
+qwen2b prompted,tatoeba-6432894,en,Tom said he thought Mary had already done that.,👨‍🦱👩🤔 ➡️ 🕵️✅,ok,"A man and a woman wondered about it, so a detective confirmed the answer.",0
+qwen2b prompted,tatoeba-8568559,en,The mosque is not big enough to hold us all. We need to pray outside.,🕌🙏❌ 🚶🏽‍♂️🚶🏽‍♀️,ok,We went to the mosque but did not pray.,1
+qwen2b prompted,tatoeba-6266779,en,Tom carried Mary's suitcases to her room.,🧳👨‍🦱 ➡️ 🛏️,ok,"The man packed his suitcase, so he went to bed.",0
+qwen2b prompted,tatoeba-10232601,en,Ziri was in his room.,🧑‍🚀🏠🔒,ok,The astronaut went home and locked the door.,0
+qwen2b prompted,tatoeba-8462188,en,Let me get one thing straight.,🧐🤔,2 emojis,,0
+qwen2b prompted,tatoeba-6494987,en,Tom and Mary were walking their dog when I saw them this morning.,🐕👨‍👩‍👧‍👦🏠☀️,ok,The dog went home with the family in the sun.,1
+qwen2b prompted,tatoeba-3410936,en,Tom gave Mary all the money that he had in his pocket.,🧑🏫 ➡️ 🧑🏫 💰🧳,ok,"The teacher is going to school, so the teacher pays for the trip with money from their suitcase.",0
+qwen2b prompted,tatoeba-7521135,en,I know Tom is a fussy eater.,👨‍🍳🥔🙅‍♂️,ok,The chef doesn't want any potatoes.,0
+qwen2b prompted,tatoeba-8254481,en,He converted to Islam in his forties.,👨‍🌾🕋4️⃣,ok,A farmer walked to the mosque four times.,0
+qwen2b prompted,tatoeba-6250024,en,Tom banged on the table with his fist.,👊🪵🔨😤,ok,He punched the wooden board with a hammer and got angry.,1
+qwen2b prompted,tatoeba-11711790,en,"Martino’s father is a bioengineer, too.",👨‍🔬👨‍👧‍👦👨‍🔬,ok,The scientist and his family are both scientists.,2
+qwen2b prompted,tatoeba-6340370,en,I need to buy a new a set of oars for my rowboat.,🛶🪣🚣‍♂️🔧,ok,"He paddled the canoe, bailed out the water with a bucket, and then fixed the leak.",0
+qwen2b prompted,tatoeba-3171254,en,Tom lent Mary all the money he had on him.,👨🏻💰 ➡️ 👩🏻💸,ok,"A man gets paid, so a woman spends the money.",0
+qwen2b prompted,tatoeba-6242999,en,I thought Tom would be retired by now.,👨‍💼🏖️🤔,ok,The businessman is on the beach and wondering whether to take a vacation.,0
+qwen2b prompted,tatoeba-4858496,en,I will read the book.,📖👀📚,ok,I am reading a book and looking at the pages.,2
+qwen2b prompted,tatoeba-5733230,en,Tom was so good with our kids.,👨‍👧‍👦👏😊,ok,The whole family clapped and smiled happily.,0
+qwen2b prompted,tatoeba-2258313,en,He didn't succeed in explaining what he wanted.,🗣️❌ 🤷‍♂️😕,ok,"He didn't say anything, and he just shrugged with a confused look.",1
+qwen2b prompted,tatoeba-12311942,en,I feel unusually good today.,😴➡️🥰✨,ok,"After a good sleep, I wake up feeling loved and refreshed.",1
+qwen2b prompted,tatoeba-4469580,fr,Le traducteur du mode d'emploi ne comprend pas ce qu'il lit.,📖🤔❌,ok,Je ne comprends pas ce livre.,1
+qwen2b prompted,tatoeba-2312835,fr,Elles ont façonné l'argile en un vase.,🏺🪨➡️👩‍🎨,ok,"La potière a sculpté une vase en pierre, puis elle est devenue artiste.",1
+qwen2b prompted,tatoeba-9080004,fr,Il s'est fait piquer par un moustique cette nuit.,🦟 🛌 😴,ok,Un moustique m'a empêché de dormir.,1
+qwen2b prompted,tatoeba-2839540,fr,Je vous demande de parler souvent et de bien écouter aussi.,👂🗣️✅😊,ok,"Il a écouté la réponse, il a dit oui et il est content.",0
+qwen2b prompted,tatoeba-8685283,fr,Il m'a doublé par la gauche.,🚗👀➡️🧍❌,ok,"Je regarde la voiture, mais il n'y a personne sur le trottoir.",0
+qwen2b prompted,tatoeba-11316006,fr,Je lui ai demandé si elle était occupée.,👩🏻🙋‍♀️❓✅,ok,Une femme lève la main pour demander si c'est bon.,0
+qwen2b prompted,tatoeba-4519461,fr,Je suis ici pour abattre le gros chêne.,🌲🪓🏗️✅,ok,"Le bûcheron coupe les arbres et construit la cabane, c'est terminé.",1
+qwen2b prompted,tatoeba-9472682,fr,Je suis près de chez elle.,🏠👣➡️🚪🔓,ok,Je rentre chez moi et j'ouvre la porte.,0
+qwen2b prompted,tatoeba-2913283,fr,Il a accumulé une immense dette.,🏠📉 💸😟,ok,"La maison perd de la valeur, alors je m'inquiète pour mon argent.",0
+qwen2b prompted,tatoeba-8329240,fr,Elle est mal en point.,👩🚫 🧸😕,ok,La femme ne trouve pas son ours en peluche et elle est déçue.,0
+qwen2b prompted,tatoeba-5381784,fr,J'en ai ras le bol de t'entendre gémir.,👨‍🦰🙄 🤬🚫😡,ok,"Le patron lève les yeux au ciel, s'énerve et refuse, il est furieux.",1
+qwen2b prompted,tatoeba-2100778,fr,Marie n'accompagnait pas les enfants à l'école.,🏫👩‍🚨❌,ok,L'école a fermé parce qu'il n'y avait pas de policière.,0
+qwen2b prompted,tatoeba-10467811,fr,Ça me ferait plaisir de te l'offrir.,💖🎁👀,ok,"J'adore le cadeau que tu m'as offert, je le regarde sans cesse.",1
+qwen2b prompted,tatoeba-11746159,fr,"Il était évident que ma présence allait être inutile, mais il semblait important que je fasse acte de présence.",🤔➡️👤🙌,ok,"Je réfléchis, alors je demande de l'aide à quelqu'un.",0
+qwen2b prompted,tatoeba-1117651,fr,C'est le chapeau qui m'appartient.,🧢✅,2 emojis,,0
+qwen2b prompted,tatoeba-10301132,fr,Il ne vit plus dans cette maison.,🏠❌ 🚫👨‍👩‍👧,ok,"Je ne suis pas à la maison, donc je n'ai pas de famille avec moi.",1
+qwen2b prompted,tatoeba-8630903,fr,Je ne suis pas sûr d'avoir tout compris.,🤔🧐,2 emojis,,0
+qwen2b prompted,tatoeba-8635832,fr,Il affermit sa foi en se rendant à la messe.,🙏➡️🕌🕊️,ok,Je prie puis je vais à la mosquée en paix.,1
+qwen2b prompted,tatoeba-4075416,fr,Nous allons laver les plats.,🍽️👨‍🍳🚿,ok,"Après le dîner, le cuisinier prend une douche.",0
+qwen2b prompted,tatoeba-8676028,fr,Ce qu'elle dit est insensé.,🗣️❌😵,ok,Je n'ai rien dit et j'ai été étourdi.,0
+qwen2b prompted,tatoeba-10342459,fr,Beaucoup d'entre vous me connaissent déjà.,👥🤝✨,ok,Les deux équipes se sont serré la main et la réunion a commencé dans une bonne ambiance.,0
+qwen2b prompted,tatoeba-1961986,fr,Je ne vous critique pas.,🙅‍♂️👨‍🦱,2 emojis,,0
+qwen2b prompted,tatoeba-7492171,fr,Nous nous lavons les mains.,🧼👋,2 emojis,,0
+qwen2b prompted,tatoeba-8574567,fr,Il gagne avec la première réponse.,🎯✅,2 emojis,,0
+qwen2b prompted,tatoeba-8333712,fr,Je voudrais réserver une chambre avec un grand lit.,🛏️✨ 🚪🔑,ok,Je fais le lit et je ferme la porte à clé.,0
+qwen2b prompted,tatoeba-8640231,fr,Je suis ici pour un an.,📅1️⃣2️⃣3️⃣4️⃣5️⃣6️⃣7️⃣8️⃣9️⃣🏠,11 emojis,,0
+qwen2b prompted,tatoeba-10468008,fr,Tu me rapporteras ma voiture ici-même.,🚗➡️🤝🏠,ok,"Je prends la voiture, donc je vais voir la famille à la maison.",0
+qwen2b prompted,tatoeba-7694196,fr,Elles vous mettent en retard pour le dîner !,🍽️🕒🚫😡,ok,Le dîner est en retard et je suis furieux.,1
+qwen2b prompted,tatoeba-10325162,fr,Nous marcherons jusqu'à chez toi.,🚶🏻‍♀️➡️🏠,2 emojis,,0
+qwen2b prompted,tatoeba-1001592,fr,Il est beaucoup plus facile de retenir une liste de phrases en associant celles exprimant des idées analogues.,📝🧠✨,ok,J'ai une idée brillante pour mon devoir.,0
+qwen2b prompted,tatoeba-764679,fr,"Ils leur manquent un idéal, une raison de se lever le matin.",🌞🏃❌ ➡️ 🧘‍♀️🙌,ok,"Il fait soleil, donc je ne cours pas et je fais du yoga.",0
+qwen2b prompted,tatoeba-7777990,fr,Il est beau comme un dieu grec.,🏛️✨ 🤩,ok,"Le musée est magnifique, c'est impressionnant !",0
+qwen2b prompted,tatoeba-8637673,fr,"Aujourd'hui, il ne pleuvra pas.",☀️✅,2 emojis,,0
+qwen2b prompted,tatoeba-1280791,fr,Il yoyotte un peu de la touffe.,🐛🌿 ➡️ 🧹,ok,"La chenille mange la feuille, alors le jardinier nettoie le jardin.",0
+qwen2b prompted,tatoeba-8400804,fr,Mon frère est très riche.,👨‍👦💰🤑,ok,Le père gagne beaucoup d'argent et il est très content.,1
+qwen2b prompted,tatoeba-2893398,fr,Elles ont entendu un bruit derrière elles.,👩‍🦰👨‍🦱 👁️🔇 🤫,ok,"La femme et l'homme se regardent sans rien dire, en silence.",0
+qwen2b prompted,tatoeba-7199137,fr,"Quand j’entends un Néerlandais parler, j'ai l'impression qu'il a mal à la gorge !",🇳🇱🗣️😬 🤢,ok,Un Néerlandais parle et ça me donne mal au cœur.,1
+qwen2b prompted,tatoeba-11742532,fr,Nous allons déguster plusieurs apéritifs.,🍸🥂➡️🍹🍷,ok,On a bu un cocktail puis du vin au bar.,1
+qwen2b prompted,tatoeba-9505678,fr,Ils installent des caméras de reconnaissance faciale.,📷👨‍👩‍👧‍👦🤖,ok,Je prends une photo de ma famille avec le robot.,0
+qwen2b prompted,tatoeba-2806517,fr,Il ne s’est jamais maquillé.,👨‍🦰❌,2 emojis,,0
+qwen2b prompted,tatoeba-4591372,fr,Elles ont exhibé leur nouvelle voiture.,🚗✨ 🏎️🔥,ok,La voiture est neuve et elle roule très vite.,1
+qwen2b prompted,tatoeba-1447309,fr,"Soudain, mon ordinateur est tombé en panne.",💻📉😱,ok,Mon ordinateur est tombé en panne et j'ai paniqué.,2
+qwen2b prompted,tatoeba-3092805,fr,Tu m'agaces avec tes questions.,😡❓🤨,ok,"Pourquoi tu es en colère, tu es sérieux ?",1
+qwen2b prompted,tatoeba-13209013,fr,"Si j'étais toi, je n'émettrais encore aucun jugement !",🙅‍♂️❌ 🙋‍♀️😤,ok,"Il ne veut pas, mais elle s'énerve.",0
+qwen2b prompted,tatoeba-12763766,fr,"Vas-y, chéri, donne-moi tes meilleurs coups de reins.",👨‍❤️‍👩🚀💪,ok,Le couple a décidé de partir dans l'espace avec courage.,0
+qwen2b prompted,tatoeba-8897889,fr,Elle a un air dédaigneux.,👩😒,2 emojis,,0
+qwen2b prompted,tatoeba-10495479,fr,Tu me donnes envie de gerber.,🌱👩‍🦰✨,ok,Une jeune femme rousse fait pousser une plante avec beaucoup de soin.,0
+qwen2b prompted,tatoeba-4200257,fr,Marie laisse toujours la fenêtre ouverte quand elle dort.,🌙🚪❌🏠,ok,"La nuit, la porte de la maison n'est pas fermée à clé.",1
+qwen2b prompted,tatoeba-2850195,fr,"Malgré des progrès, il reste un long chemin à faire.",📈➡️ 🏃❌ ➡️ 🚧🗺️,ok,"Les prix montent, donc on ne déménage pas et on reste sur la carte de la ville.",0
+qwen2b prompted,tatoeba-2860642,fr,Je doute que la grue ait déjà fini de décharger toute la cargaison.,🚛🏗️❓,ok,Où est le camion de chantier ?,0
+pilot qwen2b C,tatoeba-9729427,en,I thought Tom might be mad at you.,🫵💬 🧑🤬❓,ok,"You said something, and the person got really angry, so I asked why?",1
+pilot qwen2b C,tatoeba-11634388,en,Jonas was catching his breath on the porch.,🧑🏠🪟 💨😖,ok,A person opens the window at home and breathes in the fresh air with a relieved look.,1
+pilot qwen2b C,tatoeba-2751481,en,My life is fun and exciting.,🙋 🎉🚀 😊,ok,I'm so excited to launch our new project and I'm happy about it!,0
+pilot qwen2b C,tatoeba-7235419,en,Mary was wearing a red dress when I saw her yesterday at the supermarket.,👩👗🔴 👀👨‍🍳🛒,ok,A woman in a red dress sees a chef shopping for groceries.,1
+pilot qwen2b C,tatoeba-5189051,en,I've got to get used to doing this sooner or later.,🙋 🔄➡️ 🙋 😐,ok,"I asked her to repeat herself, and she just looked at me blankly.",0
+pilot qwen2b C,tatoeba-11979050,en,My hearing isn't so good as yours.,👂👂👂 👂👂👂❌,ok,"I heard the noise over and over, but nobody else could hear it.",0
+pilot qwen2b C,tatoeba-7731473,en,Tom started doing that when he was thirty years old.,👨 🙋🔁 🫵🎂30,non-emoji: 30,,0
+pilot qwen2b C,tatoeba-3636244,en,I can do it now.,🙋💪✅,ok,I volunteered and I successfully finished the task.,1
+pilot qwen2b C,tatoeba-9776648,en,I've never been this sick before.,🤒🤒🤒 ➡️ 🫵🤒😱,ok,"Three people are sick, so you are scared that you might get sick too.",1
+pilot qwen2b C,tatoeba-7208365,en,I was thirteen or fourteen at the time.,👦👧 🎂13-14,non-emoji: 13-14,,0
+pilot qwen2b C,tatoeba-6530366,en,I hope we don't miss our flight.,🫵🫵✈️❌ 🙏,ok,"You two are not flying, please.",1
+pilot qwen2b C,tatoeba-5975600,en,I told you Tom was telling the truth.,🙋💬 🫵💬👨✅,ok,"I asked you, and you told the man it was approved.",0
+pilot qwen2b C,tatoeba-6676935,en,"If I had time, I'd do that.",⏪🕒❓ 🙋💪❌,ok,"What time did you finish, and you didn't manage to do it?",0
+pilot qwen2b C,tatoeba-4813353,en,Tom fell asleep while he was driving and caused an accident.,👨🚗💤 ➡️ 🚦💥🚗💥,ok,"The driver fell asleep at the wheel, so the car crashed into the traffic light.",2
+pilot qwen2b C,tatoeba-6342343,en,I didn't know you were going to be jealous.,🙋💬 🫵👀😢❓,ok,"I told you so, but you did not listen, and now you are upset?",1
+pilot qwen2b C,tatoeba-10554151,en,"If you're free, you could join us.",🫵🆓 ➡️ 🙋👥🙋,ok,"If you're free, come join us, we'd love to have you along.",2
+pilot qwen2b C,tatoeba-2361202,en,I don't have shoes on.,🙋 👟❌,ok,"I raised my hand, but I didn't have my sneakers on.",1
+pilot qwen2b C,tatoeba-8845030,en,Tom wants to sell his land.,👨 🏠🌲 ➡️ 🤝💶,ok,"A man goes home through the woods, so he meets a friend and they share some money.",0
+pilot qwen2b C,tatoeba-8408463,en,I could get used to it.,🙋 🫵👀 ➡️ 🫵😊,ok,"I see you, so you should feel happy.",0
+pilot qwen2b C,tatoeba-11831479,en,I've been doing relatively well for years now.,🙋 📈✅ 📅📅📅,ok,I raised my hand and confirmed the meeting is scheduled for three days.,0
+pilot qwen2b C,tatoeba-5850027,en,I've always wanted to wear a tux.,👔🤵 🙋💭,ok,The businessman raised his hand to ask a question during the meeting.,0
+pilot qwen2b C,tatoeba-6661991,en,I'll never forget the first time I saw Tom.,🙋👀👨 ➡️ 🫵🧠❌,ok,"A woman sees a man, so she tells you that you don't remember him.",1
+pilot qwen2b C,tatoeba-12035609,en,Kalman was using his phone light.,👨📱💡,ok,A man got an idea on his phone.,1
+pilot qwen2b C,tatoeba-3325883,en,I'm not going to rewrite your paper for you.,🙋 📄❌ 🤝❌,ok,I raised my hand because I had no paper and no partner.,0
+pilot qwen2b C,tatoeba-3865519,en,Tom suffered severe head injuries in a fall from his bike.,🚲⬇️ 🤕🤕🤕 😱,ok,"I fell off my bike and hurt myself badly, and it was really scary.",2
+pilot qwen2b C,tatoeba-6258709,en,Tom is very proud of his students.,👨👍 🎓👥,ok,The man gave a thumbs up to the group of graduates.,2
+pilot qwen2b C,tatoeba-5352860,en,I haven't talked to her since.,🙋💬❌ 🤝👩 📅⏳,ok,"I told her I can't make it to the meeting, so let's reschedule for later.",0
+pilot qwen2b C,tatoeba-11856506,en,I practice French every day.,🙋 🇫🇷📚 🌅 ➡️ 🌙,ok,I read a French book from morning until night.,1
+pilot qwen2b C,tatoeba-2955483,en,Tom admitted he was guilty.,👨💬 🫵👮❌,ok,"The man said to the police officer, ""You're not a cop.""",0
+pilot qwen2b C,tatoeba-6480802,en,I have a few things left to do.,🙋 📝📝📝,ok,I raised my hand to ask for more paper.,0
+pilot qwen2b C,tatoeba-6223770,en,Tom says he's not planning on doing that.,👨💬 🫵🙋❌📋,ok,The man said that you didn't fill out the form.,0
+pilot qwen2b C,tatoeba-5220159,en,I hope that it'll work.,🙋💭 🎯✅,ok,I thought about it and decided to go for the goal.,1
+pilot qwen2b C,tatoeba-6432894,en,Tom said he thought Mary had already done that.,👨💬 🤔👩✅,ok,"The man says to the woman, ""I think you're right.""",0
+pilot qwen2b C,tatoeba-8568559,en,The mosque is not big enough to hold us all. We need to pray outside.,🕌🙏👥❌ ➡️ 🚶➡️ 🌳🙏,ok,"They did not pray at the mosque, so they walked to the park to pray.",1
+pilot qwen2b C,tatoeba-6266779,en,Tom carried Mary's suitcases to her room.,👨 🧳🧳 ➡️ 🛏️👩,ok,The man packed his bags so he could go to bed with the woman.,0
+pilot qwen2b C,tatoeba-10232601,en,Ziri was in his room.,🧑🛏️🚪,ok,Someone got out of bed and went through the door.,0
+pilot qwen2b C,tatoeba-8462188,en,Let me get one thing straight.,🫵🤔🫵,ok,"Are you sure about that, or are you just guessing?",1
+pilot qwen2b C,tatoeba-6494987,en,Tom and Mary were walking their dog when I saw them this morning.,👨👩 🐕🚶 ➡️ 👀🌅,ok,"A man and a woman walked their dog, and they watched the sunrise.",2
+pilot qwen2b C,tatoeba-3410936,en,Tom gave Mary all the money that he had in his pocket.,👨💰👩💰👛 ➡️ 👨💰👩💰,ok,"The man and the woman each pay money into their wallets, so the man and the woman pay the bill together.",0
+pilot qwen2b C,tatoeba-7521135,en,I know Tom is a fussy eater.,👨🍽️ 🤔👍,ok,The man at the restaurant thought about it and gave a thumbs up.,0
+pilot qwen2b C,tatoeba-8254481,en,He converted to Islam in his forties.,👨 4️⃣➡️ 🕌✅,ok,The man prayed four times today and then went to the mosque.,1
+pilot qwen2b C,tatoeba-6250024,en,Tom banged on the table with his fist.,👨👊💥🪑,ok,The man punched the wall and broke the chair.,1
+pilot qwen2b C,tatoeba-11711790,en,"Martino’s father is a bioengineer, too.",👨👨‍🔬 👨‍👦,ok,A scientist is a father to a son.,1
+pilot qwen2b C,tatoeba-6340370,en,I need to buy a new a set of oars for my rowboat.,🚣🛶 ➡️ 🛒⛳🪵🪵,ok,They paddled the canoe to the store to buy golf clubs and wood.,0
+pilot qwen2b C,tatoeba-3171254,en,Tom lent Mary all the money he had on him.,👨💸 ➡️ 👩💸,ok,"The man spent money, so the woman spent money too.",1
+pilot qwen2b C,tatoeba-6242999,en,I thought Tom would be retired by now.,🙋💭 🧑🏖️❌,ok,"I was thinking about going on a holiday, but I couldn't take the time off work.",0
+pilot qwen2b C,tatoeba-4858496,en,I will read the book.,🙋 📖📚,ok,I am reading a book.,2
+pilot qwen2b C,tatoeba-5733230,en,Tom was so good with our kids.,👨 👶👶 👍,ok,The man has twins and he is happy about it.,1
+pilot qwen2b C,tatoeba-2258313,en,He didn't succeed in explaining what he wanted.,👨💬❌ 🧠❓,ok,"The man didn't say anything, so I wondered what he was thinking.",1
+pilot qwen2b C,tatoeba-12311942,en,I feel unusually good today.,🫵😊 🫵🫵,ok,"You make me happy, you really do.",1
+pilot qwen2b C,tatoeba-4469580,fr,Le traducteur du mode d'emploi ne comprend pas ce qu'il lit.,📖📖 🤝🗣️ 🙈,ok,"J'ai lu deux livres, puis j'en ai discuté avec mes amis sans rien dire de plus.",0
+pilot qwen2b C,tatoeba-2312835,fr,Elles ont façonné l'argile en un vase.,👩👩 🏺🧱 ➡️ 🎁,ok,"Les deux femmes construisent un vase en briques, alors elles en font un cadeau.",1
+pilot qwen2b C,tatoeba-9080004,fr,Il s'est fait piquer par un moustique cette nuit.,🌙🦟🩸 ➡️ 😖,ok,Une moustique m'a piqué la nuit et je me suis réveillé avec une douleur.,2
+pilot qwen2b C,tatoeba-2839540,fr,Je vous demande de parler souvent et de bien écouter aussi.,🙋🙋💬🗣️ 👂👂,ok,Tout le monde parle et personne n'écoute.,1
+pilot qwen2b C,tatoeba-8685283,fr,Il m'a doublé par la gauche.,🚗🧍 ➡️ 🧍🧍 ➡️ 🧍🚶,ok,"La voiture s'arrête, deux personnes descendent et elles s'en vont à pied.",0
+pilot qwen2b C,tatoeba-11316006,fr,Je lui ai demandé si elle était occupée.,🙋💬👩🙋️ 🫵❓🙋,ok,Je demande à la femme si tu es là ?,1
+pilot qwen2b C,tatoeba-4519461,fr,Je suis ici pour abattre le gros chêne.,🙋 🪓🌳🪓,ok,Je vais couper un arbre avec ma hache.,2
+pilot qwen2b C,tatoeba-9472682,fr,Je suis près de chez elle.,🙋 🏠➡️👩,ok,Je rentre à la maison et je retrouve ma mère.,0
+pilot qwen2b C,tatoeba-2913283,fr,Il a accumulé une immense dette.,👨💶📈📈,ok,L'homme gagne de plus en plus d'argent.,0
+pilot qwen2b C,tatoeba-8329240,fr,Elle est mal en point.,👩😣,2 emojis,,0
+pilot qwen2b C,tatoeba-5381784,fr,J'en ai ras le bol de t'entendre gémir.,🙋👂💬 😖,ok,"Quelqu'un m'a demandé quelque chose et je n'ai pas compris, c'est frustrant.",0
+pilot qwen2b C,tatoeba-2100778,fr,Marie n'accompagnait pas les enfants à l'école.,👩 👶🏫❌,ok,La femme ne conduit pas l'enfant à l'école.,2
+pilot qwen2b C,tatoeba-10467811,fr,Ça me ferait plaisir de te l'offrir.,🙋🎁🫵😊,ok,"Je te remercie pour le cadeau, tu es trop gentil !",1
+pilot qwen2b C,tatoeba-11746159,fr,"Il était évident que ma présence allait être inutile, mais il semblait important que je fasse acte de présence.",🫵👥 ➡️ 🫵❌ 😬 ➡️ 🫵🙋,ok,"Tu invites des amis, puis tu oublies de les prévenir, donc tu t'excuses.",0
+pilot qwen2b C,tatoeba-1117651,fr,C'est le chapeau qui m'appartient.,🎩👤 🧑‍🤝‍🧑,ok,Le chapeau de l'homme est sur la table entre les amis.,0
+pilot qwen2b C,tatoeba-10301132,fr,Il ne vit plus dans cette maison.,🏠❌ ➡️ 🏠❌ 🚪🚪,ok,"Il n'y a personne à la maison, donc on a laissé la porte ouverte.",1
+pilot qwen2b C,tatoeba-8630903,fr,Je ne suis pas sûr d'avoir tout compris.,🤔 🧠❓,ok,Je me demande ce que tu penses.,0
+pilot qwen2b C,tatoeba-8635832,fr,Il affermit sa foi en se rendant à la messe.,🙋🙏🙏 ➡️ 🙏✅,ok,"Je vous demande pardon, pardonnez-moi, et vous acceptez mes excuses.",0
+pilot qwen2b C,tatoeba-4075416,fr,Nous allons laver les plats.,👨‍🍳🍽️🧼 🧽🍽️,ok,Le cuisinier lave la vaisselle et nettoie les assiettes.,2
+pilot qwen2b C,tatoeba-8676028,fr,Ce qu'elle dit est insensé.,👩💬 🤥,ok,La femme dit un mensonge.,1
+pilot qwen2b C,tatoeba-10342459,fr,Beaucoup d'entre vous me connaissent déjà.,👥👥👥 👀🙋,ok,"Il y a beaucoup de monde, et quelqu'un lève la main pour répondre.",0
+pilot qwen2b C,tatoeba-1961986,fr,Je ne vous critique pas.,🙋 🫵🫵❌,ok,"Je ne t'ai pas appelé, c'est toi qui m'as appelé.",0
+pilot qwen2b C,tatoeba-7492171,fr,Nous nous lavons les mains.,🙋🧖🧼🙋,ok,"Je me fais un masque facial pour me détendre, puis je me lave le visage.",0
+pilot qwen2b C,tatoeba-8574567,fr,Il gagne avec la première réponse.,🙋💬1️⃣ ✅🏆,ok,Je réponds « Présent ! » et je gagne le concours.,2
+pilot qwen2b C,tatoeba-8333712,fr,Je voudrais réserver une chambre avec un grand lit.,🏨🛏️🛏️🔳,ok,"L'hôtel avait des lits, mais la chambre était minuscule.",1
+pilot qwen2b C,tatoeba-8640231,fr,Je suis ici pour un an.,🙋 🏠 ⏳1️⃣,ok,Je rentre à la maison dans une heure.,0
+pilot qwen2b C,tatoeba-10468008,fr,Tu me rapporteras ma voiture ici-même.,🙋💬 🚗📍,ok,Je dis que je suis à la voiture.,0
+pilot qwen2b C,tatoeba-7694196,fr,Elles vous mettent en retard pour le dîner !,👩👩 ⏰🍽️❌ 😤,ok,Les deux femmes sont fâchées parce que le dîner n'est pas à l'heure.,1
+pilot qwen2b C,tatoeba-10325162,fr,Nous marcherons jusqu'à chez toi.,🚶🚶 ➡️ 🏠👤,ok,"Nous marchons ensemble jusqu'à la maison, puis nous rentrons chez nous.",1
+pilot qwen2b C,tatoeba-1001592,fr,Il est beaucoup plus facile de retenir une liste de phrases en associant celles exprimant des idées analogues.,📝💬🔗🧠✅,ok,J'ai envoyé le message et j'ai bien compris la réponse.,0
+pilot qwen2b C,tatoeba-764679,fr,"Ils leur manquent un idéal, une raison de se lever le matin.",👥🙋 ➡️ 🤔❌ 😴,ok,"Les gens se sont portés volontaires, donc personne n'a semblé s'ennuyer.",0
+pilot qwen2b C,tatoeba-7777990,fr,Il est beau comme un dieu grec.,🧑‍🦱✨ ⚔️👑,ok,Le héros brillant combat le roi.,0
+pilot qwen2b C,tatoeba-8637673,fr,"Aujourd'hui, il ne pleuvra pas.",🌅 ☀️ 🌧️❌,ok,"Le matin, le soleil brille, mais il ne pleut pas.",2
+pilot qwen2b C,tatoeba-1280791,fr,Il yoyotte un peu de la touffe.,👩🌿🔪 ➡️ 🙋,ok,"La femme coupe des herbes, puis quelqu'un lève la main.",0
+pilot qwen2b C,tatoeba-8400804,fr,Mon frère est très riche.,👦💰💰💰 😲,ok,Le garçon a trouvé beaucoup d'argent et il est très surpris.,1
+pilot qwen2b C,tatoeba-2893398,fr,Elles ont entendu un bruit derrière elles.,👩👩 👂🔊 🫵🫵,ok,"Deux femmes entendent le bruit, et vous, vous ?",2
+pilot qwen2b C,tatoeba-7199137,fr,"Quand j’entends un Néerlandais parler, j'ai l'impression qu'il a mal à la gorge !",🇳🇱🗣️ ➡️ 🫁😖,ok,Je parle néerlandais et je suis à bout de souffle.,1
+pilot qwen2b C,tatoeba-11742532,fr,Nous allons déguster plusieurs apéritifs.,🥂🥂🥂 🍸,ok,"Nous trinquons avec des coupes de champagne, puis on prend un cocktail au bar.",2
+pilot qwen2b C,tatoeba-9505678,fr,Ils installent des caméras de reconnaissance faciale.,👥🔍👨‍👩‍👧 👁️📷,ok,Les gens cherchent la famille sur la photo.,0
+pilot qwen2b C,tatoeba-2806517,fr,Il ne s’est jamais maquillé.,👨 🧴❌,ok,L'homme n'a plus de shampoing.,0
+pilot qwen2b C,tatoeba-4591372,fr,Elles ont exhibé leur nouvelle voiture.,👩👩 🚗🚗🚀 ➡️ 🙋👀,ok,"Deux femmes prennent la voiture en vitesse, alors elles sont accueillies et remarquées.",1
+pilot qwen2b C,tatoeba-1447309,fr,"Soudain, mon ordinateur est tombé en panne.",🖥️💥 ➡️ 🛑❌ 😤,ok,"Mon ordinateur a planté, donc je ne peux plus travailler et je suis très énervé.",2
+pilot qwen2b C,tatoeba-3092805,fr,Tu m'agaces avec tes questions.,🙋💬❓🤬,ok,Quelqu'un a demandé pourquoi il était si en colère ?,1
+pilot qwen2b C,tatoeba-13209013,fr,"Si j'étais toi, je n'émettrais encore aucun jugement !",🙋🤔❌ ➡️ 🙋😊,ok,"Je ne sais pas, alors je lève la main et je souris.",0
+pilot qwen2b C,tatoeba-12763766,fr,"Vas-y, chéri, donne-moi tes meilleurs coups de reins.",👨💬 🫵💬 🫵🏋️🏋️🏋️,ok,Le père dit à son fils de s'entraîner beaucoup plus dur.,0
+pilot qwen2b C,tatoeba-8897889,fr,Elle a un air dédaigneux.,👩👀😒,ok,La femme la regarde avec agacement.,1
+pilot qwen2b C,tatoeba-10495479,fr,Tu me donnes envie de gerber.,🙋💬 🌱🌱🌱 😍,ok,Je dis que les jeunes plants sont magnifiques !,0
+pilot qwen2b C,tatoeba-4200257,fr,Marie laisse toujours la fenêtre ouverte quand elle dort.,👩🛏️ 🪟🔓 ➡️ 😴,ok,"La femme se couche et ouvre la fenêtre, alors elle s'endort.",2
+pilot qwen2b C,tatoeba-2850195,fr,"Malgré des progrès, il reste un long chemin à faire.",📈➡️📈 ⏳🚶,ok,"Les prix augmentent encore, alors on attend un peu avant d'acheter.",0
+pilot qwen2b C,tatoeba-2860642,fr,Je doute que la grue ait déjà fini de décharger toute la cargaison.,🚚📦📦📦 ➡️ 🏗️📦❓ 🤔,ok,"Le camion a livré plusieurs cartons, alors où vont-ils ? Je me demande où les mettre.",1
+ministral3b_full,tatoeba-9729427,en,I thought Tom might be mad at you.,🤔🧑😡🫵,ok,I'm angry at you for thinking that about me.,1
+ministral3b_full,tatoeba-11634388,en,Jonas was catching his breath on the porch.,🧑‍🦱😮‍💨 🚪,ok,The man sighed and walked out the door.,1
+ministral3b_full,tatoeba-2751481,en,My life is fun and exciting.,🙋🎉🎊,ok,I raised my hand and we celebrated with party poppers and confetti.,1
+ministral3b_full,tatoeba-7235419,en,Mary was wearing a red dress when I saw her yesterday at the supermarket.,👩👗🔴 ⏪👀 🏪,ok,The woman in the red dress was seen at the store.,2
+ministral3b_full,tatoeba-5189051,en,I've got to get used to doing this sooner or later.,🙋 🧑‍🤝‍🧑💬 🫵🧑‍🤝‍🧑 ⏩😅,ok,"I'll be asking you and your friends for help later, so don't worry about it.",0
+ministral3b_full,tatoeba-11979050,en,My hearing isn't so good as yours.,👂🔊 🫵👂🔊,ok,"I heard the loud sound, and you heard it too.",0
+ministral3b_full,tatoeba-7731473,en,Tom started doing that when he was thirty years old.,👨 3️⃣0️⃣ ➡️ 🛠️✅,ok,A 30-year-old man went to the workshop and got the repair done.,0
+ministral3b_full,tatoeba-3636244,en,I can do it now.,🙋✅⏩,ok,I will volunteer and say yes in the future.,1
+ministral3b_full,tatoeba-9776648,en,I've never been this sick before.,🤒😖 🫵💬 🫵🤒❌⏪,ok,"I told you I was sick yesterday, but you didn't believe me.",1
+ministral3b_full,tatoeba-7208365,en,I was thirteen or fourteen at the time.,👦🎂1️⃣3️⃣-1️⃣4️⃣ 📅,non-emoji: -,,0
+ministral3b_full,tatoeba-6530366,en,I hope we don't miss our flight.,🙋🙋 ✈️❌ 😰,ok,"Two people raised their hands, but the flight was canceled, and everyone was worried.",1
+ministral3b_full,tatoeba-5975600,en,I told you Tom was telling the truth.,🫵💬 👨💬✅,ok,"You say to him, ""Yes, I agree.""",0
+ministral3b_full,tatoeba-6676935,en,"If I had time, I'd do that.",⏰❌ ➡️ 🙋🛠️✅,ok,"The alarm didn't go off, so I got up late and fixed everything myself.",0
+ministral3b_full,tatoeba-4813353,en,Tom fell asleep while he was driving and caused an accident.,🚗😴 ➡️ 💥🚗 😱,ok,"I fell asleep while driving and crashed my car, and I was terrified.",2
+ministral3b_full,tatoeba-6342343,en,I didn't know you were going to be jealous.,🫵😠 🙋🤔❓,ok,"You're angry, so I'm asking why?",1
+ministral3b_full,tatoeba-10554151,en,"If you're free, you could join us.",🫵⏰✅ ➡️ 🫵🤝👥,ok,"You set the alarm, so you meet everyone for the meeting.",0
+ministral3b_full,tatoeba-2361202,en,I don't have shoes on.,🦶❌ 👟❌,ok,"I'm not wearing any shoes, and my feet are bare.",2
+ministral3b_full,tatoeba-8845030,en,Tom wants to sell his land.,👨💬 🏠📍💰,ok,The man said the house costs a lot of money.,1
+ministral3b_full,tatoeba-8408463,en,I could get used to it.,🙋😌🔄,ok,I'm relieved to have volunteered and then swapped shifts.,0
+ministral3b_full,tatoeba-11831479,en,I've been doing relatively well for years now.,🙋💪✅ 📈⏳⏳⏳,ok,I volunteered for the challenge and I have been improving steadily over time.,1
+ministral3b_full,tatoeba-5850027,en,I've always wanted to wear a tux.,🙋👔❤️,ok,A person in a suit raised their hand and said they loved it.,1
+ministral3b_full,tatoeba-6661991,en,I'll never forget the first time I saw Tom.,👀👦 ⏪1️⃣ 🥹,ok,I saw the boy yesterday and he was crying.,0
+ministral3b_full,tatoeba-12035609,en,Kalman was using his phone light.,👨 📱💡,ok,The man got a bright idea on his phone.,1
+ministral3b_full,tatoeba-3325883,en,I'm not going to rewrite your paper for you.,🙋 📝❌ 🫵,ok,"I didn't write it, you did.",1
+ministral3b_full,tatoeba-3865519,en,Tom suffered severe head injuries in a fall from his bike.,🚲💥 ➡️ 🧠🩹🩸 😱,ok,"I crashed my bike and hit my head, which was bleeding, so I was terrified.",2
+ministral3b_full,tatoeba-6258709,en,Tom is very proud of his students.,👨💬 👩👦🎓 🥇,ok,The father says the mother and son are going to graduate with first place.,1
+ministral3b_full,tatoeba-5352860,en,I haven't talked to her since.,🙋💬❌ 👩 ⏪,ok,I didn't say anything to the woman earlier.,1
+ministral3b_full,tatoeba-11856506,en,I practice French every day.,🙋📚🇫🇷 🌅🌙,ok,I studied French from morning until night.,1
+ministral3b_full,tatoeba-2955483,en,Tom admitted he was guilty.,👨💬 🫵👀✅,ok,"The man said, ""I see you, and it's approved.""",0
+ministral3b_full,tatoeba-6480802,en,I have a few things left to do.,🙋 📋✅ ➡️ 📋❌,ok,"I raised my hand, the list was checked off, so the list is no longer missing anything.",1
+ministral3b_full,tatoeba-6223770,en,Tom says he's not planning on doing that.,👨💬 🫵🙅❌,ok,"The man said to you, 'No, I won't do it.'",2
+ministral3b_full,tatoeba-5220159,en,I hope that it'll work.,🙋🤞 🛠️✅,ok,I'm hoping to get the repair finished and done right.,1
+ministral3b_full,tatoeba-6432894,en,Tom said he thought Mary had already done that.,👨💬 🧑‍🤝‍🧑✅✅,ok,The man said that his friends agreed to it.,0
+ministral3b_full,tatoeba-8568559,en,The mosque is not big enough to hold us all. We need to pray outside.,🕋🏢❌✅ 🙋🙋🙋 ➡️ 🕋🌳🙏,ok,"The mosque is not the office, so everyone came to the park to pray.",1
+ministral3b_full,tatoeba-6266779,en,Tom carried Mary's suitcases to her room.,🧑‍🤝‍🧑 🧳🧳🧳 ➡️ 🚪🏠,ok,Two people packed their bags and went out the door of their home.,0
+ministral3b_full,tatoeba-10232601,en,Ziri was in his room.,🧑🏠🛏️,ok,A person goes home and lies down on the bed.,1
+ministral3b_full,tatoeba-8462188,en,Let me get one thing straight.,🫵💬 🙋❓✅,ok,"You said, ""Did I get it right?""",1
+ministral3b_full,tatoeba-6494987,en,Tom and Mary were walking their dog when I saw them this morning.,👨‍👩‍👧 🐕🚶 ➡️ 🙋👀🌅,ok,"A family goes for a walk with their dog, and then they watch the sunrise together.",1
+ministral3b_full,tatoeba-3410936,en,Tom gave Mary all the money that he had in his pocket.,👦💸💵 ➡️ 👧💵,ok,"The boy spent his money, so the girl got the money.",1
+ministral3b_full,tatoeba-7521135,en,I know Tom is a fussy eater.,👨🍽️🍔❌ 😤,ok,"The man ordered a burger at the restaurant, but it wasn't on the menu, so he got angry.",0
+ministral3b_full,tatoeba-8254481,en,He converted to Islam in his forties.,👨 4️⃣0️⃣➡️🕌,ok,The 40-year-old man went to the mosque.,1
+ministral3b_full,tatoeba-6250024,en,Tom banged on the table with his fist.,👨 🔊🪑,ok,The man sat down in the chair and turned on the speaker.,0
+ministral3b_full,tatoeba-11711790,en,"Martino’s father is a bioengineer, too.",👨‍🔬👨,2 emojis,,0
+ministral3b_full,tatoeba-6340370,en,I need to buy a new a set of oars for my rowboat.,🚣🛒 🛠️🛣️,ok,The rower goes to the store to fix the road.,0
+ministral3b_full,tatoeba-3171254,en,Tom lent Mary all the money he had on him.,👨💸💸💸 ➡️ 👩💸,ok,"A man spent a lot of money, so a woman spent money too.",1
+ministral3b_full,tatoeba-6242999,en,I thought Tom would be retired by now.,👨💼 ⏪➡️ 👴❌ 😞,ok,"The businessman went to see the old man, but he was not there and he felt disappointed.",0
+ministral3b_full,tatoeba-4858496,en,I will read the book.,🙋 📖📖,ok,I am reading a book.,2
+ministral3b_full,tatoeba-5733230,en,Tom was so good with our kids.,👨👧👦💬😊,ok,The family chatted and laughed happily together.,1
+ministral3b_full,tatoeba-2258313,en,He didn't succeed in explaining what he wanted.,👨💬❌✅,ok,The man did not give a reply.,1
+ministral3b_full,tatoeba-12311942,en,I feel unusually good today.,🙋😊😄,ok,I am happy and excited to help.,1
+ministral3b_full,tatoeba-4469580,fr,Le traducteur du mode d'emploi ne comprend pas ce qu'il lit.,📖🔍🤔❓,ok,"Je cherche le livre, mais je ne sais pas où il est ?",0
+ministral3b_full,tatoeba-2312835,fr,Elles ont façonné l'argile en un vase.,👩👩 🏺➡️🍷,ok,"Les deux femmes ont pris une cruche, donc elles ont bu du vin.",0
+ministral3b_full,tatoeba-9080004,fr,Il s'est fait piquer par un moustique cette nuit.,🌙 🦟💉 😖,ok,"La nuit, les moustiques m'ont piqué et ça me démange beaucoup.",2
+ministral3b_full,tatoeba-2839540,fr,Je vous demande de parler souvent et de bien écouter aussi.,🫵💬🗣️⏳ ➡️ 🫵👂👂,ok,"Tu dis que tu attends depuis longtemps, alors je t'écoute.",0
+ministral3b_full,tatoeba-8685283,fr,Il m'a doublé par la gauche.,🚗💨 🏃➡️🚗💨 😲,ok,"Il a couru après la voiture qui partait à toute vitesse, surpris.",0
+ministral3b_full,tatoeba-11316006,fr,Je lui ai demandé si elle était occupée.,🙋💬 👩📅❓,ok,Je demande à la dame si elle a un rendez-vous ?,1
+ministral3b_full,tatoeba-4519461,fr,Je suis ici pour abattre le gros chêne.,🙋🌳🔨,ok,Je suis allé couper un arbre avec une hache.,2
+ministral3b_full,tatoeba-9472682,fr,Je suis près de chez elle.,🙋 🏠👩➡️🙋,ok,Je suis rentré à la maison et j'ai trouvé la maman qui était là.,0
+ministral3b_full,tatoeba-2913283,fr,Il a accumulé une immense dette.,🧾🧾🧾🧾 💸💸💸,ok,"J'ai payé toutes les factures, ça m'a coûté beaucoup d'argent.",1
+ministral3b_full,tatoeba-8329240,fr,Elle est mal en point.,👩💔 😢,ok,Ma sœur a le cœur brisé et elle pleure.,1
+ministral3b_full,tatoeba-5381784,fr,J'en ai ras le bol de t'entendre gémir.,🫵🗣️😖 🙋😤😤,ok,"Tu me parles mal, et je suis vraiment énervé à cause de ça.",1
+ministral3b_full,tatoeba-2100778,fr,Marie n'accompagnait pas les enfants à l'école.,👩 🏫👦👧❌,ok,La femme n'a pas de classe avec les garçons et les filles.,1
+ministral3b_full,tatoeba-10467811,fr,Ça me ferait plaisir de te l'offrir.,🫵🎁 ➡️ 🙋😊,ok,"Tu me fais un cadeau, alors je suis content.",1
+ministral3b_full,tatoeba-11746159,fr,"Il était évident que ma présence allait être inutile, mais il semblait important que je fasse acte de présence.",🙋🧍 ➡️ 🙋❌💬 🫵🙋👀,ok,"Je suis là, mais tu ne me réponds pas quand je te parle, tu me regardes sans rien dire.",0
+ministral3b_full,tatoeba-1117651,fr,C'est le chapeau qui m'appartient.,🧢💬 🙋❤️,ok,Le chapeau dit : « Je t'aime. »,0
+ministral3b_full,tatoeba-10301132,fr,Il ne vit plus dans cette maison.,🏠❌ 🏠🔄,ok,"Je ne suis pas à la maison, je retourne à la maison.",0
+ministral3b_full,tatoeba-8630903,fr,Je ne suis pas sûr d'avoir tout compris.,🙋🤔 🧠❓,ok,Je me demande si j'ai bien compris la question.,2
+ministral3b_full,tatoeba-8635832,fr,Il affermit sa foi en se rendant à la messe.,🙏🚶 ➡️ 🙌💪,ok,"Je te prie de venir, alors tu seras fier de toi.",0
+ministral3b_full,tatoeba-4075416,fr,Nous allons laver les plats.,🍽️🧼,2 emojis,,0
+ministral3b_full,tatoeba-8676028,fr,Ce qu'elle dit est insensé.,👩💬 🤔❌,ok,La femme dit : « Je ne sais pas. »,1
+ministral3b_full,tatoeba-10342459,fr,Beaucoup d'entre vous me connaissent déjà.,👥👥👥 🧑‍💼❓,ok,"Il y a beaucoup de monde au bureau aujourd'hui, qui est le responsable ?",0
+ministral3b_full,tatoeba-1961986,fr,Je ne vous critique pas.,🫵💬 🙋❌🗣️,ok,"Tu me dis quelque chose, mais je ne parle pas.",0
+ministral3b_full,tatoeba-7492171,fr,Nous nous lavons les mains.,🙋🙋 🧼💧,ok,Je me lave les mains à l'eau savonneuse.,2
+ministral3b_full,tatoeba-8574567,fr,Il gagne avec la première réponse.,👥💬1️⃣ ➡️ 🏆🏆,ok,"Les gens ont dit qu'on était les meilleurs, alors on a gagné le tournoi.",1
+ministral3b_full,tatoeba-8333712,fr,Je voudrais réserver une chambre avec un grand lit.,🙋💬 🏨🛏️📏,ok,Je demande à l'hôtel une chambre plus grande.,1
+ministral3b_full,tatoeba-8640231,fr,Je suis ici pour un an.,🙋📍 ⏳1️⃣,ok,"Je suis là à l'heure, je t'attends depuis une heure.",0
+ministral3b_full,tatoeba-10468008,fr,Tu me rapporteras ma voiture ici-même.,🫵🚗➡️🏠,ok,"Tu prends la voiture, alors tu rentres à la maison.",1
+ministral3b_full,tatoeba-7694196,fr,Elles vous mettent en retard pour le dîner !,👩👩 🍽️⏰❌ 😤,ok,Les deux femmes n'ont pas eu le temps de manger et sont furieuses.,1
+ministral3b_full,tatoeba-10325162,fr,Nous marcherons jusqu'à chez toi.,🚶🚶 ➡️ 🏠🫵,ok,"Nous marchons jusqu'à la maison, et tu es là.",2
+ministral3b_full,tatoeba-1001592,fr,Il est beaucoup plus facile de retenir une liste de phrases en associant celles exprimant des idées analogues.,📝📝📝 ➡️ 🧠✅ 🤝,ok,"J'ai beaucoup révisé, donc je suis confiant et on s'est mis d'accord.",0
+ministral3b_full,tatoeba-764679,fr,"Ils leur manquent un idéal, une raison de se lever le matin.",👥 💭❌ 🌅❌,ok,Les gens ne pensent pas au lever du soleil.,0
+ministral3b_full,tatoeba-7777990,fr,Il est beau comme un dieu grec.,👨😍 🏛️🏛️,ok,L'homme adore les monuments historiques.,0
+ministral3b_full,tatoeba-8637673,fr,"Aujourd'hui, il ne pleuvra pas.",⏩🌧️❌,ok,"Demain, il ne pleuvra pas.",2
+ministral3b_full,tatoeba-1280791,fr,Il yoyotte un peu de la touffe.,🧑‍🦱💇 🎶🎤,ok,Le coiffeur coupe les cheveux pendant que je chante.,0
+ministral3b_full,tatoeba-8400804,fr,Mon frère est très riche.,👦 💰💰💰,ok,Le garçon a trois pièces d'argent.,1
+ministral3b_full,tatoeba-2893398,fr,Elles ont entendu un bruit derrière elles.,👂🔊 🚪➡️💥,ok,"J'ai entendu un bruit fort, alors j'ai ouvert la porte et elle a claqué.",1
+ministral3b_full,tatoeba-7199137,fr,"Quand j’entends un Néerlandais parler, j'ai l'impression qu'il a mal à la gorge !",🗣️🇳🇱 🗣️😵,ok,Je parle néerlandais et je suis confus.,1
+ministral3b_full,tatoeba-11742532,fr,Nous allons déguster plusieurs apéritifs.,🍷🍷🍷 🍷🍷🍷,ok,Nous avons bu beaucoup de vin ce soir.,1
+ministral3b_full,tatoeba-9505678,fr,Ils installent des caméras de reconnaissance faciale.,👥 📷👁️🔍,ok,Les gens regardent la photo de près.,0
+ministral3b_full,tatoeba-2806517,fr,Il ne s’est jamais maquillé.,👨 💇❌,ok,L'homme ne se fait pas couper les cheveux.,0
+ministral3b_full,tatoeba-4591372,fr,Elles ont exhibé leur nouvelle voiture.,👩👩 🚗🆕 📸,ok,Les deux femmes ont acheté une nouvelle voiture et ont pris une photo.,1
+ministral3b_full,tatoeba-1447309,fr,"Soudain, mon ordinateur est tombé en panne.",💻💥💥 😱,ok,"Mon ordinateur est tombé en panne d'un coup, je suis paniqué !",2
+ministral3b_full,tatoeba-3092805,fr,Tu m'agaces avec tes questions.,🫵💬💬 😤,ok,Tu me parles sans arrêt et ça m'énerve !,2
+ministral3b_full,tatoeba-13209013,fr,"Si j'étais toi, je n'émettrais encore aucun jugement !",🫵💬 🫵🤝❌❌,ok,"Tu dis que tu n'es pas d'accord avec moi, mais tu me fais confiance.",0
+ministral3b_full,tatoeba-12763766,fr,"Vas-y, chéri, donne-moi tes meilleurs coups de reins.",🫵💪💪 🫵💋,ok,"Tu es très fort, je t'embrasse.",0
+ministral3b_full,tatoeba-8897889,fr,Elle a un air dédaigneux.,👩😠,2 emojis,,0
+ministral3b_full,tatoeba-10495479,fr,Tu me donnes envie de gerber.,🫵💬 🫵🌿😋,ok,"Tu dis que tu aimes bien les légumes du jardin, alors mange-les !",0
+ministral3b_full,tatoeba-4200257,fr,Marie laisse toujours la fenêtre ouverte quand elle dort.,👩🛏️ 🪟🔒❌,ok,La femme est dans sa chambre et la fenêtre n'est pas fermée à clé.,1
+ministral3b_full,tatoeba-2850195,fr,"Malgré des progrès, il reste un long chemin à faire.",📈✅ ➡️ 🚶⏳📏,ok,"Les ventes augmentent, donc je marche en attendant la mesure.",0
+ministral3b_full,tatoeba-2860642,fr,Je doute que la grue ait déjà fini de décharger toute la cargaison.,🚚📦📦📦 ⏳❓,ok,"Le camion a livré les colis, mais je me demande quand ils arriveront.",0
+qwen2b_full,tatoeba-9729427,en,I thought Tom might be mad at you.,🙋💭 🧑😠🫵,ok,I think you are being really rude to me.,0
+qwen2b_full,tatoeba-11634388,en,Jonas was catching his breath on the porch.,🧑😮‍💨 🏠🌳,ok,I finally got home and sat down under the big tree in the yard.,1
+qwen2b_full,tatoeba-2751481,en,My life is fun and exciting.,🙋🎉🎊,ok,I raised my hand and we celebrated with party poppers and confetti.,1
+qwen2b_full,tatoeba-7235419,en,Mary was wearing a red dress when I saw her yesterday at the supermarket.,⏪ 👩👗🔴 🛒,ok,She bought a red dress at the store.,0
+qwen2b_full,tatoeba-5189051,en,I've got to get used to doing this sooner or later.,🙋🔄 ➡️ ⏩😌,ok,"I'll raise my hand to switch places, and then I'll feel relieved in the future.",0
+qwen2b_full,tatoeba-11979050,en,My hearing isn't so good as yours.,👂🙋❌👂🫵,ok,I'm not listening to you.,1
+qwen2b_full,tatoeba-7731473,en,Tom started doing that when he was thirty years old.,👨 3️⃣0️⃣ ➡️ 🙋🔧,ok,"The man is thirty, so he volunteers to fix it.",1
+qwen2b_full,tatoeba-3636244,en,I can do it now.,🙋✅ ⏩,ok,I'll volunteer for it tomorrow.,1
+qwen2b_full,tatoeba-9776648,en,I've never been this sick before.,🤒🤒🤒 🆕,ok,"I've been feeling really sick, so I got a new doctor.",1
+qwen2b_full,tatoeba-7208365,en,I was thirteen or fourteen at the time.,👦👧 1️⃣3️⃣➡️1️⃣4️⃣,ok,"The boy and the girl were 13, so they turned 14 soon after.",1
+qwen2b_full,tatoeba-6530366,en,I hope we don't miss our flight.,✈️⏰ 🙏🙏,ok,"I was late for my flight, so I begged them to let me on.",1
+qwen2b_full,tatoeba-5975600,en,I told you Tom was telling the truth.,🫵💬 🧑💬✅,ok,"You say something, and the other person replies with a simple yes.",0
+qwen2b_full,tatoeba-6676935,en,"If I had time, I'd do that.",⏩⏰ ➡️ 🙋🙋🙋,ok,"The meeting will start at noon, so everyone please raise your hands to confirm you are coming.",0
+qwen2b_full,tatoeba-4813353,en,Tom fell asleep while he was driving and caused an accident.,🚗😴 ➡️ 💥🚗 😱,ok,"I fell asleep while driving and crashed my car, and I was terrified.",2
+qwen2b_full,tatoeba-6342343,en,I didn't know you were going to be jealous.,🫵💬 🙋❓ 🫵😠❓,ok,"You said, ""Did I ask you?"" Are you angry at me?",1
+qwen2b_full,tatoeba-10554151,en,"If you're free, you could join us.",🫵🆓 ➡️ 🙋🙋🙋🙋,ok,"If you are free, come join us, we are all here.",2
+qwen2b_full,tatoeba-2361202,en,I don't have shoes on.,🙋 👟❌,ok,"I raised my hand, but I didn't have my sneakers on.",1
+qwen2b_full,tatoeba-8845030,en,Tom wants to sell his land.,👨💬 🏡➡️💰,ok,The man said the house was worth a lot of money.,1
+qwen2b_full,tatoeba-8408463,en,I could get used to it.,🙋🧍 ➡️ 🧍🧍🧍 😌,ok,"I raised my hand, and the people in line stepped aside, so I felt relieved.",0
+qwen2b_full,tatoeba-11831479,en,I've been doing relatively well for years now.,🙋📈 📅📅📅 😌,ok,"I raised my hand to ask about the schedule, and I was relieved after the meeting.",0
+qwen2b_full,tatoeba-5850027,en,I've always wanted to wear a tux.,🙋👕👔 🎯,ok,I picked out a shirt and tie for the job interview.,0
+qwen2b_full,tatoeba-6661991,en,I'll never forget the first time I saw Tom.,🙋👀👨 1️⃣ ⏪❌,ok,Nobody saw the man raise his hand a while ago.,0
+qwen2b_full,tatoeba-12035609,en,Kalman was using his phone light.,👨 📱💡,ok,The man got a bright idea on his phone.,1
+qwen2b_full,tatoeba-3325883,en,I'm not going to rewrite your paper for you.,🙋 📄❌🔁 🫵,ok,"I didn't get a copy of the document, so could you send it to me again?",0
+qwen2b_full,tatoeba-3865519,en,Tom suffered severe head injuries in a fall from his bike.,🚲⬇️ ➡️ 🧠💥💥 😱,ok,"I rode my bike down the hill, lost control, hit my head hard, and felt terrified.",2
+qwen2b_full,tatoeba-6258709,en,Tom is very proud of his students.,👨👍 👨‍🏫👦👧,ok,"The man gives a thumbs up to the teacher, who is with a boy and a girl.",1
+qwen2b_full,tatoeba-5352860,en,I haven't talked to her since.,🙋💬❌ 👩⏪,ok,I told the woman I didn't know her yesterday.,0
+qwen2b_full,tatoeba-11856506,en,I practice French every day.,🙋🇫🇷📚 🌅🌙,ok,I study French books from morning until night.,2
+qwen2b_full,tatoeba-2955483,en,Tom admitted he was guilty.,👨💬 🫵👎,ok,The man tells you that you're wrong.,0
+qwen2b_full,tatoeba-6480802,en,I have a few things left to do.,🙋 📋✅ ➡️ ⏩,ok,"I raised my hand, checked the list, and I'll be ready next time.",0
+qwen2b_full,tatoeba-6223770,en,Tom says he's not planning on doing that.,👨💬 🫵📅❌,ok,The man told you there is no schedule.,1
+qwen2b_full,tatoeba-5220159,en,I hope that it'll work.,🙋💭 🎯✅,ok,I thought about it and decided to go for the goal.,1
+qwen2b_full,tatoeba-6432894,en,Tom said he thought Mary had already done that.,👨💬 🧑‍🦰✅,ok,The man told the woman with red hair that she was approved.,0
+qwen2b_full,tatoeba-8568559,en,The mosque is not big enough to hold us all. We need to pray outside.,🕌📏❌ 👥 ➡️ 🕋🌳,ok,"The mosque is not measured, so the people go to the garden.",1
+qwen2b_full,tatoeba-6266779,en,Tom carried Mary's suitcases to her room.,👨 🧳🧳 ➡️ 🚪👩,ok,"The man packed his bags and then left, and the woman stayed at home.",0
+qwen2b_full,tatoeba-10232601,en,Ziri was in his room.,🧑🛏️🔒,ok,I locked myself out of my bedroom.,1
+qwen2b_full,tatoeba-8462188,en,Let me get one thing straight.,🫵💬 🙋🧠✅,ok,You said I got the answer right.,0
+qwen2b_full,tatoeba-6494987,en,Tom and Mary were walking their dog when I saw them this morning.,🌅 🐕🚶👫 ➡️ 🙋👀,ok,"At sunrise, I went for a walk with my dog and friends, and people noticed us.",1
+qwen2b_full,tatoeba-3410936,en,Tom gave Mary all the money that he had in his pocket.,👨👩 💶💶💶💶 ➡️ 👩💶,ok,"A man and a woman spent four pounds, so the woman ended up with two pounds.",0
+qwen2b_full,tatoeba-7521135,en,I know Tom is a fussy eater.,🧑🍽️😤,ok,The diner got upset because the food took too long to arrive.,0
+qwen2b_full,tatoeba-8254481,en,He converted to Islam in his forties.,👨 ➡️ 🕌 4️⃣0️⃣,ok,A man goes to the mosque at 4 o'clock.,1
+qwen2b_full,tatoeba-6250024,en,Tom banged on the table with his fist.,👨👊🪑,ok,A man punched a chair.,1
+qwen2b_full,tatoeba-11711790,en,"Martino’s father is a bioengineer, too.",👨‍🔬👨 👨‍👦,ok,The scientist and the man meet the father and son.,0
+qwen2b_full,tatoeba-6340370,en,I need to buy a new a set of oars for my rowboat.,🙋 🛶 ➡️ 🛒🪣🪣,ok,"I volunteered to take the canoe, so we bought buckets.",0
+qwen2b_full,tatoeba-3171254,en,Tom lent Mary all the money he had on him.,👨💸 ➡️ 👩,ok,"A man spent money, so the woman got upset.",0
+qwen2b_full,tatoeba-6242999,en,I thought Tom would be retired by now.,🙋💭 🧑🏖️❌,ok,"I was thinking about going on a holiday, but I couldn't take the time off work.",0
+qwen2b_full,tatoeba-4858496,en,I will read the book.,🙋 📖,2 emojis,,0
+qwen2b_full,tatoeba-5733230,en,Tom was so good with our kids.,👨👶👶👶 😊,ok,A man is happy taking care of three babies.,2
+qwen2b_full,tatoeba-2258313,en,He didn't succeed in explaining what he wanted.,👨💬❌ 🎯❌,ok,"The man didn't say anything, and he didn't hit the target.",1
+qwen2b_full,tatoeba-12311942,en,I feel unusually good today.,🙋😊✨,ok,I'm happy to help and glad to make things better.,0
+qwen2b_full,tatoeba-4469580,fr,Le traducteur du mode d'emploi ne comprend pas ce qu'il lit.,📖📋 ➡️ 🧑‍🦱🤷❓,ok,"J'ai lu la liste, alors le gars aux cheveux bouclés a haussé les épaules et demandé : « Quoi ? »",0
+qwen2b_full,tatoeba-2312835,fr,Elles ont façonné l'argile en un vase.,👩👩 🏺🔨 ➡️ 🍽️,ok,"Deux femmes réparent un vase cassé, alors elles peuvent dîner.",1
+qwen2b_full,tatoeba-9080004,fr,Il s'est fait piquer par un moustique cette nuit.,🌙 🦟🐝 ➡️ 😱,ok,"La nuit, les moustiques et les abeilles me font peur.",1
+qwen2b_full,tatoeba-2839540,fr,Je vous demande de parler souvent et de bien écouter aussi.,🫵💬🗣️ 🙋👂✅,ok,"Tu me dis que tu m'écoutes, et j'accepte.",1
+qwen2b_full,tatoeba-8685283,fr,Il m'a doublé par la gauche.,👨 ➡️ 🙋 🧭❌ ➡️ 🧭✅ 😲,ok,"L'homme demande son chemin, car il n'a plus de boussole, alors il est surpris de trouver la bonne route.",0
+qwen2b_full,tatoeba-11316006,fr,Je lui ai demandé si elle était occupée.,🙋💬 🫵📅❓,ok,Je te demande : tu es disponible quand ?,1
+qwen2b_full,tatoeba-4519461,fr,Je suis ici pour abattre le gros chêne.,🙋🌳🪓,ok,Quelqu'un coupe un arbre avec une hache.,2
+qwen2b_full,tatoeba-9472682,fr,Je suis près de chez elle.,🙋 ➡️ 🏠👩,ok,Je vais chez ma mère.,1
+qwen2b_full,tatoeba-2913283,fr,Il a accumulé une immense dette.,👨 💸💸💸💸 😱,ok,L'homme a dépensé des milliers d'euros et il est choqué.,1
+qwen2b_full,tatoeba-8329240,fr,Elle est mal en point.,👩😢,2 emojis,,0
+qwen2b_full,tatoeba-5381784,fr,J'en ai ras le bol de t'entendre gémir.,🙋👂😤,ok,"Je t'ai entendu, et ça m'agace vraiment.",2
+qwen2b_full,tatoeba-2100778,fr,Marie n'accompagnait pas les enfants à l'école.,👩 🧒🏫❌,ok,La femme n'a pas d'enfant à l'école.,1
+qwen2b_full,tatoeba-10467811,fr,Ça me ferait plaisir de te l'offrir.,🙋😊 🎁🫵,ok,Je suis content de te donner ce cadeau.,2
+qwen2b_full,tatoeba-11746159,fr,"Il était évident que ma présence allait être inutile, mais il semblait important que je fasse acte de présence.",🙋👤 ➡️ 🫵👥❌ ➡️ 🙋👤✅ 😔,ok,"Je me suis porté volontaire, mais on ne m'a pas choisi, alors je me sens triste.",0
+qwen2b_full,tatoeba-1117651,fr,C'est le chapeau qui m'appartient.,🧢🙋 🏆,ok,Le casquette de mon ami a gagné le trophée ?,0
+qwen2b_full,tatoeba-10301132,fr,Il ne vit plus dans cette maison.,🏠❌ 🧑‍🤝‍🧑,ok,"Je ne suis pas à la maison, je suis avec des amis.",0
+qwen2b_full,tatoeba-8630903,fr,Je ne suis pas sûr d'avoir tout compris.,🙋🤔 🧠❓❓,ok,Je me demande si j'ai bien compris la question.,2
+qwen2b_full,tatoeba-8635832,fr,Il affermit sa foi en se rendant à la messe.,🙋🕊️🙏 ➡️ 🙏✅,ok,"Je demande la paix et je prie, donc j'obtiens la réponse.",1
+qwen2b_full,tatoeba-4075416,fr,Nous allons laver les plats.,🍽️🧼🧺,ok,Je fais la vaisselle et je range les assiettes.,2
+qwen2b_full,tatoeba-8676028,fr,Ce qu'elle dit est insensé.,👩💬 🤥,ok,La femme dit un mensonge.,1
+qwen2b_full,tatoeba-10342459,fr,Beaucoup d'entre vous me connaissent déjà.,🫵👥👀🙋,ok,Vous voyez des gens lever la main pour répondre.,0
+qwen2b_full,tatoeba-1961986,fr,Je ne vous critique pas.,🙋💬❌ 🫵,ok,Je ne te dis rien.,1
+qwen2b_full,tatoeba-7492171,fr,Nous nous lavons les mains.,🙋🙋 🧼🧼,ok,"Je me lave les mains, moi aussi.",2
+qwen2b_full,tatoeba-8574567,fr,Il gagne avec la première réponse.,🧑💬1️⃣ ➡️ 🏆,ok,Le candidat a dit « un » et a gagné le prix.,2
+qwen2b_full,tatoeba-8333712,fr,Je voudrais réserver une chambre avec un grand lit.,🙋🏨 🛏️🛏️🔟,ok,Je réserve une chambre d'hôtel pour dix nuits.,1
+qwen2b_full,tatoeba-8640231,fr,Je suis ici pour un an.,🙋📍 ⏳1️⃣,ok,"Je suis là à l'heure, je t'attends depuis une heure.",0
+qwen2b_full,tatoeba-10468008,fr,Tu me rapporteras ma voiture ici-même.,🫵 🚗➡️🙋,ok,"Tu prends la voiture, alors je te rejoins.",1
+qwen2b_full,tatoeba-7694196,fr,Elles vous mettent en retard pour le dîner !,👩👩 ⏰⏰ 🍽️❌ 😤,ok,"Les deux femmes attendent depuis longtemps, mais le dîner n'est pas servi, alors elles sont furieuses.",1
+qwen2b_full,tatoeba-10325162,fr,Nous marcherons jusqu'à chez toi.,🙋🙋 ➡️ 🏃🏃🏃🏃 ➡️ 🏠🫵,ok,"Je suis rentré en courant, tout seul, et je t'ai rejoint à la maison.",1
+qwen2b_full,tatoeba-1001592,fr,Il est beaucoup plus facile de retenir une liste de phrases en associant celles exprimant des idées analogues.,📝💬🔗👥 ➡️ 🧠✅,ok,"J'ai envoyé le message aux collègues avec le lien, donc ils ont compris le projet.",0
+qwen2b_full,tatoeba-764679,fr,"Ils leur manquent un idéal, une raison de se lever le matin.",👥❌🎯 🌅🧘❓,ok,"Les équipes n'ont pas d'objectif, alors pourquoi se lever à l'aube pour méditer ?",2
+qwen2b_full,tatoeba-7777990,fr,Il est beau comme un dieu grec.,🙋👑✨,ok,Je suis la reine de la fête !,0
+qwen2b_full,tatoeba-8637673,fr,"Aujourd'hui, il ne pleuvra pas.",🌧️❌ ⏩,ok,Il ne pleuvra pas demain.,2
+qwen2b_full,tatoeba-1280791,fr,Il yoyotte un peu de la touffe.,🧑‍🦱💇‍♀️ ➡️ 🧑‍🦱🍀,ok,"Le coiffeur a coupé les cheveux de la personne, qui se sent maintenant chanceuse et apaisée.",0
+qwen2b_full,tatoeba-8400804,fr,Mon frère est très riche.,👦💰💰💰💰,ok,Le garçon a beaucoup d'argent.,2
+qwen2b_full,tatoeba-2893398,fr,Elles ont entendu un bruit derrière elles.,👩👩 👂🔊 🙋🙋,ok,Les deux femmes entendent le bruit et lèvent la main.,1
+qwen2b_full,tatoeba-7199137,fr,"Quand j’entends un Néerlandais parler, j'ai l'impression qu'il a mal à la gorge !",🗣️🇳🇱 ➡️ 🫠🗣️ 😬,ok,"Il parle néerlandais, donc il est gêné de parler mal, il s'excuse maladroitement.",0
+qwen2b_full,tatoeba-11742532,fr,Nous allons déguster plusieurs apéritifs.,🍷🍷🍷 🍽️,ok,Nous avons beaucoup bu du vin pendant le dîner.,1
+qwen2b_full,tatoeba-9505678,fr,Ils installent des caméras de reconnaissance faciale.,👥 📷👤🔒,ok,Les gens prennent une photo de la personne enfermée.,0
+qwen2b_full,tatoeba-2806517,fr,Il ne s’est jamais maquillé.,👨 🧴❌,ok,L'homme n'a plus de shampoing.,0
+qwen2b_full,tatoeba-4591372,fr,Elles ont exhibé leur nouvelle voiture.,👩👩 ➡️ 🚗🆕 📸,ok,Les deux femmes achètent une nouvelle voiture et prennent une photo.,1
+qwen2b_full,tatoeba-1447309,fr,"Soudain, mon ordinateur est tombé en panne.",💻💥 ➡️ 💻❌ 😱,ok,"Mon ordinateur a planté, donc il ne marche plus et je suis paniqué.",2
+qwen2b_full,tatoeba-3092805,fr,Tu m'agaces avec tes questions.,🫵💬❓❓❓ 😤,ok,"Tu me demandes sans cesse ça, et ça commence à m'énerver !",2
+qwen2b_full,tatoeba-13209013,fr,"Si j'étais toi, je n'émettrais encore aucun jugement !",🫵🙋❌💬👎,ok,"Tu ne réponds pas à mes messages, ça ne me plaît pas.",0
+qwen2b_full,tatoeba-12763766,fr,"Vas-y, chéri, donne-moi tes meilleurs coups de reins.",🫵💬 🙋➡️🙋 🎯🏆,ok,"Tu me dis que je suis le meilleur, alors je m'entraîne pour gagner le championnat.",0
+qwen2b_full,tatoeba-8897889,fr,Elle a un air dédaigneux.,👩😠👀,ok,La femme regarde en colère.,1
+qwen2b_full,tatoeba-10495479,fr,Tu me donnes envie de gerber.,🫵💬 🙋🌱🌱,ok,Tu me dis que je dois arroser les plantes ?,0
+qwen2b_full,tatoeba-4200257,fr,Marie laisse toujours la fenêtre ouverte quand elle dort.,👩🛏️ 🪟🔓,ok,La femme se lève du lit et ouvre la fenêtre.,1
+qwen2b_full,tatoeba-2850195,fr,"Malgré des progrès, il reste un long chemin à faire.",📈✅ ➡️ 🛣️⏳,ok,"Les ventes augmentent, donc la route prendra du temps à réparer.",1
+qwen2b_full,tatoeba-2860642,fr,Je doute que la grue ait déjà fini de décharger toute la cargaison.,🚚📦 ➡️ 🏗️❓ 🤔,ok,"Le camion livre les cartons, alors on se demande où mettre les meubles ?",0
+teacher (Flash),tatoeba-9729427,en,I thought Tom might be mad at you.,🙋🤔 🧑😠🫵,ok,I was wondering why you were so angry with me.,1
+teacher (Flash),tatoeba-11634388,en,Jonas was catching his breath on the porch.,👨 😮‍💨 🏠🚪,ok,The man sighed with relief as he opened the door to his house.,1
+teacher (Flash),tatoeba-2751481,en,My life is fun and exciting.,🙋🎢🎉😄,ok,I raised my hand on the roller coaster and felt so happy.,1
+teacher (Flash),tatoeba-7235419,en,Mary was wearing a red dress when I saw her yesterday at the supermarket.,⏪👀 🛒 👩👗🔴,ok,I saw her buy a red dress.,1
+teacher (Flash),tatoeba-5189051,en,I've got to get used to doing this sooner or later.,🙋 ⏩ 🔁 🕐,ok,I will repeat it again at the next time.,1
+teacher (Flash),tatoeba-11979050,en,My hearing isn't so good as yours.,👂🙋 📉 👂🫵,ok,"I raised my hand to ask a question, but the teacher didn't call on me, so I listened to you instead.",0
+teacher (Flash),tatoeba-7731473,en,Tom started doing that when he was thirty years old.,👨 3️⃣0️⃣ ➡️ 🏁,ok,A man turns thirty and celebrates the milestone.,1
+teacher (Flash),tatoeba-3636244,en,I can do it now.,🙋 ➡️ ✅⏩,ok,"I volunteered, so I will be signed up for it.",1
+teacher (Flash),tatoeba-9776648,en,I've never been this sick before.,🤒🤮 😫,ok,"I feel sick, I threw up, and I'm exhausted.",2
+teacher (Flash),tatoeba-7208365,en,I was thirteen or fourteen at the time.,⏪ 🙋 1️⃣3️⃣➖1️⃣4️⃣,ok,I was in the 13th and 14th row yesterday.,0
+teacher (Flash),tatoeba-6530366,en,I hope we don't miss our flight.,🙋🙏 ✈️❌,ok,"I'm sorry, but my flight was cancelled.",1
+teacher (Flash),tatoeba-5975600,en,I told you Tom was telling the truth.,🫵💬 👨✅,ok,He told you the man is approved.,0
+teacher (Flash),tatoeba-6676935,en,"If I had time, I'd do that.",⏳❌ ➡️ 🙋🙅,ok,"There's no time left, so I'm not going to volunteer.",2
+teacher (Flash),tatoeba-4813353,en,Tom fell asleep while he was driving and caused an accident.,🚗😴 ➡️ 💥🚑 😨,ok,"I fell asleep while driving, which caused a crash and an ambulance came, and everyone was scared.",2
+teacher (Flash),tatoeba-6342343,en,I didn't know you were going to be jealous.,🙋🤷 💭❌ 🫵😤💚,ok,"I raised my hand and shrugged because I didn't have an opinion, so you got annoyed but still loved me.",0
+teacher (Flash),tatoeba-10554151,en,"If you're free, you could join us.",🫵🆓❓ ➡️ 🙋🙋‍♂️🙋‍♀️ 🎉,ok,Are you free? Let's get everyone together and celebrate!,2
+teacher (Flash),tatoeba-2361202,en,I don't have shoes on.,🦶 👟❌,ok,I stepped on something but I am not wearing shoes.,1
+teacher (Flash),tatoeba-8845030,en,Tom wants to sell his land.,👨 🏞️ ➡️ 💰,ok,"A man goes to the park, so he earns money.",0
+teacher (Flash),tatoeba-8408463,en,I could get used to it.,🙋👀 ➡️ 😌👍,ok,"I raised my hand to volunteer, and everyone looked relieved and gave a thumbs up.",0
+teacher (Flash),tatoeba-11831479,en,I've been doing relatively well for years now.,🙋 📅📅📅 ➡️ 🙂👍,ok,"I'm free all week, so I'm happy to meet up whenever works for you.",0
+teacher (Flash),tatoeba-5850027,en,I've always wanted to wear a tux.,🙋⏩ 🤵✨,ok,I will be the best man at the wedding.,1
+teacher (Flash),tatoeba-6661991,en,I'll never forget the first time I saw Tom.,🙋 👀👨 ➡️ ❤️😲 ⏪,ok,I saw him yesterday and was surprised by how much I liked him.,1
+teacher (Flash),tatoeba-12035609,en,Kalman was using his phone light.,👨 📱🔦,ok,The man uses his phone flashlight.,2
+teacher (Flash),tatoeba-3325883,en,I'm not going to rewrite your paper for you.,🫵📄✍️❌ 🙅,ok,"You did not sign the document, so the answer is no.",1
+teacher (Flash),tatoeba-3865519,en,Tom suffered severe head injuries in a fall from his bike.,🚴💥 🤕🩸🏥,ok,"I crashed my bike and got hurt badly, so I was taken to the hospital.",2
+teacher (Flash),tatoeba-6258709,en,Tom is very proud of his students.,👨‍🏫 ➡️ 🎓🎓🎓 😊,ok,The teacher graduated three students and they were happy.,1
+teacher (Flash),tatoeba-5352860,en,I haven't talked to her since.,👩 🗣️❌ ⏪➡️⏩ 😔,ok,"The woman didn't speak yesterday, so she feels sad now.",0
+teacher (Flash),tatoeba-11856506,en,I practice French every day.,🙋 📅 🇫🇷💬,ok,"I have a meeting in France, so I'm sending a message to the French team.",0
+teacher (Flash),tatoeba-2955483,en,Tom admitted he was guilty.,👨💬 🙋✅😔,ok,"The man said, ""Yes, I'm sorry,"" and looked sad.",2
+teacher (Flash),tatoeba-6480802,en,I have a few things left to do.,🙋 📝📝📝 ⏩✅,ok,"I will volunteer to take notes at the meeting, and I'll get it all done.",0
+teacher (Flash),tatoeba-6223770,en,Tom says he's not planning on doing that.,👨💬 🙋🚫🗓️,ok,The man said he is not available on that day.,1
+teacher (Flash),tatoeba-5220159,en,I hope that it'll work.,🤞 ⚙️✅,ok,I hope the machine works now that it's fixed.,2
+teacher (Flash),tatoeba-6432894,en,Tom said he thought Mary had already done that.,👨💬 👩✅,ok,The man told the woman that she was right.,0
+teacher (Flash),tatoeba-8568559,en,The mosque is not big enough to hold us all. We need to pray outside.,🕌👥❌ ➡️ 🧎🛐🌳,ok,"The mosque was crowded, so people prayed under the trees outside.",2
+teacher (Flash),tatoeba-6266779,en,Tom carried Mary's suitcases to her room.,🧳🧳 👨➡️🚶 🚪🛏️,ok,I packed my bags and walked out of the bedroom door.,0
+teacher (Flash),tatoeba-10232601,en,Ziri was in his room.,🧒 🚪➡️🛏️,ok,The child walks out of the room and goes to bed.,1
+teacher (Flash),tatoeba-8462188,en,Let me get one thing straight.,🫵👂 🧠✅,ok,You listen and you understand.,1
+teacher (Flash),tatoeba-6494987,en,Tom and Mary were walking their dog when I saw them this morning.,🌅 👫🐕🚶 ➡️ 👀🙋,ok,"At sunrise, a couple walks their dog, and they notice someone waving at them.",2
+teacher (Flash),tatoeba-3410936,en,Tom gave Mary all the money that he had in his pocket.,👨👝💶 ➡️ 👩🤲,ok,"The man takes his wallet and money, so the woman holds out her hands.",1
+teacher (Flash),tatoeba-7521135,en,I know Tom is a fussy eater.,🧑🍽️ 🥦❌ 🍔✅,ok,"The person at the restaurant didn't order the broccoli, so they got the burger instead.",1
+teacher (Flash),tatoeba-8254481,en,He converted to Islam in his forties.,👨 ➡️ 🕌 4️⃣0️⃣,ok,A man goes to the mosque at 4 o'clock.,1
+teacher (Flash),tatoeba-6250024,en,Tom banged on the table with his fist.,👨 ✊💥🪑,ok,The man punched the chair.,1
+teacher (Flash),tatoeba-11711790,en,"Martino’s father is a bioengineer, too.",👨🧬 👨‍👦,ok,The scientist became a father.,0
+teacher (Flash),tatoeba-6340370,en,I need to buy a new a set of oars for my rowboat.,🙋🛒 🚣🆕🪝,ok,I went shopping and bought a new fishing hook.,1
+teacher (Flash),tatoeba-3171254,en,Tom lent Mary all the money he had on him.,👨💸➡️👩 💶💶💶,ok,The man pays the woman three euros.,1
+teacher (Flash),tatoeba-6242999,en,I thought Tom would be retired by now.,🤔👨➡️👴💼❌ ⏩,ok,"A man thinks about his grandfather's job, but he won't have one in the future.",0
+teacher (Flash),tatoeba-4858496,en,I will read the book.,⏩ 📖📚,ok,I will read more books in the future.,1
+teacher (Flash),tatoeba-5733230,en,Tom was so good with our kids.,👨👧👦 😊👍,ok,The whole family is happy and agrees with it.,1
+teacher (Flash),tatoeba-2258313,en,He didn't succeed in explaining what he wanted.,👨💬❌ 🎯❌ 😕,ok,The man said he didn't hit the target and felt confused.,0
+teacher (Flash),tatoeba-12311942,en,I feel unusually good today.,🙋 🌅 ➡️ 😄✨,ok,"I raise my hand in the morning, so the teacher smiles brightly.",0
+teacher (Flash),tatoeba-4469580,fr,Le traducteur du mode d'emploi ne comprend pas ce qu'il lit.,📖📄 ➡️ 🧑‍💻🤔❓,ok,"Je lis un document, donc je me demande s'il faut le corriger.",1
+teacher (Flash),tatoeba-2312835,fr,Elles ont façonné l'argile en un vase.,👩👩 🤲🏺 ➡️ 🏺✅,ok,"Les deux femmes ont tendu la main pour attraper le vase, et le vase est maintenant intact.",0
+teacher (Flash),tatoeba-9080004,fr,Il s'est fait piquer par un moustique cette nuit.,🌙😴 🦟🦵 ➡️ 🔴😖,ok,"Je dors à la lune, un moustique me pique la jambe, donc j'ai une rougeur qui me fait mal.",2
+teacher (Flash),tatoeba-2839540,fr,Je vous demande de parler souvent et de bien écouter aussi.,🫵💬🗣️ ➡️ 👂👂,ok,"Tu me dis quelque chose, alors j'écoute attentivement.",1
+teacher (Flash),tatoeba-8685283,fr,Il m'a doublé par la gauche.,🚗💨 ⬅️🏎️ 😤,ok,"La voiture est partie en trombe, il était furieux.",1
+teacher (Flash),tatoeba-11316006,fr,Je lui ai demandé si elle était occupée.,🙋💬 🫵😰❓,ok,Je demande : tu es inquiet ?,1
+teacher (Flash),tatoeba-4519461,fr,Je suis ici pour abattre le gros chêne.,🙋 📍➡️ 🪓🌳,ok,Je demande où est la hache pour couper l'arbre.,1
+teacher (Flash),tatoeba-9472682,fr,Je suis près de chez elle.,🙋 🏠👩 📍,ok,"Je suis rentré chez moi, à la maison, et je suis arrivé à destination.",1
+teacher (Flash),tatoeba-2913283,fr,Il a accumulé une immense dette.,💳💸💸💸💸 😰,ok,J'ai dépensé tout mon argent avec ma carte bancaire et maintenant je suis stressé.,1
+teacher (Flash),tatoeba-8329240,fr,Elle est mal en point.,👩 🤒😣,ok,Elle est malade et elle souffre.,2
+teacher (Flash),tatoeba-5381784,fr,J'en ai ras le bol de t'entendre gémir.,🙋 😤 🫵💬😩 ➡️ 🤐,ok,"Je lève la main, agacé, je dis à quelqu'un de se taire, alors il se tait.",1
+teacher (Flash),tatoeba-2100778,fr,Marie n'accompagnait pas les enfants à l'école.,👩 🧒🧒 ➡️ 🏫❌,ok,"La femme a deux enfants, alors elle ne va pas à l'école.",1
+teacher (Flash),tatoeba-10467811,fr,Ça me ferait plaisir de te l'offrir.,🫵🎁 🙋😊,ok,"Tu me fais un cadeau, je suis content.",1
+teacher (Flash),tatoeba-11746159,fr,"Il était évident que ma présence allait être inutile, mais il semblait important que je fasse acte de présence.",🙋👥❌ ➡️ 🫵👀✅ 😕,ok,"Personne ne s'est porté volontaire, alors tu as été désigné, et ça te laisse perplexe.",0
+teacher (Flash),tatoeba-1117651,fr,C'est le chapeau qui m'appartient.,🎩 👉🙋,ok,"Le chapeau de l'homme est tombé, alors il lève la main pour demander de l'aide.",0
+teacher (Flash),tatoeba-10301132,fr,Il ne vit plus dans cette maison.,🏠❌ 🚶,ok,"Je ne suis pas à la maison, je me promène.",0
+teacher (Flash),tatoeba-8630903,fr,Je ne suis pas sûr d'avoir tout compris.,🙋 🤔❓,ok,"Je ne sais pas, est-ce que tu peux m'aider ?",1
+teacher (Flash),tatoeba-8635832,fr,Il affermit sa foi en se rendant à la messe.,🙏⛪ ➡️ 💪❤️,ok,"Je prie à l'église, alors je me sens fort et plein d'amour.",2
+teacher (Flash),tatoeba-4075416,fr,Nous allons laver les plats.,🍽️🧼🧽 ➡️ ✨,ok,Je fais la vaisselle et la cuisine brille.,2
+teacher (Flash),tatoeba-8676028,fr,Ce qu'elle dit est insensé.,👩💬 🤯,ok,La femme dit quelque chose et on est stupéfait.,1
+teacher (Flash),tatoeba-10342459,fr,Beaucoup d'entre vous me connaissent déjà.,👥👥👥 🫵👤👋,ok,Les gens vous saluent tous en même temps quand vous entrez dans la pièce.,0
+teacher (Flash),tatoeba-1961986,fr,Je ne vous critique pas.,🙋 🫵❌👎,ok,"Je ne te déteste pas, mais je ne suis pas d'accord avec toi.",1
+teacher (Flash),tatoeba-7492171,fr,Nous nous lavons les mains.,🙌🧼💧,ok,Je me lave les mains avec de l'eau et du savon.,2
+teacher (Flash),tatoeba-8574567,fr,Il gagne avec la première réponse.,🙋💬1️⃣ ➡️ 🏆,ok,Je réponds à la question et je gagne le prix.,2
+teacher (Flash),tatoeba-8333712,fr,Je voudrais réserver une chambre avec un grand lit.,🙋🛏️❓ 🏨 ➡️ 🛏️🛏️,ok,"Je demande une chambre à l'hôtel, donc on me donne deux lits.",1
+teacher (Flash),tatoeba-8640231,fr,Je suis ici pour un an.,🙋📍 ➡️ ⏩1️⃣📅,ok,Je me suis porté volontaire pour le rendez-vous de demain.,0
+teacher (Flash),tatoeba-10468008,fr,Tu me rapporteras ma voiture ici-même.,🫵 🚗➡️📍🙋,ok,"Tu prends la voiture, alors tu passes me chercher ?",1
+teacher (Flash),tatoeba-7694196,fr,Elles vous mettent en retard pour le dîner !,👩👩 ➡️ 🫵⏰❌ 🍽️ 😤,ok,Les deux femmes disent que tu es en retard pour le dîner et elles sont fâchées.,1
+teacher (Flash),tatoeba-10325162,fr,Nous marcherons jusqu'à chez toi.,🚶🚶 ➡️ 🏠🫵,ok,"Nous marchons jusqu'à la maison, et tu es là.",2
+teacher (Flash),tatoeba-1001592,fr,Il est beaucoup plus facile de retenir une liste de phrases en associant celles exprimant des idées analogues.,🧠 📝🔗 📝🔗 ➡️ ✅👍,ok,"J'ai appris mes leçons et je les ai revues, donc j'ai réussi mon examen.",0
+teacher (Flash),tatoeba-764679,fr,"Ils leur manquent un idéal, une raison de se lever le matin.",👥 🎯❌ 🌅🛏️😔,ok,"Les gens n'ont pas atteint leur objectif, alors ils se sont couchés tristes après l'aube.",1
+teacher (Flash),tatoeba-7777990,fr,Il est beau comme un dieu grec.,👨✨ 🏛️⚡ 😍,ok,L'homme trouve le musée éblouissant et le trouve magnifique.,0
+teacher (Flash),tatoeba-8637673,fr,"Aujourd'hui, il ne pleuvra pas.",🌧️❌ ☀️,ok,"Il ne pleut plus, il fait soleil.",2
+teacher (Flash),tatoeba-1280791,fr,Il yoyotte un peu de la touffe.,🤔❓,2 emojis,,0
+teacher (Flash),tatoeba-8400804,fr,Mon frère est très riche.,👦💰💰💰,ok,Le garçon a beaucoup d'argent.,2
+teacher (Flash),tatoeba-2893398,fr,Elles ont entendu un bruit derrière elles.,👩👩 🔊👂 ⏪👀,ok,Les deux femmes ont entendu le bruit hier.,2
+teacher (Flash),tatoeba-7199137,fr,"Quand j’entends un Néerlandais parler, j'ai l'impression qu'il a mal à la gorge !",🇳🇱💬 ➡️ 🫵🤔 🗣️😣,ok,Le Néerlandais a dit : « Tu réfléchis ? Tu as l'air embêté. »,0
+teacher (Flash),tatoeba-11742532,fr,Nous allons déguster plusieurs apéritifs.,🍹🍷🥂🍢 😋,ok,"Nous avons bu des cocktails, du vin et du champagne avec des brochettes, et c'était délicieux.",2
+teacher (Flash),tatoeba-9505678,fr,Ils installent des caméras de reconnaissance faciale.,👥 🔧 📷👤,ok,Les gens réparent la caméra du photographe.,0
+teacher (Flash),tatoeba-2806517,fr,Il ne s’est jamais maquillé.,👨 💄❌,ok,L'homme ne se maquille pas.,2
+teacher (Flash),tatoeba-4591372,fr,Elles ont exhibé leur nouvelle voiture.,👩👩 🚗🆕✨,ok,Les deux femmes ont une nouvelle voiture toute neuve.,1
+teacher (Flash),tatoeba-1447309,fr,"Soudain, mon ordinateur est tombé en panne.",💻⚡💥 ➡️ 🖥️❌ 😱,ok,"Mon ordinateur a eu un court-circuit d'un coup, et l'écran ne s'allume plus, je suis paniqué.",2
+teacher (Flash),tatoeba-3092805,fr,Tu m'agaces avec tes questions.,🫵💬❓❓ ➡️ 🙋😤,ok,"Tu me demandes sans arrêt quelque chose, alors je finis par m'agacer.",2
+teacher (Flash),tatoeba-13209013,fr,"Si j'étais toi, je n'émettrais encore aucun jugement !",🫵🙋 ➡️ ⚖️❌ 🤐,ok,"Tu lèves la main, donc la justice n'est pas juste et tu gardes le silence.",0
+teacher (Flash),tatoeba-12763766,fr,"Vas-y, chéri, donne-moi tes meilleurs coups de reins.",🛏️👩💬 🫵💪🔥,ok,La femme dit à la chambre... tu es super motivant !,1
+teacher (Flash),tatoeba-8897889,fr,Elle a un air dédaigneux.,👩 😒🙄,ok,La femme lève les yeux au ciel avec agacement.,1
+teacher (Flash),tatoeba-10495479,fr,Tu me donnes envie de gerber.,🫵 ➡️ 🤢🤮,ok,"Si tu manges ça, tu vas être malade.",0
+teacher (Flash),tatoeba-4200257,fr,Marie laisse toujours la fenêtre ouverte quand elle dort.,👩😴 🪟🔓,ok,La femme dort et la fenêtre est ouverte.,2
+teacher (Flash),tatoeba-2850195,fr,"Malgré des progrès, il reste un long chemin à faire.",📈✅ ➡️ 🛣️🛣️🛣️ ⏩,ok,"Les ventes ont augmenté, donc on va construire de nouvelles routes.",0
+teacher (Flash),tatoeba-2860642,fr,Je doute que la grue ait déjà fini de décharger toute la cargaison.,🏗️🤔 📦❌,ok,"Le chantier avance lentement, je me demande pourquoi les colis n'arrivent pas.",1

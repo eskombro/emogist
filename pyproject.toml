@@ -3,6 +3,7 @@ name = "emogist"
 version = "0.1.0"
 description = "Training a model to keep the gist in emojis"
 requires-python = ">=3.10"
+license = {text = "MIT"}
 dependencies = [
     "requests",
     "emoji",
