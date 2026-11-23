@@ -1,5 +1,8 @@
 # VPS deployment: pulls the image published by .github/workflows/deploy.yml.
 # The model stays on the VPS in ./models and is mounted read-only.
+# A fixed project name, so moving this folder never creates a second deployment.
+name: emogist
+
 services:
   emogist:
     image: ghcr.io/${IMAGE_OWNER:?IMAGE_OWNER must be set}/emogist:latest

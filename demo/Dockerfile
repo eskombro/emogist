@@ -1,5 +1,5 @@
 # Build from the repository root, because the API reuses emoji_eval/validate.py:
-#   docker build -f 06_serving/Dockerfile -t emogist .
+#   docker build -f demo/Dockerfile -t emogist .
 # The model is not in the image. Compose mounts it read-only from the VPS.
 
 FROM python:3.12-slim AS llama
@@ -24,12 +24,12 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 COPY --from=llama /opt/llama /opt/llama
 WORKDIR /app
-COPY 06_serving/requirements.lock /tmp/requirements.lock
+COPY demo/requirements.lock /tmp/requirements.lock
 RUN pip install --no-cache-dir --require-hashes -r /tmp/requirements.lock
 COPY emoji_eval/__init__.py emoji_eval/validate.py emoji_eval/
-COPY 06_serving/app.py 06_serving/model_manager.py 06_serving/
-COPY 06_serving/demo 06_serving/demo
+COPY demo/app.py demo/model_manager.py demo/
+COPY demo/web demo/web
 RUN useradd --system --uid 10001 --no-create-home emogist
 USER emogist
 EXPOSE 8000
-CMD ["uvicorn", "app:app", "--app-dir", "/app/06_serving", "--host", "0.0.0.0", "--port", "8000", "--workers", "1", "--proxy-headers", "--forwarded-allow-ips=*", "--no-access-log", "--no-server-header"]
+CMD ["uvicorn", "app:app", "--app-dir", "/app/demo", "--host", "0.0.0.0", "--port", "8000", "--workers", "1", "--proxy-headers", "--forwarded-allow-ips=*", "--no-access-log", "--no-server-header"]

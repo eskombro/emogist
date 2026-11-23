@@ -1,0 +1,7 @@
+*
+!demo/app.py
+!demo/model_manager.py
+!demo/requirements.lock
+!demo/web/
+!emoji_eval/__init__.py
+!emoji_eval/validate.py

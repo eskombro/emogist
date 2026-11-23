@@ -49,6 +49,7 @@ cache/               cached decodes and judgements, so scores are reproducible f
 03_dataset/          sentence sources, labelling prompt, pilot data
 04_fine_tuning/      Colab training notebooks, pilot runs and scores
 05_evaluation/       human check of the judge, teacher ceiling, error breakdown
+demo/                the live demo: API, web page, Docker and deployment files
 CONVENTIONS.md       the emoji grammar used everywhere
 ```
 

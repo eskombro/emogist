@@ -1,6 +1,6 @@
 """emogist API and local demo page.
 
-    uvicorn app:app --app-dir 06_serving --host 127.0.0.1 --port 8000
+    uvicorn app:app --app-dir demo --host 127.0.0.1 --port 8000
 
 Sentences are never logged or stored.
 """
@@ -138,4 +138,4 @@ async def to_emoji(request: Request) -> dict:
 
 @app.get("/", include_in_schema=False)
 async def demo_page() -> FileResponse:
-    return FileResponse(HERE / "demo" / "index.html")
+    return FileResponse(HERE / "web" / "index.html")

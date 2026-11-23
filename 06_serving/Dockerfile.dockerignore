@@ -1,7 +1,0 @@
-*
-!06_serving/app.py
-!06_serving/model_manager.py
-!06_serving/requirements.lock
-!06_serving/demo/
-!emoji_eval/__init__.py
-!emoji_eval/validate.py
