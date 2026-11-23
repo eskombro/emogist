@@ -1,0 +1,12 @@
+# Copied to /etc/caddy/sites/emogist.caddy on deploy.
+emogist.esklab.com {
+    request_body {
+        max_size 4KB
+    }
+    reverse_proxy localhost:8010 {
+        # Behind Cloudflare's proxy, Caddy sees a Cloudflare server shared by many
+        # visitors. This header carries the real visitor for the per-IP rate limits.
+        # A request that skips Cloudflare could set it, which only loosens those limits.
+        header_up X-Forwarded-For {http.request.header.CF-Connecting-IP}
+    }
+}

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>emogist</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f7f6f2; --panel: #ffffff; --text: #1f1f1d; --muted: #666660;
+    --line: #d9d7cf; --accent: #2f5fd0; --accent-text: #ffffff; --error: #b3261e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #171716; --panel: #232321; --text: #f0efe9; --muted: #aaa89f;
+      --line: #3b3a36; --accent: #8fb0ff; --accent-text: #10182c; --error: #ff9c92;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; padding: 48px 16px; background: var(--bg); color: var(--text);
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  main { width: 100%; max-width: 620px; margin: 0 auto; }
+  h1 { margin: 0; font-size: 2rem; letter-spacing: -0.02em; }
+  .intro { margin: 4px 0 28px; color: var(--muted); }
+  form, .result { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+  label { display: block; margin-bottom: 8px; font-weight: 600; }
+  textarea {
+    display: block; width: 100%; min-height: 92px; padding: 10px 12px; resize: vertical;
+    color: var(--text); background: transparent; border: 1px solid var(--line); border-radius: 8px; font: inherit;
+  }
+  textarea:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .actions { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 12px; }
+  .count { color: var(--muted); font-size: 0.875rem; }
+  button {
+    min-height: 40px; padding: 0 18px; color: var(--accent-text); background: var(--accent);
+    border: 0; border-radius: 8px; font: inherit; font-weight: 600; cursor: pointer;
+  }
+  button:disabled { opacity: 0.55; cursor: default; }
+  .examples { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 24px; }
+  .examples button { min-height: 34px; padding: 0 12px; color: var(--text); background: transparent; border: 1px solid var(--line); font-weight: 400; font-size: 0.875rem; }
+  .result { min-height: 104px; display: flex; align-items: center; justify-content: center; text-align: center; }
+  #emojis { font-size: 2rem; line-height: 1.35; overflow-wrap: anywhere; }
+  #message { color: var(--muted); }
+  #message.error { color: var(--error); }
+  .spinner { display: inline-block; width: 14px; height: 14px; margin-right: 8px; vertical-align: -2px; border: 2px solid var(--line); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce) { .spinner { animation: none; } }
+  footer { margin-top: 18px; color: var(--muted); font-size: 0.875rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>emogist</h1>
+  <p class="intro">Turn an everyday English or French sentence into emojis that keep the gist.</p>
+  <form id="form">
+    <label for="sentence">Your sentence</label>
+    <textarea id="sentence" maxlength="200" placeholder="I fell asleep on the beach and got a terrible sunburn."></textarea>
+    <div class="actions">
+      <span class="count" id="count">0 / 200</span>
+      <button type="submit" id="send">Translate</button>
+    </div>
+  </form>
+  <div class="examples" aria-label="Example sentences">
+    <button type="button">I missed my train this morning.</button>
+    <button type="button">Je dois aller chez le dentiste demain.</button>
+  </div>
+  <section class="result" aria-live="polite">
+    <div>
+      <div id="emojis"></div>
+      <div id="message">Your emojis will appear here.</div>
+    </div>
+  </section>
+  <footer>A small fine-tuned model that can get things wrong. Sentences are not stored.</footer>
+</main>
+<script>
+  // Empty means same server. On GitHub Pages, set this to the API's HTTPS address.
+  const API = "";
+  const box = document.getElementById("sentence");
+  const form = document.getElementById("form");
+  const send = document.getElementById("send");
+  const count = document.getElementById("count");
+  const emojis = document.getElementById("emojis");
+  const message = document.getElementById("message");
+  let lastWarmup = 0;
+
+  function show(text, kind = "") {
+    message.className = kind;
+    message.textContent = "";
+    if (kind === "loading") {
+      const spinner = document.createElement("span");
+      spinner.className = "spinner";
+      message.append(spinner);
+    }
+    message.append(text);
+  }
+
+  function warmup() {
+    if (Date.now() - lastWarmup < 60000) return;
+    lastWarmup = Date.now();
+    fetch(API + "/warmup", { method: "POST" }).catch(() => {});
+  }
+
+  async function watchLoading(isDone) {
+    while (!isDone()) {
+      try {
+        const { state } = await (await fetch(API + "/status")).json();
+        if (isDone()) return;
+        show(state === "ready" ? "Translating…" : "Waking up the model…", "loading");
+      } catch { return; }
+      await new Promise(resolve => setTimeout(resolve, 500));
+    }
+  }
+
+  async function translate() {
+    const sentence = box.value.trim();
+    if (!sentence) { show("Please type a sentence.", "error"); box.focus(); return; }
+    send.disabled = true;
+    emojis.textContent = "";
+    show("Translating…", "loading");
+    let done = false;
+    watchLoading(() => done);
+    try {
+      const response = await fetch(API + "/emoji", {
+        method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ sentence }),
+      });
+      const data = await response.json();
+      done = true;
+      if (response.ok) { emojis.textContent = data.emojis; show(""); }
+      else show(data.message || "Something went wrong.", "error");
+    } catch {
+      done = true;
+      show("Couldn't reach the demo. Please try again.", "error");
+    } finally {
+      send.disabled = false;
+    }
+  }
+
+  box.addEventListener("focus", warmup);
+  box.addEventListener("input", () => { count.textContent = `${box.value.length} / 200`; });
+  box.addEventListener("keydown", event => {
+    if (event.key === "Enter" && !event.shiftKey) { event.preventDefault(); if (!send.disabled) translate(); }
+  });
+  form.addEventListener("submit", event => { event.preventDefault(); if (!send.disabled) translate(); });
+  document.querySelectorAll(".examples button").forEach(button => button.addEventListener("click", () => {
+    box.value = button.textContent;
+    count.textContent = `${box.value.length} / 200`;
+    warmup();
+    if (!send.disabled) translate();
+  }));
+</script>
+</body>
+</html>

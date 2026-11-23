@@ -1,0 +1,73 @@
+name: Deploy demo
+
+# Never runs on pull requests, so code from forks can't reach the secrets or the VPS.
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "06_serving/**"
+      - "emoji_eval/__init__.py"
+      - "emoji_eval/validate.py"
+      - ".github/workflows/deploy.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-demo
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Build and deploy to VPS
+    # Off until the repository variable EMOGIST_DEPLOY is set to "true".
+    if: vars.EMOGIST_DEPLOY == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Refuse the placeholder domain
+        run: "! grep -q 'example.com' 06_serving/caddy/Caddyfile.snippet"
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GHCR_TOKEN }}
+
+      - name: Build and push image
+        run: |
+          docker build -f 06_serving/Dockerfile \
+            -t ghcr.io/${{ github.repository_owner }}/emogist:latest \
+            -t ghcr.io/${{ github.repository_owner }}/emogist:${{ github.sha }} \
+            .
+          docker push --all-tags ghcr.io/${{ github.repository_owner }}/emogist
+
+      - name: Deploy to VPS
+        uses: appleboy/ssh-action@v1.0.3
+        env:
+          GHCR_TOKEN: ${{ secrets.GHCR_TOKEN }}
+          GHCR_USER: ${{ github.actor }}
+          IMAGE_OWNER: ${{ github.repository_owner }}
+        with:
+          host: ${{ vars.VPS_HOST }}
+          username: ${{ vars.VPS_USERNAME }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          envs: GHCR_TOKEN,GHCR_USER,IMAGE_OWNER
+          script: |
+            set -e
+            cd /home/${{ vars.VPS_USERNAME }}/emogist
+            git pull --ff-only origin main
+            cd 06_serving
+            test -f models/emogist-qwen2b-Q8_0.gguf
+            echo "$GHCR_TOKEN" | docker login ghcr.io -u "$GHCR_USER" --password-stdin
+            IMAGE_OWNER=$IMAGE_OWNER docker compose -f docker-compose.prod.yml pull
+            IMAGE_OWNER=$IMAGE_OWNER docker compose -f docker-compose.prod.yml up -d
+            docker image prune -f
+            sudo cp caddy/Caddyfile.snippet /etc/caddy/sites/emogist.caddy
+            sudo systemctl reload caddy
