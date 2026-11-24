@@ -66,9 +66,25 @@
   .examples { display: flex; flex-wrap: wrap; gap: 8px; }
   .examples button { min-height: 34px; padding: 4px 12px; color: var(--text); background: transparent; border: 1px solid var(--line); border-radius: 8px; font: inherit; font-size: 0.875rem; text-align: left; cursor: pointer; transition: background-color 0.12s ease, border-color 0.12s ease; }
   .examples button:hover { background: var(--soft); border-color: var(--muted); }
-  .result { min-height: 104px; margin-top: 16px; display: flex; align-items: center; justify-content: center; text-align: center; }
+  .result { position: relative; min-height: 104px; margin-top: 16px; display: flex; align-items: center; justify-content: center; text-align: center; }
   #emojis { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px; font-size: 1.75rem; line-height: 1.2; }
   #emojis:empty { display: none; }
+  #emojis.placeholder { opacity: 0.4; }
+  #emojis.placeholder .chip { animation: none; }
+  #copy {
+    position: absolute; top: 8px; right: 8px; display: inline-flex; align-items: center; gap: 6px; height: 32px; padding: 0 10px;
+    color: var(--muted); background: transparent; border: 1px solid transparent; border-radius: 8px; cursor: pointer;
+    font: inherit; font-size: 0.8125rem; font-weight: 600;
+    transition: background-color 0.12s ease, border-color 0.12s ease, color 0.12s ease;
+  }
+  #copy:hover { color: var(--text); background: var(--soft); border-color: var(--line); }
+  .result:has(#copy:not([hidden])) { padding-top: 44px; }
+  #copy svg { flex: none; width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  #copy .done, #copy.copied .idle { display: none; }
+  #copy.copied .done { display: block; }
+  #copy.copied { color: var(--accent); }
+  #copy:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  #copy[hidden] { display: none; }
   .chip { display: inline-block; max-width: 100%; padding: 6px 10px; background: var(--soft); border: 1px solid var(--line); border-radius: 10px; overflow-wrap: anywhere; animation: appear 0.14s ease-out; }
   .arrow { display: inline-block; animation: appear 0.14s ease-out; }
   @keyframes appear { from { opacity: 0; transform: translateY(3px); } }
@@ -154,6 +170,11 @@
       <div id="emojis" translate="no"></div>
       <div id="message"></div>
     </div>
+    <button type="button" id="copy" hidden>
+      <svg class="idle" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg>
+      <svg class="done" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5 10 17.5 19 7"/></svg>
+      <span id="copy-label"></span>
+    </button>
   </section>
   <div id="tokens"></div>
 
@@ -193,10 +214,11 @@
   const TEXT = {
     en: {
       intro: "Turn an everyday sentence into emojis that keep the gist. You can write in English or French.",
-      label: "Your sentence", placeholder: "I fell asleep on the beach and got a terrible sunburn.", send: "Translate",
+      label: "Your sentence", placeholder: "You write some text, I translate to emojis", send: "Translate",
+      placeholderEmojis: "🫵💬📝 ➡️ 🙋🖼️", copy: "Copy", copied: "Copied", copyTitle: "Copy to clipboard",
       languageLabel: "Page language", examplesHint: "Need inspiration? Click an example to try it:",
       examples: ["A seagull stole my ice cream.", "I talked for ten minutes with my mic on mute.", "My cat pushed my birthday cake off the table.", "My boss told me I got a raise.", "I forgot my umbrella and got soaked."],
-      idle: "Your emojis will appear here.", waking: "Waking up the model…", translating: "Translating…",
+      waking: "Waking up the model…", translating: "Translating…",
       empty: "Please type a sentence.", too_long: "Please use at most 200 characters.",
       bad_characters: "The sentence contains unsupported characters.", bad_request: "That sentence couldn't be read.",
       rate_limited: "Too many requests, please wait a moment.", busy: "The demo is busy, please try again later.",
@@ -221,10 +243,11 @@
     },
     fr: {
       intro: "Transformez une phrase du quotidien en emojis qui en gardent l'essentiel. Vous pouvez écrire en français ou en anglais.",
-      label: "Votre phrase", placeholder: "Je me suis endormi sur la plage et j'ai pris un énorme coup de soleil.", send: "Traduire",
+      label: "Votre phrase", placeholder: "Tu écris un texte, je dessine des emojis", send: "Traduire",
+      placeholderEmojis: "🫵✍️📝 ➡️ 🙋🎨🖼️", copy: "Copier", copied: "Copié", copyTitle: "Copier dans le presse-papiers",
       languageLabel: "Langue de la page", examplesHint: "Besoin d'inspiration ? Cliquez sur un exemple pour l'essayer :",
       examples: ["Mes plantes meurent dès que je les regarde.", "J'ai commencé un régime puis j'ai mangé tout le gâteau.", "Je suis allé une fois à la salle de sport et j'ai besoin d'une sieste.", "L'avion a eu trois heures de retard.", "Je ne trouve plus mes lunettes."],
-      idle: "Vos emojis apparaîtront ici.", waking: "Réveil du modèle…", translating: "Traduction…",
+      waking: "Réveil du modèle…", translating: "Traduction…",
       empty: "Veuillez écrire une phrase.", too_long: "Veuillez utiliser 200 caractères au maximum.",
       bad_characters: "La phrase contient des caractères non pris en charge.", bad_request: "Cette phrase n'a pas pu être lue.",
       rate_limited: "Trop de demandes, patientez un instant.", busy: "La démo est occupée, réessayez plus tard.",
@@ -260,10 +283,63 @@
   const examples = document.getElementById("examples");
   const rules = document.getElementById("rules");
   const switcher = document.getElementById("language");
+  const copy = document.getElementById("copy");
   let language = "en";
-  let status = { key: "idle", kind: "" };
+  let status = { key: null, kind: "" };
   let lastWarmup = 0;
   let usage = null;
+  let showingPlaceholder = true;
+  let copyText = "";
+  let copiedTimer = 0;
+
+  // Before the first translation, show what the model gives for the placeholder sentence, faded.
+  function drawPlaceholder() {
+    if (!showingPlaceholder) return;
+    emojis.classList.add("placeholder");
+    emojis.setAttribute("aria-hidden", "true");
+    drawEmojis(emojis, TEXT[language].placeholderEmojis);
+  }
+
+  function clearPlaceholder() {
+    showingPlaceholder = false;
+    emojis.classList.remove("placeholder");
+    emojis.removeAttribute("aria-hidden");
+    emojis.replaceChildren();
+  }
+
+  function labelCopy(copied = false) {
+    const text = TEXT[language];
+    copy.classList.toggle("copied", copied);
+    document.getElementById("copy-label").textContent = text[copied ? "copied" : "copy"];
+    copy.title = text.copyTitle;
+  }
+
+  function setCopyText(text) {
+    copyText = text;
+    copy.hidden = !text;
+    clearTimeout(copiedTimer);
+    labelCopy();
+  }
+
+  async function copyEmojis() {
+    if (!copyText) return;
+    try {
+      await navigator.clipboard.writeText(copyText);
+    } catch {
+      const area = document.createElement("textarea");
+      area.value = copyText;
+      area.setAttribute("readonly", "");
+      area.style.position = "fixed";
+      area.style.opacity = "0";
+      document.body.append(area);
+      area.select();
+      document.execCommand("copy");
+      area.remove();
+    }
+    labelCopy(true);
+    clearTimeout(copiedTimer);
+    copiedTimer = setTimeout(() => labelCopy(), 1500);
+  }
 
   function drawTokens() {
     const text = TEXT[language];
@@ -378,6 +454,8 @@
     }));
     show(status.key, status.kind);
     drawTokens();
+    drawPlaceholder();
+    labelCopy(copy.classList.contains("copied"));
     if (remember) {
       try { localStorage.setItem("emogist-language", language); } catch {}
     }
@@ -406,9 +484,10 @@
     const sentence = box.value.trim();
     usage = null;
     drawTokens();
-    if (!sentence) { emojis.textContent = ""; show("empty", "error"); box.focus(); return; }
+    setCopyText("");
+    clearPlaceholder();
+    if (!sentence) { show("empty", "error"); box.focus(); return; }
     send.disabled = true;
-    emojis.replaceChildren();
     result.setAttribute("aria-busy", "true");
     show("translating", "loading");
     let started = false;
@@ -429,6 +508,7 @@
         finished = true;
         drawEmojis(emojis, data.emojis);
         show(null);
+        setCopyText(data.emojis);
         usage = data.tokens;
         drawTokens();
       } else if (data.type === "error") {
@@ -469,6 +549,7 @@
     const button = event.target.closest("button");
     if (button && button.dataset.lang !== language) setLanguage(button.dataset.lang);
   });
+  copy.addEventListener("click", copyEmojis);
   box.addEventListener("focus", warmup);
   box.addEventListener("input", updateCount);
   box.addEventListener("keydown", event => {
