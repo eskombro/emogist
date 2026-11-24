@@ -5,12 +5,15 @@ all its memory back. A warm-up holds the model briefly, and only real sentences 
 """
 
 import asyncio
+import json
 import logging
 import os
 import socket
 import tempfile
 import time
 from collections import deque
+from collections.abc import AsyncIterator
+from contextlib import aclosing
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -43,7 +46,7 @@ class Settings:
         "EMOGIST_MODEL", Path(__file__).parent / "models" / "emogist-qwen2b-Q8_0.gguf")))
     server_binary: str = field(default_factory=lambda: os.environ.get("EMOGIST_LLAMA_SERVER", "llama-server"))
     port: int = field(default_factory=lambda: _env_int("EMOGIST_MODEL_PORT", 18090))
-    threads: int = field(default_factory=lambda: _env_int("EMOGIST_THREADS", 2))
+    threads: int = field(default_factory=lambda: _env_int("EMOGIST_THREADS", 3))
     gpu_layers: int = field(default_factory=lambda: _env_int("EMOGIST_GPU_LAYERS", 0))
     warmup_hold: float = field(default_factory=lambda: _env_float("EMOGIST_WARMUP_HOLD", 90))
     sentence_hold: float = field(default_factory=lambda: _env_float("EMOGIST_SENTENCE_HOLD", 180))
@@ -113,20 +116,52 @@ class ModelManager:
         except (Busy, ModelFailed) as error:
             log.warning("warmup_failed reason=%s", error)
 
+    def queue_full(self) -> bool:
+        return self._pending >= self.settings.max_pending
+
     async def generate(self, sentence: str) -> str:
-        if self._pending >= self.settings.max_pending:
+        async with aclosing(self.stream(sentence)) as pieces:
+            return "".join([piece async for piece in pieces]).strip()
+
+    async def stream(self, sentence: str) -> AsyncIterator[str]:
+        """Yield the answer piece by piece. Closing it early also stops the model."""
+        if self.queue_full():
             raise Busy("queue full")
         self._pending += 1
         try:
             async with self._generation:
                 await self._ensure_loaded("sentence")
                 started = time.perf_counter()
-                output = await self._complete(sentence)
-                self._expires = time.monotonic() + self.settings.sentence_hold
+                try:
+                    async with aclosing(self._stream_completion(sentence)) as pieces:
+                        async for piece in pieces:
+                            yield piece
+                finally:
+                    self._expires = time.monotonic() + self.settings.sentence_hold
                 log.info("sentence_done generate_ms=%d", (time.perf_counter() - started) * 1000)
-                return output
         finally:
             self._pending -= 1
+
+    async def _stream_completion(self, sentence: str) -> AsyncIterator[str]:
+        deadline = time.monotonic() + self.settings.generate_timeout
+        try:
+            async with self._client.stream("POST", "/completion", timeout=self.settings.generate_timeout, json={
+                    "prompt": build_prompt(sentence), "n_predict": 60, "temperature": 0, "top_k": 1,
+                    "cache_prompt": False, "seed": 1, "stream": True}) as response:
+                response.raise_for_status()
+                async for line in response.aiter_lines():
+                    if time.monotonic() > deadline:
+                        raise ModelFailed("model request timed out")
+                    if not line.startswith("data: "):
+                        continue
+                    data = json.loads(line[len("data: "):])
+                    if data.get("content"):
+                        yield data["content"]
+                    if data.get("stop"):
+                        return
+        except (httpx.HTTPError, ValueError) as error:
+            raise ModelFailed(f"model request failed: {type(error).__name__}") from error
+        raise ModelFailed("model stream ended early")
 
     async def _ensure_loaded(self, trigger: str) -> None:
         async with self._transition:

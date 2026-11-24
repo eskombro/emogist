@@ -62,7 +62,11 @@
   .examples button { min-height: 34px; padding: 4px 12px; color: var(--text); background: transparent; border: 1px solid var(--line); border-radius: 8px; font: inherit; font-size: 0.875rem; text-align: left; cursor: pointer; transition: background-color 0.12s ease, border-color 0.12s ease; }
   .examples button:hover { background: var(--soft); border-color: var(--muted); }
   .result { min-height: 104px; margin-top: 16px; display: flex; align-items: center; justify-content: center; text-align: center; }
-  #emojis { font-size: 2rem; line-height: 1.35; overflow-wrap: anywhere; }
+  #emojis { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px; font-size: 1.75rem; line-height: 1.2; }
+  #emojis:empty { display: none; }
+  .chip { display: inline-block; max-width: 100%; padding: 6px 10px; background: var(--soft); border: 1px solid var(--line); border-radius: 10px; overflow-wrap: anywhere; animation: appear 0.14s ease-out; }
+  .arrow { display: inline-block; animation: appear 0.14s ease-out; }
+  @keyframes appear { from { opacity: 0; transform: translateY(3px); } }
   #message { color: var(--muted); }
   #message.error { color: var(--error); }
   .spinner { display: inline-block; width: 14px; height: 14px; margin-right: 8px; vertical-align: -2px; border: 2px solid var(--line); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; }
@@ -88,8 +92,12 @@
   .rules li { display: grid; grid-template-columns: 78px minmax(0, 1fr); gap: 2px 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
   .symbol { grid-row: span 2; font-size: 1.25rem; line-height: 1.5; white-space: nowrap; }
   .rule { font-weight: 600; }
-  .sample { color: var(--muted); font-size: 0.9375rem; overflow-wrap: anywhere; }
-  .sample span { color: var(--text); font-size: 1.0625rem; white-space: nowrap; }
+  .sample { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; margin-top: 4px; color: var(--muted); font-size: 0.9375rem; overflow-wrap: anywhere; }
+  .chips { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px; color: var(--text); font-size: 1rem; line-height: 1.2; }
+  .chips .chip { padding: 2px 6px; border-radius: 6px; animation: none; }
+  .chips .arrow { animation: none; }
+  .boxes { display: inline-flex; gap: 4px; padding-top: 5px; }
+  .boxes span { width: 22px; height: 18px; background: var(--soft); border: 1px solid var(--muted); border-radius: 5px; }
   .note { margin: 14px 0 0 !important; font-size: 0.875rem !important; }
   footer { margin-top: 18px; color: var(--muted); font-size: 0.875rem; }
   @media (max-width: 420px) {
@@ -97,9 +105,10 @@
     .language button { min-width: 58px; padding: 0 7px; }
     .rules li { grid-template-columns: 62px minmax(0, 1fr); gap: 2px 8px; }
     .symbol { font-size: 1rem; }
-    .sample span { white-space: normal; }
+    #emojis { gap: 6px; font-size: 1.375rem; }
+    .chip { padding: 5px 7px; }
   }
-  @media (prefers-reduced-motion: reduce) { .spinner { animation: none; } .language::before, .guide summary::after { transition: none; } }
+  @media (prefers-reduced-motion: reduce) { .spinner, .chip, .arrow { animation: none; } .language::before, .guide summary::after { transition: none; } }
 </style>
 </head>
 <body>
@@ -160,7 +169,7 @@
     { symbol: "💬", sample: "👴💬🫵😊 🙋🥹" },
     { symbol: "⏳⏳⏳", sample: "💄⏳⏳⏳" },
     { symbol: "1️⃣3️⃣", sample: "👦 ⏪ 1️⃣3️⃣" },
-    { symbol: "␣", sample: "🏖️😴 ➡️ 🦞🔥 😭" },
+    { symbol: "boxes", sample: "🏖️😴 ➡️ 🦞🔥 😭" },
   ];
   const TEXT = {
     en: {
@@ -186,7 +195,7 @@
         ["Someone says something: speaker, 💬, then the message (🫵 = you)", "an old man told me I looked happy"],
         ["A small quantity: the emoji is repeated, up to 4 times", "three hours of make-up"],
         ["An exact number, such as an age, time or price", "when I was thirteen"],
-        ["Spaces separate ideas, in story order: who, action, object, result, emotion", "fell asleep on the beach, then a bad sunburn"],
+        ["Each box is one idea, in story order: who, action, object, result, emotion", "fell asleep on the beach, then a bad sunburn"],
       ],
     },
     fr: {
@@ -212,7 +221,7 @@
         ["Quelqu'un dit quelque chose : la personne, 💬, puis le message (🫵 = toi)", "un vieil homme m'a dit que j'avais l'air heureux"],
         ["Une petite quantité : l'emoji est répété, jusqu'à 4 fois", "trois heures de maquillage"],
         ["Un nombre exact, comme un âge, une heure ou un prix", "quand j'avais treize ans"],
-        ["Les espaces séparent les idées, dans l'ordre de l'histoire : qui, action, objet, résultat, émotion", "endormi sur la plage, puis un gros coup de soleil"],
+        ["Chaque case est une idée, dans l'ordre de l'histoire : qui, action, objet, résultat, émotion", "endormi sur la plage, puis un gros coup de soleil"],
       ],
     },
   };
@@ -222,6 +231,7 @@
   const send = document.getElementById("send");
   const count = document.getElementById("count");
   const emojis = document.getElementById("emojis");
+  const result = document.querySelector(".result");
   const message = document.getElementById("message");
   const examples = document.getElementById("examples");
   const rules = document.getElementById("rules");
@@ -236,6 +246,40 @@
       if (saved === "en" || saved === "fr") return saved;
     } catch {}
     return (navigator.languages || [navigator.language]).find(Boolean)?.toLowerCase().startsWith("fr") ? "fr" : "en";
+  }
+
+  function graphemes(text) {
+    if (window.Intl?.Segmenter) return [...new Intl.Segmenter(undefined, { granularity: "grapheme" }).segment(text)].map(part => part.segment);
+    return Array.from(text);
+  }
+
+  // While streaming, hold back an emoji that is still being built, such as the 3 of 3️⃣.
+  function completeText(text) {
+    const last = graphemes(text).at(-1);
+    if (!last) return text;
+    const unfinished = /[0-9#*]️?$/u.test(last) || last.endsWith("‍") || /^\p{Regional_Indicator}$/u.test(last);
+    return unfinished ? text.slice(0, text.length - last.length) : text;
+  }
+
+  // Each space-separated group becomes a box, and ➡️ sits between the boxes.
+  function emojiParts(text) {
+    return text.trim().split(/\s+/u).filter(Boolean).flatMap(group => group.split(/(➡️?)/u).filter(Boolean))
+      .map(part => ({ className: part.startsWith("➡") ? "arrow" : "chip", text: part }));
+  }
+
+  function drawEmojis(container, text) {
+    const parts = emojiParts(text);
+    parts.forEach((part, index) => {
+      let element = container.children[index];
+      if (!element || element.className !== part.className) {
+        const next = document.createElement("span");
+        next.className = part.className;
+        if (element) element.replaceWith(next); else container.append(next);
+        element = next;
+      }
+      if (element.textContent !== part.text) element.textContent = part.text;
+    });
+    while (container.children.length > parts.length) container.lastElementChild.remove();
   }
 
   function show(key, kind = "") {
@@ -278,16 +322,26 @@
       symbol.className = "symbol";
       symbol.translate = false;
       symbol.setAttribute("aria-hidden", "true");
-      symbol.textContent = rule.symbol;
+      if (rule.symbol === "boxes") {
+        const boxes = document.createElement("span");
+        boxes.className = "boxes";
+        boxes.append(document.createElement("span"), document.createElement("span"));
+        symbol.append(boxes);
+      } else {
+        symbol.textContent = rule.symbol;
+      }
       const name = document.createElement("div");
       name.className = "rule";
       name.textContent = title;
       const sample = document.createElement("div");
       sample.className = "sample";
       const emoji = document.createElement("span");
+      emoji.className = "chips";
       emoji.translate = false;
-      emoji.textContent = rule.sample;
-      sample.append(emoji, `${language === "fr" ? " :" : ":"} ${meaning}`);
+      drawEmojis(emoji, rule.sample);
+      const explanation = document.createElement("span");
+      explanation.textContent = meaning;
+      sample.append(emoji, explanation);
       item.append(symbol, name, sample);
       return item;
     }));
@@ -320,22 +374,57 @@
     const sentence = box.value.trim();
     if (!sentence) { emojis.textContent = ""; show("empty", "error"); box.focus(); return; }
     send.disabled = true;
-    emojis.textContent = "";
+    emojis.replaceChildren();
+    result.setAttribute("aria-busy", "true");
     show("translating", "loading");
-    let done = false;
-    watchLoading(() => done);
+    let started = false;
+    let finished = false;
+    let output = "";
+    const fail = code => {
+      finished = true;
+      emojis.replaceChildren();
+      show(TEXT[language][code] ? code : "generic", "error");
+    };
+    const handle = data => {
+      if (data.type === "piece") {
+        started = true;
+        output += data.text;
+        if (status.key) show(null);
+        drawEmojis(emojis, completeText(output));
+      } else if (data.type === "done") {
+        finished = true;
+        drawEmojis(emojis, data.emojis);
+        show(null);
+      } else if (data.type === "error") {
+        fail(data.code);
+      }
+    };
+    watchLoading(() => started || finished);
     try {
-      const response = await fetch(API + "/emoji", {
+      const response = await fetch(API + "/emoji/stream", {
         method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ sentence }),
       });
-      const data = await response.json();
-      done = true;
-      if (response.ok) { emojis.textContent = data.emojis; show(null); }
-      else show(TEXT[language][data.code] ? data.code : "generic", "error");
+      if (!response.ok) {
+        const data = await response.json();
+        fail(data.code);
+        return;
+      }
+      const reader = response.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = "";
+      while (!finished) {
+        const { value, done } = await reader.read();
+        if (done) break;
+        buffer += decoder.decode(value, { stream: true });
+        const events = buffer.split("\n\n");
+        buffer = events.pop();
+        events.filter(line => line.startsWith("data: ")).forEach(line => handle(JSON.parse(line.slice(6))));
+      }
+      if (!finished) fail("network");
     } catch {
-      done = true;
-      show("network", "error");
+      fail("network");
     } finally {
+      result.removeAttribute("aria-busy");
       send.disabled = false;
     }
   }

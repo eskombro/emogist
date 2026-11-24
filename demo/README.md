@@ -30,6 +30,7 @@ The export and evaluation of the model are documented in [Step 6](../06_serving/
 | `GET /status` | Returns `unloaded`, `loading`, `unloading` or `ready`, without loading the model |
 | `POST /warmup` | Starts loading and returns immediately |
 | `POST /emoji` | Takes `{"sentence": "..."}` and returns `{"emojis": "..."}` |
+| `POST /emoji/stream` | Same input, streamed as server-sent events: `piece`, then `done` or `error` |
 
 ## Run locally
 
@@ -46,7 +47,7 @@ EMOGIST_LLAMA_SERVER=/path/to/llama-server \
 
 | Variable | Default | Meaning |
 |---|---|---|
-| `EMOGIST_THREADS` | `2` | CPU threads for the model |
+| `EMOGIST_THREADS` | `3` | CPU threads for the model |
 | `EMOGIST_WARMUP_HOLD` | `90` | Seconds a warm-up keeps the model loaded |
 | `EMOGIST_SENTENCE_HOLD` | `180` | Seconds the model stays loaded after a sentence |
 | `EMOGIST_MIN_AVAILABLE_GB` | `3` | Don't load the model below this available RAM |

@@ -9,7 +9,7 @@ services:
     restart: unless-stopped
     init: true
     environment:
-      EMOGIST_THREADS: ${EMOGIST_THREADS:-2}
+      EMOGIST_THREADS: ${EMOGIST_THREADS:-3}
       EMOGIST_WARMUP_HOLD: ${EMOGIST_WARMUP_HOLD:-90}
       EMOGIST_SENTENCE_HOLD: ${EMOGIST_SENTENCE_HOLD:-180}
       # Read from the host, so the model won't load when other services need the RAM.
@@ -22,7 +22,7 @@ services:
     # If memory runs out, this demo is stopped before the other services on the VPS.
     mem_limit: 3g
     memswap_limit: 3g
-    cpus: 2
+    cpus: 3
     oom_score_adj: 500
     pids_limit: 128
     read_only: true

@@ -12,12 +12,13 @@ import sys
 import time
 import unicodedata
 from collections import defaultdict, deque
-from contextlib import asynccontextmanager
+from collections.abc import AsyncIterator
+from contextlib import aclosing, asynccontextmanager
 from pathlib import Path
 
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse, JSONResponse
+from fastapi.responses import FileResponse, JSONResponse, StreamingResponse
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent))
@@ -134,6 +135,43 @@ async def to_emoji(request: Request) -> dict:
     if check_validity(output) != "ok":
         raise ApiError(422, "no_valid_output", "The model couldn't turn this one into emojis. Try rephrasing it.")
     return {"emojis": output}
+
+
+def event(payload: dict) -> str:
+    return f"data: {json.dumps(payload, ensure_ascii=False)}\n\n"
+
+
+async def emoji_events(request: Request, sentence: str) -> AsyncIterator[str]:
+    pieces = []
+    try:
+        async with aclosing(request.app.state.model.stream(sentence)) as stream:
+            async for piece in stream:
+                if await request.is_disconnected():
+                    return
+                pieces.append(piece)
+                yield event({"type": "piece", "text": piece})
+    except Busy:
+        yield event({"type": "error", "code": "busy"})
+        return
+    except ModelFailed as error:
+        logging.getLogger("emogist").error("generation_failed reason=%s", error)
+        yield event({"type": "error", "code": "unavailable"})
+        return
+    output = "".join(pieces).strip()
+    if check_validity(output) != "ok":
+        yield event({"type": "error", "code": "no_valid_output"})
+    else:
+        yield event({"type": "done", "emojis": output})
+
+
+@app.post("/emoji/stream")
+async def to_emoji_stream(request: Request) -> StreamingResponse:
+    sentence = await read_sentence(request)
+    sentence_limit.check(client_id(request))
+    if request.app.state.model.queue_full():
+        raise ApiError(503, "busy", "The demo is busy, please try again later.", 30)
+    return StreamingResponse(emoji_events(request, sentence), media_type="text/event-stream",
+                             headers={"Cache-Control": "no-cache, no-transform", "X-Accel-Buffering": "no"})
 
 
 @app.get("/", include_in_schema=False)

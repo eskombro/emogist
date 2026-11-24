@@ -2,7 +2,7 @@
 
     python 06_serving/score_gguf.py
 
-Reads results/gguf_dev_*.csv and results/served_mac_cpu_dev.csv. Scores come from the shared cache
+Reads results/gguf_dev_*.csv and results/served_*_dev.csv. Scores come from the shared cache
 when the same outputs were already judged.
 """
 
@@ -21,7 +21,7 @@ from emoji_eval.validate import check_validity  # noqa: E402
 
 RESULTS = HERE / "results"
 FILES = {"f16": "gguf_dev_f16.csv", "Q8_0": "gguf_dev_Q8_0.csv", "Q4_K_M": "gguf_dev_Q4_K_M.csv",
-         "served (Mac CPU)": "served_mac_cpu_dev.csv"}
+         "served (Mac CPU)": "served_mac_cpu_dev.csv", "served (VPS)": "served_vps_dev.csv"}
 
 
 def main() -> None:
@@ -30,6 +30,9 @@ def main() -> None:
     scores, out = {}, []
     print(f"{'version':<18}{'valid':>6}{'FR':>6}{'EN':>6}{'all':>6}{'  0/1/2':>10}")
     for version, name in FILES.items():
+        if not (RESULTS / name).exists():
+            print(f"{version:<18}no outputs yet")
+            continue
         with open(RESULTS / name, newline="", encoding="utf-8") as f:
             rows = list(csv.DictReader(f))
         gists, valid = [], 0

@@ -50,17 +50,20 @@ The demo shares a VPS with other services, so the model should only use memory w
 
 FastAPI starts and stops `llama-server` as a separate process, because stopping it is what reliably gives the memory back. A hidden sentence runs during loading, so the first real sentence doesn't pay for reading the model from disk.
 
-Measured with the served settings (2 CPU threads, no weight repacking):
+Measured on CPU, without weight repacking:
 
-| Where | Model load | Sentence | Gist on dev |
-|---|---|---|---|
-| Apple M1 Pro CPU | about 1.5 s (file cached) | median about 1 s | 0.72, vs. full model −0.03 [−0.10, +0.04] |
-| VPS, 4 vCores, x86 | 7.4 s (first measured load) | about 3–7 s | not measured |
+| Where | Threads | Model load | Sentence (median) | Slowest | Gist on dev |
+|---|---|---|---|---|---|
+| Apple M1 Pro | 2 | about 1.5 s (file cached) | about 1 s | 1.9 s | 0.72, vs. full model −0.03 [−0.10, +0.04] |
+| VPS, Intel Haswell | 2 | 5.9 s | 4.57 s | 7.11 s | not measured |
+| **VPS, Intel Haswell (chosen)** | **3** | **5.7 s** | **3.67 s** | **4.95 s** | **0.75, vs. full model +0.00 [−0.05, +0.06]** |
+
+The VPS timings come from 12 requests per setting, so they are a guide rather than a precise benchmark. A third thread made sentences about 20% faster. Weight repacking made no clear difference on this CPU, so it stays off.
 
 ## Limitations
 
-- **The VPS is slower than expected.** Sentences take several seconds. Weight repacking and thread settings have not been benchmarked there yet.
-- **Quality on the VPS has not been scored.** The dev score above comes from the Mac CPU, and hardware can change some outputs.
+- **The VPS is slow for this model.** Its older CPU generates about 6.5 tokens per second, so a sentence takes about 3–5 seconds.
+- **Hardware changes some outputs.** On the VPS, 86 of 100 dev outputs match Colab exactly, with 99 valid and the same gist score as the full model.
 - **Dev has informed earlier choices,** so these scores are useful to compare versions, not as a final quality estimate.
 - **The model is not published yet.** The Qwen licence needs checking first.
 
@@ -74,7 +77,7 @@ Measured with the served settings (2 CPU threads, no weight repacking):
 
 ## Next
 
-Benchmark the VPS settings, score the dev sentences there, then check the Qwen licence before publishing the model.
+Check the Qwen licence before publishing the model.
 
 ## Reproduce
 
