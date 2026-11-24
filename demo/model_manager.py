@@ -119,12 +119,15 @@ class ModelManager:
     def queue_full(self) -> bool:
         return self._pending >= self.settings.max_pending
 
-    async def generate(self, sentence: str) -> str:
-        async with aclosing(self.stream(sentence)) as pieces:
+    async def generate(self, sentence: str, usage: dict | None = None) -> str:
+        async with aclosing(self.stream(sentence, usage)) as pieces:
             return "".join([piece async for piece in pieces]).strip()
 
-    async def stream(self, sentence: str) -> AsyncIterator[str]:
-        """Yield the answer piece by piece. Closing it early also stops the model."""
+    async def stream(self, sentence: str, usage: dict | None = None) -> AsyncIterator[str]:
+        """Yield the answer piece by piece and fill `usage` with token counts at the end.
+
+        Closing it early also stops the model.
+        """
         if self.queue_full():
             raise Busy("queue full")
         self._pending += 1
@@ -133,7 +136,7 @@ class ModelManager:
                 await self._ensure_loaded("sentence")
                 started = time.perf_counter()
                 try:
-                    async with aclosing(self._stream_completion(sentence)) as pieces:
+                    async with aclosing(self._stream_completion(sentence, usage)) as pieces:
                         async for piece in pieces:
                             yield piece
                 finally:
@@ -142,7 +145,7 @@ class ModelManager:
         finally:
             self._pending -= 1
 
-    async def _stream_completion(self, sentence: str) -> AsyncIterator[str]:
+    async def _stream_completion(self, sentence: str, usage: dict | None = None) -> AsyncIterator[str]:
         deadline = time.monotonic() + self.settings.generate_timeout
         try:
             async with self._client.stream("POST", "/completion", timeout=self.settings.generate_timeout, json={
@@ -158,6 +161,8 @@ class ModelManager:
                     if data.get("content"):
                         yield data["content"]
                     if data.get("stop"):
+                        if usage is not None:
+                            usage.update(input=data.get("tokens_evaluated"), output=data.get("tokens_predicted"))
                         return
         except (httpx.HTTPError, ValueError) as error:
             raise ModelFailed(f"model request failed: {type(error).__name__}") from error

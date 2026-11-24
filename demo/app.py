@@ -125,8 +125,9 @@ async def warmup(request: Request) -> dict:
 async def to_emoji(request: Request) -> dict:
     sentence = await read_sentence(request)
     sentence_limit.check(client_id(request))
+    usage: dict = {}
     try:
-        output = await request.app.state.model.generate(sentence)
+        output = await request.app.state.model.generate(sentence, usage)
     except Busy:
         raise ApiError(503, "busy", "The demo is busy, please try again later.", 30) from None
     except ModelFailed as error:
@@ -134,7 +135,7 @@ async def to_emoji(request: Request) -> dict:
         raise ApiError(503, "unavailable", "The model is unavailable, please try again.", 10) from None
     if check_validity(output) != "ok":
         raise ApiError(422, "no_valid_output", "The model couldn't turn this one into emojis. Try rephrasing it.")
-    return {"emojis": output}
+    return {"emojis": output, "tokens": usage}
 
 
 def event(payload: dict) -> str:
@@ -143,8 +144,9 @@ def event(payload: dict) -> str:
 
 async def emoji_events(request: Request, sentence: str) -> AsyncIterator[str]:
     pieces = []
+    usage: dict = {}
     try:
-        async with aclosing(request.app.state.model.stream(sentence)) as stream:
+        async with aclosing(request.app.state.model.stream(sentence, usage)) as stream:
             async for piece in stream:
                 if await request.is_disconnected():
                     return
@@ -161,7 +163,7 @@ async def emoji_events(request: Request, sentence: str) -> AsyncIterator[str]:
     if check_validity(output) != "ok":
         yield event({"type": "error", "code": "no_valid_output"})
     else:
-        yield event({"type": "done", "emojis": output})
+        yield event({"type": "done", "emojis": output, "tokens": usage})
 
 
 @app.post("/emoji/stream")

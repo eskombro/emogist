@@ -29,8 +29,10 @@ The export and evaluation of the model are documented in [Step 6](../06_serving/
 |---|---|
 | `GET /status` | Returns `unloaded`, `loading`, `unloading` or `ready`, without loading the model |
 | `POST /warmup` | Starts loading and returns immediately |
-| `POST /emoji` | Takes `{"sentence": "..."}` and returns `{"emojis": "..."}` |
-| `POST /emoji/stream` | Same input, streamed as server-sent events: `piece`, then `done` or `error` |
+| `POST /emoji` | Takes `{"sentence": "..."}` and returns `{"emojis": "...", "tokens": {"input": 0, "output": 0}}` |
+| `POST /emoji/stream` | Same input, streamed as server-sent events: `piece`, then `done` (with `tokens`) or `error` |
+
+Input tokens include the fixed instruction and chat template, not only the visitor's sentence.
 
 ## Run locally
 
