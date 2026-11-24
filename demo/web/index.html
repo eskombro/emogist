@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Turn an everyday English or French sentence into emojis that keep the gist.">
 <title>emogist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap">
 <style>
   :root {
     color-scheme: light dark;
@@ -20,13 +23,15 @@
   * { box-sizing: border-box; }
   body {
     margin: 0; min-height: 100vh; padding: 32px 16px 48px; background: var(--bg); color: var(--text);
-    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+    font: 16px/1.5 Arvo, Rockwell, Georgia, serif;
   }
+  #emojis, .chips, .symbol { font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif; }
   main { width: 100%; max-width: 680px; margin: 0 auto; }
   header { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
   h1 { margin: 0; font-size: 2rem; letter-spacing: -0.02em; }
   h2 { margin: 0 0 6px; font-size: 1.25rem; letter-spacing: -0.01em; }
-  .intro { margin: 6px 0 24px; color: var(--muted); }
+  .tagline { display: flex; gap: 10px; margin: 2px 0 0; font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif; font-size: 1.25rem; line-height: 1.3; white-space: nowrap; }
+  .intro { margin: 10px 0 24px; color: var(--muted); }
 
   .language { position: relative; display: inline-grid; grid-template-columns: 1fr 1fr; flex: none; padding: 3px; background: var(--soft); border: 1px solid var(--line); border-radius: 999px; }
   .language::before {
@@ -120,7 +125,9 @@
 <body>
 <main>
   <header>
-    <h1>emogist</h1>
+    <div>
+      <h1>Emogist</h1>
+    </div>
     <div class="language" role="group" id="language">
       <button type="button" data-lang="en" aria-label="English">
         <svg viewBox="0 0 60 60" aria-hidden="true"><clipPath id="uk"><circle cx="30" cy="30" r="30"/></clipPath><g clip-path="url(#uk)"><rect width="60" height="60" fill="#012169"/><path d="M0 0 60 60M60 0 0 60" stroke="#fff" stroke-width="12"/><path d="M0 0 60 60M60 0 0 60" stroke="#c8102e" stroke-width="5"/><path d="M30 0V60M0 30H60" stroke="#fff" stroke-width="20"/><path d="M30 0V60M0 30H60" stroke="#c8102e" stroke-width="12"/></g></svg>
@@ -133,7 +140,6 @@
     </div>
   </header>
   <p class="intro" data-t="intro"></p>
-
   <form id="form">
     <label for="sentence" data-t="label"></label>
     <textarea id="sentence" maxlength="200"></textarea>
