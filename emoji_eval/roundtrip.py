@@ -84,6 +84,39 @@ JUDGE_SCHEMA = {
     "additionalProperties": False,
 }
 
+# v2 judge (step 7): three criteria instead of one gist score, so a related guess with the
+# wrong facts scores above an unrelated one. v1 above stays unchanged for steps 0 to 6.
+JUDGE_V2_CACHE_FILE = CACHE_DIR / "judge_v2_cache.csv"
+JUDGE_PROMPT_V2 = """You compare an original sentence with a guess written by someone who only saw a short emoji summary of it. Score how much of the original the guess recovers, on three criteria:
+
+Topic: is the guess about the same situation or subject (the setting, the main people or things)?
+Event: does the same main thing happen? Who did what counts here: swapped roles (victim and culprit) or an event that is negated (did not happen instead of happened) make the event wrong.
+Outcome: does it end the same way (the result, the consequence, or the emotion the story is about)? Answer "n/a" only when the original has no outcome beyond its event (for example "Ziri was in his room.").
+
+For each criterion: 2 = yes, 1 = partly, 0 = no.
+
+Ignore: wording, tense, language register, I/he/she/we, small details, and emotions that are added or missing, unless the emotion is the outcome.
+
+Give a one-sentence reason first, then the three scores."""
+
+JUDGE_V2_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "reason": {"type": "string"},
+        "topic": {"type": "string", "enum": ["0", "1", "2"]},
+        "event": {"type": "string", "enum": ["0", "1", "2"]},
+        "outcome": {"type": "string", "enum": ["0", "1", "2", "n/a"]},
+    },
+    "required": ["reason", "topic", "event", "outcome"],
+    "additionalProperties": False,
+}
+
+
+def criteria_score(topic: str, event: str, outcome: str) -> float:
+    """v2 score from 0 to 1: the share of the points available. An n/a outcome is left out."""
+    points = [int(topic), int(event)] + ([] if outcome == "n/a" else [int(outcome)])
+    return sum(points) / (2 * len(points))
+
 
 # ---------- small CSV caches ----------
 
@@ -112,6 +145,12 @@ def load_judge_cache() -> dict:
     """(original, guess) -> (score, reason)."""
     rows = read_cache(JUDGE_CACHE_FILE, ["original", "guess"])
     return {k: (int(r["score"]), r["reason"]) for k, r in rows.items()}
+
+
+def load_judge_v2_cache() -> dict:
+    """(original, guess) -> {"topic", "event", "outcome", "reason"}."""
+    rows = read_cache(JUDGE_V2_CACHE_FILE, ["original", "guess"])
+    return {k: {f: r[f] for f in ("topic", "event", "outcome", "reason")} for k, r in rows.items()}
 
 
 # ---------- model calls ----------
@@ -172,6 +211,34 @@ def judge(client: anthropic.Anthropic, cache: dict, original: str, guess: str) -
     append_cache(JUDGE_CACHE_FILE, {"original": original, "guess": guess,
                                     "score": score, "reason": reason})
     return score, reason
+
+
+def judge_v2(client: anthropic.Anthropic, cache: dict, original: str, guess: str) -> dict:
+    """v2 criteria for a guess: topic, event, outcome ("0"-"2", outcome may be "n/a"),
+    reason, and score (0 to 1, see criteria_score)."""
+    if (original, guess) not in cache:
+        if not guess.strip():
+            result = {"topic": "0", "event": "0", "outcome": "0", "reason": "empty guess"}
+        else:
+            response = client.beta.messages.create(
+                model=JUDGE_MODEL,
+                max_tokens=2000,
+                system=JUDGE_PROMPT_V2,
+                messages=[{"role": "user", "content": f"Original: {original}\nGuess: {guess}"}],
+                output_config={"effort": "low",
+                               "format": {"type": "json_schema", "schema": JUDGE_V2_SCHEMA}},
+                betas=["server-side-fallback-2026-07-01"],
+                fallbacks="default",
+            )
+            if response.stop_reason == "refusal":
+                result = {"topic": "0", "event": "0", "outcome": "0", "reason": "judge refused"}
+            else:
+                data = json.loads(next(b.text for b in response.content if b.type == "text"))
+                result = {f: data[f] for f in ("topic", "event", "outcome", "reason")}
+        cache[(original, guess)] = result
+        append_cache(JUDGE_V2_CACHE_FILE, {"original": original, "guess": guess, **result})
+    result = cache[(original, guess)]
+    return {**result, "score": criteria_score(result["topic"], result["event"], result["outcome"])}
 
 
 def similarities(embedder: SentenceTransformer, originals: list[str], decoded: list[str]) -> list[float]:

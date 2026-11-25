@@ -1,0 +1,301 @@
+id,set,lang,source,type,sentence,author,generator,tags
+ai2-en-conditional-00000,dev,en,ai,conditional,"If no one shows up, I'll just sit there alone.",,deepseek-v4.1-flash:cloud,long negation conditional
+ai2-en-conditional-00002,dev,en,ai,conditional,"If the flight gets delayed, we will finish the whole puzzle before boarding.",,deepseek-v4.1-flash:cloud,long conditional
+ai2-en-conditional-00004,dev,en,ai,conditional,"If my brother's car stays broken, he'll miss his daughter's birthday.",,deepseek-v4.1-flash:cloud,long conditional
+ai2-en-conditional-00006,dev,en,ai,conditional,"If I stall the car one more time, I will just abandon it and walk.",,deepseek-v4.1-flash:cloud,long conditional
+ai2-en-conditional-00008,dev,en,ai,conditional,"If my brother shows up to the school reunion, he'll spend the whole night retelling the same story.",,deepseek-v4.1-flash:cloud,long conditional
+ai2-en-conditional-00012,dev,en,ai,conditional,"If my brother doesn't find his wallet soon, I'll have to cover his dinner again.",,deepseek-v4.1-flash:cloud,long negation conditional
+ai2-en-conditional-00014,dev,en,ai,conditional,"If this rain finally stops, we can still get the kids to the park before dinner.",,deepseek-v4.1-flash:cloud,long conditional
+ai2-en-future-00000,dev,en,ai,future,I'm glad the snow will cover the driveway before I have to shovel it.,,deepseek-v4.1-flash:cloud,long
+ai2-en-future-00002,dev,en,ai,future,"We’re going to sit in the dark again tomorrow night, and I can’t face it.",,deepseek-v4.1-flash:cloud,long
+ai2-en-future-00004,dev,en,ai,future,My brother is going to shovel the driveway and find his car eventually.,,deepseek-v4.1-flash:cloud,long
+ai2-en-future-00006,dev,en,ai,future,We're going to say goodbye to our classroom next week.,,deepseek-v4.1-flash:cloud,long speech
+ai2-en-future-00008,dev,en,ai,future,My cousin is going to run the whole office next week.,,deepseek-v4.1-flash:cloud,long
+ai2-en-future-00010,dev,en,ai,future,We're going to finish the whole ridge trail next week.,,deepseek-v4.1-flash:cloud,long
+ai2-en-mishap-00000,dev,en,ai,mishap,"I forgot the tent poles, so we slept under the stars and I woke up grinning.",,deepseek-v4.1-flash:cloud,long
+ai2-en-mishap-00002,dev,en,ai,mishap,I dropped my phone in the mosh pit and still managed to catch the entire encore on video.,,deepseek-v4.1-flash:cloud,long
+ai2-en-mishap-00004,dev,en,ai,mishap,"My brother spilled coffee on the map, so now we're navigating by vibes.",,deepseek-v4.1-flash:cloud,long
+ai2-en-mishap-00006,dev,en,ai,mishap,"I asked for a trim and she cut it all off, so now I have to hide.",,deepseek-v4.1-flash:cloud,long speech
+ai2-en-mishap-00008,dev,en,ai,mishap,"My sister’s flight got delayed three hours, so she ended up leading the whole conference call from the airport.",,deepseek-v4.1-flash:cloud,long number
+ai2-en-mishap-00010,dev,en,ai,mishap,"The power cut off my sister’s speech mid-sentence, and now everyone is staring at me.",,deepseek-v4.1-flash:cloud,long
+ai2-en-moment-00000,dev,en,ai,moment,My dad spent the whole power cut trying to reset the microwave clock and never noticed the lights came back on.,,deepseek-v4.1-flash:cloud,long negation
+ai2-en-moment-00002,dev,en,ai,moment,We found the perfect spot and got the tent up.,,deepseek-v4.1-flash:cloud,long
+ai2-en-moment-00004,dev,en,ai,moment,My sister's cat just walked across the counter and knocked my coffee into the sink again.,,deepseek-v4.1-flash:cloud,long
+ai2-en-moment-00006,dev,en,ai,moment,"I saw my neighbor finally move his car, so I can pull out of my driveway now.",,deepseek-v4.1-flash:cloud,long
+ai2-en-moment-00008,dev,en,ai,moment,We waited forty minutes for the wrong bus again.,,deepseek-v4.1-flash:cloud,long number
+ai2-en-moment-00010,dev,en,ai,moment,My sister parallel parked on the first try and just sat there grinning at me.,,deepseek-v4.1-flash:cloud,long
+ai2-en-numbers-00000,dev,en,ai,numbers,"Thank goodness, my brother's bus finally arrived at 8:15.",,deepseek-v4.1-flash:cloud,long number
+ai2-en-numbers-00002,dev,en,ai,numbers,My friend has worked at this office for 12 years.,,deepseek-v4.1-flash:cloud,long number
+ai2-en-numbers-00004,dev,en,ai,numbers,"My sister's blind date showed up 40 minutes late, but he turned out to be great.",,deepseek-v4.1-flash:cloud,long number
+ai2-en-numbers-00006,dev,en,ai,numbers,"I taught my rescue dog three new tricks this week, and she nailed every single one.",,deepseek-v4.1-flash:cloud,long number
+ai2-en-numbers-00009,dev,en,ai,numbers,We finally adopted the kitten after waiting 48 weeks.,,gpt-oss:120b-cloud,long number
+ai2-en-numbers-00011,dev,en,ai,numbers,"We spent $45 on a haircut, and now it looks like a DIY disaster.",,gpt-oss:120b-cloud,long number
+ai2-en-past-00000,dev,en,ai,past,"My brother cut his own hair this morning, so now he keeps finding excuses to walk past the mirror.",,deepseek-v4.1-flash:cloud,long
+ai2-en-past-00002,dev,en,ai,past,My sister froze up because she forgot her own resume.,,deepseek-v4.1-flash:cloud,long
+ai2-en-past-00004,dev,en,ai,past,"I already ate dinner, so I'm not hungry now.",,deepseek-v4.1-flash:cloud,long negation
+ai2-en-past-00006,dev,en,ai,past,"Because my brother promised to clean the kitchen before I got home, I’m stuck scrubbing his greasy pans at ten.",,deepseek-v4.1-flash:cloud,long number
+ai2-en-past-00008,dev,en,ai,past,My brother shoveled the driveway because he wanted to build a snowman.,,deepseek-v4.1-flash:cloud,long
+ai2-en-past-00010,dev,en,ai,past,"I burned the first batch of cookies, so I pulled the second tray out just in time.",,deepseek-v4.1-flash:cloud,long
+ai2-en-question-00000,dev,en,ai,question,Did I really just put my dirty dishes in the washing machine instead of the dishwasher?,,deepseek-v4.1-flash:cloud,long question
+ai2-en-question-00002,dev,en,ai,question,Does your brother really expect us to wait here while he hikes the entire trail?,,deepseek-v4.1-flash:cloud,long question
+ai2-en-question-00004,dev,en,ai,question,"Since I get to watch the kids tonight, can I finally show them how to make my famous chocolate chip cookies?",,deepseek-v4.1-flash:cloud,long question
+ai2-en-question-00006,dev,en,ai,question,"I accidentally used salt instead of sugar in the cake I brought to the party, so can I blame the recipe?",,deepseek-v4.1-flash:cloud,long question
+ai2-en-question-00008,dev,en,ai,question,Do I really have to sit through this whole reunion?,,deepseek-v4.1-flash:cloud,long question
+ai2-en-question-00010,dev,en,ai,question,Is your mom coming over for the sunny barbecue?,,deepseek-v4.1-flash:cloud,long question
+ai2-en-question-00012,dev,en,ai,question,Did we really have a pop quiz in math today?,,deepseek-v4.1-flash:cloud,long question
+ai2-en-speech-00000,dev,en,ai,speech,My sister texted me that she already booked us a beach house for July.,,deepseek-v4.1-flash:cloud,long
+ai2-en-speech-00002,dev,en,ai,speech,My sister texted that she got the job.,,deepseek-v4.1-flash:cloud,medium
+ai2-en-speech-00004,dev,en,ai,speech,"My sister texted me that her new haircut makes her look like a completely different person, and she loves it.",,deepseek-v4.1-flash:cloud,long
+ai2-en-speech-00006,dev,en,ai,speech,We told each other we were glad the reunion was finally over.,,deepseek-v4.1-flash:cloud,long speech
+ai2-en-speech-00008,dev,en,ai,speech,"We both mumbled ""happy birthday"" after completely forgetting her name.",,deepseek-v4.1-flash:cloud,long
+ai2-en-speech-00010,dev,en,ai,speech,My mom told me she misses cooking for us now that she's alone.,,deepseek-v4.1-flash:cloud,long speech
+tatoeba-10793601,dev,en,real,long,"If you wait until tomorrow, I could go with you.",megamanenm,,long conditional
+tatoeba-11018256,dev,en,real,long,I wonder if they would open up to me.,megamanenm,,long
+tatoeba-11205627,dev,en,real,long,Ziri was walking his dog on a sunny afternoon.,Amastan,,long
+tatoeba-13117644,dev,en,real,long,She knew she would regret this in the future.,overcooked,,long
+tatoeba-13636775,dev,en,real,long,We decided to catch a late showing at the new multiplex downtown.,rul,,long
+tatoeba-13639078,dev,en,real,long,We're going to Toronto to see our other partner.,rul,,long
+tatoeba-3121768,dev,en,real,long,Today I'll go to the cinema with Tom's brother.,sundown,,long
+tatoeba-3723306,dev,en,real,long,Tom never mentioned any of this to me before.,CM,,long negation
+tatoeba-3725424,dev,en,real,long,Tom lost his job as a used car salesman.,CM,,long
+tatoeba-6029565,dev,en,real,long,I keep repeating the same word over and over.,mailohilohi,,long
+tatoeba-6503041,dev,en,real,long,Tom and Mary did a lot more than what we asked them to.,CT,,long speech
+tatoeba-7292357,dev,en,real,long,Tom tried to understand why he was different from other people.,Hybrid,,long
+tatoeba-7849951,dev,en,real,long,It was the worst pain I had ever experienced.,Hybrid,,long
+tatoeba-8200207,dev,en,real,long,He decided to go to Algeria to continue his education.,Amastan,,long
+tatoeba-8409197,dev,en,real,long,"Before you get on that airplane, I need to tell you something very important.",Amastan,,long speech
+tatoeba-10597195,dev,en,real,other,I'm not going to stay here much longer.,CK,,medium negation
+tatoeba-11366737,dev,en,real,other,My language-learning has slowed down this year.,espamatics,,medium
+tatoeba-11451958,dev,en,real,other,We need to stay goal-oriented.,Amastan,,short
+tatoeba-11607499,dev,en,real,other,Tom went crowdsurfing in his wheelchair.,shekitten,,medium
+tatoeba-12295238,dev,en,real,other,Our prices are the lowest.,CK,,short
+tatoeba-12647790,dev,en,real,other,Ziri has met some new friends.,always,,medium
+tatoeba-12856174,dev,en,real,other,I'm getting a sense of déjà vu here.,Teangloir,,medium
+tatoeba-12884337,dev,en,real,other,I do not belong here.,Josephlingo,,short negation
+tatoeba-2473581,dev,en,real,other,She's not even that good looking.,Hybrid,,medium negation
+tatoeba-2543764,dev,en,real,other,I was never good at figures.,CK,,medium negation
+tatoeba-3724178,dev,en,real,other,I never minded all that much.,CM,,medium negation
+tatoeba-4788027,dev,en,real,other,I bought lots of great stuff.,mailohilohi,,medium
+tatoeba-5746732,dev,en,real,other,I saw men carrying guns.,CM,,short
+tatoeba-6035809,dev,en,real,other,I got lost in the cave.,mailohilohi,,medium
+tatoeba-6256910,dev,en,real,other,I want to go to graduate school.,CK,,medium
+tatoeba-6356826,dev,en,real,other,I do that once a year.,CK,,medium number
+tatoeba-6586568,dev,en,real,other,Just left my dad a voicemail.,Eccles17,,medium
+tatoeba-6853989,dev,en,real,other,What happened was my fault.,Hybrid,,short
+tatoeba-7111272,dev,en,real,other,I don't work as much as Tom.,CM,,medium negation
+tatoeba-7444053,dev,en,real,other,Tom and Mary told me they're well.,CT,,medium speech
+tatoeba-7919676,dev,en,real,other,I just made an idiot of myself today.,Hybrid,,medium
+tatoeba-8567447,dev,en,real,other,I think that I'd buy this towel.,Amastan,,medium
+tatoeba-9314764,dev,en,real,other,I feel like a failure.,CM,,short
+tatoeba-9637091,dev,en,real,other,She fell asleep at the wheel.,shekitten,,medium
+tatoeba-9954425,dev,en,real,other,He hopped the fence to the rail yard.,ddnktr,,medium
+tatoeba-10747911,dev,en,real,question,Who am I to judge?,ddnktr,,short question
+tatoeba-11629570,dev,en,real,question,"If you've finished reading the paper, can I have a look at it?",WarsawWill,,long question conditional
+tatoeba-12256744,dev,en,real,question,"I'd love some more coffee, but not here. How about I make us some at my flat?",sundown,,long question negation
+tatoeba-2698102,dev,en,real,question,Did you know that I want to marry you?,_undertoad,,long question
+tatoeba-3243960,dev,en,real,question,Could you have a look and see if there's enough bread for our lunches tomorrow?,patgfisher,,long question
+tatoeba-5295024,dev,en,real,question,"Kids really are little devils, aren't they?",mailohilohi,,medium question negation
+tatoeba-5961582,dev,en,real,question,May I use your bathroom?,mailohilohi,,short question
+tatoeba-8380990,dev,en,real,question,Was I mentioned in the article?,DostKaplan,,medium question
+tatoeba-8595486,dev,en,real,question,What are we getting her for Christmas?,feyMorgaina,,medium question
+tatoeba-8791340,dev,en,real,question,Did you get the readings I sent you?,shekitten,,medium question
+ai2-fr-conditional-00000,dev,fr,ai,conditional,"Si elle oublie encore de payer la facture d'électricité, je lui coupe l'accès à la box et on verra combien de temps elle tient.",,deepseek-v4.1-flash:cloud,long conditional
+ai2-fr-conditional-00002,dev,fr,ai,conditional,"Si mon frère arrive à jouer ce morceau au concert, je serai si fier que je le serrerai dans mes bras devant tout le monde.",,deepseek-v4.1-flash:cloud,long conditional
+ai2-fr-conditional-00004,dev,fr,ai,conditional,"Si la neige tient jusqu'à demain matin, je resterai seul devant la fenêtre à regarder ta trace disparaître.",,deepseek-v4.1-flash:cloud,long conditional
+ai2-fr-conditional-00006,dev,fr,ai,conditional,"Si je range tout maintenant, je pourrai admirer mon salon impeccable.",,deepseek-v4.1-flash:cloud,long conditional
+ai2-fr-conditional-00008,dev,fr,ai,conditional,"Si on oublie la sortie de 15 heures, on finit tous à la bibliothèque à réviser jusqu'à la fermeture.",,deepseek-v4.1-flash:cloud,long number conditional
+ai2-fr-conditional-00010,dev,fr,ai,conditional,"Si je réussis mon permis du premier coup, je fais la fête à l'auto-école.",,deepseek-v4.1-flash:cloud,long conditional
+ai2-fr-conditional-00012,dev,fr,ai,conditional,"Si je sors maintenant dans cette neige, je vais glisser et finir les fesses dans la poudreuse.",,deepseek-v4.1-flash:cloud,long conditional
+ai2-fr-future-00000,dev,fr,ai,future,Je vais encore devoir expliquer à ma sœur pourquoi je n'ai pas prévenu pour le repas de dimanche.,,deepseek-v4.1-flash:cloud,long negation
+ai2-fr-future-00002,dev,fr,ai,future,Il va enfin ranger son atelier tout seul comme un grand.,,deepseek-v4.1-flash:cloud,long
+ai2-fr-future-00004,dev,fr,ai,future,"Mon frère va enfin pouvoir souffler, son match de foot est reporté à la semaine prochaine.",,deepseek-v4.1-flash:cloud,long
+ai2-fr-future-00006,dev,fr,ai,future,"La semaine prochaine, on va devoir annuler notre abonnement à la salle de sport, faute d'argent.",,deepseek-v4.1-flash:cloud,long
+ai2-fr-future-00008,dev,fr,ai,future,Mon frère va encore se relever pour grignoter en cachette cette nuit.,,deepseek-v4.1-flash:cloud,long
+ai2-fr-future-00010,dev,fr,ai,future,"Dimanche, on va enfin grimper ce col à vélo tous les deux et je vais pouvoir montrer à mon frère ce dont on est capables.",,deepseek-v4.1-flash:cloud,long number
+ai2-fr-mishap-00000,dev,fr,ai,mishap,Mon frère a raté son penalty et tout le monde a explosé de rire.,,deepseek-v4.1-flash:cloud,long
+ai2-fr-mishap-00002,dev,fr,ai,mishap,On a voulu réparer la fuite nous-mêmes et maintenant on a une piscine dans le salon.,,deepseek-v4.1-flash:cloud,long
+ai2-fr-mishap-00004,dev,fr,ai,mishap,"J'ai laissé le gâteau trop longtemps au four et maintenant il est tout sec, je n'ose même pas le montrer à mon frère.",,deepseek-v4.1-flash:cloud,long number negation
+ai2-fr-mishap-00006,dev,fr,ai,mishap,"On a renversé la soupe sur la robe de la mariée, du coup tout le monde a bien ri.",,deepseek-v4.1-flash:cloud,long
+ai2-fr-mishap-00008,dev,fr,ai,mishap,"On a calé l'armoire dans l'escalier et bloqué la porte, mais on l'a montée quand même.",,deepseek-v4.1-flash:cloud,long
+ai2-fr-mishap-00010,dev,fr,ai,mishap,Mon oncle a encore ramené son dessert immangeable et tout le monde a fini par commander des pizzas.,,deepseek-v4.1-flash:cloud,long
+ai2-fr-moment-00000,dev,fr,ai,moment,"Finalement, Paul a réussi à réserver une table pour ce soir.",,deepseek-v4.1-flash:cloud,long
+ai2-fr-moment-00002,dev,fr,ai,moment,Je viens de décoller la dernière affiche du mur et la pièce sonne bizarrement vide.,,deepseek-v4.1-flash:cloud,long
+ai2-fr-moment-00004,dev,fr,ai,moment,Je passe la journée à démonter des cartons que j'ai déjà démontés hier.,,deepseek-v4.1-flash:cloud,long
+ai2-fr-moment-00006,dev,fr,ai,moment,"J'ai mis dix minutes à sortir du parking, mais au moins je suis lancé.",,deepseek-v4.1-flash:cloud,long number
+ai2-fr-moment-00008,dev,fr,ai,moment,Il a passé dix minutes devant le même fossile.,,deepseek-v4.1-flash:cloud,long number
+ai2-fr-moment-00010,dev,fr,ai,moment,"La cérémonie est enfin terminée, je peux souffler et aller boire un verre.",,deepseek-v4.1-flash:cloud,long
+ai2-fr-numbers-00000,dev,fr,ai,numbers,"Ça y est, j'ai enfin réussi à faire sortir mon père du musée après trois heures.",,deepseek-v4.1-flash:cloud,long number
+ai2-fr-numbers-00003,dev,fr,ai,numbers,"On a attendu 45 minutes avant le début, j'ai bafouillé.",,gpt-oss:120b-cloud,long number
+ai2-fr-numbers-00005,dev,fr,ai,numbers,"On s’est retrouvés 42 ans plus tard, et on a encore ri comme adolescents.",,gpt-oss:120b-cloud,long number
+ai2-fr-numbers-00009,dev,fr,ai,numbers,Je supporte 5 minutes de musique de mon colocataire.,,gpt-oss:120b-cloud,long number
+ai2-fr-numbers-00011,dev,fr,ai,numbers,"Mon frère a laissé mijoter la sauce pendant 45 minutes, et maintenant tout est brûlé.",,gpt-oss:120b-cloud,long number
+ai2-fr-numbers-00013,dev,fr,ai,numbers,"On a payé 45 euros pour la coupe, honteux.",,gpt-oss:120b-cloud,long number
+ai2-fr-past-00000,dev,fr,ai,past,"Je me suis endormi chez le coiffeur, donc je ressemble à un hérisson.",,deepseek-v4.1-flash:cloud,long
+ai2-fr-past-00002,dev,fr,ai,past,Je dois supporter l'oncle de mon ami au mariage parce qu'il s'est incrusté à notre table.,,deepseek-v4.1-flash:cloud,long
+ai2-fr-past-00004,dev,fr,ai,past,"On a fini les cartons ce matin, donc on souffle enfin dans le nouveau salon.",,deepseek-v4.1-flash:cloud,long
+ai2-fr-past-00006,dev,fr,ai,past,Je n’arrive pas à me motiver pour jouer ce soir parce que ma console a planté juste avant la fin de ma partie.,,deepseek-v4.1-flash:cloud,long negation
+ai2-fr-past-00008,dev,fr,ai,past,"Comme j'ai oublié de confirmer hier soir, je dois maintenant demander à ma sœur de garder les enfants alors qu'elle avait prévu autre chose.",,deepseek-v4.1-flash:cloud,long
+ai2-fr-past-00010,dev,fr,ai,past,"Comme elle a eu sa place au premier rang hier soir, ma sœur est encore toute retournée par ce concert et n'arrête pas d'en parler.",,deepseek-v4.1-flash:cloud,long negation
+ai2-fr-question-00000,dev,fr,ai,question,"Ton frère a enfin arrêté de jouer et il a fini ses devoirs, tu peux vérifier ?",,deepseek-v4.1-flash:cloud,long question
+ai2-fr-question-00002,dev,fr,ai,question,"J'ai trouvé des fraises bien mûres, tu en veux pour ce soir ?",,deepseek-v4.1-flash:cloud,long question
+ai2-fr-question-00005,dev,fr,ai,question,"Je glisse partout, tu crois que ça va ?",,gpt-oss:120b-cloud,medium question
+ai2-fr-question-00007,dev,fr,ai,question,Tu es content que le dentiste ait confirmé l'heure ?,,gpt-oss:120b-cloud,long question
+ai2-fr-question-00009,dev,fr,ai,question,Est‑ce que je dois vraiment me préparer à expliquer à mon médecin pourquoi j’ai confondu ma pilule du matin avec mon chewing‑gum ?,,gpt-oss:120b-cloud,long question
+ai2-fr-question-00011,dev,fr,ai,question,"Je suis vraiment perdu, est-ce que je peux vraiment passer le test de conduite demain ?",,gpt-oss:120b-cloud,long question
+ai2-fr-question-00013,dev,fr,ai,question,Ai‑je vraiment progressé assez pour soulever 80 kg ?,,gpt-oss:120b-cloud,long question number
+ai2-fr-speech-00000,dev,fr,ai,speech,J'ai bredouillé que j'avais oublié mon maillot à la plage.,,deepseek-v4.1-flash:cloud,long
+ai2-fr-speech-00002,dev,fr,ai,speech,Mon frère m'a écrit qu'il avait trouvé du fromage et des crackers pour son petit plaisir de minuit.,,deepseek-v4.1-flash:cloud,long
+ai2-fr-speech-00004,dev,fr,ai,speech,Mon frère a soupiré que son équipe avait encore perdu et qu'il n'irait plus au stade.,,deepseek-v4.1-flash:cloud,long negation
+ai2-fr-speech-00006,dev,fr,ai,speech,Mon voisin nous a annoncé tout sourire que son chien avait enfin appris à rapporter la balle.,,deepseek-v4.1-flash:cloud,long
+ai2-fr-speech-00008,dev,fr,ai,speech,J'ai écrit à mon ami que la balade à vélo de ce matin était vraiment agréable et que j'avais hâte de recommencer.,,deepseek-v4.1-flash:cloud,long
+ai2-fr-speech-00010,dev,fr,ai,speech,"Mon frère m'a raconté que le voisin avait appelé la mairie pour se plaindre du chantier, en rigolant.",,deepseek-v4.1-flash:cloud,long speech
+tatoeba-10506420,dev,fr,real,long,"En cours de route, Tom a rencontré des amis.",felix63,,long
+tatoeba-10921109,dev,fr,real,long,Nous avons réservé la salle depuis plus d'un an.,Aiji,,long
+tatoeba-12622580,dev,fr,real,long,"Il est revenu de la fête complètement ensanglanté, son ennemi ne l'a vraiment pas loupé.",LoverofEnglish,,long negation
+tatoeba-4184277,dev,fr,real,long,"Oups, je me suis trompée, je voulais dire « trois mille yens », pas « trois mille euros ».",gillux,,long number negation
+tatoeba-5696250,dev,fr,real,long,La police est sur le coup ; elle ne tardera pas à retrouver le coupable.,gillux,,long negation
+tatoeba-6371743,dev,fr,real,long,"Si c'est elle qui te l'a dit, c'est forcément vrai.",Yemana,,long speech conditional
+tatoeba-6541313,dev,fr,real,long,"D'abord je suis allé nager, puis j'ai fait les courses.",felix63,,long
+tatoeba-6883762,dev,fr,real,long,"Depuis que je me suis fait hypnotiser, j'ai l'impression que le temps passe lentement.",GB3,,long
+tatoeba-6982198,dev,fr,real,long,Marie lui a gentiment fait comprendre qu'elle ne voulait pas le revoir.,Blabla,,long negation
+tatoeba-7071043,dev,fr,real,long,"Soit mon frère est tombé du lit, soit le chat a fait un vol plané.",Aiji,,long
+tatoeba-747882,dev,fr,real,long,Elle est rédactrice en chef d'un grand quotidien régional.,Cocorico,,long
+tatoeba-8271201,dev,fr,real,long,Il n'est pas toujours facile de trouver du temps pour tout ce que l'on voudrait.,Rockaround,,long negation
+tatoeba-8319627,dev,fr,real,long,"Depuis l'arrivée de leur mère, les enfants sont insupportables.",felix63,,long
+tatoeba-8620475,dev,fr,real,long,"C'est bien rigolo tout ça, mais je n'ai pas que ça à faire.",Aiji,,long negation
+tatoeba-8660766,dev,fr,real,long,Il n'a pas eu assez de temps pour faire tout ce qu'il voulait.,Julien_PDC,,long negation
+tatoeba-10186761,dev,fr,real,other,Elles ne le voient pas.,felix63,,short negation
+tatoeba-11176249,dev,fr,real,other,Il doit assumer son rôle de meneur.,Aiji,,medium
+tatoeba-12171460,dev,fr,real,other,J'ai une bonne caisse d'assurance maladie.,felix63,,medium
+tatoeba-12225907,dev,fr,real,other,Nous mourrons tous un jour ou l’autre.,Orange,,medium
+tatoeba-12793167,dev,fr,real,other,Il l'a déshabillé d'un seul coup de regard.,LoverofEnglish,,medium
+tatoeba-12835400,dev,fr,real,other,Je traverse une mauvaise passe.,sacredceltic,,short
+tatoeba-1896639,dev,fr,real,other,Je ne les pleure pas.,Amastan,,short negation
+tatoeba-2777974,dev,fr,real,other,Je n'ai pas les moyens.,Micsmithel,,short negation
+tatoeba-2913117,dev,fr,real,other,Elles étaient adossées au mur.,Amastan,,short
+tatoeba-3017682,dev,fr,real,other,Je n'ai pas de lave-vaisselle.,Blabla,,short negation
+tatoeba-3177495,dev,fr,real,other,Il poussa un profond soupir de soulagement.,Blabla,,medium
+tatoeba-3259867,dev,fr,real,other,Elle arrive presque toujours en retard.,nimfeo,,medium
+tatoeba-3364356,dev,fr,real,other,Il n'est pas obligé de le savoir.,Blabla,,medium negation
+tatoeba-4200322,dev,fr,real,other,Il casse souvent nos fenêtres avec une balle.,Amastan,,medium
+tatoeba-4535539,dev,fr,real,other,Je te déconseille d'aller en Finlande.,Amastan,,medium
+tatoeba-4613934,dev,fr,real,other,Je sais que vous êtes tous des lâches.,Amastan,,medium
+tatoeba-540527,dev,fr,real,other,"Veuillez recevoir, monsieur, mes salutations distinguées.",pjer,,medium
+tatoeba-5412343,dev,fr,real,other,Je ne suis pas n'importe qui.,Scorpionvenin14,,medium negation
+tatoeba-5638405,dev,fr,real,other,Ils allèrent se coucher très tard.,Blabla,,medium
+tatoeba-6080435,dev,fr,real,other,On sonne à la porte.,Blabla,,short
+tatoeba-6380241,dev,fr,real,other,Je pars pour Paris à dix heures.,felix63,,medium number
+tatoeba-7414798,dev,fr,real,other,Nous sommes donc tous tristes.,tras,,short
+tatoeba-8721326,dev,fr,real,other,Ils exécutent les ordres sans rechigner.,Julien_PDC,,medium
+tatoeba-9035112,dev,fr,real,other,Il s'est placé derrière le pupitre.,Julien_PDC,,medium
+tatoeba-9353810,dev,fr,real,other,Je me promène à vélo.,Julien_PDC,,short
+tatoeba-1047128,dev,fr,real,question,"Mon chéri, peux-tu repasser ma robe, s'il te plait ?",Bruno,,long question
+tatoeba-1459545,dev,fr,real,question,"Je ne suis pas arachnophobe, mais pourrais-tu demander à ta mygale de rentrer dans sa boîte, je te prie ?",sacredceltic,,long question negation
+tatoeba-4627202,dev,fr,real,question,En quels termes êtes-vous avec lui ?,sacredceltic,,medium question
+tatoeba-514713,dev,fr,real,question,Peux-tu me donner ton numéro de portable ?,sysko,,medium question
+tatoeba-6061785,dev,fr,real,question,Pourquoi ne m'as-tu pas avoué plus tôt que tu m'aimais ?,Blabla,,long question negation
+tatoeba-6082699,dev,fr,real,question,Pourquoi est-ce toujours mon tour lorsqu'il faut payer ?,christian63,,medium question
+tatoeba-861553,dev,fr,real,question,À quelle heure se lève-t-elle ?,Nyans,,short question
+tatoeba-861704,dev,fr,real,question,Quels sont les rayons qu'il critique ?,Micsmithel,,medium question
+tatoeba-8942930,dev,fr,real,question,Ça te met mal à l'aise quand je fais ça ?,Selenyt,,long question
+tatoeba-8961310,dev,fr,real,question,Est-ce lui qui a fait ça ?,Julien_PDC,,medium question
+ai2-es-conditional-00000,dev,es,ai,conditional,"Si perdemos el próximo autobús, llegaremos tardísimo otra vez.",,deepseek-v4.1-flash:cloud,long conditional
+ai2-es-conditional-00002,dev,es,ai,conditional,"Si mi hermana sale bien del cambio de look en la peluquería, respiro tranquilo y hasta le invito un café.",,deepseek-v4.1-flash:cloud,long conditional
+ai2-es-conditional-00004,dev,es,ai,conditional,"Si el hotel tiene tobogán, nos lanzamos todos a la piscina.",,deepseek-v4.1-flash:cloud,long conditional
+ai2-es-conditional-00006,dev,es,ai,conditional,"Si no fuera por las horas que le metí a ese juego, no habría llegado tan lejos en la partida.",,deepseek-v4.1-flash:cloud,long negation conditional
+ai2-es-conditional-00008,dev,es,ai,conditional,"Si el camarero nos vuelve a preguntar qué queremos, nos quedaremos mudos mirando el menú como si nunca hubiéramos comido.",,deepseek-v4.1-flash:cloud,long negation conditional
+ai2-es-conditional-00010,dev,es,ai,conditional,"Si no conseguimos entradas para el concierto, nos quedamos en casa y perdemos el dinero del viaje.",,deepseek-v4.1-flash:cloud,long negation conditional
+ai2-es-conditional-00012,dev,es,ai,conditional,"Si no cerramos la fuga pronto, perderemos todo lo del sótano.",,deepseek-v4.1-flash:cloud,long negation conditional
+ai2-es-future-00000,dev,es,ai,future,Esta noche voy a prepararme un bocadillo enorme para celebrar el día tan bueno que he tenido.,,deepseek-v4.1-flash:cloud,long
+ai2-es-future-00002,dev,es,ai,future,Vamos a llenarle la casa de globos cuando cumpla los cuarenta.,,deepseek-v4.1-flash:cloud,long number
+ai2-es-future-00004,dev,es,ai,future,Mañana voy a dormir de un tirón porque mi compañero ruidoso se va fuera todo el fin de semana.,,deepseek-v4.1-flash:cloud,long
+ai2-es-future-00006,dev,es,ai,future,La semana que viene vamos a demostrar en la clase de idiomas todo lo que hemos aprendido juntos.,,deepseek-v4.1-flash:cloud,long
+ai2-es-future-00008,dev,es,ai,future,La semana que viene voy a salir de ruta con mis amigos y no veo la hora de estar en la carretera cantando.,,deepseek-v4.1-flash:cloud,long negation
+ai2-es-future-00010,dev,es,ai,future,Por fin mañana vamos a comer a ese restaurante con mi hermano.,,deepseek-v4.1-flash:cloud,long
+ai2-es-mishap-00000,dev,es,ai,mishap,"Perdimos la tienda por no fijarla bien, así que ahora dormimos al raso y aun así nos sentimos los reyes del campamento.",,deepseek-v4.1-flash:cloud,long negation
+ai2-es-mishap-00002,dev,es,ai,mishap,Mi hermano resbaló en la nieve delante de todos y tuvo que aguantar las risas del vecindario.,,deepseek-v4.1-flash:cloud,long
+ai2-es-mishap-00004,dev,es,ai,mishap,"Grité sorpresa y me resbalé, y por eso todos se rieron.",,deepseek-v4.1-flash:cloud,long
+ai2-es-mishap-00006,dev,es,ai,mishap,"El peluquero me dejó el flequillo torcido, así que ahora tengo que llevar gorro hasta que crezca.",,deepseek-v4.1-flash:cloud,long
+ai2-es-mishap-00008,dev,es,ai,mishap,"Le prestamos la escalera al vecino y nos la devolvió rota, así que ahora tenemos que comprar una nueva.",,deepseek-v4.1-flash:cloud,long
+ai2-es-mishap-00010,dev,es,ai,mishap,"Me tiñeron el pelo de verde, así que ahora llevo gorra a todas partes.",,deepseek-v4.1-flash:cloud,long
+ai2-es-moment-00000,dev,es,ai,moment,"Con el apagón, encendí unas velas y jugamos a las cartas toda la familia en la mesa del comedor.",,deepseek-v4.1-flash:cloud,long
+ai2-es-moment-00002,dev,es,ai,moment,"Salimos de la entrevista y respiramos hondo en la acera, sin decir nada todavía.",,deepseek-v4.1-flash:cloud,long negation
+ai2-es-moment-00004,dev,es,ai,moment,"Hoy, al ver a mi amigo aparcar con soltura, recordé que yo todavía no sé conducir y me quedé callado mirando el volante.",,deepseek-v4.1-flash:cloud,long negation
+ai2-es-moment-00006,dev,es,ai,moment,Me acabo de dar cuenta de que el grifo lleva toda la tarde goteando.,,deepseek-v4.1-flash:cloud,long
+ai2-es-moment-00008,dev,es,ai,moment,Por fin terminé de pagar las cuentas y respiré tranquilo.,,deepseek-v4.1-flash:cloud,long
+ai2-es-moment-00010,dev,es,ai,moment,Nos tiramos bolas de nieve hasta que acabamos los dos empapados y riéndonos.,,deepseek-v4.1-flash:cloud,long number
+ai2-es-numbers-00000,dev,es,ai,numbers,Perdí mi cartera con 50 pesos dentro y ahora mi amigo dice que soy socio fundador del club de los despistados.,,deepseek-v4.1-flash:cloud,long number speech
+ai2-es-numbers-00002,dev,es,ai,numbers,En la peluquería nos cobraron sesenta euros por cortarnos el pelo.,,deepseek-v4.1-flash:cloud,long number
+ai2-es-numbers-00005,dev,es,ai,numbers,"Después de veinte años, nos encontramos una sola vez y la despedida fue inevitable.",,gpt-oss:120b-cloud,long number
+ai2-es-numbers-00007,dev,es,ai,numbers,Nosotros pedimos 23 platos y nos dimos cuenta de que nadie pagó.,,gpt-oss:120b-cloud,long number negation
+ai2-es-numbers-00009,dev,es,ai,numbers,"Nos dimos cuenta a los 45 minutos de espera que habíamos olvidado mencionar nuestro seguro, y nos sonrojamos.",,gpt-oss:120b-cloud,long number
+ai2-es-numbers-00013,dev,es,ai,numbers,"Hoy, a los ocho grados bajo el sol, mi hermano de veinte años salió a correr y celebró su récord personal.",,gpt-oss:120b-cloud,long number
+ai2-es-past-00000,dev,es,ai,past,Menos mal que empatamos porque jugamos fatal.,,deepseek-v4.1-flash:cloud,medium
+ai2-es-past-00002,dev,es,ai,past,Estoy tranquilo porque el teléfono ya venía roto desde antes.,,deepseek-v4.1-flash:cloud,long
+ai2-es-past-00004,dev,es,ai,past,Nos sentimos tranquilos porque encontramos la cartera que habíamos perdido antes de salir.,,deepseek-v4.1-flash:cloud,long
+ai2-es-past-00006,dev,es,ai,past,Mi hermano no quiere volver al supermercado porque tiró una torre de latas delante de todos.,,deepseek-v4.1-flash:cloud,long negation
+ai2-es-past-00008,dev,es,ai,past,"Como no cenamos por ver la película, ahora nos estamos comiendo hasta las migas del pan.",,deepseek-v4.1-flash:cloud,long negation
+ai2-es-past-00010,dev,es,ai,past,"Menos mal que reservamos la mesa con una semana de antelación, porque el restaurante estaba hasta arriba.",,deepseek-v4.1-flash:cloud,long
+ai2-es-question-00000,dev,es,ai,question,¿Otra vez se ha dejado el paraguas en tu casa?,,deepseek-v4.1-flash:cloud,long question
+ai2-es-question-00002,dev,es,ai,question,¿Por qué tengo que cargar yo solo con la bici otra vez si siempre te toca a ti subir la cuesta?,,deepseek-v4.1-flash:cloud,long question
+ai2-es-question-00004,dev,es,ai,question,¿Nos llevamos la linterna grande para cuando se haga de noche en el campamento?,,deepseek-v4.1-flash:cloud,long question
+ai2-es-question-00006,dev,es,ai,question,¿Crees que mi hermano pequeño se asustó mucho cuando se fue la luz en casa?,,deepseek-v4.1-flash:cloud,long question
+ai2-es-question-00008,dev,es,ai,question,¿Y si le digo a mi hermano que me espere en la ruta y luego no encuentro el camino?,,deepseek-v4.1-flash:cloud,long question negation
+ai2-es-question-00010,dev,es,ai,question,¿Nos turnamos para cuidar a los niños esta tarde y así todos podemos descansar un rato tranquilos?,,deepseek-v4.1-flash:cloud,long question
+ai2-es-question-00012,dev,es,ai,question,¿Por qué no ha querido comer hoy mi perro después de toda la mañana?,,deepseek-v4.1-flash:cloud,long question negation
+ai2-es-speech-00000,dev,es,ai,speech,Le dije a mi hermano que nunca había visto jugar tan bien a alguien.,,deepseek-v4.1-flash:cloud,long negation speech
+ai2-es-speech-00002,dev,es,ai,speech,Le dije a mi amigo que ya tenía todo listo para ir al supermercado.,,deepseek-v4.1-flash:cloud,long speech
+ai2-es-speech-00004,dev,es,ai,speech,Le preguntamos al vecino si iba a llover y nos dijo que mejor ni saliéramos.,,deepseek-v4.1-flash:cloud,long speech
+ai2-es-speech-00006,dev,es,ai,speech,"Cuando terminé de limpiar toda la casa, mi hermana me dijo que ya podía sentarme a descansar.",,deepseek-v4.1-flash:cloud,long speech
+ai2-es-speech-00008,dev,es,ai,speech,"Cuando le preguntamos por el retraso del autobús, nos dijo que ya estaba acostumbrado.",,deepseek-v4.1-flash:cloud,long speech
+ai2-es-speech-00010,dev,es,ai,speech,Le dije al camarero que la sopa estaba fría y me contestó que era un plato de temporada.,,deepseek-v4.1-flash:cloud,long speech
+tatoeba-10156978,dev,es,real,long,En mi casa usamos mucho el laurel para condimentar algunos platos.,saverius,,long
+tatoeba-10299120,dev,es,real,long,Me despertó muy temprano el balido de aquel cordero.,saverius,,long
+tatoeba-10356545,dev,es,real,long,Deberíamos estar preparándonos para tratar de amortiguar lo más posible los efectos de la crisis energética que se nos viene encima.,Seael,,long
+tatoeba-10364426,dev,es,real,long,"A los niños hay que ponerles limitaciones, si no, crecen y se piensan que las leyes no van con ellos.",Shishir,,long negation conditional
+tatoeba-10365558,dev,es,real,long,"Mi vecino tiene hipoglucemia, y por eso siempre lleva caramelos en el bolsillo.",saverius,,long
+tatoeba-11713133,dev,es,real,long,Me encanta el queso de cabra en la pizza.,Seael,,long
+tatoeba-11719542,dev,es,real,long,Las lenguas humanas son extraordinariamente versátiles pero tienen sus límites: los que les confieren nuestra imaginación y nuestra percepción.,Seael,,long
+tatoeba-13465130,dev,es,real,long,Bruno estuvo en las rocas cogiendo cangrejos con los amigos.,Seael,,long
+tatoeba-13615386,dev,es,real,long,Micaela no soporta que le digan lo que tiene que hacer.,Seael,,long negation
+tatoeba-1749294,dev,es,real,long,Hace mucho frío. Estoy tiritando y me castañetean los dientes.,wallebot,,long
+tatoeba-2464617,dev,es,real,long,Partí a la montaña para olvidarme de mi rutina y sentirme liberado al fin.,juandigenau,,long
+tatoeba-4360655,dev,es,real,long,Carlos compró una cámara espía y la situó en un lugar estratégico para grabar a sus vecinos.,umano,,long
+tatoeba-5695844,dev,es,real,long,"Cuando echo el aliento sobre mis gafas, el vaho empaña los cristales.",wallebot,,long
+tatoeba-6566759,dev,es,real,long,Me estrechó la mano con tal fuerza que me hizo daño.,arh,,long
+tatoeba-772570,dev,es,real,long,Me aburriría si tuviera que contar hasta quinientos veinticuatro mil trescientos setenta y dos.,hayastan,,long number
+tatoeba-10359920,dev,es,real,other,Se le ha descosido la bragueta del pantalón.,saverius,,medium
+tatoeba-10461936,dev,es,real,other,Tus amigas chilenas son muy simpáticas y amables.,saverius,,medium
+tatoeba-1127586,dev,es,real,other,Él es puntual y discreto en sus deudas.,marcelostockle,,medium
+tatoeba-11764502,dev,es,real,other,Me molesta que Modesta sea tan modesta.,Seael,,medium
+tatoeba-12293543,dev,es,real,other,"Si tú cocinas, yo lavo los platos.",Serrot,,medium conditional
+tatoeba-12892523,dev,es,real,other,Mi padre tiene otros dos hijos.,ecorralest101,,medium number
+tatoeba-13093190,dev,es,real,other,Creo que no les gusto.,arh,,short negation
+tatoeba-13681973,dev,es,real,other,A Tomasa nadie le presta atención.,Seael,,medium negation
+tatoeba-1387646,dev,es,real,other,Le dolía pero intentaba disimularlo.,wallebot,,short
+tatoeba-1624806,dev,es,real,other,Pasé corriendo en frente de ellos.,marcelostockle,,medium
+tatoeba-1767413,dev,es,real,other,Cuando toco una telaraña me da repelús.,Shishir,,medium
+tatoeba-1801754,dev,es,real,other,Si me tratas de obligar no te escucharé.,marcelostockle,,medium negation conditional
+tatoeba-3174738,dev,es,real,other,Algo raro me pasó esta mañana.,cueyayotl,,medium
+tatoeba-5014485,dev,es,real,other,A María le gustan las bananas.,don_ramon,,medium
+tatoeba-5025226,dev,es,real,other,Yo leí todas las obras de Sócrates.,don_ramon,,medium
+tatoeba-5104255,dev,es,real,other,A todos les caigo mal.,ecorralest101,,short
+tatoeba-5124535,dev,es,real,other,Él está remando en dulce de leche.,ecorralest101,,medium
+tatoeba-5391119,dev,es,real,other,No me gusta pelear. Soy hombre de paz.,ecorralest101,,medium negation
+tatoeba-6771476,dev,es,real,other,Me operarán mañana por la tarde.,arh,,medium
+tatoeba-8187739,dev,es,real,other,Al final no nos casamos.,arh,,short negation
+tatoeba-8193411,dev,es,real,other,Siempre acabamos llegando a donde nos esperan.,brucearamayo,,medium
+tatoeba-8317957,dev,es,real,other,Me da pena que se vaya.,arh,,medium
+tatoeba-8939799,dev,es,real,other,¡Qué me importa cuánto dura la cuarentena!,hayastan,,medium
+tatoeba-9143331,dev,es,real,other,Mi mejor amigo vive en Canadá.,rafaeldejesus8199,,medium
+tatoeba-9358346,dev,es,real,other,Juan no sabía lo que le venía encima.,ignacio,,medium negation
+tatoeba-1148149,dev,es,real,question,¿Debería encontrar algo que me distraiga?,wallebot,,medium question
+tatoeba-11648035,dev,es,real,question,"¿Que dónde está el banco? Pues ahora no me acuerdo, deja que lo mire en el móvil.",Shishir,,long question negation
+tatoeba-12292982,dev,es,real,question,¿Por qué me llamaste a medianoche?,Serrot,,medium question
+tatoeba-1541064,dev,es,real,question,"No soy tonto, ¿crees que me vas a engañar?",wallebot,,long question negation
+tatoeba-2766495,dev,es,real,question,¿Por qué huyes de mis caricias?,marcelostockle,,medium question
+tatoeba-2949052,dev,es,real,question,¿Me puede sacar una foto?,wallebot,,short question
+tatoeba-3009795,dev,es,real,question,¿Me tengo que dar una inyección?,hayastan,,medium question
+tatoeba-5025999,dev,es,real,question,¿No me digas que no te gusta el chocolate?,don_ramon,,long question negation
+tatoeba-9358267,dev,es,real,question,¿Por qué le han censurado la cuenta de Twitter?,ignacio,,long question
+tatoeba-9432420,dev,es,real,question,"Se me ha olvidado el cuadernillo de música, ¿puedo sentarme contigo?",Shishir,,long question

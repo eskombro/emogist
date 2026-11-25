@@ -22,6 +22,8 @@ outputs/
 
 # Raw downloads (re-created by 03_dataset/fetch_real_sentences.py)
 03_dataset/raw/
+# Raw downloads (re-created by 08_v2_spanish_and_eval_sets/fetch_real_v2.py)
+08_v2_spanish_and_eval_sets/raw/
 
 # Colab run archives: adapters are published on the Hub if useful
 04_fine_tuning/runs/*.zip

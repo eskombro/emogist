@@ -1,0 +1,301 @@
+id,set,lang,source,type,sentence,author,generator,tags
+ai2-en-conditional-00001,test,en,ai,conditional,"If my sister finally gets backstage at the concert, she'll probably start a karaoke session with the band and scare everyone.",,gpt-oss:120b-cloud,long conditional
+ai2-en-conditional-00003,test,en,ai,conditional,"If you score that winning penalty tomorrow, I’ll celebrate by buying the whole team pizza and taking Mom out for ice cream.",,gpt-oss:120b-cloud,long conditional
+ai2-en-conditional-00005,test,en,ai,conditional,"If I have to wait another five minutes for this haircut, I'm leaving.",,gpt-oss:120b-cloud,long number conditional
+ai2-en-conditional-00007,test,en,ai,conditional,"If the screen cracks again, we’ll have to spend the whole weekend trying to salvage data from our dead phone.",,gpt-oss:120b-cloud,long conditional
+ai2-en-conditional-00009,test,en,ai,conditional,"If my brother keeps skipping classes, he'll fail the semester and disappoint everyone.",,gpt-oss:120b-cloud,long conditional
+ai2-en-conditional-00011,test,en,ai,conditional,"If we keep losing every match, we'll never finish the campaign together.",,gpt-oss:120b-cloud,long negation conditional
+ai2-en-conditional-00013,test,en,ai,conditional,"If Mom finally passes the Mandarin final, she'll celebrate by making us all eat spicy Sichuan noodles for dinner.",,gpt-oss:120b-cloud,long conditional
+ai2-en-future-00001,test,en,ai,future,I’m going to set up our campsite tomorrow and roast marshmallows by the fire.,,gpt-oss:120b-cloud,long
+ai2-en-future-00003,test,en,ai,future,I'll surprise my sister with a clown‑costume shopping spree tomorrow.,,gpt-oss:120b-cloud,long
+ai2-en-future-00005,test,en,ai,future,"Tomorrow I'm going to invite Mrs. Patel from next door over for a garden tea party, and I can't wait.",,gpt-oss:120b-cloud,long negation
+ai2-en-future-00007,test,en,ai,future,We are going to raid the boss tomorrow.,,gpt-oss:120b-cloud,medium
+ai2-en-future-00009,test,en,ai,future,"We'll get a new phone tomorrow, excited.",,gpt-oss:120b-cloud,medium
+ai2-en-future-00011,test,en,ai,future,We will proudly showcase our new exhibit tomorrow.,,gpt-oss:120b-cloud,medium
+ai2-en-mishap-00001,test,en,ai,mishap,"We burned the popcorn, so the smoke alarm sang.",,gpt-oss:120b-cloud,long
+ai2-en-mishap-00003,test,en,ai,mishap,"When my sister accidentally sent the client the draft with the typo, she quickly fixed it and secured the biggest contract of the year.",,gpt-oss:120b-cloud,long
+ai2-en-mishap-00005,test,en,ai,mishap,"When Alex spilled coffee on his résumé just before the interview, the recruiter laughed and asked if he’d brought a stain‑proof portfolio.",,gpt-oss:120b-cloud,long speech
+ai2-en-mishap-00007,test,en,ai,mishap,"When my sister's hamster escaped, she chased it all night and finally rescued it, feeling triumphant.",,gpt-oss:120b-cloud,long
+ai2-en-mishap-00011,test,en,ai,mishap,"I managed to stall the car on the hill, so I spent the next ten minutes pushing it while everyone watched.",,gpt-oss:120b-cloud,long number
+ai2-en-mishap-00013,test,en,ai,mishap,"Our goalkeeper slipped, but we still won easily.",,gpt-oss:120b-cloud,medium
+ai2-en-moment-00003,test,en,ai,moment,"We watched Aunt Maya stare at the departure board, then grin when the airline announced another two‑hour delay.",,gpt-oss:120b-cloud,long number
+ai2-en-moment-00005,test,en,ai,moment,We burned the soup and stared at the empty kitchen.,,gpt-oss:120b-cloud,long
+ai2-en-moment-00007,test,en,ai,moment,"We rode the sunrise bus together, watched the city wake, and when we both pressed the stop button on time, we grinned.",,gpt-oss:120b-cloud,long
+ai2-en-moment-00009,test,en,ai,moment,"We finally closed the endless spreadsheet, heard the printer stop humming, and realized we could actually leave on time.",,gpt-oss:120b-cloud,long
+ai2-en-moment-00011,test,en,ai,moment,"My sister kept calling while the lights flickered, and the whole house fell silent.",,gpt-oss:120b-cloud,long
+ai2-en-moment-00017,test,en,ai,moment,"We watched the engine sputter then die on the highway, rain soaking us as we realized we’d missed the wedding.",,gpt-oss:120b-cloud,long
+ai2-en-numbers-00001,test,en,ai,numbers,"After practicing for weeks, my sister nailed her interview at 9 a.m., and they offered her the manager position immediately.",,gpt-oss:120b-cloud,long number
+ai2-en-numbers-00003,test,en,ai,numbers,My sister was twenty‑four when she failed her driving test.,,gpt-oss:120b-cloud,long number
+ai2-en-numbers-00005,test,en,ai,numbers,"My brother finally confirmed the meeting for 3 p.m., so I can pick him up after his surgery tomorrow.",,gpt-oss:120b-cloud,long number
+ai2-en-numbers-00007,test,en,ai,numbers,I accidentally spilled the gravy on my 7‑year‑old nephew's new shirt during dinner.,,gpt-oss:120b-cloud,long number
+ai2-en-numbers-00010,test,en,ai,numbers,My sister called at 6:30 this morning to say her date went so well.,,deepseek-v4.1-flash:cloud,long number speech
+ai2-en-numbers-00012,test,en,ai,numbers,"My sister paid 80 dollars for a haircut that made her look like a poodle, and she strutted out of the salon anyway.",,deepseek-v4.1-flash:cloud,long number
+ai2-en-past-00001,test,en,ai,past,"We left the office early because the client cancelled their meeting, so we could finally relax with a quiet dinner.",,gpt-oss:120b-cloud,long
+ai2-en-past-00003,test,en,ai,past,I lost because my brother kept stealing my power‑ups.,,gpt-oss:120b-cloud,long
+ai2-en-past-00005,test,en,ai,past,"I burned the sauce, so dinner is ruined.",,gpt-oss:120b-cloud,medium
+ai2-en-past-00013,test,en,ai,past,We giggled because the boxes fell on the cat.,,gpt-oss:120b-cloud,long
+ai2-en-past-00015,test,en,ai,past,I laughed because Aunt Susan set the oven to 500 °F and burnt the cake.,,gpt-oss:120b-cloud,long number
+ai2-en-past-00017,test,en,ai,past,We hid the cake because we thought she’d never suspect a party.,,gpt-oss:120b-cloud,long negation
+ai2-en-question-00001,test,en,ai,question,Can I bring my new board game to the babysitting night tomorrow?,,gpt-oss:120b-cloud,long question
+ai2-en-question-00003,test,en,ai,question,Did I just find the perfect dress online?,,gpt-oss:120b-cloud,medium question
+ai2-en-question-00005,test,en,ai,question,Why does my brother keep double‑booking our dinner?,,gpt-oss:120b-cloud,long question
+ai2-en-question-00007,test,en,ai,question,Why did you make me cook the whole turkey again for dinner?,,gpt-oss:120b-cloud,long question
+ai2-en-question-00009,test,en,ai,question,Why do we have to wait another hour before the doctor finally sees us?,,gpt-oss:120b-cloud,long question
+ai2-en-question-00011,test,en,ai,question,"Did you forget to buy the milk again, even though I reminded you?",,gpt-oss:120b-cloud,long question
+ai2-en-question-00013,test,en,ai,question,Did you enjoy the sunrise view from the ridge trail with Mom today?,,gpt-oss:120b-cloud,long question
+ai2-en-speech-00001,test,en,ai,speech,I was told the sale ended before I even reached the store.,,gpt-oss:120b-cloud,long speech
+ai2-en-speech-00003,test,en,ai,speech,My sister texted that she found the perfect dress.,,gpt-oss:120b-cloud,long
+ai2-en-speech-00005,test,en,ai,speech,"We texted the landlord that we finally paid the electric bill, and we couldn't stop laughing about our heroic victory.",,gpt-oss:120b-cloud,long negation
+ai2-en-speech-00007,test,en,ai,speech,My sister texted that I burned the frosting.,,gpt-oss:120b-cloud,medium
+ai2-en-speech-00009,test,en,ai,speech,We told them we finally paid the electricity bill.,,gpt-oss:120b-cloud,long speech
+ai2-en-speech-00011,test,en,ai,speech,My sister texted me that I accidentally walked into the sandcastle and messed it up.,,gpt-oss:120b-cloud,long
+tatoeba-10236838,test,en,real,long,Ziri asked Rima if he could borrow her platter.,Amastan,,long speech
+tatoeba-10250493,test,en,real,long,The flatness of her voice warned me that something was wrong.,bekindtoall,,long
+tatoeba-11823724,test,en,real,long,Igor went to retrieve his stuff from the campsite.,Amastan,,long
+tatoeba-12649379,test,en,real,long,Ziri shared his binoculars with a group of tourists.,always,,long
+tatoeba-13116114,test,en,real,long,There is a horse nearby; I can just tell.,edbc,,long speech
+tatoeba-3721466,test,en,real,long,I'm here for you in your time of need.,CM,,long
+tatoeba-3727049,test,en,real,long,I saw the look of terror in Tom's eyes.,CM,,long
+tatoeba-4401998,test,en,real,long,I remain committed to making amends to everyone I have hurt.,CM,,long
+tatoeba-4413227,test,en,real,long,I hope they form an alliance that will endure.,XenoKat,,long
+tatoeba-4823232,test,en,real,long,I have been thinking about doing this for a very long time.,Hybrid,,long
+tatoeba-5948254,test,en,real,long,"That point of view is interesting, even if I don't necessarily agree with it completely.",mailohilohi,,long negation
+tatoeba-6168026,test,en,real,long,"I love the setting of this game, but the story is unremarkable.",sabretou,,long
+tatoeba-6509333,test,en,real,long,Tom and Mary should've told me they were married.,CT,,long speech
+tatoeba-8657761,test,en,real,long,"At the moment, we are only fixing problems in the software. We are not accepting enhancement requests.",AlanF_US,,long negation
+tatoeba-8740949,test,en,real,long,I have been wanting to go to Boston for over a year now.,Solana,,long
+tatoeba-10640489,test,en,real,other,The Lord interceded on my behalf.,shekitten,,medium
+tatoeba-12229515,test,en,real,other,I saw you steal Tom's wallet.,CK,,medium
+tatoeba-12573340,test,en,real,other,I was living in the village.,always,,medium
+tatoeba-1839505,test,en,real,other,I saw Tom on television.,CK,,short
+tatoeba-2158894,test,en,real,other,I thought it would be a good idea.,Hybrid,,medium
+tatoeba-2258415,test,en,real,other,He maintains that it's true.,_undertoad,,short
+tatoeba-2265871,test,en,real,other,Don't ride that horse. He'll throw you.,_undertoad,,medium negation
+tatoeba-2446798,test,en,real,other,The children are playing in the schoolyard.,Hybrid,,medium
+tatoeba-3596355,test,en,real,other,I need to take your temperature again.,CK,,medium
+tatoeba-3597586,test,en,real,other,Tom shook his fist at Mary.,CK,,medium
+tatoeba-3727455,test,en,real,other,Tom has no right to give me orders.,CM,,medium negation
+tatoeba-3728887,test,en,real,other,I didn't say we couldn't figure it out.,CM,,medium negation speech
+tatoeba-5506465,test,en,real,other,I love going to concerts.,confusedchild02,,short
+tatoeba-6008411,test,en,real,other,Tom has a hedge maze in his garden.,Hybrid,,medium
+tatoeba-6067783,test,en,real,other,I love reading science fiction novels.,mailohilohi,,medium
+tatoeba-6113915,test,en,real,other,"Those are your faults, not mine.",mailohilohi,,medium negation
+tatoeba-6222438,test,en,real,other,I think Tom still has to do that.,CK,,medium
+tatoeba-6581007,test,en,real,other,I totally need to bulk up.,Eccles17,,medium
+tatoeba-6674005,test,en,real,other,"I'm sorry, but I can't hear you.",Eccles17,,medium negation
+tatoeba-6861052,test,en,real,other,There's something else that's been bothering me.,Hybrid,,medium
+tatoeba-7754553,test,en,real,other,I need a Berber translator.,Amastan,,short
+tatoeba-8263908,test,en,real,other,"His Berber is very, very good.",Amastan,,medium
+tatoeba-8404471,test,en,real,other,I knew they were Muslim.,Amastan,,short
+tatoeba-9847222,test,en,real,other,I'd never been to Australia before that.,shekitten,,medium negation
+tatoeba-9956527,test,en,real,other,Our equipment is very cumbersome.,ddnktr,,short
+tatoeba-10142844,test,en,real,question,"So, you have a movie idea for me?",espamatics,,medium question
+tatoeba-10259230,test,en,real,question,Do I detect a hint of sarcasm in your reply?,bekindtoall,,long question
+tatoeba-11472471,test,en,real,question,"If bears are dangerous, why are they friend-shaped?",shekitten,,medium question conditional
+tatoeba-11629092,test,en,real,question,What about eggs? Do we need any?,WarsawWill,,medium question
+tatoeba-12754937,test,en,real,question,What have I got in my pocket?,rul,,medium question
+tatoeba-5922564,test,en,real,question,Since when do you have the right to tell me what to do?,mailohilohi,,long question speech
+tatoeba-5981547,test,en,real,question,Are you going to let him insult your mother like that?,mailohilohi,,long question
+tatoeba-6063883,test,en,real,question,Have I ever lied to him?,mailohilohi,,medium question
+tatoeba-6713427,test,en,real,question,Where is my pain medication?,Eccles17,,short question
+tatoeba-727739,test,en,real,question,"Kate always sleeps through her alarm. Speaking of which, have you seen her yet today?",kebukebu,,long question
+ai2-fr-conditional-00001,test,fr,ai,conditional,"Si papa ne vient pas ce soir, je dînerai seul devant la table vide.",,gpt-oss:120b-cloud,long negation conditional
+ai2-fr-conditional-00003,test,fr,ai,conditional,"Si je trouve enfin toutes mes factures, je pourrai enfin respirer tranquillement.",,gpt-oss:120b-cloud,long conditional
+ai2-fr-conditional-00007,test,fr,ai,conditional,"Si le coiffeur annule, je pourrai enfin me détendre.",,gpt-oss:120b-cloud,long conditional
+ai2-fr-conditional-00011,test,fr,ai,conditional,"Si le son crache encore, on partira.",,gpt-oss:120b-cloud,medium conditional
+ai2-fr-conditional-00013,test,fr,ai,conditional,"Si le soleil revient demain, on pourra enfin ranger nos bottes mouillées.",,gpt-oss:120b-cloud,long conditional
+ai2-fr-conditional-00015,test,fr,ai,conditional,"Si Léa termine le glaçage à temps, tout le monde admirera son chef-d’œuvre.",,gpt-oss:120b-cloud,long conditional
+ai2-fr-conditional-00020,test,fr,ai,conditional,"Si on part maintenant en évitant les bouchons, on sera bien contents d'arriver avant la nuit.",,deepseek-v4.1-flash:cloud,long conditional
+ai2-fr-future-00003,test,fr,ai,future,Je vais devoir refaire le gâteau de Marie.,,gpt-oss:120b-cloud,medium
+ai2-fr-future-00005,test,fr,ai,future,"La semaine prochaine, on va enfin s’inscrire à la salle de sport ensemble.",,gpt-oss:120b-cloud,long
+ai2-fr-future-00007,test,fr,ai,future,"On va adopter un chiot ce weekend, trop excité.",,gpt-oss:120b-cloud,long
+ai2-fr-future-00009,test,fr,ai,future,"Je vais enfin m’inscrire à la salle de sport la semaine prochaine, et je sens déjà le poids de mon stress s’alléger.",,gpt-oss:120b-cloud,long
+ai2-fr-future-00011,test,fr,ai,future,"Ce week‑end, on va préparer une surprise pour Léa.",,gpt-oss:120b-cloud,long
+ai2-fr-future-00013,test,fr,ai,future,"Je vais préparer le gâteau de Léa, mais je tremble.",,gpt-oss:120b-cloud,long
+ai2-fr-mishap-00001,test,fr,ai,mishap,"On a découvert une fuite dans la salle de bain, l'eau a inondé le sol et nos affaires sont maintenant détrempées.",,gpt-oss:120b-cloud,long
+ai2-fr-mishap-00003,test,fr,ai,mishap,"On vient de découvrir que le groupe a annulé le set avant de monter sur scène, et maintenant on attend dehors sous la pluie.",,gpt-oss:120b-cloud,long
+ai2-fr-mishap-00005,test,fr,ai,mishap,"J’ai acheté le livre en ligne pour mon ami, la facture a buggé, livraison gratuite, fièrement.",,gpt-oss:120b-cloud,long
+ai2-fr-mishap-00007,test,fr,ai,mishap,"On a perdu la clé du camion pendant le déménagement, du coup on a dû rester bloqués dehors toute la soirée.",,gpt-oss:120b-cloud,long
+ai2-fr-mishap-00011,test,fr,ai,mishap,"On a renversé le café sur le serveur, mais il a improvisé une blague et tout le bureau a éclaté de rire.",,gpt-oss:120b-cloud,long
+ai2-fr-mishap-00013,test,fr,ai,mishap,"Quand mon frère a renversé le vase du musée, il l’a remplacé brillamment.",,gpt-oss:120b-cloud,long
+ai2-fr-moment-00001,test,fr,ai,moment,"Je viens de sortir du musée, émerveillé par la salle des impressionnistes où chaque tableau me faisait sourire.",,gpt-oss:120b-cloud,long
+ai2-fr-moment-00003,test,fr,ai,moment,"On vient enfin de sortir le gratin du four, et il a parfaitement doré.",,gpt-oss:120b-cloud,long number
+ai2-fr-moment-00005,test,fr,ai,moment,On a éclaté de rire en ratant le squat.,,gpt-oss:120b-cloud,long
+ai2-fr-moment-00009,test,fr,ai,moment,"On a enfin rangé les cartons dans le salon, et le soleil qui entre par la fenêtre nous donne un sourire.",,gpt-oss:120b-cloud,long
+ai2-fr-moment-00011,test,fr,ai,moment,"Ce matin, Marc a remplacé mon café par du jus de citron, quelle surprise.",,gpt-oss:120b-cloud,long
+ai2-fr-moment-00013,test,fr,ai,moment,"On vient de placer le dernier carton, quelle satisfaction.",,gpt-oss:120b-cloud,long
+ai2-fr-numbers-00001,test,fr,ai,numbers,"Nous avons enfin trouvé un emplacement libre à 15h, juste avant la fermeture, et on respire enfin tranquille après tant d’attente.",,gpt-oss:120b-cloud,long number
+ai2-fr-numbers-00006,test,fr,ai,numbers,On a attendu trois quarts d'heure chez le coiffeur et mon fils est ressorti avec une coupe de playmobil.,,deepseek-v4.1-flash:cloud,long number
+ai2-fr-numbers-00010,test,fr,ai,numbers,"J'ai attendu vingt minutes devant le café et quand je l'ai vue arriver, j'ai enfin respiré.",,deepseek-v4.1-flash:cloud,long number
+ai2-fr-numbers-00012,test,fr,ai,numbers,"J'ai encore attendu deux heures chez le dentiste, c'est à devenir fou.",,deepseek-v4.1-flash:cloud,long number
+ai2-fr-numbers-00014,test,fr,ai,numbers,J'ai enfin reçu mon colis commandé il y a trois jours et tout est parfait.,,deepseek-v4.1-flash:cloud,long number
+ai2-fr-numbers-00016,test,fr,ai,numbers,Ça fait du bien de revoir Julien après 15 ans sans nouvelles.,,deepseek-v4.1-flash:cloud,long number
+ai2-fr-past-00001,test,fr,ai,past,On a découvert que notre voisin avait déménagé.,,gpt-oss:120b-cloud,medium
+ai2-fr-past-00003,test,fr,ai,past,On a finalement transporté le piano sans une égratignure.,,gpt-oss:120b-cloud,long
+ai2-fr-past-00005,test,fr,ai,past,"Après avoir renversé mon jus, j'ai découvert une petite fuite qui arrose le sol.",,gpt-oss:120b-cloud,long
+ai2-fr-past-00007,test,fr,ai,past,"On a renversé le plat de pâtes sur la nappe, et on se tait.",,gpt-oss:120b-cloud,long
+ai2-fr-past-00011,test,fr,ai,past,"Après que j'ai mâché mon stylo, le dentiste a ri.",,gpt-oss:120b-cloud,long
+ai2-fr-past-00015,test,fr,ai,past,"J'ai renversé les cartons chez mon frère, désolé.",,gpt-oss:120b-cloud,medium
+ai2-fr-question-00001,test,fr,ai,question,Tu penses qu'on arrivera à garder la surprise ?,,gpt-oss:120b-cloud,medium question
+ai2-fr-question-00003,test,fr,ai,question,Tu crois qu’il a raté le concert ?,,gpt-oss:120b-cloud,medium question
+ai2-fr-question-00006,test,fr,ai,question,"Ton frère est ressorti de chez le dentiste sans aucune carie, il n'a vraiment plus mal du tout maintenant ?",,deepseek-v4.1-flash:cloud,long question negation
+ai2-fr-question-00008,test,fr,ai,question,Est-ce que tu sais si ton frère a prévu de nous rejoindre pour la balade à vélo dimanche prochain au bord du canal ?,,deepseek-v4.1-flash:cloud,long question
+ai2-fr-question-00010,test,fr,ai,question,Je dois vraiment me lever à six heures pour l'école ?,,deepseek-v4.1-flash:cloud,long question number
+ai2-fr-question-00012,test,fr,ai,question,Est-ce que ton frère a vraiment réussi ce gâteau à trois étages sans faire retomber la pâte ?,,deepseek-v4.1-flash:cloud,long question number
+ai2-fr-question-00014,test,fr,ai,question,"On ne devrait pas tous ressortir de cet entretien avec le sourire, non ?",,deepseek-v4.1-flash:cloud,long question negation
+ai2-fr-speech-00001,test,fr,ai,speech,J’ai dit que j’avais brûlé le gâteau.,,gpt-oss:120b-cloud,medium speech
+ai2-fr-speech-00003,test,fr,ai,speech,"J'ai dit à mon frère que les factures étaient enfin réglées, il a soupiré.",,gpt-oss:120b-cloud,long speech
+ai2-fr-speech-00005,test,fr,ai,speech,Il a dit qu'il était ravi du rendez‑vous.,,gpt-oss:120b-cloud,long speech
+ai2-fr-speech-00007,test,fr,ai,speech,J'ai dit que j'ai décroché le rendez‑vous médical.,,gpt-oss:120b-cloud,long speech
+ai2-fr-speech-00009,test,fr,ai,speech,Nous avons annoncé qu’on maîtrise enfin le japonais.,,gpt-oss:120b-cloud,medium
+ai2-fr-speech-00011,test,fr,ai,speech,J'ai annoncé que ma coupe de cheveux était un désastre total.,,gpt-oss:120b-cloud,long
+tatoeba-10344297,test,fr,real,long,Nous n'avons pas eu le temps de faire quoi que ce soit.,Julien_PDC,,long negation
+tatoeba-10628468,test,fr,real,long,"Nous avons de grandes attentes, ne nous décevez pas !",starman59,,long negation
+tatoeba-11596322,test,fr,real,long,Je ne sais pas à quelle heure elle va venir.,Adrien_FR,,long negation
+tatoeba-11630926,test,fr,real,long,"Le sourire de cette personne est magnifique, il illumine son visage.",Adrien_FR,,long negation
+tatoeba-12566050,test,fr,real,long,Mon premier amour n'arrivait jamais à prendre l'avantage sur moi.,LoverofEnglish,,long negation
+tatoeba-12713494,test,fr,real,long,Les flèches de l'amour se sont posées sur moi aujourd'hui.,LoverofEnglish,,long
+tatoeba-12896080,test,fr,real,long,"Pour finir un puzzle, il faut imbriquer toutes les pièces correctement.",lbdx,,long
+tatoeba-3925682,test,fr,real,long,"Même pour sortir acheter des cigarettes, ton père portait une cravate.",Amastan,,long
+tatoeba-4489886,test,fr,real,long,"Marika, mon cher ami, devrait faire partie de ton passé.",Amastan,,long
+tatoeba-5239783,test,fr,real,long,"À force de persécuter le chien, il devient méchant.",Iriep,,long
+tatoeba-573563,test,fr,real,long,"On finit toujours par vouloir anéantir son prochain. Voilà, le triste sort de l'humanité.",qdii,,long
+tatoeba-5998193,test,fr,real,long,Je n'ai plus eu de ses nouvelles depuis des semaines.,christian63,,long negation
+tatoeba-6211035,test,fr,real,long,Nos offres spéciales sont les meilleures qu'il y ait sur le marché.,felix63,,long
+tatoeba-837890,test,fr,real,long,Qu'ils ne viennent pas m'échauffer les oreilles avec leurs sermons !,RaspaKrusto,,long negation
+tatoeba-8516203,test,fr,real,long,"Ce qui lui déplaisait dans cette cabane, c'était les portes et les fenêtres.",Aiji,,long
+tatoeba-10001080,test,fr,real,other,Il est beaucoup trop tard pour une visite.,felix63,,medium
+tatoeba-10463780,test,fr,real,other,Les enfants font du collage.,Julien_PDC,,short
+tatoeba-11496357,test,fr,real,other,Apporte-moi une paire de chaussettes.,Aiji,,short
+tatoeba-13168810,test,fr,real,other,Elle est exceptionnelle cette vue.,felix63,,short
+tatoeba-1585201,test,fr,real,other,Cette phrase ne me revient pas.,sacredceltic,,medium negation
+tatoeba-2035636,test,fr,real,other,Il est arrivé là-bas avant Tom.,Amastan,,medium
+tatoeba-2091326,test,fr,real,other,Je n'abîme pas mes vêtements.,Amastan,,short negation
+tatoeba-2109792,test,fr,real,other,Il ne peut s'agir que de moi.,sacredceltic,,medium negation
+tatoeba-2929168,test,fr,real,other,Cette terre est sacrée pour mon peuple.,Blabla,,medium
+tatoeba-2965338,test,fr,real,other,Elle a un joli minois.,Blabla,,short
+tatoeba-2965364,test,fr,real,other,Elle n'hésite pas à se moquer des garçons.,Blabla,,medium negation
+tatoeba-2984136,test,fr,real,other,"Ils se débrouillent plutôt bien, pour des débutants.",gillux,,medium
+tatoeba-3359869,test,fr,real,other,Mon nez est trop gros.,Blabla,,short
+tatoeba-4617099,test,fr,real,other,Nous aimons contenter nos maris.,Amastan,,short
+tatoeba-5288793,test,fr,real,other,Notre prof de maths est super-cool.,Blabla,,medium
+tatoeba-6052666,test,fr,real,other,"Donne-moi mes lunettes, s'il te plaît.",christian63,,medium
+tatoeba-6087664,test,fr,real,other,Tu nous enfumes avec ta cigarette.,christian63,,medium
+tatoeba-6101807,test,fr,real,other,"Tom, tu dois aller voir le patron.",christian63,,medium
+tatoeba-6177699,test,fr,real,other,Je suis allé à la pêche.,felix63,,medium
+tatoeba-6381827,test,fr,real,other,Je ne le répéterai à personne.,Blabla,,medium negation
+tatoeba-6758232,test,fr,real,other,Je ne peux pas venir maintenant.,felix63,,medium negation
+tatoeba-7352768,test,fr,real,other,Les enfants sont restés bloqués pendant quatre jours.,Aiji,,medium number
+tatoeba-8685562,test,fr,real,other,Je ne sais pas quoi faire avec lui.,Julien_PDC,,medium negation
+tatoeba-8898863,test,fr,real,other,Elle ne voulait pas danser.,Julien_PDC,,short negation
+tatoeba-9565557,test,fr,real,other,J'ai accroché la jardinière au garde-corps.,Aiji,,medium
+tatoeba-1081210,test,fr,real,question,Tu me présentes ta copine ?,gillux,,short question
+tatoeba-11718913,test,fr,real,question,Est-ce qu'il y a des transats à la piscine ?,Adrien_FR,,long question
+tatoeba-12168786,test,fr,real,question,Pourquoi la tartine tombe-t-elle toujours du côté beurré ?,lbdx,,medium question
+tatoeba-12708522,test,fr,real,question,Pourquoi dois-je traverser tout ce que je traverse actuellement dans ma vie ?,LoverofEnglish,,long question
+tatoeba-2147638,test,fr,real,question,"En parlant de voleur, ton frère va bien ?",sysko,,medium question
+tatoeba-5583813,test,fr,real,question,"Je suis fatigué de toutes ces batailles, tous ces morts, jour après jour. Quand cela finira-t-il ?",Aiji,,long question
+tatoeba-6381832,test,fr,real,question,Mais que va-t-il nous arriver ?,Blabla,,short question
+tatoeba-7784045,test,fr,real,question,Que pouvons-nous avoir de mieux ?,Aiji,,short question
+tatoeba-831421,test,fr,real,question,Sait-on vraiment ce qu'on veut quand on ignore ce qu'on ne veut pas ?,sacredceltic,,long question negation
+tatoeba-9583656,test,fr,real,question,Quel nom aimerais-tu lui donner ?,Julien_PDC,,short question
+ai2-es-conditional-00001,test,es,ai,conditional,"Si el audio guía funciona, podré disfrutar tranquilo.",,gpt-oss:120b-cloud,medium conditional
+ai2-es-conditional-00003,test,es,ai,conditional,"Si el apagón ocurre, mi hermano me verá intentando encender la linterna.",,gpt-oss:120b-cloud,long conditional
+ai2-es-conditional-00005,test,es,ai,conditional,"Si terminara de limpiar la casa, todos notarían lo impecable que quedó.",,gpt-oss:120b-cloud,long conditional
+ai2-es-conditional-00007,test,es,ai,conditional,"Si suspendemos el examen, perderemos la beca.",,gpt-oss:120b-cloud,medium conditional
+ai2-es-conditional-00009,test,es,ai,conditional,"Si finalmente llegan los niños a casa sanos y felices, podré respirar tranquilo después de todo el caos.",,gpt-oss:120b-cloud,long conditional
+ai2-es-conditional-00011,test,es,ai,conditional,"Si aprendes a conducir, ya serás mi orgullo.",,gpt-oss:120b-cloud,medium conditional
+ai2-es-conditional-00013,test,es,ai,conditional,"Si el servidor sigue caído cuando intento jugar, me volveré loco y dejaré de comprar cualquier juego nuevo.",,gpt-oss:120b-cloud,long conditional
+ai2-es-future-00003,test,es,ai,future,Vamos a cantar juntos en el concierto mañana.,,gpt-oss:120b-cloud,medium
+ai2-es-future-00005,test,es,ai,future,Vamos a reunirnos la próxima semana y demostraremos lo mucho que logramos.,,gpt-oss:120b-cloud,long
+ai2-es-future-00007,test,es,ai,future,"Mañana, cuando el vuelo finalmente salga, voy a celebrar que mi hermano logró reservar el asiento que siempre quiso.",,gpt-oss:120b-cloud,long
+ai2-es-future-00011,test,es,ai,future,"Esta tarde voy a preparar una lasaña de verduras que he estado buscando, y estoy seguro de que nos encantará.",,gpt-oss:120b-cloud,long
+ai2-es-future-00013,test,es,ai,future,Mañana vamos a buscar mi cartera perdida y tú la encontrarás bajo la almohada.,,gpt-oss:120b-cloud,long
+ai2-es-future-00015,test,es,ai,future,Mañana nos tocará presentar el proyecto y todavía no hemos avanzado nada.,,gpt-oss:120b-cloud,long negation
+ai2-es-mishap-00001,test,es,ai,mishap,"Olvidé regar las begonias y se marchitaron, pero al llegar la lluvia las rescaté y ahora lucen verdes.",,gpt-oss:120b-cloud,long
+ai2-es-mishap-00003,test,es,ai,mishap,"Nuestro coche se quedó sin gasolina justo antes del cruce, pero lo empujamos hasta la gasolinera y lo encendimos triunfalmente.",,gpt-oss:120b-cloud,long
+ai2-es-mishap-00005,test,es,ai,mishap,"Me desperté tarde, resbalé con la nieve en la puerta y llegué al trabajo cubierto de escarcha, pareciendo un muñeco de hielo.",,gpt-oss:120b-cloud,long
+ai2-es-mishap-00007,test,es,ai,mishap,"Quemamos la salsa, pero al menos el fuego nos dio una excusa para pedir pizza.",,gpt-oss:120b-cloud,long
+ai2-es-mishap-00009,test,es,ai,mishap,"Se nos rompió el sofá al cargarlo, pero ahora la sala luce más amplia.",,gpt-oss:120b-cloud,long
+ai2-es-mishap-00011,test,es,ai,mishap,"En la mañana de nieve, mi hermano resbaló en el hielo y todos reímos.",,gpt-oss:120b-cloud,long
+ai2-es-moment-00001,test,es,ai,moment,Hoy terminé el juego en primera ronda y me sentí como si hubiera conquistado el mundo.,,gpt-oss:120b-cloud,long
+ai2-es-moment-00003,test,es,ai,moment,Mi hermano dejó el grifo abierto y ahora el baño suena como una cascada.,,gpt-oss:120b-cloud,long
+ai2-es-moment-00005,test,es,ai,moment,"Hoy preparamos el desayuno juntos, y al ver cómo mi hijo tomó la cuchara solo, sentimos que todo el esfuerzo valió la pena.",,gpt-oss:120b-cloud,long
+ai2-es-moment-00007,test,es,ai,moment,Nos dimos cuenta que pedimos el mismo plato y el camarero se quedó sin opciones.,,gpt-oss:120b-cloud,long
+ai2-es-moment-00009,test,es,ai,moment,"Hoy me desperté, vi la calle cubierta de nieve y me puse los guantes para salir a hacer muñecos, riendo.",,gpt-oss:120b-cloud,long
+ai2-es-moment-00011,test,es,ai,moment,"Me escondí detrás de la mesa para colocar los globos y, al cruzar la puerta, tropecé con la tarta.",,gpt-oss:120b-cloud,long
+ai2-es-numbers-00001,test,es,ai,numbers,Nos quedamos sin sopa después de 3 días.,,gpt-oss:120b-cloud,medium number
+ai2-es-numbers-00004,test,es,ai,numbers,Por fin el vecino de arriba ha dejado de taladrar después de dos horas.,,deepseek-v4.1-flash:cloud,long number
+ai2-es-numbers-00006,test,es,ai,numbers,Mi mejor amiga cumple 40 años el sábado y ya tengo todo listo para su fiesta sorpresa.,,deepseek-v4.1-flash:cloud,long number
+ai2-es-numbers-00008,test,es,ai,numbers,Le dije a mi hermano que el paseo sería de una hora y terminamos pedaleando tres horas y media bajo el sol.,,deepseek-v4.1-flash:cloud,long number speech
+ai2-es-numbers-00010,test,es,ai,numbers,"Cuando vimos que la compra semanal nos costaba 85 euros, nos quedamos callados todo el camino a casa.",,deepseek-v4.1-flash:cloud,long number
+ai2-es-numbers-00012,test,es,ai,numbers,"Nos subimos al autobús número 12 y en solo 20 minutos cruzamos toda la ciudad, algo que no logramos ni en coche.",,deepseek-v4.1-flash:cloud,long number negation
+ai2-es-past-00001,test,es,ai,past,Me reí tanto cuando el profe se cayó del taburete y ahora tengo miedo al examen.,,gpt-oss:120b-cloud,long
+ai2-es-past-00003,test,es,ai,past,Nosotros dejamos al gato solo y rompió el jarrón.,,gpt-oss:120b-cloud,long
+ai2-es-past-00005,test,es,ai,past,"Después del accidente, pedaleamos tranquilos y ya respiramos.",,gpt-oss:120b-cloud,medium
+ai2-es-past-00007,test,es,ai,past,"Después de la tormenta, la luz de mamá sigue apagada.",,gpt-oss:120b-cloud,long
+ai2-es-past-00011,test,es,ai,past,"Después de la larga mudanza, la abuela nos recibió con su sopa favorita, celebrando.",,gpt-oss:120b-cloud,long
+ai2-es-past-00013,test,es,ai,past,"Desde que descubrimos la nueva ruta, llegamos a tiempo y disfrutamos el viaje.",,gpt-oss:120b-cloud,long
+ai2-es-question-00001,test,es,ai,question,¿Crees que debería ir al trabajo con este corte que parece que lo hizo mi gato con tijeras?,,gpt-oss:120b-cloud,long question
+ai2-es-question-00003,test,es,ai,question,¿Ya puedo intentar la rotonda sin miedo?,,gpt-oss:120b-cloud,medium question
+ai2-es-question-00005,test,es,ai,question,"¿Te diste cuenta de que lograste limpiar toda la cocina antes de que llegara la visita, verdad?",,gpt-oss:120b-cloud,long question
+ai2-es-question-00007,test,es,ai,question,¿Vamos a dejar atrás la casa donde crecimos y nunca volveremos?,,gpt-oss:120b-cloud,long question negation
+ai2-es-question-00009,test,es,ai,question,¿Te parece bien que tomemos la ruta del bosque y lleguemos antes de la lluvia?,,gpt-oss:120b-cloud,long question
+ai2-es-question-00011,test,es,ai,question,¿Cómo sorprenderé yo a mi vecino con esta mejora?,,gpt-oss:120b-cloud,long question
+ai2-es-question-00013,test,es,ai,question,¿Te imaginas que descubrí una nueva ruta de senderismo y aún no sé si el panorama al final vale la caminata?,,gpt-oss:120b-cloud,long question negation
+ai2-es-speech-00001,test,es,ai,speech,"Le dije a mi hermano que nuestro vuelo se retrasó cinco horas y que probablemente perderemos la cena, me sentí desanimado.",,gpt-oss:120b-cloud,long number speech
+ai2-es-speech-00009,test,es,ai,speech,"Le dije a mi hermano que, pese al accidente, el teléfono sigue sonando.",,gpt-oss:120b-cloud,long speech
+ai2-es-speech-00011,test,es,ai,speech,Nosotros dijimos que la nieve nos había regalado una pista de patinaje improvisada.,,gpt-oss:120b-cloud,long
+ai2-es-speech-00013,test,es,ai,speech,Nosotros dijimos que nunca volveremos a perder la cartera y que ahora nos sentimos vacíos sin ella.,,gpt-oss:120b-cloud,long negation
+ai2-es-speech-00015,test,es,ai,speech,"Yo dije que llegaría a la entrevista con mi mejor sonrisa, preparado para que el entrevistador se ría conmigo.",,gpt-oss:120b-cloud,long speech
+ai2-es-speech-00017,test,es,ai,speech,Les dije que mi nuevo corte demostró que finalmente dominé el arte de la peluquería.,,gpt-oss:120b-cloud,long speech
+tatoeba-10167818,test,es,real,long,Los cubanos son un pueblo hermano de los españoles.,saverius,,long
+tatoeba-10185453,test,es,real,long,"El viento es el aliento de Dios, y la lluvia las lágrimas que derrama por sus hijos.",saverius,,long
+tatoeba-10311302,test,es,real,long,Yo no tuve la culpa de que el caballo se desbocase.,Seael,,long negation
+tatoeba-10323729,test,es,real,long,Corrí con todas mis fuerzas pero no pude alcanzarla.,Seael,,long negation
+tatoeba-10465954,test,es,real,long,Mi primo le dio un aguacate a su guacamaya y se le murió.,saverius,,long
+tatoeba-1142354,test,es,real,long,Al menos es un artista consistente: todas sus obras me parecen malas.,marcelostockle,,long
+tatoeba-13599663,test,es,real,long,Nunca nos ha faltado un plato de comida caliente a la hora de comer.,Seael,,long negation
+tatoeba-1868842,test,es,real,long,"Me gusta que tengas vello ahí, pero es demasiado frondoso.",wallebot,,long
+tatoeba-2734647,test,es,real,long,Los hijos de tus primos son tus sobrinos segundos.,wallebot,,long
+tatoeba-3566563,test,es,real,long,Yo diría que tenés que hacer dieta y mucho ejercicio para bajar esa buzarda.,hayastan,,long
+tatoeba-5011579,test,es,real,long,A María le duelen los dedos de los pies.,don_ramon,,long
+tatoeba-5016395,test,es,real,long,Siempre me impresiona cómo la gente inteligente olvida lo importante que es la risa en las relaciones humanas.,Mavry,,long
+tatoeba-5181994,test,es,real,long,"En mi casa mando yo, al menos cuando mi mujer no está.",ecorralest101,,long negation
+tatoeba-9062037,test,es,real,long,"Me encanta la lectura, el canto y el baile.",rafaeldejesus8199,,long
+tatoeba-9440251,test,es,real,long,"Si pudieran revisar mi gramática, en serio lo agradecería.",hayastan,,long conditional
+tatoeba-10179348,test,es,real,other,Tengo un amigo que es socialista.,saverius,,medium
+tatoeba-10286500,test,es,real,other,Nos presentamos allí en limusina de alquiler.,Seael,,medium
+tatoeba-11282173,test,es,real,other,No le pegues al perro.,Eliseo34,,short negation
+tatoeba-1167705,test,es,real,other,Ojalá el gobierno respete nuestro acuerdo.,marcelostockle,,medium
+tatoeba-11699247,test,es,real,other,A Bruno le pica el culo.,angelapl,,medium
+tatoeba-12297330,test,es,real,other,En mi país ser ateo sigue siendo tabú.,Serrot,,medium
+tatoeba-12905504,test,es,real,other,Me cuesta creer que él haya hecho eso.,entusiasta,,medium
+tatoeba-1306756,test,es,real,other,Voy a lavar mi coche.,marcelostockle,,short
+tatoeba-13467278,test,es,real,other,Yo no rindo pleitesía a nadie.,Seael,,medium negation
+tatoeba-13703035,test,es,real,other,Él está viendo una película.,ecorralest101,,short
+tatoeba-4276234,test,es,real,other,Le soprendieron en flagrante delito.,ecorralest101,,short
+tatoeba-4515968,test,es,real,other,Le advertí que no tocara la máquina.,Kiraness,,medium negation
+tatoeba-5011590,test,es,real,other,A Tom le dan miedo las arañas.,don_ramon,,medium
+tatoeba-5014890,test,es,real,other,Me tengo que ir a trabajar ahora mismo.,don_ramon,,medium
+tatoeba-5029889,test,es,real,other,No le pidas peras al olmo.,don_ramon,,medium negation
+tatoeba-5105258,test,es,real,other,Él tiene pájaros en la cabeza.,ecorralest101,,medium
+tatoeba-6591658,test,es,real,other,No me lo vuelvas a decir.,arh,,medium negation
+tatoeba-6819243,test,es,real,other,Yo tomo pan sin sal.,arh,,short
+tatoeba-7957756,test,es,real,other,No me hicieron ni caso.,arh,,short negation
+tatoeba-803660,test,es,real,other,No me gustan nada tus amigos.,hayastan,,medium negation
+tatoeba-8317951,test,es,real,other,Me preocupa que no coma.,arh,,short negation
+tatoeba-9180587,test,es,real,other,Me gusta compartir todo tipo de historias contigo.,ignacio,,medium
+tatoeba-9286013,test,es,real,other,"Lo siento, no he hablado con ella.",Javea,,medium negation
+tatoeba-9422593,test,es,real,other,No existe ninguna relación entre ellos.,ignacio,,medium negation
+tatoeba-9947672,test,es,real,other,"No te preocupes, que yo te las cuido.",arh,,medium negation
+tatoeba-1315183,test,es,real,question,"Me lo tienes que devolver, ¿ya?",marcelostockle,,medium question
+tatoeba-1628892,test,es,real,question,"Me han dicho que la gelatina está hecha de pezuña de buey, ¿es verdad?",Shishir,,long question speech
+tatoeba-1801751,test,es,real,question,¿Me autorizaría a grabar esta conversación?,marcelostockle,,medium question
+tatoeba-2050414,test,es,real,question,¡De buenas a primeras me suelta que no quiere volver a verme! ¿Qué mosca le ha picado?,Shishir,,long question negation
+tatoeba-5276467,test,es,real,question,¿Por qué no montas en el coche y nos guias?,wallebot,,long question negation
+tatoeba-5559155,test,es,real,question,¿Te acuerdas de nuestra boda?,ecorralest101,,short question
+tatoeba-6164931,test,es,real,question,¿Qué le gusta a su padre?,cls,,medium question
+tatoeba-9052115,test,es,real,question,"«¿Cuántos años tiene?»«No sabría decir, quizá sea un par de años más joven que yo.»",Shishir,,long question negation
+tatoeba-9379005,test,es,real,question,¿Me podría dar el recibo de pago?,ignacio,,medium question
+tatoeba-9379007,test,es,real,question,¿Me puede dar una bolsa por favor?,ignacio,,medium question

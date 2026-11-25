@@ -24,3 +24,12 @@ These rules are the reference for every step: the task prompt ([`emoji_eval/prom
 - Single line; no letters, plain digits or punctuation. Keycap numbers (`3️⃣0️⃣`) are emojis and are allowed.
 
 Breaking these makes an output **invalid**. Breaking the style rules above (❌ starting a group, several ⏪/⏩, missing group spaces, an emoji repeated more than 4 times…) only produces a **warning**.
+
+## V2 (step 7 on)
+
+Steps 0 to 6 use the rules above unchanged. From [step 7](07_v2_rules_and_scoring/) on, one format rule changes and the grammar stays the same:
+
+- **1 to 10 emojis**; ➡️ still doesn't count. A lone ➡️ is still invalid.
+- **Fewer than 3 emojis is a warning, not an error.** Use as few emojis as the idea needs, usually 3 to 8. One or two are fine only when the sentence is that simple: `🍽️🧼`, washing the dishes.
+
+The checks are `check_validity_v2` and `check_conventions_v2` in [`emoji_eval/validate.py`](emoji_eval/validate.py).

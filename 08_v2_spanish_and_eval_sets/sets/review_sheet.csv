@@ -1,0 +1,680 @@
+set	id	lang	source	type	sentence	verdict	note
+dev	ai2-en-conditional-00000	en	ai	conditional	If no one shows up, I'll just sit there alone.	ok	
+dev	ai2-en-conditional-00002	en	ai	conditional	If the flight gets delayed, we will finish the whole puzzle before boarding.	ok	
+dev	ai2-en-conditional-00004	en	ai	conditional	If my brother's car stays broken, he'll miss his daughter's birthday.	ok	
+dev	ai2-en-conditional-00006	en	ai	conditional	If I stall the car one more time, I will just abandon it and walk.	ok	
+dev	ai2-en-conditional-00008	en	ai	conditional	If my brother shows up to the school reunion, he'll spend the whole night retelling the same story.	ok	
+dev	ai2-en-conditional-00012	en	ai	conditional	If my brother doesn't find his wallet soon, I'll have to cover his dinner again.	ok	
+dev	ai2-en-conditional-00014	en	ai	conditional	If this rain finally stops, we can still get the kids to the park before dinner.	ok	
+dev	ai2-en-future-00000	en	ai	future	I'm glad the snow will cover the driveway before I have to shovel it.	ok	
+dev	ai2-en-future-00002	en	ai	future	We’re going to sit in the dark again tomorrow night, and I can’t face it.	ok	
+dev	ai2-en-future-00004	en	ai	future	My brother is going to shovel the driveway and find his car eventually.	ok	
+dev	ai2-en-future-00006	en	ai	future	We're going to say goodbye to our classroom next week.	ok	
+dev	ai2-en-future-00008	en	ai	future	My cousin is going to run the whole office next week.	ok	
+dev	ai2-en-future-00010	en	ai	future	We're going to finish the whole ridge trail next week.	ok	
+dev	ai2-en-mishap-00000	en	ai	mishap	I forgot the tent poles, so we slept under the stars and I woke up grinning.	ok	
+dev	ai2-en-mishap-00002	en	ai	mishap	I dropped my phone in the mosh pit and still managed to catch the entire encore on video.	ok	
+dev	ai2-en-mishap-00004	en	ai	mishap	My brother spilled coffee on the map, so now we're navigating by vibes.	ok	
+dev	ai2-en-mishap-00006	en	ai	mishap	I asked for a trim and she cut it all off, so now I have to hide.	ok	
+dev	ai2-en-mishap-00008	en	ai	mishap	My sister’s flight got delayed three hours, so she ended up leading the whole conference call from the airport.	ok	
+dev	ai2-en-mishap-00010	en	ai	mishap	The power cut off my sister’s speech mid-sentence, and now everyone is staring at me.	ok	
+dev	ai2-en-moment-00000	en	ai	moment	My dad spent the whole power cut trying to reset the microwave clock and never noticed the lights came back on.	ok	
+dev	ai2-en-moment-00002	en	ai	moment	We found the perfect spot and got the tent up.	ok	
+dev	ai2-en-moment-00004	en	ai	moment	My sister's cat just walked across the counter and knocked my coffee into the sink again.	ok	
+dev	ai2-en-moment-00006	en	ai	moment	I saw my neighbor finally move his car, so I can pull out of my driveway now.	ok	
+dev	ai2-en-moment-00008	en	ai	moment	We waited forty minutes for the wrong bus again.	ok	
+dev	ai2-en-moment-00010	en	ai	moment	My sister parallel parked on the first try and just sat there grinning at me.	ok	
+dev	ai2-en-numbers-00000	en	ai	numbers	Thank goodness, my brother's bus finally arrived at 8:15.	ok	
+dev	ai2-en-numbers-00002	en	ai	numbers	My friend has worked at this office for 12 years.	ok	
+dev	ai2-en-numbers-00004	en	ai	numbers	My sister's blind date showed up 40 minutes late, but he turned out to be great.	ok	
+dev	ai2-en-numbers-00006	en	ai	numbers	I taught my rescue dog three new tricks this week, and she nailed every single one.	ok	
+dev	ai2-en-numbers-00009	en	ai	numbers	We finally adopted the kitten after waiting 48 weeks.	ok	
+dev	ai2-en-numbers-00011	en	ai	numbers	We spent $45 on a haircut, and now it looks like a DIY disaster.	ok	
+dev	ai2-en-past-00000	en	ai	past	My brother cut his own hair this morning, so now he keeps finding excuses to walk past the mirror.	ok	
+dev	ai2-en-past-00002	en	ai	past	My sister froze up because she forgot her own resume.	ok	
+dev	ai2-en-past-00004	en	ai	past	I already ate dinner, so I'm not hungry now.	ok	
+dev	ai2-en-past-00006	en	ai	past	Because my brother promised to clean the kitchen before I got home, I’m stuck scrubbing his greasy pans at ten.	ok	
+dev	ai2-en-past-00008	en	ai	past	My brother shoveled the driveway because he wanted to build a snowman.	ok	
+dev	ai2-en-past-00010	en	ai	past	I burned the first batch of cookies, so I pulled the second tray out just in time.	ok	
+dev	ai2-en-question-00000	en	ai	question	Did I really just put my dirty dishes in the washing machine instead of the dishwasher?	ok	
+dev	ai2-en-question-00002	en	ai	question	Does your brother really expect us to wait here while he hikes the entire trail?	ok	
+dev	ai2-en-question-00004	en	ai	question	Since I get to watch the kids tonight, can I finally show them how to make my famous chocolate chip cookies?	ok	
+dev	ai2-en-question-00006	en	ai	question	I accidentally used salt instead of sugar in the cake I brought to the party, so can I blame the recipe?	ok	
+dev	ai2-en-question-00008	en	ai	question	Do I really have to sit through this whole reunion?	ok	
+dev	ai2-en-question-00010	en	ai	question	Is your mom coming over for the sunny barbecue?	ok	
+dev	ai2-en-question-00012	en	ai	question	Did we really have a pop quiz in math today?	ok	
+dev	ai2-en-speech-00000	en	ai	speech	My sister texted me that she already booked us a beach house for July.	ok	
+dev	ai2-en-speech-00002	en	ai	speech	My sister texted that she got the job.	ok	
+dev	ai2-en-speech-00004	en	ai	speech	My sister texted me that her new haircut makes her look like a completely different person, and she loves it.	ok	
+dev	ai2-en-speech-00006	en	ai	speech	We told each other we were glad the reunion was finally over.	ok	
+dev	ai2-en-speech-00008	en	ai	speech	"We both mumbled ""happy birthday"" after completely forgetting her name."	ok	
+dev	ai2-en-speech-00010	en	ai	speech	My mom told me she misses cooking for us now that she's alone.	ok	
+dev	tatoeba-10793601	en	real	long	If you wait until tomorrow, I could go with you.	ok	
+dev	tatoeba-11018256	en	real	long	I wonder if they would open up to me.	ok	
+dev	tatoeba-11205627	en	real	long	Ziri was walking his dog on a sunny afternoon.	ok	
+dev	tatoeba-13117644	en	real	long	She knew she would regret this in the future.	ok	
+dev	tatoeba-13636775	en	real	long	We decided to catch a late showing at the new multiplex downtown.	ok	
+dev	tatoeba-13639078	en	real	long	We're going to Toronto to see our other partner.	ok	
+dev	tatoeba-3121768	en	real	long	Today I'll go to the cinema with Tom's brother.	ok	
+dev	tatoeba-3723306	en	real	long	Tom never mentioned any of this to me before.	ok	
+dev	tatoeba-3725424	en	real	long	Tom lost his job as a used car salesman.	ok	
+dev	tatoeba-6029565	en	real	long	I keep repeating the same word over and over.	ok	
+dev	tatoeba-6503041	en	real	long	Tom and Mary did a lot more than what we asked them to.	ok	
+dev	tatoeba-7292357	en	real	long	Tom tried to understand why he was different from other people.	ok	
+dev	tatoeba-7849951	en	real	long	It was the worst pain I had ever experienced.	ok	
+dev	tatoeba-8200207	en	real	long	He decided to go to Algeria to continue his education.	ok	
+dev	tatoeba-8409197	en	real	long	Before you get on that airplane, I need to tell you something very important.	ok	
+dev	tatoeba-10597195	en	real	other	I'm not going to stay here much longer.	ok	
+dev	tatoeba-11366737	en	real	other	My language-learning has slowed down this year.	ok	
+dev	tatoeba-11451958	en	real	other	We need to stay goal-oriented.	ok	
+dev	tatoeba-11607499	en	real	other	Tom went crowdsurfing in his wheelchair.	ok	
+dev	tatoeba-12295238	en	real	other	Our prices are the lowest.	ok	
+dev	tatoeba-12647790	en	real	other	Ziri has met some new friends.	ok	
+dev	tatoeba-12856174	en	real	other	I'm getting a sense of déjà vu here.	ok	
+dev	tatoeba-12884337	en	real	other	I do not belong here.	ok	
+dev	tatoeba-2473581	en	real	other	She's not even that good looking.	ok	
+dev	tatoeba-2543764	en	real	other	I was never good at figures.	ok	
+dev	tatoeba-3724178	en	real	other	I never minded all that much.	ok	
+dev	tatoeba-4788027	en	real	other	I bought lots of great stuff.	ok	
+dev	tatoeba-5746732	en	real	other	I saw men carrying guns.	ok	
+dev	tatoeba-6035809	en	real	other	I got lost in the cave.	ok	
+dev	tatoeba-6256910	en	real	other	I want to go to graduate school.	ok	
+dev	tatoeba-6356826	en	real	other	I do that once a year.	ok	
+dev	tatoeba-6586568	en	real	other	Just left my dad a voicemail.	ok	
+dev	tatoeba-6853989	en	real	other	What happened was my fault.	ok	
+dev	tatoeba-7111272	en	real	other	I don't work as much as Tom.	ok	
+dev	tatoeba-7444053	en	real	other	Tom and Mary told me they're well.	ok	
+dev	tatoeba-7919676	en	real	other	I just made an idiot of myself today.	ok	
+dev	tatoeba-8567447	en	real	other	I think that I'd buy this towel.	ok	
+dev	tatoeba-9314764	en	real	other	I feel like a failure.	ok	
+dev	tatoeba-9637091	en	real	other	She fell asleep at the wheel.	ok	
+dev	tatoeba-9954425	en	real	other	He hopped the fence to the rail yard.	ok	
+dev	tatoeba-10747911	en	real	question	Who am I to judge?	ok	
+dev	tatoeba-11629570	en	real	question	If you've finished reading the paper, can I have a look at it?	ok	
+dev	tatoeba-12256744	en	real	question	I'd love some more coffee, but not here. How about I make us some at my flat?	ok	
+dev	tatoeba-2698102	en	real	question	Did you know that I want to marry you?	ok	
+dev	tatoeba-3243960	en	real	question	Could you have a look and see if there's enough bread for our lunches tomorrow?	ok	
+dev	tatoeba-5295024	en	real	question	Kids really are little devils, aren't they?	ok	
+dev	tatoeba-5961582	en	real	question	May I use your bathroom?	ok	
+dev	tatoeba-8380990	en	real	question	Was I mentioned in the article?	ok	
+dev	tatoeba-8595486	en	real	question	What are we getting her for Christmas?	ok	
+dev	tatoeba-8791340	en	real	question	Did you get the readings I sent you?	ok	
+dev	ai2-fr-conditional-00000	fr	ai	conditional	Si elle oublie encore de payer la facture d'électricité, je lui coupe l'accès à la box et on verra combien de temps elle tient.	ok	
+dev	ai2-fr-conditional-00002	fr	ai	conditional	Si mon frère arrive à jouer ce morceau au concert, je serai si fier que je le serrerai dans mes bras devant tout le monde.	ok	
+dev	ai2-fr-conditional-00004	fr	ai	conditional	Si la neige tient jusqu'à demain matin, je resterai seul devant la fenêtre à regarder ta trace disparaître.	ok	
+dev	ai2-fr-conditional-00006	fr	ai	conditional	Si je range tout maintenant, je pourrai admirer mon salon impeccable.	ok	
+dev	ai2-fr-conditional-00008	fr	ai	conditional	Si on oublie la sortie de 15 heures, on finit tous à la bibliothèque à réviser jusqu'à la fermeture.	ok	
+dev	ai2-fr-conditional-00010	fr	ai	conditional	Si je réussis mon permis du premier coup, je fais la fête à l'auto-école.	ok	
+dev	ai2-fr-conditional-00012	fr	ai	conditional	Si je sors maintenant dans cette neige, je vais glisser et finir les fesses dans la poudreuse.	ok	
+dev	ai2-fr-future-00000	fr	ai	future	Je vais encore devoir expliquer à ma sœur pourquoi je n'ai pas prévenu pour le repas de dimanche.	ok	
+dev	ai2-fr-future-00002	fr	ai	future	Il va enfin ranger son atelier tout seul comme un grand.	ok	
+dev	ai2-fr-future-00004	fr	ai	future	Mon frère va enfin pouvoir souffler, son match de foot est reporté à la semaine prochaine.	ok	
+dev	ai2-fr-future-00006	fr	ai	future	La semaine prochaine, on va devoir annuler notre abonnement à la salle de sport, faute d'argent.	ok	
+dev	ai2-fr-future-00008	fr	ai	future	Mon frère va encore se relever pour grignoter en cachette cette nuit.	ok	
+dev	ai2-fr-future-00010	fr	ai	future	Dimanche, on va enfin grimper ce col à vélo tous les deux et je vais pouvoir montrer à mon frère ce dont on est capables.	ok	
+dev	ai2-fr-mishap-00000	fr	ai	mishap	Mon frère a raté son penalty et tout le monde a explosé de rire.	ok	
+dev	ai2-fr-mishap-00002	fr	ai	mishap	On a voulu réparer la fuite nous-mêmes et maintenant on a une piscine dans le salon.	ok	
+dev	ai2-fr-mishap-00004	fr	ai	mishap	J'ai laissé le gâteau trop longtemps au four et maintenant il est tout sec, je n'ose même pas le montrer à mon frère.	ok	
+dev	ai2-fr-mishap-00006	fr	ai	mishap	On a renversé la soupe sur la robe de la mariée, du coup tout le monde a bien ri.	ok	
+dev	ai2-fr-mishap-00008	fr	ai	mishap	On a calé l'armoire dans l'escalier et bloqué la porte, mais on l'a montée quand même.	ok	
+dev	ai2-fr-mishap-00010	fr	ai	mishap	Mon oncle a encore ramené son dessert immangeable et tout le monde a fini par commander des pizzas.	ok	
+dev	ai2-fr-moment-00000	fr	ai	moment	Finalement, Paul a réussi à réserver une table pour ce soir.	ok	
+dev	ai2-fr-moment-00002	fr	ai	moment	Je viens de décoller la dernière affiche du mur et la pièce sonne bizarrement vide.	ok	
+dev	ai2-fr-moment-00004	fr	ai	moment	Je passe la journée à démonter des cartons que j'ai déjà démontés hier.	ok	
+dev	ai2-fr-moment-00006	fr	ai	moment	J'ai mis dix minutes à sortir du parking, mais au moins je suis lancé.	ok	
+dev	ai2-fr-moment-00008	fr	ai	moment	Il a passé dix minutes devant le même fossile.	ok	
+dev	ai2-fr-moment-00010	fr	ai	moment	La cérémonie est enfin terminée, je peux souffler et aller boire un verre.	ok	
+dev	ai2-fr-numbers-00000	fr	ai	numbers	Ça y est, j'ai enfin réussi à faire sortir mon père du musée après trois heures.	ok	
+dev	ai2-fr-numbers-00003	fr	ai	numbers	On a attendu 45 minutes avant le début, j'ai bafouillé.	ok	
+dev	ai2-fr-numbers-00005	fr	ai	numbers	On s’est retrouvés 42 ans plus tard, et on a encore ri comme adolescents.	ok	
+dev	ai2-fr-numbers-00009	fr	ai	numbers	Je supporte 5 minutes de musique de mon colocataire.	ok	
+dev	ai2-fr-numbers-00011	fr	ai	numbers	Mon frère a laissé mijoter la sauce pendant 45 minutes, et maintenant tout est brûlé.	ok	
+dev	ai2-fr-numbers-00013	fr	ai	numbers	On a payé 45 euros pour la coupe, honteux.	ok	
+dev	ai2-fr-past-00000	fr	ai	past	Je me suis endormi chez le coiffeur, donc je ressemble à un hérisson.	ok	
+dev	ai2-fr-past-00002	fr	ai	past	Je dois supporter l'oncle de mon ami au mariage parce qu'il s'est incrusté à notre table.	ok	
+dev	ai2-fr-past-00004	fr	ai	past	On a fini les cartons ce matin, donc on souffle enfin dans le nouveau salon.	ok	
+dev	ai2-fr-past-00006	fr	ai	past	Je n’arrive pas à me motiver pour jouer ce soir parce que ma console a planté juste avant la fin de ma partie.	ok	
+dev	ai2-fr-past-00008	fr	ai	past	Comme j'ai oublié de confirmer hier soir, je dois maintenant demander à ma sœur de garder les enfants alors qu'elle avait prévu autre chose.	ok	
+dev	ai2-fr-past-00010	fr	ai	past	Comme elle a eu sa place au premier rang hier soir, ma sœur est encore toute retournée par ce concert et n'arrête pas d'en parler.	ok	
+dev	ai2-fr-question-00000	fr	ai	question	Ton frère a enfin arrêté de jouer et il a fini ses devoirs, tu peux vérifier ?	ok	
+dev	ai2-fr-question-00002	fr	ai	question	J'ai trouvé des fraises bien mûres, tu en veux pour ce soir ?	ok	
+dev	ai2-fr-question-00005	fr	ai	question	Je glisse partout, tu crois que ça va ?	ok	
+dev	ai2-fr-question-00007	fr	ai	question	Tu es content que le dentiste ait confirmé l'heure ?	ok	
+dev	ai2-fr-question-00009	fr	ai	question	Est‑ce que je dois vraiment me préparer à expliquer à mon médecin pourquoi j’ai confondu ma pilule du matin avec mon chewing‑gum ?	ok	
+dev	ai2-fr-question-00011	fr	ai	question	Je suis vraiment perdu, est-ce que je peux vraiment passer le test de conduite demain ?	ok	
+dev	ai2-fr-question-00013	fr	ai	question	Ai‑je vraiment progressé assez pour soulever 80 kg ?	ok	
+dev	ai2-fr-speech-00000	fr	ai	speech	J'ai bredouillé que j'avais oublié mon maillot à la plage.	ok	
+dev	ai2-fr-speech-00002	fr	ai	speech	Mon frère m'a écrit qu'il avait trouvé du fromage et des crackers pour son petit plaisir de minuit.	ok	
+dev	ai2-fr-speech-00004	fr	ai	speech	Mon frère a soupiré que son équipe avait encore perdu et qu'il n'irait plus au stade.	ok	
+dev	ai2-fr-speech-00006	fr	ai	speech	Mon voisin nous a annoncé tout sourire que son chien avait enfin appris à rapporter la balle.	ok	
+dev	ai2-fr-speech-00008	fr	ai	speech	J'ai écrit à mon ami que la balade à vélo de ce matin était vraiment agréable et que j'avais hâte de recommencer.	ok	
+dev	ai2-fr-speech-00010	fr	ai	speech	Mon frère m'a raconté que le voisin avait appelé la mairie pour se plaindre du chantier, en rigolant.	ok	
+dev	tatoeba-10506420	fr	real	long	En cours de route, Tom a rencontré des amis.	ok	
+dev	tatoeba-10921109	fr	real	long	Nous avons réservé la salle depuis plus d'un an.	ok	
+dev	tatoeba-12622580	fr	real	long	Il est revenu de la fête complètement ensanglanté, son ennemi ne l'a vraiment pas loupé.	ok	
+dev	tatoeba-4184277	fr	real	long	Oups, je me suis trompée, je voulais dire « trois mille yens », pas « trois mille euros ».	ok	
+dev	tatoeba-5696250	fr	real	long	La police est sur le coup ; elle ne tardera pas à retrouver le coupable.	ok	
+dev	tatoeba-6371743	fr	real	long	Si c'est elle qui te l'a dit, c'est forcément vrai.	ok	
+dev	tatoeba-6541313	fr	real	long	D'abord je suis allé nager, puis j'ai fait les courses.	ok	
+dev	tatoeba-6883762	fr	real	long	Depuis que je me suis fait hypnotiser, j'ai l'impression que le temps passe lentement.	ok	
+dev	tatoeba-6982198	fr	real	long	Marie lui a gentiment fait comprendre qu'elle ne voulait pas le revoir.	ok	
+dev	tatoeba-7071043	fr	real	long	Soit mon frère est tombé du lit, soit le chat a fait un vol plané.	ok	
+dev	tatoeba-747882	fr	real	long	Elle est rédactrice en chef d'un grand quotidien régional.	ok	
+dev	tatoeba-8271201	fr	real	long	Il n'est pas toujours facile de trouver du temps pour tout ce que l'on voudrait.	ok	
+dev	tatoeba-8319627	fr	real	long	Depuis l'arrivée de leur mère, les enfants sont insupportables.	ok	
+dev	tatoeba-8620475	fr	real	long	C'est bien rigolo tout ça, mais je n'ai pas que ça à faire.	ok	
+dev	tatoeba-8660766	fr	real	long	Il n'a pas eu assez de temps pour faire tout ce qu'il voulait.	ok	
+dev	tatoeba-10186761	fr	real	other	Elles ne le voient pas.	ok	
+dev	tatoeba-11176249	fr	real	other	Il doit assumer son rôle de meneur.	ok	
+dev	tatoeba-12171460	fr	real	other	J'ai une bonne caisse d'assurance maladie.	ok	
+dev	tatoeba-12225907	fr	real	other	Nous mourrons tous un jour ou l’autre.	ok	
+dev	tatoeba-12793167	fr	real	other	Il l'a déshabillé d'un seul coup de regard.	ok	
+dev	tatoeba-12835400	fr	real	other	Je traverse une mauvaise passe.	ok	
+dev	tatoeba-1896639	fr	real	other	Je ne les pleure pas.	ok	
+dev	tatoeba-2777974	fr	real	other	Je n'ai pas les moyens.	ok	
+dev	tatoeba-2913117	fr	real	other	Elles étaient adossées au mur.	ok	
+dev	tatoeba-3017682	fr	real	other	Je n'ai pas de lave-vaisselle.	ok	
+dev	tatoeba-3177495	fr	real	other	Il poussa un profond soupir de soulagement.	ok	
+dev	tatoeba-3259867	fr	real	other	Elle arrive presque toujours en retard.	ok	
+dev	tatoeba-3364356	fr	real	other	Il n'est pas obligé de le savoir.	ok	
+dev	tatoeba-4200322	fr	real	other	Il casse souvent nos fenêtres avec une balle.	ok	
+dev	tatoeba-4535539	fr	real	other	Je te déconseille d'aller en Finlande.	ok	
+dev	tatoeba-4613934	fr	real	other	Je sais que vous êtes tous des lâches.	ok	
+dev	tatoeba-540527	fr	real	other	Veuillez recevoir, monsieur, mes salutations distinguées.	ok	
+dev	tatoeba-5412343	fr	real	other	Je ne suis pas n'importe qui.	ok	
+dev	tatoeba-5638405	fr	real	other	Ils allèrent se coucher très tard.	ok	
+dev	tatoeba-6080435	fr	real	other	On sonne à la porte.	ok	
+dev	tatoeba-6380241	fr	real	other	Je pars pour Paris à dix heures.	ok	
+dev	tatoeba-7414798	fr	real	other	Nous sommes donc tous tristes.	ok	
+dev	tatoeba-8721326	fr	real	other	Ils exécutent les ordres sans rechigner.	ok	
+dev	tatoeba-9035112	fr	real	other	Il s'est placé derrière le pupitre.	ok	
+dev	tatoeba-9353810	fr	real	other	Je me promène à vélo.	ok	
+dev	tatoeba-1047128	fr	real	question	Mon chéri, peux-tu repasser ma robe, s'il te plait ?	ok	
+dev	tatoeba-1459545	fr	real	question	Je ne suis pas arachnophobe, mais pourrais-tu demander à ta mygale de rentrer dans sa boîte, je te prie ?	ok	
+dev	tatoeba-4627202	fr	real	question	En quels termes êtes-vous avec lui ?	ok	
+dev	tatoeba-514713	fr	real	question	Peux-tu me donner ton numéro de portable ?	ok	
+dev	tatoeba-6061785	fr	real	question	Pourquoi ne m'as-tu pas avoué plus tôt que tu m'aimais ?	ok	
+dev	tatoeba-6082699	fr	real	question	Pourquoi est-ce toujours mon tour lorsqu'il faut payer ?	ok	
+dev	tatoeba-861553	fr	real	question	À quelle heure se lève-t-elle ?	ok	
+dev	tatoeba-861704	fr	real	question	Quels sont les rayons qu'il critique ?	ok	
+dev	tatoeba-8942930	fr	real	question	Ça te met mal à l'aise quand je fais ça ?	ok	
+dev	tatoeba-8961310	fr	real	question	Est-ce lui qui a fait ça ?	ok	
+dev	ai2-es-conditional-00000	es	ai	conditional	Si perdemos el próximo autobús, llegaremos tardísimo otra vez.	ok	
+dev	ai2-es-conditional-00002	es	ai	conditional	Si mi hermana sale bien del cambio de look en la peluquería, respiro tranquilo y hasta le invito un café.	ok	
+dev	ai2-es-conditional-00004	es	ai	conditional	Si el hotel tiene tobogán, nos lanzamos todos a la piscina.	ok	
+dev	ai2-es-conditional-00006	es	ai	conditional	Si no fuera por las horas que le metí a ese juego, no habría llegado tan lejos en la partida.	ok	
+dev	ai2-es-conditional-00008	es	ai	conditional	Si el camarero nos vuelve a preguntar qué queremos, nos quedaremos mudos mirando el menú como si nunca hubiéramos comido.	ok	
+dev	ai2-es-conditional-00010	es	ai	conditional	Si no conseguimos entradas para el concierto, nos quedamos en casa y perdemos el dinero del viaje.	ok	
+dev	ai2-es-conditional-00012	es	ai	conditional	Si no cerramos la fuga pronto, perderemos todo lo del sótano.	ok	
+dev	ai2-es-future-00000	es	ai	future	Esta noche voy a prepararme un bocadillo enorme para celebrar el día tan bueno que he tenido.	ok	
+dev	ai2-es-future-00002	es	ai	future	Vamos a llenarle la casa de globos cuando cumpla los cuarenta.	ok	
+dev	ai2-es-future-00004	es	ai	future	Mañana voy a dormir de un tirón porque mi compañero ruidoso se va fuera todo el fin de semana.	ok	
+dev	ai2-es-future-00006	es	ai	future	La semana que viene vamos a demostrar en la clase de idiomas todo lo que hemos aprendido juntos.	ok	
+dev	ai2-es-future-00008	es	ai	future	La semana que viene voy a salir de ruta con mis amigos y no veo la hora de estar en la carretera cantando.	ok	
+dev	ai2-es-future-00010	es	ai	future	Por fin mañana vamos a comer a ese restaurante con mi hermano.	ok	
+dev	ai2-es-mishap-00000	es	ai	mishap	Perdimos la tienda por no fijarla bien, así que ahora dormimos al raso y aun así nos sentimos los reyes del campamento.	ok	
+dev	ai2-es-mishap-00002	es	ai	mishap	Mi hermano resbaló en la nieve delante de todos y tuvo que aguantar las risas del vecindario.	ok	
+dev	ai2-es-mishap-00004	es	ai	mishap	Grité sorpresa y me resbalé, y por eso todos se rieron.	ok	
+dev	ai2-es-mishap-00006	es	ai	mishap	El peluquero me dejó el flequillo torcido, así que ahora tengo que llevar gorro hasta que crezca.	ok	
+dev	ai2-es-mishap-00008	es	ai	mishap	Le prestamos la escalera al vecino y nos la devolvió rota, así que ahora tenemos que comprar una nueva.	ok	
+dev	ai2-es-mishap-00010	es	ai	mishap	Me tiñeron el pelo de verde, así que ahora llevo gorra a todas partes.	ok	
+dev	ai2-es-moment-00000	es	ai	moment	Con el apagón, encendí unas velas y jugamos a las cartas toda la familia en la mesa del comedor.	ok	
+dev	ai2-es-moment-00002	es	ai	moment	Salimos de la entrevista y respiramos hondo en la acera, sin decir nada todavía.	ok	
+dev	ai2-es-moment-00004	es	ai	moment	Hoy, al ver a mi amigo aparcar con soltura, recordé que yo todavía no sé conducir y me quedé callado mirando el volante.	ok	
+dev	ai2-es-moment-00006	es	ai	moment	Me acabo de dar cuenta de que el grifo lleva toda la tarde goteando.	ok	
+dev	ai2-es-moment-00008	es	ai	moment	Por fin terminé de pagar las cuentas y respiré tranquilo.	ok	
+dev	ai2-es-moment-00010	es	ai	moment	Nos tiramos bolas de nieve hasta que acabamos los dos empapados y riéndonos.	ok	
+dev	ai2-es-numbers-00000	es	ai	numbers	Perdí mi cartera con 50 pesos dentro y ahora mi amigo dice que soy socio fundador del club de los despistados.	ok	
+dev	ai2-es-numbers-00002	es	ai	numbers	En la peluquería nos cobraron sesenta euros por cortarnos el pelo.	ok	
+dev	ai2-es-numbers-00005	es	ai	numbers	Después de veinte años, nos encontramos una sola vez y la despedida fue inevitable.	ok	
+dev	ai2-es-numbers-00007	es	ai	numbers	Nosotros pedimos 23 platos y nos dimos cuenta de que nadie pagó.	ok	
+dev	ai2-es-numbers-00009	es	ai	numbers	Nos dimos cuenta a los 45 minutos de espera que habíamos olvidado mencionar nuestro seguro, y nos sonrojamos.	ok	
+dev	ai2-es-numbers-00013	es	ai	numbers	Hoy, a los ocho grados bajo el sol, mi hermano de veinte años salió a correr y celebró su récord personal.	ok	
+dev	ai2-es-past-00000	es	ai	past	Menos mal que empatamos porque jugamos fatal.	ok	
+dev	ai2-es-past-00002	es	ai	past	Estoy tranquilo porque el teléfono ya venía roto desde antes.	ok	
+dev	ai2-es-past-00004	es	ai	past	Nos sentimos tranquilos porque encontramos la cartera que habíamos perdido antes de salir.	ok	
+dev	ai2-es-past-00006	es	ai	past	Mi hermano no quiere volver al supermercado porque tiró una torre de latas delante de todos.	ok	
+dev	ai2-es-past-00008	es	ai	past	Como no cenamos por ver la película, ahora nos estamos comiendo hasta las migas del pan.	ok	
+dev	ai2-es-past-00010	es	ai	past	Menos mal que reservamos la mesa con una semana de antelación, porque el restaurante estaba hasta arriba.	ok	
+dev	ai2-es-question-00000	es	ai	question	¿Otra vez se ha dejado el paraguas en tu casa?	ok	
+dev	ai2-es-question-00002	es	ai	question	¿Por qué tengo que cargar yo solo con la bici otra vez si siempre te toca a ti subir la cuesta?	ok	
+dev	ai2-es-question-00004	es	ai	question	¿Nos llevamos la linterna grande para cuando se haga de noche en el campamento?	ok	
+dev	ai2-es-question-00006	es	ai	question	¿Crees que mi hermano pequeño se asustó mucho cuando se fue la luz en casa?	ok	
+dev	ai2-es-question-00008	es	ai	question	¿Y si le digo a mi hermano que me espere en la ruta y luego no encuentro el camino?	ok	
+dev	ai2-es-question-00010	es	ai	question	¿Nos turnamos para cuidar a los niños esta tarde y así todos podemos descansar un rato tranquilos?	ok	
+dev	ai2-es-question-00012	es	ai	question	¿Por qué no ha querido comer hoy mi perro después de toda la mañana?	ok	
+dev	ai2-es-speech-00000	es	ai	speech	Le dije a mi hermano que nunca había visto jugar tan bien a alguien.	ok	
+dev	ai2-es-speech-00002	es	ai	speech	Le dije a mi amigo que ya tenía todo listo para ir al supermercado.	ok	
+dev	ai2-es-speech-00004	es	ai	speech	Le preguntamos al vecino si iba a llover y nos dijo que mejor ni saliéramos.	ok	
+dev	ai2-es-speech-00006	es	ai	speech	Cuando terminé de limpiar toda la casa, mi hermana me dijo que ya podía sentarme a descansar.	ok	
+dev	ai2-es-speech-00008	es	ai	speech	Cuando le preguntamos por el retraso del autobús, nos dijo que ya estaba acostumbrado.	ok	
+dev	ai2-es-speech-00010	es	ai	speech	Le dije al camarero que la sopa estaba fría y me contestó que era un plato de temporada.	ok	
+dev	tatoeba-10156978	es	real	long	En mi casa usamos mucho el laurel para condimentar algunos platos.	ok	
+dev	tatoeba-10299120	es	real	long	Me despertó muy temprano el balido de aquel cordero.	ok	
+dev	tatoeba-10356545	es	real	long	Deberíamos estar preparándonos para tratar de amortiguar lo más posible los efectos de la crisis energética que se nos viene encima.	ok	
+dev	tatoeba-10364426	es	real	long	A los niños hay que ponerles limitaciones, si no, crecen y se piensan que las leyes no van con ellos.	ok	
+dev	tatoeba-10365558	es	real	long	Mi vecino tiene hipoglucemia, y por eso siempre lleva caramelos en el bolsillo.	ok	
+dev	tatoeba-11713133	es	real	long	Me encanta el queso de cabra en la pizza.	ok	
+dev	tatoeba-11719542	es	real	long	Las lenguas humanas son extraordinariamente versátiles pero tienen sus límites: los que les confieren nuestra imaginación y nuestra percepción.	ok	
+dev	tatoeba-13465130	es	real	long	Bruno estuvo en las rocas cogiendo cangrejos con los amigos.	ok	
+dev	tatoeba-13615386	es	real	long	Micaela no soporta que le digan lo que tiene que hacer.	ok	
+dev	tatoeba-1749294	es	real	long	Hace mucho frío. Estoy tiritando y me castañetean los dientes.	ok	
+dev	tatoeba-2464617	es	real	long	Partí a la montaña para olvidarme de mi rutina y sentirme liberado al fin.	ok	
+dev	tatoeba-4360655	es	real	long	Carlos compró una cámara espía y la situó en un lugar estratégico para grabar a sus vecinos.	ok	
+dev	tatoeba-5695844	es	real	long	Cuando echo el aliento sobre mis gafas, el vaho empaña los cristales.	ok	
+dev	tatoeba-6566759	es	real	long	Me estrechó la mano con tal fuerza que me hizo daño.	ok	
+dev	tatoeba-772570	es	real	long	Me aburriría si tuviera que contar hasta quinientos veinticuatro mil trescientos setenta y dos.	ok	
+dev	tatoeba-10359920	es	real	other	Se le ha descosido la bragueta del pantalón.	ok	
+dev	tatoeba-10461936	es	real	other	Tus amigas chilenas son muy simpáticas y amables.	ok	
+dev	tatoeba-1127586	es	real	other	Él es puntual y discreto en sus deudas.	ok	
+dev	tatoeba-11764502	es	real	other	Me molesta que Modesta sea tan modesta.	ok	
+dev	tatoeba-12293543	es	real	other	Si tú cocinas, yo lavo los platos.	ok	
+dev	tatoeba-12892523	es	real	other	Mi padre tiene otros dos hijos.	ok	
+dev	tatoeba-13093190	es	real	other	Creo que no les gusto.	ok	
+dev	tatoeba-13681973	es	real	other	A Tomasa nadie le presta atención.	ok	
+dev	tatoeba-1387646	es	real	other	Le dolía pero intentaba disimularlo.	ok	
+dev	tatoeba-1624806	es	real	other	Pasé corriendo en frente de ellos.	ok	
+dev	tatoeba-1767413	es	real	other	Cuando toco una telaraña me da repelús.	ok	
+dev	tatoeba-1801754	es	real	other	Si me tratas de obligar no te escucharé.	ok	
+dev	tatoeba-3174738	es	real	other	Algo raro me pasó esta mañana.	ok	
+dev	tatoeba-5014485	es	real	other	A María le gustan las bananas.	ok	
+dev	tatoeba-5025226	es	real	other	Yo leí todas las obras de Sócrates.	ok	
+dev	tatoeba-5104255	es	real	other	A todos les caigo mal.	ok	
+dev	tatoeba-5124535	es	real	other	Él está remando en dulce de leche.	ok	
+dev	tatoeba-5391119	es	real	other	No me gusta pelear. Soy hombre de paz.	ok	
+dev	tatoeba-6771476	es	real	other	Me operarán mañana por la tarde.	ok	
+dev	tatoeba-8187739	es	real	other	Al final no nos casamos.	ok	
+dev	tatoeba-8193411	es	real	other	Siempre acabamos llegando a donde nos esperan.	ok	
+dev	tatoeba-8317957	es	real	other	Me da pena que se vaya.	ok	
+dev	tatoeba-8939799	es	real	other	¡Qué me importa cuánto dura la cuarentena!	ok	
+dev	tatoeba-9143331	es	real	other	Mi mejor amigo vive en Canadá.	ok	
+dev	tatoeba-9358346	es	real	other	Juan no sabía lo que le venía encima.	ok	
+dev	tatoeba-1148149	es	real	question	¿Debería encontrar algo que me distraiga?	ok	
+dev	tatoeba-11648035	es	real	question	¿Que dónde está el banco? Pues ahora no me acuerdo, deja que lo mire en el móvil.	ok	
+dev	tatoeba-12292982	es	real	question	¿Por qué me llamaste a medianoche?	ok	
+dev	tatoeba-1541064	es	real	question	No soy tonto, ¿crees que me vas a engañar?	ok	
+dev	tatoeba-2766495	es	real	question	¿Por qué huyes de mis caricias?	ok	
+dev	tatoeba-2949052	es	real	question	¿Me puede sacar una foto?	ok	
+dev	tatoeba-3009795	es	real	question	¿Me tengo que dar una inyección?	ok	
+dev	tatoeba-5025999	es	real	question	¿No me digas que no te gusta el chocolate?	ok	
+dev	tatoeba-9358267	es	real	question	¿Por qué le han censurado la cuenta de Twitter?	ok	
+dev	tatoeba-9432420	es	real	question	Se me ha olvidado el cuadernillo de música, ¿puedo sentarme contigo?	ok	
+test	ai2-en-conditional-00001	en	ai	conditional	If my sister finally gets backstage at the concert, she'll probably start a karaoke session with the band and scare everyone.	ok	
+test	ai2-en-conditional-00003	en	ai	conditional	If you score that winning penalty tomorrow, I’ll celebrate by buying the whole team pizza and taking Mom out for ice cream.	ok	
+test	ai2-en-conditional-00005	en	ai	conditional	If I have to wait another five minutes for this haircut, I'm leaving.	ok	
+test	ai2-en-conditional-00007	en	ai	conditional	If the screen cracks again, we’ll have to spend the whole weekend trying to salvage data from our dead phone.	ok	
+test	ai2-en-conditional-00009	en	ai	conditional	If my brother keeps skipping classes, he'll fail the semester and disappoint everyone.	ok	
+test	ai2-en-conditional-00011	en	ai	conditional	If we keep losing every match, we'll never finish the campaign together.	ok	
+test	ai2-en-conditional-00013	en	ai	conditional	If Mom finally passes the Mandarin final, she'll celebrate by making us all eat spicy Sichuan noodles for dinner.	ok	
+test	ai2-en-future-00001	en	ai	future	I’m going to set up our campsite tomorrow and roast marshmallows by the fire.	ok	
+test	ai2-en-future-00003	en	ai	future	I'll surprise my sister with a clown‑costume shopping spree tomorrow.	ok	
+test	ai2-en-future-00005	en	ai	future	Tomorrow I'm going to invite Mrs. Patel from next door over for a garden tea party, and I can't wait.	ok	
+test	ai2-en-future-00007	en	ai	future	We are going to raid the boss tomorrow.	ok	
+test	ai2-en-future-00009	en	ai	future	We'll get a new phone tomorrow, excited.	ok	
+test	ai2-en-future-00011	en	ai	future	We will proudly showcase our new exhibit tomorrow.	ok	
+test	ai2-en-mishap-00001	en	ai	mishap	We burned the popcorn, so the smoke alarm sang.	ok	
+test	ai2-en-mishap-00003	en	ai	mishap	When my sister accidentally sent the client the draft with the typo, she quickly fixed it and secured the biggest contract of the year.	ok	
+test	ai2-en-mishap-00005	en	ai	mishap	When Alex spilled coffee on his résumé just before the interview, the recruiter laughed and asked if he’d brought a stain‑proof portfolio.	ok	
+test	ai2-en-mishap-00007	en	ai	mishap	When my sister's hamster escaped, she chased it all night and finally rescued it, feeling triumphant.	ok	
+test	ai2-en-mishap-00011	en	ai	mishap	I managed to stall the car on the hill, so I spent the next ten minutes pushing it while everyone watched.	ok	
+test	ai2-en-mishap-00013	en	ai	mishap	Our goalkeeper slipped, but we still won easily.	ok	
+test	ai2-en-moment-00003	en	ai	moment	We watched Aunt Maya stare at the departure board, then grin when the airline announced another two‑hour delay.	ok	
+test	ai2-en-moment-00005	en	ai	moment	We burned the soup and stared at the empty kitchen.	ok	
+test	ai2-en-moment-00007	en	ai	moment	We rode the sunrise bus together, watched the city wake, and when we both pressed the stop button on time, we grinned.	ok	
+test	ai2-en-moment-00009	en	ai	moment	We finally closed the endless spreadsheet, heard the printer stop humming, and realized we could actually leave on time.	ok	
+test	ai2-en-moment-00011	en	ai	moment	My sister kept calling while the lights flickered, and the whole house fell silent.	ok	
+test	ai2-en-moment-00017	en	ai	moment	We watched the engine sputter then die on the highway, rain soaking us as we realized we’d missed the wedding.	ok	
+test	ai2-en-numbers-00001	en	ai	numbers	After practicing for weeks, my sister nailed her interview at 9 a.m., and they offered her the manager position immediately.	ok	
+test	ai2-en-numbers-00003	en	ai	numbers	My sister was twenty‑four when she failed her driving test.	ok	
+test	ai2-en-numbers-00005	en	ai	numbers	My brother finally confirmed the meeting for 3 p.m., so I can pick him up after his surgery tomorrow.	ok	
+test	ai2-en-numbers-00007	en	ai	numbers	I accidentally spilled the gravy on my 7‑year‑old nephew's new shirt during dinner.	ok	
+test	ai2-en-numbers-00010	en	ai	numbers	My sister called at 6:30 this morning to say her date went so well.	ok	
+test	ai2-en-numbers-00012	en	ai	numbers	My sister paid 80 dollars for a haircut that made her look like a poodle, and she strutted out of the salon anyway.	ok	
+test	ai2-en-past-00001	en	ai	past	We left the office early because the client cancelled their meeting, so we could finally relax with a quiet dinner.	ok	
+test	ai2-en-past-00003	en	ai	past	I lost because my brother kept stealing my power‑ups.	ok	
+test	ai2-en-past-00005	en	ai	past	I burned the sauce, so dinner is ruined.	ok	
+test	ai2-en-past-00013	en	ai	past	We giggled because the boxes fell on the cat.	ok	
+test	ai2-en-past-00015	en	ai	past	I laughed because Aunt Susan set the oven to 500 °F and burnt the cake.	ok	
+test	ai2-en-past-00017	en	ai	past	We hid the cake because we thought she’d never suspect a party.	ok	
+test	ai2-en-question-00001	en	ai	question	Can I bring my new board game to the babysitting night tomorrow?	ok	
+test	ai2-en-question-00003	en	ai	question	Did I just find the perfect dress online?	ok	
+test	ai2-en-question-00005	en	ai	question	Why does my brother keep double‑booking our dinner?	ok	
+test	ai2-en-question-00007	en	ai	question	Why did you make me cook the whole turkey again for dinner?	ok	
+test	ai2-en-question-00009	en	ai	question	Why do we have to wait another hour before the doctor finally sees us?	ok	
+test	ai2-en-question-00011	en	ai	question	Did you forget to buy the milk again, even though I reminded you?	ok	
+test	ai2-en-question-00013	en	ai	question	Did you enjoy the sunrise view from the ridge trail with Mom today?	ok	
+test	ai2-en-speech-00001	en	ai	speech	I was told the sale ended before I even reached the store.	ok	
+test	ai2-en-speech-00003	en	ai	speech	My sister texted that she found the perfect dress.	ok	
+test	ai2-en-speech-00005	en	ai	speech	We texted the landlord that we finally paid the electric bill, and we couldn't stop laughing about our heroic victory.	ok	
+test	ai2-en-speech-00007	en	ai	speech	My sister texted that I burned the frosting.	ok	
+test	ai2-en-speech-00009	en	ai	speech	We told them we finally paid the electricity bill.	ok	
+test	ai2-en-speech-00011	en	ai	speech	My sister texted me that I accidentally walked into the sandcastle and messed it up.	ok	
+test	tatoeba-10236838	en	real	long	Ziri asked Rima if he could borrow her platter.	ok	
+test	tatoeba-10250493	en	real	long	The flatness of her voice warned me that something was wrong.	ok	
+test	tatoeba-11823724	en	real	long	Igor went to retrieve his stuff from the campsite.	ok	
+test	tatoeba-12649379	en	real	long	Ziri shared his binoculars with a group of tourists.	ok	
+test	tatoeba-13116114	en	real	long	There is a horse nearby; I can just tell.	ok	
+test	tatoeba-3721466	en	real	long	I'm here for you in your time of need.	ok	
+test	tatoeba-3727049	en	real	long	I saw the look of terror in Tom's eyes.	ok	
+test	tatoeba-4401998	en	real	long	I remain committed to making amends to everyone I have hurt.	ok	
+test	tatoeba-4413227	en	real	long	I hope they form an alliance that will endure.	ok	
+test	tatoeba-4823232	en	real	long	I have been thinking about doing this for a very long time.	ok	
+test	tatoeba-5948254	en	real	long	That point of view is interesting, even if I don't necessarily agree with it completely.	ok	
+test	tatoeba-6168026	en	real	long	I love the setting of this game, but the story is unremarkable.	ok	
+test	tatoeba-6509333	en	real	long	Tom and Mary should've told me they were married.	ok	
+test	tatoeba-8657761	en	real	long	At the moment, we are only fixing problems in the software. We are not accepting enhancement requests.	ok	
+test	tatoeba-8740949	en	real	long	I have been wanting to go to Boston for over a year now.	ok	
+test	tatoeba-10640489	en	real	other	The Lord interceded on my behalf.	ok	
+test	tatoeba-12229515	en	real	other	I saw you steal Tom's wallet.	ok	
+test	tatoeba-12573340	en	real	other	I was living in the village.	ok	
+test	tatoeba-1839505	en	real	other	I saw Tom on television.	ok	
+test	tatoeba-2158894	en	real	other	I thought it would be a good idea.	ok	
+test	tatoeba-2258415	en	real	other	He maintains that it's true.	ok	
+test	tatoeba-2265871	en	real	other	Don't ride that horse. He'll throw you.	ok	
+test	tatoeba-2446798	en	real	other	The children are playing in the schoolyard.	ok	
+test	tatoeba-3596355	en	real	other	I need to take your temperature again.	ok	
+test	tatoeba-3597586	en	real	other	Tom shook his fist at Mary.	ok	
+test	tatoeba-3727455	en	real	other	Tom has no right to give me orders.	ok	
+test	tatoeba-3728887	en	real	other	I didn't say we couldn't figure it out.	ok	
+test	tatoeba-5506465	en	real	other	I love going to concerts.	ok	
+test	tatoeba-6008411	en	real	other	Tom has a hedge maze in his garden.	ok	
+test	tatoeba-6067783	en	real	other	I love reading science fiction novels.	ok	
+test	tatoeba-6113915	en	real	other	Those are your faults, not mine.	ok	
+test	tatoeba-6222438	en	real	other	I think Tom still has to do that.	ok	
+test	tatoeba-6581007	en	real	other	I totally need to bulk up.	ok	
+test	tatoeba-6674005	en	real	other	I'm sorry, but I can't hear you.	ok	
+test	tatoeba-6861052	en	real	other	There's something else that's been bothering me.	ok	
+test	tatoeba-7754553	en	real	other	I need a Berber translator.	ok	
+test	tatoeba-8263908	en	real	other	His Berber is very, very good.	ok	
+test	tatoeba-8404471	en	real	other	I knew they were Muslim.	ok	
+test	tatoeba-9847222	en	real	other	I'd never been to Australia before that.	ok	
+test	tatoeba-9956527	en	real	other	Our equipment is very cumbersome.	ok	
+test	tatoeba-10142844	en	real	question	So, you have a movie idea for me?	ok	
+test	tatoeba-10259230	en	real	question	Do I detect a hint of sarcasm in your reply?	ok	
+test	tatoeba-11472471	en	real	question	If bears are dangerous, why are they friend-shaped?	ok	
+test	tatoeba-11629092	en	real	question	What about eggs? Do we need any?	ok	
+test	tatoeba-12754937	en	real	question	What have I got in my pocket?	ok	
+test	tatoeba-5922564	en	real	question	Since when do you have the right to tell me what to do?	ok	
+test	tatoeba-5981547	en	real	question	Are you going to let him insult your mother like that?	ok	
+test	tatoeba-6063883	en	real	question	Have I ever lied to him?	ok	
+test	tatoeba-6713427	en	real	question	Where is my pain medication?	ok	
+test	tatoeba-727739	en	real	question	Kate always sleeps through her alarm. Speaking of which, have you seen her yet today?	ok	
+test	ai2-fr-conditional-00001	fr	ai	conditional	Si papa ne vient pas ce soir, je dînerai seul devant la table vide.	ok	
+test	ai2-fr-conditional-00003	fr	ai	conditional	Si je trouve enfin toutes mes factures, je pourrai enfin respirer tranquillement.	ok	
+test	ai2-fr-conditional-00007	fr	ai	conditional	Si le coiffeur annule, je pourrai enfin me détendre.	ok	
+test	ai2-fr-conditional-00011	fr	ai	conditional	Si le son crache encore, on partira.	ok	
+test	ai2-fr-conditional-00013	fr	ai	conditional	Si le soleil revient demain, on pourra enfin ranger nos bottes mouillées.	ok	
+test	ai2-fr-conditional-00015	fr	ai	conditional	Si Léa termine le glaçage à temps, tout le monde admirera son chef-d’œuvre.	ok	
+test	ai2-fr-conditional-00020	fr	ai	conditional	Si on part maintenant en évitant les bouchons, on sera bien contents d'arriver avant la nuit.	ok	
+test	ai2-fr-future-00003	fr	ai	future	Je vais devoir refaire le gâteau de Marie.	ok	
+test	ai2-fr-future-00005	fr	ai	future	La semaine prochaine, on va enfin s’inscrire à la salle de sport ensemble.	ok	
+test	ai2-fr-future-00007	fr	ai	future	On va adopter un chiot ce weekend, trop excité.	ok	
+test	ai2-fr-future-00009	fr	ai	future	Je vais enfin m’inscrire à la salle de sport la semaine prochaine, et je sens déjà le poids de mon stress s’alléger.	ok	
+test	ai2-fr-future-00011	fr	ai	future	Ce week‑end, on va préparer une surprise pour Léa.	ok	
+test	ai2-fr-future-00013	fr	ai	future	Je vais préparer le gâteau de Léa, mais je tremble.	ok	
+test	ai2-fr-mishap-00001	fr	ai	mishap	On a découvert une fuite dans la salle de bain, l'eau a inondé le sol et nos affaires sont maintenant détrempées.	ok	
+test	ai2-fr-mishap-00003	fr	ai	mishap	On vient de découvrir que le groupe a annulé le set avant de monter sur scène, et maintenant on attend dehors sous la pluie.	ok	
+test	ai2-fr-mishap-00005	fr	ai	mishap	J’ai acheté le livre en ligne pour mon ami, la facture a buggé, livraison gratuite, fièrement.	ok	
+test	ai2-fr-mishap-00007	fr	ai	mishap	On a perdu la clé du camion pendant le déménagement, du coup on a dû rester bloqués dehors toute la soirée.	ok	
+test	ai2-fr-mishap-00011	fr	ai	mishap	On a renversé le café sur le serveur, mais il a improvisé une blague et tout le bureau a éclaté de rire.	ok	
+test	ai2-fr-mishap-00013	fr	ai	mishap	Quand mon frère a renversé le vase du musée, il l’a remplacé brillamment.	ok	
+test	ai2-fr-moment-00001	fr	ai	moment	Je viens de sortir du musée, émerveillé par la salle des impressionnistes où chaque tableau me faisait sourire.	ok	
+test	ai2-fr-moment-00003	fr	ai	moment	On vient enfin de sortir le gratin du four, et il a parfaitement doré.	ok	
+test	ai2-fr-moment-00005	fr	ai	moment	On a éclaté de rire en ratant le squat.	ok	
+test	ai2-fr-moment-00009	fr	ai	moment	On a enfin rangé les cartons dans le salon, et le soleil qui entre par la fenêtre nous donne un sourire.	ok	
+test	ai2-fr-moment-00011	fr	ai	moment	Ce matin, Marc a remplacé mon café par du jus de citron, quelle surprise.	ok	
+test	ai2-fr-moment-00013	fr	ai	moment	On vient de placer le dernier carton, quelle satisfaction.	ok	
+test	ai2-fr-numbers-00001	fr	ai	numbers	Nous avons enfin trouvé un emplacement libre à 15h, juste avant la fermeture, et on respire enfin tranquille après tant d’attente.	ok	
+test	ai2-fr-numbers-00006	fr	ai	numbers	On a attendu trois quarts d'heure chez le coiffeur et mon fils est ressorti avec une coupe de playmobil.	ok	
+test	ai2-fr-numbers-00010	fr	ai	numbers	J'ai attendu vingt minutes devant le café et quand je l'ai vue arriver, j'ai enfin respiré.	ok	
+test	ai2-fr-numbers-00012	fr	ai	numbers	J'ai encore attendu deux heures chez le dentiste, c'est à devenir fou.	ok	
+test	ai2-fr-numbers-00014	fr	ai	numbers	J'ai enfin reçu mon colis commandé il y a trois jours et tout est parfait.	ok	
+test	ai2-fr-numbers-00016	fr	ai	numbers	Ça fait du bien de revoir Julien après 15 ans sans nouvelles.	ok	
+test	ai2-fr-past-00001	fr	ai	past	On a découvert que notre voisin avait déménagé.	ok	
+test	ai2-fr-past-00003	fr	ai	past	On a finalement transporté le piano sans une égratignure.	ok	
+test	ai2-fr-past-00005	fr	ai	past	Après avoir renversé mon jus, j'ai découvert une petite fuite qui arrose le sol.	ok	
+test	ai2-fr-past-00007	fr	ai	past	On a renversé le plat de pâtes sur la nappe, et on se tait.	ok	
+test	ai2-fr-past-00011	fr	ai	past	Après que j'ai mâché mon stylo, le dentiste a ri.	ok	
+test	ai2-fr-past-00015	fr	ai	past	J'ai renversé les cartons chez mon frère, désolé.	ok	
+test	ai2-fr-question-00001	fr	ai	question	Tu penses qu'on arrivera à garder la surprise ?	ok	
+test	ai2-fr-question-00003	fr	ai	question	Tu crois qu’il a raté le concert ?	ok	
+test	ai2-fr-question-00006	fr	ai	question	Ton frère est ressorti de chez le dentiste sans aucune carie, il n'a vraiment plus mal du tout maintenant ?	ok	
+test	ai2-fr-question-00008	fr	ai	question	Est-ce que tu sais si ton frère a prévu de nous rejoindre pour la balade à vélo dimanche prochain au bord du canal ?	ok	
+test	ai2-fr-question-00010	fr	ai	question	Je dois vraiment me lever à six heures pour l'école ?	ok	
+test	ai2-fr-question-00012	fr	ai	question	Est-ce que ton frère a vraiment réussi ce gâteau à trois étages sans faire retomber la pâte ?	ok	
+test	ai2-fr-question-00014	fr	ai	question	On ne devrait pas tous ressortir de cet entretien avec le sourire, non ?	ok	
+test	ai2-fr-speech-00001	fr	ai	speech	J’ai dit que j’avais brûlé le gâteau.	ok	
+test	ai2-fr-speech-00003	fr	ai	speech	J'ai dit à mon frère que les factures étaient enfin réglées, il a soupiré.	ok	
+test	ai2-fr-speech-00005	fr	ai	speech	Il a dit qu'il était ravi du rendez‑vous.	ok	
+test	ai2-fr-speech-00007	fr	ai	speech	J'ai dit que j'ai décroché le rendez‑vous médical.	ok	
+test	ai2-fr-speech-00009	fr	ai	speech	Nous avons annoncé qu’on maîtrise enfin le japonais.	ok	
+test	ai2-fr-speech-00011	fr	ai	speech	J'ai annoncé que ma coupe de cheveux était un désastre total.	ok	
+test	tatoeba-10344297	fr	real	long	Nous n'avons pas eu le temps de faire quoi que ce soit.	ok	
+test	tatoeba-10628468	fr	real	long	Nous avons de grandes attentes, ne nous décevez pas !	ok	
+test	tatoeba-11596322	fr	real	long	Je ne sais pas à quelle heure elle va venir.	ok	
+test	tatoeba-11630926	fr	real	long	Le sourire de cette personne est magnifique, il illumine son visage.	ok	
+test	tatoeba-12566050	fr	real	long	Mon premier amour n'arrivait jamais à prendre l'avantage sur moi.	ok	
+test	tatoeba-12713494	fr	real	long	Les flèches de l'amour se sont posées sur moi aujourd'hui.	ok	
+test	tatoeba-12896080	fr	real	long	Pour finir un puzzle, il faut imbriquer toutes les pièces correctement.	ok	
+test	tatoeba-3925682	fr	real	long	Même pour sortir acheter des cigarettes, ton père portait une cravate.	ok	
+test	tatoeba-4489886	fr	real	long	Marika, mon cher ami, devrait faire partie de ton passé.	ok	
+test	tatoeba-5239783	fr	real	long	À force de persécuter le chien, il devient méchant.	ok	
+test	tatoeba-573563	fr	real	long	On finit toujours par vouloir anéantir son prochain. Voilà, le triste sort de l'humanité.	ok	
+test	tatoeba-5998193	fr	real	long	Je n'ai plus eu de ses nouvelles depuis des semaines.	ok	
+test	tatoeba-6211035	fr	real	long	Nos offres spéciales sont les meilleures qu'il y ait sur le marché.	ok	
+test	tatoeba-837890	fr	real	long	Qu'ils ne viennent pas m'échauffer les oreilles avec leurs sermons !	ok	
+test	tatoeba-8516203	fr	real	long	Ce qui lui déplaisait dans cette cabane, c'était les portes et les fenêtres.	ok	
+test	tatoeba-10001080	fr	real	other	Il est beaucoup trop tard pour une visite.	ok	
+test	tatoeba-10463780	fr	real	other	Les enfants font du collage.	ok	
+test	tatoeba-11496357	fr	real	other	Apporte-moi une paire de chaussettes.	ok	
+test	tatoeba-13168810	fr	real	other	Elle est exceptionnelle cette vue.	ok	
+test	tatoeba-1585201	fr	real	other	Cette phrase ne me revient pas.	ok	
+test	tatoeba-2035636	fr	real	other	Il est arrivé là-bas avant Tom.	ok	
+test	tatoeba-2091326	fr	real	other	Je n'abîme pas mes vêtements.	ok	
+test	tatoeba-2109792	fr	real	other	Il ne peut s'agir que de moi.	ok	
+test	tatoeba-2929168	fr	real	other	Cette terre est sacrée pour mon peuple.	ok	
+test	tatoeba-2965338	fr	real	other	Elle a un joli minois.	ok	
+test	tatoeba-2965364	fr	real	other	Elle n'hésite pas à se moquer des garçons.	ok	
+test	tatoeba-2984136	fr	real	other	Ils se débrouillent plutôt bien, pour des débutants.	ok	
+test	tatoeba-3359869	fr	real	other	Mon nez est trop gros.	ok	
+test	tatoeba-4617099	fr	real	other	Nous aimons contenter nos maris.	ok	
+test	tatoeba-5288793	fr	real	other	Notre prof de maths est super-cool.	ok	
+test	tatoeba-6052666	fr	real	other	Donne-moi mes lunettes, s'il te plaît.	ok	
+test	tatoeba-6087664	fr	real	other	Tu nous enfumes avec ta cigarette.	ok	
+test	tatoeba-6101807	fr	real	other	Tom, tu dois aller voir le patron.	ok	
+test	tatoeba-6177699	fr	real	other	Je suis allé à la pêche.	ok	
+test	tatoeba-6381827	fr	real	other	Je ne le répéterai à personne.	ok	
+test	tatoeba-6758232	fr	real	other	Je ne peux pas venir maintenant.	ok	
+test	tatoeba-7352768	fr	real	other	Les enfants sont restés bloqués pendant quatre jours.	ok	
+test	tatoeba-8685562	fr	real	other	Je ne sais pas quoi faire avec lui.	ok	
+test	tatoeba-8898863	fr	real	other	Elle ne voulait pas danser.	ok	
+test	tatoeba-9565557	fr	real	other	J'ai accroché la jardinière au garde-corps.	ok	
+test	tatoeba-1081210	fr	real	question	Tu me présentes ta copine ?	ok	
+test	tatoeba-11718913	fr	real	question	Est-ce qu'il y a des transats à la piscine ?	ok	
+test	tatoeba-12168786	fr	real	question	Pourquoi la tartine tombe-t-elle toujours du côté beurré ?	ok	
+test	tatoeba-12708522	fr	real	question	Pourquoi dois-je traverser tout ce que je traverse actuellement dans ma vie ?	ok	
+test	tatoeba-2147638	fr	real	question	En parlant de voleur, ton frère va bien ?	ok	
+test	tatoeba-5583813	fr	real	question	Je suis fatigué de toutes ces batailles, tous ces morts, jour après jour. Quand cela finira-t-il ?	ok	
+test	tatoeba-6381832	fr	real	question	Mais que va-t-il nous arriver ?	ok	
+test	tatoeba-7784045	fr	real	question	Que pouvons-nous avoir de mieux ?	ok	
+test	tatoeba-831421	fr	real	question	Sait-on vraiment ce qu'on veut quand on ignore ce qu'on ne veut pas ?	ok	
+test	tatoeba-9583656	fr	real	question	Quel nom aimerais-tu lui donner ?	ok	
+test	ai2-es-conditional-00001	es	ai	conditional	Si el audio guía funciona, podré disfrutar tranquilo.	ok	
+test	ai2-es-conditional-00003	es	ai	conditional	Si el apagón ocurre, mi hermano me verá intentando encender la linterna.	ok	
+test	ai2-es-conditional-00005	es	ai	conditional	Si terminara de limpiar la casa, todos notarían lo impecable que quedó.	ok	
+test	ai2-es-conditional-00007	es	ai	conditional	Si suspendemos el examen, perderemos la beca.	ok	
+test	ai2-es-conditional-00009	es	ai	conditional	Si finalmente llegan los niños a casa sanos y felices, podré respirar tranquilo después de todo el caos.	ok	
+test	ai2-es-conditional-00011	es	ai	conditional	Si aprendes a conducir, ya serás mi orgullo.	ok	
+test	ai2-es-conditional-00013	es	ai	conditional	Si el servidor sigue caído cuando intento jugar, me volveré loco y dejaré de comprar cualquier juego nuevo.	ok	
+test	ai2-es-future-00003	es	ai	future	Vamos a cantar juntos en el concierto mañana.	ok	
+test	ai2-es-future-00005	es	ai	future	Vamos a reunirnos la próxima semana y demostraremos lo mucho que logramos.	ok	
+test	ai2-es-future-00007	es	ai	future	Mañana, cuando el vuelo finalmente salga, voy a celebrar que mi hermano logró reservar el asiento que siempre quiso.	ok	
+test	ai2-es-future-00011	es	ai	future	Esta tarde voy a preparar una lasaña de verduras que he estado buscando, y estoy seguro de que nos encantará.	ok	
+test	ai2-es-future-00013	es	ai	future	Mañana vamos a buscar mi cartera perdida y tú la encontrarás bajo la almohada.	ok	
+test	ai2-es-future-00015	es	ai	future	Mañana nos tocará presentar el proyecto y todavía no hemos avanzado nada.	ok	
+test	ai2-es-mishap-00001	es	ai	mishap	Olvidé regar las begonias y se marchitaron, pero al llegar la lluvia las rescaté y ahora lucen verdes.	ok	
+test	ai2-es-mishap-00003	es	ai	mishap	Nuestro coche se quedó sin gasolina justo antes del cruce, pero lo empujamos hasta la gasolinera y lo encendimos triunfalmente.	ok	
+test	ai2-es-mishap-00005	es	ai	mishap	Me desperté tarde, resbalé con la nieve en la puerta y llegué al trabajo cubierto de escarcha, pareciendo un muñeco de hielo.	ok	
+test	ai2-es-mishap-00007	es	ai	mishap	Quemamos la salsa, pero al menos el fuego nos dio una excusa para pedir pizza.	ok	
+test	ai2-es-mishap-00009	es	ai	mishap	Se nos rompió el sofá al cargarlo, pero ahora la sala luce más amplia.	ok	
+test	ai2-es-mishap-00011	es	ai	mishap	En la mañana de nieve, mi hermano resbaló en el hielo y todos reímos.	ok	
+test	ai2-es-moment-00001	es	ai	moment	Hoy terminé el juego en primera ronda y me sentí como si hubiera conquistado el mundo.	ok	
+test	ai2-es-moment-00003	es	ai	moment	Mi hermano dejó el grifo abierto y ahora el baño suena como una cascada.	ok	
+test	ai2-es-moment-00005	es	ai	moment	Hoy preparamos el desayuno juntos, y al ver cómo mi hijo tomó la cuchara solo, sentimos que todo el esfuerzo valió la pena.	ok	
+test	ai2-es-moment-00007	es	ai	moment	Nos dimos cuenta que pedimos el mismo plato y el camarero se quedó sin opciones.	ok	
+test	ai2-es-moment-00009	es	ai	moment	Hoy me desperté, vi la calle cubierta de nieve y me puse los guantes para salir a hacer muñecos, riendo.	ok	
+test	ai2-es-moment-00011	es	ai	moment	Me escondí detrás de la mesa para colocar los globos y, al cruzar la puerta, tropecé con la tarta.	ok	
+test	ai2-es-numbers-00001	es	ai	numbers	Nos quedamos sin sopa después de 3 días.	ok	
+test	ai2-es-numbers-00004	es	ai	numbers	Por fin el vecino de arriba ha dejado de taladrar después de dos horas.	ok	
+test	ai2-es-numbers-00006	es	ai	numbers	Mi mejor amiga cumple 40 años el sábado y ya tengo todo listo para su fiesta sorpresa.	ok	
+test	ai2-es-numbers-00008	es	ai	numbers	Le dije a mi hermano que el paseo sería de una hora y terminamos pedaleando tres horas y media bajo el sol.	ok	
+test	ai2-es-numbers-00010	es	ai	numbers	Cuando vimos que la compra semanal nos costaba 85 euros, nos quedamos callados todo el camino a casa.	ok	
+test	ai2-es-numbers-00012	es	ai	numbers	Nos subimos al autobús número 12 y en solo 20 minutos cruzamos toda la ciudad, algo que no logramos ni en coche.	ok	
+test	ai2-es-past-00001	es	ai	past	Me reí tanto cuando el profe se cayó del taburete y ahora tengo miedo al examen.	ok	
+test	ai2-es-past-00003	es	ai	past	Nosotros dejamos al gato solo y rompió el jarrón.	ok	
+test	ai2-es-past-00005	es	ai	past	Después del accidente, pedaleamos tranquilos y ya respiramos.	ok	
+test	ai2-es-past-00007	es	ai	past	Después de la tormenta, la luz de mamá sigue apagada.	ok	
+test	ai2-es-past-00011	es	ai	past	Después de la larga mudanza, la abuela nos recibió con su sopa favorita, celebrando.	ok	
+test	ai2-es-past-00013	es	ai	past	Desde que descubrimos la nueva ruta, llegamos a tiempo y disfrutamos el viaje.	ok	
+test	ai2-es-question-00001	es	ai	question	¿Crees que debería ir al trabajo con este corte que parece que lo hizo mi gato con tijeras?	ok	
+test	ai2-es-question-00003	es	ai	question	¿Ya puedo intentar la rotonda sin miedo?	ok	
+test	ai2-es-question-00005	es	ai	question	¿Te diste cuenta de que lograste limpiar toda la cocina antes de que llegara la visita, verdad?	ok	
+test	ai2-es-question-00007	es	ai	question	¿Vamos a dejar atrás la casa donde crecimos y nunca volveremos?	ok	
+test	ai2-es-question-00009	es	ai	question	¿Te parece bien que tomemos la ruta del bosque y lleguemos antes de la lluvia?	ok	
+test	ai2-es-question-00011	es	ai	question	¿Cómo sorprenderé yo a mi vecino con esta mejora?	ok	
+test	ai2-es-question-00013	es	ai	question	¿Te imaginas que descubrí una nueva ruta de senderismo y aún no sé si el panorama al final vale la caminata?	ok	
+test	ai2-es-speech-00001	es	ai	speech	Le dije a mi hermano que nuestro vuelo se retrasó cinco horas y que probablemente perderemos la cena, me sentí desanimado.	ok	
+test	ai2-es-speech-00009	es	ai	speech	Le dije a mi hermano que, pese al accidente, el teléfono sigue sonando.	ok	
+test	ai2-es-speech-00011	es	ai	speech	Nosotros dijimos que la nieve nos había regalado una pista de patinaje improvisada.	ok	
+test	ai2-es-speech-00013	es	ai	speech	Nosotros dijimos que nunca volveremos a perder la cartera y que ahora nos sentimos vacíos sin ella.	ok	
+test	ai2-es-speech-00015	es	ai	speech	Yo dije que llegaría a la entrevista con mi mejor sonrisa, preparado para que el entrevistador se ría conmigo.	ok	
+test	ai2-es-speech-00017	es	ai	speech	Les dije que mi nuevo corte demostró que finalmente dominé el arte de la peluquería.	ok	
+test	tatoeba-10167818	es	real	long	Los cubanos son un pueblo hermano de los españoles.	ok	
+test	tatoeba-10185453	es	real	long	El viento es el aliento de Dios, y la lluvia las lágrimas que derrama por sus hijos.	ok	
+test	tatoeba-10311302	es	real	long	Yo no tuve la culpa de que el caballo se desbocase.	ok	
+test	tatoeba-10323729	es	real	long	Corrí con todas mis fuerzas pero no pude alcanzarla.	ok	
+test	tatoeba-10465954	es	real	long	Mi primo le dio un aguacate a su guacamaya y se le murió.	ok	
+test	tatoeba-1142354	es	real	long	Al menos es un artista consistente: todas sus obras me parecen malas.	ok	
+test	tatoeba-13599663	es	real	long	Nunca nos ha faltado un plato de comida caliente a la hora de comer.	ok	
+test	tatoeba-1868842	es	real	long	Me gusta que tengas vello ahí, pero es demasiado frondoso.	ok	
+test	tatoeba-2734647	es	real	long	Los hijos de tus primos son tus sobrinos segundos.	ok	
+test	tatoeba-3566563	es	real	long	Yo diría que tenés que hacer dieta y mucho ejercicio para bajar esa buzarda.	ok	
+test	tatoeba-5011579	es	real	long	A María le duelen los dedos de los pies.	ok	
+test	tatoeba-5016395	es	real	long	Siempre me impresiona cómo la gente inteligente olvida lo importante que es la risa en las relaciones humanas.	ok	
+test	tatoeba-5181994	es	real	long	En mi casa mando yo, al menos cuando mi mujer no está.	ok	
+test	tatoeba-9062037	es	real	long	Me encanta la lectura, el canto y el baile.	ok	
+test	tatoeba-9440251	es	real	long	Si pudieran revisar mi gramática, en serio lo agradecería.	ok	
+test	tatoeba-10179348	es	real	other	Tengo un amigo que es socialista.	ok	
+test	tatoeba-10286500	es	real	other	Nos presentamos allí en limusina de alquiler.	ok	
+test	tatoeba-11282173	es	real	other	No le pegues al perro.	ok	
+test	tatoeba-1167705	es	real	other	Ojalá el gobierno respete nuestro acuerdo.	ok	
+test	tatoeba-11699247	es	real	other	A Bruno le pica el culo.	ok	
+test	tatoeba-12297330	es	real	other	En mi país ser ateo sigue siendo tabú.	ok	
+test	tatoeba-12905504	es	real	other	Me cuesta creer que él haya hecho eso.	ok	
+test	tatoeba-1306756	es	real	other	Voy a lavar mi coche.	ok	
+test	tatoeba-13467278	es	real	other	Yo no rindo pleitesía a nadie.	ok	
+test	tatoeba-13703035	es	real	other	Él está viendo una película.	ok	
+test	tatoeba-4276234	es	real	other	Le soprendieron en flagrante delito.	ok	
+test	tatoeba-4515968	es	real	other	Le advertí que no tocara la máquina.	ok	
+test	tatoeba-5011590	es	real	other	A Tom le dan miedo las arañas.	ok	
+test	tatoeba-5014890	es	real	other	Me tengo que ir a trabajar ahora mismo.	ok	
+test	tatoeba-5029889	es	real	other	No le pidas peras al olmo.	ok	
+test	tatoeba-5105258	es	real	other	Él tiene pájaros en la cabeza.	ok	
+test	tatoeba-6591658	es	real	other	No me lo vuelvas a decir.	ok	
+test	tatoeba-6819243	es	real	other	Yo tomo pan sin sal.	ok	
+test	tatoeba-7957756	es	real	other	No me hicieron ni caso.	ok	
+test	tatoeba-803660	es	real	other	No me gustan nada tus amigos.	ok	
+test	tatoeba-8317951	es	real	other	Me preocupa que no coma.	ok	
+test	tatoeba-9180587	es	real	other	Me gusta compartir todo tipo de historias contigo.	ok	
+test	tatoeba-9286013	es	real	other	Lo siento, no he hablado con ella.	ok	
+test	tatoeba-9422593	es	real	other	No existe ninguna relación entre ellos.	ok	
+test	tatoeba-9947672	es	real	other	No te preocupes, que yo te las cuido.	ok	
+test	tatoeba-1315183	es	real	question	Me lo tienes que devolver, ¿ya?	ok	
+test	tatoeba-1628892	es	real	question	Me han dicho que la gelatina está hecha de pezuña de buey, ¿es verdad?	ok	
+test	tatoeba-1801751	es	real	question	¿Me autorizaría a grabar esta conversación?	ok	
+test	tatoeba-2050414	es	real	question	¡De buenas a primeras me suelta que no quiere volver a verme! ¿Qué mosca le ha picado?	ok	
+test	tatoeba-5276467	es	real	question	¿Por qué no montas en el coche y nos guias?	ok	
+test	tatoeba-5559155	es	real	question	¿Te acuerdas de nuestra boda?	ok	
+test	tatoeba-6164931	es	real	question	¿Qué le gusta a su padre?	ok	
+test	tatoeba-9052115	es	real	question	«¿Cuántos años tiene?»«No sabría decir, quizá sea un par de años más joven que yo.»	ok	
+test	tatoeba-9379005	es	real	question	¿Me podría dar el recibo de pago?	ok	
+test	tatoeba-9379007	es	real	question	¿Me puede dar una bolsa por favor?	ok	
+dev	tatoeba-5761482	fr	real	long	L’amour ne commence ni ne finit comme nous le croyons. L’amour est une bataille, l’amour est une guerre, l’amour grandit.	remove	
+dev	tatoeba-3435589	fr	real	long	Les émotions violentes lui sont fatales, votre vue seule la fait pâlir et rougir à la fois.	remove	
+dev	tatoeba-13078719	fr	real	long	Va lui parler ! Vous ne devez pas vous brouiller pour si peu.	remove	
+test	tatoeba-4081551	es	real	question	Me pides que te ayude y me agredes. ¿Limosnas con escopeta?	remove	
+dev	tatoeba-3260225	fr	real	long	On soupe vers huit heures et demie en France.	remove	
+test	ai2-en-moment-00015	en	ai	moment	My sister's stethoscope slipped, and she caught herself humming loudly during the exam.	remove	
+test	tatoeba-2285470	es	real	question	¡Mecachis! ¿Por qué nunca me toca a mí?	remove	
+dev	tatoeba-10251322	en	real	question	Is it not the case that un-oxidized PUFAs (poly-unsaturated fatty acids) may oxidize inside our body's cells and thus incur damage?	remove	
+dev	tatoeba-13475795	en	real	question	Why did the goat cross the road? To get to his maa's.	remove	
+dev	tatoeba-7783992	fr	real	long	Sur la tombe n'était inscrite qu'une seule date car elle avait perdu son bébé à huit mois de grossesse.	remove	
+dev	tatoeba-6202056	fr	real	other	Il ne dérive pas encore !	remove	
+dev	tatoeba-10246878	es	real	long	La que encontró Timoteo bajo su almohada relucía más que las nuestras.	remove	
+dev	tatoeba-4378311	es	real	long	Una vez, en un matrimonio, tuve que quitarle la liga a la novia con los dientes.	remove	
+dev	tatoeba-1165902	es	real	question	"¿Sabes que beber eso te puede provocar un aborto? ""Hijo, los hombres no tenemos abortos."""	remove	
+dev	tatoeba-1390810	es	real	question	¡Qué sinvergüenza! ¡¿Cómo le vas a robar el marido a tu hermana?!	remove	
+test	ai2-en-moment-00013	en	ai	moment	I laughed when I accidentally spent an hour grinding a boss fight, then realized I’d forgotten to eat dinner.	remove	
+test	tatoeba-11406594	en	real	other	The world as we know it never existed.	remove	
+test	tatoeba-10022259	en	real	question	"We need more synergy. ""What does that mean?"""	remove	
+test	ai2-fr-conditional-00017	fr	ai	conditional	Si je trouve encore des biscuits, je vais finir par me détester.	remove	
+test	ai2-fr-past-00013	fr	ai	past	Après sa bravoure, Marc a impressionné le dentiste.	remove	
+test	tatoeba-8697637	fr	real	other	Nous ne pouvons pas le laisser comme ça.	remove	
+test	tatoeba-10547557	es	real	question	¡Desenfunda, bellaco! ¿Cómo te atreves a cortejar a mi amada?	remove	
+test	tatoeba-2419806	es	real	question	"Hola, ¿ hay alguien en casa? ""Sí, estoy yo."""	remove	
+dev	ai2-en-conditional-00010	en	ai	conditional	If we don't hear back by Friday, we'll have to start looking elsewhere.	remove	Too vague
+dev	tatoeba-10194871	en	real	long	I got sand in more orifices than I knew I had.	remove	Crude wording
+dev	tatoeba-8185313	en	real	long	“He got a little too close to a turtle or an alligator,” he explained. “You can see the elongated bite mark.”	remove	Quoted dialogue
+dev	tatoeba-8681031	en	real	long	I recommend installing this anti-spam add-on on your Wordpress site.	remove	
+dev	tatoeba-12169287	en	real	question	"What are you doing tonight? ""Going for a drink with my housemates."""	remove	Quoted dialogue
+dev	tatoeba-13606949	en	real	question	Do you think children should be allowed to access the internet freely or not?	remove	
+dev	ai2-fr-numbers-00007	fr	ai	numbers	Son anniversaire à 23h, le resto a changé encore.	remove	
+dev	tatoeba-14063103	fr	real	long	Il vaut mieux mal faire le bien que bien faire le mal.	remove	Proverb
+dev	tatoeba-1966601	fr	real	long	Avec tout ce qu'on a contre lui, il va prendre pour perpète.	remove	Heavy slang
+dev	tatoeba-10617501	fr	real	other	La femme est une pomme.	remove	No sense
+dev	tatoeba-2416005	fr	real	other	Elles ont éclusé tous les bars.	remove	Slang
+dev	tatoeba-8239725	fr	real	other	Nous appareillons tout de suite.	remove	
+dev	ai2-es-numbers-00011	es	ai	numbers	Me quedé sin luz a las ocho y perdí la presentación de los 12 minutos.	remove	
+dev	tatoeba-13478774	es	real	long	Finalmente salió de la granja y en cuanto me vio en la distancia echó a correr hacia mí todo contentuelo.	remove	
+dev	tatoeba-1365918	es	real	long	La micro está vacía y él se sienta a mi lado de todas formas.	remove	
+dev	tatoeba-13694513	es	real	long	Durante la dictadura franquista mis abuelos se exiliaron a Francia.	remove	
+dev	tatoeba-3719609	es	real	long	Ya me aburren los noticieros que todos los días muestran al Papa tomando mate.	remove	
+dev	tatoeba-12442150	es	real	other	A Tom le pican los huevos.	remove	Crude
+dev	tatoeba-5025201	es	real	other	¡Mamá!, verte usar minifaldas me da vergüenza ajena.	remove	
+dev	tatoeba-7996536	es	real	other	El asunto le traía al pairo.	remove	
+dev	tatoeba-1160149	es	real	question	¡No me interrumpas! ¿No ves que estoy hablando?	remove	
+dev	tatoeba-1990026	es	real	question	¿Cómo se quedó tu novio cuando le dijiste que no siempre fuiste una mujer?	remove	Sensitive identity topic
+dev	tatoeba-6152143	es	real	question	¡Tom es un grano en el culo! ¿Es que no me puede dejar tranquila?	remove	Crude insult
+test	ai2-en-mishap-00009	en	ai	mishap	I blew a controller, but still clinched victory.	remove	
+test	ai2-en-moment-00001	en	ai	moment	We missed our stop because the bus sang.	remove	
+test	ai2-en-past-00007	en	ai	past	I crashed the parking lot yesterday, so today I'm hiding.	remove	
+test	ai2-en-past-00009	en	ai	past	We missed boarding because the gate guard fell asleep and started karaoke.	remove	
+test	ai2-en-past-00011	en	ai	past	I missed work because Mom's last‑minute doctor appointment.	remove	
+test	tatoeba-8545187	en	real	other	Her ill-fitting leggings gave her cameltoe.	remove	Sexual/offensive
+test	tatoeba-11158607	en	real	question	"Where is your favorite place to read? ""I love reading under a tree in the forest near my house."""	remove	Two separate ideas
+test	tatoeba-11888115	en	real	question	Do you want my pickle?	remove	
+test	tatoeba-8272180	en	real	question	"Are you ready to go? ""I think so - no, wait, I forgot my keys."""	remove	Two separate ideas
+test	tatoeba-9752460	en	real	question	"So, what do you think? I did pretty good, huh? ""You did alright."""	remove	Two separate ideas
+test	ai2-fr-conditional-00005	fr	ai	conditional	Si la neige ne fonde pas avant midi, je pourrai enfin conduire le père de Léa à l'hôpital, enfin rassuré.	remove	
+test	ai2-fr-conditional-00009	fr	ai	conditional	Si la livraison est gratuite, on pourra enfin commander tranquillité.	remove	Ungrammatical
+test	ai2-fr-future-00001	fr	ai	future	Je vais préparer un plateau de fromages et fruits secs ce soir, et je suis sûr que ça me réveillera victorieux.	remove	
+test	ai2-fr-mishap-00009	fr	ai	mishap	Le gâteau a brûlé, tout le dîner s'est effondré.	remove	
+test	ai2-fr-moment-00007	fr	ai	moment	Hier, j'ai vu maman se battre avec un parasol rebelle qui s'est transformé en voile pour nos crêpes grillées.	remove	
+test	ai2-fr-numbers-00004	fr	ai	numbers	Je suis démoralé, ma fuite d'eau dure depuis trois heures et le plombier ne répond pas.	remove	
+test	ai2-fr-numbers-00008	fr	ai	numbers	Mon collègue a enfin reçu sa prime de 300 euros pour le bureau, et il respire comme après un long sprint.	remove	
+test	ai2-fr-past-00009	fr	ai	past	Je viens de perdre mon travail à cause de la coupure, c’est vraiment exaspérant.	remove	
+test	tatoeba-11724264	fr	real	other	Ce sont elles toutes crachées.	remove	
+test	tatoeba-1502879	fr	real	other	Je t'admire, oppresseur, criant : oppression !	remove	
+test	tatoeba-2965072	fr	real	other	Je suis dans le goût.	remove	
+test	ai2-es-future-00001	es	ai	future	Esta semana voy a aprender a conducir sin paciencia.	remove	Unnatural phrasing
+test	ai2-es-future-00009	es	ai	future	Voy a arregar el celular roto y sorprenderé.	remove	
+test	ai2-es-past-00009	es	ai	past	Empaqué esas cajas mientras mi viejo gato me miraba, sabiendo que pronto el silencio llenaría cada rincón que dejé.	remove	
+test	ai2-es-speech-00003	es	ai	speech	Nosotros susurramos que nuestra perra ya no corre detrás del parque.	remove	Unnatural phrasing
+test	ai2-es-speech-00005	es	ai	speech	Yo dije que si bailamos mientras aspiramos, la casa quedará impecable y nos reiremos como niños en el solo miércoles.	remove	
+test	ai2-es-speech-00007	es	ai	speech	Yo le dije que había horneado el pastel y que no volvería a esperar que lo arreglaras tú otra vez.	remove	
+test	tatoeba-10179342	es	real	long	El precio máximo de los productos de primera necesidad debería estar fijado por el gobierno, para impedir que estos productos le falten a la población.	remove	Political opinion
+test	tatoeba-10217788	es	real	long	Yo leeré el quinto libro de la colección cuando me lo regalen.	remove	
+test	tatoeba-2050425	es	real	question	«Cuide bien de mi perro, ¿eh?» «Quédese tranquilo, lo deja usted en buenas manos.»	remove	Two separate ideas
+test	tatoeba-4556455	es	real	question	¿Desde cuándo una mocosa como tú se volvió mi jefa?	remove	Slang
+test	tatoeba-4843018	es	real	question	Y a mí, ¿qué chingados me importa?	remove	Strong profanity
+test	tatoeba-5024338	es	real	question	"¿Te gustan las mujeres con muchos pechos? ""Si tienen más de dos me asustan""."	remove	

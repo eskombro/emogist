@@ -36,6 +36,8 @@ Every step is evaluated the same way: a **round-trip score**. One model decodes 
 | [4. Fine-tuning](04_fine_tuning/) (LoRA, Unsloth) | ✅ done | Qwen 2B chosen on dev, tied with Ministral 3B. On the test set, fine-tuning raised gist from 0.81 to 1.13 (+0.32 [+0.17, +0.47]). Ministral's test run is deferred |
 | [5. Evaluation](05_evaluation/) | ✅ done | Judge passed a one-person check (kappa 0.66). Fine-tuned Qwen 1.13 vs teacher 1.31 on test, closing 64% of the gap. Long sentences are its clearest weakness |
 | [6. Serving](06_serving/) (GGUF + FastAPI, [live demo](https://emogist.esklab.com)) | ✅ done | The 8-bit model (2 GB) matches the full model on dev (0.75). It loads on demand on a shared VPS |
+| [7. v2 rules and scoring](07_v2_rules_and_scoring/) | 🔄 in progress | Short answers (1–2 emojis) allowed as a warning; three-criteria judge (topic, event, outcome) written, not yet validated. v1 results unchanged |
+| [8. Spanish and new evaluation sets](08_v2_spanish_and_eval_sets/) | ✅ done | New dev and test sets: 300 sentences each, 100 per language (EN, FR, ES), half real and half AI, all reviewed by the author (79 of 679 removed) |
 
 ## Repository layout
 
@@ -50,6 +52,8 @@ cache/               cached decodes and judgements, so scores are reproducible f
 04_fine_tuning/      Colab training notebooks, pilot runs and scores
 05_evaluation/       human check of the judge, teacher ceiling, error breakdown
 06_serving/          model export, GGUF comparison and serving results
+07_v2_rules_and_scoring/  v2 format rules and three-criteria judge
+08_v2_spanish_and_eval_sets/  Spanish tooling, new dev and test sets
 demo/                the live demo: API, web page, Docker and deployment files
 CONVENTIONS.md       the emoji grammar used everywhere
 ```

@@ -15,8 +15,24 @@ def content_count(output: str) -> int:
     return emoji.emoji_count(output) - output.count("➡")
 
 
+MIN_EMOJIS_V2 = 1  # v2 (step 7): short answers are allowed, only tracked as a warning
+SHORT_V2 = 3  # below this, check_conventions_v2 warns
+
+
 def check_validity(output: str) -> str:
-    """Return "ok" or a short reason why the output breaks the format rules."""
+    """Return "ok" or a short reason why the output breaks the v1 format rules (3 to 10 emojis).
+
+    v1 is used by steps 0 to 6 and must not change; v2 lives in check_validity_v2.
+    """
+    return _check_validity(output, min_count=3)
+
+
+def check_validity_v2(output: str) -> str:
+    """Return "ok" or a short reason why the output breaks the v2 format rules (1 to 10 emojis)."""
+    return _check_validity(output, min_count=MIN_EMOJIS_V2)
+
+
+def _check_validity(output: str, min_count: int) -> str:
     if "\n" in output:
         return "multiple lines"
     leftover = emoji.replace_emoji(output, replace="").replace(" ", "")
@@ -28,7 +44,7 @@ def check_validity(output: str) -> str:
     if leftover:
         return f"non-emoji: {leftover}"
     count = content_count(output)
-    if not 3 <= count <= 10:
+    if not min_count <= count <= 10:
         return f"{count} emojis"
     return "ok"
 
@@ -58,4 +74,12 @@ def check_conventions(output: str) -> list[str]:
     # A long sequence with no space at all means the groups weren't separated.
     if " " not in output and content_count(output) > 4:
         warnings.append("no group spaces")
+    return warnings
+
+
+def check_conventions_v2(output: str) -> list[str]:
+    """The v1 conventions, plus a warning for answers shorter than 3 emojis (allowed in v2)."""
+    warnings = check_conventions(output)
+    if content_count(output) < SHORT_V2:
+        warnings.append(f"fewer than {SHORT_V2} emojis")
     return warnings
