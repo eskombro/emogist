@@ -1,0 +1,43 @@
+pair,id,lang,source,type,output,original,guess
+1,ai2-en-future-00010,en,ai,future,⏩ 🥾🥾 🏔️✅,We're going to finish the whole ridge trail next week.,We will hike the mountain trail tomorrow and reach the summit.
+2,ai2-fr-conditional-00002,fr,ai,conditional,👦🎵🎶 ➡️ 🎤🎶✅ 🥹🤗👥,"Si mon frère arrive à jouer ce morceau au concert, je serai si fier que je le serrerai dans mes bras devant tout le monde.","Le garçon a chanté une chanson et le public a applaudi, très ému, en l'entourant de ses bras."
+3,ai2-fr-past-00006,fr,ai,past,🎮❌ 🌙 😞 🎮💥,Je n’arrive pas à me motiver pour jouer ce soir parce que ma console a planté juste avant la fin de ma partie.,"Je n'ai pas pu jouer à cause de l'orage, je suis triste, la console est tombée en panne."
+4,ai2-fr-question-00013,fr,ai,question,🏋️📈 ➡️ 8️⃣0️⃣🔒❓,Ai‑je vraiment progressé assez pour soulever 80 kg ?,"Je soulève de plus en plus lourd, donc je dois faire attention à mon dos ?"
+5,tatoeba-11607499,en,real,other,👨🚲 🚶👥,Tom went crowdsurfing in his wheelchair.,A man rides his bike while people walk by.
+6,tatoeba-11176249,fr,real,other,👨‍💼 ➡️ 🧑‍🤝‍🧑‍🤝‍🧑,Il doit assumer son rôle de meneur.,Le chef d'entreprise réunit ses collègues.
+7,tatoeba-9353810,fr,real,other,🚲🚶,Je me promène à vélo.,Je vais au travail à vélo ou à pied.
+8,ai2-fr-moment-00000,fr,ai,moment,👨 🍽️✅ 🌙,"Finalement, Paul a réussi à réserver une table pour ce soir.",L'homme a bien mangé ce soir.
+9,tatoeba-6883762,fr,real,long,🙋🧠💤 ➡️ ⏳⏳⏳ 😔,"Depuis que je me suis fait hypnotiser, j'ai l'impression que le temps passe lentement.","Je n'arrive pas à dormir, j'attends la nuit avec tristesse."
+10,tatoeba-6356826,en,real,other,🙋 🔄📅,I do that once a year.,I asked to reschedule the meeting.
+11,ai2-es-mishap-00010,es,ai,mishap,👨‍🦱💇🟢 ➡️ 🧢🚶🚶🚶,"Me tiñeron el pelo de verde, así que ahora llevo gorra a todas partes.",El hombre de pelo rizado se corta el pelo y luego se va caminando sin gorra.
+12,ai2-fr-speech-00002,fr,ai,speech,👦💬 🧀🧀 🍪 🕛😋,Mon frère m'a écrit qu'il avait trouvé du fromage et des crackers pour son petit plaisir de minuit.,Le garçon dit : « Je veux du fromage et des biscuits à minuit ! »
+13,ai2-en-moment-00004,en,ai,moment,👧🐈🚶 ➡️ 🍽️💥🚰 😤,My sister's cat just walked across the counter and knocked my coffee into the sink again.,"The girl walked the cat to the kitchen, it knocked over the dishes at the sink, and she got frustrated."
+14,ai2-fr-moment-00008,fr,ai,moment,🧑 ⏱️1️⃣0️⃣ 🦕🔍 ➡️ 🦕🔍 😑,Il a passé dix minutes devant le même fossile.,"Une personne cherche un dinosaure pendant dix minutes, puis elle s'ennuie."
+15,ai2-es-conditional-00010,es,ai,conditional,🎫❌ 🎸 ➡️ 🏠🔒 💸❌ 😞,"Si no conseguimos entradas para el concierto, nos quedamos en casa y perdemos el dinero del viaje.","No tengo entrada para el concierto, así que me quedo en casa sin dinero y triste."
+16,tatoeba-13681973,es,real,other,👥👀❌ 🧑‍🦱,A Tomasa nadie le presta atención.,No vi a nadie con el pelo rizado.
+17,tatoeba-3725424,en,real,long,👨💼🚗❌ ➡️ 😢,Tom lost his job as a used car salesman.,"The businessman's car is gone, so he is sad."
+18,tatoeba-4535539,fr,real,other,🙋💬 🇫🇮❌,Je te déconseille d'aller en Finlande.,Je dis que je ne suis pas finlandais.
+19,tatoeba-6080435,fr,real,other,🙋🔔 🚪,On sonne à la porte.,Quelqu'un a sonné à la porte.
+20,ai2-es-future-00004,es,ai,future,⏩🛏️😴 🧑‍🤝‍🧑🔊➡️🚶🏠 🗓️🗓️,Mañana voy a dormir de un tirón porque mi compañero ruidoso se va fuera todo el fin de semana.,"Mañana me acuesto temprano, y el fin de semana visitamos a los amigos en casa."
+21,ai2-en-moment-00000,en,ai,moment,👨🔌🔌🔌 🍽️⏰ ➡️ 💡✅ 😲,My dad spent the whole power cut trying to reset the microwave clock and never noticed the lights came back on.,"The man plugged in all the appliances before dinner time, so the lights came on and he was surprised."
+22,tatoeba-10365558,es,real,long,🏠👨‍🦱 🩸🩸 ➡️ 🍬👛,"Mi vecino tiene hipoglucemia, y por eso siempre lleva caramelos en el bolsillo.",El hombre de la casa se hizo una herida y luego compró dulces con su monedero.
+23,tatoeba-7849951,en,real,long,🤕😵‍💫,It was the worst pain I had ever experienced.,I have a headache and feel dizzy.
+24,tatoeba-4613934,fr,real,other,🫵👥 🧠💬 🫵👥 🐍,Je sais que vous êtes tous des lâches.,"Vous n'avez pas besoin de me le dire, je sais déjà que vous avez peur des serpents."
+25,tatoeba-11205627,en,real,long,🐕🚶 ☀️🌤️,Ziri was walking his dog on a sunny afternoon.,I took the dog for a walk in the sunshine.
+26,ai2-es-future-00002,es,ai,future,👨‍👩‍👧 🎈🎈🎈 🎂4️⃣0️⃣,Vamos a llenarle la casa de globos cuando cumpla los cuarenta.,Una familia celebra el cumpleaños número cuarenta con tres globos.
+27,ai2-en-question-00002,en,ai,question,👦🧳🥾 ➡️ 🙋🙋⏳❓,Does your brother really expect us to wait here while he hikes the entire trail?,"The boy packed his suitcase and boots, so everyone waited and asked when they would leave."
+28,ai2-fr-question-00011,fr,ai,question,🙋🤯 🚗📝❓ ⏩❓,"Je suis vraiment perdu, est-ce que je peux vraiment passer le test de conduite demain ?","Je suis stressé par l'examen du permis de conduire, et je me demande si je vais le réussir."
+29,ai2-en-past-00006,en,ai,past,👦💬🧽🍳 ➡️ 🙋🧽🍳🕕 😤,"Because my brother promised to clean the kitchen before I got home, I’m stuck scrubbing his greasy pans at ten.","The boy said he would wash the dishes, so he was washing the pans at six o'clock, feeling annoyed."
+30,tatoeba-8961310,fr,real,question,🤔 👤❓,Est-ce lui qui a fait ça ?,Qui est là ?
+31,tatoeba-9432420,es,real,question,🎵📓❌ 😞 ➡️ 🙋🪑🫵,"Se me ha olvidado el cuadernillo de música, ¿puedo sentarme contigo?","No tengo el cuaderno de música, así que te pido que me prestes una silla."
+32,tatoeba-5104255,es,real,other,🙋💥 ➡️ 👥😱,A todos les caigo mal.,Yo me saco la mano y entonces todos se asustan.
+33,tatoeba-2464617,es,real,long,🚶⛰️ 🧘❌ ➡️ 😌,Partí a la montaña para olvidarme de mi rutina y sentirme liberado al fin.,"Subo la montaña caminando y no me canso, así que me siento tranquilo."
+34,ai2-es-question-00010,es,ai,question,👨‍👩‍👧👦🌙 ➡️ 🧑‍🤝‍🧑🛏️😌,¿Nos turnamos para cuidar a los niños esta tarde y así todos podemos descansar un rato tranquilos?,La familia se acuesta por la noche y todos se quedan tranquilos y relajados en la cama.
+35,ai2-en-conditional-00002,en,ai,conditional,✈️⏰❌ ➡️ 🧩✅ ⏩🛫,"If the flight gets delayed, we will finish the whole puzzle before boarding.","The flight was not on time, so the passengers had to wait until it was ready to take off."
+36,tatoeba-13615386,es,real,long,👩🙅 💬❌ 🫵👨‍🦱,Micaela no soporta que le digan lo que tiene que hacer.,La mujer no le habla al hombre de pelo rizado.
+37,tatoeba-6586568,en,real,other,👨💬📞 ➡️ 🙋,Just left my dad a voicemail.,"The man called on the phone, so she answered."
+38,tatoeba-1541064,es,real,question,🙋🧠✅ 🫵🤥❌,"No soy tonto, ¿crees que me vas a engañar?","Yo lo tengo claro, y tú no me mientes."
+39,tatoeba-11366737,en,real,other,📚🗣️ ⏪📈 ➡️ ⏩📉 😔,My language-learning has slowed down this year.,"I studied hard and talked about my grades in the past, so I expect them to drop later, which makes me sad."
+40,ai2-es-moment-00002,es,ai,moment,🫵💼➡️🚶🚶 🌆 😮‍💨 🤐,"Salimos de la entrevista y respiramos hondo en la acera, sin decir nada todavía.","Te vas del trabajo y caminas por la ciudad al atardecer, respirando aliviado y sin decir nada."
+41,ai2-en-question-00008,en,ai,question,🙋🪑🍽️❓ 😤,Do I really have to sit through this whole reunion?,Is this seat taken? I'm so frustrated with the crowded restaurant.
+42,ai2-es-numbers-00007,es,ai,numbers,🙋🙋🍽️🍽️🍽️🍽️ ➡️ 🧑‍🤝‍🧑💸❌ 😱,Nosotros pedimos 23 platos y nos dimos cuenta de que nadie pagó.,"Todos levantaron la mano para pedir la comida, así que el grupo se quedó sin dinero y se asustó."

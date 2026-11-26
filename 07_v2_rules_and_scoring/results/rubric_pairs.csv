@@ -1,0 +1,61 @@
+pair,id,lang,source,type,output,original,guess
+1,tatoeba-2473581,en,real,other,👩👀❌ 😐,She's not even that good looking.,"The woman didn't look at me, and she seemed unimpressed."
+2,ai2-en-mishap-00000,en,ai,mishap,⛺❌ ➡️ 🌌🛏️ ➡️ 🌅😁,"I forgot the tent poles, so we slept under the stars and I woke up grinning.","We forgot the tent, so we slept under the stars and woke up happy at sunrise."
+3,tatoeba-9314764,en,real,other,🙋 🧍❌ 😞,I feel like a failure.,"I raised my hand, but nobody came to see me and I felt sad."
+4,tatoeba-7444053,en,real,other,👥💬 🫵😊,Tom and Mary told me they're well.,"They told you, and you were happy about it."
+5,tatoeba-11629570,en,real,question,📄✅ ➡️ 🙋👀,"If you've finished reading the paper, can I have a look at it?","Once the document is approved, someone will come and check on it."
+6,tatoeba-4360655,es,real,long,👨📷👁️ ➡️ 📍🏠👥 ➡️ 📹👀,Carlos compró una cámara espía y la situó en un lugar estratégico para grabar a sus vecinos.,El fotógrafo mira la casa con la familia y ven el video.
+7,tatoeba-5696250,fr,real,long,👮👮 ➡️ 🔍👨‍🦱 ⏩,La police est sur le coup ; elle ne tardera pas à retrouver le coupable.,Les policiers vont enquêter sur l'homme aux cheveux bouclés.
+8,ai2-es-question-00000,es,ai,question,🙋 🌂❌🏠 😤,¿Otra vez se ha dejado el paraguas en tu casa?,"Me ofrecí a ayudar, pero no tenía paraguas y me molesté al llegar a casa."
+9,ai2-es-question-00008,es,ai,question,🙋💬👦 🚗⏳ ➡️ 🗺️❌ 😬,¿Y si le digo a mi hermano que me espere en la ruta y luego no encuentro el camino?,"Yo le pregunté al chico cuánto tiempo faltaba para llegar en coche, pero no tenía mapa y me puse nervioso."
+10,tatoeba-12647790,en,real,other,👥🤝 ➡️ 🎉,Ziri has met some new friends.,"The two groups came together and made a deal, so everyone celebrated."
+11,tatoeba-8193411,es,real,other,🙋🙋 ➡️ 🏃💨 ➡️ 🏁👥 😅,Siempre acabamos llegando a donde nos esperan.,"Yo me ofrecí como voluntario, así que salí corriendo a la meta con los demás y al final llegamos juntos, ¡qué alivio!"
+12,ai2-es-past-00010,es,ai,past,🍽️⏪7️⃣ 🍽️🔥🔥🔥 😅,"Menos mal que reservamos la mesa con una semana de antelación, porque el restaurante estaba hasta arriba.",Cenamos a las siete y la comida estaba tan picante que me reí.
+13,tatoeba-13465130,es,real,long,🧑 🪨 🦞🦞 🤝👥,Bruno estuvo en las rocas cogiendo cangrejos con los amigos.,La persona lanza una piedra a los langostinos y ellos se unen para pelear.
+14,ai2-fr-conditional-00004,fr,ai,conditional,❄️⏩🌅 ➡️ 🙋🪟👀❄️❌ 😢,"Si la neige tient jusqu'à demain matin, je resterai seul devant la fenêtre à regarder ta trace disparaître.","Demain matin, je regarde par la fenêtre et je vois qu'il n'y a pas de neige, je suis triste."
+15,ai2-fr-question-00002,fr,ai,question,🍓🍓🍓 ➡️ 🫵🍽️🌙,"J'ai trouvé des fraises bien mûres, tu en veux pour ce soir ?","Les fraises sont prêtes, alors je te sers le dîner ce soir."
+16,ai2-en-numbers-00002,en,ai,numbers,👥👨‍💼 🏢 ⏳1️⃣2️⃣,My friend has worked at this office for 12 years.,The team leader is in the office for one to two hours.
+17,tatoeba-6982198,fr,real,long,👩💬 🫵👀❌ 😔,Marie lui a gentiment fait comprendre qu'elle ne voulait pas le revoir.,Elle m'a dit que tu ne me regardais plus et je suis triste.
+18,ai2-en-conditional-00012,en,ai,conditional,👦👛❌⏳ ➡️ 🍽️🙋🍽️🔁 😤,"If my brother doesn't find his wallet soon, I'll have to cover his dinner again.","The boy forgot his wallet, so he had to wait to pay and ended up washing dishes in frustration."
+19,ai2-fr-mishap-00010,fr,ai,mishap,👨‍🍳🍰🍕 ➡️ 🧑‍🍳🍕🍕🍕🍕 😂,Mon oncle a encore ramené son dessert immangeable et tout le monde a fini par commander des pizzas.,"Le chef a fait un gâteau, donc les clients ont mangé beaucoup de pizzas et ont bien ri."
+20,tatoeba-11719542,es,real,long,🗣️🧠🌍 ➡️ 🧩✅ ➡️ 🧩❌ 😞,Las lenguas humanas son extraordinariamente versátiles pero tienen sus límites: los que les confieren nuestra imaginación y nuestra percepción.,"Hablo varios idiomas, pero no puedo resolver este rompecabezas y me siento decepcionado."
+21,tatoeba-10186761,fr,real,other,👩👩 👀❌,Elles ne le voient pas.,Deux femmes ne se voient plus.
+22,ai2-es-conditional-00006,es,ai,conditional,🎮⏱️⏳ ➡️ 🏆🚀,"Si no fuera por las horas que le metí a ese juego, no habría llegado tan lejos en la partida.",Jugué al videojuego durante una hora y luego gané el torneo.
+23,ai2-es-moment-00008,es,ai,moment,💸💸✅ ➡️ 😮‍💨😌,Por fin terminé de pagar las cuentas y respiré tranquilo.,Pagué todas las cuentas y ahora me siento aliviado.
+24,ai2-en-conditional-00008,en,ai,conditional,👦🏫🎉 ➡️ 🌙📖📖📖 😤,"If my brother shows up to the school reunion, he'll spend the whole night retelling the same story.","The boy went to school for the party, so he read books all night and felt frustrated."
+25,tatoeba-3724178,en,real,other,🙋 😐 ➡️ 😌,I never minded all that much.,"I raised my hand, the teacher looked at me without expression, so I felt relieved."
+26,tatoeba-1749294,es,real,long,❄️❄️❄️ 🥶 🦷🦷🦷 😖,Hace mucho frío. Estoy tiritando y me castañetean los dientes.,Hace mucho frío y me castañean los dientes de dolor.
+27,tatoeba-6029565,en,real,long,🙋🔁🗣️🔁,I keep repeating the same word over and over.,"I keep raising my hand, but the teacher keeps calling on someone else."
+28,ai2-en-conditional-00004,en,ai,conditional,👦🚗💥 ➡️ 🎂👧❌ 😢,"If my brother's car stays broken, he'll miss his daughter's birthday.","The boy was in a car crash, so the girl missed her birthday party and felt sad."
+29,tatoeba-8317957,es,real,other,🙋😢 ➡️ 👤🚶,Me da pena que se vaya.,"Yo me siento triste, así que me voy solo."
+30,ai2-es-future-00010,es,ai,future,⏩🌅 🍽️🍴 🏪,Por fin mañana vamos a comer a ese restaurante con mi hermano.,Mañana comeré en el restaurante del mercado.
+31,ai2-es-question-00006,es,ai,question,👦😱 ➡️ 💡❌ 🏠 ➡️ 😱,¿Crees que mi hermano pequeño se asustó mucho cuando se fue la luz en casa?,El niño se asustó porque no había luz en la casa y se asustó otra vez.
+32,ai2-fr-numbers-00005,fr,ai,numbers,⏪4️⃣2️⃣ 🎂 ➡️ 🧑‍🤝‍🧑😂👶,"On s’est retrouvés 42 ans plus tard, et on a encore ri comme adolescents.","Il y a quarante-deux ans, il a fêté son anniversaire, puis les enfants ont beaucoup ri."
+33,ai2-en-conditional-00006,en,ai,conditional,🚗🛑⏳ ➡️ 🚗💨🚶,"If I stall the car one more time, I will just abandon it and walk.","The car stopped for a while, so we got out and walked."
+34,tatoeba-1459545,fr,real,question,🙋🕷️❌ ➡️ 🐝🏠🔒 🫵💬,"Je ne suis pas arachnophobe, mais pourrais-tu demander à ta mygale de rentrer dans sa boîte, je te prie ?","Je ne suis pas là à cause de l'araignée, donc tu peux fermer la maison à clé pour les abeilles."
+35,ai2-fr-numbers-00003,fr,ai,numbers,🕐4️⃣5️⃣ ⏩🎬 🙋💬😩,"On a attendu 45 minutes avant le début, j'ai bafouillé.","Il est quatre heures et quart, le film commence bientôt, et je dis que je suis fatigué."
+36,tatoeba-3121768,en,real,long,🙋🎬 🧑‍🤝‍🧑👦,Today I'll go to the cinema with Tom's brother.,I'm going to the movies with my friends and my kid.
+37,tatoeba-13117644,en,real,long,👩💭 ⏩😢,She knew she would regret this in the future.,She is thinking about the future and feels sad.
+38,ai2-en-mishap-00004,en,ai,mishap,👦☕💧🗺️ ➡️ 🧭🤔 😅,"My brother spilled coffee on the map, so now we're navigating by vibes.","The boy spilled his coffee while looking at the map, so he got confused and laughed it off."
+39,tatoeba-9035112,fr,real,other,🧑 📚🙋,Il s'est placé derrière le pupitre.,Une personne lève la main pour poser une question sur son livre.
+40,tatoeba-4200322,fr,real,other,👨 🪟💥🔫 😱,Il casse souvent nos fenêtres avec une balle.,Un homme a brisé la fenêtre avec un coup de feu et tout le monde a eu peur.
+41,ai2-es-mishap-00000,es,ai,mishap,🏠❌🔒 ➡️ 🛏️🌙 😤 ➡️ 🏕️👑,"Perdimos la tienda por no fijarla bien, así que ahora dormimos al raso y aun así nos sentimos los reyes del campamento.","No cerré la casa con llave, así que pasé la noche enojado en la tienda de campaña."
+42,ai2-fr-conditional-00006,fr,ai,conditional,🧹🧺🧺🧺 ➡️ 🛋️✨😍,"Si je range tout maintenant, je pourrai admirer mon salon impeccable.","J'ai fait le ménage et la lessive, alors le salon est impeccable et je suis ravi."
+43,ai2-es-conditional-00008,es,ai,conditional,🍽️👨‍🍳💬❓🍽️ ➡️ 🙋🙋👀📋😳,"Si el camarero nos vuelve a preguntar qué queremos, nos quedaremos mudos mirando el menú como si nunca hubiéramos comido.",¿Ya está listo el plato? El camarero pregunta y el cliente mira la carta sorprendido.
+44,ai2-fr-question-00000,fr,ai,question,👦🎮❌ ➡️ 📚✅ ➡️ 🫵🔍,"Ton frère a enfin arrêté de jouer et il a fini ses devoirs, tu peux vérifier ?","Le garçon n'a pas de jeu vidéo, donc il lit un livre, et tu le cherches."
+45,tatoeba-13636775,en,real,long,👥🤔 ➡️ 🎬⏰🌙 🏙️🎬,We decided to catch a late showing at the new multiplex downtown.,"The group was undecided, so they moved the movie night to a later time in the city."
+46,tatoeba-9143331,es,real,other,👦👥 ➡️ 🇨🇦🏠,Mi mejor amigo vive en Canadá.,Los niños se mudan a Canadá.
+47,tatoeba-12892523,es,real,other,👨 👨‍👩‍👧‍👦 2️⃣,Mi padre tiene otros dos hijos.,Un hombre tiene dos familias.
+48,ai2-en-past-00002,en,ai,past,👧 📄❌ ➡️ 🧊😱,My sister froze up because she forgot her own resume.,"The girl forgot her homework, so she was scared of the teacher."
+49,ai2-en-numbers-00004,en,ai,numbers,👧👥 🕐4️⃣0️⃣⏰⏰ ➡️ 👨😊✅,"My sister's blind date showed up 40 minutes late, but he turned out to be great.","The girl met her friends at four o'clock, so the man was happy and relieved."
+50,ai2-en-speech-00002,en,ai,speech,👧💬 🫵💼✅,My sister texted that she got the job.,"The girl said, ""You got the job!"""
+51,tatoeba-8721326,fr,real,other,👥📋✅ 🙅❌,Ils exécutent les ordres sans rechigner.,"Les participants ont validé la liste, personne n'a dit non."
+52,ai2-es-conditional-00012,es,ai,conditional,🚰🔧⏳ ➡️ 💧💧💧💧 ➡️ 🏠❌ 😱,"Si no cerramos la fuga pronto, perderemos todo lo del sótano.","Llamé al fontanero, pero tardó tanto que la casa se inundó y me quedé sin hogar, lo que me dio mucho miedo."
+53,ai2-fr-future-00002,fr,ai,future,🧑‍🔧📦🧹 ➡️ 🏠✅ 😌,Il va enfin ranger son atelier tout seul comme un grand.,"Le déménageur a porté les cartons, puis la maison est propre et je me sens soulagé."
+54,tatoeba-861704,fr,real,question,📚📖❌ 🗣️❓,Quels sont les rayons qu'il critique ?,"Je n'ai pas de livre, tu peux me le prêter ?"
+55,tatoeba-7414798,fr,real,other,👥😢,Nous sommes donc tous tristes.,Les gens sont tristes.
+56,tatoeba-3009795,es,real,question,🫵💉❓,¿Me tengo que dar una inyección?,¿Te pusiste la vacuna?
+57,tatoeba-514713,fr,real,question,🫵📱📞💬,Peux-tu me donner ton numéro de portable ?,Tu m'appelles sur mon portable pour me parler.
+58,ai2-fr-mishap-00002,fr,ai,mishap,🔧🚰 ➡️ 🏊🏠 😂,On a voulu réparer la fuite nous-mêmes et maintenant on a une piscine dans le salon.,"Le plombier a réparé la fuite, alors on a pu nager à la maison, c'est trop drôle !"
+59,tatoeba-8939799,es,real,other,🏥🦠 ➡️ 🙋😌,¡Qué me importa cuánto dura la cuarentena!,"Ingresó en el hospital por un virus, pero ahora se siente aliviado."
+60,ai2-fr-question-00005,fr,ai,question,🙋🛏️🛏️🛏️ 🫵🤔❓,"Je glisse partout, tu crois que ça va ?","Je me suis levé du lit trois fois, et toi, tu réfléchis encore ?"

@@ -78,8 +78,21 @@ def check_conventions(output: str) -> list[str]:
 
 
 def check_conventions_v2(output: str) -> list[str]:
-    """The v1 conventions, plus a warning for answers shorter than 3 emojis (allowed in v2)."""
+    """The v1 conventions, plus a warning for answers shorter than 3 emojis (allowed in v2) and,
+    from step 9, the question rule: ❓ is always its own group, right after the question part (at the
+    end when the question comes last: "🫵🐈🍽️ ❓"). ❔ (something unknown or asked), 📍 (place) and 🔁 (again) must be
+    attached to something, never a group on their own, and ❔ never appears with ❓. 💭 = think and 🤔 = maybe
+    have no position rule, so they aren't checked. Whether the sentence *needs* one of these signs
+    can't be seen from the output alone."""
     warnings = check_conventions(output)
     if content_count(output) < SHORT_V2:
         warnings.append(f"fewer than {SHORT_V2} emojis")
+    if any("❓" in group and group.rstrip(VS16) != "❓" for group in output.split(" ")):
+        warnings.append("❓ not alone in its group")
+    groups = [group.rstrip(VS16) for group in output.split(" ")]
+    for sign in ("❔", "📍", "🔁"):
+        if sign in groups:
+            warnings.append(f"{sign} alone in a group")
+    if "❔" in output and "❓" in output:
+        warnings.append("❔ in a question")  # a question gets ❓ only, even "why / what" questions
     return warnings

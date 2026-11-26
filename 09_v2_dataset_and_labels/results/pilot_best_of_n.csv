@@ -1,0 +1,61 @@
+id,lang,source,type,sentence,first,best,n_candidates,changed,flash_first,flash_best,claude_first,claude_best
+tatoeba-6256910,en,real,other,I want to go to graduate school.,🙋 🎓🏫 ⏩,🙋 🎓🏫 ⏩🎯,3,True,0.3333333333333333,0.6666666666666666,1.0,0.5
+tatoeba-9954425,en,real,other,He hopped the fence to the rail yard.,🧍🏃 🚧⬆️ ➡️ 🚂🛤️,👨 🦘🧱 ➡️ 🚂🛤️,4,True,0.16666666666666666,0.8333333333333334,0.25,0.8333333333333334
+tatoeba-2473581,en,real,other,She's not even that good looking.,👩💬 🫵😐,👩 💄❌ 😐,4,True,0.0,0.5,0.16666666666666666,0.25
+tatoeba-11451958,en,real,other,We need to stay goal-oriented.,👥🎯➡️✅,🎯👀,4,True,0.16666666666666666,1.0,0.75,1.0
+tatoeba-3725424,en,real,long,Tom lost his job as a used car salesman.,👨💼🚗 ➡️ 🚫💼 😞,👨‍💼 🚗💼 ➡️ 📉❌ 😞,3,True,0.0,1.0,0.16666666666666666,0.16666666666666666
+tatoeba-7292357,en,real,long,Tom tried to understand why he was different from other people.,🧑🤔 🫵👥❓ 😕,🧑🤔 🫵👥❓ 😕,3,False,0.5,0.5,0.0,0.0
+tatoeba-2698102,en,real,question,Did you know that I want to marry you?,🫵💬 🙋💍🫵❓,🫵💬 🙋💍🫵❓,3,False,0.8333333333333334,0.8333333333333334,1.0,1.0
+tatoeba-10793601,en,real,long,"If you wait until tomorrow, I could go with you.",🫵⏳⏩🌅 ➡️ 🙋🚶🫵,🫵⏳⏩🌅 ➡️ 🙋🚶🫵,1,False,1.0,1.0,0.6666666666666666,0.6666666666666666
+tatoeba-12856174,en,real,other,I'm getting a sense of déjà vu here.,🙋🤔 🔁👀 😵,🙋 🔁👀 😵,3,True,0.0,0.16666666666666666,0.0,0.25
+tatoeba-6853989,en,real,other,What happened was my fault.,🙋💥 ➡️ 🙋😔,🙋💥 ➡️ 🙋😔,1,False,1.0,1.0,0.3333333333333333,0.3333333333333333
+ai2-en-numbers-00009,en,ai,numbers,We finally adopted the kitten after waiting 48 weeks.,👨‍👩‍👧 ⏳4️⃣8️⃣ 🐈✅ 🥹,🗓️4️⃣8️⃣ ⏳ ➡️ 🐈✅ 🥹,4,True,0.6666666666666666,1.0,1.0,1.0
+ai2-en-question-00002,en,ai,question,Does your brother really expect us to wait here while he hikes the entire trail?,👨🥾⛰️ ➡️ 🙋🫵⏳❓ 😤,👨🥾⛰️ ➡️ 🙋🫵⏳❓ 😤,4,False,0.16666666666666666,0.16666666666666666,0.3333333333333333,0.3333333333333333
+ai2-en-conditional-00012,en,ai,conditional,"If my brother doesn't find his wallet soon, I'll have to cover his dinner again.",👦💬 👛❌ ➡️ 🙋🍽️💶 😤,👦💬 👛❌ ➡️ 🙋🍽️💶 😤,4,False,0.6666666666666666,0.6666666666666666,0.3333333333333333,0.3333333333333333
+ai2-en-moment-00004,en,ai,moment,My sister's cat just walked across the counter and knocked my coffee into the sink again.,👧🐈 🚶🍽️ ➡️ ☕💥 🚰 😤,👧🐈 🧑‍🍳➡️ ☕💥 🚰 😤,4,True,0.6666666666666666,0.8333333333333334,0.6666666666666666,0.3333333333333333
+ai2-en-past-00008,en,ai,past,My brother shoveled the driveway because he wanted to build a snowman.,👦🧹❄️ ➡️ ⛄,👦🧹❄️ ➡️ ⛄,1,False,1.0,1.0,1.0,1.0
+ai2-en-question-00004,en,ai,question,"Since I get to watch the kids tonight, can I finally show them how to make my famous chocolate chip cookies?",👧👦🌙 ➡️ 🍪👨‍🍳😋,👨👧👦 🌙➡️ 🍪👨‍🍳❓,4,True,0.16666666666666666,0.5,0.3333333333333333,0.6666666666666666
+ai2-en-conditional-00004,en,ai,conditional,"If my brother's car stays broken, he'll miss his daughter's birthday.",👨🚗🔧❌ ➡️ 🎂👧❌ 😟,👨🚗🔧❌ ➡️ 🎂👧❌ 😟,3,False,0.6666666666666666,0.6666666666666666,0.6666666666666666,0.6666666666666666
+ai2-en-moment-00010,en,ai,moment,My sister parallel parked on the first try and just sat there grinning at me.,👩🚗🅿️✅1️⃣ ➡️ 😏🫵,👩🚗🅿️✅1️⃣ ➡️ 😏🫵,1,False,1.0,1.0,0.8333333333333334,0.8333333333333334
+ai2-en-future-00006,en,ai,future,We're going to say goodbye to our classroom next week.,⏩ 🏫👋 😢,⏩ 🏫 👋😢,3,True,0.8333333333333334,1.0,1.0,1.0
+ai2-en-numbers-00006,en,ai,numbers,"I taught my rescue dog three new tricks this week, and she nailed every single one.",,🙋 🐕🐕‍🦺 🎓 ✅✅✅ 🥹🎉,1,True,0.0,0.6666666666666666,0.0,0.3333333333333333
+tatoeba-861553,fr,real,question,À quelle heure se lève-t-elle ?,👩 🛏️➡️⏰❓,👩 🛏️➡️⏰❓,2,False,0.16666666666666666,0.16666666666666666,0.25,0.25
+tatoeba-3364356,fr,real,other,Il n'est pas obligé de le savoir.,🤫 👤❌➡️🧠,🤫 👤❌➡️🧠,4,False,0.6666666666666666,0.6666666666666666,0.0,0.0
+tatoeba-747882,fr,real,long,Elle est rédactrice en chef d'un grand quotidien régional.,👩✍️ 📰🏆,👩✍️ 📰🗞️ 🏆,4,True,0.16666666666666666,0.5,0.25,0.25
+tatoeba-861704,fr,real,question,Quels sont les rayons qu'il critique ?,🛒❓ 🗣️👎,🛒❓ 🗣️👎,3,False,0.0,0.0,0.25,0.25
+tatoeba-10186761,fr,real,other,Elles ne le voient pas.,👩👩 👀❌ 👨,👩👩 👀❌ 👨,1,False,1.0,1.0,1.0,1.0
+tatoeba-4184277,fr,real,long,"Oups, je me suis trompée, je voulais dire « trois mille yens », pas « trois mille euros ».",,🤦 💬💶❌ ➡️ 💴✅,1,True,0.0,0.0,0.0,0.16666666666666666
+tatoeba-6883762,fr,real,long,"Depuis que je me suis fait hypnotiser, j'ai l'impression que le temps passe lentement.",🌀😵‍💫 ➡️ ⏳🐌,🌀😵‍💫 ➡️ ⏳🐌,4,False,0.8333333333333334,0.8333333333333334,0.16666666666666666,0.16666666666666666
+tatoeba-6982198,fr,real,long,Marie lui a gentiment fait comprendre qu'elle ne voulait pas le revoir.,👩💬🙅‍♀️ 👨❌👀,👩💬🙅‍♀️ 👨❌👀 ⏩ 🚫,4,True,0.5,0.8333333333333334,0.6666666666666666,0.6666666666666666
+tatoeba-5412343,fr,real,other,Je ne suis pas n'importe qui.,🙋❌ 👤👤,🙋⭐❌,4,True,0.0,0.6666666666666666,0.0,0.0
+tatoeba-8721326,fr,real,other,Ils exécutent les ordres sans rechigner.,👥 👮💬 ➡️ ✅🙇,👥 👂✅ ➡️ 🫡✅,4,True,0.0,1.0,0.16666666666666666,1.0
+ai2-fr-conditional-00008,fr,ai,conditional,"Si on oublie la sortie de 15 heures, on finit tous à la bibliothèque à réviser jusqu'à la fermeture.",⏰1️⃣5️⃣❌ ➡️ 📚👥📖🌙,⏰1️⃣5️⃣❌ ➡️ 📚👥📖🌙,3,False,0.8333333333333334,0.8333333333333334,0.5,0.5
+ai2-fr-speech-00000,fr,ai,speech,J'ai bredouillé que j'avais oublié mon maillot à la plage.,🙋😳💬 🩳❌🏖️,🙋😳💬 🩳❌🏖️,1,False,1.0,1.0,0.8333333333333334,0.8333333333333334
+ai2-fr-moment-00010,fr,ai,moment,"La cérémonie est enfin terminée, je peux souffler et aller boire un verre.",💒✅ ➡️ 😮‍💨 🍹😌,💒✅ ➡️ 😮‍💨 🍹😌,1,False,1.0,1.0,1.0,1.0
+ai2-fr-conditional-00012,fr,ai,conditional,"Si je sors maintenant dans cette neige, je vais glisser et finir les fesses dans la poudreuse.",🚪➡️❄️ 🚶 ➡️ 🧊😵 🍑❄️,🚶❄️ ➡️ 🧊😵 🍑❄️ 😅,4,True,0.6666666666666666,0.8333333333333334,0.8333333333333334,0.16666666666666666
+ai2-fr-mishap-00010,fr,ai,mishap,Mon oncle a encore ramené son dessert immangeable et tout le monde a fini par commander des pizzas.,👨‍🦳🍰🤢 ➡️ 👥🍕🍕,👨‍🦳 🍰🤢 ➡️ 😖😖 ➡️ 🍕🍕🍕,3,True,0.5,0.6666666666666666,0.8333333333333334,0.6666666666666666
+ai2-fr-mishap-00000,fr,ai,mishap,Mon frère a raté son penalty et tout le monde a explosé de rire.,👦⚽🥅❌ ➡️ 👥😂😂,👦⚽🥅❌ ➡️ 👥😂😂,1,False,1.0,1.0,1.0,1.0
+ai2-fr-question-00013,fr,ai,question,Ai‑je vraiment progressé assez pour soulever 80 kg ?,🏋️ 8️⃣0️⃣❓ 🤔,🏋️ 🫵💪❓ 8️⃣0️⃣,3,True,0.6666666666666666,1.0,0.8333333333333334,0.5
+ai2-fr-mishap-00002,fr,ai,mishap,On a voulu réparer la fuite nous-mêmes et maintenant on a une piscine dans le salon.,🔧🚰 ➡️ 🏠🌊🏊 😱,🔧🚰 ➡️ 🏠🌊🏊 😱,1,False,1.0,1.0,1.0,1.0
+ai2-fr-numbers-00003,fr,ai,numbers,"On a attendu 45 minutes avant le début, j'ai bafouillé.",⏳4️⃣5️⃣ 🎬▶️ 🙋😰🗣️,⏳4️⃣5️⃣ 🎬▶️ 🙋😰🗣️,4,False,0.5,0.5,0.3333333333333333,0.3333333333333333
+ai2-fr-conditional-00010,fr,ai,conditional,"Si je réussis mon permis du premier coup, je fais la fête à l'auto-école.",🚗📝✅1️⃣ ➡️ 🎉🥳,🚗📝✅1️⃣ ➡️ 🎉🥳,1,False,1.0,1.0,0.8333333333333334,0.8333333333333334
+tatoeba-9432420,es,real,question,"Se me ha olvidado el cuadernillo de música, ¿puedo sentarme contigo?",🎵📓❌ 😅 🪑👥❓,🎵📓❌ 😅 🪑👥❓,4,False,0.8333333333333334,0.8333333333333334,0.6666666666666666,0.6666666666666666
+tatoeba-1127586,es,real,other,Él es puntual y discreto en sus deudas.,👨 ⏰✅ 🤐✅ 💶,👨⏰✅ 🤐💶✅,4,True,0.5,0.6666666666666666,0.5,0.75
+tatoeba-6566759,es,real,long,Me estrechó la mano con tal fuerza que me hizo daño.,🤝💪 ➡️ 😖,🤝💪 ➡️ 🖐️😖,4,True,0.8333333333333334,1.0,1.0,0.6666666666666666
+tatoeba-1767413,es,real,other,Cuando toco una telaraña me da repelús.,🕷️🕸️ ✋ ➡️ 😖,🕸️✋ ➡️ 🤢,3,True,0.5,1.0,1.0,1.0
+tatoeba-9358267,es,real,question,¿Por qué le han censurado la cuenta de Twitter?,🐦👤 ➡️ 🚫❓ 😕,🐦👤 ➡️ 🚫❓ 😕,3,False,0.0,0.0,0.0,0.0
+tatoeba-13093190,es,real,other,Creo que no les gusto.,👥💬 🙋❌😞,👥 👎🫵 😞,4,True,0.16666666666666666,0.3333333333333333,0.75,1.0
+tatoeba-10356545,es,real,long,Deberíamos estar preparándonos para tratar de amortiguar lo más posible los efectos de la crisis energética que se nos viene encima.,⚡📉⏩ 😰 🛡️✅,⚡📉⏩ 😰 🛡️✅,4,False,0.16666666666666666,0.16666666666666666,0.0,0.0
+tatoeba-5695844,es,real,long,"Cuando echo el aliento sobre mis gafas, el vaho empaña los cristales.",🫁💨 👓 ➡️ 🌫️👓,🫁💨 👓 ➡️ 🌫️👓,1,False,1.0,1.0,1.0,1.0
+tatoeba-10156978,es,real,long,En mi casa usamos mucho el laurel para condimentar algunos platos.,🏠🍲 🌿🌿🌿,🏠🍲 🌿🌿🌿 😋,3,True,0.0,0.16666666666666666,0.75,0.5
+tatoeba-1801754,es,real,other,Si me tratas de obligar no te escucharé.,🫵💬 🫵🙋➡️ 🧏❌,🫵💪 🫵💬 ➡️ 🙋👂❌,4,True,0.16666666666666666,1.0,0.5,0.5
+ai2-es-conditional-00006,es,ai,conditional,"Si no fuera por las horas que le metí a ese juego, no habría llegado tan lejos en la partida.",🎮⏳⏳⏳ ➡️ 🏆✅ 😮‍💨,🎮⏳⏳⏳ ➡️ 🏆✅ 😮‍💨,3,False,0.6666666666666666,0.6666666666666666,0.8333333333333334,0.8333333333333334
+ai2-es-moment-00010,es,ai,moment,Nos tiramos bolas de nieve hasta que acabamos los dos empapados y riéndonos.,🙋🙋‍♂️❄️⚪ ➡️ 💦💦 😂,🙋🙋‍♂️❄️⚪ ➡️ 💦💦 😂,1,False,1.0,1.0,0.3333333333333333,0.3333333333333333
+ai2-es-past-00000,es,ai,past,Menos mal que empatamos porque jugamos fatal.,⚽🔚 🤝 ➡️ 🎮👎 😮‍💨,⚽🫵👎 ➡️ 🤝1️⃣1️⃣ 😅,4,True,0.8333333333333334,1.0,0.5,0.16666666666666666
+ai2-es-future-00002,es,ai,future,Vamos a llenarle la casa de globos cuando cumpla los cuarenta.,🎈🎈🎈🏠 ⏩ 🎂4️⃣0️⃣ 🎉,🎈🎈🎈🏠 ⏩🎂4️⃣0️⃣ 🎉,4,True,0.5,0.6666666666666666,1.0,1.0
+ai2-es-conditional-00002,es,ai,conditional,"Si mi hermana sale bien del cambio de look en la peluquería, respiro tranquilo y hasta le invito un café.",👧✂️💇 ➡️ 😊 ➡️ 😮‍💨 ☕,👩✂️💇 ➡️ 👍 ➡️ 🫵😮‍💨 ➡️ ☕,4,True,0.6666666666666666,1.0,0.6666666666666666,1.0
+ai2-es-mishap-00004,es,ai,mishap,"Grité sorpresa y me resbalé, y por eso todos se rieron.",😱 ➡️ 🧍💥 🤕 ➡️ 👥😂😂,😱 ➡️ 🧍💥 🤕 ➡️ 👥😂😂,1,False,1.0,1.0,0.8333333333333334,0.8333333333333334
+ai2-es-numbers-00005,es,ai,numbers,"Después de veinte años, nos encontramos una sola vez y la despedida fue inevitable.",⏪2️⃣0️⃣📅 👫🤝1️⃣ ➡️ 👋😢,⏪2️⃣0️⃣📅 🫂1️⃣ ➡️ 👋😢,3,True,0.5,0.6666666666666666,1.0,0.5
+ai2-es-future-00000,es,ai,future,Esta noche voy a prepararme un bocadillo enorme para celebrar el día tan bueno que he tenido.,🌙 🙋🥪🥪🥪 🎉😊,🌙 🙋🥪🥪🥪 🎉😊,3,False,0.8333333333333334,0.8333333333333334,0.8333333333333334,0.8333333333333334
+ai2-es-question-00002,es,ai,question,¿Por qué tengo que cargar yo solo con la bici otra vez si siempre te toca a ti subir la cuesta?,🫵🚲🏋️❓ 🫵⬆️⛰️❌ 🤨,🫵🚲🏋️ 😤 🫵💬 🫵⬆️⛰️❓,4,True,0.5,0.6666666666666666,0.16666666666666666,0.16666666666666666
+ai2-es-conditional-00000,es,ai,conditional,"Si perdemos el próximo autobús, llegaremos tardísimo otra vez.",🚌⏩❌ ➡️ ⏰⏰😰,🚌⏩❌ ➡️ ⏰⌛😰,4,True,0.6666666666666666,0.8333333333333334,0.8333333333333334,1.0

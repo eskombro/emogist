@@ -93,6 +93,91 @@ The rubric is used for results only after a human check, set up the same way as 
 - the pairs come from the new dev sets, so this waits for the next step;
 - **pass mark, set before rating:** a rank correlation of at least 0.7 between the human total and the judge's total. On the v1 ratings, the Sonnet judge reached 0.71.
 
+## Human check
+
+**Result: the v2 judge missed the pass mark (0.67 vs 0.7).** The v1 judge reached 0.72 on the same pairs. The intervals overlap almost entirely, so neither judge is clearly better.
+
+**Setup:**
+- The v1 model (step 6, 8-bit) wrote emoji sentences for the 300 v2 dev sentences. 295 are valid under the v2 rules: EN 100, FR 97, ES 98.
+- Haiku decoded all 295.
+- The author rated 60 blind pairs, 10 per language and source (seed 7), seeing only the original and the guess.
+- Both Sonnet judges then scored the same pairs.
+
+**Files** (all in `results/`): `rubric_ratings.csv` (ratings), `rubric_scores.csv` (per-pair judge scores), `rubric_pairs.csv` (key). Run `rubric_check.py --score --round 1` to redo the comparison; it reads the judge caches.
+
+| | Author | v2 judge | v1 judge |
+|---|---|---|---|
+| Mean score (0–1) | 0.57 | 0.41 | 0.34 |
+| Rank correlation with author | — | 0.67 [0.48, 0.81] | 0.72 [0.56, 0.83] |
+
+v2 judge against the author on each criterion (weighted kappa):
+
+| Criterion | Kappa | Pairs |
+|---|---|---|
+| Topic | 0.49 [0.30, 0.66] | 60 |
+| Event | 0.49 [0.31, 0.65] | 60 |
+| Outcome | 0.48 [0.24, 0.70] | 43 |
+
+**Where they disagree:**
+- **The judge is stricter on every criterion.** Where the two differ, the author gave the higher score 21 times out of 25 on topic, 26 out of 30 on event, and 16 out of 18 on outcome.
+- **Hypotheticals.** The judge counts a conditional or a hypothetical that the guess turns into a real event as a different event. The author mostly accepts it.
+  - Pair 28: "If my brother's car stays broken, he'll miss his daughter's birthday" → "The boy was in a car crash, so the girl missed her birthday party". Author 2/2/1, judge 1/0/0.
+- **Who did what.** The judge treats a change of doer as a wrong event.
+  - Pair 58: "we" fixed the leak ourselves → "the plumber" fixed it. Author 2/2/2, judge 1/0/0.
+- **n/a outcome.** The judge chose n/a for 17 pairs; the author never used it. Leaving the author's outcome out on those 17 pairs, as a post-hoc check, keeps the correlation at 0.67, so n/a is not the cause.
+- **By language** (20 pairs each, so only a rough guide): the rank correlation is 0.52 in English, 0.75 in French and 0.76 in Spanish.
+
+### Round 2: revised rubric (v2.1)
+
+**Rules the author set after round 1.** Emojis can't show either of these, so the judge no longer penalises them:
+- **Mood.** A condition, wish, plan, request or question guessed as something that really happened (or the reverse) counts as the same event.
+- **Who exactly the people are**, beyond number, gender, rough age and a visible job. "My brother" and "a boy" are the same people. A different person doing the action is not an error.
+
+**What still counts as wrong:** reversed roles (who did what to whom is backwards) and negation.
+
+**Code:** the revised prompt is `JUDGE_PROMPT_V21` in `emoji_eval/roundtrip.py`, with its own cache (`cache/judge_v21_cache.csv`). Round 1 results stay reproducible.
+
+**Plan, set before rating:**
+- 42 fresh pairs (7 per language and source, seed 8), with none from round 1. File: `results/rubric2_sheet.csv`.
+- Same rating instructions as round 1, plus the two rules above.
+- The prompt is not changed after this point.
+- **Pass mark:** the same, a rank correlation of at least 0.7 between the author's total and the v2.1 judge's total.
+- **If it fails:** the v1 judge stays the main score for v2.
+
+**Result: the v2.1 judge passed (0.77 vs 0.7).** At the author's request, the v1 judge also ran on the same 42 pairs. Files: `results/rubric2_ratings.csv` and `results/rubric2_scores.csv`.
+
+| | Author | v2.1 judge | v1 judge |
+|---|---|---|---|
+| Mean score (0–1) | 0.60 | 0.44 | 0.42 |
+| Rank correlation with author | — | 0.77 [0.60, 0.88] | 0.64 [0.40, 0.80] |
+
+- **Versus v1:** v2.1 is ahead by 0.13 [−0.03, +0.31] on the same pairs. That's likely but not certain.
+- **Per criterion** (weighted kappa): topic 0.54 [0.31, 0.71], event 0.61 [0.43, 0.75], outcome 0.45 [0.21, 0.65] on 28 pairs. The author used n/a 5 times, the judge 11.
+- **By language** (14 pairs each): rank correlation 0.67 in English, 0.72 in French, 0.84 in Spanish.
+- **The judge is still stricter than the author.** Where they differ on a criterion, the author's score is higher 43 times out of 52. Comparisons between models depend on ranking, not on the scale, so this doesn't affect them. Scores should be read as "judge points", not as the author's.
+
+## Baseline: the v1 model on the v2 dev set
+
+This is the score v2 training has to beat. Setup:
+- **Model:** the served v1 model (8-bit, step 6), at temperature 0.
+- **Data:** all 300 dev sentences.
+- **Judging:** Haiku decodes each output and the v2.1 judge scores it. An output that breaks the v2 format rules scores 0 (5 of 300).
+- **Script:** `score_v1_dev.py`. It writes `results/v1_dev_scores.csv`.
+
+Scores are from 0 to 1, with 95% intervals:
+
+| | Real | AI | All |
+|---|---|---|---|
+| English | 0.42 [0.33, 0.51] | 0.53 [0.45, 0.61] | 0.47 [0.41, 0.53] |
+| French | 0.45 [0.36, 0.55] | 0.47 [0.39, 0.56] | 0.46 [0.40, 0.53] |
+| Spanish | 0.41 [0.33, 0.49] | 0.56 [0.48, 0.65] | 0.49 [0.42, 0.55] |
+| **All** | 0.43 [0.38, 0.48] | 0.52 [0.47, 0.57] | **0.47 [0.44, 0.51]** |
+
+- **Spanish is already level with English and French**, although the v1 model never saw Spanish in training.
+- **Real sentences are harder than AI sentences** (0.43 vs 0.52), as in v1.
+- **Event is the weakest criterion.** Mean points out of 2: topic 1.24, event 0.80, outcome 0.76 (outcome on the 204 outputs where it applies). The model usually gets the situation across but loses what happened.
+- **By type** (18 to 75 sentences each, wide intervals): questions 0.42, long sentences 0.43 and real "other" sentences 0.44 score lowest. Mishap (0.63) and conditional (0.60) sentences score highest.
+
 ## Decision
 
 <!-- Your decision: what you take from this step and what comes next. -->

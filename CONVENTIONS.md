@@ -33,3 +33,24 @@ Steps 0 to 6 use the rules above unchanged. From [step 7](07_v2_rules_and_scorin
 - **Fewer than 3 emojis is a warning, not an error.** Use as few emojis as the idea needs, usually 3 to 8. One or two are fine only when the sentence is that simple: `🍽️🧼`, washing the dishes.
 
 The checks are `check_validity_v2` and `check_conventions_v2` in [`emoji_eval/validate.py`](emoji_eval/validate.py).
+
+From [step 9](09_v2_dataset_and_labels/) on, these signs are added for the new sentence types. Each one must read naturally to someone who has never seen these rules:
+
+| Meaning | Emoji | Example |
+|---|---|---|
+| A question | ❓ as its own group, right after the question part: at the end when the question comes last, after each question when there are several | "Did you feed the cat?" → `🫵🐈🍽️ ❓`; "Can I have a hug?" "I have a boyfriend." → `🫵🤗 ❓ 👩💬 👨❤️` |
+| A condition ("if") | No sign: the "if" part, then ➡️ to its consequence, as in v1 | "If it rains, we'll stay home." → `🌧️ ➡️ 🏠` |
+| Thinking, knowing, believing | 💭 | "I think he's lying." → `🙋💭 👨🤥` |
+| Maybe, doubt, wondering | 🤔 | "Maybe he's lying." → `👨🤥 🤔` |
+| Something unknown or asked about, inside a sentence that is not a question | ❔ attached to what is unknown. A question gets ❓ only, never ❔, including "why / when / what" questions; 🤔 is doubt about whether something is true | "Elle m'a demandé si j'étais marié." → `👩💬 🫵💍❔`; "I don't know where he is." → `👨📍❔`; "He had too many questions." → `👨 ❔❔❔` |
+| A place, "where" | 📍 attached to the place | "¿Dónde está el baño?" → `📍🚽 ❓` |
+| Again, once more | 🔁 attached to the action | "eating again" → `🍔🔁`; "Ella dijo que quería viajar a Japón otra vez." → `👩💬 🤩✈️🇯🇵🔁` |
+
+The author's few-shot examples teach these rules to the teacher. The check only sees the emojis, not the sentence, so it tests positions, not whether a sign is needed:
+- ❓ always a group on its own;
+- ❔, 📍 and 🔁 attached to something, never a group on their own;
+- ❔ and ❓ never in the same label.
+
+💭 and 🤔 have no position rule and aren't checked. Like all conventions, these only produce warnings.
+
+**Dropped after the step 9 quality check:** 🔀 for "if" and 🔄 for "every / all". A decoder that only knew the v1 rules read them as "shuffle" and "switch" (conditions scored 0.31 with 🔀 against 0.70 without), and demo visitors can't be expected to learn them first. "Every / all" is drawn plainly (`👥😂` = everyone laughed).

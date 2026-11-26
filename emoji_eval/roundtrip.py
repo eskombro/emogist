@@ -41,7 +41,7 @@ JUDGE_CACHE_FILE = CACHE_DIR / "judge_cache.csv"
 DECODER_MODEL = "claude-haiku-5-5"
 JUDGE_MODEL = "claude-sonnet-5-5"
 EMBEDDING_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
-LANGUAGES = {"en": "English", "fr": "French"}
+LANGUAGES = {"en": "English", "fr": "French", "es": "Spanish"}  # Spanish added in step 8 (v2)
 
 # The decoder gets the rules a demo visitor would know, but no examples and no original.
 DECODER_PROMPT = """You will see an "emoji sentence": a short sequence of emojis that summarises an everyday sentence. Guess the original sentence.
@@ -112,6 +112,27 @@ JUDGE_V2_SCHEMA = {
 }
 
 
+# v2.1 (step 7, after the first human check): same criteria, two rules the author set because
+# emojis cannot express them: mood (if / real / plan) and exactly who the people are.
+# Reversed roles and negation still count. Own cache, so v2 results stay reproducible.
+JUDGE_V21_CACHE_FILE = CACHE_DIR / "judge_v21_cache.csv"
+JUDGE_PROMPT_V21 = """You compare an original sentence with a guess written by someone who only saw a short emoji summary of it. Score how much of the original the guess recovers, on three criteria:
+
+Topic: is the guess about the same situation or subject (the setting, the main people or things)?
+Event: does the same main thing happen? Two errors make the event wrong: reversed roles (who did what to whom is backwards, for example victim and culprit swapped) and negation (the guess says it did not happen when it did, or the reverse).
+Outcome: does it end the same way (the result, the consequence, or the emotion the story is about)? Answer "n/a" only when the original has no outcome beyond its event (for example "Ziri was in his room.").
+
+For each criterion: 2 = yes, 1 = partly, 0 = no.
+
+Emojis cannot show these, so do not penalise them:
+- Mood: a condition, wish, plan, request or question guessed as something that really happened (or the reverse) counts as the same event. "If my car stays broken, I'll miss the party" and "My car broke down, so I missed the party" have the same event and outcome.
+- Who exactly the people are, beyond number, gender, rough age and a visible job: "my brother" and "a boy", "we" and "they", "my friend" and "a colleague" are the same people. A different person doing the action is not an error unless the roles are reversed.
+
+Also ignore: wording, tense, language register, small details, and emotions that are added or missing, unless the emotion is the outcome.
+
+Give a one-sentence reason first, then the three scores."""
+
+
 def criteria_score(topic: str, event: str, outcome: str) -> float:
     """v2 score from 0 to 1: the share of the points available. An n/a outcome is left out."""
     points = [int(topic), int(event)] + ([] if outcome == "n/a" else [int(outcome)])
@@ -147,9 +168,9 @@ def load_judge_cache() -> dict:
     return {k: (int(r["score"]), r["reason"]) for k, r in rows.items()}
 
 
-def load_judge_v2_cache() -> dict:
-    """(original, guess) -> {"topic", "event", "outcome", "reason"}."""
-    rows = read_cache(JUDGE_V2_CACHE_FILE, ["original", "guess"])
+def load_judge_v2_cache(path: Path = JUDGE_V2_CACHE_FILE) -> dict:
+    """(original, guess) -> {"topic", "event", "outcome", "reason"}. Pass JUDGE_V21_CACHE_FILE for v2.1."""
+    rows = read_cache(path, ["original", "guess"])
     return {k: {f: r[f] for f in ("topic", "event", "outcome", "reason")} for k, r in rows.items()}
 
 
@@ -213,9 +234,13 @@ def judge(client: anthropic.Anthropic, cache: dict, original: str, guess: str) -
     return score, reason
 
 
-def judge_v2(client: anthropic.Anthropic, cache: dict, original: str, guess: str) -> dict:
+def judge_v2(client: anthropic.Anthropic, cache: dict, original: str, guess: str,
+             version: str = "v2") -> dict:
     """v2 criteria for a guess: topic, event, outcome ("0"-"2", outcome may be "n/a"),
-    reason, and score (0 to 1, see criteria_score)."""
+    reason, and score (0 to 1, see criteria_score). version "v2.1" uses the revised prompt and
+    its own cache file (load the cache with load_judge_v2_cache(JUDGE_V21_CACHE_FILE))."""
+    prompt, cache_file = {"v2": (JUDGE_PROMPT_V2, JUDGE_V2_CACHE_FILE),
+                          "v2.1": (JUDGE_PROMPT_V21, JUDGE_V21_CACHE_FILE)}[version]
     if (original, guess) not in cache:
         if not guess.strip():
             result = {"topic": "0", "event": "0", "outcome": "0", "reason": "empty guess"}
@@ -223,7 +248,7 @@ def judge_v2(client: anthropic.Anthropic, cache: dict, original: str, guess: str
             response = client.beta.messages.create(
                 model=JUDGE_MODEL,
                 max_tokens=2000,
-                system=JUDGE_PROMPT_V2,
+                system=prompt,
                 messages=[{"role": "user", "content": f"Original: {original}\nGuess: {guess}"}],
                 output_config={"effort": "low",
                                "format": {"type": "json_schema", "schema": JUDGE_V2_SCHEMA}},
@@ -236,7 +261,7 @@ def judge_v2(client: anthropic.Anthropic, cache: dict, original: str, guess: str
                 data = json.loads(next(b.text for b in response.content if b.type == "text"))
                 result = {f: data[f] for f in ("topic", "event", "outcome", "reason")}
         cache[(original, guess)] = result
-        append_cache(JUDGE_V2_CACHE_FILE, {"original": original, "guess": guess, **result})
+        append_cache(cache_file, {"original": original, "guess": guess, **result})
     result = cache[(original, guess)]
     return {**result, "score": criteria_score(result["topic"], result["event"], result["outcome"])}
 
