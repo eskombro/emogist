@@ -2,14 +2,12 @@
 
 Relax the format rules so that short answers are allowed, and replace the single 0–2 gist score with three criteria, so that a related guess scores above an unrelated one. This is the first step of v2. Steps 0 to 6 keep the v1 rules and scores unchanged.
 
-<!-- Your summary: what this step is about, in your own words. -->
-
-**Status:** rules and rubric written; the rubric is not validated yet. Human ratings with the new rubric come after the new dev and test sets, which add Spanish.
+**Status:** ✅ done. The v2 format rules are in use from step 9 on. The three-criteria judge passed its human check in its revised form (v2.1: 0.77 against a 0.7 pass mark) and is the v2 main score. The v1 model scores 0.47 on the v2 dev set, the baseline for v2 training.
 
 # Main features and functionalities
 
 - **v2 format rules:** 1 to 10 emojis instead of 3 to 10. Fewer than 3 is a style warning, not an error.
-- **v2 judge:** scores topic, event and outcome separately and combines them into a score from 0 to 1.
+- **v2 judge:** scores topic, event and outcome separately and combines them into a score from 0 to 1. Its revised version, v2.1, is the score used from here on.
 - **Versioned, not replaced:** v1 rules, prompt and cache stay the defaults, so every earlier result can still be reproduced.
 
 # Main parts of the project
@@ -18,7 +16,10 @@ Relax the format rules so that short answers are allowed, and replace the single
 |---|---|
 | `compare_rules.py` | Checks every saved output with the v1 and v2 rules; no model calls |
 | [`../emoji_eval/validate.py`](../emoji_eval/validate.py) | `check_validity_v2` and `check_conventions_v2`, next to the unchanged v1 functions |
-| [`../emoji_eval/roundtrip.py`](../emoji_eval/roundtrip.py) | `JUDGE_PROMPT_V2`, `judge_v2` and `criteria_score`, with their own cache `cache/judge_v2_cache.csv` |
+| [`../emoji_eval/roundtrip.py`](../emoji_eval/roundtrip.py) | `JUDGE_PROMPT_V2`, `JUDGE_PROMPT_V21`, `judge_v2` and `criteria_score`, with their own caches `cache/judge_v2_cache.csv` and `cache/judge_v21_cache.csv` |
+| `run_v1_on_dev.py` | Runs the v1 model (8-bit) on the 300 v2 dev sentences |
+| `rubric_check.py` | Builds the blind rating sheets and compares the author's ratings with the judges (`--round 1` or `2`) |
+| `score_v1_dev.py` | Scores the v1 model on v2 dev with the v2.1 judge: the baseline |
 
 ## Format rules
 
@@ -34,13 +35,11 @@ The 3-emoji minimum came from the step 0 conventions and was never measured. It 
 - **Scoring:** a short answer scored 0, like a wrong one.
 - **Demo:** the demo refused to show a short answer at all.
 
-v2 discourages short answers instead of forbidding them. The teacher prompt will ask for as few emojis as the idea needs, usually 3 to 8. The training data then shows short answers only where the teacher found them fitting.
-
-Planned wording for rule 1 of the teacher prompt, to be applied when the v2 dataset is built:
+v2 discourages short answers instead of forbidding them. The v2 teacher prompt ([step 9](../09_v2_dataset_and_labels/)) asks for as few emojis as the idea needs, usually 3 to 8, so the training data shows short answers only where the teacher found them fitting:
 
 > Use as few emojis as the idea needs, usually 3 to 8 and never more than 10. One or two are fine only when the sentence is that simple.
 
-The share of short labels will be checked in a pilot before the full build.
+Step 9 measured the effect on dev: shorter labels sometimes drop a detail the decoder needed (0.56 against 0.61 where the v2 label is shorter).
 
 ### Effect on saved outputs
 
@@ -84,13 +83,13 @@ What doesn't change:
 - **Judge model:** Sonnet, which only sees the two sentences.
 - **v1 gist score:** stays available, so v2 results can also be compared with steps 0 to 6.
 
-The game's local judge (untrained Qwen) will use the same criteria, so game scores and evaluation scores mean the same thing.
+If the guessing-game idea is built, its local judge (untrained Qwen) should use the same criteria, so game scores and evaluation scores mean the same thing.
 
 ## Validation plan
 
 The rubric is used for results only after a human check, set up the same way as in step 5:
 - the project author rates about 60 pairs per criterion, in English, French and Spanish, with the scores hidden;
-- the pairs come from the new dev sets, so this waits for the next step;
+- the pairs come from the new dev sets, built in [step 8](../08_v2_spanish_and_eval_sets/);
 - **pass mark, set before rating:** a rank correlation of at least 0.7 between the human total and the judge's total. On the v1 ratings, the Sonnet judge reached 0.71.
 
 ## Human check
@@ -180,4 +179,16 @@ Scores are from 0 to 1, with 95% intervals:
 
 ## Decision
 
-<!-- Your decision: what you take from this step and what comes next. -->
+**Adopt the v2 format rules and make the v2.1 judge the main v2 score; v2 training has to beat 0.47.**
+- **Rules:** 1 to 10 emojis, with fewer than 3 a warning. Short answers are no longer thrown away in training or scored 0, but the teacher prompt still discourages them.
+- **Score:** v2.1 passed its human check (0.77) and separates a related guess from an unrelated one, which the v1 judge can't. The v1 gist score stays available for comparison with steps 0 to 6.
+- **Baseline:** the v1 model scores 0.47 on v2 dev. Event is its weakest criterion, and real sentences are harder than AI ones.
+
+Next: the new dev and test sets with Spanish ([step 8](../08_v2_spanish_and_eval_sets/)), then the v2 dataset ([step 9](../09_v2_dataset_and_labels/)).
+
+## Lessons and limitations
+
+- **Question old rules.** The 3-emoji minimum was never measured, yet it shaped training, scoring and the demo.
+- **A failed check is useful.** Round 1 showed exactly where the judge and the author disagreed (mood and who exactly the people are), which led to two clear rules and a judge that passed.
+- **Fix the plan before rating.** Pass mark, fresh pairs and a frozen prompt were all set before round 2, so the pass isn't the result of tuning on the same pairs.
+- **Limitations:** one rater (the author), on 42 pairs for the final check. The judge is still stricter than the author, so scores are "judge points", good for comparing models but not as an absolute measure. The decoder is still unvalidated.

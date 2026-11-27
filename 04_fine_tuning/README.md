@@ -2,8 +2,6 @@
 
 Train a small LoRA adapter so a student model learns to write emoji sentences from the teacher's labels.
 
-<!-- Your summary: what this step is about, in your own words. -->
-
 **Status:** both students trained on the full dataset and Qwen declared the winner. On the final test, fine-tuning raised Qwen's gist score from 0.81 to 1.13. The Ministral test run is deferred.
 
 # Main features and functionalities
@@ -102,6 +100,7 @@ How to read these numbers:
 ## Lessons and limitations
 
 - Fine-tuning replaced a long prompt with a one-line instruction and still improved the score.
+- **The gain is uneven:** large in English (+0.52), not proven in French (+0.12), where the untrained model was already stronger.
 - **Adding number examples fixed the number format:** the pilot model wrote `30` or `13-14` as plain digits, while both final models wrote none on dev. Dev has too few number sentences to show whether the meaning is kept.
 - These are single runs on 100 dev sentences, and that dev set has informed several decisions.
 - Loss measures closeness to the teacher's exact emojis, not whether the gist is preserved.
@@ -109,11 +108,7 @@ How to read these numbers:
 
 ## Decision
 
-<!-- Your decision and why. Facts to weigh:
-     - Full data, dev: Qwen 0.75, Ministral 0.72, tied (-0.03 [-0.17, +0.11]).
-     - Qwen leads in French on dev; its adapter is less than half the size (44 MB vs 99 MB).
-     - Qwen was chosen before the test. Test: 0.81 untrained -> 1.13 fine-tuned, +0.32 [+0.17, +0.47].
-     - Ministral has no test score yet. -->
+**Qwen3.5 2B is the fine-tuned model that gets served.** On dev, Qwen and Ministral were tied overall (0.75 vs 0.72), so the tie-breakers decided: Qwen leads in French (+0.22, proven), and it is the smaller model with less than half the adapter size (44 MB vs 99 MB). The choice was made before the test set was run, and the test confirmed that fine-tuning worked: 0.81 → 1.13 (+0.32 [+0.17, +0.47]). Ministral has no test score, which doesn't affect the choice.
 
 ## Next
 

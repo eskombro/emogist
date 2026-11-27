@@ -1,10 +1,8 @@
 # Step 9: v2 dataset and labels
 
-Build the v2 training data: 2,000 examples per language in English, French and Spanish. Labels are the best of several teacher candidates, chosen by a round trip.
+Build the v2 training data: 2,000 examples per language in English, French and Spanish. Each sentence gets one label from DeepSeek V4.1 Flash, with a new prompt, new signs and the author's examples. Picking the best of several labels was tested and dropped: it gave no gain.
 
-<!-- Your summary: what this step is about, in your own words. -->
-
-**Status:** ✅ done: 6,000 training rows (v7 labels), reviewed on a sample.
+**Status:** ✅ done: 6,000 training rows (v7 labels), reviewed on a sample. Described in the [dataset card](DATASET.md).
 
 # Plan
 
@@ -15,8 +13,8 @@ Build the v2 training data: 2,000 examples per language in English, French and S
 | Sentences | Fresh for all three languages, with the step 8 rules (questions and conditionals included) | Author, this step |
 | Size | 2,000 per language (1,000 real + 1,000 AI), 6,000 in total | Author, this step |
 | Teacher and generator | DeepSeek V4.1 Flash only; gpt-oss dropped (13% of its sentences removed vs 2% for Flash) | Author, step 8 |
-| Label selection | Best of several Flash candidates, chosen by Flash itself through a round trip | Author, this step |
-| Human review | Random sample of about 150 examples (50 per language) | Author, this step |
+| Label selection | Planned: the best of several Flash candidates, chosen by Flash through a round trip. **Dropped after the pilot** (no gain): one label per sentence | Author, this step |
+| Human review | Random samples: 150 examples (50 per language), then 60 more after the relabel | Author, this step |
 | Training runs (step 10) | Main model on EN+FR+ES, and an EN+FR control on the same EN/FR rows | Author, v2 plan |
 
 **Terms:** DeepSeek allows training other models on its outputs, including distillation, as long as published AI-generated content is labelled as such. Claude is not used to write, select or filter any training sentence or label. Claude is used only to measure results on the dev set.
@@ -77,7 +75,7 @@ Build the v2 training data: 2,000 examples per language in English, French and S
 `label_prompt_v2.py`. Starts from the v1 prompt (`v4-human-examples`). Changes:
 - **Format rule:** as few emojis as the idea needs, usually 3 to 8, at most 10; 1 or 2 only for simple sentences.
 - **A short section on the signs with a fixed meaning** (❓, 💭, 🤔, ❔, 📍, 🔁), worded from CONVENTIONS.md.
-- **Few-shot examples written by the author:** the worksheet `label_examples_v2.csv`, about 40 examples in EN, FR and ES. Every example is checked against the v2 rules when the prompt is built.
+- **Few-shot examples written by the author:** the worksheet `label_examples_v2.csv`, 43 examples (EN 16, FR 14, ES 13). Every example is checked against the v2 rules when the prompt is built.
 
 **Retries (`labels.py`):** two tries at temperature 0.3, then up to two *repairs*: Flash sees its broken label and a one-line description of the rule it breaks, and writes a new one. The code never suggests emojis. Retries at a higher temperature were tried first and didn't help: Flash repeated the same mistake.
 
@@ -119,9 +117,9 @@ Build the v2 training data: 2,000 examples per language in English, French and S
 - **None of the kept signs costs meaning:** labels with ❓ or 🔁 lose 0.02, those with 📍, 💭, ❔ or 🤔 score the same or higher.
 - **What remains of the gap comes from shorter labels:** where the v2 label is shorter than the v1 one (116 sentences), it scores 0.56 against 0.61; at equal length, 0.60 against 0.61. The new rule 1 ("as few emojis as the idea needs") sometimes drops a detail the decoder needed.
 
-## Best-of-n labels
+## Best-of-n labels (tested, not used)
 
-For each sentence:
+The original plan, dropped after the pilot below. For each sentence:
 1. Flash writes one label at temperature 0.3, as in v1.
 2. Flash decodes it without seeing the original, then scores the guess with the v2.1 rubric.
 3. **If the score is below the maximum,** Flash writes 3 more candidates at a higher temperature, and the best-scoring valid candidate wins. Ties go to the earliest candidate.
@@ -157,38 +155,40 @@ This adaptive version only spends extra requests where the first label loses som
 
 ## Review and output
 
-- **Sample review:** the author reads a random sample of 50 examples per language (sentence and label) and marks each ok or remove. The removal rate is reported. If a problem repeats, the fix goes into the rules, not into hand-picking.
+- **Sample review:** the author reads a random sample (sentence and label) and marks each ok or remove: 150 rows (50 per language) in round 1, 60 (20 per language) in round 2. The removal rate is reported. If a problem repeats, the fix goes into the rules, not into hand-picking.
 - **Output:**
   - `train_main.jsonl`: EN+FR+ES, 6,000 examples;
   - `train_control.jsonl`: the same 4,000 EN and FR rows.
 
-  Each row keeps its source, generator, label candidates and scores, so the published dataset can label AI content as such.
+  Each row keeps its source, pattern, tags, Tatoeba author, generator, teacher, prompt version and the attempt that produced the label, so AI content is labelled as such. See the [dataset card](DATASET.md).
 
 ## Requests and cost
 
-| Part | Ollama Cloud requests (approx.) | Anthropic cost |
+Actual figures (approximate). Ollama Cloud cost about $0.065 per 1,000 Flash requests.
+
+| Part | Ollama Cloud requests | Anthropic cost |
 |---|---|---|
-| AI sentences | 3,000 + retries | — |
-| First labels, decode, score | 18,000 | — |
-| Extra candidates where needed | up to 36,000 | — |
 | Flash selector check | ~200 | — |
-| Pilot on dev | ~1,000 | ~$0.75 (Haiku + Sonnet) |
+| Pilot on dev (best-of-n) | ~1,000 | ~$0.75 |
+| Style checks 1–4 | a few thousand | — |
+| Quality check, then re-score after dropping 🔀/🔄 | — | ~$2.50 + ~$1.10 |
+| Full run: AI sentences and v5 labels | ~10,500 | — |
+| v6 relabel of failures | 257 | — |
+| v7 relabel of all rows | ~7,550 | — |
 
-The Ollama plan's usage limits need checking before the full run.
-
-## Open items
+## Worksheet and conventions
 
 - **Few-shot worksheet:** `label_examples_v2.csv`, made by `pick_example_candidates_v2.py`.
-  - It holds the 20 v1 examples, plus 36 empty candidates drawn by rule from the real pool: 18 Spanish (everyday, vague, speech, numbers) and 3 questions and 3 conditionals per language.
-  - The author writes the emojis and may add hand-written rows.
+  - It started from the 20 v1 examples, plus 36 empty candidates drawn by rule from the real pool: 18 Spanish (everyday, vague, speech, numbers) and 3 questions and 3 conditionals per language.
+  - The author wrote the emojis and added hand-written rows: 43 examples in the end.
   - Worksheet sentences are kept out of the training data.
 - **Conventions for the new types (author's decision):**
-  - ❓ as its own last group marks a question, including "why / what" questions.
+  - ❓ as its own group, right after the question part, marks a question, including "why / what" questions (first "at the very end", changed with prompt v6).
   - 💭 means think and 🤔 means maybe.
   - ❔ attached marks something unknown or asked about ("asked if…", "don't know where…"), only in sentences that are not questions. 📍 attached marks a place or "where".
   - 🔁 attached to an action means again (`🍔🔁`).
   - Conditions have no sign: the "if" part, then ➡️, as in v1.
-  - **Tried and dropped:** 🔀 for "if" and 🔄 for "every / all" (see the quality check below).
+  - **Tried and dropped:** 🔀 for "if" and 🔄 for "every / all" (see the quality check above).
 
   Recorded in CONVENTIONS.md. `check_conventions_v2` checks the positions of ❓, ❔, 📍 and 🔁, and a label that breaks one is retried. Whether a sentence needed a sign (a "?" with no ❓) is only counted in the style report on dev, because keyword matching makes mistakes.
 - **Not enough real questions for French and Spanish.** The pool has 294 English, 191 French and 135 Spanish questions, before taking out the dev/test replacements, and the quota needs 200 per language. **Author's decision:** take every available question and fill the rest of the real half with other sentences. The AI half adds 140 questions per language.
@@ -198,10 +198,21 @@ The Ollama plan's usage limits need checking before the full run.
 Both v2 runs, main and control, train a **new LoRA adapter on the base Qwen3.5 2B**, not on top of the v1 adapter:
 - **Clean comparison:** v1 and v2 start from the same model, so the gain comes from the data, and the main and control runs differ only in the Spanish rows.
 - **No conflicting rules:** v1 labels follow the old format (at least 3 emojis, no question or condition rules). Continuing from v1 would mix the two.
-- The Ollama plan limits for about 55,000 requests.
-- The author's Spanish and question/conditional few-shot examples.
-- The higher temperature and the number of extra candidates, to be set in the pilot.
 
 ## Decision
 
-<!-- Your decision: what you take from this step and what comes next. -->
+**Train v2 on the 6,000 v7 labels, one Flash label per sentence, with all rows kept.**
+- **One label per sentence:** best-of-n gave no gain (+0.01) for extra requests, so it was dropped.
+- **Prompt v7:** the new signs ❓ 💭 🤔 ❔ 📍 🔁 stay because they cost no meaning; 🔀 and 🔄 were dropped because decoders misread them. The v7 relabel fixed the 🫵 misuse and the question-mark mismatches.
+- **All rows kept:** the author's sample review judged 7% of v7 labels wrong, down from 13%, with no repeating problem. The review measures quality; it doesn't filter rows.
+- **Two training files:** the main file (EN+FR+ES) and an EN+FR control on the same rows, so step 10 can show what Spanish adds.
+
+Next: train both adapters from the base Qwen 2B in [step 10](../10_v2_fine_tuning/).
+
+## Lessons and limitations
+
+- **A model judging its own work flatters itself.** Flash rated its best-of-n picks much higher (0.37 → 0.73) than Claude did (0.57 → 0.58): it chose labels it decodes well, not labels others decode well.
+- **New signs need to be learnable.** 🔀 and 🔄 looked logical, but a decoder that only knew what a demo visitor knows read them as "shuffle" and "switch". A demo visitor would do the same.
+- **Examples teach more than rules.** Two speech examples using 🫵 for the narrator spread to 11% of all labels. Fixing the examples did more than any rule text.
+- **Fix problems in the rules, not by hand.** Each repeated problem in the review became a rule, a check or a better example, then everything was relabelled.
+- **Limitations:** the review samples are small (60 rows in round 2, so 7% could be anywhere from about 3% to 16%), and about 7% of the training labels are probably wrong. Shorter v2 labels sometimes drop a detail (0.56 vs 0.61 where shorter). French and Spanish have fewer real questions than planned.

@@ -1,7 +1,5 @@
 # Step 0: Exploration
 
-<!-- Your summary: why this project, what you wanted to learn. -->
-
 ## What was tried
 
 First manual tests on 20 sentences (10 FR, 10 EN), judged by eye, before any scripted evaluation.

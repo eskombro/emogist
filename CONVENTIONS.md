@@ -46,7 +46,7 @@ From [step 9](09_v2_dataset_and_labels/) on, these signs are added for the new s
 | A place, "where" | 📍 attached to the place | "¿Dónde está el baño?" → `📍🚽 ❓` |
 | Again, once more | 🔁 attached to the action | "eating again" → `🍔🔁`; "Ella dijo que quería viajar a Japón otra vez." → `👩💬 🤩✈️🇯🇵🔁` |
 
-The author's few-shot examples teach these rules to the teacher. The check only sees the emojis, not the sentence, so it tests positions, not whether a sign is needed:
+The author's few-shot examples teach these rules to the teacher, through the v2 labelling prompt ([`09_v2_dataset_and_labels/label_prompt_v2.py`](09_v2_dataset_and_labels/label_prompt_v2.py)). The check only sees the emojis, not the sentence, so it tests positions, not whether a sign is needed:
 - ❓ always a group on its own;
 - ❔, 📍 and 🔁 attached to something, never a group on their own;
 - ❔ and ❓ never in the same label.

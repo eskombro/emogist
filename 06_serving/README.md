@@ -2,8 +2,6 @@
 
 Package the fine-tuned Qwen as a small file that runs without a GPU, and serve it through a public demo.
 
-<!-- Your summary: what this step is about, in your own words. -->
-
 **Status:** done. The 8-bit GGUF scores the same as the full model on dev at about half the size, and it runs on a shared 4-core VPS. The demo itself now evolves in [`demo/`](../demo/). The git tag `step-6` shows it as it was when this step ended.
 
 # Main features and functionalities
@@ -60,8 +58,11 @@ Measured on CPU, without weight repacking:
 
 The VPS timings come from 12 requests per setting, so they are a guide rather than a precise benchmark. A third thread made sentences about 20% faster. Weight repacking made no clear difference on this CPU, so it stays off.
 
-## Limitations
+## Lessons and limitations
 
+- **A silent failure looks like success.** Loaded with the text-only class, the merged model ignored the adapter and still wrote plausible emojis. Checking the merged outputs against Colab is what caught it.
+- **8-bit is free, 4-bit isn't.** Halving the size cost nothing measurable; going further rewrote most outputs.
+- **A small model doesn't need a GPU to be served,** but on an older CPU each sentence takes seconds, not milliseconds.
 - **The VPS is slow for this model.** Its older CPU generates about 6.5 tokens per second, so a sentence takes about 3–5 seconds.
 - **Hardware changes some outputs.** On the VPS, 86 of 100 dev outputs match Colab exactly, with 99 valid and the same gist score as the full model.
 - **Dev has informed earlier choices,** so these scores are useful to compare versions, not as a final quality estimate.
@@ -69,11 +70,7 @@ The VPS timings come from 12 requests per setting, so they are a guide rather th
 
 ## Decision
 
-<!-- Your decision and why. Facts to weigh:
-     - 8-bit: 2.01 GB, gist 0.75, same as full precision (+0.00 [-0.05, +0.06]).
-     - 4-bit: 1.29 GB, gist 0.68, more invalid outputs.
-     - Your VPS over free hosting: no quota or long cold start, shared with other services.
-     - On-demand loading keeps the memory free when nobody uses the demo. -->
+**Serve the 8-bit GGUF on our own VPS, loaded on demand.** The 8-bit file is half the size of the full model with the same gist (0.75, +0.00 [−0.05, +0.06]). The 4-bit file saves another 0.7 GB but scores lower (0.68) and produces more invalid outputs. Our own VPS was preferred over free hosting because it has no quota and no long cold start. Since it's shared with other services, the model loads only when someone starts typing and unloads when idle, so it uses no memory while the demo isn't in use.
 
 ## Next
 

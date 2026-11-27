@@ -1,4 +1,4 @@
-# emogist demo
+# Emogist demo
 
 A small web demo that turns an everyday English, French or Spanish sentence into emojis, live at [emogist.esklab.com](https://emogist.esklab.com).
 

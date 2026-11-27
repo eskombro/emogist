@@ -2,8 +2,6 @@
 
 Build about 3,000 English and French training examples, each pairing a sentence with an emoji sentence from the teacher.
 
-<!-- Your summary: what this step is about, in your own words. -->
-
 **Status:** full dataset built: 3,000 examples, described in the [dataset card](full/README.md).
 
 # Main features and functionalities
@@ -83,18 +81,16 @@ English numbers sentences failed most often (19% in the first batch), because ea
 
 The author read part of a random 120-example sample and its numbers rows, and judged the labels ready. This was an informal check with no recorded score.
 
-## Limitations
+## Lessons and limitations
 
-- Automatic checks verify **format, not meaning**, so a valid label can still be poor.
-- One Tatoeba contributor wrote 384 of the 1,500 real sentences.
-- The dev set has now informed several decisions, so the final result must come from the test set, which was kept out of training and prompt tuning.
+- **Real sentences are harder than test stories.** The teacher scored 0.95 on real dev sentences against 1.34 on the step 1 test set, so the targets had to be reset.
+- **Mix the sources.** In the pilot, AI sentences alone hurt English (0.40), while the mix was the best set. The two sources differ in length and style, not only in origin.
+- **A rule can cost more than it fixes.** Banning keycap numbers lost ages, times and prices without improving the gist, so the ban was reversed.
+- **Limitations:** automatic checks verify **format, not meaning**, so a valid label can still be poor, and the author's review of the labels was informal, with no recorded score. One Tatoeba contributor wrote 384 of the 1,500 real sentences. The dev set has now informed several decisions, so the final result must come from the test set, which was kept out of training and prompt tuning.
 
 ## Decision
 
-<!-- Your decision and why. Facts to weigh:
-     - Mixed real + AI data scored best (0.68), although its lead over A and B is not proven.
-     - AI sentences alone hurt English (0.40).
-     - Planned: 750 real + 750 AI sentences per language, plus a numbers pattern. -->
+**The full dataset mixes real and AI sentences 50/50: 750 of each per language, 3,000 in total, with 125 numbers sentences per language among the AI ones.** In the pilot ([step 4](../04_fine_tuning/)), the mixed set C trained the best student (0.68 on dev, against 0.59 for real only and 0.56 for AI only). Its lead is not proven, but it was the only set that did well in both languages. The labels use prompt v4 with the author's 20 examples, the best version on dev (0.95).
 
 ## Next
 

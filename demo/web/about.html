@@ -138,6 +138,9 @@
   <p>The round-trip score sees v1 and v2 as equal. In a blind side-by-side review of 100 new sentences, Sonnet preferred v2 more often than v1 (net +0.14, not statistically significant): cleaner answers that show who acts and get times right, while v1 keeps more small details.</p>
   <p>In the first version, fine-tuning raised the score of the untrained model from 0.81/2 to 1.13/2 (an older scale), closing 64% of the gap to the teacher. Switch on <em>Compare</em> on the demo page to see the trained model (v2) next to the same model before training.</p>
 
+  <h2>What did it cost?</h2>
+  <p>Very little. Training ran on a free Google Colab GPU, in about 25 minutes for this model. The only spending was API calls: about $2 for the teacher to write sentences and answers, and about $12 for Claude to score every experiment. That's about $15 in total for both versions, the 4B model included. The final model alone, without the experiments, would cost about $2 to $3.</p>
+
   <h2>Limits</h2>
   <ul>
     <li>Idioms and abstract ideas are hard: “llover a cántaros” (to rain buckets) once came back with a glass of milk <span class="emoji">🥛</span>.</li>
@@ -205,6 +208,9 @@
   <p>Le score aller-retour place la v1 et la v2 à égalité. Dans une comparaison à l'aveugle sur 100 nouvelles phrases, Sonnet a préféré la v2 plus souvent que la v1 (écart net +0,14, non significatif) : des réponses plus nettes, qui montrent qui agit et donnent la bonne heure, alors que la v1 garde plus de petits détails.</p>
   <p>Dans la première version, le score du modèle est passé de 0,81/2 avant entraînement à 1,13/2 après (sur une ancienne échelle), ce qui comble 64 % de l'écart avec le professeur. Activez <em>Comparer</em> sur la page de la démo pour voir le modèle entraîné (v2) à côté du même modèle avant entraînement.</p>
 
+  <h2>Combien ça a coûté ?</h2>
+  <p>Très peu. L'entraînement a tourné sur un GPU gratuit de Google Colab, en 25 minutes environ pour ce modèle. Les seules dépenses sont des appels d'API : environ 2 $ pour que le professeur écrive les phrases et les réponses, et environ 12 $ pour que Claude note toutes les expériences. Soit environ 15 $ au total pour les deux versions, modèle 4B compris. Le modèle final seul, sans les expériences, aurait coûté environ 2 à 3 $.</p>
+
   <h2>Limites</h2>
   <ul>
     <li>Les expressions idiomatiques et les idées abstraites sont difficiles : « llover a cántaros » (pleuvoir des cordes, en espagnol) est un jour revenu avec un verre de lait <span class="emoji">🥛</span>.</li>
@@ -271,6 +277,9 @@
   <p class="note">La evaluación utiliza 300 frases de desarrollo, 100 por idioma. La mejora del modelo 4B es real (+0,05, con un intervalo de confianza del 95 % de +0,01 a +0,08), pero resulta pequeña para un modelo que ocupa el doble y es más lento. Por eso, la demo utiliza la versión 2B.</p>
   <p>La evaluación de reconstrucción da la misma puntuación a v1 y v2. Sin embargo, en una comparación a ciegas con 100 frases nuevas, Sonnet prefirió v2 más veces que v1 (diferencia neta de +0,14, aunque sin significación estadística). Las respuestas de v2 son más limpias, identifican mejor quién realiza la acción y aciertan más con las horas, mientras que v1 conserva más detalles secundarios.</p>
   <p>En la primera versión, el entrenamiento subió la puntuación del modelo de 0,81/2 a 1,13/2 (según una escala anterior), cerrando el 64 % de la distancia respecto al profesor. Activa <em>Comparar</em> en la página de la demo para ver el modelo entrenado (v2) junto al mismo modelo antes del entrenamiento.</p>
+
+  <h2>¿Cuánto costó?</h2>
+  <p>Muy poco. El entrenamiento se hizo en una GPU gratuita de Google Colab, en unos 25 minutos para este modelo. El único gasto fueron las llamadas a la API: unos 2 $ para que el modelo profesor escribiera las frases y las respuestas, y unos 12 $ para que Claude puntuara todos los experimentos. En total, unos 15 $ para las dos versiones, incluido el modelo 4B. El modelo final por sí solo, sin los experimentos, habría costado unos 2 a 3 $.</p>
 
   <h2>Límites</h2>
   <ul>

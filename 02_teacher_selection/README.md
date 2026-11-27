@@ -1,7 +1,5 @@
 # Step 2: Teacher selection
 
-<!-- Your summary: what this step is about, in your own words. -->
-
 **Goal:** choose the large model that will label the ~3,000 training sentences. A student rarely ends up better than its labels, so the teacher sets the ceiling for the whole project.
 
 ## Candidates
@@ -93,13 +91,15 @@ This test set is made of small, concrete stories. On 100 real Tatoeba sentences 
 
 ## Decision
 
-<!-- Your decision and why. Facts to weigh:
-     - Gist: the five large teachers are tied (1.30-1.34); thinking adds nothing.
-     - gpt-oss 120B: tied on gist, cleanest format (97 clean labels), Apache 2.0, always
-       reasons, 5/8 on speech. A credible backup. gpt-oss 20B: probably weaker (1.17).
-     - DeepSeek V4.1 Flash: top or tied everywhere, best on speech (88%), MIT licence,
-       fastest and cheapest.
-     - Mistral Large 4: licence grey area, always reasons (slow), no score advantage. -->
+**DeepSeek V4.1 Flash is the teacher, with gpt-oss 120B as the backup.** The five large teachers are tied on gist, so the choice came down to tie-breakers, and Flash wins most of them: best on speech (7/8), MIT licence with no grey area, no thinking needed, and the fastest and cheapest (≈0.5 s per sentence, under $1 for 3,000 labels). gpt-oss 120B is a credible backup: tied on gist, the cleanest format and Apache 2.0, but it always reasons. Mistral Large 4 brings no score advantage for a licence grey area and slow answers. Flash also labelled the v2 dataset in [step 9](../09_v2_dataset_and_labels/).
+
+## Lessons and limitations
+
+- **Thinking didn't help.** DeepSeek V4 Pro scored the same with and without thinking, at a higher cost and time. Measure it rather than assume it helps.
+- **Bigger teachers converge.** Five different models landed at 1.30–1.34, well below the hand-made 1.75. Past a certain size, the prompt and examples matter more than the choice of teacher.
+- **Check the licence before the scores.** Training on outputs is allowed for MIT and Apache 2.0 open weights, unclear for some others and forbidden for some APIs (Claude, for instance), so the licence filters the candidates first.
+- **The test set flatters.** Its sentences are small, concrete stories; on real sentences Flash dropped to about 0.9 ([step 3](../03_dataset/)).
+- **Limitations:** one run per model; the speech and time rates rest on 8 and 6 sentences, so they are hints only; and the same Claude scorer as step 1, with the same caveats.
 
 ## Reproduce
 

@@ -2,8 +2,6 @@
 
 Train new LoRA adapters on the v2 dataset and measure them on the v2 dev set against the v1 model.
 
-<!-- Your summary: what this step is about, in your own words. -->
-
 **Status:** ✅ done. Main, control and 4B main trained and scored; the demo uses 2B main (step 11).
 
 # Plan
@@ -163,4 +161,17 @@ Files: `results/blind_review/` (`sentences.csv`, `outputs.csv`, `eval_1.json`, `
 
 ## Decision
 
-<!-- Your decision and why. -->
+**Serve 2B main as the v2 model, next to v1, and keep 4B as a measured option.**
+- **2B main:** it ties v1 on the round-trip score (0.47) and covers a third language. Sonnet's blind review leans towards it (+0.14, not proven), with cleaner outputs, clearer people and right times and numbers. Same size and speed as v1, so it fits the demo server.
+- **4B main:** the only run with a proven gain (+0.05), but at about twice the memory and with slower answers on a CPU-only server. Not worth it for this demo.
+- **Spanish stays in the training data:** it didn't hurt English and French, and the served model should be trained on every language it's offered in, even if Spanish scored the same without it.
+
+Next: serve v1 and v2 side by side in the demo ([step 11](../11_demo_v2/)).
+
+## Lessons and limitations
+
+- **Better data didn't move the score.** Cleaner labels, new signs and Spanish gave a tie with v1 at 2B. With the same recipe, the limit seems to be the model's size more than the data.
+- **Model size helps.** 4B gained on all three criteria and all three languages, closing about half the gap to the teacher.
+- **The base model already knows Spanish.** The control never saw Spanish and scored the same in it: emojis don't depend on the language.
+- **Different measures, different answers.** The round-trip score shows a tie, while the author and a blind Sonnet review both lean towards v2. A single score doesn't capture everything a user notices, such as repetition or clear subjects.
+- **Limitations:** one training run per setting, so run-to-run variation is unknown. The type breakdowns are too small to prove anything. The blind review used short, simple sentences written by Sonnet and one judge. The test set is still untouched, so these are dev results only.

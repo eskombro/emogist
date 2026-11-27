@@ -2,8 +2,6 @@
 
 Check how far the scores can be trusted, how close fine-tuned Qwen gets to its teacher, and where it still loses the gist.
 
-<!-- Your summary: what this step is about, in your own words. -->
-
 **Status:** done. The judge passed a one-person check, fine-tuned Qwen closed 64% of the gap to its teacher on the test set, and long sentences are its clearest weakness on dev.
 
 # Main features and functionalities
@@ -77,20 +75,16 @@ This breakdown uses the 100 real dev sentences, so that any idea for retraining 
 - **Number meaning is not measured.** Dev has only 2 sentences with a number.
 - **Other gaps in dev:** no questions, 3 sentences with cause or result, 6 with reported speech and 7 about the future.
 
-## Limitations
+## Lessons and limitations
 
-- The test set was used to shortlist models in steps 1 and 2, so absolute test scores may be slightly optimistic.
-- Test and dev scores are not comparable, because the test sentences are easier.
-- The decoder (Claude Haiku 5.5) has not been validated against people.
-- Ministral 3 3B has no test score.
+- **Set the pass mark before looking.** The kappa threshold (0.6) was fixed before the comparison, so a borderline 0.66 can't be explained away in either direction.
+- **Trust comparisons more than absolute scores.** The judge is stricter than the human by about the same amount for both models, so the gaps between models hold while the absolute numbers run low.
+- **A small dev set hides weaknesses.** It had almost no numbers, questions or cause/result sentences, so those cases can't be judged from it.
+- **Limitations:** the test set was used to shortlist models in steps 1 and 2, so absolute test scores may be slightly optimistic. Test and dev scores are not comparable, because the test sentences are easier. The judge check has one rater, and the decoder (Claude Haiku 5.5) has not been validated against people.
 
 ## Decision
 
-<!-- Your decision and why. Facts to weigh:
-     - Judge check: kappa 0.66 [0.52, 0.78], judge stricter by 0.27, one rater.
-     - Test: untrained 0.81, fine-tuned 1.13, teacher 1.31. Teacher - Qwen +0.18 [+0.03, +0.33].
-     - Dev: long sentences are the clearest weakness (+0.42 behind the teacher, 50% lost).
-     - Retraining for long sentences would first need a larger, more varied dev set. -->
+**Serve the fine-tuned Qwen as it is, with no retraining for v1.** The judge passed its check (kappa 0.66), so the scores are usable, and the model closed 64% of the gap to its teacher (1.13 vs 1.31 on test). Long sentences are its clearest weakness (50% lost on dev), but a fix can't be measured on the current dev set, which is small and missing whole kinds of sentences. Retraining has to wait for a larger, more varied dev set, which v2 built in [step 8](../08_v2_spanish_and_eval_sets/).
 
 ## Next
 

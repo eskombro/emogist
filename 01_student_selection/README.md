@@ -1,7 +1,5 @@
 # Step 1: Student selection
 
-<!-- Your summary: what this step is about, in your own words. -->
-
 **Goal:** choose the small open model to fine-tune, by comparing the candidates *before* any training (prompted only).
 
 ## Method
@@ -43,20 +41,16 @@ The tie was tested again in the [fine-tuning pilot](../04_fine_tuning/), on 100 
 
 ## Decision
 
-<!-- Your decision and why. Facts to weigh:
-     - Qwen 2B and Ministral 3B are statistically tied; both are clearly ahead of Qwen 0.8B.
-     - Qwen 2B is smaller (faster, cheaper to serve) and shares a family with the 0.8B browser model.
-     - Ministral 3B remains in the plan as a fine-tuning comparison. -->
+**Qwen3.5 2B is the main student and Ministral 3B the challenger.** The two were tied and both were clearly ahead of Qwen 0.8B. On a tie, the smaller model wins: Qwen 2B is about a third smaller, so faster and cheaper to serve on a CPU-only VPS. Ministral stays in the plan because a tie before training doesn't show which model learns better, so both were trained.
+
+[Step 4](../04_fine_tuning/) confirmed the choice: after full fine-tuning they were still tied on dev (0.75 vs 0.72), with Qwen ahead in French.
 
 ## Lessons and limitations
 
-<!-- Your lessons. Facts worth keeping:
-     - An embedding-similarity score was tried first and rejected: it rewards naming the right
-       objects even when the story is wrong ("a bee enters the house, fire, rainbow" scored 0.70
-       against "bees nested in our chimney"). The gist judge gives it 0.
-     - The decoder (Haiku) is a provisional choice, not compared with other decoders.
-     - No human validation yet: one person's 32 guesses were too few to validate the scorer.
-     - One run at temperature 0.3: run-to-run variation is not included in the intervals. -->
+- **Score the gist, not the objects.** An embedding-similarity score was tried first and rejected: it rewards naming the right objects even when the story is wrong. "A bee enters the house, fire, rainbow" scored 0.70 against "bees nested in our chimney", while the gist judge gives it 0.
+- **Prompting fixes format, not judgement.** Good examples were enough to get almost every output into the right format, but rules that need judgement (time ⏪/⏩, speech 💬) were not followed. That is what fine-tuning is for.
+- **Small sets give wide intervals.** With 50 sentences per language, a 0.16 gap is still a tie.
+- **Limitations:** the decoder (Haiku) was not compared with other decoders; the scorer had no human check at this stage (it passed one later, in [step 5](../05_evaluation/)); and each model ran once, so run-to-run variation is not in the intervals.
 
 ## Reproduce
 
