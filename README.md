@@ -8,16 +8,56 @@ Training a small open-weight model to turn everyday English, French and Spanish 
 
 # The goal of this project
 
-This is an educational project whose goal is to learn how to fine-tune a small LLM to make it better at a specific task. This is done by having a small AI model learn from a bigger model's capabilities, following a teacher/student approach (SFT: Supervised Fine-Tuning).
+This is an educational project: the author's goal was to learn how to fine-tune a small LLM to make it better at a specific task. A small AI model learns from a bigger model's capabilities, following a teacher/student approach (SFT: Supervised Fine-Tuning).
 
 The idea is to help a very small model, one that can be served on a cheap and simple VPS or on a local machine, gain capabilities while adding little overhead, all at the lowest possible cost and using open-source and free tools as much as possible.
 
-We tested 4 open-weight models to select the best student (Qwen3.5 2B, Qwen3.5 0.8B, Ministral 3B and SmolLM3 3B), and 5 LLMs to select a teacher (DeepSeek V4.1 Flash, DeepSeek V4 Pro, Mistral Large 4, gpt-oss 120B and gpt-oss 20B). We built our own dataset and fine-tuned the selected student to close as much of the gap to its teacher as possible.
+The author tested 4 open-weight models to select the best student (Qwen3.5 2B, Qwen3.5 0.8B, Ministral 3B and SmolLM3 3B), and 5 LLMs to select a teacher (DeepSeek V4.1 Flash, DeepSeek V4 Pro, Mistral Large 4, gpt-oss 120B and gpt-oss 20B), then built a dataset and fine-tuned the selected student to close as much of the gap to its teacher as possible.
 
-Cost of training (all experiments included, dataset and fine-tuning): ≈ $15 ([details](#what-it-cost))
-Time invested: 4 days
+- **Cost of training** (all experiments included, dataset and fine-tuning): ≈ $15 ([details](#what-it-cost))
+- **Time invested:** 4 days
 
-# Main features and functionalities
+# Results
+
+**How scores work:** one model decodes the emojis back into a sentence without seeing the original, and another judges whether the gist survived. v1 uses a gist score from 0 to 2; v2 uses a stricter score from 0 to 1 over three criteria (topic, event, outcome), so v1 and v2 numbers can't be compared with each other. Brackets are 95% confidence intervals.
+
+**v1: English and French, on the test set (0–2)**
+
+| Model | Score |
+|---|---|
+| Qwen3.5 2B, untrained, with the full rules and 20 examples in the prompt | 0.81 |
+| **Qwen3.5 2B, fine-tuned, with a one-line instruction** | **1.13** |
+| Teacher (DeepSeek V4.1 Flash) | 1.31 |
+
+Fine-tuning raised the score by **+0.32 [+0.17, +0.47]** and closed **64% of the gap** to the teacher, while replacing a long prompt with one line.
+
+**v2: English, French and Spanish, on the new dev set (0–1)**
+
+| Model | Score |
+|---|---|
+| v1 model | 0.47 |
+| **v2, Qwen3.5 2B (served in the demo)** | **0.47** |
+| v2, Qwen3.5 4B | 0.52 |
+| Teacher (DeepSeek V4.1 Flash) | 0.57 |
+
+Cleaner labels, new signs and Spanish didn't move the score at 2B, but a bigger model did: 4B gained **+0.05 [+0.01, +0.08]** on every criterion and every language. The 2B was kept for the demo, because twice the memory on a CPU-only server wasn't worth a small gain. A blind review by Claude Sonnet leans towards v2 over v1 (cleaner outputs, clearer subjects), but not significantly. The v2 test set has not been run yet.
+
+**Also measured:**
+- **The scorer was checked against a human rater:** weighted kappa 0.66 for the v1 judge, rank correlation 0.77 for the v2 judge, both above pass marks set before rating.
+- **Serving:** the 8-bit model (2 GB) scores the same as full precision and answers in about 3–4 s on a 3-core CPU VPS, loading only when a visitor starts typing.
+- **Cost:** about $15 for everything; the final v2 model alone would cost about $2–3.
+
+# Lessons learned
+
+- **Score the gist, not the objects.** An embedding-similarity score rewarded the right objects in the wrong story; a round trip with a judge doesn't.
+- **Validate the judge before trusting it.** Pass marks were set before each human check. The first v2 judge failed, and its disagreements turned into two clear rules and a judge that passed.
+- **Past a certain size, teachers converge.** Five large models tied, and letting the teacher think added nothing. The prompt and examples mattered more than the choice of teacher.
+- **Examples teach more than rules.** Two few-shot examples using 🫵 for the narrator spread to 11% of all labels; fixing the examples did more than any rule text.
+- **A model judging its own work flatters itself.** Best-of-n with the teacher as selector looked like a large gain to the teacher and gave none to an independent judge.
+- **Better data has limits at a fixed size.** At 2B, v2's cleaner data tied v1; at 4B, the gain was real.
+- **Measuring costs more than training.** Training was free on Colab; most of the $15 went into scoring.
+
+# Features
 
 - **Full learning loop:** dataset → fine-tuning → evaluation → serving, documented step by step.
 - **Emoji grammar:** a small set of rules for time, speech, negation, numbers and cause, in [CONVENTIONS.md](CONVENTIONS.md).
@@ -25,33 +65,36 @@ Time invested: 4 days
 - **Round-trip evaluation:** one model decodes the emojis without seeing the original, and another judges whether the gist survived.
 - **Three languages:** real human sentences plus AI-generated everyday stories, written natively in English, French and Spanish (Spanish from v2, step 8 on).
 
-# Main parts of the project
+# Tech stack
 
-## How it works
+| Area | Tools |
+|---|---|
+| Models | Qwen3.5 2B (student), DeepSeek V4.1 Flash (teacher) on Ollama Cloud, Claude Haiku and Sonnet (evaluation only) through the Anthropic API |
+| Training | Supervised fine-tuning with LoRA: Unsloth, TRL (`SFTTrainer`), PEFT (adapter merge), Google Colab (T4 GPU) |
+| Evaluation | LLM-as-judge round trip, human checks (weighted kappa, rank correlation), paired bootstrap confidence intervals |
+| Serving | llama.cpp, GGUF (8-bit), LoRA adapters switched per request, FastAPI with streaming |
+| Deployment | Docker, GitHub Actions, Caddy, Cloudflare, a shared VPS |
+| Web | Plain HTML, CSS and JavaScript, in English, French and Spanish |
+| Data | Python, Tatoeba exports, JSONL and CSV datasets |
 
-```
-                 teacher model (labels)            small student model (fine-tuned)
-sentences ──▶  sentence → emoji sentence  ──▶  dataset  ──▶  sentence → emoji sentence  ──▶  API + demo page
-```
-
-Every step is evaluated the same way: a **round-trip score**. One model decodes the emoji sentence back into text without seeing the original, and another judges whether the decoded text keeps the gist (see [step 1](01_student_selection/)).
+# How it works
 
 ## Steps
 
 | Step | Status | Key result |
 |---|---|---|
-| [0. Exploration](00_exploration/) | ✅ done | Small models need one sentence per request; validation is mandatory |
-| [1. Student selection](01_student_selection/) | ✅ done | Qwen3.5 2B and Ministral 3B tied; Qwen3.5 0.8B behind |
-| [2. Teacher selection](02_teacher_selection/) | ✅ done | Five large teachers tied at ~1.3 gist vs ~0.9 for students; thinking adds nothing; DeepSeek V4.1 Flash best on tie-breakers, gpt-oss 120B a credible backup |
-| [3. Dataset](03_dataset/) (3,000 EN+FR sentences) | ✅ done | 50/50 mix of real and AI sentences, including exact numbers. [Dataset card](03_dataset/full/README.md) |
-| [4. Fine-tuning](04_fine_tuning/) (LoRA, Unsloth) | ✅ done | Qwen 2B chosen on dev, tied with Ministral 3B. On the test set, fine-tuning raised gist from 0.81 to 1.13 (+0.32 [+0.17, +0.47]). Ministral's test run is deferred |
-| [5. Evaluation](05_evaluation/) | ✅ done | Judge passed a one-person check (kappa 0.66). Fine-tuned Qwen 1.13 vs teacher 1.31 on test, closing 64% of the gap. Long sentences are its clearest weakness |
-| [6. Serving](06_serving/) (GGUF + FastAPI, [live demo](https://emogist.esklab.com)) | ✅ done | The 8-bit model (2 GB) matches the full model on dev (0.75). It loads on demand on a shared VPS |
-| [7. v2 rules and scoring](07_v2_rules_and_scoring/) | ✅ done | Short answers (1–2 emojis) allowed as a warning. The three-criteria judge (topic, event, outcome) missed its first human check (0.67 vs 0.7). After two rules were added (mood and exactly who the people are are not penalised), v2.1 passed on 42 fresh pairs: 0.77 [0.60, 0.88], against 0.64 for the v1 judge. Baseline of the v1 model on v2 dev: 0.47 [0.44, 0.51], with Spanish (never trained) level with English and French. v1 results unchanged |
-| [8. Spanish and new evaluation sets](08_v2_spanish_and_eval_sets/) | ✅ done | New dev and test sets: 300 sentences each, 100 per language (EN, FR, ES), half real and half AI, all reviewed by the author (79 of 679 removed) |
-| [9. v2 dataset and labels](09_v2_dataset_and_labels/) | ✅ done | 6,000 training rows: 2,000 per language (EN, FR, ES), half real and half AI. One label per sentence from DeepSeek V4.1 Flash with the v2 prompt and the author's examples (best-of-n gave no gain). New signs ❓ 💭 🤔 ❔ 📍 🔁; 🔀 and 🔄 tried and dropped. Author's sample review: 7% of labels judged wrong |
-| [10. v2 fine-tuning](10_v2_fine_tuning/) | ✅ done | New LoRA on the original Qwen 2B with v1 settings: main (EN+FR+ES) 0.47, the same as v1 on v2 dev; the EN+FR control shows Spanish neither hurt nor helped. A blind Sonnet review leans towards v2 (+0.14, not statistically significant). 4B scores 0.52 (+0.05, proven) but was not kept: twice the size for a small gain. All v2 scores are on dev only: the v2 test set has not been run |
-| [11. v2 demo](11_demo_v2/) | ✅ done | The live demo runs v2: one 2B base with switchable v1 and v2 adapters, a compare view with the untrained model, a Spanish page, explained signs, share links, a random-sentence button and an About page in three languages |
+| [0. Exploration](00_exploration/) | ✅ done | Small models need one sentence per request, and every model wrote some invalid outputs, so validation is mandatory |
+| [1. Student selection](01_student_selection/) | ✅ done | Qwen3.5 2B and Ministral 3B tied before training; Qwen3.5 0.8B clearly behind |
+| [2. Teacher selection](02_teacher_selection/) | ✅ done | Five large teachers tied (~1.3 vs ~0.9 for the students); DeepSeek V4.1 Flash chosen on tie-breakers; thinking added nothing |
+| [3. Dataset](03_dataset/) | ✅ done | 3,000 English and French examples, half real and half AI sentences ([dataset card](03_dataset/full/README.md)) |
+| [4. Fine-tuning](04_fine_tuning/) (LoRA, Unsloth) | ✅ done | Qwen 2B chosen over Ministral 3B; on the test set, fine-tuning raised the score from 0.81 to 1.13 |
+| [5. Evaluation](05_evaluation/) | ✅ done | Judge validated against a human (kappa 0.66); Qwen closes 64% of the gap to the teacher; long sentences are its weakest point |
+| [6. Serving](06_serving/) (GGUF + FastAPI) | ✅ done | The 8-bit model (2 GB) is as good as the full one and loads on demand on a shared VPS |
+| [7. v2 rules and scoring](07_v2_rules_and_scoring/) | ✅ done | Short answers allowed; a three-criteria judge passed its human check on the second round (0.77); v1 model baseline 0.47 |
+| [8. Spanish and new evaluation sets](08_v2_spanish_and_eval_sets/) | ✅ done | New 300-sentence dev and test sets in English, French and Spanish, every sentence reviewed by the author |
+| [9. v2 dataset and labels](09_v2_dataset_and_labels/) | ✅ done | 6,000 labels in three languages, new signs ❓ 💭 🤔 ❔ 📍 🔁; 7% of a reviewed sample judged wrong ([dataset card](09_v2_dataset_and_labels/DATASET.md)) |
+| [10. v2 fine-tuning](10_v2_fine_tuning/) | ✅ done | v2 at 2B ties v1 (0.47); 4B scores 0.52 but wasn't kept; dev set only |
+| [11. v2 demo](11_demo_v2/) | ✅ done | The [live demo](https://emogist.esklab.com) runs v2, with a before/after compare view, a Spanish page and share links |
 
 ## What it cost
 
@@ -65,29 +108,6 @@ Training a small model doesn't need expensive hardware: every training run used 
 | **Total, both versions and all experiments** | **≈ $15** |
 
 The final v2 model alone would cost about $2–3: about $1.30 to label 6,000 sentences, one free training run and about $1 to score it. Most of the money went into measuring, not training. The figures are estimates from cached calls and usage pages, and serving (the VPS) is not included.
-
-## Repository layout
-
-```
-emoji_eval/          shared code: prompt, validator, model runner, round-trip scorer
-data/                v1 fixed test set (evaluation only) + data notes
-cache/               cached decodes and judgements, so scores are reproducible for free
-00_exploration/      first manual tests
-01_student_selection/  compare small models before training
-02_teacher_selection/  compare large models that label the data
-03_dataset/          v1 sentence sources, labelling prompt, pilot and full dataset
-04_fine_tuning/      Colab training notebooks, pilot runs and scores
-05_evaluation/       human check of the judge, teacher ceiling, error breakdown
-06_serving/          model export, GGUF comparison and serving results
-07_v2_rules_and_scoring/  v2 format rules and three-criteria judge
-08_v2_spanish_and_eval_sets/  Spanish tooling, new dev and test sets
-09_v2_dataset_and_labels/  v2 training sentences and teacher labels
-10_v2_fine_tuning/   v2 training notebook and dev scoring
-11_demo_v2/          plan and checks for the v2 demo (code in demo/)
-demo/                the live demo: API, web page, Docker and deployment files
-docs/                images for this README (demo GIF)
-CONVENTIONS.md       the emoji grammar used everywhere
-```
 
 # Setup
 
@@ -121,6 +141,7 @@ The fine-tuned models are not published, so the demo and the export scripts need
 - **Training labels** are generated by DeepSeek V4.1 Flash (MIT), and the AI half of the training sentences by the same model. Both are marked as AI-generated in the dataset cards ([v1](03_dataset/full/README.md), [v2](09_v2_dataset_and_labels/DATASET.md)) and in each row's `source`, `generator` and `teacher` fields.
 - **Real sentences** come from [Tatoeba](https://tatoeba.org) (CC BY 2.0 FR), with author attribution kept in the data files.
 - **Few-shot labelling examples** were reviewed and written by the author.
+- **The author's role:** every decision (models, rules, what to keep or drop), the emoji conventions and few-shot examples, the review of every evaluation sentence and of label samples, and the human checks of the judge. Claude helped carry out the plan in code and text.
 - **Demo page text and random-button sentences** were written with Claude. They are not used for training.
 
 # Licence
