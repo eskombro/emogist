@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#272230">
 <meta name="description" content="Turn an everyday English, French or Spanish sentence into emojis that keep the gist.">
-<title>emogist</title>
+<title>Emogist</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap">
@@ -210,7 +210,7 @@
   .guide-body > p { margin: 0 0 14px; color: var(--muted); font-size: 0.9375rem; }
   .rules { display: grid; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
   .rules li { display: grid; grid-template-columns: 78px minmax(0, 1fr); gap: 2px 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
-  .symbol { grid-row: span 2; align-self: start; justify-self: start; padding: 2px 8px; font-size: 1.25rem; line-height: 1.5; white-space: nowrap; background: var(--chip); border-radius: 8px; }
+  .symbol { grid-row: span 2; align-self: start; justify-self: start; padding: 2px 8px; font-size: 1.25rem; line-height: 1.5; max-width: 100%; box-sizing: border-box; overflow-wrap: anywhere; background: var(--chip); border-radius: 8px; }
   .rule { font-weight: 600; }
   .sample { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; margin-top: 4px; color: var(--muted); font-size: 0.9375rem; overflow-wrap: anywhere; }
   .chips { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px; color: var(--text); font-size: 1rem; line-height: 1.2; }
@@ -227,11 +227,14 @@
   @media (max-width: 760px) {
     body.comparing .results { grid-template-columns: minmax(0, 1fr); }
   }
+  /* Phones, including the larger ones about 430px wide: a narrower symbol column, smaller symbols. */
+  @media (max-width: 480px) {
+    .rules li { grid-template-columns: 62px minmax(0, 1fr); gap: 2px 8px; }
+    .symbol { font-size: 1rem; }
+  }
   @media (max-width: 420px) {
     h1 { font-size: 1.75rem; }
     .language button { min-width: 54px; padding: 0 6px; }
-    .rules li { grid-template-columns: 62px minmax(0, 1fr); gap: 2px 8px; }
-    .symbol { font-size: 1rem; }
     .emojis { gap: 6px; font-size: 1.375rem; }
     .chip { padding: 5px 7px; }
   }
@@ -1017,7 +1020,14 @@
     showingPlaceholder = true;
     setLanguage(button.dataset.lang);
   });
-  compareBox.addEventListener("change", renderAll);
+  // Turning compare on after a trained-only result runs the untrained model on that same sentence,
+  // so its card isn't left empty. A result it already has (compare turned off, then on) is kept.
+  compareBox.addEventListener("change", () => {
+    renderAll();
+    if (running || !compareBox.checked || cards.v2.state.phase !== "done" || cards.base.state.phase !== "idle") return;
+    revealResults();
+    runModels(["base"], lastSentence);
+  });
   box.addEventListener("focus", warmup);
   box.addEventListener("input", () => { updateCount(); renderNudge(); });
   box.addEventListener("keydown", event => {
