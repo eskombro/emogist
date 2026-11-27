@@ -50,7 +50,7 @@ Every step is evaluated the same way: a **round-trip score**. One model decodes 
 | [7. v2 rules and scoring](07_v2_rules_and_scoring/) | ✅ done | Short answers (1–2 emojis) allowed as a warning. The three-criteria judge (topic, event, outcome) missed its first human check (0.67 vs 0.7). After two rules were added (mood and exactly who the people are are not penalised), v2.1 passed on 42 fresh pairs: 0.77 [0.60, 0.88], against 0.64 for the v1 judge. Baseline of the v1 model on v2 dev: 0.47 [0.44, 0.51], with Spanish (never trained) level with English and French. v1 results unchanged |
 | [8. Spanish and new evaluation sets](08_v2_spanish_and_eval_sets/) | ✅ done | New dev and test sets: 300 sentences each, 100 per language (EN, FR, ES), half real and half AI, all reviewed by the author (79 of 679 removed) |
 | [9. v2 dataset and labels](09_v2_dataset_and_labels/) | ✅ done | 6,000 training rows: 2,000 per language (EN, FR, ES), half real and half AI. One label per sentence from DeepSeek V4.1 Flash with the v2 prompt and the author's examples (best-of-n gave no gain). New signs ❓ 💭 🤔 ❔ 📍 🔁; 🔀 and 🔄 tried and dropped. Author's sample review: 7% of labels judged wrong |
-| [10. v2 fine-tuning](10_v2_fine_tuning/) | ✅ done | New LoRA on the original Qwen 2B with v1 settings: main (EN+FR+ES) 0.47, the same as v1 on v2 dev; the EN+FR control shows Spanish neither hurt nor helped. A blind Sonnet review leans towards v2 (+0.14, not statistically significant). 4B scores 0.52 (+0.05, proven) but was not kept: twice the size for a small gain |
+| [10. v2 fine-tuning](10_v2_fine_tuning/) | ✅ done | New LoRA on the original Qwen 2B with v1 settings: main (EN+FR+ES) 0.47, the same as v1 on v2 dev; the EN+FR control shows Spanish neither hurt nor helped. A blind Sonnet review leans towards v2 (+0.14, not statistically significant). 4B scores 0.52 (+0.05, proven) but was not kept: twice the size for a small gain. All v2 scores are on dev only: the v2 test set has not been run |
 | [11. v2 demo](11_demo_v2/) | ✅ done | The live demo runs v2: one 2B base with switchable v1 and v2 adapters, a compare view with the untrained model, a Spanish page, explained signs, share links, a random-sentence button and an About page in three languages |
 
 ## What it cost
@@ -91,13 +91,26 @@ CONVENTIONS.md       the emoji grammar used everywhere
 
 # Setup
 
+Requires Python 3.10 or later.
+
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt      # installs emoji_eval in editable mode + dependencies
 cp .env.example .env                 # add the API keys you need
 ```
 
-Local models run with [Ollama](https://ollama.com). The scorer uses the Anthropic API (evaluation only).
+What each part needs:
+
+| To run | You need |
+|---|---|
+| Scoring (round trip) | `ANTHROPIC_API_KEY` in `.env`. Saved results reuse `cache/`, so rerunning a step's scoring makes no API calls |
+| Student candidates (step 1) | [Ollama](https://ollama.com) with the local models |
+| Teachers, sentence generation and labels (steps 2, 3, 8, 9) | Ollama signed in to Ollama Cloud (`ollama signin`) |
+| Fine-tuning (steps 4 and 10) | Google Colab with a free T4 GPU: open the step's notebook |
+| Model export and serving (steps 6 and 11) | [llama.cpp](https://github.com/ggml-org/llama.cpp) and the packages in `06_serving/requirements-export.txt` |
+| The demo, locally | See [demo/README.md](demo/README.md#run-locally) |
+
+The fine-tuned models are not published, so the demo and the export scripts need the adapters to be trained first. Each step's README ends with a "Reproduce" section with its exact commands.
 
 # AI disclosure
 

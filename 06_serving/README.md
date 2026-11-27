@@ -66,7 +66,7 @@ The VPS timings come from 12 requests per setting, so they are a guide rather th
 - **The VPS is slow for this model.** Its older CPU generates about 6.5 tokens per second, so a sentence takes about 3–5 seconds.
 - **Hardware changes some outputs.** On the VPS, 86 of 100 dev outputs match Colab exactly, with 99 valid and the same gist score as the full model.
 - **Dev has informed earlier choices,** so these scores are useful to compare versions, not as a final quality estimate.
-- **The model is not published yet.** The Qwen licence needs checking first.
+- **The model is not published.** Qwen3.5 is Apache 2.0, so the fine-tuned model could be published on the Hugging Face Hub, but this is skipped for now. The model runs only in the live demo.
 
 ## Decision
 
@@ -74,7 +74,7 @@ The VPS timings come from 12 requests per setting, so they are a guide rather th
 
 ## Next
 
-Check the Qwen licence before publishing the model.
+v2 starts in [step 7](../07_v2_rules_and_scoring/). Publishing the model on the Hugging Face Hub is possible later, but skipped for now.
 
 ## Reproduce
 
