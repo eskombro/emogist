@@ -1,0 +1,87 @@
+keep,n,lang,page_example,sentence,v2,untrained,untrained_problem,v1
+yes,4,en,,My dog ate my homework again.,🐕🍽️ 📚🔁 😤,🐶📚🍕,"no eating, no 'again'; a pizza 🍕",🐕🍽️ ➡️ 📝❌ 😤
+yes,12,en,yes,Maybe I'll learn to play the guitar next year.,🙋🎸📚 ⏩📅,🎸🎵🎼🎶🎸🎸🎸🎸🎸🎸🎸🎸🎸🎸🎸🎸🎸🎸🎸🎸,loops on 🎸,⏩🎸🎼 🤔
+yes,18,en,,I waved at someone who wasn't waving at me.,🙋👋 👤👋❌ 😅,🙋‍♂️🙋‍♀️🙅‍♂️,"three people, no wave",🙋👋 ➡️ 👥🙋❌ 😬
+yes,22,en,,"When I opened the fridge, the cake was gone.",🧊🚪 ➡️ 🎂❌ 😱,🥶🍰🚫,"cold cake 🥶🍰, not 'gone'",🧊🚪 ➡️ 🎂❌ 😱
+no,23,en,,My brother ate all the cookies and blamed the dog.,👨🍪🍪🍪 🐕👎,🍪🐶👨‍👦🤬,"no blame, angry 🤬",👦🍪🍪🍪 ➡️ 🐕❌ 😤
+yes,29,en,,My laptop died five minutes before my presentation.,💻💀 ⏱️5️⃣ 🎤😱,💻💥📉🎤,no '5 minutes',💻💀 ⏪5️⃣ ⏩🗣️
+yes,35,en,,My son painted the dog blue.,👦🎨 🐕🔵,🐶🎨👨‍👦🖌️,no blue,👦🎨 🐕➡️🔵
+yes,37,en,,The waiter brought me soup instead of ice cream.,🧑‍🍳🍲 ➡️ 🍦❌ 😲,🍲🥛🍦🍽️,"soup, milk and ice cream all at once",🍽️🧑‍🍳 ➡️ 🥣🍲 🍦❌ 😳
+yes,39,en,,My alarm didn't ring and I missed my flight.,🔔❌ ➡️ ✈️💨 😱,📵🛫😭,no alarm clock,📵🔔❌ ➡️ ✈️💨 😱
+yes,47,en,,I spilled red wine on the white sofa.,🍷🔴 ➡️ 🛋️⚪ 😱,🍷🖤🛋️,white sofa lost,🍷🍷💥 ➡️ 🛋️⚪ 😳
+yes,48,en,yes,Did you hear the thunder last night?,🫵👂 ⚡🌧️ ❓,⚡️🌩️ Did you hear the thunder last night?,copies the sentence as text,⏪🌙 🌩️🔊❓
+no,49,en,,I lost a sock in the washing machine.,🧦🧺 ➡️ 🧦❌ 😩,🧦🚿🧼😱,"shower and soap, sock not lost",🧦 ➡️ 🧺 ➡️ 🧦❌ 😞
+yes,50,en,,My boss caught me sleeping at my desk.,👨‍💼👀 🙋😴🪑,😴👔👮‍♂️,a police officer 👮,👔👀 🙋😴🪑
+no,52,en,,I bought a plant and killed it in a week.,🌱🛒 ➡️ 🪴💀 ⏱️1️⃣,🌱👋💀🕒,no 'one week',🌱🛒 ➡️ 🪴💀 😞
+yes,54,en,,I forgot my friend's birthday for the third time.,🙋🎂❌ 🎂🔁🔁🔁 😞,🎂🎉🎉🎉,"a party 🎉🎉🎉, nothing forgotten",🙋 🎂❌ 3️⃣ 😞
+yes,55,en,,The baby laughs every time the dog sneezes.,👶😂 🐕🤧,🐶🤣🐶,"no baby, no sneeze",👶😂 🐕😮‍💨
+no,59,en,,The pizza arrived cold and without cheese.,🍕📦 ➡️ 🥶 🧀❌ 😞,🍕🥶🧀,no 'without cheese',🍕➡️🥶 🧀❌ 😞
+yes,64,en,,My little sister cut her own hair.,👧✂️💇,👧🔪✨👩‍🦰,a knife 🔪,👧✂️💇
+yes,75,en,,My brother hid all my shoes in the garden.,👦🙈 👟👟🌳,👟🏡👮‍♂️🚫👟,a police officer 👮,👦🙈 👟👟👟 ➡️ 🌳🌿
+yes,79,en,yes,We waited two hours for a table and the food was terrible.,👥⏳2️⃣ 🍽️❌ 🍔😖,😴😔🍽️🍔🍟🍕😫,"no '2 hours', random food",🍽️⏳⏳ ➡️ 🍽️🍽️😤
+no,82,en,,I studied all night and slept through the exam.,📚🌙 ➡️ 😴📝❌ 😞,😴📚🌙🎯,no exam missed,📚🌙 ➡️ 📝😴✅
+yes,92,en,,The horse ran away with my hat.,🐎💨 🎩❌ 😱,🐴🏃‍♂️🏁🎩🏃‍♂️🏃‍♂️🏃‍♂️🏃‍♂️🏃‍♂️🏃,loops on 🏃,🐎🏃 ➡️ 🎩❌ 😱
+yes,96,en,yes,"Our flight was cancelled, so we slept at the airport.",✈️❌ ➡️ 🛫😴,✈️✈️😴✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️�,loops on ✈️,✈️❌ ➡️ 🛋️🛫😴
+yes,97,en,yes,The mosquitoes ate me alive last night.,🦟🦟🦟 🍽️🙋 🌙 😱,😱🦟🦟🦟🦟🦟🦟🦟🦟🦟🦟🦟🦟🦟🦟🦟🦟🦟🦟🦟�,loops on 🦟,🦟🦟🦟 🌙 ➡️ 🙋💀
+yes,98,en,yes,I laughed at my own joke and nobody else did.,🙋😂🤣 👥❌,😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂,loops on 😂,🙋😂🤣 ➡️ 🫵👥❌
+no,99,en,,My grandmother drives faster than me.,👵🚗💨 ➡️ 🙋🚗🐢,👵🏻🚗💨🏃‍♂️🏎️,no 'faster than me',👵🚗⏩ ➡️ 🙋🚗⏪ 😲
+yes,102,fr,,Tu as mangé la dernière part de gâteau ?,🫵🍰🍽️ ❓,🍰🍪🍫,"no question, no 'you'",🫵 🍰🍽️✅
+yes,106,fr,,J'ai envoyé un message d'amour à mon patron par erreur.,🙋💬❤️👨‍💼 ➡️ 📩❌ 😳,😢💌🤔👩‍💻🤝❤️,"sad, laptop, handshake: no boss, no mistake",🙋💬❤️ 👔❌ ➡️ 🙋💔 😳
+no,111,fr,,Peut-être que j'apprendrai la guitare l'année prochaine.,🙋🎸📚 ⏩📅,🎸🎵✨🎶,"no 'maybe', no 'next year'",🙋🎸❓ ⏩📅
+yes,112,fr,,Je crois que ma plante me juge.,🙋💭 🪴👀😐,🌱🤔🌿,no 'I think',🌱🙋 🧑‍🌾👀 😔
+no,120,fr,yes,Une abeille m'a poursuivi dans tout le jardin.,🐝🏃🌳 🏠,🐝🐝🐝🐝🐝🐝🐝🐝🐝🐝🐝🐝🐝🐝🐝🐝🐝🐝🐝🐝,loops on 🐝,🐝🏃💨 🌳🏠 😱
+no,125,fr,,J'ai tellement ri que j'ai renversé mon café.,😂😂 ➡️ ☕💥,😂☕🤣,no spilled coffee,😂😂 ➡️ ☕💥 😱
+no,126,fr,,Qui a laissé ses chaussettes sur la table de la cuisine ?,👟🧦 🍽️ ❓,👕👟🍽️👀,"no question, a T-shirt",🧦🧦 ➡️ 🍽️❌ 😬
+yes,127,fr,,J'ai mis du sel dans mon café au lieu du sucre.,☕🧂 ➡️ 🍬❌ 😅,🧂☕️,no sugar,☕ ➡️ 🧂❌ 🍬 😅
+no,128,fr,,Mon ordinateur s'est éteint cinq minutes avant ma présentation.,💻⏹️ ⏱️5️⃣ 🎤😰,💻⏰👋,"no '5 minutes', no presentation",💻⏰5️⃣ ➡️ 💻❌ 😱
+yes,129,fr,,Le chat dort sur mon clavier depuis une heure.,🐈🛌 ⌨️ ⏱️1️⃣,🐱💤🖱️,"a mouse 🖱️, no 'one hour'",🐈🛏️ ⌨️ ⏳1️⃣
+no,130,fr,,"Il pleut, j'ai oublié mon parapluie et mon bus est parti sans moi.",🌧️ 🙋☂️❌ 🚌💨🙋❌ 😞,🌧️🎒🚌🚶‍♂️,"a backpack, no umbrella",🌧️ 🙋☂️❌ ➡️ 🚌💨🙋❌ 😤
+no,139,fr,,Mon réveil n'a pas sonné et j'ai raté mon avion.,🛏️🔔❌ ➡️ ✈️❌ 😞,😴🛫✈️,no alarm clock,🌅🔔❌ ➡️ ✈️💨❌ 😱
+yes,146,fr,,La chèvre a mangé mon chapeau à la ferme.,🐐🍽️ 🎩🚜,🐮👒🚜🍽️,a cow 🐮,🐄🍽️ 🧢❌ 🏡
+yes,147,fr,,J'ai renversé du vin rouge sur le canapé blanc.,🍷💥 🛋️⚪ 😱,🍷🛋️🍷,white sofa lost,🍷🍷💥 ➡️ 🛋️⚪ 😱
+yes,148,fr,yes,Tu as entendu l'orage cette nuit ?,🫵👂 ⛈️🌙 ❓,⛈️ Tu as entendu l'orage cette nuit ?,copies the sentence as text,👂⛈️🌙❓
+no,152,fr,,J'ai acheté une plante et elle est morte en une semaine.,🌱🛒 ➡️ 🥀⏱️1️⃣ 😢,🌱🌿💀📉,no 'one week',🌱🛒 ➡️ 🪴💀 ⏪1️⃣7️⃣ 😞
+yes,154,fr,,J'ai oublié l'anniversaire de mon ami pour la troisième fois.,🙋🧠❌ 🎂👫 📅🔁🔁🔁 😞,😢🎂🎉🎁,"a party, nothing forgotten",👥🎂❌ 🧑‍🤝‍🧑🧑‍🤝‍🧑 3️⃣ 😞
+yes,157,fr,,J'ai couru pour attraper le bus et il est parti quand même.,🏃💨 🚌🚶 ➡️ 🚌💨 😞,🏃‍♂️🏃‍♂️🏃‍♂️🚇🚇🚇😢,"a metro 🚇, runs ×3",🏃💨 🚌 ➡️ 🚌❌ 😤
+yes,159,fr,,La pizza est arrivée froide et sans fromage.,🍕📦❄️ 🧀❌ 😞,🍕🥚🥛❌,an egg and milk 🥚🥛,🍕➡️🥶 🧀❌ 😞
+no,161,fr,,Mon chat a fait tomber mon téléphone dans la baignoire.,🐈💥 📱💦🚿,📱💦🚿😱,no cat,🐈🏃 ➡️ 📱💧🚿 😱
+yes,163,fr,yes,On s'est perdus dans la forêt et on a trouvé un lac.,🌲👥📍❌ ➡️ 🏞️💧 😮,🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲,loops on 🌲,🌲🌲 ➡️ 🧭❌ ➡️ 🏞️ 😲
+yes,164,fr,,Ma petite sœur s'est coupé les cheveux toute seule.,👧✂️💇‍♀️,👩‍👧‍👦🔪✨,a knife 🔪,👧✂️💇 ➡️ ✂️✅ 😲
+yes,170,fr,,J'ai gagné au loto mais j'ai perdu le ticket.,🎟️🎉 🎟️❌ 😢,🎉🎟️🎫🎫🎫🎫🎫🎫🎫🎫🎫🎫🎫🎫🎫🎫🎫🎫🎫�,loops on 🎫,🎲🏆 ➡️ 🎫❌ 😞
+yes,175,fr,,Mon frère a caché toutes mes chaussures dans le jardin.,👦🙈 👟👟🌳,👟🏡👮‍♂️🌳🔒,a police officer 👮,👦🤫 👟👟👟 ➡️ 🌳🌿
+yes,178,fr,yes,Mon père a dansé à mon mariage et tout le monde a ri.,👨💃💒 ➡️ 👥😂,👨‍👩‍👧‍👦🎉👯‍👩🎉👯‍👨🎉🎉🎉🎉🎉🎉�,loops on 🎉,👨💃💃 💒👰 ➡️ 👥😂
+no,179,fr,,On a attendu deux heures pour une table et c'était mauvais.,👥⏳2️⃣ 🍽️❌ 😤,⏳⏰🍽️😞,no '2 hours',🍽️⏳⏳ ➡️ 🍽️🍴 😤
+yes,192,fr,,Le cheval s'est enfui avec mon chapeau.,🐎💨 🎩❌ 😱,🐴🏴‍☠️🏃‍♂️,a pirate flag 🏴‍☠️,🐎🏃 ➡️ 🧢❌ 😱
+yes,196,fr,,"Notre vol a été annulé, alors on a dormi à l'aéroport.",✈️❌ ➡️ 🛬😴,✈️✈️✈️🛌✈️✈️✈️,loops on ✈️,✈️❌ ➡️ 🛋️🛫😴
+no,198,fr,,J'ai ri à ma propre blague et personne d'autre n'a ri.,🙋😂🤣 👥😐,😂😂😂,no 'nobody else',🙋😂💬 ➡️ 👥😶
+yes,200,fr,yes,Il neige en plein mois de juillet.,🌞📅 🌨️❄️,🌧️🍂🍁❄️🍂🍁🍂🍂🍂🍂🍂🍂🍂🍂🍂🍂🍂🍂🍂�,loops on 🍂,🌞🍂 ➡️ ❄️❄️❄️
+yes,202,es,yes,¿Te has comido el último trozo de pizza?,🫵🍕🍽️ ❓,🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕,loops on 🍕,🍕🍕🍕🍕 🫵🍽️❓
+yes,206,es,,Le mandé un mensaje de amor a mi jefe sin querer.,🙋💬❤️👨‍💼 ➡️ 🤦,😢💌👔🤔❤️,"sad, letter, tie: no boss, no mistake",👨💬❤️ 👔❌ 😳
+no,207,es,,¿Dónde he aparcado el coche?,🙋🚗📍 ❓,🚗📍🚗,no question,🚗🅿️❓
+no,208,es,,El gallo del vecino me despierta todos los días a las cinco.,🐓🏠 ➡️ 🙋🌅🔁 🕕,🐓🌅🕒,"no 'every day', 3 o'clock",🐓🏠 ➡️ 🙋🌅 5️⃣
+no,212,es,,Creo que mi planta me está juzgando.,🙋💭 🪴👀😠,🌱👀🤔,no 'I think',🌱👀 🫵👀 ➡️ 🌱😠
+no,213,es,yes,¡Te has dejado el horno encendido!,🫵🔥🔥🔥 😱,🔥🔥🔥 ¡Te has dejado el horno encendido! 🔥🔥🔥,copies the sentence as text,👨‍🍳🔥 ➡️ 🙋🔥❌ 😱
+yes,217,es,,Saludé a alguien que no me estaba saludando a mí.,🙋👋👤 🫵👋❌ 😅,👋🤝👋,"handshake, no 'not waving back'",🙋👋❌ ➡️ 🫵🙋👋❌ 😬
+no,218,es,,¿Me prestas veinte euros hasta el viernes?,🫵💶2️⃣0️⃣ 📅 ❓,🤝💰📅,"no '20', no question",🫵💬 🙋2️⃣0️⃣💶 ⏩📅5️⃣
+yes,221,es,,"Cuando abrí la nevera, la tarta ya no estaba.",🧊🔓 ➡️ 🎂❌ 😞,🧊🍪🚫,a cookie 🍪,🧊🔓 ➡️ 🍰❌ 😞
+yes,222,es,,Mi hermano se comió todas las galletas y le echó la culpa al perro.,👦🍪🍪🍪🍪 ➡️ 🐕👎,🐶🍪😤👨‍👦🏻,no blame,👦🍪🍪🍪 ➡️ 🐕❌ 😠
+yes,225,es,,Me reí tanto que se me salió el café por la nariz.,😂😂 ➡️ ☕💨👃,😂🥤🤢,no nose,🙋😂😂 ➡️ ☕💨👃
+no,226,es,,¿Quién ha dejado los calcetines en la mesa de la cocina?,👥🧦🍽️ ❓,👕🧦🍽️🏠👀,"no question, a T-shirt",👥❓ 🧦🍽️🍳
+no,228,es,,Mi portátil se apagó cinco minutos antes de la presentación.,💻💡❌ ⏱️5️⃣ ➡️ 🎤😰,🖥️🔌⏰🎤,no '5 minutes',🖥️⏰5️⃣ ➡️ 💻❌ 🎤😱
+no,234,es,,Estornudé y se me cayeron las gafas.,🤧 ➡️ 👓💨 😬,😮‍💨👓🍽️,"no sneeze, a plate",🙋🎤 ➡️ 🕶️💥 😱
+yes,235,es,yes,Mi hijo pintó al perro de azul.,👦🎨 🐕🔵,🐶🎨👨‍👦‍👦 Azul,writes 'Azul' as text,👦🎨 🐕🔵
+no,239,es,,No sonó el despertador y perdí el avión.,🔔❌ 😴 ➡️ ✈️❌ 😱,🔔🛫😵,no 'didn't ring',🔔❌ ➡️ ✈️💨 😱
+yes,242,es,,Mi hámster se escapó y se escondió en mi zapato.,🐹🏃 ➡️ 👟🔒 😱,🐭🏃‍♂️🚫👟🏠,a mouse 🐭,🐭🏃 ➡️ 🧦🤫
+yes,244,es,,Me caí de la bici delante del chico que me gusta.,🚴💥 🙋 👦❤️ 😳,😱🚲💔👨‍❤️‍👨,"a male couple, broken heart",🚴💥 ➡️ 👦😳
+yes,246,es,,La cabra se comió mi sombrero en la granja.,🐐🍽️ 🎩❌ 🏚️ 😱,🐑🎩🚜😱,a sheep 🐑,🐐🍽️ 🎩❌ 😱
+no,252,es,,Compré una planta y se murió en una semana.,🌱🛒 ➡️ 🪴💀 ⏱️1️⃣,🌱🏃‍♂️💥🌿,a runner and an explosion,🌱🛒 ➡️ 🪴💀⏱️7️⃣ 😞
+yes,254,es,yes,Olvidé el cumpleaños de mi amigo por tercera vez.,🙋🎂❌👥🔁🔁🔁 😞,😢🎂🎉👯‍♂️🎁,"a party, nothing forgotten",🎂👥❌ 🙋🔁3️⃣ 😞
+yes,257,es,yes,Corrí para coger el autobús y se fue igualmente.,🏃🚶🚌 ➡️ 🚌💨 😞,🚌🚶‍♂️🚶‍♀️🚶‍♂️🚶‍♀️🚶‍♂️🚶‍♀️🚶‍♂️🚶‍,loops on 🚶,🚶🚌 ➡️ 🚶❌ 😞
+yes,259,es,,La pizza llegó fría y sin queso.,🍕📦❄️ 🧀❌ 😞,🍕🥚🥛,an egg and milk 🥚🥛,🍕➡️🧊 🧀❌ 😞
+yes,263,es,,Nos perdimos en el bosque y encontramos un lago.,🌲👥📍❌ ➡️ 🏞️🏞️ 😲,🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲,loops on 🌲,🌲🌲 ➡️ 🏞️ 😲
+yes,270,es,yes,Me tocó la lotería pero perdí el boleto.,🎟️🎉 🎟️❌ 😢,🎟️ ¡Lotería! 😱 ¡Perdí el boleto! 🎫,writes the sentence as text,🎲🎉 ➡️ 🎫❌ 😞
+yes,278,es,,Mi padre bailó en mi boda y todos se rieron.,👨💃💒 ➡️ 👥😂,👨‍💃🤵🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉�,loops on 🎉,👨💃💃 💒 ➡️ 👥😂
+no,279,es,,Esperamos dos horas por una mesa y la comida era horrible.,👥⏳2️⃣ 🍽️❌ 😤,⏳⚠️🍽️😤,no '2 hours',🍽️⏳⏳ ➡️ 🍽️🍴😤
+yes,284,es,,Tropecé en el escenario en mi graduación.,🎓🎤 🙋🤕 😳,🎤🎓🎉🌟,"a celebration 🎉🌟, no fall",🎓🎤 ➡️ 🎭💥 😱
+yes,296,es,,Cancelaron nuestro vuelo y dormimos en el aeropuerto.,✈️❌ ➡️ 🛫😴,✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️,loops on ✈️,✈️❌ ➡️ 🛋️🏨📍 😩
+no,298,es,,Me reí de mi propio chiste y nadie más se rió.,🙋😂🤣 ➡️ 👥😂❌,😂😂😂,no 'nobody else',🙋😂🤣 ➡️ 👥😶

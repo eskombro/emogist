@@ -18,17 +18,38 @@
     --emoji: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
   }
   * { box-sizing: border-box; }
-  body { margin: 0; padding: 32px 16px 48px; background: var(--bg); color: var(--text); font: 16px/1.6 Arvo, Rockwell, Georgia, serif; }
-  /* The whole text sits in one box, slightly lighter than the page. */
-  main { max-width: 720px; margin: 0 auto; padding: 28px; background: var(--panel); border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 4px 16px rgb(0 0 0 / 0.22); }
-  header { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
-  h1 { margin: 0; font-size: 2rem; letter-spacing: -0.02em; color: var(--brand-ink); }
+  body { margin: 0; min-height: 100vh; padding: 32px 16px 48px; background: var(--bg); color: var(--text); font: 16px/1.6 Arvo, Rockwell, Georgia, serif; }
+  main { width: 100%; max-width: 680px; margin: 0 auto; }
+  /* Header: the same as the demo page (title, link, language switch). */
+  header.site { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 24px; line-height: 1.5; }
+  header.site h1 { margin: 0; font-size: 2rem; letter-spacing: -0.02em; }
+  .home { color: inherit; text-decoration: none; }
+  .title-word { color: #cbbdf0; background: linear-gradient(90deg, #cbbdf0, #f29bb8); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .title-emoji { font-family: var(--emoji); font-size: 0.85em; }
+  .header-side { display: flex; align-items: center; gap: 14px; }
+  .about-link { color: #cbbdf0; font-size: 0.9375rem; font-weight: 600; text-underline-offset: 2px; }
+  .language { position: relative; display: inline-grid; grid-template-columns: repeat(3, 1fr); flex: none; padding: 3px; background: rgb(248 245 255 / 0.08); border: 1px solid rgb(238 234 244 / 0.12); border-radius: 999px; }
+  .language::before {
+    content: ""; position: absolute; top: 3px; bottom: 3px; left: 3px; width: calc((100% - 6px) / 3);
+    background: var(--panel); border-radius: 999px; box-shadow: 0 1px 3px rgb(0 0 0 / 0.2); transition: transform 0.18s ease;
+  }
+  html[lang="fr"] .language::before { transform: translateX(100%); }
+  html[lang="es"] .language::before { transform: translateX(200%); }
+  .language button {
+    position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+    min-width: 62px; min-height: 34px; padding: 0 9px; color: var(--muted); background: transparent;
+    border: 0; border-radius: 999px; font: inherit; font-size: 0.875rem; font-weight: 600; cursor: pointer;
+  }
+  .language button[aria-pressed="true"] { color: var(--text); }
+  .language svg { display: block; width: 20px; height: 20px; border-radius: 50%; box-shadow: 0 0 0 1px rgb(0 0 0 / 0.14); }
+  :focus-visible { outline: 2px solid var(--brand-ink); outline-offset: 2px; }
+  /* The text sits in one box, like the demo's boxes. */
+  .panel { padding: 24px 28px; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 4px 16px rgb(0 0 0 / 0.22); }
+  .page-title { margin: 0 0 4px; font-size: 1.5rem; color: var(--brand-ink); }
   h2 { margin: 36px 0 8px; font-size: 1.25rem; letter-spacing: -0.01em; }
   p, li { color: var(--text); }
-  .lead { margin: 12px 0 0; color: var(--muted); }
   a { color: var(--brand-ink); font-weight: 600; text-underline-offset: 2px; }
-  a:focus-visible { outline: 2px solid var(--brand-ink); outline-offset: 2px; border-radius: 2px; }
-  @media (max-width: 480px) { main { padding: 20px 16px; } }
+  @media (max-width: 480px) { .panel { padding: 20px 16px; } header.site h1 { font-size: 1.75rem; } .language button { min-width: 54px; padding: 0 6px; } }
   .emoji { font-family: var(--emoji); }
 
   .pipeline { display: grid; gap: 8px; margin: 14px 0 0; padding: 0; list-style: none; }
@@ -45,43 +66,77 @@
   td.num { text-align: right; white-space: nowrap; }
   .note { color: var(--muted); font-size: 0.875rem; }
   .yours { padding: 10px 14px; color: var(--muted); background: var(--soft); border: 1px dashed var(--brand); border-radius: 10px; font-style: italic; }
+  section[data-lang][hidden] { display: none; }
   footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.875rem; }
 </style>
 </head>
 <body>
 <main>
-  <header>
-    <h1>About emogist</h1>
-    <a href="/">← Back to the demo</a>
+  <header class="site">
+    <h1><a class="home" href="/"><span class="title-word">Emogist</span> <span class="title-emoji" aria-hidden="true">🤩</span></a></h1>
+    <div class="header-side">
+      <a class="about-link" href="/" id="demo-link">Demo</a>
+      <div class="language" role="group" id="language">
+        <button type="button" data-lang="en" aria-label="English">
+          <svg viewBox="0 0 60 60" aria-hidden="true"><clipPath id="uk"><circle cx="30" cy="30" r="30"/></clipPath><g clip-path="url(#uk)"><rect width="60" height="60" fill="#012169"/><path d="M0 0 60 60M60 0 0 60" stroke="#fff" stroke-width="12"/><path d="M0 0 60 60M60 0 0 60" stroke="#c8102e" stroke-width="5"/><path d="M30 0V60M0 30H60" stroke="#fff" stroke-width="20"/><path d="M30 0V60M0 30H60" stroke="#c8102e" stroke-width="12"/></g></svg>
+          EN
+        </button>
+        <button type="button" data-lang="fr" aria-label="Français">
+          <svg viewBox="0 0 60 60" aria-hidden="true"><clipPath id="fr"><circle cx="30" cy="30" r="30"/></clipPath><g clip-path="url(#fr)"><rect width="20" height="60" fill="#002395"/><rect x="20" width="20" height="60" fill="#fff"/><rect x="40" width="20" height="60" fill="#ed2939"/></g></svg>
+          FR
+        </button>
+        <button type="button" data-lang="es" aria-label="Español">
+          <svg viewBox="0 0 60 60" aria-hidden="true"><clipPath id="es"><circle cx="30" cy="30" r="30"/></clipPath><g clip-path="url(#es)"><rect width="60" height="60" fill="#c60b1e"/><rect y="15" width="60" height="30" fill="#ffc400"/></g></svg>
+          ES
+        </button>
+      </div>
+    </div>
   </header>
+  <article class="panel">
+  <section data-lang="en" lang="en">
+  <h2 class="page-title">About emogist</h2>
 
   <!-- Your text: what emogist is and why you made it. -->
-  <!-- <p class="yours">[Your introduction: what emogist is and why you built it.]</p> -->
 
   <h2>How it was made</h2>
-  <p>A large model wrote the example answers, and a small open model learned from them. Only the small model runs here.</p>
+  <p>The author wrote the first examples by hand, a large model followed them to turn thousands of sentences into emojis, and a small open model learned from those. Only the small model runs here.</p>
   <ol class="pipeline">
+    <li><span class="icon" aria-hidden="true">✍️</span><span><strong>Hand-made examples</strong><span class="desc">The author wrote the emoji rules and turned example sentences into emojis by hand, in English, French and Spanish, to show the teacher what a good answer looks like.</span></span></li>
     <li><span class="icon" aria-hidden="true">📝</span><span><strong>Sentences</strong><span class="desc">Everyday sentences in English, French and Spanish: half real ones from Tatoeba, half generated by an AI model.</span></span></li>
     <li><span class="icon" aria-hidden="true">🧑‍🏫</span><span><strong>Teacher labels</strong><span class="desc">DeepSeek V4.1 Flash turns each sentence into emojis, following written rules and examples chosen by the author.</span></span></li>
+    <li><span class="icon" aria-hidden="true">🔎</span><span><strong>Manual review</strong><span class="desc">The author checked random samples of the teacher's answers by hand and reviewed every sentence used to measure the model (600 of them), removing the ones that didn't fit.</span></span></li>
     <li><span class="icon" aria-hidden="true">🏋️</span><span><strong>Fine-tuning</strong><span class="desc">A LoRA adapter is trained on Qwen3.5 2B, a small open model, with 5,400 of these pairs on a Colab T4 GPU in about 25 minutes.</span></span></li>
     <li><span class="icon" aria-hidden="true">🧪</span><span><strong>Scoring</strong><span class="desc">A reader model guesses the sentence back from the emojis, and a judge compares the guess with the original.</span></span></li>
     <li><span class="icon" aria-hidden="true">🖥️</span><span><strong>Serving</strong><span class="desc">The model runs in 8-bit with llama.cpp on a small CPU server, loads when someone visits and unloads when idle.</span></span></li>
   </ol>
 
+  <h2>Exploration: choosing the student</h2>
+  <p>Before any training, four small open models got the same rules and hand-made examples and turned 100 test sentences (English and French) into emojis. Each answer was scored on how much of the gist came back.</p>
+  <table>
+    <thead><tr><th>Candidate</th><th>What happened</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Qwen3.5 2B</strong></td><td><strong>Chosen:</strong> as good as Ministral, smaller and faster to serve, ahead in French</td></tr>
+      <tr><td>Ministral 3B</td><td>Tied with Qwen, then fine-tuned for comparison: still level after training, with an adapter twice as large</td></tr>
+      <tr><td>Qwen3.5 0.8B</td><td>Discarded: clearly behind its bigger sibling</td></tr>
+      <tr><td>SmolLM3 3B</td><td>Discarded: kept only as a weak reference, it falls into loops (the same emoji 30 times)</td></tr>
+    </tbody>
+  </table>
+  <p class="note">The teacher was picked the same way among five large models (DeepSeek V4.1 Flash, gpt-oss 120B, Mistral Large 4, DeepSeek V4 Pro, gpt-oss 20B): the top four tied, and Flash won as the fastest and cheapest, with an MIT licence. Later, a twice-as-large Qwen3.5 4B was also tried and not kept (see below).</p>
+
   <h2>How good is it?</h2>
-  <p>The score is a round trip: Claude Haiku reads only the emojis and guesses the sentence, then Claude Sonnet checks whether the guess keeps the topic, the event and the outcome. 1 means the gist came back whole.</p>
+  <p>The score is a round trip: Claude Haiku reads only the emojis and guesses the sentence, then Claude Sonnet checks whether the guess keeps the topic, the event and the outcome. A score of 1/1 means the gist came back whole.</p>
   <table>
     <thead><tr><th>Model</th><th>What it is</th><th class="num">Score</th></tr></thead>
     <tbody>
-      <tr><td>v1</td><td>Qwen3.5 2B fine-tuned on 3,000 English and French sentences</td><td class="num">0.47</td></tr>
-      <tr><td><strong>v2</strong> (this demo)</td><td>Qwen3.5 2B fine-tuned on 5,400 sentences in three languages</td><td class="num">0.47</td></tr>
-      <tr><td>v2, 4B</td><td>The same training on Qwen3.5 4B, twice the size</td><td class="num">0.52</td></tr>
-      <tr><td>Teacher</td><td>DeepSeek V4.1 Flash with the full rules and examples</td><td class="num">0.57</td></tr>
+      <tr><td>v1</td><td>Qwen3.5 2B fine-tuned on 3,000 English and French sentences</td><td class="num">0.47/1</td></tr>
+      <tr><td><strong>v2</strong> (this demo)</td><td>Qwen3.5 2B fine-tuned on 5,400 sentences in three languages</td><td class="num">0.47/1</td></tr>
+      <tr><td>v2, 4B</td><td>The same training on Qwen3.5 4B, twice the size</td><td class="num">0.52/1</td></tr>
+      <tr><td>Teacher</td><td>DeepSeek V4.1 Flash with the full rules and examples</td><td class="num">0.57/1</td></tr>
     </tbody>
   </table>
   <p class="note">300 development sentences, 100 per language. The 4B gain is real (+0.05, 95% interval +0.01 to +0.08) but small for a model twice as heavy and slow, so the demo keeps the 2B.</p>
   <p>The round-trip score sees v1 and v2 as equal. In a blind side-by-side review of 100 new sentences, Sonnet preferred v2 more often than v1 (net +0.14, not proven): cleaner answers that show who acts and get times right, while v1 keeps more small details.</p>
-  <p>In the first version, fine-tuning raised the score of the untrained model from 0.81 to 1.13 on a 0–2 scale, closing 64% of the gap to the teacher. Tick <em>Compare</em> on the demo page to see the untrained model next to v1 and v2.</p>
+  <p>In the first version, fine-tuning raised the score of the untrained model from 0.81/2 to 1.13/2 (an older scale), closing 64% of the gap to the teacher. Switch on <em>Compare</em> on the demo page to see the trained model (v2) next to the same model before training.</p>
 
   <h2>Limits</h2>
   <ul>
@@ -98,13 +153,169 @@
   <ul>
     <li>Training labels and part of the training sentences come from DeepSeek V4.1 Flash. Real sentences come from <a href="https://tatoeba.org">Tatoeba</a> (CC BY 2.0 FR).</li>
     <li>Claude is used only as an evaluator (reader and judge), never to write, select or filter training data.</li>
-    <li>Claude also helped write the code, the documentation and this page's text, and drafted the example sentences. None of them is used for training.</li>
+    <li>Claude also helped write the code, the documentation and this page's text, and drafted the sentences of the random button. None of them is used for training.</li>
   </ul>
 
   <h2>More</h2>
   <p>Every step, from choosing the model to serving it, is documented in the <a href="https://github.com/eskombro/emogist" target="_blank" rel="noopener noreferrer">GitHub repository</a>, with the data, scores and decisions.</p>
 
   <footer><a href="/">← Back to the demo</a></footer>
+  </section>
+
+  <section data-lang="fr" lang="fr" hidden>
+  <h2 class="page-title">À propos d'emogist</h2>
+
+  <h2>Comment il a été fait</h2>
+  <p>L'auteur a écrit les premiers exemples à la main, un grand modèle les a suivis pour transformer des milliers de phrases en emojis, et un petit modèle ouvert a appris à partir de celles-ci. Seul le petit modèle tourne ici.</p>
+  <ol class="pipeline">
+    <li><span class="icon" aria-hidden="true">✍️</span><span><strong>Exemples faits main</strong><span class="desc">L'auteur a écrit les règles des emojis et transformé à la main des phrases d'exemple en emojis, en anglais, en français et en espagnol, pour montrer au professeur à quoi ressemble une bonne réponse.</span></span></li>
+    <li><span class="icon" aria-hidden="true">📝</span><span><strong>Phrases</strong><span class="desc">Des phrases du quotidien en anglais, en français et en espagnol : moitié de vraies phrases de Tatoeba, moitié générées par un modèle d'IA.</span></span></li>
+    <li><span class="icon" aria-hidden="true">🧑‍🏫</span><span><strong>Réponses du professeur</strong><span class="desc">DeepSeek V4.1 Flash transforme chaque phrase en emojis, en suivant des règles écrites et des exemples choisis par l'auteur.</span></span></li>
+    <li><span class="icon" aria-hidden="true">🔎</span><span><strong>Relecture manuelle</strong><span class="desc">L'auteur a vérifié à la main des échantillons au hasard des réponses du professeur et relu chacune des phrases qui servent à mesurer le modèle (600 en tout), en retirant celles qui ne convenaient pas.</span></span></li>
+    <li><span class="icon" aria-hidden="true">🏋️</span><span><strong>Entraînement</strong><span class="desc">Un adaptateur LoRA est entraîné sur Qwen3.5 2B, un petit modèle ouvert, avec 5 400 de ces paires, sur un GPU T4 de Colab, en 25 minutes environ.</span></span></li>
+    <li><span class="icon" aria-hidden="true">🧪</span><span><strong>Évaluation</strong><span class="desc">Un modèle lecteur devine la phrase à partir des emojis, puis un juge compare sa réponse avec l'original.</span></span></li>
+    <li><span class="icon" aria-hidden="true">🖥️</span><span><strong>Mise en ligne</strong><span class="desc">Le modèle tourne en 8 bits avec llama.cpp sur un petit serveur sans GPU ; il se charge quand quelqu'un visite la page et se décharge quand personne ne l'utilise.</span></span></li>
+  </ol>
+
+  <h2>Exploration : choisir l'élève</h2>
+  <p>Avant tout entraînement, quatre petits modèles ouverts ont reçu les mêmes règles et les mêmes exemples faits main, et ont transformé 100 phrases de test (en anglais et en français) en emojis. Chaque réponse a été notée selon la part de l'essentiel qui revenait.</p>
+  <table>
+    <thead><tr><th>Candidat</th><th>Ce qui s'est passé</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Qwen3.5 2B</strong></td><td><strong>Choisi :</strong> aussi bon que Ministral, plus petit et plus rapide à servir, devant en français</td></tr>
+      <tr><td>Ministral 3B</td><td>À égalité avec Qwen, puis entraîné pour comparer : toujours à égalité après entraînement, avec un adaptateur deux fois plus gros</td></tr>
+      <tr><td>Qwen3.5 0.8B</td><td>Écarté : nettement derrière son grand frère</td></tr>
+      <tr><td>SmolLM3 3B</td><td>Écarté : gardé seulement comme référence faible, il tombe dans des boucles (le même emoji 30 fois)</td></tr>
+    </tbody>
+  </table>
+  <p class="note">Le professeur a été choisi de la même façon parmi cinq grands modèles (DeepSeek V4.1 Flash, gpt-oss 120B, Mistral Large 4, DeepSeek V4 Pro, gpt-oss 20B) : les quatre premiers étaient à égalité, et Flash l'a emporté comme le plus rapide et le moins cher, sous licence MIT. Plus tard, un Qwen3.5 4B deux fois plus gros a aussi été essayé et n'a pas été gardé (voir plus bas).</p>
+
+  <h2>Quelle est sa qualité ?</h2>
+  <p>Le score est un aller-retour : Claude Haiku lit seulement les emojis et devine la phrase, puis Claude Sonnet vérifie si sa réponse garde le sujet, l'événement et le résultat. Un score de 1/1 veut dire que l'essentiel est revenu en entier.</p>
+  <table>
+    <thead><tr><th>Modèle</th><th>Ce que c'est</th><th class="num">Score</th></tr></thead>
+    <tbody>
+      <tr><td>v1</td><td>Qwen3.5 2B entraîné sur 3 000 phrases en anglais et en français</td><td class="num">0,47/1</td></tr>
+      <tr><td><strong>v2</strong> (cette démo)</td><td>Qwen3.5 2B entraîné sur 5 400 phrases en trois langues</td><td class="num">0,47/1</td></tr>
+      <tr><td>v2, 4B</td><td>Le même entraînement sur Qwen3.5 4B, deux fois plus gros</td><td class="num">0,52/1</td></tr>
+      <tr><td>Professeur</td><td>DeepSeek V4.1 Flash avec toutes les règles et les exemples</td><td class="num">0,57/1</td></tr>
+    </tbody>
+  </table>
+  <p class="note">300 phrases de développement, 100 par langue. Le gain du 4B est réel (+0,05, intervalle à 95 % de +0,01 à +0,08), mais faible pour un modèle deux fois plus lourd et plus lent : la démo garde donc le 2B.</p>
+  <p>Le score aller-retour voit la v1 et la v2 à égalité. Dans une comparaison à l'aveugle sur 100 nouvelles phrases, Sonnet a préféré la v2 plus souvent que la v1 (écart net +0,14, non démontré) : des réponses plus nettes, qui montrent qui agit et donnent la bonne heure, alors que la v1 garde plus de petits détails.</p>
+  <p>Dans la première version, l'entraînement a fait passer le score du modèle non entraîné de 0,81/2 à 1,13/2 (une ancienne échelle), ce qui comble 64 % de l'écart avec le professeur. Activez <em>Comparer</em> sur la page de la démo pour voir le modèle entraîné (v2) à côté du même modèle avant entraînement.</p>
+
+  <h2>Limites</h2>
+  <ul>
+    <li>Les expressions et les idées abstraites sont difficiles : « llover a cántaros » (pleuvoir des cordes, en espagnol) est un jour revenu avec un verre de lait <span class="emoji">🥛</span>.</li>
+    <li>Les phrases longues perdent des détails, et les nombres ou les heures peuvent être faux.</li>
+    <li>Le modèle suit ses conventions de lecture la plupart du temps, pas toujours.</li>
+    <li>C'est un petit modèle : il peut se tromper, parfois avec assurance.</li>
+  </ul>
+
+  <h2>Confidentialité</h2>
+  <p>Les phrases ne sont ni enregistrées ni conservées. Un lien de partage ne contient que la phrase, après le <code>#</code> de l'adresse, une partie que les navigateurs n'envoient jamais au serveur. L'ouvrir relance le modèle, qui donne toujours la même réponse pour la même phrase.</p>
+
+  <h2>Utilisation de l'IA</h2>
+  <ul>
+    <li>Les réponses d'entraînement et une partie des phrases d'entraînement viennent de DeepSeek V4.1 Flash. Les vraies phrases viennent de <a href="https://tatoeba.org">Tatoeba</a> (CC BY 2.0 FR).</li>
+    <li>Claude sert uniquement d'évaluateur (lecteur et juge), jamais pour écrire, choisir ou filtrer les données d'entraînement.</li>
+    <li>Claude a aussi aidé à écrire le code, la documentation et le texte de cette page, et a rédigé les phrases du bouton « au hasard ». Rien de tout cela ne sert à l'entraînement.</li>
+  </ul>
+
+  <h2>Pour aller plus loin</h2>
+  <p>Chaque étape, du choix du modèle à sa mise en ligne, est documentée dans le <a href="https://github.com/eskombro/emogist" target="_blank" rel="noopener noreferrer">dépôt GitHub</a>, avec les données, les scores et les décisions.</p>
+
+  <footer><a href="/">← Retour à la démo</a></footer>
+  </section>
+
+  <section data-lang="es" lang="es" hidden>
+  <h2 class="page-title">Acerca de emogist</h2>
+
+  <h2>Cómo se hizo</h2>
+  <p>El autor escribió a mano los primeros ejemplos, un modelo grande los siguió para convertir miles de frases en emojis, y un modelo abierto pequeño aprendió de ellas. Aquí solo funciona el modelo pequeño.</p>
+  <ol class="pipeline">
+    <li><span class="icon" aria-hidden="true">✍️</span><span><strong>Ejemplos hechos a mano</strong><span class="desc">El autor escribió las reglas de los emojis y convirtió a mano frases de ejemplo en emojis, en inglés, francés y español, para mostrar al profesor cómo es una buena respuesta.</span></span></li>
+    <li><span class="icon" aria-hidden="true">📝</span><span><strong>Frases</strong><span class="desc">Frases del día a día en inglés, francés y español: la mitad son frases reales de Tatoeba y la otra mitad las generó un modelo de IA.</span></span></li>
+    <li><span class="icon" aria-hidden="true">🧑‍🏫</span><span><strong>Respuestas del profesor</strong><span class="desc">DeepSeek V4.1 Flash convierte cada frase en emojis, siguiendo reglas escritas y ejemplos elegidos por el autor.</span></span></li>
+    <li><span class="icon" aria-hidden="true">🔎</span><span><strong>Revisión manual</strong><span class="desc">El autor comprobó a mano muestras al azar de las respuestas del profesor y revisó todas las frases que sirven para medir el modelo (600 en total), quitando las que no encajaban.</span></span></li>
+    <li><span class="icon" aria-hidden="true">🏋️</span><span><strong>Entrenamiento</strong><span class="desc">Se entrena un adaptador LoRA sobre Qwen3.5 2B, un modelo abierto pequeño, con 5.400 de estos pares, en una GPU T4 de Colab, en unos 25 minutos.</span></span></li>
+    <li><span class="icon" aria-hidden="true">🧪</span><span><strong>Evaluación</strong><span class="desc">Un modelo lector adivina la frase a partir de los emojis, y un juez compara su respuesta con la original.</span></span></li>
+    <li><span class="icon" aria-hidden="true">🖥️</span><span><strong>Publicación</strong><span class="desc">El modelo funciona en 8 bits con llama.cpp en un servidor pequeño sin GPU; se carga cuando alguien visita la página y se descarga cuando nadie lo usa.</span></span></li>
+  </ol>
+
+  <h2>Exploración: elegir al alumno</h2>
+  <p>Antes de cualquier entrenamiento, cuatro modelos abiertos pequeños recibieron las mismas reglas y los mismos ejemplos hechos a mano, y convirtieron 100 frases de prueba (en inglés y francés) en emojis. Cada respuesta se puntuó según cuánto de lo esencial volvía.</p>
+  <table>
+    <thead><tr><th>Candidato</th><th>Qué pasó</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Qwen3.5 2B</strong></td><td><strong>Elegido:</strong> tan bueno como Ministral, más pequeño y más rápido de servir, por delante en francés</td></tr>
+      <tr><td>Ministral 3B</td><td>Empatado con Qwen, luego entrenado para comparar: seguía empatado tras el entrenamiento, con un adaptador el doble de grande</td></tr>
+      <tr><td>Qwen3.5 0.8B</td><td>Descartado: claramente por detrás de su hermano mayor</td></tr>
+      <tr><td>SmolLM3 3B</td><td>Descartado: se mantuvo solo como referencia débil; cae en bucles (el mismo emoji 30 veces)</td></tr>
+    </tbody>
+  </table>
+  <p class="note">El profesor se eligió igual entre cinco modelos grandes (DeepSeek V4.1 Flash, gpt-oss 120B, Mistral Large 4, DeepSeek V4 Pro, gpt-oss 20B): los cuatro primeros empataron, y Flash ganó por ser el más rápido y barato, con licencia MIT. Más tarde también se probó un Qwen3.5 4B el doble de grande, que no se quedó (ver más abajo).</p>
+
+  <h2>¿Qué tal funciona?</h2>
+  <p>La puntuación es de ida y vuelta: Claude Haiku lee solo los emojis y adivina la frase, y luego Claude Sonnet comprueba si su respuesta conserva el tema, el suceso y el resultado. Una puntuación de 1/1 significa que lo esencial volvió entero.</p>
+  <table>
+    <thead><tr><th>Modelo</th><th>Qué es</th><th class="num">Puntuación</th></tr></thead>
+    <tbody>
+      <tr><td>v1</td><td>Qwen3.5 2B entrenado con 3.000 frases en inglés y francés</td><td class="num">0,47/1</td></tr>
+      <tr><td><strong>v2</strong> (esta demo)</td><td>Qwen3.5 2B entrenado con 5.400 frases en tres idiomas</td><td class="num">0,47/1</td></tr>
+      <tr><td>v2, 4B</td><td>El mismo entrenamiento sobre Qwen3.5 4B, el doble de grande</td><td class="num">0,52/1</td></tr>
+      <tr><td>Profesor</td><td>DeepSeek V4.1 Flash con todas las reglas y los ejemplos</td><td class="num">0,57/1</td></tr>
+    </tbody>
+  </table>
+  <p class="note">300 frases de desarrollo, 100 por idioma. La mejora del 4B es real (+0,05, intervalo del 95 % de +0,01 a +0,08), pero pequeña para un modelo el doble de pesado y lento, así que la demo se queda con el 2B.</p>
+  <p>La puntuación de ida y vuelta ve la v1 y la v2 iguales. En una comparación a ciegas con 100 frases nuevas, Sonnet prefirió la v2 más veces que la v1 (diferencia neta +0,14, no demostrada): respuestas más limpias, que muestran quién actúa y aciertan con la hora, mientras que la v1 conserva más detalles pequeños.</p>
+  <p>En la primera versión, el entrenamiento subió la puntuación del modelo sin entrenar de 0,81/2 a 1,13/2 (una escala anterior), cerrando el 64 % de la distancia con el profesor. Activa <em>Comparar</em> en la página de la demo para ver el modelo entrenado (v2) junto al mismo modelo antes de entrenarlo.</p>
+
+  <h2>Límites</h2>
+  <ul>
+    <li>Las expresiones hechas y las ideas abstractas son difíciles: «llover a cántaros» volvió una vez con un vaso de leche <span class="emoji">🥛</span>.</li>
+    <li>Las frases largas pierden detalles, y los números o las horas pueden salir mal.</li>
+    <li>El modelo sigue sus convenciones de lectura casi siempre, no siempre.</li>
+    <li>Es un modelo pequeño: puede equivocarse, a veces con mucha seguridad.</li>
+  </ul>
+
+  <h2>Privacidad</h2>
+  <p>Las frases no se registran ni se guardan. Un enlace para compartir solo contiene la frase, después del <code>#</code> de la dirección, una parte que los navegadores nunca envían al servidor. Al abrirlo, el modelo vuelve a ejecutarse, y siempre da la misma respuesta para la misma frase.</p>
+
+  <h2>Uso de la IA</h2>
+  <ul>
+    <li>Las respuestas de entrenamiento y parte de las frases de entrenamiento vienen de DeepSeek V4.1 Flash. Las frases reales vienen de <a href="https://tatoeba.org">Tatoeba</a> (CC BY 2.0 FR).</li>
+    <li>Claude se usa solo como evaluador (lector y juez), nunca para escribir, elegir o filtrar los datos de entrenamiento.</li>
+    <li>Claude también ayudó a escribir el código, la documentación y el texto de esta página, y redactó las frases del botón «al azar». Nada de eso se usa para entrenar.</li>
+  </ul>
+
+  <h2>Más información</h2>
+  <p>Cada paso, desde la elección del modelo hasta su publicación, está documentado en el <a href="https://github.com/eskombro/emogist" target="_blank" rel="noopener noreferrer">repositorio de GitHub</a>, con los datos, las puntuaciones y las decisiones.</p>
+
+  <footer><a href="/">← Volver a la demo</a></footer>
+  </section>
+  </article>
 </main>
+<script>
+  // Same saved language as the demo page (key "emogist-language"), so both pages match.
+  const TITLES = { en: "About emogist", fr: "À propos d'emogist", es: "Acerca de emogist" };
+  const DEMO = { en: "Demo", fr: "Démo", es: "Demo" };
+  function show(language, remember) {
+    document.querySelectorAll("section[data-lang]").forEach(section => { section.hidden = section.dataset.lang !== language; });
+    document.querySelectorAll("#language button").forEach(button => button.setAttribute("aria-pressed", String(button.dataset.lang === language)));
+    document.getElementById("demo-link").textContent = DEMO[language];
+    document.documentElement.lang = language;
+    document.title = TITLES[language];
+    if (remember) { try { localStorage.setItem("emogist-language", language); } catch {} }
+  }
+  function savedLanguage() {
+    try { const saved = localStorage.getItem("emogist-language"); if (saved in TITLES) return saved; } catch {}
+    const browser = (navigator.languages || [navigator.language]).find(Boolean)?.toLowerCase() || "";
+    return ["fr", "es"].find(code => browser.startsWith(code)) || "en";
+  }
+  document.querySelectorAll("#language button").forEach(button => button.addEventListener("click", () => show(button.dataset.lang, true)));
+  show(savedLanguage(), false);
+</script>
 </body>
 </html>

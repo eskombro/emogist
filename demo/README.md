@@ -4,8 +4,8 @@ A small web demo that turns an everyday English, French or Spanish sentence into
 
 # Main features and functionalities
 
-- **English, French and Spanish page,** with clickable examples and a guide to reading the emojis.
-- **Three versions of the model on one base:** v2 by default, with v1 and the untrained model in an opt-in compare view.
+- **English, French and Spanish page,** with a 🎲 random-sentence button and a guide to reading the emojis.
+- **One base, three versions:** v2 by default, and an opt-in compare view with the untrained model (before and after training). v1 stays available in the API (`"model": "v1"`) but isn't shown on the page.
 - **Signs explained in place:** hovering or tapping a sign such as ❓ or 📍 in a result shows its meaning.
 - **Share links:** only the sentence travels, after the `#` of the link, so nothing is stored on the server. Opening the link runs the model on it; answers are deterministic, so the visitor sees the same emojis.
 - **About page** on how the model was made and scored.
@@ -37,8 +37,9 @@ The model files are built by [`11_demo_v2/export_models.py`](../11_demo_v2/expor
 | `POST /emoji` | Takes `{"sentence": "...", "model": "v2"}` and returns `{"model": "v2", "emojis": "...", "valid": true, "tokens": {"input": 0, "output": 0}, "seconds": 0.0}` |
 | `POST /emoji/stream` | Same input, streamed as server-sent events: `piece`, then `done` (with the same fields) or `error` |
 | `GET /about` | The About page |
+| `GET /random.json` | Sentences for the page's random button, by language (built by [`11_demo_v2/make_random_list.py`](../11_demo_v2/make_random_list.py)) |
 
-`model` is optional: `v2` (default), `v1` or `base` (the untrained model). v1 and v2 answers that break their format rules return the `no_valid_output` error. The untrained model has no format rules: its answer comes back as it is, with `valid` telling whether it is a valid emoji sentence. Each model run counts towards the per-visitor limit.
+`model` is optional: `v2` (default), `v1` or `base` (the untrained model). v1 and v2 answers that break their format rules return the `no_valid_output` error. The untrained model has no format rules: its answer comes back as it is, with `valid` telling whether it is a valid emoji sentence. It may write at most 40 tokens instead of 60: it often repeats one emoji until the limit, and the repetition shows just as well in 40. Each model run counts towards the per-visitor limit.
 
 Input tokens include the fixed instruction and chat template, not only the visitor's sentence. `seconds` is the generation time on the server, without queueing or loading.
 

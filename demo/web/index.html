@@ -16,8 +16,7 @@
        and a soft lilac for links and highlights. */
     --bg: #272230; --on-bg: #eeeaf4; --on-bg-muted: #b8afc7; --on-bg-line: rgb(238 234 244 / 0.12);
     --panel: #332d3e; --soft: #3e3749; --text: #eeeaf4; --muted: #b8afc7; --line: #463f52;
-    --brand: #6f58b0; --brand-hover: #5d4899; --highlight: #cbbdf0; --tooltip: #1d1924; --knob: #eeeaf4;
-    /* Emojis sit on light chips: dark emojis such as 🔙 or 🎩 would vanish on the dark boxes. */
+    --brand: #6f58b0; --brand-hover: #5d4899; --highlight: #cbbdf0; --tooltip: #1d1924; --knob: #eeeaf4;    /* Emojis sit on light chips: dark emojis such as 🔙 or 🎩 would vanish on the dark boxes. */
     --chip: #8f82a3; --chip-line: #7a6d8e; --chip-mark: #2f2938;
     --brand-ink: #cbbdf0; --error: #f29bb8; --error-soft: #4d2c3c;
     --accent: var(--brand); --accent-text: #ffffff;
@@ -28,12 +27,12 @@
     margin: 0; min-height: 100vh; padding: 32px 16px 48px; background: var(--bg); color: var(--on-bg);
     font: 16px/1.5 Arvo, Rockwell, Georgia, serif;
   }
-  form, .result, .guide, .examples button { color: var(--text); }
+  form, .result, .guide { color: var(--text); }
   :focus-visible { outline: 2px solid var(--highlight); outline-offset: 2px; }
-  form :focus-visible, .result :focus-visible, .guide :focus-visible, .examples button:focus-visible { outline-color: var(--brand-ink); }
+  form :focus-visible, .result :focus-visible, .guide :focus-visible { outline-color: var(--brand-ink); }
   .emojis, .chips, .symbol { font-family: var(--emoji); }
   main { width: 100%; max-width: 680px; margin: 0 auto; transition: max-width 0.2s ease; }
-  body.comparing main { max-width: 960px; }
+  body.comparing main { max-width: 820px; }
   header { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
   h1 { margin: 0; font-size: 2rem; letter-spacing: -0.02em; color: var(--on-bg); }
   /* Only the word gets the gradient: a clipped background would hide the emoji. */
@@ -57,27 +56,44 @@
     border: 0; border-radius: 999px; font: inherit; font-size: 0.875rem; font-weight: 600; cursor: pointer;
   }
   .language button[aria-pressed="true"] { color: var(--text); }
+  .language.busy button { cursor: wait; }
   .language svg { display: block; width: 20px; height: 20px; border-radius: 50%; box-shadow: 0 0 0 1px rgb(0 0 0 / 0.14); }
 
   form, .result, .guide { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px; box-shadow: 0 4px 16px rgb(0 0 0 / 0.22); }
   label { display: block; margin-bottom: 8px; font-weight: 600; }
   /* Titles above the boxes, on the dark page. */
-  .section-title { display: block; margin: 0 0 8px; color: var(--on-bg); font-size: 1.0625rem; font-weight: 700; letter-spacing: 0; }
-  .results-title { margin-top: 24px; }
+  .section-title { display: block; margin: 0 0 8px; scroll-margin-top: 12px; color: var(--on-bg); font-size: 1.0625rem; font-weight: 700; letter-spacing: 0; }
+  .results-title { margin-top: 24px; scroll-margin-top: 12px; }
   textarea {
     display: block; width: 100%; min-height: 92px; padding: 10px 12px; resize: vertical;
     color: var(--text); background: transparent; border: 1px solid var(--line); border-radius: 8px; font: inherit;
   }
   .switch input:focus-visible + .track { outline: 2px solid var(--brand-ink); outline-offset: 2px; }
-  .actions { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 12px; flex-wrap: wrap; }
-  .actions-left { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
-  .count { color: var(--muted); font-size: 0.875rem; }
+  /* The counter has its own line: on the buttons' line its changing width made them jump. */
+  .count-row { display: flex; justify-content: flex-end; margin-top: 4px; }
+  .count { color: var(--muted); font-size: 0.8125rem; font-variant-numeric: tabular-nums; }
+  .actions { display: flex; align-items: center; justify-content: space-between; gap: 10px 12px; margin-top: 6px; }
+  /* Narrow screens: the switch on one line, both buttons sharing the next one, always. */
+  @media (max-width: 640px) {
+    .actions { flex-direction: column; align-items: stretch; }
+    .buttons button { flex: 1; }
+  }
   .switch { display: inline-flex; align-items: center; gap: 8px; margin: 0; font-size: 0.875rem; font-weight: 400; color: var(--muted); cursor: pointer; }
+  /* Shown under a trained-only result: runs the untrained model on the same sentence. */
+  .nudge {
+    display: block; margin: 12px auto 0; min-height: 40px; padding: 0 16px; color: var(--highlight); background: transparent;
+    border: 1px dashed var(--chip-line); border-radius: 999px; font: inherit; font-size: 0.9375rem; font-weight: 600; cursor: pointer;
+    transition: background-color 0.12s ease, border-color 0.12s ease;
+  }
+  .nudge:hover { background: var(--soft); border-color: var(--highlight); border-style: solid; }
+  .nudge[hidden] { display: none; }
   .switch input { position: absolute; opacity: 0; width: 1px; height: 1px; }
-  .track { position: relative; flex: none; width: 34px; height: 20px; background: var(--line); border-radius: 999px; transition: background-color 0.15s ease; }
-  .track::after { content: ""; position: absolute; top: 2px; left: 2px; width: 16px; height: 16px; background: var(--knob); border-radius: 50%; box-shadow: 0 1px 2px rgb(0 0 0 / 0.3); transition: transform 0.15s ease; }
-  .switch input:checked + .track { background: var(--accent); }
-  .switch input:checked + .track::after { transform: translateX(14px); }
+  /* Off: a light track (3.7:1 on the panel). On: the brand colour with a lilac ring, so both states stand out. */
+  .track { position: relative; flex: none; width: 44px; height: 24px; background: var(--chip); border-radius: 999px; transition: background-color 0.15s ease, box-shadow 0.15s ease; }
+  .track::after { content: ""; position: absolute; top: 3px; left: 3px; width: 18px; height: 18px; background: var(--knob); border-radius: 50%; box-shadow: 0 1px 3px rgb(0 0 0 / 0.4); transition: transform 0.15s ease; }
+  .switch:hover input:not(:disabled) + .track { box-shadow: 0 0 0 2px var(--chip-line); }
+  .switch input:checked + .track { background: var(--accent); box-shadow: 0 0 0 2px var(--highlight); }
+  .switch input:checked + .track::after { transform: translateX(20px); }
   .switch input:disabled + .track { opacity: 0.55; }
   #send {
     min-height: 40px; padding: 0 18px; color: var(--accent-text); background: var(--accent);
@@ -85,28 +101,51 @@
   }
   #send:hover:not(:disabled) { background: var(--brand-hover); }
   #send:disabled { opacity: 0.55; cursor: default; }
-  .try { margin-top: 18px; }
-  .try p { margin: 0 0 8px; color: var(--highlight); font-size: 0.9375rem; font-weight: 600; }
-  .examples { display: flex; flex-wrap: wrap; gap: 8px; }
-  .examples button { min-height: 34px; padding: 4px 12px; background: var(--panel); border: 1px solid var(--panel); border-radius: 8px; font: inherit; font-size: 0.875rem; text-align: left; cursor: pointer; transition: background-color 0.12s ease, border-color 0.12s ease; }
-  .examples button:hover { background: var(--soft); border-color: var(--brand); }
+  .buttons { display: flex; flex: none; gap: 8px; }
+  .compare-wrap { display: flex; align-items: center; gap: 8px; }
+  /* A small "i" next to the compare switch; its explanation shows on hover, focus or tap. */
+  .info {
+    position: relative; display: inline-flex; flex: none; align-items: center; justify-content: center;
+    width: 18px; height: 18px; color: var(--muted); border: 1px solid var(--muted); border-radius: 50%;
+    font: italic 700 0.75rem/1 Georgia, serif; cursor: help; outline: none;
+  }
+  .info:focus-visible { border-color: var(--brand); color: var(--brand-ink); }
+  .info::after {
+    content: attr(data-tip); position: absolute; z-index: 5; bottom: calc(100% + 8px); left: 50%;
+    width: max-content; max-width: min(260px, 80vw); padding: 6px 9px; color: var(--highlight); background: var(--tooltip);
+    border-radius: 6px; font: 600 0.8125rem/1.35 Arvo, Rockwell, Georgia, serif; font-style: normal; white-space: normal; text-align: left;
+    opacity: 0; pointer-events: none; transform: translate(-50%, 3px); transition: opacity 0.12s ease, transform 0.12s ease;
+  }
+  .info:hover::after, .info:focus::after { opacity: 1; transform: translate(-50%, 0); }
+  .compare-banner {
+    margin: 12px 0 0; padding: 12px 14px; color: var(--muted); background: var(--panel); border: 1px solid var(--line);
+    border-left: 3px solid var(--brand); border-radius: 10px; font-size: 0.875rem; line-height: 1.5;
+  }
+  .compare-banner[hidden] { display: none; }
+  .banner-title { display: block; margin-bottom: 4px; color: var(--text); font-size: 0.9375rem; font-weight: 700; }
+  .compare-banner strong:not(.banner-title) { color: var(--text); font-weight: 700; white-space: nowrap; }
+  #random {
+    min-height: 40px; padding: 0 14px; color: var(--text); background: transparent;
+    border: 1px solid var(--line); border-radius: 8px; font: inherit; font-weight: 600; cursor: pointer;
+    transition: background-color 0.12s ease, border-color 0.12s ease;
+  }
+  #random:hover:not(:disabled) { background: var(--soft); border-color: var(--brand); }
+  #random:disabled { opacity: 0.55; cursor: default; }
 
   .results { display: grid; gap: 12px; }
-  body.comparing .results { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  body.comparing .results { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .result { position: relative; display: flex; flex-direction: column; min-height: 104px; }
   .result[hidden] { display: none; }
   .card-head { display: none; min-height: 32px; margin-bottom: 8px; text-align: left; }
   body.comparing .card-head { display: flex; align-items: center; }
   .card-name { font-weight: 700; }
-  .card-desc { display: none; color: var(--muted); font-size: 0.8125rem; line-height: 1.35; }
   .card-body { flex: 1; display: flex; align-items: center; justify-content: center; text-align: center; }
-  /* Compare mode: name, result right under it, then a separator above the description and details,
-     pushed to the bottom so the separators line up across the three cards. */
+  /* Compare mode: name, result right under it, then a separator above the time and tokens line,
+     pushed to the bottom so the separators line up across the cards. */
   body.comparing .card-body { flex: none; justify-content: flex-start; text-align: left; }
   body.comparing .card-body .emojis { justify-content: flex-start; }
   body.comparing .card-foot { margin-top: auto; padding-top: 10px; border-top: 1px solid var(--line); }
   body.comparing .card-body { margin-bottom: 14px; }
-  body.comparing .card-desc { display: block; }
   body.comparing .details { text-align: left; margin-top: 4px; }
   body.comparing .result:has(.tools:not([hidden])) { padding-top: 16px; }
   body.comparing .tools { top: 16px; right: 12px; }
@@ -153,8 +192,6 @@
   .tag { display: inline-block; margin-right: 6px; padding: 0 6px; color: var(--error); background: var(--error-soft); font-style: normal; font-weight: 600; border-radius: 6px; }
   .spinner { display: inline-block; width: 14px; height: 14px; margin-right: 8px; vertical-align: -2px; border: 2px solid var(--line); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; }
   @keyframes spin { to { transform: rotate(360deg); } }
-  .hint-line { margin: 8px 0 0; color: var(--muted); font-size: 0.8125rem; }
-  .hint-line:empty { display: none; }
 
   .guide { margin-top: 32px; padding: 0; }
   .guide summary {
@@ -230,27 +267,27 @@
   <label class="section-title" for="sentence" data-t="label"></label>
   <form id="form">
     <textarea id="sentence" maxlength="200"></textarea>
+    <div class="count-row"><span class="count" id="count">0 / 200</span></div>
     <div class="actions">
-      <div class="actions-left">
-        <span class="count" id="count">0 / 200</span>
+      <div class="compare-wrap">
         <label class="switch">
           <input type="checkbox" id="compare">
           <span class="track" aria-hidden="true"></span>
           <span data-t="compare"></span>
         </label>
+        <span class="info" id="compare-info" tabindex="0" role="note">i</span>
       </div>
-      <button type="submit" id="send" data-t="send"></button>
+      <div class="buttons">
+        <button type="button" id="random" data-t="random"></button>
+        <button type="submit" id="send" data-t="send"></button>
+      </div>
     </div>
-    <p class="hint-line" id="compare-note"></p>
   </form>
 
   <h2 class="section-title results-title" id="results-title" data-t="resultTitle"></h2>
   <section class="results" id="results" aria-live="polite" aria-labelledby="results-title"></section>
-
-  <section class="try">
-    <p id="examples-hint" data-t="examplesHint"></p>
-    <div class="examples" id="examples" role="group" aria-labelledby="examples-hint"></div>
-  </section>
+  <button type="button" class="nudge" id="try-untrained" data-t="tryUntrained" hidden></button>
+  <p class="compare-banner" id="compare-banner" hidden></p>
 
   <details class="guide">
     <summary><h2 data-t="guideTitle"></h2></summary>
@@ -283,7 +320,6 @@
       </div>
     </div>
     <div class="card-foot">
-      <div class="card-desc"></div>
       <div class="details"></div>
     </div>
     <div class="tools" hidden>
@@ -304,8 +340,9 @@
 <script>
   // Empty means same server. If the page is hosted elsewhere, set this to the API's HTTPS address.
   const API = "";
-  // Display and run order in compare mode: before training, then each version.
-  const MODELS = ["base", "v1", "v2"];
+  // Display and run order in compare mode: v2 first, so its answer comes quickly, then the same model
+  // before training. v1 stays available in the API (model "v1") but is not shown.
+  const MODELS = ["v2", "base"];
   const RULES = [
     { symbol: "boxes", sample: "🏖️😴 ➡️ 🦞🔥 😭" },
     { symbol: "➡️", sample: "🌧️ ➡️ 🏠" },
@@ -324,20 +361,19 @@
   const TEXT = {
     en: {
       intro: "Turn an everyday sentence into emojis that keep the gist. Write in English, French or Spanish.",
-      label: "✍️ Your sentence", resultTitle: "🎨 In emojis", placeholder: "You write some text, I translate to emojis", send: "Translate ✨",
+      label: "✍️ Your sentence", resultTitle: "🎨 In emojis", placeholder: "You write some text, I translate to emojis", send: "Translate ✨", random: "🎲 Random", randomTitle: "Try a random sentence",
       placeholderEmojis: "🫵💬📝 ➡️ 🙋🖼️", copy: "Copy", copied: "Copied", copyTitle: "Copy the emojis",
       share: "Share", shareDone: "Link copied", shareTitle: "Copy a link to this result",
       languageLabel: "Page language", about: "About",
-      compare: "⚖️ Compare with v1 and the untrained model",
-      compareNote: "Comparing runs the sentence through the model before training, then v1, then v2, one after the other, so it takes about three times as long.",
+      compare: "⚖️ Compare with the untrained AI model",
+      tryUntrained: "🥚 See how the untrained AI model answers →",
+      compareInfo: "Shows how the same Qwen AI model answers before it was trained for this task, next to our trained version.",
+      compareBannerTitle: "🔍 About this comparison", compareBanner: "We trained our own AI model to translate text into emojis. Both answers come from Qwen3.5 2B, a small open AI model. **🐥 Trained model** is our version of it, fine-tuned on 5,400 example sentences for this task. **🥚 Untrained model** is the same AI model as it comes, with the same one-line instruction but no training for this task. Same AI model, same instruction, same sentence: the difference you see is the training.",
       models: {
-        v2: ["🐥 v2", "Current model, fine-tuned on 5,400 sentences in English, French and Spanish"],
-        v1: ["🐣 v1", "First version, fine-tuned on 3,000 sentences in English and French"],
-        base: ["🥚 Untrained", "The same small model before any fine-tuning"],
+        v2: "🐥 Trained model",
+        base: "🥚 Untrained model",
       },
       invalidResult: "Invalid result",
-      examplesHint: "💡 Need inspiration? Click an example to try it:",
-      examples: ["The mosquitoes ate me alive last night.", "I laughed at my own joke and nobody else did.", "Maybe I'll learn to play the guitar next year.", "Our flight was cancelled, so we slept at the airport.", "Did you hear the thunder last night?", "We waited two hours for a table and the food was terrible."],
       waking: "Waking up the model…", translating: "Translating…", waiting: "Waiting for its turn…",
       empty: "Please type a sentence.", too_long: "Please use at most 200 characters.",
       bad_characters: "The sentence contains unsupported characters.", bad_request: "That sentence couldn't be read.",
@@ -374,20 +410,19 @@
     },
     fr: {
       intro: "Transformez une phrase du quotidien en emojis qui en gardent l'essentiel. Écrivez en français, en anglais ou en espagnol.",
-      label: "✍️ Votre phrase", resultTitle: "🎨 En emojis", placeholder: "Tu écris un texte, je dessine des emojis", send: "Traduire ✨",
+      label: "✍️ Votre phrase", resultTitle: "🎨 En emojis", placeholder: "Tu écris un texte, je dessine des emojis", send: "Traduire ✨", random: "🎲 Au hasard", randomTitle: "Essayer une phrase au hasard",
       placeholderEmojis: "🫵✍️📝 ➡️ 🙋🎨🖼️", copy: "Copier", copied: "Copié", copyTitle: "Copier les emojis",
       share: "Partager", shareDone: "Lien copié", shareTitle: "Copier un lien vers ce résultat",
       languageLabel: "Langue de la page", about: "À propos",
-      compare: "⚖️ Comparer avec la v1 et le modèle non entraîné",
-      compareNote: "La comparaison passe la phrase dans le modèle avant entraînement, puis la v1, puis la v2, l'un après l'autre : c'est environ trois fois plus long.",
+      compare: "⚖️ Comparer avec le modèle d'IA non entraîné",
+      tryUntrained: "🥚 Voir ce que répond le modèle d'IA non entraîné →",
+      compareInfo: "Montre comment le même modèle d'IA Qwen répond avant d'être entraîné pour cette tâche, à côté de notre version entraînée.",
+      compareBannerTitle: "🔍 À propos de cette comparaison", compareBanner: "Nous avons entraîné notre propre modèle d'IA pour traduire un texte en emojis. Les deux réponses viennent de Qwen3.5 2B, un petit modèle d'IA ouvert. **🐥 Modèle entraîné** est notre version, entraînée sur 5 400 phrases d'exemple pour cette tâche. **🥚 Modèle non entraîné** est le même modèle d'IA tel quel, avec la même consigne d'une ligne mais sans entraînement pour cette tâche. Même modèle d'IA, même consigne, même phrase : la différence, c'est l'entraînement.",
       models: {
-        v2: ["🐥 v2", "Modèle actuel, entraîné sur 5 400 phrases en anglais, français et espagnol"],
-        v1: ["🐣 v1", "Première version, entraînée sur 3 000 phrases en anglais et en français"],
-        base: ["🥚 Non entraîné", "Le même petit modèle, avant tout entraînement"],
+        v2: "🐥 Modèle entraîné",
+        base: "🥚 Modèle non entraîné",
       },
       invalidResult: "Résultat invalide",
-      examplesHint: "💡 Besoin d'inspiration ? Cliquez sur un exemple pour l'essayer :",
-      examples: ["Mon père a dansé à mon mariage et tout le monde a ri.", "On s'est perdus dans la forêt et on a trouvé un lac.", "Tu as entendu l'orage cette nuit ?", "Il neige en plein mois de juillet.", "On a dansé sous la pluie jusqu'à minuit.", "Une abeille m'a poursuivi dans tout le jardin."],
       waking: "Réveil du modèle…", translating: "Traduction…", waiting: "En attente de son tour…",
       empty: "Veuillez écrire une phrase.", too_long: "Veuillez utiliser 200 caractères au maximum.",
       bad_characters: "La phrase contient des caractères non pris en charge.", bad_request: "Cette phrase n'a pas pu être lue.",
@@ -424,20 +459,19 @@
     },
     es: {
       intro: "Convierte una frase del día a día en emojis que conserven lo esencial. Escribe en español, inglés o francés.",
-      label: "✍️ Tu frase", resultTitle: "🎨 En emojis", placeholder: "Tú escribes un texto, yo lo traduzco a emojis", send: "Traducir ✨",
+      label: "✍️ Tu frase", resultTitle: "🎨 En emojis", placeholder: "Tú escribes un texto, yo lo traduzco a emojis", send: "Traducir ✨", random: "🎲 Al azar", randomTitle: "Probar una frase al azar",
       placeholderEmojis: "🫵✍️📝 ➡️ 🙋🖼️", copy: "Copiar", copied: "Copiado", copyTitle: "Copiar los emojis",
       share: "Compartir", shareDone: "Enlace copiado", shareTitle: "Copiar un enlace a este resultado",
       languageLabel: "Idioma de la página", about: "Acerca de",
-      compare: "⚖️ Comparar con la v1 y el modelo sin entrenar",
-      compareNote: "Al comparar, la frase pasa por el modelo sin entrenar, luego por la v1 y luego por la v2, uno tras otro, así que tarda unas tres veces más.",
+      compare: "⚖️ Comparar con el modelo de IA sin entrenar",
+      tryUntrained: "🥚 Ver qué responde el modelo de IA sin entrenar →",
+      compareInfo: "Muestra cómo responde el mismo modelo de IA Qwen antes de entrenarlo para esta tarea, junto a nuestra versión entrenada.",
+      compareBannerTitle: "🔍 Acerca de esta comparación", compareBanner: "Hemos entrenado nuestro propio modelo de IA para traducir texto a emojis. Las dos respuestas vienen de Qwen3.5 2B, un modelo de IA abierto y ligero. **🐥 Modelo entrenado** es nuestra versión, entrenada con 5.400 frases de ejemplo para esta tarea. **🥚 Modelo sin entrenar** es el mismo modelo de IA tal cual, con la misma instrucción de una línea pero sin entrenamiento para esta tarea. Mismo modelo de IA, misma instrucción, misma frase: la diferencia es el entrenamiento.",
       models: {
-        v2: ["🐥 v2", "Modelo actual, entrenado con 5.400 frases en inglés, francés y español"],
-        v1: ["🐣 v1", "Primera versión, entrenada con 3.000 frases en inglés y francés"],
-        base: ["🥚 Sin entrenar", "El mismo modelo pequeño, antes de entrenarlo"],
+        v2: "🐥 Modelo entrenado",
+        base: "🥚 Modelo sin entrenar",
       },
       invalidResult: "Resultado no válido",
-      examplesHint: "💡 ¿Necesitas inspiración? Haz clic en un ejemplo para probarlo:",
-      examples: ["¿Te has comido el último trozo de pizza?","Me tocó la lotería pero perdí el boleto.", "Mi hijo pintó al perro de azul.", "¡Te has dejado el horno encendido!", "Corrí para coger el autobús y se fue igualmente.", "Olvidé el cumpleaños de mi amigo por tercera vez."],
       waking: "Despertando el modelo…", translating: "Traduciendo…", waiting: "Esperando su turno…",
       empty: "Escribe una frase.", too_long: "Usa 200 caracteres como máximo.",
       bad_characters: "La frase contiene caracteres no admitidos.", bad_request: "No se ha podido leer la frase.",
@@ -477,11 +511,10 @@
   const box = document.getElementById("sentence");
   const form = document.getElementById("form");
   const send = document.getElementById("send");
+  const randomButton = document.getElementById("random");
   const count = document.getElementById("count");
   const compareBox = document.getElementById("compare");
-  const compareNote = document.getElementById("compare-note");
   const results = document.getElementById("results");
-  const examples = document.getElementById("examples");
   const rules = document.getElementById("rules");
   const switcher = document.getElementById("language");
   let language = "en";
@@ -569,9 +602,8 @@
   function renderCard(card) {
     const text = TEXT[language];
     const { phase } = card.state;
-    const [name, description] = text.models[card.model];
+    const name = text.models[card.model];
     card.element.querySelector(".card-name").textContent = name;
-    card.element.querySelector(".card-desc").textContent = description;
     card.message.className = "message";
     card.message.replaceChildren();
     card.emojis.classList.remove("placeholder");
@@ -631,7 +663,20 @@
       card.element.hidden = card.model !== "v2" && !compareBox.checked;
       renderCard(card);
     }
-    compareNote.textContent = compareBox.checked ? TEXT[language].compareNote : "";
+    const banner = document.getElementById("compare-banner");
+    banner.hidden = !compareBox.checked;
+    const bannerTitle = document.createElement("strong");
+    bannerTitle.className = "banner-title";
+    bannerTitle.textContent = TEXT[language].compareBannerTitle;
+    // The text marks the model names with **…**; they are shown in bold, the rest as plain text.
+    const parts = TEXT[language].compareBanner.split(/\*\*(.+?)\*\*/u).map((part, index) => {
+      if (index % 2 === 0) return part;
+      const name = document.createElement("strong");
+      name.textContent = part;
+      return name;
+    });
+    banner.replaceChildren(bannerTitle, ...parts);
+    renderNudge();
   }
 
   function labelTool(button, label, title) {
@@ -691,20 +736,12 @@
     document.documentElement.lang = language;
     document.querySelectorAll("[data-t]").forEach(element => { element.textContent = text[element.dataset.t]; });
     box.placeholder = text.placeholder;
+    randomButton.title = text.randomTitle;
+    const info = document.getElementById("compare-info");
+    info.dataset.tip = text.compareInfo;
+    info.setAttribute("aria-label", text.compareInfo);
     switcher.setAttribute("aria-label", text.languageLabel);
     switcher.querySelectorAll("button").forEach(button => button.setAttribute("aria-pressed", String(button.dataset.lang === language)));
-    examples.replaceChildren(...text.examples.map(sentence => {
-      const button = document.createElement("button");
-      button.type = "button";
-      button.textContent = sentence;
-      button.addEventListener("click", () => {
-        box.value = sentence;
-        updateCount();
-        warmup();
-        if (!running) translate();
-      });
-      return button;
-    }));
     rules.replaceChildren(...RULES.map((rule, index) => {
       const [title, meaning] = text.rules[index];
       const item = document.createElement("li");
@@ -810,12 +847,18 @@
     }
   }
 
-  async function translate() {
-    const sentence = box.value.trim();
+  // Empties every result box (and the faded placeholder) before a new sentence runs.
+  function clearResults() {
     showingPlaceholder = false;
+    for (const card of Object.values(cards)) card.state = { phase: "idle" };
+    renderAll();
+  }
+
+  async function translate({ reveal = true } = {}) {
+    const sentence = box.value.trim();
+    clearResults();
     if (shared && sentence !== shared) { shared = null; history.replaceState(null, "", location.pathname); }
     const models = compareBox.checked ? MODELS : ["v2"];
-    for (const card of Object.values(cards)) card.state = { phase: "idle" };
     if (!sentence) {
       cards.v2.state = { phase: "error", code: "empty" };
       renderAll();
@@ -823,9 +866,14 @@
       return;
     }
     lastSentence = sentence;
+    if (reveal) revealResults();
+    await runModels(models, sentence);
+  }
+
+  async function runModels(models, sentence) {
     running = true;
-    send.disabled = true;
-    compareBox.disabled = true;
+    send.disabled = randomButton.disabled = compareBox.disabled = true;
+    switcher.classList.add("busy");
     results.setAttribute("aria-busy", "true");
     for (const model of models) cards[model].state = { phase: "waiting" };
     renderAll();
@@ -834,22 +882,149 @@
     } finally {
       results.removeAttribute("aria-busy");
       running = false;
-      send.disabled = false;
-      compareBox.disabled = false;
+      send.disabled = randomButton.disabled = compareBox.disabled = false;
+      switcher.classList.remove("busy");
+      renderNudge();
     }
   }
 
+  // The button under a trained-only result: it turns compare on and runs just the untrained model
+  // on the same sentence, so the trained answer stays and isn't computed twice.
+  const nudge = document.getElementById("try-untrained");
+
+  function renderNudge() {
+    nudge.hidden = running || compareBox.checked || cards.v2.state.phase !== "done" || box.value.trim() !== lastSentence;
+  }
+
+  nudge.addEventListener("click", () => {
+    if (running) return;
+    compareBox.checked = true;
+    renderAll();
+    revealResults();
+    runModels(["base"], lastSentence);
+  });
+
+  // Scrolling when Translate or Random starts.
+  // Small screens (one column, the same breakpoint as the CSS): always bring "Your sentence" to the
+  // top, so the sentence and the boxes under it are in view, unless it's already there.
+  // Wide screens: the result boxes usually show already; the page only moves when they don't.
+  const ONE_COLUMN = "(max-width: 760px)";
+  const smoothScroll = () => !window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+  const goTo = element => element.scrollIntoView({ behavior: smoothScroll() ? "smooth" : "auto", block: "start" });
+  const sentenceLabel = () => document.querySelector("label.section-title");
+  const oneColumn = () => window.matchMedia?.(ONE_COLUMN).matches;
+
+  function revealSentence() {
+    const top = sentenceLabel().getBoundingClientRect().top;
+    const nearTop = oneColumn() ? top >= 0 && top <= 60 : top >= 0 && top <= window.innerHeight * 0.4;
+    if (!nearTop) goTo(sentenceLabel());
+  }
+
+  function revealResults() {
+    if (oneColumn()) { revealSentence(); return; }
+    if (compareBox.checked) {
+      const title = document.getElementById("results-title");
+      const top = title.getBoundingClientRect().top;
+      if (top < 0 || top > window.innerHeight * 0.6) goTo(title);
+      return;
+    }
+    const card = cards.v2.element.getBoundingClientRect();
+    if (card.top < 0 || card.bottom > window.innerHeight) goTo(sentenceLabel());
+  }
+
+  // Random button: the sentences of the page language (random.json, loaded on first use) are put in
+  // a shuffled order, and each click takes the next one, so nothing repeats until all have been
+  // shown. Then the list is shuffled again, never starting with the sentence just shown.
+  let randomSentences = null;
+  const randomQueues = {};   // language -> { order, next }
+
+  function shuffled(list) {
+    const copy = [...list];
+    for (let i = copy.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [copy[i], copy[j]] = [copy[j], copy[i]];
+    }
+    return copy;
+  }
+
+  function nextRandomSentence() {
+    const all = randomSentences[language] || [];
+    if (!all.length) return null;
+    let queue = randomQueues[language];
+    if (!queue || queue.next >= queue.order.length) {
+      const last = queue?.order.at(-1);
+      const order = shuffled(all);
+      if (order.length > 1 && order[0] === last) order.push(order.shift());
+      queue = randomQueues[language] = { order, next: 0 };
+    }
+    return queue.order[queue.next++];
+  }
+
+  async function translateRandom() {
+    if (running) return;
+    clearResults();
+    warmup();
+    try {
+      randomSentences ||= await (await fetch(API + "/random.json")).json();
+    } catch {
+      cards.v2.state = { phase: "error", code: "network" };
+      renderAll();
+      return;
+    }
+    const sentence = nextRandomSentence();
+    if (!sentence) return;
+    revealSentence();
+    await typeSentence(sentence);
+    translate({ reveal: false });
+  }
+
+  // Writes the sentence into the box as if someone were typing it, in about one second whatever its
+  // length. The buttons stay disabled meanwhile; with reduced motion it appears at once.
+  async function typeSentence(sentence) {
+    if (window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) {
+      box.value = sentence;
+      updateCount();
+      return;
+    }
+    running = true;
+    send.disabled = randomButton.disabled = compareBox.disabled = true;
+    switcher.classList.add("busy");
+    try {
+      const letters = graphemes(sentence);
+      const delay = Math.min(40, 1000 / letters.length);
+      box.value = "";
+      for (const letter of letters) {
+        box.value += letter;
+        updateCount();
+        await new Promise(resolve => setTimeout(resolve, delay));
+      }
+    } finally {
+      running = false;
+      send.disabled = randomButton.disabled = compareBox.disabled = false;
+      switcher.classList.remove("busy");
+    }
+  }
+
+  // Switching language starts afresh: empty sentence, empty results, the faded placeholder back.
+  // While a sentence is still running, the switch waits until it has finished.
   switcher.addEventListener("click", event => {
     const button = event.target.closest("button");
-    if (button && button.dataset.lang !== language) setLanguage(button.dataset.lang);
+    if (!button || button.dataset.lang === language || running) return;
+    box.value = "";
+    updateCount();
+    if (shared) { shared = null; history.replaceState(null, "", location.pathname); }
+    for (const card of Object.values(cards)) card.state = { phase: "idle" };
+    showingPlaceholder = true;
+    setLanguage(button.dataset.lang);
   });
   compareBox.addEventListener("change", renderAll);
   box.addEventListener("focus", warmup);
-  box.addEventListener("input", updateCount);
+  box.addEventListener("input", () => { updateCount(); renderNudge(); });
   box.addEventListener("keydown", event => {
     if (event.key === "Enter" && !event.shiftKey) { event.preventDefault(); if (!running) translate(); }
   });
   form.addEventListener("submit", event => { event.preventDefault(); if (!running) translate(); });
+  randomButton.addEventListener("click", translateRandom);
 
   shared = readShareLink();
   if (shared) box.value = shared;

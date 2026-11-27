@@ -35,7 +35,7 @@ Each model keeps its own instruction and format rules:
 
 | Model | Instruction | Format check |
 |---|---|---|
-| untrained | v2 instruction, so only the adapter differs from v2 | none: shown as it comes, even plain text |
+| untrained | v2 instruction, so only the adapter differs from v2 | none: shown as it comes, even plain text. Capped at 40 tokens instead of 60 (author), since it often loops on one emoji until the limit |
 | v1 | "…a **short** emoji sentence…" (step 4) | `check_validity` (3 to 10 emojis) |
 | v2 | "…an emoji sentence…" (step 10) | `check_validity_v2` (1 to 10 emojis) |
 
@@ -106,6 +106,8 @@ A separate page (`/about`) linked from the header and footer. I can draft the st
 | `11_demo_v2/export_models.py` | Builds the base GGUF and the two adapter GGUFs from the step 4 and step 10 adapters (llama.cpp converters) |
 | `11_demo_v2/check_served.py` | The three checks above: v2 parity, v1 parity, CPU timing |
 | `11_demo_v2/run_examples.py`, `examples/` | Candidate page examples and their outputs from the three versions |
+| `11_demo_v2/make_random_list.py` | Builds `demo/web/random.json` for the page's random button from the rows marked `keep` in `examples/random_shortlist.csv` |
+| `11_demo_v2/examples/random_shortlist.csv` | The random-button sentences: v2 good, the untrained model clearly worse (column `untrained_problem`), v1 valid. Reviewed with the author: EN 20, FR 19, ES 18 |
 | `11_demo_v2/results/` | `served_parity.csv`, `cpu_timing.csv` |
 | `demo/…` | The updated demo (code above) |
 
@@ -122,7 +124,9 @@ A separate page (`/about`) linked from the header and footer. I can draft the st
 
 - **About page:** English only for now (author).
 - **Page examples:** new ones in all three languages, funny, and showing what training changed (author). Claude wrote 100 candidates per language (`examples/candidates.csv`) and ran them through the three versions (`run_examples.py`, output in `examples/outputs.csv`). It then picked six per language where the untrained model clearly fails (endless repeats, the sentence copied as text) and v1 and v2 give a good answer (`examples/picked.csv`). They are for the page only, never for training, and may change later.
-- **Compare order:** untrained, then v1, then v2, so the cards read as before and after training (author).
+- **Random button instead of examples** (author): a 🎲 button next to Translate runs a sentence from a short curated list in the page language; the example buttons were removed. The list keeps only sentences where v2 is good and the untrained model is clearly worse (it loops, copies the sentence as text, uses a wrong emoji or misses the key point), so a comparison shows what training changed.
+- **Compare view without v1** (author): the page compares only the untrained model and v2, so a comparison takes two runs instead of three and reads as before / after training. v1 stays loaded and available in the API (`"model": "v1"`, 22 MB); its scores stay on the About page.
+- **Compare order:** first untrained, then v1, then v2 (author); after v1 was dropped from the page, v2 first, then the untrained model (author), so v2's answer comes first.
 - **v1 re-score:** not done. The parity check below shows the adapter version of v1 is close to the merged one.
 
 # Results

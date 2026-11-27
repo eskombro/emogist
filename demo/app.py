@@ -208,3 +208,9 @@ async def demo_page() -> FileResponse:
 @app.get("/about", include_in_schema=False)
 async def about_page() -> FileResponse:
     return FileResponse(HERE / "web" / "about.html")
+
+
+@app.get("/random.json", include_in_schema=False)
+async def random_sentences() -> FileResponse:
+    """Sentences for the page's random button, by language (11_demo_v2/make_random_list.py)."""
+    return FileResponse(HERE / "web" / "random.json", media_type="application/json")

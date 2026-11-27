@@ -27,12 +27,14 @@ log = logging.getLogger("emogist")
 
 V1_PROMPT = "Convert the sentence into a short emoji sentence that keeps its gist. Answer with emojis only."
 V2_PROMPT = "Convert the sentence into an emoji sentence that keeps its gist. Answer with emojis only."
-# Each version: its training instruction and the adapter scales, in the order the adapters are loaded
-# (v1, v2). The untrained model gets the v2 instruction, so only the adapter differs from v2.
+# Each version: its training instruction, the adapter scales in the order the adapters are loaded
+# (v1, v2), and the most tokens it may write. The untrained model gets the v2 instruction, so only
+# the adapter differs from v2. It often repeats one emoji until the limit, so it gets a lower one:
+# the repetition still shows, and comparisons don't wait for 60 tokens of it.
 MODELS = {
-    "v2": (V2_PROMPT, (0, 1)),
-    "v1": (V1_PROMPT, (1, 0)),
-    "base": (V2_PROMPT, (0, 0)),
+    "v2": (V2_PROMPT, (0, 1), 60),
+    "v1": (V1_PROMPT, (1, 0), 60),
+    "base": (V2_PROMPT, (0, 0), 40),
 }
 DEFAULT_MODEL = "v2"
 WARM_SENTENCE = "I can do it now."  # read through the model before reporting it as ready
@@ -45,7 +47,7 @@ def build_prompt(sentence: str, model: str = DEFAULT_MODEL) -> str:
 
 
 def completion_body(sentence: str, model: str, stream: bool = False) -> dict:
-    return {"prompt": build_prompt(sentence, model), "n_predict": 60, "temperature": 0, "top_k": 1,
+    return {"prompt": build_prompt(sentence, model), "n_predict": MODELS[model][2], "temperature": 0, "top_k": 1,
             "cache_prompt": False, "seed": 1, "stream": stream,
             "lora": [{"id": i, "scale": scale} for i, scale in enumerate(MODELS[model][1])]}
 
