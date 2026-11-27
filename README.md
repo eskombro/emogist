@@ -40,6 +40,7 @@ Every step is evaluated the same way: a **round-trip score**. One model decodes 
 | [8. Spanish and new evaluation sets](08_v2_spanish_and_eval_sets/) | ✅ done | New dev and test sets: 300 sentences each, 100 per language (EN, FR, ES), half real and half AI, all reviewed by the author (79 of 679 removed) |
 | [9. v2 dataset and labels](09_v2_dataset_and_labels/) | ✅ done | 6,000 training rows: 2,000 per language (EN, FR, ES), half real and half AI. One label per sentence from DeepSeek V4.1 Flash with the v2 prompt and the author's examples (best-of-n gave no gain). New signs ❓ 💭 🤔 ❔ 📍 🔁; 🔀 and 🔄 tried and dropped. Author's sample review: 7% of labels judged wrong |
 | [10. v2 fine-tuning](10_v2_fine_tuning/) | ✅ done | New LoRA on the original Qwen 2B with v1 settings: main (EN+FR+ES) 0.47, the same as v1 on v2 dev; the EN+FR control shows Spanish neither hurt nor helped. A blind Sonnet review leans towards v2 (+0.14, not proven). 4B scores 0.52 (+0.05, proven) but was not kept: twice the size for a small gain |
+| [11. v2 demo](11_demo_v2/) | 🔄 in progress | The live demo moves to v2: one 2B base with switchable v1 and v2 adapters, a compare view with the untrained model, a Spanish page, explained signs, share links and an About page |
 
 ## Repository layout
 
@@ -58,6 +59,7 @@ cache/               cached decodes and judgements, so scores are reproducible f
 08_v2_spanish_and_eval_sets/  Spanish tooling, new dev and test sets
 09_v2_dataset_and_labels/  v2 training sentences and teacher labels
 10_v2_fine_tuning/   v2 training notebook and dev scoring
+11_demo_v2/          plan and checks for the v2 demo (code in demo/)
 demo/                the live demo: API, web page, Docker and deployment files
 CONVENTIONS.md       the emoji grammar used everywhere
 ```

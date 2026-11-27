@@ -2,6 +2,9 @@
 
 The model runs in its own llama-server process. Stopping that process is what reliably gives
 all its memory back. A warm-up holds the model briefly, and only real sentences extend the hold.
+
+One base model serves three versions: the v1 and v2 adapters are loaded switched off, and each
+request turns on the one it needs (none for the untrained model).
 """
 
 import asyncio
@@ -22,14 +25,29 @@ import psutil
 
 log = logging.getLogger("emogist")
 
-SYSTEM_PROMPT = "Convert the sentence into a short emoji sentence that keeps its gist. Answer with emojis only."
+V1_PROMPT = "Convert the sentence into a short emoji sentence that keeps its gist. Answer with emojis only."
+V2_PROMPT = "Convert the sentence into an emoji sentence that keeps its gist. Answer with emojis only."
+# Each version: its training instruction and the adapter scales, in the order the adapters are loaded
+# (v1, v2). The untrained model gets the v2 instruction, so only the adapter differs from v2.
+MODELS = {
+    "v2": (V2_PROMPT, (0, 1)),
+    "v1": (V1_PROMPT, (1, 0)),
+    "base": (V2_PROMPT, (0, 0)),
+}
+DEFAULT_MODEL = "v2"
 WARM_SENTENCE = "I can do it now."  # read through the model before reporting it as ready
 
 
-def build_prompt(sentence: str) -> str:
+def build_prompt(sentence: str, model: str = DEFAULT_MODEL) -> str:
     """Same text as the training chat template, with thinking turned off."""
-    return (f"<|im_start|>system\n{SYSTEM_PROMPT}<|im_end|>\n<|im_start|>user\n{sentence}<|im_end|>\n"
+    return (f"<|im_start|>system\n{MODELS[model][0]}<|im_end|>\n<|im_start|>user\n{sentence}<|im_end|>\n"
             "<|im_start|>assistant\n<think>\n\n</think>\n\n")
+
+
+def completion_body(sentence: str, model: str, stream: bool = False) -> dict:
+    return {"prompt": build_prompt(sentence, model), "n_predict": 60, "temperature": 0, "top_k": 1,
+            "cache_prompt": False, "seed": 1, "stream": stream,
+            "lora": [{"id": i, "scale": scale} for i, scale in enumerate(MODELS[model][1])]}
 
 
 def _env_float(name: str, default: float) -> float:
@@ -43,7 +61,11 @@ def _env_int(name: str, default: int) -> int:
 @dataclass
 class Settings:
     model_path: Path = field(default_factory=lambda: Path(os.environ.get(
-        "EMOGIST_MODEL", Path(__file__).parent / "models" / "emogist-qwen2b-Q8_0.gguf")))
+        "EMOGIST_MODEL", Path(__file__).parent / "models" / "qwen2b-base-Q8_0.gguf")))
+    # Loaded in this order, which gives the ids used in MODELS.
+    adapter_paths: tuple[Path, Path] = field(default_factory=lambda: (
+        Path(os.environ.get("EMOGIST_V1_ADAPTER", Path(__file__).parent / "models" / "emogist-v1-adapter-f16.gguf")),
+        Path(os.environ.get("EMOGIST_V2_ADAPTER", Path(__file__).parent / "models" / "emogist-v2-adapter-f16.gguf"))))
     server_binary: str = field(default_factory=lambda: os.environ.get("EMOGIST_LLAMA_SERVER", "llama-server"))
     port: int = field(default_factory=lambda: _env_int("EMOGIST_MODEL_PORT", 18090))
     threads: int = field(default_factory=lambda: _env_int("EMOGIST_THREADS", 3))
@@ -119,11 +141,12 @@ class ModelManager:
     def queue_full(self) -> bool:
         return self._pending >= self.settings.max_pending
 
-    async def generate(self, sentence: str, usage: dict | None = None) -> str:
-        async with aclosing(self.stream(sentence, usage)) as pieces:
+    async def generate(self, sentence: str, usage: dict | None = None, model: str = DEFAULT_MODEL) -> str:
+        async with aclosing(self.stream(sentence, usage, model)) as pieces:
             return "".join([piece async for piece in pieces]).strip()
 
-    async def stream(self, sentence: str, usage: dict | None = None) -> AsyncIterator[str]:
+    async def stream(self, sentence: str, usage: dict | None = None,
+                     model: str = DEFAULT_MODEL) -> AsyncIterator[str]:
         """Yield the answer piece by piece and fill `usage` with token counts at the end.
 
         Closing it early also stops the model.
@@ -136,21 +159,22 @@ class ModelManager:
                 await self._ensure_loaded("sentence")
                 started = time.perf_counter()
                 try:
-                    async with aclosing(self._stream_completion(sentence, usage)) as pieces:
+                    async with aclosing(self._stream_completion(sentence, usage, model)) as pieces:
                         async for piece in pieces:
                             yield piece
+                    if usage is not None:
+                        usage["seconds"] = round(time.perf_counter() - started, 2)
                 finally:
                     self._expires = time.monotonic() + self.settings.sentence_hold
-                log.info("sentence_done generate_ms=%d", (time.perf_counter() - started) * 1000)
+                log.info("sentence_done model=%s generate_ms=%d", model, (time.perf_counter() - started) * 1000)
         finally:
             self._pending -= 1
 
-    async def _stream_completion(self, sentence: str, usage: dict | None = None) -> AsyncIterator[str]:
+    async def _stream_completion(self, sentence: str, usage: dict | None, model: str) -> AsyncIterator[str]:
         deadline = time.monotonic() + self.settings.generate_timeout
         try:
-            async with self._client.stream("POST", "/completion", timeout=self.settings.generate_timeout, json={
-                    "prompt": build_prompt(sentence), "n_predict": 60, "temperature": 0, "top_k": 1,
-                    "cache_prompt": False, "seed": 1, "stream": True}) as response:
+            async with self._client.stream("POST", "/completion", timeout=self.settings.generate_timeout,
+                                           json=completion_body(sentence, model, stream=True)) as response:
                 response.raise_for_status()
                 async for line in response.aiter_lines():
                     if time.monotonic() > deadline:
@@ -186,8 +210,9 @@ class ModelManager:
             if available < settings.min_available_gb:
                 log.warning("load_refused available_gb=%.2f minimum_gb=%.2f", available, settings.min_available_gb)
                 raise Busy("not enough memory")
-            if not settings.model_path.exists():
-                raise ModelFailed(f"model file not found: {settings.model_path}")
+            for path in (settings.model_path, *settings.adapter_paths):
+                if not path.exists():
+                    raise ModelFailed(f"model file not found: {path}")
             with socket.socket() as probe:
                 if probe.connect_ex(("127.0.0.1", settings.port)) == 0:
                     raise ModelFailed(f"port {settings.port} is already in use")
@@ -195,7 +220,9 @@ class ModelManager:
             self._log_file = open(log_path, "w")
             try:
                 self._process = await asyncio.create_subprocess_exec(
-                    settings.server_binary, "-m", str(settings.model_path), "--host", "127.0.0.1",
+                    settings.server_binary, "-m", str(settings.model_path),
+                    *(arg for path in settings.adapter_paths for arg in ("--lora", str(path))),
+                    "--lora-init-without-apply", "--host", "127.0.0.1",
                     "--port", str(settings.port), "-ngl", str(settings.gpu_layers), "-t", str(settings.threads),
                     "-tb", str(settings.threads), "-c", "512", "-np", "1", "--no-repack", "--cache-ram", "0",
                     "--no-webui", stdout=self._log_file, stderr=self._log_file)
@@ -231,9 +258,8 @@ class ModelManager:
 
     async def _complete(self, sentence: str, timeout: float | None = None) -> str:
         try:
-            response = await self._client.post("/completion", timeout=timeout or self.settings.generate_timeout, json={
-                "prompt": build_prompt(sentence), "n_predict": 60, "temperature": 0, "top_k": 1,
-                "cache_prompt": False, "seed": 1})
+            response = await self._client.post("/completion", timeout=timeout or self.settings.generate_timeout,
+                                               json=completion_body(sentence, DEFAULT_MODEL))
             response.raise_for_status()
             return response.json()["content"].strip()
         except (httpx.HTTPError, KeyError, ValueError) as error:

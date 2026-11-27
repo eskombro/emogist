@@ -1,0 +1,301 @@
+n,lang,sentence
+1,en,A seagull stole my sandwich at the beach.
+2,en,Did you eat the last slice of pizza?
+3,en,"If it rains tomorrow, we'll stay home and watch movies."
+4,en,My dog ate my homework again.
+5,en,I fell asleep during my own birthday party.
+6,en,My cat thinks she's the boss of the house.
+7,en,I sent a love letter to the wrong person.
+8,en,Where did I park my car?
+9,en,My neighbor's rooster wakes me up at 5 a.m. every day.
+10,en,I burned the popcorn in the microwave.
+11,en,We missed the last train and walked home in the snow.
+12,en,Maybe I'll learn to play the guitar next year.
+13,en,I think my plant is judging me.
+14,en,You forgot to turn off the oven!
+15,en,My grandma beat me at video games.
+16,en,I ordered one pizza and they delivered ten.
+17,en,The baby threw spaghetti at the wall.
+18,en,I waved at someone who wasn't waving at me.
+19,en,Can you lend me twenty euros until Friday?
+20,en,I lost my phone while I was looking for my keys.
+21,en,A bee chased me around the garden.
+22,en,"When I opened the fridge, the cake was gone."
+23,en,My brother ate all the cookies and blamed the dog.
+24,en,I tried to cook dinner and the fire alarm went off.
+25,en,We're going to Paris for our anniversary.
+26,en,I laughed so hard that coffee came out of my nose.
+27,en,Who left their socks on the kitchen table?
+28,en,I put salt in my coffee instead of sugar.
+29,en,My laptop died five minutes before my presentation.
+30,en,The penguin at the zoo stole my hat.
+31,en,I tried to hug a cactus.
+32,en,My phone fell in the toilet.
+33,en,The cat stole my seat as soon as I stood up.
+34,en,I sneezed and my glasses flew off.
+35,en,My son painted the dog blue.
+36,en,I locked my keys inside the car again.
+37,en,The waiter brought me soup instead of ice cream.
+38,en,I slipped on a banana peel at the supermarket.
+39,en,My alarm didn't ring and I missed my flight.
+40,en,The squirrel ate all the bird seed.
+41,en,"I accidentally called my teacher ""mom""."
+42,en,My hamster escaped and hid in my shoe.
+43,en,We danced in the rain until midnight.
+44,en,I fell off my bike in front of my crush.
+45,en,My grandpa fell asleep at the cinema and snored.
+46,en,The goat ate my hat at the farm.
+47,en,I spilled red wine on the white sofa.
+48,en,Did you hear the thunder last night?
+49,en,I lost a sock in the washing machine.
+50,en,My boss caught me sleeping at my desk.
+51,en,The kids built a snowman bigger than the house.
+52,en,I bought a plant and killed it in a week.
+53,en,My dog is afraid of the vacuum cleaner.
+54,en,I forgot my friend's birthday for the third time.
+55,en,The baby laughs every time the dog sneezes.
+56,en,A monkey took my banana at the zoo.
+57,en,I ran for the bus and it left anyway.
+58,en,My neighbor sings in the shower every morning.
+59,en,The pizza arrived cold and without cheese.
+60,en,I wore my sweater inside out all day.
+61,en,My cat knocked my phone into the bathtub.
+62,en,I dropped my ice cream on my shoe.
+63,en,We got lost in the forest and found a lake.
+64,en,My little sister cut her own hair.
+65,en,The fish jumped out of the bowl.
+66,en,I fell asleep on the train and missed my stop.
+67,en,Grandma sent me a text full of emojis.
+68,en,Our car broke down in the middle of the desert.
+69,en,Why is the dog wearing my hat?
+70,en,I won the lottery but lost the ticket.
+71,en,My parrot says hello to everyone who calls.
+72,en,I ate too much cake and now I can't move.
+73,en,The teacher found my phone during the exam.
+74,en,I cried at the end of the movie.
+75,en,My brother hid all my shoes in the garden.
+76,en,I burned my tongue on hot chocolate.
+77,en,A spider was sleeping in my shoe.
+78,en,My dad danced at my wedding and everyone laughed.
+79,en,We waited two hours for a table and the food was terrible.
+80,en,I set the kitchen on fire making toast.
+81,en,The dog dug a hole in my mother's garden.
+82,en,I studied all night and slept through the exam.
+83,en,My cat brought a mouse to my bed.
+84,en,I tripped on stage at my graduation.
+85,en,The cake fell on the floor before the party.
+86,en,My boyfriend proposed on top of a mountain.
+87,en,I'm going to the dentist tomorrow and I'm scared.
+88,en,The elevator stopped between two floors.
+89,en,My son ate a crayon.
+90,en,A pigeon pooped on my head.
+91,en,I put the milk in the cupboard and the cereal in the fridge.
+92,en,The horse ran away with my hat.
+93,en,I can't find the TV remote anywhere.
+94,en,My coworker ate my lunch from the office fridge.
+95,en,I tried yoga and got stuck.
+96,en,"Our flight was cancelled, so we slept at the airport."
+97,en,The mosquitoes ate me alive last night.
+98,en,I laughed at my own joke and nobody else did.
+99,en,My grandmother drives faster than me.
+100,en,It's snowing in the middle of July.
+101,fr,Un pigeon m'a volé mon croissant.
+102,fr,Tu as mangé la dernière part de gâteau ?
+103,fr,"S'il fait beau demain, on ira à la plage."
+104,fr,Mon chien a encore mangé mes chaussons.
+105,fr,Je me suis endormi pendant mon propre anniversaire.
+106,fr,J'ai envoyé un message d'amour à mon patron par erreur.
+107,fr,Où est-ce que j'ai garé la voiture ?
+108,fr,Le coq du voisin me réveille tous les matins à cinq heures.
+109,fr,"J'ai brûlé les pâtes. Oui, les pâtes."
+110,fr,On a raté le dernier train et on est rentrés à pied sous la neige.
+111,fr,Peut-être que j'apprendrai la guitare l'année prochaine.
+112,fr,Je crois que ma plante me juge.
+113,fr,Tu as oublié d'éteindre le four !
+114,fr,Ma grand-mère m'a battu aux jeux vidéo.
+115,fr,J'ai commandé une pizza et ils en ont livré dix.
+116,fr,Le bébé a jeté des spaghettis sur le mur.
+117,fr,J'ai fait coucou à quelqu'un qui ne me faisait pas coucou.
+118,fr,Tu peux me prêter vingt euros jusqu'à vendredi ?
+119,fr,J'ai perdu mon téléphone en cherchant mes clés.
+120,fr,Une abeille m'a poursuivi dans tout le jardin.
+121,fr,"Quand j'ai ouvert le frigo, le fromage avait disparu."
+122,fr,Mon frère a mangé tous les biscuits et il a accusé le chat.
+123,fr,J'ai voulu faire à manger et l'alarme incendie s'est déclenchée.
+124,fr,On part à Rome pour notre anniversaire de mariage.
+125,fr,J'ai tellement ri que j'ai renversé mon café.
+126,fr,Qui a laissé ses chaussettes sur la table de la cuisine ?
+127,fr,J'ai mis du sel dans mon café au lieu du sucre.
+128,fr,Mon ordinateur s'est éteint cinq minutes avant ma présentation.
+129,fr,Le chat dort sur mon clavier depuis une heure.
+130,fr,"Il pleut, j'ai oublié mon parapluie et mon bus est parti sans moi."
+131,fr,J'ai essayé de faire un câlin à un cactus.
+132,fr,Mon téléphone est tombé dans les toilettes.
+133,fr,Le chat a pris ma place dès que je me suis levé.
+134,fr,J'ai éternué et mes lunettes se sont envolées.
+135,fr,Mon fils a peint le chien en bleu.
+136,fr,J'ai encore enfermé mes clés dans la voiture.
+137,fr,Le serveur m'a apporté une soupe au lieu d'une glace.
+138,fr,J'ai glissé sur une peau de banane au supermarché.
+139,fr,Mon réveil n'a pas sonné et j'ai raté mon avion.
+140,fr,L'écureuil a mangé toutes les graines des oiseaux.
+141,fr,J'ai appelé ma prof « maman » par erreur.
+142,fr,Mon hamster s'est échappé et s'est caché dans ma chaussure.
+143,fr,On a dansé sous la pluie jusqu'à minuit.
+144,fr,Je suis tombé de vélo devant mon crush.
+145,fr,Mon grand-père s'est endormi au cinéma et il a ronflé.
+146,fr,La chèvre a mangé mon chapeau à la ferme.
+147,fr,J'ai renversé du vin rouge sur le canapé blanc.
+148,fr,Tu as entendu l'orage cette nuit ?
+149,fr,J'ai perdu une chaussette dans la machine à laver.
+150,fr,Mon patron m'a surpris en train de dormir au bureau.
+151,fr,Les enfants ont fait un bonhomme de neige plus grand que la maison.
+152,fr,J'ai acheté une plante et elle est morte en une semaine.
+153,fr,Mon chien a peur de l'aspirateur.
+154,fr,J'ai oublié l'anniversaire de mon ami pour la troisième fois.
+155,fr,Le bébé rit chaque fois que le chien éternue.
+156,fr,Un singe m'a pris ma banane au zoo.
+157,fr,J'ai couru pour attraper le bus et il est parti quand même.
+158,fr,Ma voisine chante sous la douche tous les matins.
+159,fr,La pizza est arrivée froide et sans fromage.
+160,fr,J'ai porté mon pull à l'envers toute la journée.
+161,fr,Mon chat a fait tomber mon téléphone dans la baignoire.
+162,fr,Ma glace est tombée sur ma chaussure.
+163,fr,On s'est perdus dans la forêt et on a trouvé un lac.
+164,fr,Ma petite sœur s'est coupé les cheveux toute seule.
+165,fr,Le poisson a sauté hors du bocal.
+166,fr,Je me suis endormi dans le train et j'ai raté mon arrêt.
+167,fr,Ma grand-mère m'a envoyé un message plein d'emojis.
+168,fr,Notre voiture est tombée en panne en plein désert.
+169,fr,Pourquoi le chien porte mon chapeau ?
+170,fr,J'ai gagné au loto mais j'ai perdu le ticket.
+171,fr,Mon perroquet dit bonjour à tous ceux qui appellent.
+172,fr,J'ai trop mangé de gâteau et je ne peux plus bouger.
+173,fr,Le prof a trouvé mon téléphone pendant l'examen.
+174,fr,J'ai pleuré à la fin du film.
+175,fr,Mon frère a caché toutes mes chaussures dans le jardin.
+176,fr,Je me suis brûlé la langue avec le chocolat chaud.
+177,fr,Une araignée dormait dans ma chaussure.
+178,fr,Mon père a dansé à mon mariage et tout le monde a ri.
+179,fr,On a attendu deux heures pour une table et c'était mauvais.
+180,fr,J'ai mis le feu à la cuisine en faisant des toasts.
+181,fr,Le chien a creusé un trou dans le jardin de ma mère.
+182,fr,J'ai révisé toute la nuit et j'ai dormi pendant l'examen.
+183,fr,Mon chat m'a apporté une souris dans mon lit.
+184,fr,J'ai trébuché sur scène pendant la remise des diplômes.
+185,fr,Le gâteau est tombé par terre avant la fête.
+186,fr,Mon copain m'a demandée en mariage au sommet d'une montagne.
+187,fr,Je vais chez le dentiste demain et j'ai peur.
+188,fr,L'ascenseur s'est arrêté entre deux étages.
+189,fr,Mon fils a mangé un crayon de couleur.
+190,fr,Un pigeon m'a fait caca sur la tête.
+191,fr,J'ai rangé le lait dans le placard et les céréales dans le frigo.
+192,fr,Le cheval s'est enfui avec mon chapeau.
+193,fr,Je ne trouve la télécommande nulle part.
+194,fr,Mon collègue a mangé mon déjeuner dans le frigo du bureau.
+195,fr,J'ai essayé le yoga et je suis resté coincé.
+196,fr,"Notre vol a été annulé, alors on a dormi à l'aéroport."
+197,fr,Les moustiques m'ont dévoré cette nuit.
+198,fr,J'ai ri à ma propre blague et personne d'autre n'a ri.
+199,fr,Ma grand-mère conduit plus vite que moi.
+200,fr,Il neige en plein mois de juillet.
+201,es,Una gaviota me robó el bocadillo en la playa.
+202,es,¿Te has comido el último trozo de pizza?
+203,es,"Si mañana llueve, nos quedamos en casa viendo películas."
+204,es,Mi perro se ha vuelto a comer mis zapatillas.
+205,es,Me quedé dormido en mi propia fiesta de cumpleaños.
+206,es,Le mandé un mensaje de amor a mi jefe sin querer.
+207,es,¿Dónde he aparcado el coche?
+208,es,El gallo del vecino me despierta todos los días a las cinco.
+209,es,Se me quemó el agua de los macarrones.
+210,es,Perdimos el último tren y volvimos andando bajo la nieve.
+211,es,A lo mejor aprendo a tocar la guitarra el año que viene.
+212,es,Creo que mi planta me está juzgando.
+213,es,¡Te has dejado el horno encendido!
+214,es,Mi abuela me ganó a los videojuegos.
+215,es,Pedí una pizza y me trajeron diez.
+216,es,El bebé tiró los espaguetis a la pared.
+217,es,Saludé a alguien que no me estaba saludando a mí.
+218,es,¿Me prestas veinte euros hasta el viernes?
+219,es,Perdí el móvil mientras buscaba las llaves.
+220,es,Una abeja me persiguió por todo el jardín.
+221,es,"Cuando abrí la nevera, la tarta ya no estaba."
+222,es,Mi hermano se comió todas las galletas y le echó la culpa al perro.
+223,es,Intenté hacer la cena y saltó la alarma de incendios.
+224,es,Nos vamos a Roma por nuestro aniversario.
+225,es,Me reí tanto que se me salió el café por la nariz.
+226,es,¿Quién ha dejado los calcetines en la mesa de la cocina?
+227,es,Le eché sal al café en vez de azúcar.
+228,es,Mi portátil se apagó cinco minutos antes de la presentación.
+229,es,El gato lleva una hora durmiendo encima de mi teclado.
+230,es,Un pulpo me quitó las gafas de bucear.
+231,es,Intenté abrazar un cactus.
+232,es,Se me cayó el móvil al váter.
+233,es,El gato me quitó el sitio en cuanto me levanté.
+234,es,Estornudé y se me cayeron las gafas.
+235,es,Mi hijo pintó al perro de azul.
+236,es,Otra vez me he dejado las llaves dentro del coche.
+237,es,El camarero me trajo sopa en vez de helado.
+238,es,Me resbalé con una cáscara de plátano en el supermercado.
+239,es,No sonó el despertador y perdí el avión.
+240,es,La ardilla se comió todas las semillas de los pájaros.
+241,es,Llamé «mamá» a mi profesora sin querer.
+242,es,Mi hámster se escapó y se escondió en mi zapato.
+243,es,Bailamos bajo la lluvia hasta medianoche.
+244,es,Me caí de la bici delante del chico que me gusta.
+245,es,Mi abuelo se durmió en el cine y roncó.
+246,es,La cabra se comió mi sombrero en la granja.
+247,es,Tiré vino tinto en el sofá blanco.
+248,es,¿Oíste los truenos anoche?
+249,es,Perdí un calcetín en la lavadora.
+250,es,Mi jefe me pilló durmiendo en la oficina.
+251,es,Los niños hicieron un muñeco de nieve más grande que la casa.
+252,es,Compré una planta y se murió en una semana.
+253,es,Mi perro tiene miedo de la aspiradora.
+254,es,Olvidé el cumpleaños de mi amigo por tercera vez.
+255,es,El bebé se ríe cada vez que el perro estornuda.
+256,es,Un mono me quitó el plátano en el zoo.
+257,es,Corrí para coger el autobús y se fue igualmente.
+258,es,Mi vecina canta en la ducha todas las mañanas.
+259,es,La pizza llegó fría y sin queso.
+260,es,Llevé el jersey del revés todo el día.
+261,es,Mi gato tiró mi móvil a la bañera.
+262,es,Se me cayó el helado en el zapato.
+263,es,Nos perdimos en el bosque y encontramos un lago.
+264,es,Mi hermana pequeña se cortó el pelo ella sola.
+265,es,El pez saltó fuera de la pecera.
+266,es,Me dormí en el tren y me pasé de parada.
+267,es,Mi abuela me mandó un mensaje lleno de emojis.
+268,es,Se nos averió el coche en medio del desierto.
+269,es,¿Por qué lleva el perro mi sombrero?
+270,es,Me tocó la lotería pero perdí el boleto.
+271,es,Mi loro saluda a todo el que llama.
+272,es,Comí demasiada tarta y ya no me puedo mover.
+273,es,El profesor encontró mi móvil durante el examen.
+274,es,Lloré al final de la película.
+275,es,Mi hermano escondió todos mis zapatos en el jardín.
+276,es,Me quemé la lengua con el chocolate caliente.
+277,es,Había una araña durmiendo en mi zapato.
+278,es,Mi padre bailó en mi boda y todos se rieron.
+279,es,Esperamos dos horas por una mesa y la comida era horrible.
+280,es,Quemé la cocina haciendo tostadas.
+281,es,El perro hizo un agujero en el jardín de mi madre.
+282,es,Estudié toda la noche y me dormí en el examen.
+283,es,Mi gato me trajo un ratón a la cama.
+284,es,Tropecé en el escenario en mi graduación.
+285,es,La tarta se cayó al suelo antes de la fiesta.
+286,es,Mi novio me pidió matrimonio en lo alto de una montaña.
+287,es,Mañana voy al dentista y tengo miedo.
+288,es,El ascensor se paró entre dos pisos.
+289,es,Mi hijo se comió una cera de colores.
+290,es,Una paloma me hizo caca en la cabeza.
+291,es,Guardé la leche en el armario y los cereales en la nevera.
+292,es,El caballo salió corriendo con mi sombrero.
+293,es,No encuentro el mando de la tele por ninguna parte.
+294,es,Mi compañero se comió mi almuerzo de la nevera de la oficina.
+295,es,Probé el yoga y me quedé atascado.
+296,es,Cancelaron nuestro vuelo y dormimos en el aeropuerto.
+297,es,Los mosquitos me han comido viva esta noche.
+298,es,Me reí de mi propio chiste y nadie más se rió.
+299,es,Mi abuela conduce más rápido que yo.
+300,es,Está nevando en pleno julio.

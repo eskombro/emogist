@@ -23,8 +23,13 @@ from fastapi.responses import FileResponse, JSONResponse, StreamingResponse
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent))
 
-from emoji_eval.validate import check_validity  # noqa: E402
-from model_manager import Busy, ModelFailed, ModelManager  # noqa: E402
+from emoji_eval.validate import check_validity, check_validity_v2  # noqa: E402
+from model_manager import DEFAULT_MODEL, MODELS, Busy, ModelFailed, ModelManager  # noqa: E402
+
+# Each version is held to the format rules it was trained for. The untrained model has none:
+# its answer is shown as it comes, flagged when it isn't a valid emoji sentence.
+FORMAT_CHECKS = {"v1": check_validity, "v2": check_validity_v2, "base": None}
+assert FORMAT_CHECKS.keys() == MODELS.keys()
 
 MAX_CHARS = int(os.environ.get("EMOGIST_MAX_CHARS", 200))
 MAX_BODY_BYTES = 2048
@@ -87,16 +92,21 @@ def client_id(request: Request) -> str:
     return request.client.host if request.client else "unknown"
 
 
-async def read_sentence(request: Request) -> str:
+async def read_sentence(request: Request) -> tuple[str, str]:
+    """Return the cleaned sentence and the model version asked for."""
     body = b""
     async for chunk in request.stream():
         body += chunk
         if len(body) > MAX_BODY_BYTES:
             raise ApiError(413, "too_long", f"Please use at most {MAX_CHARS} characters.")
     try:
-        sentence = json.loads(body)["sentence"]
-    except (ValueError, KeyError, TypeError):
+        data = json.loads(body)
+        sentence = data["sentence"]
+        model = data.get("model", DEFAULT_MODEL)
+    except (ValueError, KeyError, TypeError, AttributeError):
         raise ApiError(400, "bad_request", 'Send JSON like {"sentence": "..."}.') from None
+    if model not in MODELS:
+        raise ApiError(400, "bad_model", f"The model must be one of: {', '.join(MODELS)}.")
     if not isinstance(sentence, str):
         raise ApiError(400, "bad_request", "The sentence must be text.")
     sentence = " ".join(sentence.split())
@@ -107,7 +117,20 @@ async def read_sentence(request: Request) -> str:
     # "<|" could otherwise be read as one of the model's control tokens.
     if "<|" in sentence or any(unicodedata.category(c) == "Cc" for c in sentence):
         raise ApiError(400, "bad_characters", "The sentence contains unsupported characters.")
-    return sentence
+    return sentence, model
+
+
+def result(output: str, model: str, usage: dict) -> dict | None:
+    """The answer to send back, or None when a trained version broke its format rules."""
+    check = FORMAT_CHECKS[model]
+    if check is None:
+        valid = check_validity_v2(output) == "ok"
+    elif check(output) != "ok":
+        return None
+    else:
+        valid = True
+    tokens = {"input": usage.get("input"), "output": usage.get("output")}
+    return {"model": model, "emojis": output, "valid": valid, "tokens": tokens, "seconds": usage.get("seconds")}
 
 
 @app.get("/status")
@@ -123,30 +146,31 @@ async def warmup(request: Request) -> dict:
 
 @app.post("/emoji")
 async def to_emoji(request: Request) -> dict:
-    sentence = await read_sentence(request)
+    sentence, model = await read_sentence(request)
     sentence_limit.check(client_id(request))
     usage: dict = {}
     try:
-        output = await request.app.state.model.generate(sentence, usage)
+        output = await request.app.state.model.generate(sentence, usage, model)
     except Busy:
         raise ApiError(503, "busy", "The demo is busy, please try again later.", 30) from None
     except ModelFailed as error:
         logging.getLogger("emogist").error("generation_failed reason=%s", error)
         raise ApiError(503, "unavailable", "The model is unavailable, please try again.", 10) from None
-    if check_validity(output) != "ok":
+    answer = result(output, model, usage)
+    if answer is None:
         raise ApiError(422, "no_valid_output", "The model couldn't turn this one into emojis. Try rephrasing it.")
-    return {"emojis": output, "tokens": usage}
+    return answer
 
 
 def event(payload: dict) -> str:
     return f"data: {json.dumps(payload, ensure_ascii=False)}\n\n"
 
 
-async def emoji_events(request: Request, sentence: str) -> AsyncIterator[str]:
+async def emoji_events(request: Request, sentence: str, model: str) -> AsyncIterator[str]:
     pieces = []
     usage: dict = {}
     try:
-        async with aclosing(request.app.state.model.stream(sentence, usage)) as stream:
+        async with aclosing(request.app.state.model.stream(sentence, usage, model)) as stream:
             async for piece in stream:
                 if await request.is_disconnected():
                     return
@@ -159,23 +183,28 @@ async def emoji_events(request: Request, sentence: str) -> AsyncIterator[str]:
         logging.getLogger("emogist").error("generation_failed reason=%s", error)
         yield event({"type": "error", "code": "unavailable"})
         return
-    output = "".join(pieces).strip()
-    if check_validity(output) != "ok":
+    answer = result("".join(pieces).strip(), model, usage)
+    if answer is None:
         yield event({"type": "error", "code": "no_valid_output"})
     else:
-        yield event({"type": "done", "emojis": output, "tokens": usage})
+        yield event({"type": "done", **answer})
 
 
 @app.post("/emoji/stream")
 async def to_emoji_stream(request: Request) -> StreamingResponse:
-    sentence = await read_sentence(request)
+    sentence, model = await read_sentence(request)
     sentence_limit.check(client_id(request))
     if request.app.state.model.queue_full():
         raise ApiError(503, "busy", "The demo is busy, please try again later.", 30)
-    return StreamingResponse(emoji_events(request, sentence), media_type="text/event-stream",
+    return StreamingResponse(emoji_events(request, sentence, model), media_type="text/event-stream",
                              headers={"Cache-Control": "no-cache, no-transform", "X-Accel-Buffering": "no"})
 
 
 @app.get("/", include_in_schema=False)
 async def demo_page() -> FileResponse:
     return FileResponse(HERE / "web" / "index.html")
+
+
+@app.get("/about", include_in_schema=False)
+async def about_page() -> FileResponse:
+    return FileResponse(HERE / "web" / "about.html")

@@ -18,7 +18,9 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
     LD_LIBRARY_PATH=/opt/llama \
     EMOGIST_LLAMA_SERVER=/opt/llama/llama-server \
-    EMOGIST_MODEL=/models/emogist-qwen2b-Q8_0.gguf
+    EMOGIST_MODEL=/models/qwen2b-base-Q8_0.gguf \
+    EMOGIST_V1_ADAPTER=/models/emogist-v1-adapter-f16.gguf \
+    EMOGIST_V2_ADAPTER=/models/emogist-v2-adapter-f16.gguf
 RUN apt-get update \
     && apt-get install -y --no-install-recommends libgomp1 \
     && rm -rf /var/lib/apt/lists/*
