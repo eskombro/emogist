@@ -15,7 +15,7 @@ The idea is to help a very small model, one that can be served on a cheap and si
 The author tested 4 open-weight models to select the best student (Qwen3.5 2B, Qwen3.5 0.8B, Ministral 3B and SmolLM3 3B), and 5 LLMs to select a teacher (DeepSeek V4.1 Flash, DeepSeek V4 Pro, Mistral Large 4, gpt-oss 120B and gpt-oss 20B), then built a dataset and fine-tuned the selected student to close as much of the gap to its teacher as possible.
 
 - **Cost of training** (all experiments included, dataset and fine-tuning): ≈ $15 ([details](#what-it-cost))
-- **Time invested:** 4 days
+- **Time invested:** 5 days
 
 # Results
 
