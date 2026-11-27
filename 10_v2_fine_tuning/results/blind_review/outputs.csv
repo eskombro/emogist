@@ -1,0 +1,101 @@
+n,lang,sentence,v1,v2,v1_valid,v2_valid
+1,en,I love pizza.,🙋❤️ 🍕,🙋❤️🍕,ok,ok
+2,fr,J'adore manger des croissants le matin.,🌅 🥐🥐🥐🥐 😋,🙋❤️ 🥐🌅,ok,ok
+3,es,Me gusta bailar en la playa.,🙋💃 🏖️😊,🙋❤️💃🏖️,ok,ok
+4,en,The cat is sleeping on the sofa.,🐈🛋️😴,🐈🛋️😴,ok,ok
+5,fr,Il pleut beaucoup aujourd'hui.,🌧️🌧️🌧️🌧️ 😩,🌧️🌧️🌧️,ok,ok
+6,es,Mañana vamos a viajar en avión a México.,⏩✈️ ➡️ 🇲🇽,⏩👥✈️🇲🇽,ok,ok
+7,en,She is crying because her dog died.,👩😭 🐕💀,👩😭 🐕⚰️,ok,ok
+8,fr,Nous fêtons son anniversaire avec un gâteau.,🎂🎉 🎂🎂🎂,👥🎂🎉 🎂,ok,ok
+9,es,El niño juega al fútbol con sus amigos.,👦 ⚽ 👥,👦⚽ 👥😊,ok,ok
+10,en,I need a coffee before the meeting.,☕ ➡️ 🫵👥,☕ ➡️ 🗣️,ok,ok
+11,en,Happy New Year!,🎉🎊 🥳,🎉🎊 🎆,ok,ok
+12,fr,Joyeux Noël à tous !,🎄🎁 🎅🎄 🧑‍🤝‍🧑🧑‍🤝‍🧑 🥳,🎄🎁 🎅👥,ok,ok
+13,es,¡Feliz cumpleaños!,🎂🎉 🫵🎁,🎂🎉 🎊,ok,ok
+14,en,The moon is bright tonight.,🌙✨ 🌕,🌙 🌙✨,ok,ok
+15,fr,Le soleil se lève sur la montagne.,🌅 🏔️☀️,🌅☀️⛰️,ok,ok
+16,es,Hace mucho calor en el desierto.,🌞🔥🏜️,🌵☀️🔥,ok,ok
+17,en,I am so tired after working all day.,🙋🔋❌ ➡️ 😴😩,🙋😴 🏢💼🔁,ok,ok
+18,fr,Elle est très en colère contre son frère.,👩😡 👦,👩😡👨,ok,ok
+19,es,Estoy muy feliz porque aprobé el examen.,📝✅ 🎉😊,🙋😊 📝✅,ok,ok
+20,en,He drives a red car to work.,👨 🚗🔴 ➡️ 🏢,🚗🔴 🏢,ok,ok
+21,fr,Je prends le train pour aller à Paris.,🙋🚆 ➡️ 🗼,🙋🚆 ➡️ 🇫🇷,ok,ok
+22,es,Ella monta en bicicleta por el parque.,👧 🚲🌳,👩🚲🌳,ok,ok
+23,en,We watched a scary movie last night.,🌙 🎬👻 😱,👥🎬😱 🌙,ok,ok
+24,fr,Ils ont regardé un film d'horreur hier soir.,👥🎬👻 🌙,👥👀 🎬😱 ⏪🌙,ok,ok
+25,es,Anoche vimos una película romántica.,⏪ 🎬❤️,🌙👥 🎬❤️,ok,ok
+26,en,The baby laughs when she sees the balloon.,👶😂 🎈👀,👶😂 🎈👀,ok,ok
+27,fr,Le bébé a faim et veut son biberon.,👶🤤 🍼👶,👶🤤 🍼,ok,ok
+28,es,La abuela cocina sopa para toda la familia.,👵🍲🍲🍲🍲 👨‍👩‍👧‍👦😋,👵🍲 👨‍👩‍👧‍👦,ok,ok
+29,en,I don't like broccoli.,🥦❌ 😖,🙋🥦❌ 😖,ok,ok
+30,fr,Je ne veux pas aller à l'école.,🙋 🏫❌,🙋🏫❌,ok,ok
+31,es,No tengo dinero para comprar un teléfono nuevo.,🙋💸❌ 📱🆕❌ 😞,🙋💵❌ 📱🆕,ok,ok
+32,en,Time is money.,⏱️💰,⏱️💰,ok,ok
+33,fr,Il a un chat dans la gorge.,👨 🐈🔒 😬,👨 🐈🗣️ 😣,ok,ok
+34,es,Llueve a cántaros.,🌧️🌧️🌧️🌧️,🌧️🥛,ok,ok
+35,en,It's raining cats and dogs.,🌧️🌧️🌧️🌧️,🌧️🌧️🌧️,ok,ok
+36,en,Break a leg at your performance tonight!,🎭🎤 🙋💪⚡ 🌙,🎤🎪 🎉👏,ok,ok
+37,fr,Avoir le cafard.,🙋🦗🌙 😩,🐛😖,ok,ok
+38,es,Estoy en las nubes.,🙋 ☁️,🙋☁️,ok,ok
+39,en,Democracy requires an informed public.,🗳️👥 ➡️ 🧠✅,🗳️ ➡️ 🧠👥,ok,ok
+40,fr,La liberté est un droit fondamental.,🙋🔓🆓 ⚖️,👥🔓 ⚖️,ok,ok
+41,es,La justicia debe ser igual para todos.,⚖️ ➡️ 👥👥👥👥,⚖️ 👥👥,ok,ok
+42,en,The economy is slowing down.,📉💸 📉,🏢📉 😟,ok,ok
+43,fr,Le prix de l'essence a augmenté.,🧴💸⬆️ ➡️ 🧴💸⬆️,🛢️💶⬆️,ok,ok
+44,es,La inflación afecta a las familias pobres.,📈💶 ➡️ 👨‍👩‍👧🏠💸❌ 😢,📈💶 ➡️ 👥👥👩‍🍳😣,ok,ok
+45,en,My grandfather was a doctor in the war.,👴👨‍⚕️ ⚔️,👨‍⚕️👨‍⚕️ ⚔️,ok,ok
+46,fr,Mon père est pompier et sauve des vies.,👨‍🚒🔥 ➡️ ❤️❤️❤️,👨🧤🔥 ➡️ 👥🆘,ok,ok
+47,es,Mi madre es maestra en una escuela rural.,👩🏫🌾,👩‍🏫🏫🌾,ok,ok
+48,en,The astronaut looked at Earth from space.,👨‍🚀👀 🌍,👨‍🚀👀 🌍,ok,ok
+49,fr,La fusée a décollé vers la Lune.,🚀⏩🌙,🚀⬆️🌙,ok,ok
+50,es,Los científicos descubrieron una nueva estrella.,👨‍🔬🔭 ➡️ ⭐🆕,👨‍🔬🔭 🌟🆕,ok,ok
+51,en,Please turn off the lights and lock the door.,🔦❌ 🔒🚪,🔌💡❌ 🚪🔒,ok,ok
+52,fr,N'oublie pas d'éteindre ton téléphone au cinéma.,🎬 📱❌🔌,🎬 📱🔌❌,ok,ok
+53,es,"Por favor, no fumes dentro del edificio.",🙋🫵 🚭🚬❌ 🏢,🙏 🚭🏢,ok,ok
+54,en,I forgot my umbrella and got soaked.,🙋 ☂️❌ ➡️ 🌧️💦 😩,☂️❌ ➡️ 🌧️😩,ok,ok
+55,fr,J'ai perdu mes clés et je suis en retard.,🙋 🔑❌ ➡️ 🚗⏰❌ 😩,🔑❌ ➡️ 🚗⏰❌ 😩,ok,ok
+56,es,Se me cayó el helado en el suelo.,🍦💥 ➡️ 🧍🧍🧍,🍦⬇️ 🦴 😅,ok,ok
+57,en,The doctor said I have a fever and a headache.,👨‍⚕️💬 🤒🌡️ 🤕,👨‍⚕️💬 🤒🌡️🤕,ok,ok
+58,fr,J'ai mal aux dents et je dois aller chez le dentiste.,🦷😖 ➡️ 🦷👨‍⚕️,🦷😖 ➡️ 🦷👨‍⚕️,ok,ok
+59,es,Me duele el estómago después de comer tanto.,🍽️🍽️🍽️ ➡️ 🤢🤮,🍽️🍔🍕🍟 ➡️ 🤢🤮,ok,ok
+60,en,They got married on a beach at sunset.,👰👨 🏖️ 🌇💍,👰💒 🏖️🌅,ok,ok
+61,fr,Ils se sont embrassés sous la tour Eiffel.,👫 🏰❤️,👥💋 🗼,ok,ok
+62,es,Te quiero con todo mi corazón.,🫵❤️🙋,🫵❤️🙋,ok,ok
+63,en,The wizard waved his wand and the dragon vanished.,🧙🪄 ➡️ 🐉❌,🧙‍♂️🪄 ➡️ 🐉❌,ok,ok
+64,fr,La princesse a embrassé la grenouille.,👸💋 🐸,👸👄🐸,ok,ok
+65,es,El fantasma asustó a los niños en la casa abandonada.,👻😱 ➡️ 👶👶😰 🏠❌,👻😱 👦👧🏠,ok,ok
+66,en,Let's go camping and make a fire.,⏩🏕️ 🔥,👥⛺ 🔥,ok,ok
+67,fr,On va faire du ski dans les Alpes cet hiver.,❄️⛷️ 🏔️⏩,👥⛷️🏔️ ❄️,ok,ok
+68,es,Vamos a nadar y a tomar el sol en la piscina.,🏊🌞🏖️,👥🏊🏖️🏊,ok,ok
+69,en,I'm allergic to peanuts.,🙋 🌰❌,🙋🌰🚫,ok,ok
+70,fr,Je suis végétarien et je ne mange pas de viande.,🙋🌱 🍖❌,🙋🌱 🍖❌,ok,ok
+71,es,Quiero una cerveza fría y unos tacos.,🙋 🍺🧊 🌮🌮,🙋🍺🥶 🌮🌮,ok,ok
+72,en,The meeting was postponed until next Thursday.,📅🗓️ ➡️ ⏩📅4️⃣,📅🗓️ ➡️ 📅⏩ 🗓️,ok,ok
+73,fr,Le rendez-vous est à trois heures et demie.,📅 🕑➕3️⃣0️⃣,📅📍 ⏰3️⃣➕,ok,ok
+74,es,La reunión empieza a las ocho de la mañana.,🕕 🌅 📅,👥📅 ⏰8️⃣🌅,ok,ok
+75,en,"If it snows tomorrow, we will build a snowman.",⏩❄️❄️ ➡️ 🧑‍🤝‍🧑🧊,⛄🌅 ➡️ 👥❄️🏠,ok,ok
+76,fr,"Si j'avais gagné au loto, j'aurais acheté une maison.",🎲🏆 ➡️ 🏠🛍️,🎟️🏆 ➡️ 🏠,ok,ok
+77,es,"Aunque estaba cansado, siguió corriendo hasta el final.",🏃😩 ➡️ 🏁✅,🏃😴 ➡️ 🏁✅,ok,ok
+78,en,Who stole my sandwich?,🙋🥪 ➡️ 🤔👤❓,👤🍪❌ ❓,ok,ok
+79,fr,Où est la bibliothèque ?,🏛️📚❓,📚📍 ❓,ok,ok
+80,es,¿Cuántos años tienes?,🫵👴👵 🗓️❓,🫵🎂 ❓,ok,ok
+81,en,The software update failed again.,📱🔧🔄 ➡️ 💥❌ 😤,💻🔁❌ 😤,ok,ok
+82,fr,Mon ordinateur est en panne et j'ai perdu mes fichiers.,💻💥 ➡️ 📁❌ 😱,💻🔧❌ ➡️ 📁❌ 😱,ok,ok
+83,es,Envié un correo electrónico al jefe con el informe.,🙋📧👔 📊✅,📧👨‍💼 📄✅,ok,ok
+84,en,"Thanks a lot, you're the best!",🙋🫵💬 🙏👍👍,🙏 🫵👑,ok,ok
+85,fr,"Désolé, je ne l'ai pas fait exprès.",🙋💬 🫵❌❌ 😔,🙏 🙋❌🙅,ok,ok
+86,es,"Buenos días, ¿cómo estás?",👋🌅 🫵💬 😊,👋🌅 🫵😊 ❓,ok,ok
+87,en,The shark chased the surfer across the waves.,🦈🏄 ➡️ 🌊🏃,🦈🏄💨 🌊,ok,ok
+88,fr,Le lion rugit et les singes s'enfuient.,🦁🗣️ ➡️ 🐒🏃🏃🏃,🦁🐗 ➡️ 🐒🏃💨,ok,ok
+89,es,Las abejas hacen miel en primavera.,🐝🌸 ➡️ 🍯,🐝🍯 🌱,ok,ok
+90,en,"I think, therefore I am.",🤔🧠 ➡️ 🙋✅,🙋💭 ➡️ 🙋✅,ok,ok
+91,fr,Le temps guérit toutes les blessures.,⏪🔨 ➡️ ⏩🌱🌿,⏳🌱 ➡️ 🩹✅,ok,ok
+92,es,La belleza está en el ojo de quien mira.,👀👁️ ➡️ ✨😊,👀👩 ➡️ ✨❤️,ok,ok
+93,en,My brother plays guitar in a rock band.,👦🎸 🤘🎸🎸,👨🎸 🎸🎸🎸,ok,ok
+94,fr,Elle chante à l'opéra devant mille personnes.,👩🎤 🎭 👥👥👥,👩🎤 🎭 🎤👥👥,ok,ok
+95,es,Los músicos tocan el violín y el piano en el concierto.,🎸🎹 🎤🎶 🎤,🎸🎹 🎤🎶,ok,ok
+96,en,The police arrested the thief in the bank.,👮🔍👨‍🦱 ➡️ 🚔🔒🏦,👮🔍👨‍🦱 🏦 ➡️ 🚔🔒,ok,ok
+97,fr,Le juge a condamné le voleur à la prison.,👨‍⚖️ ⚖️👨‍🦹 ➡️ 🏃🔒🏢,👨‍⚖️ ⚖️🔒👨‍🦹,ok,ok
+98,es,El bombero apagó el incendio del bosque.,👨‍🚒🔥🌲 ➡️ 🌲✅ 😮‍💨,👨‍🔧🧯 🔥🌲 ➡️ ✅,ok,ok
+99,en,He did not not want to go.,👨 🚶❌ 😞,👨🚶❌ 😞,ok,ok
+100,fr,Rien n'est impossible.,🙋💪 ➡️ 🎯✅,🙋💪 ✅,ok,ok

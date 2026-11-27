@@ -1,0 +1,435 @@
+{
+ "A": "v1",
+ "B": "v2",
+ "usage": {
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 6242,
+  "output_tokens": 5651
+ },
+ "criteria": [
+  {
+   "name": "Meaning fidelity",
+   "description": "Does the emoji string capture the main subject, action, object and any negation or tense from the sentence?"
+  },
+  {
+   "name": "Accuracy of individual emojis",
+   "description": "Are the chosen emojis correct for the concept? A wrong emoji such as 🐗 for roar or 👨‍🔧 for firefighter misleads the user."
+  },
+  {
+   "name": "Handling of idioms and abstract ideas",
+   "description": "Does it give a sensible figurative or conceptual rendering, or only a confusing literal one?"
+  },
+  {
+   "name": "Clarity and concision",
+   "description": "Is the output easy to read, without random repetition or filler emojis that add nothing?"
+  },
+  {
+   "name": "Details such as times, places, people and pronouns",
+   "description": "Does it keep specifics like Paris, Thursday, 8 o'clock, 'we' or 'they', and 'tomorrow'?"
+  }
+ ],
+ "comparison": "The two converters are close in quality and often give identical or near-identical output. B is stronger at including who is acting (👥 for we/they, 🙋 for I) and at keeping verbs such as love and wanting. It also does better on numbers and times (8:00, 3:30), and its emoji choices are often more apt (🎆 for New Year, 🗼 for the Eiffel Tower, 🛢️ for petrol, 🗣️ for a meeting). A is better at keeping specific details like Paris, desert, Thursday and the full moon. It also keeps subjects like 'grandfather' and 'brother', and it often renders negation and heavy rain more clearly. A sometimes pads with repeated emojis (🧴 repeated, 🍲 x4, 🧑‍🤝‍🧑 clutter) and has some outright errors (a clock showing 2 or 6 instead of the stated time, a castle for the Eiffel Tower). B has its own mistakes: milk for 'a cántaros', 🐗 for a roaring lion, a cookie for a sandwich, a mechanic for a firefighter, a bone for the floor, and 🌅 sunrise for sunset. A also does better on the idioms 'a cántaros' and 'break a leg', where B is nonsensical or flat.",
+ "conclusions": "Overall the two are roughly comparable, with a slight edge to B. B more consistently carries subject and verb information and gets times right, and it makes fewer cluttering repetitions. A wins when concrete details matter (Paris, Thursday, the desert, the boss, who is speaking in questions) and avoids some of B's more glaring wrong-emoji errors. A user would probably find B a bit more readable and complete on average, but A is more reliable on specifics.",
+ "preferences": [
+  {
+   "n": 1,
+   "preferred": "tie"
+  },
+  {
+   "n": 2,
+   "preferred": "B"
+  },
+  {
+   "n": 3,
+   "preferred": "B"
+  },
+  {
+   "n": 4,
+   "preferred": "tie"
+  },
+  {
+   "n": 5,
+   "preferred": "tie"
+  },
+  {
+   "n": 6,
+   "preferred": "B"
+  },
+  {
+   "n": 7,
+   "preferred": "tie"
+  },
+  {
+   "n": 8,
+   "preferred": "B"
+  },
+  {
+   "n": 9,
+   "preferred": "tie"
+  },
+  {
+   "n": 10,
+   "preferred": "B"
+  },
+  {
+   "n": 11,
+   "preferred": "B"
+  },
+  {
+   "n": 12,
+   "preferred": "tie"
+  },
+  {
+   "n": 13,
+   "preferred": "A"
+  },
+  {
+   "n": 14,
+   "preferred": "A"
+  },
+  {
+   "n": 15,
+   "preferred": "tie"
+  },
+  {
+   "n": 16,
+   "preferred": "A"
+  },
+  {
+   "n": 17,
+   "preferred": "B"
+  },
+  {
+   "n": 18,
+   "preferred": "A"
+  },
+  {
+   "n": 19,
+   "preferred": "tie"
+  },
+  {
+   "n": 20,
+   "preferred": "A"
+  },
+  {
+   "n": 21,
+   "preferred": "A"
+  },
+  {
+   "n": 22,
+   "preferred": "tie"
+  },
+  {
+   "n": 23,
+   "preferred": "B"
+  },
+  {
+   "n": 24,
+   "preferred": "B"
+  },
+  {
+   "n": 25,
+   "preferred": "B"
+  },
+  {
+   "n": 26,
+   "preferred": "tie"
+  },
+  {
+   "n": 27,
+   "preferred": "B"
+  },
+  {
+   "n": 28,
+   "preferred": "tie"
+  },
+  {
+   "n": 29,
+   "preferred": "B"
+  },
+  {
+   "n": 30,
+   "preferred": "tie"
+  },
+  {
+   "n": 31,
+   "preferred": "tie"
+  },
+  {
+   "n": 32,
+   "preferred": "tie"
+  },
+  {
+   "n": 33,
+   "preferred": "tie"
+  },
+  {
+   "n": 34,
+   "preferred": "A"
+  },
+  {
+   "n": 35,
+   "preferred": "tie"
+  },
+  {
+   "n": 36,
+   "preferred": "A"
+  },
+  {
+   "n": 37,
+   "preferred": "tie"
+  },
+  {
+   "n": 38,
+   "preferred": "tie"
+  },
+  {
+   "n": 39,
+   "preferred": "tie"
+  },
+  {
+   "n": 40,
+   "preferred": "tie"
+  },
+  {
+   "n": 41,
+   "preferred": "A"
+  },
+  {
+   "n": 42,
+   "preferred": "B"
+  },
+  {
+   "n": 43,
+   "preferred": "B"
+  },
+  {
+   "n": 44,
+   "preferred": "A"
+  },
+  {
+   "n": 45,
+   "preferred": "A"
+  },
+  {
+   "n": 46,
+   "preferred": "A"
+  },
+  {
+   "n": 47,
+   "preferred": "B"
+  },
+  {
+   "n": 48,
+   "preferred": "tie"
+  },
+  {
+   "n": 49,
+   "preferred": "B"
+  },
+  {
+   "n": 50,
+   "preferred": "tie"
+  },
+  {
+   "n": 51,
+   "preferred": "B"
+  },
+  {
+   "n": 52,
+   "preferred": "tie"
+  },
+  {
+   "n": 53,
+   "preferred": "B"
+  },
+  {
+   "n": 54,
+   "preferred": "A"
+  },
+  {
+   "n": 55,
+   "preferred": "A"
+  },
+  {
+   "n": 56,
+   "preferred": "B"
+  },
+  {
+   "n": 57,
+   "preferred": "tie"
+  },
+  {
+   "n": 58,
+   "preferred": "tie"
+  },
+  {
+   "n": 59,
+   "preferred": "B"
+  },
+  {
+   "n": 60,
+   "preferred": "A"
+  },
+  {
+   "n": 61,
+   "preferred": "B"
+  },
+  {
+   "n": 62,
+   "preferred": "tie"
+  },
+  {
+   "n": 63,
+   "preferred": "tie"
+  },
+  {
+   "n": 64,
+   "preferred": "A"
+  },
+  {
+   "n": 65,
+   "preferred": "A"
+  },
+  {
+   "n": 66,
+   "preferred": "B"
+  },
+  {
+   "n": 67,
+   "preferred": "B"
+  },
+  {
+   "n": 68,
+   "preferred": "A"
+  },
+  {
+   "n": 69,
+   "preferred": "tie"
+  },
+  {
+   "n": 70,
+   "preferred": "tie"
+  },
+  {
+   "n": 71,
+   "preferred": "A"
+  },
+  {
+   "n": 72,
+   "preferred": "A"
+  },
+  {
+   "n": 73,
+   "preferred": "B"
+  },
+  {
+   "n": 74,
+   "preferred": "B"
+  },
+  {
+   "n": 75,
+   "preferred": "B"
+  },
+  {
+   "n": 76,
+   "preferred": "B"
+  },
+  {
+   "n": 77,
+   "preferred": "tie"
+  },
+  {
+   "n": 78,
+   "preferred": "A"
+  },
+  {
+   "n": 79,
+   "preferred": "B"
+  },
+  {
+   "n": 80,
+   "preferred": "B"
+  },
+  {
+   "n": 81,
+   "preferred": "B"
+  },
+  {
+   "n": 82,
+   "preferred": "A"
+  },
+  {
+   "n": 83,
+   "preferred": "A"
+  },
+  {
+   "n": 84,
+   "preferred": "B"
+  },
+  {
+   "n": 85,
+   "preferred": "B"
+  },
+  {
+   "n": 86,
+   "preferred": "B"
+  },
+  {
+   "n": 87,
+   "preferred": "B"
+  },
+  {
+   "n": 88,
+   "preferred": "A"
+  },
+  {
+   "n": 89,
+   "preferred": "tie"
+  },
+  {
+   "n": 90,
+   "preferred": "B"
+  },
+  {
+   "n": 91,
+   "preferred": "B"
+  },
+  {
+   "n": 92,
+   "preferred": "tie"
+  },
+  {
+   "n": 93,
+   "preferred": "A"
+  },
+  {
+   "n": 94,
+   "preferred": "tie"
+  },
+  {
+   "n": 95,
+   "preferred": "B"
+  },
+  {
+   "n": 96,
+   "preferred": "tie"
+  },
+  {
+   "n": 97,
+   "preferred": "B"
+  },
+  {
+   "n": 98,
+   "preferred": "A"
+  },
+  {
+   "n": 99,
+   "preferred": "tie"
+  },
+  {
+   "n": 100,
+   "preferred": "A"
+  }
+ ]
+}

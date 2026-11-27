@@ -1,0 +1,23 @@
+{
+ "run": "qwen2b_v2_control",
+ "languages": [
+  "en",
+  "fr"
+ ],
+ "base_model": "unsloth/Qwen3.5-2B",
+ "epochs": 3,
+ "batch_size": 4,
+ "accumulation_steps": 2,
+ "learning_rate": 0.0002,
+ "lora_rank": 16,
+ "max_length": 256,
+ "seed": 3407,
+ "system_prompt": "Convert the sentence into an emoji sentence that keeps its gist. Answer with emojis only.",
+ "validation_share": 0.1,
+ "split_seed": 42,
+ "train_sha256": "06e86375ba74d87ade35027e99ee0069d96790aa0e0e2a955535da4c700b94a1",
+ "best_epoch": 2.0,
+ "best_eval_loss": 0.8143771290779114,
+ "train_examples": 3600,
+ "validation_examples": 400
+}

@@ -1,0 +1,435 @@
+{
+ "A": "v2",
+ "B": "v1",
+ "usage": {
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 6242,
+  "output_tokens": 4814
+ },
+ "criteria": [
+  {
+   "name": "Meaning fidelity",
+   "description": "Does the emoji string capture the key actors, actions, objects, negation, tense and sentiment of the sentence?"
+  },
+  {
+   "name": "Clarity and economy",
+   "description": "Is the output easy to read at a glance, without needless repetition, clutter or confusing symbols?"
+  },
+  {
+   "name": "Accuracy of emoji choice",
+   "description": "Are the chosen emojis appropriate and not misleading (for example, a wrong object or wrong number)?"
+  },
+  {
+   "name": "Idioms and abstractions",
+   "description": "Does the converter handle figurative, abstract or time-related sentences sensibly?"
+  },
+  {
+   "name": "Consistency across languages",
+   "description": "Do English, French and Spanish inputs get equally good treatment?"
+  }
+ ],
+ "comparison": "The two converters are close overall. A is usually cleaner and tighter. It keeps subjects such as 🙋, 👥 and 🫵, and its negation and time markers are reliable. It also avoids the odd repetition and mistakes B makes, such as B's duplicated 🧴, 🍲 or 🌧️ strings, or its 🏰 for the Eiffel Tower. A does slip sometimes: a duplicated 🌙, 🐛 for the cockroach idiom, 🥛 for 'cántaros', 🐗 for a lion's roar, and 🍪 for a sandwich. B is often richer and more expressive. It adds useful details such as 💍 at the wedding, 🧊 on the cold beer, 🗼 for Paris, 🏜️ for the desert, a 'tonight' marker, and a sad face for 'sorry'. It often handles idioms and emotion better. But B also over-decorates with repeated emojis and adds misleading items (🏰, 🧍🧍🧍, 🕑 for 3:30, 🕕 for 8 am, 📱 for software). B is better on a number of specific sentences, such as the idioms (34, 36, 37), the firefighter sentences (46, 98), Thursday (72), the sandwich question (78) and the apology (85).",
+ "conclusions": "A is slightly better overall because it is cleaner, more literal and makes fewer outright errors, especially on time, place and questions. B wins where its extra detail adds real meaning, notably idioms, some emotion and a few specific objects. Many sentences are ties, since both produce nearly the same string.",
+ "preferences": [
+  {
+   "n": 1,
+   "preferred": "tie"
+  },
+  {
+   "n": 2,
+   "preferred": "A"
+  },
+  {
+   "n": 3,
+   "preferred": "A"
+  },
+  {
+   "n": 4,
+   "preferred": "tie"
+  },
+  {
+   "n": 5,
+   "preferred": "tie"
+  },
+  {
+   "n": 6,
+   "preferred": "A"
+  },
+  {
+   "n": 7,
+   "preferred": "A"
+  },
+  {
+   "n": 8,
+   "preferred": "A"
+  },
+  {
+   "n": 9,
+   "preferred": "tie"
+  },
+  {
+   "n": 10,
+   "preferred": "A"
+  },
+  {
+   "n": 11,
+   "preferred": "A"
+  },
+  {
+   "n": 12,
+   "preferred": "A"
+  },
+  {
+   "n": 13,
+   "preferred": "tie"
+  },
+  {
+   "n": 14,
+   "preferred": "B"
+  },
+  {
+   "n": 15,
+   "preferred": "tie"
+  },
+  {
+   "n": 16,
+   "preferred": "B"
+  },
+  {
+   "n": 17,
+   "preferred": "A"
+  },
+  {
+   "n": 18,
+   "preferred": "A"
+  },
+  {
+   "n": 19,
+   "preferred": "tie"
+  },
+  {
+   "n": 20,
+   "preferred": "B"
+  },
+  {
+   "n": 21,
+   "preferred": "B"
+  },
+  {
+   "n": 22,
+   "preferred": "A"
+  },
+  {
+   "n": 23,
+   "preferred": "A"
+  },
+  {
+   "n": 24,
+   "preferred": "A"
+  },
+  {
+   "n": 25,
+   "preferred": "A"
+  },
+  {
+   "n": 26,
+   "preferred": "tie"
+  },
+  {
+   "n": 27,
+   "preferred": "A"
+  },
+  {
+   "n": 28,
+   "preferred": "A"
+  },
+  {
+   "n": 29,
+   "preferred": "A"
+  },
+  {
+   "n": 30,
+   "preferred": "tie"
+  },
+  {
+   "n": 31,
+   "preferred": "A"
+  },
+  {
+   "n": 32,
+   "preferred": "tie"
+  },
+  {
+   "n": 33,
+   "preferred": "tie"
+  },
+  {
+   "n": 34,
+   "preferred": "B"
+  },
+  {
+   "n": 35,
+   "preferred": "tie"
+  },
+  {
+   "n": 36,
+   "preferred": "B"
+  },
+  {
+   "n": 37,
+   "preferred": "B"
+  },
+  {
+   "n": 38,
+   "preferred": "tie"
+  },
+  {
+   "n": 39,
+   "preferred": "tie"
+  },
+  {
+   "n": 40,
+   "preferred": "tie"
+  },
+  {
+   "n": 41,
+   "preferred": "tie"
+  },
+  {
+   "n": 42,
+   "preferred": "A"
+  },
+  {
+   "n": 43,
+   "preferred": "A"
+  },
+  {
+   "n": 44,
+   "preferred": "B"
+  },
+  {
+   "n": 45,
+   "preferred": "B"
+  },
+  {
+   "n": 46,
+   "preferred": "B"
+  },
+  {
+   "n": 47,
+   "preferred": "A"
+  },
+  {
+   "n": 48,
+   "preferred": "tie"
+  },
+  {
+   "n": 49,
+   "preferred": "tie"
+  },
+  {
+   "n": 50,
+   "preferred": "tie"
+  },
+  {
+   "n": 51,
+   "preferred": "A"
+  },
+  {
+   "n": 52,
+   "preferred": "tie"
+  },
+  {
+   "n": 53,
+   "preferred": "A"
+  },
+  {
+   "n": 54,
+   "preferred": "B"
+  },
+  {
+   "n": 55,
+   "preferred": "B"
+  },
+  {
+   "n": 56,
+   "preferred": "A"
+  },
+  {
+   "n": 57,
+   "preferred": "tie"
+  },
+  {
+   "n": 58,
+   "preferred": "tie"
+  },
+  {
+   "n": 59,
+   "preferred": "A"
+  },
+  {
+   "n": 60,
+   "preferred": "B"
+  },
+  {
+   "n": 61,
+   "preferred": "A"
+  },
+  {
+   "n": 62,
+   "preferred": "tie"
+  },
+  {
+   "n": 63,
+   "preferred": "tie"
+  },
+  {
+   "n": 64,
+   "preferred": "B"
+  },
+  {
+   "n": 65,
+   "preferred": "A"
+  },
+  {
+   "n": 66,
+   "preferred": "tie"
+  },
+  {
+   "n": 67,
+   "preferred": "A"
+  },
+  {
+   "n": 68,
+   "preferred": "B"
+  },
+  {
+   "n": 69,
+   "preferred": "tie"
+  },
+  {
+   "n": 70,
+   "preferred": "tie"
+  },
+  {
+   "n": 71,
+   "preferred": "B"
+  },
+  {
+   "n": 72,
+   "preferred": "B"
+  },
+  {
+   "n": 73,
+   "preferred": "A"
+  },
+  {
+   "n": 74,
+   "preferred": "A"
+  },
+  {
+   "n": 75,
+   "preferred": "tie"
+  },
+  {
+   "n": 76,
+   "preferred": "A"
+  },
+  {
+   "n": 77,
+   "preferred": "tie"
+  },
+  {
+   "n": 78,
+   "preferred": "B"
+  },
+  {
+   "n": 79,
+   "preferred": "A"
+  },
+  {
+   "n": 80,
+   "preferred": "A"
+  },
+  {
+   "n": 81,
+   "preferred": "A"
+  },
+  {
+   "n": 82,
+   "preferred": "A"
+  },
+  {
+   "n": 83,
+   "preferred": "tie"
+  },
+  {
+   "n": 84,
+   "preferred": "A"
+  },
+  {
+   "n": 85,
+   "preferred": "B"
+  },
+  {
+   "n": 86,
+   "preferred": "A"
+  },
+  {
+   "n": 87,
+   "preferred": "A"
+  },
+  {
+   "n": 88,
+   "preferred": "B"
+  },
+  {
+   "n": 89,
+   "preferred": "A"
+  },
+  {
+   "n": 90,
+   "preferred": "A"
+  },
+  {
+   "n": 91,
+   "preferred": "A"
+  },
+  {
+   "n": 92,
+   "preferred": "B"
+  },
+  {
+   "n": 93,
+   "preferred": "B"
+  },
+  {
+   "n": 94,
+   "preferred": "tie"
+  },
+  {
+   "n": 95,
+   "preferred": "tie"
+  },
+  {
+   "n": 96,
+   "preferred": "tie"
+  },
+  {
+   "n": 97,
+   "preferred": "A"
+  },
+  {
+   "n": 98,
+   "preferred": "B"
+  },
+  {
+   "n": 99,
+   "preferred": "tie"
+  },
+  {
+   "n": 100,
+   "preferred": "B"
+  }
+ ]
+}

@@ -1,0 +1,301 @@
+id,lang,source,type,sentence,output
+ai2-en-conditional-00000,en,ai,conditional,"If no one shows up, I'll just sit there alone.",👥❌ ➡️ 🙋🪑😔
+ai2-en-conditional-00002,en,ai,conditional,"If the flight gets delayed, we will finish the whole puzzle before boarding.",✈️⏰ ➡️ 👥🧩✅ 🛬
+ai2-en-conditional-00004,en,ai,conditional,"If my brother's car stays broken, he'll miss his daughter's birthday.",🚗🔧❌ ➡️ 👧🎂❌ 😞
+ai2-en-conditional-00006,en,ai,conditional,"If I stall the car one more time, I will just abandon it and walk.",🚗🛑🔁 ➡️ 🚶
+ai2-en-conditional-00008,en,ai,conditional,"If my brother shows up to the school reunion, he'll spend the whole night retelling the same story.",👨🏫🎉 ➡️ 📖🔁🌙 😤
+ai2-en-conditional-00012,en,ai,conditional,"If my brother doesn't find his wallet soon, I'll have to cover his dinner again.",👨🔍👛❌ ➡️ 🙋🍽️🔁 😤
+ai2-en-conditional-00014,en,ai,conditional,"If this rain finally stops, we can still get the kids to the park before dinner.",🌧️⏹️ ➡️ 👧👦🅿️🍽️✅
+ai2-en-future-00000,en,ai,future,I'm glad the snow will cover the driveway before I have to shovel it.,🙋😊 ❄️🛣️⬇️ ➡️ 🧹❌
+ai2-en-future-00002,en,ai,future,"We’re going to sit in the dark again tomorrow night, and I can’t face it.",🌙🌑🪑 🔁 😞
+ai2-en-future-00004,en,ai,future,My brother is going to shovel the driveway and find his car eventually.,👨🧹🛣️ ➡️ 🚗📍✅
+ai2-en-future-00006,en,ai,future,We're going to say goodbye to our classroom next week.,👥🚪🏫 ⏩📅 😔
+ai2-en-future-00008,en,ai,future,My cousin is going to run the whole office next week.,👨‍🦳 🏃💼 📅⏩
+ai2-en-future-00010,en,ai,future,We're going to finish the whole ridge trail next week.,👥🥾🛤️ ⏩📅
+ai2-en-mishap-00000,en,ai,mishap,"I forgot the tent poles, so we slept under the stars and I woke up grinning.",⛺❌ ➡️ 🌌😴 ➡️ 😁
+ai2-en-mishap-00002,en,ai,mishap,I dropped my phone in the mosh pit and still managed to catch the entire encore on video.,📱💥🎸 ➡️ 🎤🎶📹 😲
+ai2-en-mishap-00004,en,ai,mishap,"My brother spilled coffee on the map, so now we're navigating by vibes.",👨☕🗺️ ➡️ 🧭🤔
+ai2-en-mishap-00006,en,ai,mishap,"I asked for a trim and she cut it all off, so now I have to hide.",💇✂️✂️✂️ ➡️ 🙈😱
+ai2-en-mishap-00008,en,ai,mishap,"My sister’s flight got delayed three hours, so she ended up leading the whole conference call from the airport.",👧✈️⏳3️⃣ ➡️ 📞🏢🏃‍♀️
+ai2-en-mishap-00010,en,ai,mishap,"The power cut off my sister’s speech mid-sentence, and now everyone is staring at me.",⚡❌ 👧🗣️🔊 ➡️ 👥👀🙋 😳
+ai2-en-moment-00000,en,ai,moment,My dad spent the whole power cut trying to reset the microwave clock and never noticed the lights came back on.,👨🔌❌ ➡️ 🍳🔧⏰ 😤 ➡️ 💡✅ 😲
+ai2-en-moment-00002,en,ai,moment,We found the perfect spot and got the tent up.,👥🔍📍✅ ➡️ ⛺✅ 😊
+ai2-en-moment-00004,en,ai,moment,My sister's cat just walked across the counter and knocked my coffee into the sink again.,🐈🚶 ➡️ 🍽️💥 ☕🚰🔁 😤
+ai2-en-moment-00006,en,ai,moment,"I saw my neighbor finally move his car, so I can pull out of my driveway now.",👀👨🚗📦✅ ➡️ 🙋🚗✅ 😮
+ai2-en-moment-00008,en,ai,moment,We waited forty minutes for the wrong bus again.,👥⏳4️⃣0️⃣ 🚌❌🔁 😤
+ai2-en-moment-00010,en,ai,moment,My sister parallel parked on the first try and just sat there grinning at me.,👧🅿️✅ 🚗 ➡️ 😁🙋
+ai2-en-numbers-00000,en,ai,numbers,"Thank goodness, my brother's bus finally arrived at 8:15.",🙏 🚌📍✅ ⏰8️⃣1️⃣5️⃣
+ai2-en-numbers-00002,en,ai,numbers,My friend has worked at this office for 12 years.,👥👨‍💼 🏢 ⏳1️⃣2️⃣
+ai2-en-numbers-00004,en,ai,numbers,"My sister's blind date showed up 40 minutes late, but he turned out to be great.",👩💍⏰4️⃣0️⃣⏩ ➡️ 👨😊✅
+ai2-en-numbers-00006,en,ai,numbers,"I taught my rescue dog three new tricks this week, and she nailed every single one.",🙋🎓🐕 3️⃣🤸 📅 ➡️ 🐕✅✅
+ai2-en-numbers-00009,en,ai,numbers,We finally adopted the kitten after waiting 48 weeks.,🐈👶 ⏳4️⃣8️⃣📅 ➡️ 🏠✅ 😄
+ai2-en-numbers-00011,en,ai,numbers,"We spent $45 on a haircut, and now it looks like a DIY disaster.",💇💵4️⃣5️⃣ ➡️ ✂️😱
+ai2-en-past-00000,en,ai,past,"My brother cut his own hair this morning, so now he keeps finding excuses to walk past the mirror.",👨✂️💇 🌅 ➡️ 🧍🔁🪞😅
+ai2-en-past-00002,en,ai,past,My sister froze up because she forgot her own resume.,👧🧊 📄❌ 😱
+ai2-en-past-00004,en,ai,past,"I already ate dinner, so I'm not hungry now.",🍽️✅ ➡️ 🍔❌ 😔
+ai2-en-past-00006,en,ai,past,"Because my brother promised to clean the kitchen before I got home, I’m stuck scrubbing his greasy pans at ten.",👨💬 🍳✅⏰ ➡️ 🙋🧽🍳🔁 🕑😤
+ai2-en-past-00008,en,ai,past,My brother shoveled the driveway because he wanted to build a snowman.,👨🧹🛣️ ➡️ 🏰❄️
+ai2-en-past-00010,en,ai,past,"I burned the first batch of cookies, so I pulled the second tray out just in time.",🍪🔥 ➡️ 🍪🔥✅ ⏰
+ai2-en-question-00000,en,ai,question,Did I really just put my dirty dishes in the washing machine instead of the dishwasher?,🙋🍽️🍽️ ➡️ 🧼🧺 ❓
+ai2-en-question-00002,en,ai,question,Does your brother really expect us to wait here while he hikes the entire trail?,👨👥⏳📍 ❓ 🥾🥾❔
+ai2-en-question-00004,en,ai,question,"Since I get to watch the kids tonight, can I finally show them how to make my famous chocolate chip cookies?",👧👦📺🌙 ➡️ 🙋🍪🍫👩‍🍳 ❓
+ai2-en-question-00006,en,ai,question,"I accidentally used salt instead of sugar in the cake I brought to the party, so can I blame the recipe?",🎂🧂❌🍬 ➡️ 🎉😬 🙋👨‍🍳 ❓
+ai2-en-question-00008,en,ai,question,Do I really have to sit through this whole reunion?,🙋🪑🎉 ❓
+ai2-en-question-00010,en,ai,question,Is your mom coming over for the sunny barbecue?,👩🍳🍖🌞 ❓
+ai2-en-question-00012,en,ai,question,Did we really have a pop quiz in math today?,👥📝🔢 ❓
+ai2-en-speech-00000,en,ai,speech,My sister texted me that she already booked us a beach house for July.,👧💬 🏖️🏠✅ 📅🌊
+ai2-en-speech-00002,en,ai,speech,My sister texted that she got the job.,👧💬 🎉💼✅
+ai2-en-speech-00004,en,ai,speech,"My sister texted me that her new haircut makes her look like a completely different person, and she loves it.",👧💬 ✂️🆕 ➡️ 🫵👩👩‍🦳 😍
+ai2-en-speech-00006,en,ai,speech,We told each other we were glad the reunion was finally over.,👥💬 😊🎉✅
+ai2-en-speech-00008,en,ai,speech,"We both mumbled ""happy birthday"" after completely forgetting her name.",👥🤐🎂 🎉❌ 👩❔ 😬
+ai2-en-speech-00010,en,ai,speech,My mom told me she misses cooking for us now that she's alone.,👩💬 🍳👥❌ 😢
+tatoeba-10793601,en,real,long,"If you wait until tomorrow, I could go with you.",⏩📅 ➡️ 🙋🚶👥
+tatoeba-11018256,en,real,long,I wonder if they would open up to me.,🙋💭 👥🤝🙋 ❓
+tatoeba-11205627,en,real,long,Ziri was walking his dog on a sunny afternoon.,🐕🚶 ☀️🌤️
+tatoeba-13117644,en,real,long,She knew she would regret this in the future.,👩💭 ⏩😞
+tatoeba-13636775,en,real,long,We decided to catch a late showing at the new multiplex downtown.,👥🎬🍿 🕰️🌙 🏙️🎬🆕
+tatoeba-13639078,en,real,long,We're going to Toronto to see our other partner.,👥🚗🇦🇹 🏙️ 👨‍💼👀
+tatoeba-3121768,en,real,long,Today I'll go to the cinema with Tom's brother.,🙋🎬👨👦 📅
+tatoeba-3723306,en,real,long,Tom never mentioned any of this to me before.,👨💬 🙋❌ ⏪
+tatoeba-3725424,en,real,long,Tom lost his job as a used car salesman.,👨🚗💼 ➡️ 💼❌ 😢
+tatoeba-6029565,en,real,long,I keep repeating the same word over and over.,🙋🔁🔁🔁 🗣️
+tatoeba-6503041,en,real,long,Tom and Mary did a lot more than what we asked them to.,👨👩 ➕👥🙋 ❓
+tatoeba-7292357,en,real,long,Tom tried to understand why he was different from other people.,👨🧠💭 👥❌👨
+tatoeba-7849951,en,real,long,It was the worst pain I had ever experienced.,🤢😖 😵
+tatoeba-8200207,en,real,long,He decided to go to Algeria to continue his education.,👨💭 🇩🇿🏫
+tatoeba-8409197,en,real,long,"Before you get on that airplane, I need to tell you something very important.",🫵✈️ ➡️ 🙋💬 ⚠️
+tatoeba-10597195,en,real,other,I'm not going to stay here much longer.,🙋🏠⏳❌
+tatoeba-11366737,en,real,other,My language-learning has slowed down this year.,📚🗣️ ⬇️ 📅
+tatoeba-11451958,en,real,other,We need to stay goal-oriented.,👥🎯
+tatoeba-11607499,en,real,other,Tom went crowdsurfing in his wheelchair.,🚲🛏️ 🚴👥
+tatoeba-12295238,en,real,other,Our prices are the lowest.,👥💰💸✅
+tatoeba-12647790,en,real,other,Ziri has met some new friends.,👨👥🆕 👥😊
+tatoeba-12856174,en,real,other,I'm getting a sense of déjà vu here.,🙋👀📍🔁 😟
+tatoeba-12884337,en,real,other,I do not belong here.,🙋📍❌
+tatoeba-2473581,en,real,other,She's not even that good looking.,👩😐
+tatoeba-2543764,en,real,other,I was never good at figures.,🙋📐❌ 😞
+tatoeba-3724178,en,real,other,I never minded all that much.,🙋 😐
+tatoeba-4788027,en,real,other,I bought lots of great stuff.,🛒🛍️👍
+tatoeba-5746732,en,real,other,I saw men carrying guns.,👀 👨🔫🔫
+tatoeba-6035809,en,real,other,I got lost in the cave.,🙋📍❔ 🗣️🪨
+tatoeba-6256910,en,real,other,I want to go to graduate school.,🙋🎓🎓🎓
+tatoeba-6356826,en,real,other,I do that once a year.,🙋🔁 ⏩📅
+tatoeba-6586568,en,real,other,Just left my dad a voicemail.,👨📞🔊 ⏪
+tatoeba-6853989,en,real,other,What happened was my fault.,🙋❌ 😞
+tatoeba-7111272,en,real,other,I don't work as much as Tom.,🙋👨‍💼❌ 👨👨
+tatoeba-7444053,en,real,other,Tom and Mary told me they're well.,👨👩💬 🙋👥😊
+tatoeba-7919676,en,real,other,I just made an idiot of myself today.,🙋🤦 😞
+tatoeba-8567447,en,real,other,I think that I'd buy this towel.,🙋💭 🧺🛒✅
+tatoeba-9314764,en,real,other,I feel like a failure.,🙋😞
+tatoeba-9637091,en,real,other,She fell asleep at the wheel.,🚗😴
+tatoeba-9954425,en,real,other,He hopped the fence to the rail yard.,🐎🪜 ➡️ 🚆🏭
+tatoeba-10747911,en,real,question,Who am I to judge?,🙋👎 ❓
+tatoeba-11629570,en,real,question,"If you've finished reading the paper, can I have a look at it?",📰✅ ➡️ 🫵👀 ❓
+tatoeba-12256744,en,real,question,"I'd love some more coffee, but not here. How about I make us some at my flat?",☕☕☕ 🫵 ❓ 📍❌ ➡️ 🙋🏠☕☕
+tatoeba-2698102,en,real,question,Did you know that I want to marry you?,🫵💭 🙋💍🫵 ❓
+tatoeba-3243960,en,real,question,Could you have a look and see if there's enough bread for our lunches tomorrow?,🫵👀 🍞🍞🍞⏩ ❓
+tatoeba-5295024,en,real,question,"Kids really are little devils, aren't they?",👦👧😈 ❓
+tatoeba-5961582,en,real,question,May I use your bathroom?,🙋🚽 ❓
+tatoeba-8380990,en,real,question,Was I mentioned in the article?,🙋📰📌 ❓
+tatoeba-8595486,en,real,question,What are we getting her for Christmas?,👥🎁🎄 👩 ❓
+tatoeba-8791340,en,real,question,Did you get the readings I sent you?,🫵📊✅ ❓
+ai2-fr-conditional-00000,fr,ai,conditional,"Si elle oublie encore de payer la facture d'électricité, je lui coupe l'accès à la box et on verra combien de temps elle tient.",🧾❌🔁 ➡️ 📺🔌❌ ➡️ ⏳😤
+ai2-fr-conditional-00002,fr,ai,conditional,"Si mon frère arrive à jouer ce morceau au concert, je serai si fier que je le serrerai dans mes bras devant tout le monde.",👨🎸🎶 ➡️ 🙋😍🤗👥
+ai2-fr-conditional-00004,fr,ai,conditional,"Si la neige tient jusqu'à demain matin, je resterai seul devant la fenêtre à regarder ta trace disparaître.",❄️⏩🌅 ➡️ 🙋🪟👀🫵👣❌ 😢
+ai2-fr-conditional-00006,fr,ai,conditional,"Si je range tout maintenant, je pourrai admirer mon salon impeccable.",🧹🧹🧹 ➡️ 🛋️✨
+ai2-fr-conditional-00008,fr,ai,conditional,"Si on oublie la sortie de 15 heures, on finit tous à la bibliothèque à réviser jusqu'à la fermeture.",🚪1️⃣5️⃣ ➡️ 🏛️📚🔁🌙 😩
+ai2-fr-conditional-00010,fr,ai,conditional,"Si je réussis mon permis du premier coup, je fais la fête à l'auto-école.",🚗✅1️⃣ ➡️ 🎉🏫
+ai2-fr-conditional-00012,fr,ai,conditional,"Si je sors maintenant dans cette neige, je vais glisser et finir les fesses dans la poudreuse.",🚶❄️ ➡️ 🍑❄️ 😩
+ai2-fr-future-00000,fr,ai,future,Je vais encore devoir expliquer à ma sœur pourquoi je n'ai pas prévenu pour le repas de dimanche.,🙋💬👧 🍽️❌⏪ 😤
+ai2-fr-future-00002,fr,ai,future,Il va enfin ranger son atelier tout seul comme un grand.,👨🔧🏠 ➡️ 🧹✅ 😌
+ai2-fr-future-00004,fr,ai,future,"Mon frère va enfin pouvoir souffler, son match de foot est reporté à la semaine prochaine.",👨⚽📅⏩ ➡️ 😮‍💨
+ai2-fr-future-00006,fr,ai,future,"La semaine prochaine, on va devoir annuler notre abonnement à la salle de sport, faute d'argent.",⏩📅 🏋️💸❌ ➡️ 🏋️❌ 😞
+ai2-fr-future-00008,fr,ai,future,Mon frère va encore se relever pour grignoter en cachette cette nuit.,👦🌙 🍫🙈🔁
+ai2-fr-future-00010,fr,ai,future,"Dimanche, on va enfin grimper ce col à vélo tous les deux et je vais pouvoir montrer à mon frère ce dont on est capables.",📅 🚴🥾 👥 ➡️ 🙋👨‍🦱👀 😄
+ai2-fr-mishap-00000,fr,ai,mishap,Mon frère a raté son penalty et tout le monde a explosé de rire.,⚽❌ 😱 ➡️ 👥😂
+ai2-fr-mishap-00002,fr,ai,mishap,On a voulu réparer la fuite nous-mêmes et maintenant on a une piscine dans le salon.,👥🔧💧 ➡️ 🏊🛋️ 😱
+ai2-fr-mishap-00004,fr,ai,mishap,"J'ai laissé le gâteau trop longtemps au four et maintenant il est tout sec, je n'ose même pas le montrer à mon frère.",🎂🔥⏳⏳ ➡️ 🍞🔥🔥 😱 👨‍🍳👀❌
+ai2-fr-mishap-00006,fr,ai,mishap,"On a renversé la soupe sur la robe de la mariée, du coup tout le monde a bien ri.",🍲💥👰👗 ➡️ 👥😂
+ai2-fr-mishap-00008,fr,ai,mishap,"On a calé l'armoire dans l'escalier et bloqué la porte, mais on l'a montée quand même.",🪑🪜 ➡️ 🚪🔒 😤 ➡️ 🪜✅
+ai2-fr-mishap-00010,fr,ai,mishap,Mon oncle a encore ramené son dessert immangeable et tout le monde a fini par commander des pizzas.,👨🍰🔁 😤 ➡️ 👥🍕🛒
+ai2-fr-moment-00000,fr,ai,moment,"Finalement, Paul a réussi à réserver une table pour ce soir.",👨🍽️✅ 🌙
+ai2-fr-moment-00002,fr,ai,moment,Je viens de décoller la dernière affiche du mur et la pièce sonne bizarrement vide.,🖼️🔙 ➡️ 🏠🔊❌ 😲
+ai2-fr-moment-00004,fr,ai,moment,Je passe la journée à démonter des cartons que j'ai déjà démontés hier.,📦🔨🔁 📅⏪
+ai2-fr-moment-00006,fr,ai,moment,"J'ai mis dix minutes à sortir du parking, mais au moins je suis lancé.",🅿️⏱️1️⃣0️⃣ ➡️ 🚗✅ 😅
+ai2-fr-moment-00008,fr,ai,moment,Il a passé dix minutes devant le même fossile.,👨🦖⏳1️⃣0️⃣ 📍🔁
+ai2-fr-moment-00010,fr,ai,moment,"La cérémonie est enfin terminée, je peux souffler et aller boire un verre.",🎉✅ ➡️ 😮‍💨 🥂
+ai2-fr-numbers-00000,fr,ai,numbers,"Ça y est, j'ai enfin réussi à faire sortir mon père du musée après trois heures.",👨🏛️⏳⏳⏳ ➡️ 🏃✅ 😮‍💨
+ai2-fr-numbers-00003,fr,ai,numbers,"On a attendu 45 minutes avant le début, j'ai bafouillé.",🎤⏳4️⃣5️⃣ ➡️ 🙋😖
+ai2-fr-numbers-00005,fr,ai,numbers,"On s’est retrouvés 42 ans plus tard, et on a encore ri comme adolescents.",👥🎉 ⏪4️⃣2️⃣ ➡️ 😂👦👧
+ai2-fr-numbers-00009,fr,ai,numbers,Je supporte 5 minutes de musique de mon colocataire.,🙋🎶🔊 5️⃣⏱️ 😤
+ai2-fr-numbers-00011,fr,ai,numbers,"Mon frère a laissé mijoter la sauce pendant 45 minutes, et maintenant tout est brûlé.",👨🍝⏳4️⃣5️⃣ ➡️ 🍝🔥🔥 😤
+ai2-fr-numbers-00013,fr,ai,numbers,"On a payé 45 euros pour la coupe, honteux.",💇💵4️⃣5️⃣ 😳
+ai2-fr-past-00000,fr,ai,past,"Je me suis endormi chez le coiffeur, donc je ressemble à un hérisson.",💇😴 ➡️ 🦔😅
+ai2-fr-past-00002,fr,ai,past,Je dois supporter l'oncle de mon ami au mariage parce qu'il s'est incrusté à notre table.,👨💒 🍽️👥 ➡️ 😤
+ai2-fr-past-00004,fr,ai,past,"On a fini les cartons ce matin, donc on souffle enfin dans le nouveau salon.",🌅 📦✅ ➡️ 🏠🎉 😮‍💨
+ai2-fr-past-00006,fr,ai,past,Je n’arrive pas à me motiver pour jouer ce soir parce que ma console a planté juste avant la fin de ma partie.,🎮🎮🎮 ➡️ 🎮💥 😤❌
+ai2-fr-past-00008,fr,ai,past,"Comme j'ai oublié de confirmer hier soir, je dois maintenant demander à ma sœur de garder les enfants alors qu'elle avait prévu autre chose.",🌙📞❌ ➡️ 👧👶🔒 😤
+ai2-fr-past-00010,fr,ai,past,"Comme elle a eu sa place au premier rang hier soir, ma sœur est encore toute retournée par ce concert et n'arrête pas d'en parler.",👩🎫1️⃣🎶 ⏪ ➡️ 👧🎶🔁💬 😤
+ai2-fr-question-00000,fr,ai,question,"Ton frère a enfin arrêté de jouer et il a fini ses devoirs, tu peux vérifier ?",👨🎮❌ ➡️ 📚✅ 🫵🔍 ❓
+ai2-fr-question-00002,fr,ai,question,"J'ai trouvé des fraises bien mûres, tu en veux pour ce soir ?",🍓🍓🍓 ➡️ 🫵🍓 ❓
+ai2-fr-question-00005,fr,ai,question,"Je glisse partout, tu crois que ça va ?",🙋🚶🚶🚶 🫵💭 ❓
+ai2-fr-question-00007,fr,ai,question,Tu es content que le dentiste ait confirmé l'heure ?,🫵😊🦷✅📅 ❓
+ai2-fr-question-00009,fr,ai,question,Est‑ce que je dois vraiment me préparer à expliquer à mon médecin pourquoi j’ai confondu ma pilule du matin avec mon chewing‑gum ?,🙋💊🍬🤔 🩺💬 ❓
+ai2-fr-question-00011,fr,ai,question,"Je suis vraiment perdu, est-ce que je peux vraiment passer le test de conduite demain ?",🙋😰 🚗📝⏩ ❓
+ai2-fr-question-00013,fr,ai,question,Ai‑je vraiment progressé assez pour soulever 80 kg ?,🙋⬆️📈 ➡️ 8️⃣0️⃣🏋️ ❓
+ai2-fr-speech-00000,fr,ai,speech,J'ai bredouillé que j'avais oublié mon maillot à la plage.,🏖️👕❌ 😅
+ai2-fr-speech-00002,fr,ai,speech,Mon frère m'a écrit qu'il avait trouvé du fromage et des crackers pour son petit plaisir de minuit.,👨💬 🧀🥨✅ 🌙😋
+ai2-fr-speech-00004,fr,ai,speech,Mon frère a soupiré que son équipe avait encore perdu et qu'il n'irait plus au stade.,👨😮‍💨 ⚽❌🔁 ➡️ 🏟️❌
+ai2-fr-speech-00006,fr,ai,speech,Mon voisin nous a annoncé tout sourire que son chien avait enfin appris à rapporter la balle.,👨‍🦳😊💬 🐕⚽✅
+ai2-fr-speech-00008,fr,ai,speech,J'ai écrit à mon ami que la balade à vélo de ce matin était vraiment agréable et que j'avais hâte de recommencer.,🙋✍️👫💬 🚴☀️😊 ➡️ 🔁🚴
+ai2-fr-speech-00010,fr,ai,speech,"Mon frère m'a raconté que le voisin avait appelé la mairie pour se plaindre du chantier, en rigolant.",👨💬 👨‍🦳📞🏢 😂
+tatoeba-10506420,fr,real,long,"En cours de route, Tom a rencontré des amis.",🚗 ➡️ 👥👥 😄
+tatoeba-10921109,fr,real,long,Nous avons réservé la salle depuis plus d'un an.,👥📅🏠 ⏳➕1️⃣
+tatoeba-12622580,fr,real,long,"Il est revenu de la fête complètement ensanglanté, son ennemi ne l'a vraiment pas loupé.",🎉🎉 ➡️ 🩸🩸😱 👨👨‍🦲
+tatoeba-4184277,fr,real,long,"Oups, je me suis trompée, je voulais dire « trois mille yens », pas « trois mille euros ».",🙋💬 3️⃣0️⃣0️⃣0️⃣0️⃣💵 ➡️ 3️⃣0️⃣0️⃣0️⃣💶 �
+tatoeba-5696250,fr,real,long,La police est sur le coup ; elle ne tardera pas à retrouver le coupable.,👮🔍 ➡️ 👨‍⚖️🔎
+tatoeba-6371743,fr,real,long,"Si c'est elle qui te l'a dit, c'est forcément vrai.",👩💬 ➡️ ✅
+tatoeba-6541313,fr,real,long,"D'abord je suis allé nager, puis j'ai fait les courses.",🏊 ➡️ 🛒
+tatoeba-6883762,fr,real,long,"Depuis que je me suis fait hypnotiser, j'ai l'impression que le temps passe lentement.",🧠💤 ➡️ ⏳😌
+tatoeba-6982198,fr,real,long,Marie lui a gentiment fait comprendre qu'elle ne voulait pas le revoir.,👩💬 😌 👨🔁❌
+tatoeba-7071043,fr,real,long,"Soit mon frère est tombé du lit, soit le chat a fait un vol plané.",👦⬇️🛏️ 🐈🛸
+tatoeba-747882,fr,real,long,Elle est rédactrice en chef d'un grand quotidien régional.,👩✍️🏆 📰🏙️
+tatoeba-8271201,fr,real,long,Il n'est pas toujours facile de trouver du temps pour tout ce que l'on voudrait.,⏰❌ 😩
+tatoeba-8319627,fr,real,long,"Depuis l'arrivée de leur mère, les enfants sont insupportables.",👩➡️🏠 ➡️ 👶😡😡
+tatoeba-8620475,fr,real,long,"C'est bien rigolo tout ça, mais je n'ai pas que ça à faire.",🤣🤣 😤 ➡️ 🙋🙅
+tatoeba-8660766,fr,real,long,Il n'a pas eu assez de temps pour faire tout ce qu'il voulait.,⏰❌ ➡️ 🛠️❌ 😞
+tatoeba-10186761,fr,real,other,Elles ne le voient pas.,👩👀❌
+tatoeba-11176249,fr,real,other,Il doit assumer son rôle de meneur.,👨🧑‍💼
+tatoeba-12171460,fr,real,other,J'ai une bonne caisse d'assurance maladie.,🙋💊✅
+tatoeba-12225907,fr,real,other,Nous mourrons tous un jour ou l’autre.,👥⚰️ 📅
+tatoeba-12793167,fr,real,other,Il l'a déshabillé d'un seul coup de regard.,👀 ➡️ 👕❌ 😳
+tatoeba-12835400,fr,real,other,Je traverse une mauvaise passe.,🙋😞 📉
+tatoeba-1896639,fr,real,other,Je ne les pleure pas.,🙋😢❌
+tatoeba-2777974,fr,real,other,Je n'ai pas les moyens.,🙋💵❌
+tatoeba-2913117,fr,real,other,Elles étaient adossées au mur.,👩👩 🧱
+tatoeba-3017682,fr,real,other,Je n'ai pas de lave-vaisselle.,🙋 🧼🍽️❌
+tatoeba-3177495,fr,real,other,Il poussa un profond soupir de soulagement.,👨😮‍💨 😌
+tatoeba-3259867,fr,real,other,Elle arrive presque toujours en retard.,👩⏰❌🔁
+tatoeba-3364356,fr,real,other,Il n'est pas obligé de le savoir.,👨 🤐❌ 🧠❔
+tatoeba-4200322,fr,real,other,Il casse souvent nos fenêtres avec une balle.,👨 ⚽🪟🔁 😡
+tatoeba-4535539,fr,real,other,Je te déconseille d'aller en Finlande.,🙋💬 🫵🇫🇮❌
+tatoeba-4613934,fr,real,other,Je sais que vous êtes tous des lâches.,🙋💭 👥😈
+tatoeba-540527,fr,real,other,"Veuillez recevoir, monsieur, mes salutations distinguées.",👨🙏 📦📬
+tatoeba-5412343,fr,real,other,Je ne suis pas n'importe qui.,🙋 👤❌
+tatoeba-5638405,fr,real,other,Ils allèrent se coucher très tard.,👥🛏️ 🌙🕰️
+tatoeba-6080435,fr,real,other,On sonne à la porte.,🚪🔔
+tatoeba-6380241,fr,real,other,Je pars pour Paris à dix heures.,🙋🚆🇫🇷 🕛
+tatoeba-7414798,fr,real,other,Nous sommes donc tous tristes.,👥😢
+tatoeba-8721326,fr,real,other,Ils exécutent les ordres sans rechigner.,👥📋✅ 😐
+tatoeba-9035112,fr,real,other,Il s'est placé derrière le pupitre.,👨🪑📚
+tatoeba-9353810,fr,real,other,Je me promène à vélo.,🚲🚶
+tatoeba-1047128,fr,real,question,"Mon chéri, peux-tu repasser ma robe, s'il te plait ?",👨❤️ 🫵👗🔁 ❓
+tatoeba-1459545,fr,real,question,"Je ne suis pas arachnophobe, mais pourrais-tu demander à ta mygale de rentrer dans sa boîte, je te prie ?",🙋🕷️❌ ➡️ 🫵🐝🏠 ❓
+tatoeba-4627202,fr,real,question,En quels termes êtes-vous avec lui ?,🫵👨 🗣️ ❓
+tatoeba-514713,fr,real,question,Peux-tu me donner ton numéro de portable ?,🫵📞 ❓
+tatoeba-6061785,fr,real,question,Pourquoi ne m'as-tu pas avoué plus tôt que tu m'aimais ?,🫵💬❤️⏪ ❓
+tatoeba-6082699,fr,real,question,Pourquoi est-ce toujours mon tour lorsqu'il faut payer ?,🙋💸🔁 ❓
+tatoeba-861553,fr,real,question,À quelle heure se lève-t-elle ?,👩🌅🕰️ ❓
+tatoeba-861704,fr,real,question,Quels sont les rayons qu'il critique ?,👨🗣️ 📚 ❓
+tatoeba-8942930,fr,real,question,Ça te met mal à l'aise quand je fais ça ?,🫵😠 🙋🙅 ❓
+tatoeba-8961310,fr,real,question,Est-ce lui qui a fait ça ?,👨👀 ❓
+ai2-es-conditional-00000,es,ai,conditional,"Si perdemos el próximo autobús, llegaremos tardísimo otra vez.",🚌💨❌ ➡️ 🚗⏰⏰
+ai2-es-conditional-00002,es,ai,conditional,"Si mi hermana sale bien del cambio de look en la peluquería, respiro tranquilo y hasta le invito un café.",👩💇✨ ➡️ 😮‍💨 🙋☕🎉
+ai2-es-conditional-00004,es,ai,conditional,"Si el hotel tiene tobogán, nos lanzamos todos a la piscina.",🏨🛝 ➡️ 👥🏊
+ai2-es-conditional-00006,es,ai,conditional,"Si no fuera por las horas que le metí a ese juego, no habría llegado tan lejos en la partida.",🎮⏳ ➡️ 🏆✅
+ai2-es-conditional-00008,es,ai,conditional,"Si el camarero nos vuelve a preguntar qué queremos, nos quedaremos mudos mirando el menú como si nunca hubiéramos comido.",🍽️👨‍🍳🗣️🔁 ➡️ 👥👀📖😶
+ai2-es-conditional-00010,es,ai,conditional,"Si no conseguimos entradas para el concierto, nos quedamos en casa y perdemos el dinero del viaje.",🎫❌🎶 ➡️ 🏠🔒 💸❌ 😞
+ai2-es-conditional-00012,es,ai,conditional,"Si no cerramos la fuga pronto, perderemos todo lo del sótano.",🚰🔧⏰ ➡️ 🏠💧❌ 😱
+ai2-es-future-00000,es,ai,future,Esta noche voy a prepararme un bocadillo enorme para celebrar el día tan bueno que he tenido.,🌙 🍽️🍔🍔🍔 🎉😊
+ai2-es-future-00002,es,ai,future,Vamos a llenarle la casa de globos cuando cumpla los cuarenta.,👥🎈🏠 ⏩4️⃣0️⃣
+ai2-es-future-00004,es,ai,future,Mañana voy a dormir de un tirón porque mi compañero ruidoso se va fuera todo el fin de semana.,🌅 🛏️😴 👨🔊🚶📅📅
+ai2-es-future-00006,es,ai,future,La semana que viene vamos a demostrar en la clase de idiomas todo lo que hemos aprendido juntos.,⏩📅 👥🗣️📚✅
+ai2-es-future-00008,es,ai,future,La semana que viene voy a salir de ruta con mis amigos y no veo la hora de estar en la carretera cantando.,📅⏩ 👥🚗🛣️ 🎶😄
+ai2-es-future-00010,es,ai,future,Por fin mañana vamos a comer a ese restaurante con mi hermano.,🌅 ➡️ 👥🍽️🍴
+ai2-es-mishap-00000,es,ai,mishap,"Perdimos la tienda por no fijarla bien, así que ahora dormimos al raso y aun así nos sentimos los reyes del campamento.",🏠❌ ➡️ 🛏️🌲 😤
+ai2-es-mishap-00002,es,ai,mishap,Mi hermano resbaló en la nieve delante de todos y tuvo que aguantar las risas del vecindario.,👦🛷❄️ ➡️ 👥😂😂 😅
+ai2-es-mishap-00004,es,ai,mishap,"Grité sorpresa y me resbalé, y por eso todos se rieron.",🤦😲 ➡️ 🙋💥 ➡️ 👥😂
+ai2-es-mishap-00006,es,ai,mishap,"El peluquero me dejó el flequillo torcido, así que ahora tengo que llevar gorro hasta que crezca.",💇✂️ ➡️ 🧢🙋 😤
+ai2-es-mishap-00008,es,ai,mishap,"Le prestamos la escalera al vecino y nos la devolvió rota, así que ahora tenemos que comprar una nueva.",🏠🪜🤝👨 ➡️ 🪜💥 ➡️ 🛒🆕 😤
+ai2-es-mishap-00010,es,ai,mishap,"Me tiñeron el pelo de verde, así que ahora llevo gorra a todas partes.",🌿💇 ➡️ 🧢🚶🚶🚶
+ai2-es-moment-00000,es,ai,moment,"Con el apagón, encendí unas velas y jugamos a las cartas toda la familia en la mesa del comedor.",⚡❌ ➡️ 🕯️🔥 👥🃏🍽️
+ai2-es-moment-00002,es,ai,moment,"Salimos de la entrevista y respiramos hondo en la acera, sin decir nada todavía.",🗣️🚪 ➡️ 🚶🌳 😮‍💨 🤐
+ai2-es-moment-00004,es,ai,moment,"Hoy, al ver a mi amigo aparcar con soltura, recordé que yo todavía no sé conducir y me quedé callado mirando el volante.",👨🚗👍 ➡️ 🙋🚙❌ 😳👀
+ai2-es-moment-00006,es,ai,moment,Me acabo de dar cuenta de que el grifo lleva toda la tarde goteando.,🚰💧💧 💧💧 💧
+ai2-es-moment-00008,es,ai,moment,Por fin terminé de pagar las cuentas y respiré tranquilo.,💵✅ ➡️ 😮‍💨😌
+ai2-es-moment-00010,es,ai,moment,Nos tiramos bolas de nieve hasta que acabamos los dos empapados y riéndonos.,👥🎾🧊 ➡️ 💦💦 😂
+ai2-es-numbers-00000,es,ai,numbers,Perdí mi cartera con 50 pesos dentro y ahora mi amigo dice que soy socio fundador del club de los despistados.,👛💵5️⃣0️⃣ ➡️ 👨💬 🙋👥🏆 😅
+ai2-es-numbers-00002,es,ai,numbers,En la peluquería nos cobraron sesenta euros por cortarnos el pelo.,💇💵 6️⃣0️⃣💶 ✂️💇
+ai2-es-numbers-00005,es,ai,numbers,"Después de veinte años, nos encontramos una sola vez y la despedida fue inevitable.",👥⏳2️⃣0️⃣ 🤝1️⃣ ➡️ 👋😔
+ai2-es-numbers-00007,es,ai,numbers,Nosotros pedimos 23 platos y nos dimos cuenta de que nadie pagó.,👥🍽️2️⃣3️⃣ ➡️ 👥💵❌ 😤
+ai2-es-numbers-00009,es,ai,numbers,"Nos dimos cuenta a los 45 minutos de espera que habíamos olvidado mencionar nuestro seguro, y nos sonrojamos.",👥⏳4️⃣5️⃣ 🧑‍🤝‍🧑💬 🛡️❌ ➡️ 😳
+ai2-es-numbers-00013,es,ai,numbers,"Hoy, a los ocho grados bajo el sol, mi hermano de veinte años salió a correr y celebró su récord personal.",🌤️8️⃣🌡️ 👨2️⃣0️⃣🏃 ➡️ 🏆🎉
+ai2-es-past-00000,es,ai,past,Menos mal que empatamos porque jugamos fatal.,⚽🥊 ➡️ 🏆 😅
+ai2-es-past-00002,es,ai,past,Estoy tranquilo porque el teléfono ya venía roto desde antes.,📱💥⏪ ➡️ 🙋😌
+ai2-es-past-00004,es,ai,past,Nos sentimos tranquilos porque encontramos la cartera que habíamos perdido antes de salir.,👥😌 👛✅ ⏪🚪
+ai2-es-past-00006,es,ai,past,Mi hermano no quiere volver al supermercado porque tiró una torre de latas delante de todos.,👨🛒❌ 🥣🥫🏗️👥 😤
+ai2-es-past-00008,es,ai,past,"Como no cenamos por ver la película, ahora nos estamos comiendo hasta las migas del pan.",🍽️🎬❌ ➡️ 🍞🍞🍞🍞 😋
+ai2-es-past-00010,es,ai,past,"Menos mal que reservamos la mesa con una semana de antelación, porque el restaurante estaba hasta arriba.",🍽️⏪1️⃣📅 ➡️ 🍴🍴🍴🍴🍴🍴 😅
+ai2-es-question-00000,es,ai,question,¿Otra vez se ha dejado el paraguas en tu casa?,🌂📍🏠🔁 ❓
+ai2-es-question-00002,es,ai,question,¿Por qué tengo que cargar yo solo con la bici otra vez si siempre te toca a ti subir la cuesta?,🙋🚲🔁 ❓ 🫵⬆️🪂🔁 ❓
+ai2-es-question-00004,es,ai,question,¿Nos llevamos la linterna grande para cuando se haga de noche en el campamento?,👥🔦📏 ❓ 🌙⛺ ❓
+ai2-es-question-00006,es,ai,question,¿Crees que mi hermano pequeño se asustó mucho cuando se fue la luz en casa?,👨👦😱 🏠💡❌ ❓
+ai2-es-question-00008,es,ai,question,¿Y si le digo a mi hermano que me espere en la ruta y luego no encuentro el camino?,🙋💬👨🚗⏳ ➡️ 🛣️❌ ❓
+ai2-es-question-00010,es,ai,question,¿Nos turnamos para cuidar a los niños esta tarde y así todos podemos descansar un rato tranquilos?,👥🧒👶🌅 ❓ ➡️ 😌
+ai2-es-question-00012,es,ai,question,¿Por qué no ha querido comer hoy mi perro después de toda la mañana?,🐕🍽️❌ 🌅 ➡️ ❓
+ai2-es-speech-00000,es,ai,speech,Le dije a mi hermano que nunca había visto jugar tan bien a alguien.,🙋💬 👨 🎮👀❌
+ai2-es-speech-00002,es,ai,speech,Le dije a mi amigo que ya tenía todo listo para ir al supermercado.,🙋💬 👨 🛒✅
+ai2-es-speech-00004,es,ai,speech,Le preguntamos al vecino si iba a llover y nos dijo que mejor ni saliéramos.,👥💬👨 🌧️ ❓ 👨💬 👥🚶❌
+ai2-es-speech-00006,es,ai,speech,"Cuando terminé de limpiar toda la casa, mi hermana me dijo que ya podía sentarme a descansar.",🧹🏠✅ ➡️ 👧💬 🙋😴
+ai2-es-speech-00008,es,ai,speech,"Cuando le preguntamos por el retraso del autobús, nos dijo que ya estaba acostumbrado.",👥💬 🚌⏰❔ 👨💬 🙋👌
+ai2-es-speech-00010,es,ai,speech,Le dije al camarero que la sopa estaba fría y me contestó que era un plato de temporada.,👨‍🍳💬 🍲🥶 ➡️ 🍽️🌾
+tatoeba-10156978,es,real,long,En mi casa usamos mucho el laurel para condimentar algunos platos.,🏠 🪵🌿🧂🍳🍲
+tatoeba-10299120,es,real,long,Me despertó muy temprano el balido de aquel cordero.,🐑🐗 ➡️ 🌅😴
+tatoeba-10356545,es,real,long,Deberíamos estar preparándonos para tratar de amortiguar lo más posible los efectos de la crisis energética que se nos viene encima.,👥⚠️ ⛽🔋 ➡️ 🛡️🛠️
+tatoeba-10364426,es,real,long,"A los niños hay que ponerles limitaciones, si no, crecen y se piensan que las leyes no van con ellos.",👦👧 ➡️ 🛑✅ ➡️ 🧠📜❌
+tatoeba-10365558,es,real,long,"Mi vecino tiene hipoglucemia, y por eso siempre lleva caramelos en el bolsillo.",👨🏠🩸 ➡️ 🍬👖
+tatoeba-11713133,es,real,long,Me encanta el queso de cabra en la pizza.,🧀🍕❤️
+tatoeba-11719542,es,real,long,Las lenguas humanas son extraordinariamente versátiles pero tienen sus límites: los que les confieren nuestra imaginación y nuestra percepción.,🗣️🌍 🧠✨ ➡️ 🛑
+tatoeba-13465130,es,real,long,Bruno estuvo en las rocas cogiendo cangrejos con los amigos.,👨🪨 🦞🦞👥
+tatoeba-13615386,es,real,long,Micaela no soporta que le digan lo que tiene que hacer.,👩😡 💬🫵❌
+tatoeba-1749294,es,real,long,Hace mucho frío. Estoy tiritando y me castañetean los dientes.,❄️❄️❄️ 🥶🥶 🦷🦷 😖
+tatoeba-2464617,es,real,long,Partí a la montaña para olvidarme de mi rutina y sentirme liberado al fin.,🚴⛰️ 🧘❌ ➡️ 😌
+tatoeba-4360655,es,real,long,Carlos compró una cámara espía y la situó en un lugar estratégico para grabar a sus vecinos.,👨📷🔍 ➡️ 📍👥👨‍🦳📹
+tatoeba-5695844,es,real,long,"Cuando echo el aliento sobre mis gafas, el vaho empaña los cristales.",😮‍💨👓 ➡️ 💨💧🪟
+tatoeba-6566759,es,real,long,Me estrechó la mano con tal fuerza que me hizo daño.,🤝💪 ➡️ 🙋🤕
+tatoeba-772570,es,real,long,Me aburriría si tuviera que contar hasta quinientos veinticuatro mil trescientos setenta y dos.,🙋😤 ➡️ 1️⃣2️⃣3️⃣4️⃣5️⃣6️⃣7️⃣8️⃣9️⃣0️⃣1
+tatoeba-10359920,es,real,other,Se le ha descosido la bragueta del pantalón.,👖👕 ➡️ 👕💥 😱
+tatoeba-10461936,es,real,other,Tus amigas chilenas son muy simpáticas y amables.,👩👩🇨🇱 😊❤️
+tatoeba-1127586,es,real,other,Él es puntual y discreto en sus deudas.,👨⏰✅ 💰🤐
+tatoeba-11764502,es,real,other,Me molesta que Modesta sea tan modesta.,🙋😤 👩🤐
+tatoeba-12293543,es,real,other,"Si tú cocinas, yo lavo los platos.",🫵🍳 ➡️ 🙋🍽️
+tatoeba-12892523,es,real,other,Mi padre tiene otros dos hijos.,👨👨👨👧
+tatoeba-13093190,es,real,other,Creo que no les gusto.,🙋💭 👥😠
+tatoeba-13681973,es,real,other,A Tomasa nadie le presta atención.,👩👥 👀❌
+tatoeba-1387646,es,real,other,Le dolía pero intentaba disimularlo.,👨😖 ➡️ 🤐
+tatoeba-1624806,es,real,other,Pasé corriendo en frente de ellos.,🏃💨 👥👀
+tatoeba-1767413,es,real,other,Cuando toco una telaraña me da repelús.,🕷️👆 ➡️ 😱
+tatoeba-1801754,es,real,other,Si me tratas de obligar no te escucharé.,🫵👨‍🦳 ➡️ 🙋👂❌
+tatoeba-3174738,es,real,other,Algo raro me pasó esta mañana.,🌅 🤯
+tatoeba-5014485,es,real,other,A María le gustan las bananas.,👩❤️🍌
+tatoeba-5025226,es,real,other,Yo leí todas las obras de Sócrates.,🙋📖📚👨‍🏫
+tatoeba-5104255,es,real,other,A todos les caigo mal.,🙋👥 😞
+tatoeba-5124535,es,real,other,Él está remando en dulce de leche.,👨🥛🥛🥛
+tatoeba-5391119,es,real,other,No me gusta pelear. Soy hombre de paz.,🙋🥊❌ 🙋🤝
+tatoeba-6771476,es,real,other,Me operarán mañana por la tarde.,👨🔧 ⏩🕛
+tatoeba-8187739,es,real,other,Al final no nos casamos.,💒❌ 👨👩❌ 😞
+tatoeba-8193411,es,real,other,Siempre acabamos llegando a donde nos esperan.,🚗🛣️ ➡️ 🏠✅ 😊
+tatoeba-8317957,es,real,other,Me da pena que se vaya.,🙋😢 👤🚶
+tatoeba-8939799,es,real,other,¡Qué me importa cuánto dura la cuarentena!,🙋🤷 🦠⏳❔
+tatoeba-9143331,es,real,other,Mi mejor amigo vive en Canadá.,👨👫 🇨🇦
+tatoeba-9358346,es,real,other,Juan no sabía lo que le venía encima.,👨💭❌ 🫵😱
+tatoeba-1148149,es,real,question,¿Debería encontrar algo que me distraiga?,🙋🔍🎉 ❓
+tatoeba-11648035,es,real,question,"¿Que dónde está el banco? Pues ahora no me acuerdo, deja que lo mire en el móvil.",📍🪑 ❓ 🤷 📱👀
+tatoeba-12292982,es,real,question,¿Por qué me llamaste a medianoche?,🙋📞🌙 ❓
+tatoeba-1541064,es,real,question,"No soy tonto, ¿crees que me vas a engañar?",🙋🙅 🫵💭 🫵🎭 ❓
+tatoeba-2766495,es,real,question,¿Por qué huyes de mis caricias?,🫵🏃 🤗❌ ❓
+tatoeba-2949052,es,real,question,¿Me puede sacar una foto?,🙋📸 ❓
+tatoeba-3009795,es,real,question,¿Me tengo que dar una inyección?,🙋💉 ❓
+tatoeba-5025999,es,real,question,¿No me digas que no te gusta el chocolate?,🫵🍫😠 ❓
+tatoeba-9358267,es,real,question,¿Por qué le han censurado la cuenta de Twitter?,👨📱🗣️ 🚫 ❓
+tatoeba-9432420,es,real,question,"Se me ha olvidado el cuadernillo de música, ¿puedo sentarme contigo?",🎵📝❌ ❓ 🫵🪑 ❓

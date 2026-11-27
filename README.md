@@ -39,6 +39,7 @@ Every step is evaluated the same way: a **round-trip score**. One model decodes 
 | [7. v2 rules and scoring](07_v2_rules_and_scoring/) | 🔄 in progress | Short answers (1–2 emojis) allowed as a warning. The three-criteria judge (topic, event, outcome) missed its first human check (0.67 vs 0.7). After two rules were added (mood and exactly who the people are are not penalised), v2.1 passed on 42 fresh pairs: 0.77 [0.60, 0.88], against 0.64 for the v1 judge. Baseline of the v1 model on v2 dev: 0.47 [0.44, 0.51], with Spanish (never trained) level with English and French. v1 results unchanged |
 | [8. Spanish and new evaluation sets](08_v2_spanish_and_eval_sets/) | ✅ done | New dev and test sets: 300 sentences each, 100 per language (EN, FR, ES), half real and half AI, all reviewed by the author (79 of 679 removed) |
 | [9. v2 dataset and labels](09_v2_dataset_and_labels/) | ✅ done | 6,000 training rows: 2,000 per language (EN, FR, ES), half real and half AI. One label per sentence from DeepSeek V4.1 Flash with the v2 prompt and the author's examples (best-of-n gave no gain). New signs ❓ 💭 🤔 ❔ 📍 🔁; 🔀 and 🔄 tried and dropped. Author's sample review: 7% of labels judged wrong |
+| [10. v2 fine-tuning](10_v2_fine_tuning/) | ✅ done | New LoRA on the original Qwen 2B with v1 settings: main (EN+FR+ES) 0.47, the same as v1 on v2 dev; the EN+FR control shows Spanish neither hurt nor helped. A blind Sonnet review leans towards v2 (+0.14, not proven). 4B scores 0.52 (+0.05, proven) but was not kept: twice the size for a small gain |
 
 ## Repository layout
 
@@ -55,6 +56,8 @@ cache/               cached decodes and judgements, so scores are reproducible f
 06_serving/          model export, GGUF comparison and serving results
 07_v2_rules_and_scoring/  v2 format rules and three-criteria judge
 08_v2_spanish_and_eval_sets/  Spanish tooling, new dev and test sets
+09_v2_dataset_and_labels/  v2 training sentences and teacher labels
+10_v2_fine_tuning/   v2 training notebook and dev scoring
 demo/                the live demo: API, web page, Docker and deployment files
 CONVENTIONS.md       the emoji grammar used everywhere
 ```

@@ -28,3 +28,5 @@ outputs/
 # Colab run archives: adapters are published on the Hub if useful
 04_fine_tuning/runs/*.zip
 04_fine_tuning/runs/*/adapter/
+10_v2_fine_tuning/runs/*.zip
+10_v2_fine_tuning/runs/*/adapter/
